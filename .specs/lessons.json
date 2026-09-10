@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "promote_threshold": 2,
+  "window_days": 45,
+  "quarantine_threshold": 2,
+  "next_id": 6,
+  "lessons": [
+    {
+      "id": "L-001",
+      "key": "spec_precision_gap::when the figma node contains more elements than the spec s acceptance criterion enumerates implement the node and record the deviation in spec md s traceability row not only in tasks md",
+      "text": "When the Figma node contains more elements than the spec's acceptance criterion enumerates, implement the node and record the deviation in spec.md's traceability row, not only in tasks.md.",
+      "signal": "spec_precision_gap",
+      "scope": "spec,figma",
+      "status": "candidate",
+      "features": [
+        "crm-imobiliario-urbano"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "URB-09 (spec.md P2 AC6; CrmUrbanoPortalIntegrations.vue:45-52; FIGMA_CONTENT_MANIFEST_CRM_URBANO.md:392) (spec,figma)"
+      ],
+      "created": "2026-09-09T17:09:30Z",
+      "last_seen": "2026-09-09T17:09:30Z"
+    },
+    {
+      "id": "L-002",
+      "key": "spec_precision_gap::scope any equal height side by side or multi column layout acceptance criterion to the breakpoint where that layout applies since stacked mobile variants size to content",
+      "text": "Scope any equal-height, side-by-side or multi-column layout acceptance criterion to the breakpoint where that layout applies, since stacked mobile variants size to content.",
+      "signal": "spec_precision_gap",
+      "scope": "spec,responsive",
+      "status": "candidate",
+      "features": [
+        "crm-imobiliario-urbano"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "URB-11 (spec.md P3 AC1; CrmUrbanoTestimonials.vue:34,:69) (spec,responsive)"
+      ],
+      "created": "2026-09-09T17:09:30Z",
+      "last_seen": "2026-09-09T17:09:30Z"
+    },
+    {
+      "id": "L-003",
+      "key": "ac_gap::query every repeated sub card of a figma section as its own node and check it against a screenshot because a bulk fetch of the parent returns one shared asset for all of them and hides leftover assets from reused component instances",
+      "text": "Query every repeated sub-card of a Figma section as its own node and check it against a screenshot, because a bulk fetch of the parent returns one shared asset for all of them and hides leftover assets from reused component instances.",
+      "signal": "ac_gap",
+      "scope": "figma,content-extraction",
+      "status": "candidate",
+      "features": [
+        "crm-imobiliario-urbano"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "FIGMA_CONTENT_MANIFEST_CRM_URBANO.md:501 (URB-11 testimonial logos; same class already recorded in FIGMA_CONTENT_MANIFEST_CRM.md section 7) (figma,content-extraction)"
+      ],
+      "created": "2026-09-09T17:09:41Z",
+      "last_seen": "2026-09-09T17:09:41Z"
+    },
+    {
+      "id": "L-004",
+      "key": "ac_gap::download figma image fills and isolated nodes via download assets and export only the exact leaf node because get design context asset urls and parent group exports return blank or artifact laden files",
+      "text": "Download Figma image fills and isolated nodes via download_assets and export only the exact leaf node, because get_design_context asset URLs and parent-group exports return blank or artifact-laden files.",
+      "signal": "ac_gap",
+      "scope": "figma,assets",
+      "status": "candidate",
+      "features": [
+        "crm-imobiliario-urbano"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "FIGMA_CONTENT_MANIFEST_CRM_URBANO.md:110,:147 (URB-02 hero photo, URB-04 technology star) (figma,assets)"
+      ],
+      "created": "2026-09-09T17:09:41Z",
+      "last_seen": "2026-09-09T17:09:41Z"
+    },
+    {
+      "id": "L-005",
+      "key": "spec_deviation::point a sibling module link at the route that actually exists on disk rather than the placeholder named in the spec and record the substitution in the traceability table",
+      "text": "Point a sibling-module link at the route that actually exists on disk rather than the placeholder named in the spec, and record the substitution in the traceability table.",
+      "signal": "spec_deviation",
+      "scope": "routes",
+      "status": "candidate",
+      "features": [
+        "crm-imobiliario-urbano"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "URB-12 (CrmUrbanoOtherModules.vue:34; spec.md route deviation note) (routes)"
+      ],
+      "created": "2026-09-09T17:09:41Z",
+      "last_seen": "2026-09-09T17:09:41Z"
+    }
+  ]
+}
