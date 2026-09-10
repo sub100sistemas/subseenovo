@@ -3,9 +3,9 @@ import type { HeroModuleIcon } from '~/components/layout/Hero.vue'
 
 const moduleIcons: HeroModuleIcon[] = [
   { src: '/icons/crm-hero-icone-lancamentos-glyph.svg', iconClass: 'w-[14.137px] h-[16.479px]' },
-  { src: '/icons/site-urbano-hero-icone-house.svg', iconClass: 'w-[17px] h-[17px]' },
+  { src: '/icons/crm-hero-icone-venda.svg', iconClass: 'w-[16.409px] h-[19.017px]', shadowClass: 'shadow-[0px_10px_20px_rgba(93,95,239,0.6)]' },
   { src: '/icons/crm-hero-icone-locacao-glyph.svg', iconClass: 'w-[14.165px] h-[16.479px]' },
-  { src: '/icons/crm-hero-icone-rural.svg', iconClass: 'w-[17px] h-[17px]' },
+  { src: '/icons/crm-hero-icone-temporada-glyph.svg', iconClass: 'w-[16.331px] h-[19px]' },
 ]
 </script>
 
@@ -31,17 +31,17 @@ const moduleIcons: HeroModuleIcon[] = [
         src="/icons/crm-rural-hero-ellipse-blur.svg"
         alt=""
         aria-hidden="true"
-        class="pointer-events-none absolute left-[31.07%] top-0 w-[51.87%] h-[97.81%] opacity-70"
+        class="pointer-events-none absolute left-[17%] top-[18%] w-[49%] h-[86%] opacity-70"
       />
 
-      <div class="absolute left-[30.1%] top-[1.63%] w-[57.14%] h-[99.34%] overflow-hidden">
+      <div class="absolute left-[31%] top-[18%] w-[30%] h-[81%] overflow-hidden">
         <NuxtImg
           src="/images/modulos-site-urbano/hero-foto-corretor.png"
           :width="888"
           :height="1329"
-          sizes="mobile-lg:180px tablet:340px tablet-lg:240px desktop:300px desktop-full:362px"
+          sizes="tablet-lg:155px desktop:205px desktop-full:220px desktop-lg:250px"
           alt="Corretor sorridente de blazer cinza com camisa branca"
-          class="h-full w-full object-cover object-top"
+          class="h-full w-full object-contain"
           loading="eager"
         />
       </div>

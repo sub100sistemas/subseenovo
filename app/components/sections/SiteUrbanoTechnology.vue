@@ -7,8 +7,8 @@
     curve-arrow-class="pointer-events-none absolute hidden right-[18.028px] top-[73px] w-[184.972px] h-[210.812px] desktop-full:block"
     star-class="pointer-events-none absolute hidden left-0 top-[43.81%] size-[80px] desktop-full:block"
     mockup-src="/images/modulos-site-urbano/showcase-mockup-site-ideal.png"
-    :mockup-width="1400"
-    :mockup-height="800"
+    :mockup-width="2200"
+    :mockup-height="1293"
     mockup-sizes="mobile-lg:100vw tablet-lg:920px desktop:1100px"
     :mockup-img-attrs="{
       alt: 'Mockup do site de imobiliária urbana mostrando a interface de busca com lançamentos em destaque',

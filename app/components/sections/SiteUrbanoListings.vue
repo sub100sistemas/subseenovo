@@ -58,8 +58,8 @@ const features: PortfolioFeature[] = [
     <template #image>
       <NuxtImg
         src="/images/modulos-site-urbano/listings-mockup-tablet.png"
-        :width="1100"
-        :height="900"
+        :width="1344"
+        :height="1455"
         sizes="mobile-lg:100vw tablet-lg:440px desktop:580px desktop-full:664px"
         alt="Mockup do tablet mostrando a listagem de imóveis urbanos com filtros e cards de propriedades"
         class="mx-auto h-auto w-full max-w-[664px]"
