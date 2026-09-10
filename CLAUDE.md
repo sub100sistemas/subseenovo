@@ -34,6 +34,12 @@ This is a static marketing site (Nuxt 4 + Vue 3 `<script setup>` + Tailwind v4),
 
 **Rule**: whenever a visual pattern appears on more than one page or segment, promote it to `layout/`. Prefer `withDefaults()` prop forwarding over duplicating templates.
 
+**Check before creating**: before writing any new component, verify whether an existing `layout/` component already supports the needed visual structure. Wrapping it in a new `sections/` component with `withDefaults()` is always preferable to forking its markup. The same principle applies across `sections/` layers — e.g. `CrmRuralTechnology.vue` wrapping `CrmTechnology.vue` (which wraps `Technology.vue`) is valid and expected when product-specific defaults cascade.
+
+**Shared assets**: a logo, icon, or image used on more than one page must live at a single path under `public/` and be referenced from each section that needs it. Never create per-page copies of the same file (e.g. `crm-rural-logo-client.svg` and `crm-urbano-logo-client.svg` when they are the same image). Before consolidating any asset, confirm the files are truly identical and update every reference.
+
+**Tailwind v4 template binding limitation**: do not write JS array or object literals directly inside Vue template attribute bindings (e.g., `:prop="[{ src: '...' }]"`). The Tailwind v4 Vite plugin misparses an attribute value that begins with `"["` as the start of a CSS arbitrary-value string and throws `Unterminated string` in the dev server. Always declare arrays and objects as typed `const`s in `<script setup>` and pass the variable name in the template.
+
 **JSON data for repeating content** — store arrays of repeating structured content in `app/data/*.json` (e.g., `testimonials.json`). Import them in the `sections/` layer, filter/transform as needed, then pass the computed slice to the layout component as a typed array prop. Never import data files directly in `layout/` components — they must stay content-agnostic.
 
 **Pages are built from Figma, 1:1.** Each Figma-sourced page has a `FIGMA_CONTENT_MANIFEST_<PAGE>.md` file at the repo root (e.g. `FIGMA_CONTENT_MANIFEST_CRM.md`) recording the real content extracted from Figma before implementation. When building or fixing a section against Figma, use the Figma MCP tools to pull exact node measurements/assets rather than approximating from a screenshot — this has repeatedly been the difference between a fix that actually matches Figma and one that only looks close.
@@ -43,6 +49,16 @@ This is a static marketing site (Nuxt 4 + Vue 3 `<script setup>` + Tailwind v4),
 **Known sitewide bug**: no `translate-x-*`/`translate-y-*` Tailwind utility (positive or negative) generates any CSS anywhere on this site — confirmed by inspecting compiled stylesheets in a real browser. Any element still using it for centering (e.g. the common `top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2` pattern) is not actually centered. Do not use this pattern in new or fixed code; use flexbox centering (`items-center justify-center`) instead, even if a reference snippet or the Figma-generated JSX uses `translate`.
 
 `.specs/STATE.md` is a running decision log (architecture decisions + a handoff narrative) kept by prior sessions using the `tlc-spec-driven` skill. Check it for the reasoning behind non-obvious existing choices before changing something that looks arbitrary.
+
+## SPECs
+
+`.specs/features/<feature>/` holds `spec.md`, `tasks.md`, `validation.md`, and optionally `design.md` for page-building or architectural features. `.specs/STATE.md` is the running decision log for cross-cutting findings — read it before changing anything that looks arbitrary, since a prior `AD-NNN` entry may already explain the choice.
+
+**When to create a SPEC**: new page features or significant architectural decisions only. A SPEC tracks an entire feature (goals, acceptance criteria, tasks, validation). Do not create a SPEC for a spacing tweak, color fix, responsive correction, or any single-component visual adjustment.
+
+**When to update an existing SPEC**: if a decision changes how an already-documented feature works, update that feature's existing files — do not open a new SPEC for something already covered.
+
+**When to add to STATE.md**: architectural findings or decisions that apply site-wide or across multiple features go in `STATE.md` as new `AD-NNN` entries. Single-component bug fixes and visual adjustments do not warrant a `STATE.md` entry.
 
 ## Git workflow
 

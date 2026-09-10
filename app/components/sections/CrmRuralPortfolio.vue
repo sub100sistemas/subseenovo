@@ -36,8 +36,7 @@ const items: FeatureItem[] = [
 <template>
   <CrmPortfolio
     section-id="crm-rural-portfolio"
-    panel-class="rounded-[28px] px-6 py-10 tablet-lg:rounded-[40px] tablet-lg:px-16 tablet-lg:py-16 desktop-full:rounded-[50px] desktop-full:px-[80px] desktop-full:py-[80px]"
-    panel-gradient="linear-gradient(75.89deg, #e6faf1 5.56%, #ecf8f9 30.92%, #eff2fa 76.37%, #c5dcf0 98.37%)"
+    panel-class="rounded-[28px] bg-[linear-gradient(75.89deg,_#e6faf1_5.56%,_#ecf8f9_30.92%,_#eff2fa_76.37%,_#c5dcf0_98.37%)] px-6 py-10 tablet-lg:rounded-[40px] tablet-lg:px-16 tablet-lg:py-16 desktop-full:rounded-[50px] desktop-full:px-[80px] desktop-full:py-[80px]"
     header-wrapper-class="mx-auto max-w-[850px] text-center"
     heading-class="mx-auto"
     lead-class="mx-auto mt-4 text-base leading-[1.4] text-ink tablet-lg:text-xl"

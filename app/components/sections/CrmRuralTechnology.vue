@@ -4,8 +4,8 @@
   <CrmTechnology
     section-id="crm-rural-technology"
     title-class="mx-auto leading-[1.4] desktop-full:max-w-[1000px]"
-    :curve-arrow-style="{ right: '18.028px', top: '73px', width: '184.972px', height: '210.812px' }"
-    :star-style="{ left: '0', top: '43.81%', width: '80px', height: '80px' }"
+    curve-arrow-class="pointer-events-none absolute hidden right-[18.028px] top-[73px] w-[184.972px] h-[210.812px] desktop-full:block"
+    star-class="pointer-events-none absolute hidden left-0 top-[43.81%] size-[80px] desktop-full:block"
     mockup-src="/images/modulos-crm-rural/tecnologia-mockup-cadastro-imovel.png"
     :mockup-width="2200"
     :mockup-height="1290"

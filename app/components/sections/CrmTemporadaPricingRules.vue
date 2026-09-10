@@ -82,7 +82,7 @@ function cellColor(value: number): string {
           </div>
           <div class="mt-4 flex items-center justify-between">
             <span class="text-[11px] text-[#666]">Baixa</span>
-            <div class="mx-3 h-[6px] flex-1 rounded-full" style="background: linear-gradient(to right, #c7d2fe, #4f46e5)" />
+            <div class="mx-3 h-[6px] flex-1 rounded-full bg-[linear-gradient(to_right,#c7d2fe,#4f46e5)]" />
             <span class="text-[11px] text-[#666]">Alta</span>
           </div>
         </div>

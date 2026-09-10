@@ -1,6 +1,4 @@
 <script setup lang="ts">
-type StyleValue = string | Record<string, string | number>
-
 type PictureImgAttrs = {
   alt: string
   class: string
@@ -19,12 +17,10 @@ interface Props {
   ctaWrapperClass?: string
   curveArrowSrc?: string
   curveArrowClass?: string
-  curveArrowStyle?: StyleValue
   mockupWrapperClass?: string
   showStar?: boolean
   starSrc?: string
   starClass?: string
-  starStyle?: StyleValue
   mockupSrc?: string
   mockupWidth?: number
   mockupHeight?: number
@@ -44,17 +40,10 @@ withDefaults(defineProps<Props>(), {
   ctaWrapperClass: undefined,
   curveArrowSrc: '/icons/crm-tecnologia-seta-curva.svg',
   curveArrowClass: undefined,
-  curveArrowStyle: () => ({
-    right: '18.03px',
-    top: '48px',
-    width: '184.972px',
-    height: '210.812px',
-  }),
   mockupWrapperClass: undefined,
   showStar: true,
   starSrc: '/icons/crm-tecnologia-estrela.svg',
   starClass: undefined,
-  starStyle: undefined,
   mockupSrc: '/images/modulos-crm/tecnologia-mockup-dashboard.png',
   mockupWidth: 3300,
   mockupHeight: 1938,
@@ -80,12 +69,10 @@ withDefaults(defineProps<Props>(), {
     :cta-wrapper-class="ctaWrapperClass"
     :curve-arrow-src="curveArrowSrc"
     :curve-arrow-class="curveArrowClass"
-    :curve-arrow-style="curveArrowStyle"
     :mockup-wrapper-class="mockupWrapperClass"
     :show-star="showStar"
     :star-src="starSrc"
     :star-class="starClass"
-    :star-style="starStyle"
     :mockup-src="mockupSrc"
     :mockup-width="mockupWidth"
     :mockup-height="mockupHeight"

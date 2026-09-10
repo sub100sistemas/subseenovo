@@ -33,7 +33,7 @@ const classesByVariant: Record<Variant, string> = {
   <component
     :is="to ? NuxtLink : 'button'"
     :to="to"
-    class="inline-flex w-full items-center justify-center gap-2 text-center transition-colors tablet:w-auto"
+    class="inline-flex self-center items-center justify-center gap-2 text-center transition-colors tablet-lg:self-auto"
     :class="classesByVariant[variant]"
   >
     <slot />

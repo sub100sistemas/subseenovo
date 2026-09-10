@@ -54,9 +54,9 @@ const badges = [
 <template>
   <section id="precos" class="section-py pb-0 relative overflow-hidden">
     <div class="pointer-events-none absolute inset-0 hidden desktop-compact:block" aria-hidden="true">
-      <img src="/icons/hero-pricing-bg-sol.svg" alt="" class="absolute" style="left: 1.35%; top: 16.46%; width: 10.91%" />
-      <img src="/icons/hero-pricing-bg-blob.svg" alt="" class="absolute" style="left: 4.34%; top: 36.69%; width: 31.6%" />
-      <img src="/icons/hero-pricing-bg-trator.svg" alt="" class="absolute" style="left: 97.76%; top: 60.36%; width: 18.14%" />
+      <img src="/icons/hero-pricing-bg-sol.svg" alt="" class="absolute left-[1.35%] top-[16.46%] w-[10.91%]" />
+      <img src="/icons/hero-pricing-bg-blob.svg" alt="" class="absolute left-[4.34%] top-[36.69%] w-[31.6%]" />
+      <img src="/icons/hero-pricing-bg-trator.svg" alt="" class="absolute left-[97.76%] top-[60.36%] w-[18.14%]" />
     </div>
 
     <div class="container-page relative">
@@ -96,7 +96,7 @@ const badges = [
         </div>
 
         <div
-          class="order-2 mt-8 grid grid-cols-1 items-stretch gap-8 tablet:grid-cols-2 tablet:gap-x-6 desktop-full:order-2 desktop-full:grid-cols-[440px_440px] desktop-full:gap-x-[45px]"
+          class="order-2 mt-8 grid grid-cols-1 items-stretch gap-8 tablet-lg:grid-cols-2 tablet-lg:gap-x-6 desktop-full:order-2 desktop-full:grid-cols-[440px_440px] desktop-full:gap-x-[45px]"
         >
           <div
             v-for="plano in planos"
@@ -135,12 +135,12 @@ const badges = [
 
             <hr class="mx-[9px] mt-[37px] h-0.5 border-0 border-t-2 border-ink opacity-25" />
 
-            <div class="mt-[22px] flex flex-nowrap items-baseline gap-1 text-brand">
+            <div class="mt-[22px] flex flex-wrap items-baseline gap-1 text-brand tablet:flex-nowrap">
               <span class="shrink-0 text-[34px] leading-[1.2] font-bold whitespace-nowrap desktop-full:text-[40px]">{{ plano.preco }}</span>
               <span class="shrink-0 text-base whitespace-nowrap">{{ plano.complemento }}</span>
             </div>
 
-            <CtaButton variant="outline-teal" :icon="false" to="#" class="mt-7 w-full!">
+            <CtaButton variant="outline-teal" :icon="false" to="#" class="mt-7 w-full! px-[10px]! text-center! tablet:px-6!">
               Ver todos os recursos inclusos
             </CtaButton>
             <CtaButton variant="primary" to="/testar-gratis" class="mt-4 w-full!">

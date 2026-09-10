@@ -33,8 +33,7 @@ const checklist = [
       </div>
 
       <div
-        class="mt-10 rounded-[30px] border border-[#f0f0f0] p-6 tablet-lg:p-10 desktop-full:mt-[34px]"
-        style="background-image: linear-gradient(90deg, rgba(238,237,255,0.5) 0%, rgba(234,247,246,0.5) 100%)"
+        class="mt-10 rounded-[30px] border border-[#f0f0f0] bg-[linear-gradient(90deg,_rgba(238,237,255,0.5)_0%,_rgba(234,247,246,0.5)_100%)] p-6 tablet-lg:p-10 desktop-full:mt-[34px]"
       >
         <div class="hidden tablet-lg:block">
           <div class="flex justify-between">
@@ -48,7 +47,7 @@ const checklist = [
           </div>
 
           <div class="relative mt-4 flex h-[50px] items-center justify-between">
-            <div class="absolute inset-x-0 h-[3px] bg-[#c5c4d7]" style="top: calc(50% - 1.5px)" />
+            <div class="absolute inset-x-0 top-[calc(50%_-_1.5px)] h-[3px] bg-[#c5c4d7]" />
             <span
               v-for="stop in stops"
               :key="`dot-${stop.label}`"
@@ -71,7 +70,9 @@ const checklist = [
 
         <div class="flex flex-col gap-6 tablet-lg:hidden">
           <div v-for="stop in stops" :key="stop.label" class="flex items-center gap-4">
-            <span class="shrink-0 rounded-full border-4 border-white" :class="stop.color" :style="{ width: stop.size, height: stop.size }" />
+            <span class="flex w-[50px] shrink-0 items-center justify-center">
+              <span class="rounded-full border-4 border-white" :class="stop.color" :style="{ width: stop.size, height: stop.size }" />
+            </span>
             <div>
               <p class="text-base font-semibold text-[#1b1f2d]">{{ stop.label }}</p>
               <p class="text-[13px] text-[#696984]">{{ stop.sublabel }}</p>

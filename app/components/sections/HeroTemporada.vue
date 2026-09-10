@@ -58,8 +58,7 @@ const featureItems = [
               width="28"
               height="30"
               alt=""
-              class="shrink-0"
-              style="filter: drop-shadow(9px 0px 20px rgba(93, 95, 239, 0.6))"
+              class="shrink-0 drop-shadow-[9px_0px_20px_rgba(93,95,239,0.6)]"
             />
           </div>
           <FeatureList class="mt-3" :items="featureItems" />

@@ -54,8 +54,7 @@ const checklist = [
   <section id="crm-rural-client-radar" class="section-py">
     <div class="container-page">
       <div
-        class="flex flex-col gap-10 rounded-[28px] border border-[#e5e7eb] p-6 tablet-lg:rounded-[40px] tablet-lg:p-12 desktop-full:flex-row desktop-full:items-center desktop-full:gap-20 desktop-full:rounded-[50px] desktop-full:p-[72px]"
-        style="background-image: linear-gradient(90deg, #edeffd 0%, #f1f4fd 16.827%, #dae8f5 100%)"
+        class="flex flex-col gap-10 rounded-[28px] border border-[#e5e7eb] bg-[linear-gradient(90deg,_#edeffd_0%,_#f1f4fd_16.827%,_#dae8f5_100%)] p-6 tablet-lg:rounded-[40px] tablet-lg:p-12 desktop-full:flex-row desktop-full:items-center desktop-full:gap-20 desktop-full:rounded-[50px] desktop-full:p-[72px]"
       >
         <div class="w-full rounded-[28px] border border-[rgba(227,232,247,0.5)] bg-[#fbfcff] p-6 shadow-[0px_16px_36px_-12px_rgba(46,51,140,0.08)] tablet-lg:p-8 desktop-full:w-[620px] desktop-full:shrink-0">
           <span class="inline-flex items-center rounded-full bg-[#ebedff] px-3 py-1.5 text-[11px] font-semibold tracking-[0.66px] text-[#4042cc]">
@@ -84,7 +83,7 @@ const checklist = [
             </div>
           </div>
 
-          <div class="mt-6 flex items-center gap-3 rounded-2xl border border-[#d1e0f5] px-4 py-3.5" style="background-image: linear-gradient(90deg, #f2f5ff 0%, #e8fcf5 100%)">
+          <div class="mt-6 flex items-center gap-3 rounded-2xl border border-[#d1e0f5] bg-[linear-gradient(90deg,_#f2f5ff_0%,_#e8fcf5_100%)] px-4 py-3.5">
             <span class="size-2.5 shrink-0 rounded-full bg-teal-link" aria-hidden="true" />
             <div class="min-w-0">
               <p class="text-[13px] font-semibold text-[#1f293d]">Conexões mais rápidas e qualificadas</p>

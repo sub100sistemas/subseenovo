@@ -123,16 +123,16 @@ const propertyIcons = [
           <div class="mt-[41px] flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-ink-soft">
             <span class="inline-flex items-center gap-2">
               <span class="relative inline-block size-[18px] shrink-0">
-                <img src="/icons/icone-mais-vendas-1.svg" alt="" class="absolute" style="left:50%;top:8.33%;bottom:8.33%" />
-                <img src="/icons/icone-mais-vendas-2.svg" alt="" class="absolute" style="left:25%;right:25%;top:20.83%;bottom:20.83%" />
+                <img src="/icons/icone-mais-vendas-1.svg" alt="" class="absolute left-1/2 top-[8.33%] bottom-[8.33%]" />
+                <img src="/icons/icone-mais-vendas-2.svg" alt="" class="absolute left-1/4 right-1/4 top-[20.83%] bottom-[20.83%]" />
               </span>
               Mais eficiência · Menos custo
             </span>
             <span class="hidden tablet:inline text-[#d1d5db]">|</span>
             <span class="inline-flex items-center gap-2">
               <span class="relative inline-block size-[18px] shrink-0">
-                <img src="/icons/icone-mais-eficiencia-1.svg" alt="" class="absolute" style="left:8.33%;right:8.33%;top:29.17%;bottom:29.17%" />
-                <img src="/icons/icone-mais-eficiencia-2.svg" alt="" class="absolute" style="left:66.67%;right:8.33%;top:29.17%;bottom:45.83%" />
+                <img src="/icons/icone-mais-eficiencia-1.svg" alt="" class="absolute left-[8.33%] right-[8.33%] top-[29.17%] bottom-[29.17%]" />
+                <img src="/icons/icone-mais-eficiencia-2.svg" alt="" class="absolute left-[66.67%] right-[8.33%] top-[29.17%] bottom-[45.83%]" />
               </span>
               Mais vendas · Ciclo mais rápido
             </span>

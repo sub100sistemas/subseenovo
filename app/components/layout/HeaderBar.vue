@@ -154,7 +154,7 @@ function splitDescription(description: string) {
 
 <template>
   <div class="relative">
-    <div data-header-row class="container-page flex h-[85px] items-center justify-between gap-3 px-0">
+    <div data-header-row class="container-page flex h-[64px] items-center justify-between gap-3 mobile-lg:h-[85px]">
       <NuxtLink to="/" class="shrink-0">
         <NuxtImg
           src="/icons/logo-sub100-imobiliarias.svg"
@@ -204,7 +204,7 @@ function splitDescription(description: string) {
             variant="small"
             to="/entrar"
             :icon="false"
-            style="min-height: 42px; padding: 8px 25px; font-size: 16px; font-weight: 600; box-sizing: border-box"
+            class="min-h-[42px] box-border px-[25px] py-[8px] text-[16px] font-semibold"
           >
             <IconUser class="size-[15px]" />
             Entrar
@@ -281,16 +281,7 @@ function splitDescription(description: string) {
             <NuxtLink
               v-if="col.banner"
               to="/testar-gratis"
-              class="mt-4 flex h-[183px] w-full max-w-[233px] flex-col items-center justify-center mx-auto rounded-[20px] px-4 text-center text-white"
-              style="
-                background-image: linear-gradient(
-                  229deg,
-                  rgb(56, 177, 192) 3%,
-                  rgb(71, 126, 205) 27%,
-                  rgb(93, 95, 239) 50%,
-                  rgb(48, 156, 171) 129%
-                );
-              "
+              class="mt-4 flex h-[183px] w-full max-w-[233px] flex-col items-center justify-center mx-auto rounded-[20px] bg-[linear-gradient(229deg,_rgb(56,177,192)_3%,_rgb(71,126,205)_27%,_rgb(93,95,239)_50%,_rgb(48,156,171)_129%)] px-4 text-center text-white"
             >
               <p class="text-[20px] leading-[1.1] font-light">
                 <strong class="font-bold">Teste</strong> na<br />
@@ -315,7 +306,7 @@ function splitDescription(description: string) {
   >
     <div
       v-if="isMenuOpen"
-      class="fixed inset-x-0 top-[85px] z-40 h-[calc(100dvh-85px)] bg-black/40 desktop-compact:hidden"
+      class="fixed inset-x-0 top-[64px] z-40 h-[calc(100dvh-64px)] bg-black/40 mobile-lg:top-[85px] mobile-lg:h-[calc(100dvh-85px)] desktop-compact:hidden"
       aria-hidden="true"
       @click="isMenuOpen = false"
     />
@@ -332,7 +323,7 @@ function splitDescription(description: string) {
     <nav
       v-if="isMenuOpen"
       :id="mobileNavId"
-      class="pt-4 fixed top-[85px] left-0 z-40 flex h-[calc(100dvh-85px)] w-[85%] max-w-[320px] flex-col overflow-y-auto bg-white desktop-compact:hidden"
+      class="pt-4 fixed top-[64px] left-0 z-40 flex h-[calc(100dvh-64px)] w-[85%] max-w-[320px] flex-col overflow-y-auto bg-white mobile-lg:top-[85px] mobile-lg:h-[calc(100dvh-85px)] desktop-compact:hidden"
       aria-label="Menu principal (mobile)"
     >
       <div class="flex flex-col">

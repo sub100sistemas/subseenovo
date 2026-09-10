@@ -86,8 +86,7 @@ const badges: PortalBadge[] = [
     <div class="container-page">
       <div class="overflow-hidden rounded-[30px] bg-[#eeedff] px-6 py-10 tablet:px-8 tablet-lg:flex tablet-lg:items-center tablet-lg:gap-[4.48%] tablet-lg:rounded-[50px] tablet-lg:px-[30px] tablet-lg:py-0">
         <div
-          class="relative mx-auto w-full max-w-[720px] tablet-lg:mx-0 tablet-lg:w-[53.73%] tablet-lg:max-w-none"
-          style="aspect-ratio: 720 / 596"
+          class="relative mx-auto w-full max-w-[720px] aspect-[720/596] tablet-lg:mx-0 tablet-lg:w-[53.73%] tablet-lg:max-w-none"
         >
           <NuxtImg
             src="/images/modulos-crm-urbano/portais-mockup-app-marketing.png"
@@ -95,8 +94,7 @@ const badges: PortalBadge[] = [
             :height="1146"
             sizes="mobile-lg:100vw tablet-lg:450px desktop:580px desktop-full:681px"
             alt="Mockup do app SUB100 na etapa de Marketing, com os portais imobiliários integrados e seus interruptores ativos"
-            class="absolute h-auto max-w-none"
-            style="left: 5.42%; top: 3.86%; width: 94.58%"
+            class="absolute left-[5.42%] top-[3.86%] w-[94.58%] h-auto max-w-none"
             loading="lazy"
           />
 

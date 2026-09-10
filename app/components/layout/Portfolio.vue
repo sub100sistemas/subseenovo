@@ -12,7 +12,6 @@ interface PortfolioProps {
   sectionClass?: string
   containerClass?: string
   panelClass?: string
-  panelGradient?: string
   headerWrapperClass?: string
   headingClass?: string
   leadClass?: string
@@ -43,7 +42,6 @@ const props = withDefaults(defineProps<PortfolioProps>(), {
   containerClass: 'container-page',
   panelClass:
     'overflow-hidden rounded-[30px] px-6 py-10 tablet:px-10 tablet:py-14 tablet-lg:rounded-[50px] desktop-full:px-[65px] desktop-full:py-[85px]',
-  panelGradient: undefined,
   headerWrapperClass: 'mx-auto max-w-[1150px] text-center',
   headingClass: 'mx-auto leading-[1.2] desktop-full:max-w-[1053px]',
   leadClass:
@@ -76,7 +74,7 @@ const props = withDefaults(defineProps<PortfolioProps>(), {
 <template>
   <section :id="sectionId" :class="sectionClass">
     <div :class="containerClass">
-      <div :class="panelClass" :style="panelGradient ? { backgroundImage: panelGradient } : undefined">
+      <div :class="panelClass">
         <div :class="headerWrapperClass">
           <h2 :class="headingClass">
             <slot name="heading" />

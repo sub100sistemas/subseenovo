@@ -1,6 +1,4 @@
 <script setup lang="ts">
-type StyleValue = string | Record<string, string | number>
-
 type PictureImgAttrs = {
   alt: string
   class: string
@@ -19,12 +17,10 @@ interface Props {
   ctaWrapperClass?: string
   curveArrowSrc?: string
   curveArrowClass?: string
-  curveArrowStyle?: StyleValue
   mockupWrapperClass?: string
   showStar?: boolean
   starSrc?: string
   starClass?: string
-  starStyle?: StyleValue
   mockupSrc?: string
   mockupWidth?: number
   mockupHeight?: number
@@ -43,17 +39,10 @@ withDefaults(defineProps<Props>(), {
   descriptionClass:
     'mx-auto mt-4 max-w-[1048px] text-[20px] leading-[1.4] text-ink tablet-lg:text-[24px] desktop-full:mt-[30px]',
   ctaWrapperClass: 'mt-8 flex justify-center desktop-full:mt-[30px]',
-  curveArrowClass: 'pointer-events-none absolute hidden desktop-full:block',
-  curveArrowStyle: () => ({
-    right: '18.03px',
-    top: '48px',
-    width: '184.972px',
-    height: '210.812px',
-  }),
+  curveArrowClass: 'pointer-events-none absolute hidden right-[18.03px] top-[48px] w-[184.972px] h-[210.812px] desktop-full:block',
   mockupWrapperClass: 'relative mt-10 desktop-full:mt-[75px]',
   showStar: false,
   starClass: 'pointer-events-none absolute top-1/2 left-0 hidden size-[80px] -translate-y-1/2 desktop-full:block',
-  starStyle: undefined,
   mockupDensities: 'x1 x2',
 })
 </script>
@@ -82,7 +71,6 @@ withDefaults(defineProps<Props>(), {
           alt=""
           aria-hidden="true"
           :class="curveArrowClass"
-          :style="curveArrowStyle"
         />
 
         <div :class="mockupWrapperClass">
@@ -92,7 +80,6 @@ withDefaults(defineProps<Props>(), {
             alt=""
             aria-hidden="true"
             :class="starClass"
-            :style="starStyle"
           />
 
           <NuxtPicture

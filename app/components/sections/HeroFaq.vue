@@ -68,29 +68,25 @@ const faqs = [
           src="/icons/hero-faq-interrogacao-inferior-esquerda-1.svg"
           alt=""
           aria-hidden="true"
-          class="pointer-events-none absolute hidden tablet-lg:block"
-          style="left: -22.33%; top: 15.45%; width: 21.45%"
+          class="pointer-events-none absolute hidden -left-[22.33%] top-[15.45%] w-[21.45%] tablet-lg:block"
         />
         <img
           src="/icons/hero-faq-interrogacao-inferior-esquerda-2.svg"
           alt=""
           aria-hidden="true"
-          class="pointer-events-none absolute hidden tablet-lg:block"
-          style="left: -24.75%; top: 13.65%; width: 18.45%"
+          class="pointer-events-none absolute hidden -left-[24.75%] top-[13.65%] w-[18.45%] tablet-lg:block"
         />
         <img
           src="/icons/hero-faq-interrogacao-superior-direita-1.svg"
           alt=""
           aria-hidden="true"
-          class="pointer-events-none absolute hidden tablet-lg:block"
-          style="left: 102.4%; top: -2.96%; width: 21.44%"
+          class="pointer-events-none absolute hidden left-[102.4%] -top-[2.96%] w-[21.44%] tablet-lg:block"
         />
         <img
           src="/icons/hero-faq-interrogacao-superior-direita-2.svg"
           alt=""
           aria-hidden="true"
-          class="pointer-events-none absolute hidden tablet-lg:block"
-          style="left: 99.96%; top: -4.76%; width: 18.44%"
+          class="pointer-events-none absolute hidden left-[99.96%] -top-[4.76%] w-[18.44%] tablet-lg:block"
         />
 
         <div
@@ -100,15 +96,13 @@ const faqs = [
             src="/icons/hero-faq-interrogacao-caixa-esquerda.svg"
             alt=""
             aria-hidden="true"
-            class="pointer-events-none absolute hidden tablet-lg:block"
-            style="left: -12.77%; top: 84.26%; width: 31.7%"
+            class="pointer-events-none absolute hidden -left-[12.77%] top-[84.26%] w-[31.7%] tablet-lg:block"
           />
           <img
             src="/icons/hero-faq-interrogacao-caixa-direita.svg"
             alt=""
             aria-hidden="true"
-            class="pointer-events-none absolute hidden tablet-lg:block"
-            style="left: 23.76%; top: 84.26%; width: 31.3%"
+            class="pointer-events-none absolute hidden left-[23.76%] top-[84.26%] w-[31.3%] tablet-lg:block"
           />
 
           <div class="relative grid grid-cols-1 gap-10 tablet-lg:grid-cols-[1fr_2fr] tablet-lg:gap-16">

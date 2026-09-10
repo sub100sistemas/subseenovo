@@ -3,23 +3,38 @@ const isPastHero = ref(false)
 const isFixedMode = ref(false)
 const isVisible = ref(false)
 const skipTransition = ref(false)
+const headerEl = ref<HTMLElement | null>(null)
 let observer: IntersectionObserver | null = null
 
-onMounted(() => {
+function setupObserver() {
+  observer?.disconnect()
   const heroEl = document.getElementById('hero-main')
   if (!heroEl) return
-
+  const headerHeight = headerEl.value?.offsetHeight ?? 85
   observer = new IntersectionObserver(
     ([entry]) => {
       isPastHero.value = !entry.isIntersecting
     },
-    { rootMargin: '-85px 0px 0px 0px', threshold: 0 }
+    { rootMargin: `-${headerHeight}px 0px 0px 0px`, threshold: 0 }
   )
   observer.observe(heroEl)
+}
+
+onMounted(() => {
+  setupObserver()
 })
 
 onBeforeUnmount(() => {
   observer?.disconnect()
+})
+
+const route = useRoute()
+watch(() => route.fullPath, async () => {
+  observer?.disconnect()
+  observer = null
+  isPastHero.value = false
+  await nextTick()
+  setupObserver()
 })
 
 watch(isPastHero, (pastHero) => {
@@ -54,7 +69,7 @@ const trackingClasses = computed(() => [
     :class="trackingClasses"
     aria-hidden="true"
   >
-    <div class="absolute inset-x-0 top-[85px] h-[34px] overflow-x-hidden">
+    <div class="absolute inset-x-0 top-[64px] h-[34px] overflow-x-hidden mobile-lg:top-[85px]">
       <img
         src="/icons/header-sombra-divisoria.svg"
         width="1717"
@@ -65,9 +80,9 @@ const trackingClasses = computed(() => [
     </div>
   </div>
 
-  <header class="z-50 bg-white ease-out" :class="trackingClasses" @dragstart.prevent>
+  <header ref="headerEl" class="z-50 bg-white ease-out" :class="trackingClasses" @dragstart.prevent>
     <HeaderBar :is-past-hero="isPastHero" />
   </header>
 
-  <div class="transition-none" :class="isFixedMode ? 'h-[85px]' : 'h-0'" aria-hidden="true" />
+  <div class="transition-none" :class="isFixedMode ? 'h-[64px] mobile-lg:h-[85px]' : 'h-0'" aria-hidden="true" />
 </template>

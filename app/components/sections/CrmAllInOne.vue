@@ -43,8 +43,7 @@ const cards: FeatureCard[] = [
   <section id="crm-all-in-one" class="section-py">
     <div class="container-page">
       <div
-        class="rounded-[20px] px-6 py-14 text-center text-white tablet-lg:px-16 tablet-lg:py-20"
-        style="background-image: linear-gradient(135deg, rgb(93, 95, 239) 0%, rgb(71, 126, 205) 55%, rgb(56, 177, 192) 100%)"
+        class="rounded-[20px] bg-[linear-gradient(135deg,_rgb(93,95,239)_0%,_rgb(71,126,205)_55%,_rgb(56,177,192)_100%)] px-6 py-14 text-center text-white tablet-lg:px-16 tablet-lg:py-20"
       >
         <h2 class="text-white">Tudo o que sua imobiliária precisa para vender mais</h2>
         <p class="mx-auto mt-4 max-w-[900px] text-base leading-[1.4] text-white/80 tablet-lg:text-xl">

@@ -1,8 +1,4 @@
 <script setup lang="ts">
-const backgroundStyle = {
-  backgroundImage: 'linear-gradient(to bottom, rgba(219,234,254,0.6), white 76.442%)'
-}
-
 const testimonials = [
   {
     quote:
@@ -32,7 +28,7 @@ const testimonials = [
 </script>
 
 <template>
-  <section id="depoimentos" class="section-py relative overflow-hidden" :style="backgroundStyle">
+  <section id="depoimentos" class="section-py relative overflow-hidden bg-[linear-gradient(to_bottom,rgba(219,234,254,0.6),white_76.442%)]">
     <div class="pointer-events-none absolute inset-x-0 top-0 h-auto w-full" aria-hidden="true">
       <img src="/icons/hero-depoimentos-onda-decorativa.svg" alt="" class="block h-auto w-full max-w-none" />
     </div>
@@ -67,15 +63,13 @@ const testimonials = [
             src="/icons/aspas-abertura.svg"
             alt=""
             aria-hidden="true"
-            class="pointer-events-none absolute -left-[14px] w-[93px]"
-            style="bottom: 146px"
+            class="pointer-events-none absolute -left-[14px] bottom-[146px] w-[93px]"
           />
           <img
             src="/icons/aspas-fechamento.svg"
             alt=""
             aria-hidden="true"
-            class="pointer-events-none absolute -left-[14px] w-[93px]"
-            style="bottom: 71px"
+            class="pointer-events-none absolute -left-[14px] bottom-[71px] w-[93px]"
           />
 
           <div class="flex w-full flex-col items-center">

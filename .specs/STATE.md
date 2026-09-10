@@ -89,6 +89,14 @@
 - **Date**: 2026-09-09
 - **Status**: active — image files need to be downloaded from Figma
 
+### AD-012
+- **Decision**: `/layout/Hero.vue` is the single shared visual shell for all CRM module hero sections. All four heroes (`CrmHero`, `CrmUrbanoHero`, `CrmRuralHero`, `CrmTemporadaHero`) wrap `<Hero>` directly — no intermediary section component acts as a base for another. The Hero height and responsive behavior are controlled exclusively by `Hero.vue` defaults (`aspect-[1401/528]` at `tablet-lg`, row at `1.33%/86.36%`) — individual section components must not override `aspectClass`, `frameClass`, `rowClass`, `topClass`, or `heightClass`. Complex floating graphic compositions (cards, arrows, icons) in the visual column must use pre-composed images (`card_arrow.png`) when available, rather than being reconstructed in HTML/CSS with `position: absolute` + `top`/`left`/`width`/`height` overrides and `<style scoped>` responsive patches. Each CRM module page has its own `card_arrow.png` under `public/images/modulos-crm-*/`.
+- **Reason**: The previous pattern had `CrmHero.vue` acting as both a product section and an intermediary base for the other three heroes (3-level chain: sub-hero → CrmHero → Hero). This created two different roles in one component, required complex per-component `<style scoped>` responsive overrides for every floating card, and made the visual column hard to maintain. Pre-composed images exist for all four modules and faithfully represent the Figma design.
+- **Trade-off**: The graphic composition inside `card_arrow.png` is not individually styleable from Vue — text sizes and card positions are fixed in the image. Updating card content requires re-exporting the image from Figma rather than editing a Vue template. This is the intended trade-off: simpler codebase at the cost of image-managed content.
+- **Scope**: `app/components/layout/Hero.vue`, `app/components/sections/CrmHero.vue`, `app/components/sections/CrmUrbanoHero.vue`, `app/components/sections/CrmRuralHero.vue`, `app/components/sections/CrmTemporadaHero.vue`.
+- **Date**: 2026-09-10
+- **Status**: active
+
 ## Handoff
 
 - **Feature**: crm-imobiliario-temporada (`.specs/features/crm-imobiliario-temporada`) — **DONE**

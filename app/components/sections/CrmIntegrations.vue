@@ -12,20 +12,18 @@
                 <img
                   src="/icons/crm-integrations-bubble-loading.svg"
                   alt="Ícone de sincronização automática"
-                  class="absolute max-w-none"
-                  style="left: -40%; top: -12.946%; width: 180%; height: 157.143%"
+                  class="absolute -left-[40%] -top-[12.946%] w-[180%] h-[157.143%] max-w-none"
                 />
               </div>
               <div class="flex h-28 w-20 flex-col items-center justify-center gap-1 rounded-full bg-white shadow-[0px_35px_32px_rgba(0,0,0,0.08)] tablet:h-[168px] tablet:w-[120px] tablet-lg:h-56 tablet-lg:w-40 tablet-lg:gap-2">
                 <img src="/icons/crm-integrations-sub100-mark.svg" alt="" aria-hidden="true" class="h-[23px] w-[34px] tablet:h-[34px] tablet:w-[51px] tablet-lg:h-[45.63px] tablet-lg:w-[68px]" />
-                <p class="font-['Poppins'] text-[10px] leading-[1.6] text-brand tablet:text-xs tablet-lg:text-sm">Meu Site</p>
+                <p class="text-[10px] leading-[1.6] text-brand tablet:text-xs tablet-lg:text-sm">Meu Site</p>
               </div>
               <div class="relative h-28 w-20 overflow-hidden rounded-full tablet:h-[168px] tablet:w-[120px] tablet-lg:h-56 tablet-lg:w-40">
                 <img
                   src="/icons/crm-integrations-bubble-ring.svg"
                   alt="Ícone do RD Station"
-                  class="absolute max-w-none"
-                  style="left: -40%; top: -12.946%; width: 180%; height: 157.143%"
+                  class="absolute -left-[40%] -top-[12.946%] w-[180%] h-[157.143%] max-w-none"
                 />
               </div>
             </div>
@@ -34,13 +32,12 @@
                 <img
                   src="/icons/crm-integrations-bubble-whatsapp.svg"
                   alt="Ícone do WhatsApp"
-                  class="absolute max-w-none"
-                  style="left: -40%; top: -12.946%; width: 180%; height: 157.143%"
+                  class="absolute -left-[40%] -top-[12.946%] w-[180%] h-[157.143%] max-w-none"
                 />
               </div>
               <div class="flex h-28 w-20 flex-col items-center justify-center gap-1 rounded-full bg-white shadow-[0px_35px_32px_rgba(0,0,0,0.08)] tablet:h-[168px] tablet:w-[120px] tablet-lg:h-56 tablet-lg:w-40 tablet-lg:gap-2">
                 <img src="/icons/crm-integrations-sub100-mark.svg" alt="" aria-hidden="true" class="h-[23px] w-[34px] tablet:h-[34px] tablet:w-[51px] tablet-lg:h-[45.63px] tablet-lg:w-[68px]" />
-                <p class="font-['Poppins'] text-[10px] leading-[1.6] text-brand tablet:text-xs tablet-lg:text-sm">Imóveis</p>
+                <p class="text-[10px] leading-[1.6] text-brand tablet:text-xs tablet-lg:text-sm">Imóveis</p>
               </div>
               <div class="flex h-28 w-20 items-center justify-center rounded-full bg-white shadow-[0px_35px_32px_rgba(0,0,0,0.08)] tablet:h-[168px] tablet:w-[120px] tablet-lg:h-56 tablet-lg:w-40">
                 <img src="/icons/crm-integrations-meta-icon.svg" alt="Ícone do Meta" class="h-[27px] w-10 tablet:h-10 tablet:w-[60px] tablet-lg:h-[53.14px] tablet-lg:w-20" />
@@ -52,12 +49,12 @@
         <div
           class="flex w-full flex-col items-start gap-[50px] px-10 py-10 tablet-lg:w-[57.57%] tablet-lg:justify-center tablet-lg:px-0 tablet-lg:pr-10 tablet-lg:pl-16"
         >
-          <h2 class="font-['Poppins'] text-3xl leading-[1.4] font-normal text-ink tablet-lg:text-[50px]">
+          <h2 class="text-3xl leading-[1.4] font-normal text-ink tablet-lg:text-[50px]">
             Conecte <span class="font-bold text-brand">seu CRM</span> às
             <br class="hidden tablet-lg:block" />
             ferramentas que você já utiliza
           </h2>
-          <p class="font-['Poppins'] text-base leading-[1.4] text-black tablet-lg:text-[26px]">
+          <p class="text-base leading-[1.4] text-black tablet-lg:text-[26px]">
             Conecte o WhatsApp, Redes Sociais e o RD Station diretamente ao seu funil de
             atendimento, sem precisar alternar entre sistemas
           </p>

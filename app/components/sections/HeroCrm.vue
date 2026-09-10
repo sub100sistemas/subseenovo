@@ -45,26 +45,22 @@ const cards = [
   <section id="crm-imobiliario" class="section-py relative overflow-hidden">
     <div class="pointer-events-none absolute inset-0" aria-hidden="true">
       <div
-        class="absolute rounded-full"
-        style="left: 1000px; top: -360px; width: 620px; height: 620px; background: radial-gradient(circle, rgba(204,194,255,0.5) 0%, rgba(204,194,255,0) 70%)"
+        class="absolute left-[1000px] -top-[360px] w-[620px] h-[620px] rounded-full bg-[radial-gradient(circle,rgba(204,194,255,0.5)_0%,rgba(204,194,255,0)_70%)]"
       />
       <div
-        class="absolute rounded-full"
-        style="left: 1500px; top: 400px; width: 520px; height: 520px; background: radial-gradient(circle, rgba(173,240,219,0.45) 0%, rgba(173,240,219,0) 70%)"
+        class="absolute left-[1500px] top-[400px] w-[520px] h-[520px] rounded-full bg-[radial-gradient(circle,rgba(173,240,219,0.45)_0%,rgba(173,240,219,0)_70%)]"
       />
-      <img src="/icons/hero-crm-decoracao-pontos.svg" width="230" height="150" alt="" class="absolute" style="left: 10px; top: 10px" />
-      <img src="/icons/hero-crm-decoracao-pontos-teal.svg" width="230" height="150" alt="" class="absolute" style="left: 1690px; top: 680px" />
+      <img src="/icons/hero-crm-decoracao-pontos.svg" width="230" height="150" alt="" class="absolute left-[10px] top-[10px]" />
+      <img src="/icons/hero-crm-decoracao-pontos-teal.svg" width="230" height="150" alt="" class="absolute left-[1690px] top-[680px]" />
       <img
         src="/icons/hero-website-onda-decorativa-branca.svg"
         alt=""
-        class="absolute"
-        style="left: -1px; top: 256px; width: 1920px; height: 173.455px; transform: rotate(180deg) scaleY(-1); max-width: none"
+        class="absolute -left-px top-[256px] w-[1920px] h-[173.455px] rotate-180 -scale-y-100 max-w-none"
       />
       <img
         src="/icons/hero-website-onda-decorativa-azul.svg"
         alt=""
-        class="absolute"
-        style="left: -0.95px; top: 252px; width: 1919.95px; height: 190.853px; transform: rotate(180deg) scaleY(-1); max-width: none"
+        class="absolute -left-[0.95px] top-[252px] w-[1919.95px] h-[190.853px] rotate-180 -scale-y-100 max-w-none"
       />
     </div>
 

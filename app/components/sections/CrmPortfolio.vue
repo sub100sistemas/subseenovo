@@ -12,7 +12,6 @@ interface Props {
   sectionClass?: string
   containerClass?: string
   panelClass?: string
-  panelGradient?: string
   headerWrapperClass?: string
   headingClass?: string
   leadClass?: string
@@ -41,8 +40,7 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
   sectionId: 'crm-urbano-portfolio',
   panelClass:
-    'overflow-hidden rounded-[30px] px-6 py-10 tablet:px-10 tablet:py-14 tablet-lg:rounded-[50px] desktop-full:px-[65px] desktop-full:py-[85px]',
-  panelGradient: 'linear-gradient(76.19deg, #e6faf1 5.56%, #ecf8f9 30.92%, #eff2fa 76.37%, #c5dcf0 98.37%)',
+    'overflow-hidden rounded-[30px] bg-[linear-gradient(76.19deg,_#e6faf1_5.56%,_#ecf8f9_30.92%,_#eff2fa_76.37%,_#c5dcf0_98.37%)] px-6 py-10 tablet:px-10 tablet:py-14 tablet-lg:rounded-[50px] desktop-full:px-[65px] desktop-full:py-[85px]',
   headerWrapperClass: 'mx-auto max-w-[1150px] text-center',
   headingClass: 'mx-auto leading-[1.2] desktop-full:max-w-[1053px]',
   leadClass:
@@ -78,7 +76,6 @@ const props = withDefaults(defineProps<Props>(), {
     :section-class="sectionClass"
     :container-class="containerClass"
     :panel-class="panelClass"
-    :panel-gradient="panelGradient"
     :header-wrapper-class="headerWrapperClass"
     :heading-class="headingClass"
     :lead-class="leadClass"

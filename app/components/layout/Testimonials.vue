@@ -43,10 +43,8 @@ interface Props {
   quoteClass?: string
   openingQuoteSrc?: string
   openingQuoteClass?: string
-  openingQuoteStyle?: string
   closingQuoteSrc?: string
   closingQuoteClass?: string
-  closingQuoteStyle?: string
   profileClass?: string
   logosWrapperClass?: string
   logoItemClass?: string
@@ -84,11 +82,9 @@ const props = withDefaults(defineProps<Props>(), {
   starsClass: 'shrink-0',
   quoteClass: 'flex-1 text-center text-base leading-[1.5] text-ink',
   openingQuoteSrc: '/icons/aspas-abertura.svg',
-  openingQuoteClass: 'pointer-events-none absolute -left-[14px] w-[93px]',
-  openingQuoteStyle: 'bottom: 125px',
+  openingQuoteClass: 'pointer-events-none absolute -left-[14px] bottom-[125px] w-[93px]',
   closingQuoteSrc: '/icons/aspas-fechamento.svg',
-  closingQuoteClass: 'pointer-events-none absolute -left-[14px] w-[93px]',
-  closingQuoteStyle: 'bottom: 50px',
+  closingQuoteClass: 'pointer-events-none absolute -left-[14px] bottom-[50px] w-[93px]',
   profileClass: 'flex w-full flex-col items-center',
   logosWrapperClass: 'flex w-full flex-col items-center gap-3',
   logoItemClass: 'flex h-[65px] w-full items-center justify-center',
@@ -158,7 +154,6 @@ const props = withDefaults(defineProps<Props>(), {
               alt=""
               aria-hidden="true"
               :class="openingQuoteClass"
-              :style="openingQuoteStyle"
             />
             <img
               v-if="closingQuoteSrc"
@@ -166,7 +161,6 @@ const props = withDefaults(defineProps<Props>(), {
               alt=""
               aria-hidden="true"
               :class="closingQuoteClass"
-              :style="closingQuoteStyle"
             />
 
             <div :class="profileClass">

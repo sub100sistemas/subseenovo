@@ -34,8 +34,7 @@ const badges = [
         class="hero-integrations-canvas relative overflow-hidden rounded-[40px] bg-[#F2F1F8] px-6 py-14 tablet-lg:aspect-[1401/844] tablet-lg:px-0 tablet-lg:py-0"
       >
         <div
-          class="pointer-events-none absolute aspect-square rounded-full border border-teal opacity-40"
-          style="left: -12.32%; top: -4.4%; width: 36.97%"
+          class="pointer-events-none absolute -left-[12.32%] -top-[4.4%] w-[36.97%] aspect-square rounded-full border border-teal opacity-40"
           aria-hidden="true"
         />
 

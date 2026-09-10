@@ -56,8 +56,7 @@ const brokers: Broker[] = [
   <section id="crm-urbano-leads" class="section-py">
     <div class="container-page">
       <div
-        class="relative overflow-hidden rounded-[30px] px-4 py-10 tablet:px-8 tablet-lg:rounded-[50px] desktop-full:px-0 desktop-full:py-[56px]"
-        style="background-image: linear-gradient(112.23deg, #f2f1f8 5.76%, #e3ecf8 46%, #f2f1f8 89.6%)"
+        class="relative overflow-hidden rounded-[30px] bg-[linear-gradient(112.23deg,_#f2f1f8_5.76%,_#e3ecf8_46%,_#f2f1f8_89.6%)] px-4 py-10 tablet:px-8 tablet-lg:rounded-[50px] desktop-full:px-0 desktop-full:py-[56px]"
       >
         <img
           src="/icons/crm-urbano-leads-bloco-blobs.svg"
@@ -144,8 +143,7 @@ const brokers: Broker[] = [
             <div class="flex flex-col items-center gap-4 rounded-[24px] border border-[#d8d7fa] bg-white/93 px-6 py-5 tablet-lg:absolute tablet-lg:top-[26.09%] tablet-lg:left-[37.99%] tablet-lg:w-[25.27%] tablet-lg:gap-[10px] tablet-lg:rounded-[19px] tablet-lg:px-[14px] tablet-lg:py-[15px] desktop-compact:rounded-[20px] desktop-compact:py-[16px] desktop:gap-3 desktop:rounded-[25px] desktop:px-5 desktop:py-[19px] desktop-full:rounded-[30px] desktop-full:px-6 desktop-full:py-[23px]">
               <div class="flex items-center gap-[14px] tablet-lg:gap-[9px] desktop:gap-[11px] desktop-full:gap-[14px]">
                 <span
-                  class="flex size-[60px] shrink-0 items-center justify-center rounded-[17px] tablet-lg:size-[46px] tablet-lg:rounded-[13px] desktop-compact:size-12 desktop:size-[58px] desktop:rounded-[16px] desktop-full:size-[69px] desktop-full:rounded-[19px]"
-                  style="background-image: linear-gradient(126deg, #6e67ff 0%, #4644e8 100%)"
+                  class="flex size-[60px] shrink-0 items-center justify-center rounded-[17px] bg-[linear-gradient(126deg,_#6e67ff_0%,_#4644e8_100%)] tablet-lg:size-[46px] tablet-lg:rounded-[13px] desktop-compact:size-12 desktop:size-[58px] desktop:rounded-[16px] desktop-full:size-[69px] desktop-full:rounded-[19px]"
                 >
                   <img
                     src="/icons/crm-urbano-leads-icone-camadas.svg"
@@ -184,22 +182,19 @@ const brokers: Broker[] = [
                     src="/icons/crm-urbano-leads-icone-tempo-1.svg"
                     alt=""
                     aria-hidden="true"
-                    class="absolute max-w-none"
-                    style="left: 8.33%; top: 16.67%; width: 83.33%; height: 38.89%"
+                    class="absolute left-[8.33%] top-[16.67%] w-[83.33%] h-[38.89%] max-w-none"
                   />
                   <img
                     src="/icons/crm-urbano-leads-icone-tempo-2.svg"
                     alt=""
                     aria-hidden="true"
-                    class="absolute max-w-none"
-                    style="left: 25%; top: 27.78%; width: 50%; height: 50%"
+                    class="absolute left-[25%] top-[27.78%] w-1/2 h-1/2 max-w-none"
                   />
                   <img
                     src="/icons/crm-urbano-leads-icone-tempo-3.svg"
                     alt=""
                     aria-hidden="true"
-                    class="absolute max-w-none"
-                    style="left: 47.22%; top: 38.89%; width: 19.44%; height: 16.67%"
+                    class="absolute left-[47.22%] top-[38.89%] w-[19.44%] h-[16.67%] max-w-none"
                   />
                 </span>
               </span>

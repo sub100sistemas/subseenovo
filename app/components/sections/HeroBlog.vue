@@ -50,16 +50,14 @@ const posts: Post[] = [
         width="1920"
         height="173"
         alt=""
-        class="absolute"
-        style="left: -1px; top: 11px; width: 1920px; height: 173.455px; transform: rotate(180deg) scaleY(-1); max-width: none"
+        class="absolute -left-px top-[11px] w-[1920px] h-[173.455px] rotate-180 -scale-y-100 max-w-none"
       />
       <img
         src="/icons/hero-website-onda-decorativa-azul.svg"
         width="1920"
         height="191"
         alt=""
-        class="absolute"
-        style="left: -0.95px; top: 14.79px; width: 1919.95px; height: 190.853px; transform: rotate(180deg) scaleY(-1); max-width: none"
+        class="absolute -left-[0.95px] top-[14.79px] w-[1919.95px] h-[190.853px] rotate-180 -scale-y-100 max-w-none"
       />
     </div>
 

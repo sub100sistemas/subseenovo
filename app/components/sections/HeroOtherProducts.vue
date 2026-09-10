@@ -46,16 +46,14 @@ const products: Product[] = [
         width="1920"
         height="175"
         alt=""
-        class="absolute"
-        style="left: -1px; top: 21.19px; width: 1920.36px; height: 175.453px; transform: rotate(180deg); max-width: none"
+        class="absolute -left-px top-[21.19px] w-[1920.36px] h-[175.453px] rotate-180 max-w-none"
       />
       <img
         src="/icons/hero-website-onda-decorativa-azul.svg"
         width="1920"
         height="191"
         alt=""
-        class="absolute"
-        style="left: -0.95px; top: 0px; width: 1919.95px; height: 190.853px; transform: rotate(180deg); max-width: none"
+        class="absolute -left-[0.95px] top-0 w-[1919.95px] h-[190.853px] rotate-180 max-w-none"
       />
     </div>
 
