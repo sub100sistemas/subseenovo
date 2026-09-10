@@ -14,7 +14,7 @@ useSeoMeta({
 <template>
   <main>
     <SiteUrbanoHero />
-    <SiteUrbanoShowcase />
+    <SiteUrbanoTechnology />
     <SiteUrbanoListings />
     <SiteUrbanoPropertySheet />
     <SiteUrbanoInternational />
