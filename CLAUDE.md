@@ -46,7 +46,7 @@ This is a static marketing site (Nuxt 4 + Vue 3 `<script setup>` + Tailwind v4),
 
 ## Git workflow
 
-Every task uses its own branch and merges to `main` when done:
+Every task uses its own branch and merges to `master` when done:
 
 ```bash
 git checkout -b feature/<task-slug>   # new pages/sections
@@ -56,12 +56,12 @@ git checkout -b chore/<task-slug>     # infra / docs / tooling
 # implement, then:
 git add <files>
 git commit -m "<type>: <description>"
-git checkout main
+git checkout master
 git merge feature/<task-slug>
 git branch -d feature/<task-slug>
 ```
 
-Never commit directly to `main`. One branch per task; merge when the task is complete and `pnpm build` succeeds.
+Never commit directly to `master`. One branch per task; merge when the task is complete and `pnpm build` succeeds.
 
 ## Code comments
 
