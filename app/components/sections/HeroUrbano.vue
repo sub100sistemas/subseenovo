@@ -58,7 +58,7 @@ const featureItems = [
             <CtaButton
               variant="outline"
               :icon="false"
-              to="/modulos/urbanos"
+              to="/modulos/crm-imobiliario-urbano"
               class="whitespace-nowrap"
             >
               Conheça o módulo Urbanos

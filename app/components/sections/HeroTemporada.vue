@@ -70,7 +70,7 @@ const featureItems = [
             <CtaButton
               variant="outline"
               :icon="false"
-              to="/modulos/temporada"
+              to="/modulos/crm-imobiliario-temporada"
               class="whitespace-nowrap"
             >
               Conheça o módulo Temporadas
