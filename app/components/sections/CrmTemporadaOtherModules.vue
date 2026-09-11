@@ -23,7 +23,7 @@ const modules: OtherModuleCard[] = [
     icon: '/icons/menu-icone-crm-rural.svg',
     title: 'CRM Imobiliário Rural',
     description: 'Gestão completa de propriedades rurais e negociações do campo.',
-    href: '/modulos/rural'
+    href: '/modulos/crm-imobiliario-rural'
   }
 ]
 </script>
