@@ -6,7 +6,8 @@
       "PowerShell(python --version)",
       "PowerShell(py \"d:\\\\Trabalho\\\\Git\\\\site-subsee-novo\\\\.claude\\\\skills\\\\tlc-spec-driven\\\\scripts\\\\lessons.py\" list --status confirmed --root \"d:\\\\Trabalho\\\\Git\\\\site-subsee-novo\")",
       "PowerShell(py \"d:\\\\Trabalho\\\\Git\\\\site-subsee-novo\\\\.claude\\\\skills\\\\tlc-spec-driven\\\\scripts\\\\lessons.py\" --root \"d:\\\\Trabalho\\\\Git\\\\site-subsee-novo\" list --status confirmed)",
-      "PowerShell(py \"d:\\\\Trabalho\\\\Git\\\\site-subsee-novo\\\\.claude\\\\skills\\\\tlc-spec-driven\\\\scripts\\\\validate_spec.py\" \"d:\\\\Trabalho\\\\Git\\\\site-subsee-novo\\\\.specs\\\\features\\\\crm-imobiliario\\\\spec.md\")"
+      "PowerShell(py \"d:\\\\Trabalho\\\\Git\\\\site-subsee-novo\\\\.claude\\\\skills\\\\tlc-spec-driven\\\\scripts\\\\validate_spec.py\" \"d:\\\\Trabalho\\\\Git\\\\site-subsee-novo\\\\.specs\\\\features\\\\crm-imobiliario\\\\spec.md\")",
+      "Bash(git merge *)"
     ]
   }
 }
