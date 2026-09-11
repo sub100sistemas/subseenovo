@@ -104,7 +104,9 @@
       "Bash(MSYS_NO_PATHCONV=1 node shot.mjs \"/modulos/site-para-imobiliarias-rurais\" \"#site-rural-america-do-sul\" \"sarural2\" \"1440,375\")",
       "Bash(MSYS_NO_PATHCONV=1 node shot-reliable.mjs \"/modulos/site-para-imobiliarias-rurais\" \"#site-rural-america-do-sul\" \"sarural3\" \"1440,375\")",
       "Bash(grep -rn \"translate-\\\\|^\\\\s*//\\\\|^\\\\s*/\\\\*\" app/components/sections/SiteRuralSouthAmerica.vue)",
-      "Bash(git cherry-pick *)"
+      "Bash(git cherry-pick *)",
+      "Bash(git commit *)",
+      "Bash(echo \"clean=$?\")"
     ]
   }
 }
