@@ -49,7 +49,7 @@ const moduleIcons: HeroModuleIcon[] = [
           src="/icons/crm-temporada-hero-calendar.svg"
           alt=""
           aria-hidden="true"
-          class="absolute left-[30%] top-[26%] w-[50%] h-[50%]"
+          class="absolute left-[27%] top-[26%] w-[50%] h-[50%]"
         />
       </div>
     </template>
