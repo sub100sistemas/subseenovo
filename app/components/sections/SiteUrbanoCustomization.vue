@@ -65,8 +65,8 @@ const features: PortfolioFeature[] = [
       <div class="relative mx-auto w-full max-w-[664px] pb-5">
         <NuxtImg
           src="/images/modulos-site-urbano/customization-mockup-laptop-phone.png"
-          :width="690"
-          :height="430"
+          :width="1471"
+          :height="832"
           sizes="mobile-lg:100vw tablet-lg:440px desktop:580px desktop-full:664px"
           alt="Mockup mostrando laptop e celular com o painel de personalização do site da imobiliária urbana"
           class="relative z-10 h-auto w-full"

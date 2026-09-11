@@ -103,29 +103,30 @@ _Duas decisões técnicas menores ficam para o Design (se aberto), sem bloquear 
 
 | Requirement ID | Story | Task | Status |
 |---|---|---|---|
-| SLO-01 | P1 | TBD | pending |
-| SLO-02 | P1 | TBD | pending |
-| SLO-03 | P1 | TBD | pending |
-| SLO-04 | P1 | TBD | pending |
-| SLO-05 | P2 | TBD | pending |
-| SLO-06 | P2 | TBD | pending |
-| SLO-07 | P2 | TBD | pending |
-| SLO-08 | P2 | TBD | pending |
-| SLO-09 | P2 | TBD | pending |
-| SLO-10 | P3 | TBD | pending |
-| SLO-11 | P3 | TBD | pending |
-| SLO-12 | P3 | TBD | pending |
+| SLO-01 | P1 | T07 | done |
+| SLO-02 | P1 | T07 | done |
+| SLO-03 | P1 | T08 | done |
+| SLO-04 | P1 | T04 | done |
+| SLO-05 | P2 | T01-T06 | done |
+| SLO-06 | P2 | T01-T06 | done |
+| SLO-07 | P2 | T01-T06 | done |
+| SLO-08 | P2 | T01,T02,T05 | done |
+| SLO-09 | P2 | T03,T04,T06 | done |
+| SLO-10 | P3 | T01 | done |
+| SLO-11 | P3 | T07 | done |
+| SLO-12 | P3 | T01-T06 | done |
 
-ID format: `SLO-NN` · Status values: `pending` | `done` · Coverage: 12 requisitos / 3 stories · Tasks a atribuir na fase Tasks/Execute (fora do escopo desta etapa Specify)
+ID format: `SLO-NN` · Status values: `pending` | `done` · Coverage: 12 requisitos / 3 stories
+T01 Hero · T02 Technology · T03 ComingSoon · T04 OtherModules · T05 Faq · T06 SglOffer · T07 Página+SEO · T08 Ativação dos links nas páginas irmãs
 
 ## Success Criteria
 
-- [ ] `pnpm build` conclui sem erros
-- [ ] As 6 seções renderizam na ordem do Figma
-- [ ] Cada seção confere com o node Figma em 1440px
-- [ ] Sem scroll horizontal em 375px, 768px e 992px
-- [ ] Exatamente um `<h1>` na página
-- [ ] `useSeoMeta` completo no padrão `SUBSEE | …`
-- [ ] Links "Site para Loteadoras" ativos em `HeaderBar.vue`, `SiteUrbanoOtherModules.vue` e `SiteRuralOtherModules.vue`, mantendo o badge "breve"
-- [ ] Zero `translate-*` e zero comentários nos arquivos novos
-- [ ] Nenhum asset duplicado com `modulos-site-urbano/`/`modulos-site-rural/` para ícones já compartilhados
+- [x] `pnpm build` conclui sem erros
+- [x] As 6 seções renderizam na ordem do Figma
+- [x] Cada seção confere com o node Figma em 1440px
+- [x] Sem scroll horizontal em 375px, 768px e 992px
+- [x] Exatamente um `<h1>` na página
+- [x] `useSeoMeta` completo no padrão `SUBSEE | …`
+- [x] Links "Site para Loteadoras" ativos em `HeaderBar.vue` (já apontava para a rota), `SiteUrbanoOtherModules.vue` e `SiteRuralOtherModules.vue`, mantendo o badge "breve"
+- [x] Zero `translate-*` e zero comentários nos arquivos novos
+- [x] Nenhum asset duplicado com `modulos-site-urbano/`/`modulos-site-rural/` para ícones já compartilhados
