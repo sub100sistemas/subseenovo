@@ -178,7 +178,7 @@ Insira scripts de marketing, análise, segurança e atendimento diretamente pelo
 **Badge:** ✓ Integração ativa
 
 **Assets:**
-- `/images/modulos-site-urbano/tools-mockup-integration-circle.png` — diagrama circular de integrações
+- `/images/modulos-site-urbano/tools-diagrama-integracoes.png` — diagrama circular de integrações (node `3135:9635`)
 
 ---
 
