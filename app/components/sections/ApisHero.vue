@@ -33,7 +33,7 @@ const moduleIcons: HeroModuleIcon[] = [
           loading="eager"
         />
       </div>
-
+    
       <img
         src="/images/modulos-apis-hub-integrador/card_arrow.png"
         alt=""
