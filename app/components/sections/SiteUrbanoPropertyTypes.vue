@@ -65,19 +65,19 @@ const groups: PropertyType[][] = [[terreno, lazer], [lancamento], [residencial, 
           src="/icons/site-urbano-property-types-curva.svg"
           alt=""
           aria-hidden="true"
-          class="pointer-events-none absolute left-[-2%] top-[38%] hidden w-[104%] tablet-lg:block"
+          class="pointer-events-none absolute -bottom-4 left-[-1%] hidden w-[102%] tablet-lg:block"
         />
 
-        <div class="relative flex items-center justify-center gap-3 tablet:gap-4 desktop:gap-6">
+        <div class="relative flex items-center justify-center gap-2 tablet:gap-4 desktop:gap-8">
           <div
             v-for="(group, groupIndex) in groups"
             :key="groupIndex"
-            class="flex items-end gap-3 tablet:gap-4 desktop:gap-6"
+            class="flex items-end gap-2 tablet:gap-4 desktop:gap-8"
           >
             <div
               v-for="type in group"
               :key="type.label"
-              class="relative w-[26%] shrink-0 overflow-hidden rounded-[12px] tablet:rounded-[16px] mobile-lg:w-[18%] tablet:w-[16%]"
+              class="relative w-[64px] shrink-0 overflow-hidden rounded-[12px] mobile-lg:w-[90px] tablet:w-[130px] tablet:rounded-[16px] tablet-lg:w-[170px] desktop:w-[220px]"
               :style="{ aspectRatio: `${type.width} / ${type.height}` }"
             >
               <NuxtImg

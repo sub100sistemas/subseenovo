@@ -60,31 +60,32 @@ const groups: CountryCard[][] = [[bolivia, uruguai], [brasil], [argentina, parag
         </p>
       </div>
 
+
       <div class="relative mt-10 tablet-lg:mt-16">
         <img
-          src="/icons/site-rural-south-america-curva.svg"
+          src="/icons/site-urbano-property-types-curva.svg"
           alt=""
           aria-hidden="true"
-          class="pointer-events-none absolute top-[54.4%] left-[-8.47%] z-0 hidden h-[48.2%] w-[117.5%] max-w-none tablet-lg:block"
+          class="pointer-events-none absolute -bottom-4 left-[-1%] hidden w-[102%] tablet-lg:block"
         />
 
-        <div class="relative flex items-end justify-center gap-2 tablet:gap-4 desktop:gap-8">
+        <div class="relative flex items-center justify-center gap-2 tablet:gap-4 desktop:gap-8">
           <div
             v-for="(group, groupIndex) in groups"
             :key="groupIndex"
             class="flex items-end gap-2 tablet:gap-4 desktop:gap-8"
           >
             <div
-              v-for="country in group"
-              :key="country.label"
+              v-for="type in group"
+              :key="type.label"
               class="relative w-[64px] shrink-0 overflow-hidden rounded-[12px] mobile-lg:w-[90px] tablet:w-[130px] tablet:rounded-[16px] tablet-lg:w-[170px] desktop:w-[220px]"
-              :style="{ aspectRatio: `${country.width} / ${country.height}` }"
+              :style="{ aspectRatio: `${type.width} / ${type.height}` }"
             >
               <NuxtImg
-                :src="country.src"
-                :alt="country.alt"
-                :width="country.width"
-                :height="country.height"
+                :src="type.src"
+                :alt="type.alt"
+                :width="type.width"
+                :height="type.height"
                 sizes="mobile-lg:15vw tablet:16vw desktop:220px"
                 class="h-full w-full object-cover"
                 loading="lazy"
