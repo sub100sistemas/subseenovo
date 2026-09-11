@@ -170,3 +170,23 @@ Build-catchability note (for completeness, not a gap): none of the 3 mutations w
 2. **FAQ questions and Hero card titles don't use `<h3>`** (Minor) — inherited from the shared, unmodified `layout/Faq.vue` (site-wide pattern, not a regression) and from Gap 1 (cards don't exist as DOM at all). Fix: see Fix 2 above; recommend scoping as either an accepted `STATE.md` deviation or a separate cross-cutting fix.
 
 **Next steps**: Route Fix 1 (Major) back to an implementer before considering this feature fully done; Fix 2 (Minor) can be deferred to a dedicated cross-cutting task or explicitly accepted via a new `STATE.md` AD entry, since it mirrors an already-shipped, sitewide pattern. Note for whoever picks this up: the real working tree currently has *uncommitted* changes to `SiteLoteadorasHero.vue` that appear to already be adding the missing card/curve/icon overlay — worth checking before starting Fix 1 from scratch, as that work may already be in progress.
+
+---
+
+## Post-FAIL Fix Round (2026-09-11)
+
+**Context**: commit `39406eb` (`refactor(hero): reuse the photo+card_arrow+badge composition`, already on `master` before this round started) replaced the single flattened `hero-visual.png` with the standard photo + `card_arrow.png` overlay + corner-badge composition (same structure as `SiteUrbanoHero.vue`). Verified by direct pixel inspection of `public/images/modulos-site-loteadoras/card_arrow.png`: both floating cards ("Meu Site" + globe icon, "Sistema SGL" + package icon) and both decorative curves are present in the raster exactly as described in the manifest — **Gap 1's card/curve half was already resolved before this round began.**
+
+**Remaining half of Gap 1 (corner icon) — fixed this round**: `SiteLoteadorasHero.vue` still referenced `/icons/crm-urbano-hero-icone-calculadora.svg` (a calculator glyph borrowed from `CrmUrbanoHero.vue`) for the 50×50 corner badge. Re-fetched Figma node `3164:32832` via `get_design_context` — the real glyph is a location-pin-on-map icon (`stroke="#5D5FEF"`, 3-path SVG), not a calculator. Downloaded the exact asset bytes from the Figma dev-server asset URL (not hand-authored) to `public/icons/site-loteadoras-hero-icone-localizacao.svg` and repointed the `<img src>` in `SiteLoteadorasHero.vue`. Verified via a cropped Playwright screenshot at 3x device scale that the rendered badge now matches the Figma glyph pixel-for-pixel in shape (pin + circle + base).
+
+**Gap 1 status**: ✅ Resolved (cards + curves already fixed in `39406eb`; corner icon fixed this round).
+
+**Gap 2 status**: Unchanged — still deferred as documented above (site-wide `layout/Faq.vue` pattern, not unique to this page; recommend a `STATE.md` AD entry or a separate cross-cutting task rather than a one-page patch).
+
+**Re-verification performed this round**:
+- `pnpm build` — 0 errors, `site-para-loteadoras` route chunk present.
+- Playwright, real running dev server (not a worktree snapshot) at 1920/1440/992/768/375px: `document.documentElement.scrollWidth === clientWidth` at every breakpoint (no horizontal overflow), 0 console/page errors.
+- Heading counts unchanged from the original review: 1×`<h1>`, 5×`<h2>`, 3×`<h3>` (all from `TheFooter`, none from Hero cards or FAQ — consistent with Gap 2 remaining open).
+- Full-section screenshot of the Hero (`#site-loteadoras-hero` bounding box) visually cross-checked against `get_screenshot` of Figma node `3164:32802` — composition, card positions, curve colors (purple/green), and corner badge now match.
+
+**Updated overall verdict**: Gap 1 (Major) is closed. Gap 2 (Minor, sitewide, pre-existing) remains open and undecided — recommend the project owner either accept it via a new `STATE.md` AD entry or scope a dedicated cross-cutting fix touching `layout/Faq.vue` for every consuming page, rather than re-opening this single-page feature for it.

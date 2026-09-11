@@ -48,7 +48,7 @@ const moduleIcons: HeroModuleIcon[] = [
         class="absolute z-[2] hidden left-[92.93%] top-0 w-[6.94%] aspect-square rounded-[6px] border border-brand bg-[#e8e8fd] tablet-lg:block"
       >
         <img
-          src="/icons/crm-urbano-hero-icone-calculadora.svg"
+          src="/icons/site-loteadoras-hero-icone-localizacao.svg"
           alt=""
           aria-hidden="true"
           class="absolute left-[30%] top-[26%] w-[40%] h-[50%]"
