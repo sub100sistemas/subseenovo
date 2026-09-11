@@ -3,37 +3,47 @@ interface PropertyType {
   label: string
   src: string
   alt: string
-  isCentral?: boolean
+  width: number
+  height: number
 }
 
-const propertyTypes: PropertyType[] = [
-  {
-    label: 'Terreno',
-    src: '/images/modulos-site-urbano/property-type-terreno.jpeg',
-    alt: 'Terreno visto de cima, mostrando uma área com estrada e vegetação ao redor'
-  },
-  {
-    label: 'Lazer',
-    src: '/images/modulos-site-urbano/property-type-lazer.jpeg',
-    alt: 'Área de lazer verde com lago em paisagem campestre'
-  },
-  {
-    label: 'Lançamento',
-    src: '/images/modulos-site-urbano/property-type-lancamento.png',
-    alt: 'Torre residencial moderna ao entardecer com iluminação urbana ao fundo',
-    isCentral: true
-  },
-  {
-    label: 'Residencial',
-    src: '/images/modulos-site-urbano/property-type-residencial.png',
-    alt: 'Villa residencial de luxo com piscina ao pôr do sol'
-  },
-  {
-    label: 'Comercial',
-    src: '/images/modulos-site-urbano/property-type-comercial.jpeg',
-    alt: 'Interior de escritório comercial moderno com vista para a cidade'
-  }
-]
+const terreno: PropertyType = {
+  label: 'Terreno',
+  src: '/images/modulos-site-urbano/property-type-terreno.jpeg',
+  alt: 'Terreno visto de cima, mostrando uma área com estrada e vegetação ao redor',
+  width: 220,
+  height: 240
+}
+const lazer: PropertyType = {
+  label: 'Lazer',
+  src: '/images/modulos-site-urbano/property-type-lazer.jpeg',
+  alt: 'Área de lazer verde com lago em paisagem campestre',
+  width: 220,
+  height: 431
+}
+const lancamento: PropertyType = {
+  label: 'Lançamento',
+  src: '/images/modulos-site-urbano/property-type-lancamento.png',
+  alt: 'Torre residencial moderna ao entardecer com iluminação urbana ao fundo',
+  width: 220,
+  height: 581
+}
+const residencial: PropertyType = {
+  label: 'Residencial',
+  src: '/images/modulos-site-urbano/property-type-residencial.png',
+  alt: 'Villa residencial de luxo com piscina ao pôr do sol',
+  width: 220,
+  height: 431
+}
+const comercial: PropertyType = {
+  label: 'Comercial',
+  src: '/images/modulos-site-urbano/property-type-comercial.jpeg',
+  alt: 'Interior de escritório comercial moderno com vista para a cidade',
+  width: 220,
+  height: 240
+}
+
+const groups: PropertyType[][] = [[terreno, lazer], [lancamento], [residencial, comercial]]
 </script>
 
 <template>
@@ -50,30 +60,41 @@ const propertyTypes: PropertyType[] = [
         </p>
       </div>
 
-      <div
-        class="mt-10 flex items-end justify-center gap-3 tablet:gap-4 desktop:gap-5"
-      >
-        <div
-          v-for="type in propertyTypes"
-          :key="type.label"
-          class="relative overflow-hidden rounded-[16px] tablet:rounded-[20px]"
-          :class="type.isCentral
-            ? 'h-[260px] w-[22%] tablet:h-[320px] tablet-lg:h-[380px] desktop:h-[420px]'
-            : 'h-[200px] w-[18%] tablet:h-[250px] tablet-lg:h-[300px] desktop:h-[340px]'"
-        >
-          <NuxtImg
-            :src="type.src"
-            :alt="type.alt"
-            :width="300"
-            :height="type.isCentral ? 420 : 340"
-            sizes="mobile-lg:20vw tablet:18vw tablet-lg:20vw desktop:240px"
-            class="h-full w-full object-cover"
-            loading="lazy"
-          />
-          <div class="absolute inset-x-0 bottom-0 bg-[linear-gradient(to_top,rgba(0,0,0,0.65)_0%,transparent_100%)] p-3 tablet:p-4">
-            <p class="text-center text-[13px] font-semibold text-white tablet:text-[15px]">
-              {{ type.label }}
-            </p>
+      <div class="relative mt-10 tablet-lg:mt-16">
+        <img
+          src="/icons/site-urbano-property-types-curva.svg"
+          alt=""
+          aria-hidden="true"
+          class="pointer-events-none absolute left-[-2%] top-[38%] hidden w-[104%] tablet-lg:block"
+        />
+
+        <div class="relative flex items-center justify-center gap-3 tablet:gap-4 desktop:gap-6">
+          <div
+            v-for="(group, groupIndex) in groups"
+            :key="groupIndex"
+            class="flex items-end gap-3 tablet:gap-4 desktop:gap-6"
+          >
+            <div
+              v-for="type in group"
+              :key="type.label"
+              class="relative w-[26%] shrink-0 overflow-hidden rounded-[12px] tablet:rounded-[16px] mobile-lg:w-[18%] tablet:w-[16%]"
+              :style="{ aspectRatio: `${type.width} / ${type.height}` }"
+            >
+              <NuxtImg
+                :src="type.src"
+                :alt="type.alt"
+                :width="type.width"
+                :height="type.height"
+                sizes="mobile-lg:15vw tablet:16vw desktop:220px"
+                class="h-full w-full object-cover"
+                loading="lazy"
+              />
+              <div class="absolute inset-x-0 bottom-0 bg-[linear-gradient(to_top,rgba(0,0,0,0.65)_0%,transparent_100%)] p-3 tablet:p-4">
+                <p class="text-center text-[13px] font-semibold text-white tablet:text-[15px]">
+                  {{ type.label }}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

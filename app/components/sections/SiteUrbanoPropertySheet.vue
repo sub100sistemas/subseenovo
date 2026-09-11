@@ -29,10 +29,10 @@ const attributes: Attribute[] = [
       <div class="flex flex-col items-center gap-10 tablet-lg:flex-row tablet-lg:items-center tablet-lg:justify-between">
         <div class="w-full tablet-lg:w-[28%]">
           <div class="relative mx-auto max-w-[360px]">
-            <div class="pointer-events-none absolute rounded-full" style="width:83%;height:44%;top:62%;left:23%;background:rgba(93,95,239,0.4);filter:blur(116px)"></div>
-            <div class="pointer-events-none absolute rounded-full" style="width:94%;height:50%;top:81%;left:12%;background:rgba(179,255,208,0.4);filter:blur(76px)"></div>
-            <div class="pointer-events-none absolute rounded-full" style="width:82%;height:43%;top:41%;left:-5%;background:rgba(190,242,255,0.7);filter:blur(95px)"></div>
-            <div class="pointer-events-none absolute rounded-full" style="width:93%;height:50%;top:74%;left:-65%;background:rgba(255,250,175,0.7);filter:blur(109px)"></div>
+            <div class="pointer-events-none absolute rounded-full" style="width:83%;height:44%;top:50%;left:23%;background:rgba(93,95,239,0.4);filter:blur(116px)"></div>
+            <div class="pointer-events-none absolute rounded-full" style="width:94%;height:24%;top:551%;left:12%;background:rgba(179,255,208,0.4);filter:blur(76px)"></div>
+            <div class="pointer-events-none absolute rounded-full" style="width:82%;height:43%;top:50%;left:-5%;background:rgba(190,242,255,0.7);filter:blur(95px)"></div>
+            <div class="pointer-events-none absolute rounded-full" style="width:93%;height:50%;top:24%;left:-25%;background:rgba(255,250,175,0.7);filter:blur(109px)"></div>
             <NuxtImg
               src="/images/modulos-site-urbano/property-sheet-mockup-phone.png"
               :width="378"

@@ -24,21 +24,14 @@ const moduleIcons: HeroModuleIcon[] = [
     </template>
 
     <template #visual>
-      <img
-        src="/icons/crm-rural-hero-ellipse-blur.svg"
-        alt=""
-        aria-hidden="true"
-        class="pointer-events-none absolute left-[31.07%] top-0 w-[51.87%] h-[97.81%] opacity-70"
-      />
-
-      <div class="absolute left-[30.1%] top-[2.63%] w-[57.14%] h-[99.34%] overflow-hidden">
+      <div class="absolute left-[29.26%] top-0 w-[55.21%] h-full overflow-hidden">
         <NuxtImg
           src="/images/modulos-crm-rural/hero-composicao-mapa-propriedade.png"
-          :width="412"
-          :height="453"
-          sizes="mobile-lg:300px tablet-lg:412px"
+          :width="820"
+          :height="888"
+          sizes="mobile-lg:180px tablet:340px tablet-lg:240px desktop:300px desktop-full:362px"
           alt="Composição mostrando um celular exibindo o mapa de uma propriedade rural com camadas e um homem apontando para o mapa"
-          class="h-full w-full object-contain"
+          class="h-full w-full object-cover"
           loading="eager"
         />
       </div>
@@ -53,7 +46,12 @@ const moduleIcons: HeroModuleIcon[] = [
       <div
         class="absolute z-[2] hidden left-[92.93%] top-0 w-[6.94%] aspect-square rounded-[6px] border border-brand bg-[#e8e8fd] tablet-lg:block"
       >
-        <img src="/icons/crm-rural-hero-badge.svg" alt="" class="absolute inset-0 size-full" />
+        <img
+          src="/icons/crm-rural-hero-badge.svg"
+          alt=""
+          aria-hidden="true"
+          class="absolute "
+        />
       </div>
     </template>
   </Hero>

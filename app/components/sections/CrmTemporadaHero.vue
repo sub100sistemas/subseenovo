@@ -21,22 +21,16 @@ const moduleIcons: HeroModuleIcon[] = [
       Cadastre imóveis, organize reservas, controle períodos disponíveis e apresente todas as informações necessárias para facilitar a locação por temporada.
     </template>
 
-    <template #visual>
-      <img
-        src="/icons/crm-temporada-hero-ellipse-blur.svg"
-        alt=""
-        aria-hidden="true"
-        class="pointer-events-none absolute left-[31.07%] top-0 w-[51.87%] h-[97.81%] opacity-70"
-      />
 
-      <div class="absolute left-[31.07%] top-0 w-[54.65%] h-full overflow-hidden mix-blend-darken">
+    <template #visual>
+      <div class="absolute left-[34.26%] top-0 w-[55.21%] h-full overflow-hidden">
         <NuxtImg
           src="/images/modulos-crm-temporada/hero-foto-homem-laptop.png"
-          :width="394"
-          :height="428"
-          sizes="mobile-lg:300px tablet:340px tablet-lg:240px desktop:300px desktop-full:394px"
+          :width="776"
+          :height="894"
+          sizes="mobile-lg:180px tablet:340px tablet-lg:240px desktop:300px desktop-full:362px"
           alt="Homem sorridente com laptop mostrando sistema de gestão de imóveis por temporada"
-          class="h-full w-full object-bottom"
+          class="h-full w-full object-cover"
           loading="eager"
         />
       </div>
@@ -49,10 +43,28 @@ const moduleIcons: HeroModuleIcon[] = [
       />
 
       <div
-        class="absolute z-[2] right-0 top-0 w-[6.94%] aspect-square flex items-center justify-center rounded-[6px] border border-brand bg-[#e8e8fd]"
+        class="absolute z-[2] hidden left-[92.93%] top-0 w-[6.94%] aspect-square rounded-[6px] border border-brand bg-[#e8e8fd] tablet-lg:block"
       >
-        <img src="/icons/crm-temporada-hero-icone-calendar-badge.svg" alt="" class="absolute inset-0 size-full" />
+        <img
+          src="/icons/crm-temporada-hero-calendar.svg"
+          alt=""
+          aria-hidden="true"
+          class="absolute left-[30%] top-[26%] w-[50%] h-[50%]"
+        />
       </div>
     </template>
-  </Hero>
+
+    <div class="flex items-center">
+          <div
+            class="flex h-[30px] w-[27.887px] items-center justify-center rounded-[4px] bg-brand shadow-[0px_10px_20px_rgba(93,95,239,0.4)]"
+          >
+            <img
+              src="/icons/crm-temporada-hero-icone-imovel.svg"
+              alt=""
+              aria-hidden="true"
+              style="width: 17.91px; height: 19px"
+            />
+          </div>
+        </div>
+ </Hero>
 </template>

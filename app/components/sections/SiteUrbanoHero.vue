@@ -26,22 +26,17 @@ const moduleIcons: HeroModuleIcon[] = [
       com apresentação completa de cada oferta.
     </template>
 
-    <template #visual>
-      <img
-        src="/icons/crm-rural-hero-ellipse-blur.svg"
-        alt=""
-        aria-hidden="true"
-        class="pointer-events-none absolute left-[17%] top-[18%] w-[49%] h-[86%] opacity-70"
-      />
 
-      <div class="absolute left-[31%] top-[18%] w-[30%] h-[81%] overflow-hidden">
+
+    <template #visual>
+      <div class="absolute left-[34.26%] top-0 w-[50.21%] h-full overflow-hidden">
         <NuxtImg
           src="/images/modulos-site-urbano/hero-foto-corretor.png"
-          :width="888"
-          :height="1329"
-          sizes="tablet-lg:155px desktop:205px desktop-full:220px desktop-lg:250px"
-          alt="Corretor sorridente de blazer cinza com camisa branca"
-          class="h-full w-full object-contain"
+          :width="724"
+          :height="912"
+          sizes="mobile-lg:180px tablet:340px tablet-lg:240px desktop:300px desktop-full:362px"
+          alt="Corretora sorridente de blazer branco segurando um tablet"
+          class="h-full w-full object-cover"
           loading="eager"
         />
       </div>
@@ -56,12 +51,13 @@ const moduleIcons: HeroModuleIcon[] = [
       <div
         class="absolute z-[2] hidden left-[92.93%] top-0 w-[6.94%] aspect-square rounded-[6px] border border-brand bg-[#e8e8fd] tablet-lg:block"
       >
-        <img src="/icons/site-urbano-hero-icone-house.svg" alt="" class="absolute inset-0 size-full" />
+        <img
+          src="/icons/site-urbano-hero-icone-house.svg"
+          alt=""
+          aria-hidden="true"
+          class="absolute left-[30%] top-[26%] w-[40%] h-[50%]"
+        />
       </div>
     </template>
   </Hero>
 </template>
-
-
-
-

@@ -51,19 +51,19 @@ const modulosColumns = [
         icon: '/icons/menu-icone-site-urbanas.svg',
         label: 'Site para Imobiliárias Urbanas',
         description: 'Crie sites modernos para imobiliárias urbanas, apresente imóveis e gere oportunidades de negócio.',
-        to: '/modulos'
+        to: '/modulos/site-para-imobiliarias-urbanas'
       },
       {
         icon: '/icons/menu-icone-site-portais.svg',
         label: 'Site para Imobiliárias Rurais',
         description: 'Crie sites modernos para imobiliárias rurais, apresente imóveis e gere novas oportunidades de negócio.',
-        to: '/modulos'
+        to: '/modulos/site-para-imobiliarias-rurais'
       },
       {
         icon: '/icons/menu-icone-site-loteadoras.svg',
         label: 'Site para Loteadoras',
         description: 'Crie sites modernos para empreendimentos e gere novas oportunidades de negócio.',
-        to: '/modulos',
+        to: '/modulos/site-para-loteadoras',
         badge: { text: 'breve', bg: '#ea4335', color: '#ffffff' }
       }
     ]
@@ -76,13 +76,13 @@ const modulosColumns = [
         icon: '/icons/menu-icone-apis-hub.svg',
         label: 'APIs & HUB integrador',
         description: 'Integre seu sistema de loteamento com outras ferramentas através de APIs.',
-        to: '/modulos'
+        to: '/modulos/apis-hub-integrador'
       },
       {
         icon: '/icons/menu-icone-base-conhecimento.svg',
         label: 'Base de conhecimento',
         description: 'Implantação e suporte humanizado, eventos on-line, tutoriais com vídeos, **pergunte ao SUBSEE - IA**',
-        to: '/modulos',
+        to: '/modulos/base-de-conhecimento',
         badge: { text: 'novo', bg: '#ffc107', color: '#313846' }
       }
     ]
