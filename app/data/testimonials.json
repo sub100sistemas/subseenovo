@@ -1,0 +1,140 @@
+{
+  "testimonials": [
+    {
+      "id": "crm-geral-cleveson-costa",
+      "rating": 5,
+      "text": "Fomos um dos primeiros clientes da SUB100, há mais de 25 anos. Desde então, construímos uma parceria sólida, marcada pela confiança e pela troca constante de experiências em cada mudança tecnológica. Essa proximidade nos ajuda a evoluir nossos processos e a manter a qualidade dos serviços oferecidos aos nossos clientes.",
+      "logo": [
+        {
+          "src": "/images/logomarcacliente/logo-bellakaza-negocios-imobiliarios.svg",
+          "width": 126,
+          "height": 55,
+          "alt": "Logo Bellakaza Negócios Imobiliários"
+        }
+      ],
+      "name": "Cleveson Costa",
+      "role": "Diretor",
+      "company": "Bellaka Negócios Imobiliários",
+      "order": 1
+    },
+    {
+      "id": "crm-geral-mauro-alencar",
+      "rating": 5,
+      "text": "Acompanho a trajetória do SUBSEE há mais de 25 anos. Durante esse período, construímos uma relação baseada em evolução contínua, troca de experiências e melhoria de processos. Essa parceria contribuiu para tornar nossa operação mais ágil, organizada e transparente, sempre com foco em oferecer uma experiência melhor aos nossos clientes.",
+      "logo": [
+        {
+          "src": "/images/logomarcacliente/logo-ideal-imoveis.svg",
+          "width": 164,
+          "height": 50,
+          "alt": "Logo Ideal Imóveis"
+        }
+      ],
+      "name": "Mauro Alencar",
+      "role": "Diretor",
+      "company": "Ideal Imóveis",
+      "order": 2
+    },
+    {
+      "id": "crm-urbano-marcio-carmona",
+      "rating": 5,
+      "text": "Minha relação com a SUB100 começou há muitos anos, ainda como corretor. Quando abri minha própria imobiliária, escolher o CRM SUBSEE foi uma consequência natural dessa confiança. Hoje, como empresário, sigo contando com uma parceria tecnológica capaz de acompanhar nosso crescimento e atender às novas necessidades que surgem com a expansão da empresa.",
+      "logo": [
+        {
+          "src": "/images/logomarcacliente/logo-carmona-imoveis.svg",
+          "width": 210,
+          "height": 46.574,
+          "alt": "Logo Carmona Imóveis"
+        }
+      ],
+      "name": "Marcio Carmona",
+      "role": "Diretor",
+      "company": "Carmona Imóveis",
+      "order": 1
+    },
+    {
+      "id": "crm-urbano-edson-naka",
+      "rating": 5,
+      "text": "A Legado Urbano nasceu da união de três amigos corretores com uma visão comum de crescimento. Desde o início, entendemos a importância de contar com parceiros sólidos e tecnologia confiável. No SUBSEE e na SUB100 Sistemas encontramos uma estrutura capaz de apoiar nossos processos e acompanhar a evolução da nossa empresa.",
+      "logo": [
+        {
+          "src": "/images/logomarcacliente/logo-legado-urbano.svg",
+          "width": 250,
+          "height": 34.09,
+          "alt": "Logo Legado Urbano"
+        }
+      ],
+      "name": "Edson Naka",
+      "role": "Diretor",
+      "company": "Legado Urbano",
+      "order": 2
+    },
+    {
+      "id": "crm-rural-henrique-benedini",
+      "rating": 5,
+      "text": "A Benedini Fazendas buscava um CRM que realmente entendesse as particularidades do agronegócio. Com o SUBSEE, encontramos abertura para construir soluções em conjunto e adaptar processos à nossa realidade. Essa parceria tem sido importante para nossa atuação na intermediação de fazendas no Brasil e no Uruguai.",
+      "logo": [
+        {
+          "src": "/images/logomarcacliente/logo-benedini.svg",
+          "width": 151,
+          "height": 65,
+          "alt": "Logo Benedini Fazendas"
+        }
+      ],
+      "name": "Henrique Benedini",
+      "role": "Diretor",
+      "company": "Benedini Fazendas",
+      "order": 1
+    },
+    {
+      "id": "crm-rural-julio-silveira",
+      "rating": 5,
+      "text": "Somos uma empresa uruguaia e encontramos no CRM SUBSEE uma solução que se adaptou muito bem à nossa operação. É importante poder contar com uma empresa brasileira comprometida com tecnologia e evolução constante, ajudando-nos a melhorar processos, organizar a gestão e crescer no segmento de intermediação de fazendas.",
+      "logo": [
+        {
+          "src": "/images/logomarcacliente/logo-vettore.svg",
+          "width": 154,
+          "height": 45,
+          "alt": "Logo Vettore Real Estate"
+        }
+      ],
+      "name": "Julio Silveira",
+      "role": "Corretor",
+      "company": "Vettore Uruguay",
+      "order": 2
+    },
+    {
+      "id": "crm-temporada-joao-calcada",
+      "rating": 5,
+      "text": "Há quase 20 anos nossa imobiliária trabalha com o CRM SUBSEE. Essa trajetória foi construída com confiança, proximidade e troca constante de experiências. Ao longo dos anos, o sistema e o site acompanharam a evolução dos nossos processos e continuam contribuindo diariamente para tornar nossa operação mais organizada, eficiente e preparada para crescer.",
+      "logo": [
+        {
+          "src": "/images/logomarcacliente/logo-soma-imoveis.svg",
+          "width": 92,
+          "height": 55,
+          "alt": "Logo Imobiliária Soma"
+        }
+      ],
+      "name": "João Calçada",
+      "role": "Gerente de Locação",
+      "company": "Imobiliária Soma",
+      "order": 1
+    },
+    {
+      "id": "crm-temporada-marcio-carmona",
+      "rating": 5,
+      "text": "Minha relação com a SUB100 começou há muitos anos, ainda como corretor. Quando abri minha própria imobiliária, escolher o CRM SUBSEE foi uma consequência natural dessa confiança. Hoje, como empresário, sigo contando com uma parceria tecnológica capaz de acompanhar nosso crescimento e atender as novas necessidades que surgem com a expansão da empresa.",
+      "logo": [
+        {
+          "src": "/images/logomarcacliente/logo-carmona-imoveis.svg",
+          "width": 130,
+          "height": 50,
+          "alt": "Logo Carmona Imóveis"
+        }
+      ],
+      "name": "Marcio Carmona",
+      "role": "Diretor",
+      "company": "Carmona Imóveis",
+      "order": 2
+    }
+  ]
+}

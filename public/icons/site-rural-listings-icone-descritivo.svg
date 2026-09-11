@@ -1,0 +1,13 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="33" height="40" viewBox="0 0 33 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon">
+<g id="Rectangle">
+<mask id="path-1-inside-1_0_11" fill="white">
+<rect width="33" height="40" rx="3"/>
+</mask>
+<rect width="33" height="40" rx="3" stroke="#5D5FEF" stroke-width="8" mask="url(#path-1-inside-1_0_11)"/>
+</g>
+<line id="Line" x1="7" y1="10.5001" x2="26" y2="10.5001" stroke="#5D5FEF" stroke-width="3"/>
+<line id="Line_2" x1="7" y1="19.5001" x2="26" y2="19.5001" stroke="#5D5FEF" stroke-width="3"/>
+<line id="Line_3" x1="7" y1="28.5" x2="26" y2="28.5" stroke="#5D5FEF" stroke-width="3"/>
+</g>
+</svg>

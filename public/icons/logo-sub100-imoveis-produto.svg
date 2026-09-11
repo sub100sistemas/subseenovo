@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="120" height="138" viewBox="0 0 120 138" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="micro.svg" clip-path="url(#clip0_0_6)">
+<path id="Vector" d="M0 139H120V116.46L0 125.92V139V139M17.24 22.54H102.76V78.1H17.24V22.54V22.54M60 99.1L53.84 92.94L60 86.78L66.16 92.94L60 99.1V99.1M91.64 1H28.36C12.7 1 0 13.68 0 29.36V79.44C0 95.12 12.7 107.82 28.36 107.82H91.64C107.3 107.82 120 95.12 120 79.44V29.36C120 13.7 107.3 1 91.64 1V1M25.76 69.38H94.24V31.26H25.76V69.38V69.38" fill="#686AF1"/>
+</g>
+<defs>
+<clipPath id="clip0_0_6">
+<rect width="120" height="138" fill="white"/>
+</clipPath>
+</defs>
+</svg>
