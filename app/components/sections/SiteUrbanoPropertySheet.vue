@@ -30,8 +30,8 @@ const attributes: Attribute[] = [
         <div class="w-full tablet-lg:w-[28%]">
           <NuxtImg
             src="/images/modulos-site-urbano/property-sheet-mockup-phone.png"
-            :width="1009"
-            :height="2045"
+            :width="378"
+            :height="641"
             sizes="mobile-lg:320px tablet-lg:260px desktop:340px desktop-full:370px desktop-lg:420px"
             alt="Mockup de celular mostrando a ficha técnica detalhada de um imóvel urbano"
             class="mx-auto h-auto w-full max-w-[360px]"
