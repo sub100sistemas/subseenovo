@@ -27,19 +27,19 @@ const attributes: Attribute[] = [
   <section id="site-urbano-ficha-tecnica" class="section-py">
     <div class="container-page">
       <div class="flex flex-col items-center gap-10 tablet-lg:flex-row tablet-lg:items-center tablet-lg:justify-between">
-        <div class="w-full tablet-lg:w-[27%]">
+        <div class="w-full tablet-lg:w-[28%]">
           <NuxtImg
             src="/images/modulos-site-urbano/property-sheet-mockup-phone.png"
-            :width="660"
-            :height="900"
-            sizes="mobile-lg:100vw tablet-lg:280px desktop:340px desktop-full:380px"
+            :width="1009"
+            :height="2045"
+            sizes="mobile-lg:320px tablet-lg:260px desktop:340px desktop-full:370px desktop-lg:420px"
             alt="Mockup de celular mostrando a ficha técnica detalhada de um imóvel urbano"
-            class="mx-auto h-auto w-full max-w-[380px]"
+            class="mx-auto h-auto w-full max-w-[360px]"
             loading="lazy"
           />
         </div>
 
-        <div class="flex w-full flex-col gap-6 tablet-lg:w-[67%]">
+        <div class="flex w-full flex-col gap-6 tablet-lg:w-[64%]">
           <div>
             <h2 class="leading-[1.2]">
               A tecnologia que entende o ritmo da cidade.
