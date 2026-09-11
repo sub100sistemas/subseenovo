@@ -97,6 +97,22 @@
 - **Date**: 2026-09-10
 - **Status**: active
 
+### AD-013
+- **Decision**: A section that is content-identical across two or more pages is promoted to a content-agnostic shell in `app/components/layout/`, and every page consumes it through a thin `sections/` wrapper that supplies only the `section-id` and the copy. First applied to the Tools and International sections, which the urbano and rural site pages share verbatim: they became `layout/ToolsIntegration.vue` and `layout/LanguageSwitcher.vue`, with `SiteUrbanoTools`/`SiteUrbanoInternational` and `SiteRuralTools`/`SiteRuralInternational` as wrappers. Shared assets stay at their original path and are referenced from both wrappers — no per-page copies.
+- **Reason**: CLAUDE.md already requires promoting a repeated visual pattern to `layout/`. Duplicating the markup would have produced two copies of a 130-line composition (the 3-step connector grid and the 4-node translation flow) that drift apart on the next fix.
+- **Trade-off**: The shells carry a wide `withDefaults()` class-prop surface that only one caller currently varies, and the `section-id` must be passed explicitly by every wrapper since there is no sensible default.
+- **Scope**: `app/components/layout/ToolsIntegration.vue`, `app/components/layout/LanguageSwitcher.vue`, and the four `SiteUrbano*`/`SiteRural*` wrappers.
+- **Date**: 2026-09-11
+- **Status**: active
+
+### AD-014
+- **Decision**: [FINDING] Figma PNG exports obtained through the MCP `download_assets`/`get_screenshot` tools are flattened onto an **opaque white backdrop** — frames, groups and rectangles alike (verified: alpha 255 across every corner of five separate exports). When a composition must sit on a colored background, do not export it as PNG. Either export the vector layers as SVG (transparent, but Figma bakes full-bleed canvas/page backdrop rects into the file that must be stripped by size, never by fill color) or pull the original uploaded bitmap from the `rawImages` list, which preserves its real alpha channel. The rural hero visual is composited offline from both sources with `sharp`.
+- **Reason**: The first rural hero build placed a section-sized PNG export in the visual column and painted an opaque white box over the hero's gradient.
+- **Trade-off**: Compositions that mix bitmap and vector need an offline compositing step instead of a single export.
+- **Scope**: any Figma-sourced asset destined for a non-white background.
+- **Date**: 2026-09-11
+- **Status**: active
+
 ## Handoff
 
 - **Feature**: crm-imobiliario-temporada (`.specs/features/crm-imobiliario-temporada`) — **DONE**

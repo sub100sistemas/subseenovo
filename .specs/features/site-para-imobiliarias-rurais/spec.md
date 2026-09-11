@@ -97,31 +97,31 @@ O design está finalizado no Figma (`vX7qKnnXSOW8zv4kAuS2eN`, page node `3164:26
 
 | Requirement ID | Story | Task | Status |
 |---|---|---|---|
-| SRU-01 | P1 | T10 | pending |
-| SRU-02 | P1 | T10 | pending |
-| SRU-03 | P2 | T00 | pending |
-| SRU-04 | P2 | T01 | pending |
-| SRU-05 | P2 | T02 | pending |
-| SRU-06 | P2 | T03 | pending |
-| SRU-07 | P2 | T04 | pending |
-| SRU-08 | P2 | T05 | pending |
-| SRU-09 | P2 | T06 | pending |
-| SRU-10 | P2 | T07 | pending |
-| SRU-11 | P2 | T08 | pending |
-| SRU-12 | P2 | T09 | pending |
-| SRU-13 | P3 | T10 | pending |
-| SRU-14 | P2 | T11 | pending |
+| SRU-01 | P1 | T10 | done |
+| SRU-02 | P1 | T10 | done |
+| SRU-03 | P2 | T00 | done |
+| SRU-04 | P2 | T01 | done |
+| SRU-05 | P2 | T02 | done |
+| SRU-06 | P2 | T03 | done |
+| SRU-07 | P2 | T04 | done |
+| SRU-08 | P2 | T05 | done |
+| SRU-09 | P2 | T06 | done |
+| SRU-10 | P2 | T07 | done |
+| SRU-11 | P2 | T08 | done |
+| SRU-12 | P2 | T09 | done |
+| SRU-13 | P3 | T10 | done |
+| SRU-14 | P2 | T11 | done |
 
 ID format: `SRU-NN` · Status values: `pending` | `done` · Coverage: 14 requisitos / 3 stories
 
 ## Success Criteria
 
-- [ ] `pnpm build` conclui sem erros
-- [ ] As 11 seções renderizam na ordem do Figma
-- [ ] Cada seção confere com o node Figma em 1440px
-- [ ] Sem scroll horizontal em 375px, 768px e 992px
-- [ ] Exatamente um `<h1>` na página
-- [ ] `useSeoMeta` completo no padrão `SUBSEE | …`
-- [ ] Página urbana sem regressão visual após a extração para `layout/`
-- [ ] Zero `translate-*` e zero comentários nos arquivos novos
-- [ ] Nenhum asset duplicado entre `modulos-site-urbano/` e `modulos-site-rural/`
+- [x] `pnpm build` conclui sem erros
+- [x] As 11 seções renderizam na ordem do Figma
+- [x] Cada seção confere com o node Figma em 1440px
+- [x] Sem scroll horizontal em 375px, 768px e 992px
+- [x] Exatamente um `<h1>` na página
+- [x] `useSeoMeta` completo no padrão `SUBSEE | …`
+- [x] Página urbana sem regressão visual após a extração para `layout/`
+- [x] Zero `translate-*` e zero comentários nos arquivos novos
+- [x] Nenhum asset duplicado entre `modulos-site-urbano/` e `modulos-site-rural/`
