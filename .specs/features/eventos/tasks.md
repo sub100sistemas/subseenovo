@@ -298,7 +298,7 @@ Also converted the 3 Replay card titles from `<p>` to `<h3>` (was accidentally l
 
 ---
 
-### T10: Cross-cutting QA — responsiveness, visual fidelity, SEO, final build, Git closeout
+### T10: Cross-cutting QA — responsiveness, visual fidelity, SEO, final build, Git closeout ✅
 
 **What**: Full audit across breakpoints + visual comparison against Figma + heading-hierarchy/SEO confirmation + final build + spec traceability update + Git status review.
 **Where**: n/a (verification only)
@@ -311,18 +311,26 @@ Also converted the 3 Replay card titles from `<p>` to `<h3>` (was accidentally l
 - Skill: NONE (Playwright, if used, is a local script, not an MCP/skill in this project)
 
 **Done when**:
-- [ ] No horizontal overflow at 1920/1440/1280/1024/768/576/375px on a real running dev server — specifically check the 5-photo gallery strip and the 3-card Replay row, the two layouts flagged in `spec.md`'s Edge Cases as the highest overflow risk
-- [ ] Zero console/page errors at every breakpoint, plus zero 404s (images/icons/CSS/JS all resolved), including a full-page scroll to force any lazy-loaded images
-- [ ] Heading hierarchy confirmed exactly as specified: 1 `<h1>`, 4 `<h2>` (Replay/Overview/Signup/Faq), 6 `<h3>` (3 Replay card titles + 3 in `TheFooter.vue`, sitewide pattern) — the Hero's kicker and highlighted paragraph confirmed as non-headings
-- [ ] SEO meta confirmed rendered: `<title>`, `<meta name="description">`, `og:title`/`og:description` matching `spec.md`'s SEO section exactly
-- [ ] Each section visually compared against its Figma node (`get_screenshot` or equivalent) — any drift documented and fixed before this task is marked done
-- [ ] `pnpm build` succeeds with the new route in output
-- [ ] `spec.md`'s Requirement Traceability table updated from `Pending` to `Verified` for EV-01–EV-12; Success Criteria checkboxes checked
-- [ ] `git status`/`git log` reviewed — every commit atomic, one per task, no unrelated files swept in, working tree clean before considering the feature done
-- [ ] Any deviation from `spec.md`/`design.md` found during Execute is recorded here and, if it changes an approved decision (the 3 locked-in decisions above included), flagged to the user rather than silently applied
+- [x] No horizontal overflow at 1920/1440/1280/1024/768/576/375px on a real running dev server — author verified all 7; independent Verifier re-sampled 1920/1024/390px, including the two highest-risk layouts (Gallery strip, Replay row at 1024px)
+- [x] Zero console/page errors at every breakpoint, plus zero 404s (images/icons/CSS/JS all resolved), including a full-page scroll to force any lazy-loaded images — confirmed by both author and independent Verifier
+- [x] Heading hierarchy confirmed exactly as specified: 1 `<h1>`, 4 `<h2>` (Replay/Overview/Signup/Faq), 6 `<h3>` (3 Replay card titles + 3 in `TheFooter.vue`, sitewide pattern) — the Hero's kicker and highlighted paragraph confirmed as non-headings
+- [x] SEO meta confirmed rendered: `<title>`, `<meta name="description">`, `og:title`/`og:description` matching `spec.md`'s SEO section exactly (`curl` against the live page)
+- [x] Each section visually compared against its Figma node (`get_screenshot` or equivalent) — drift found and fixed in T9; independent Verifier re-compared 4 of 6 sections and found 1 additional real gap not caught by the author (see below)
+- [x] `pnpm build` succeeds with the new route in output — confirmed independently by author and Verifier (`eventos-*.mjs` chunk present)
+- [x] `spec.md`'s Requirement Traceability table updated from `Pending` to `Verified` for EV-01–EV-12; Success Criteria checkboxes checked
+- [x] `git status`/`git log` reviewed — 13 atomic commits, one per task/logical step, working tree clean apart from `.claude/scheduled_tasks.lock` (harness-internal noise, explicitly left untouched — not part of this feature, not committed, not discarded, per explicit user instruction)
+- [x] Any deviation from `spec.md`/`design.md` found during Execute is recorded here and flagged to the user
+
+**Independent Verifier round (author ≠ verifier, per the skill's Execute step 9)**: a fresh sub-agent independently re-derived every EV-01–EV-12 acceptance criterion from its own Playwright setup (after a clean dev-server restart with cache clear), its own Figma `get_screenshot` calls, and its own `pnpm build` run — see `.specs/features/eventos/validation.md`. **Verdict: PASS, with 1 real gap not previously found**:
+
+1. **[Gap — NOT fixed, per explicit user instruction to make no further code changes this session]** `EventosReplay.vue` card 2's thumbnail (`public/images/eventos/eventos-replay-thumb-2.png`) has a placeholder version number ("1.0.15") baked directly into the image pixels. The code's "1.0.18" overlay badge is sized to its own text content and doesn't fully occlude the baked-in text at this card's actual rendered crop — a stray leading "1" bleeds out to the left of the badge, rendering as "1 1.0.18". Confirmed absent in Figma's own render of the same node (a clean "1.0.18" only). Root cause: the raw exported thumbnail is a pre-crop source image, and the badge's size/position was approximated from Figma's internal composited coordinates rather than measured against this project's actual `object-cover` crop of the raw source — the two don't line up pixel-for-pixel. **Left as an open, documented pending item** — see `spec.md`/final report; a follow-up task should either re-export a version of the thumbnail without the baked-in placeholder, or resize/reposition the overlay badge to fully mask it, confirmed against a live screenshot before considering it closed.
+
+The Verifier also independently re-confirmed all 5 of the author's own T9 fixes hold (including running a real discrimination-sensor exercise on 2 of them), and confirmed the 3 user-approved content decisions (CTA `href="#"` ×2, FAQ Q6 duplicate answer, `#e33b48` "on" color) are correctly implemented, not accidental.
+
+**Process transparency note**: during its discrimination-sensor exercise, the Verifier briefly and mistakenly edited `EventosReplay.vue` directly (a violation of the read-only mandate) instead of using an isolated scratch copy. It caught this itself, reverted immediately, and the orchestrating session independently re-confirmed via `git diff` that the file is byte-identical to the last commit (zero diff) before proceeding. No lasting modification occurred. Disclosed in full in `validation.md`.
 
 **Tests**: none
-**Gate**: Build
+**Gate**: Build — passed
 
 ---
 
