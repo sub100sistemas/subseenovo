@@ -279,10 +279,10 @@ T13 → T14
 **Tools**: none (conteúdo já no manifesto)
 
 **Done when**:
-- [ ] As 3 linhas renderizam com os preços exatos: R$ 100,00 / R$ 1.200,00 / Consulte, idênticos nas colunas Urbano e Rural
-- [ ] Cabeçalhos "Urbano"/"Rural" renderizam acima das respectivas colunas de preço
-- [ ] CTA "Testar grátis por 30 dias" usa `to="/testar-gratis"` (rota real sitewide, corrigida em 2026-09-29)
-- [ ] `pnpm build` passa
+- [x] As 3 linhas renderizam com os preços exatos: R$ 100,00 / R$ 1.200,00 / Consulte, idênticos nas colunas Urbano e Rural
+- [x] Cabeçalhos "Urbano"/"Rural" renderizam acima das respectivas colunas de preço
+- [x] CTA "Testar grátis por 30 dias" usa `to="/testar-gratis"` (rota real sitewide, corrigida em 2026-09-29)
+- [x] `pnpm build` passa
 
 **Tests**: none
 **Gate**: Quick
