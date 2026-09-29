@@ -101,7 +101,7 @@ Cores de fundo do Hero amostradas em 5 pontos: diferença de 0 a 2 níveis por c
 
 | Item | Antes | Depois |
 | --- | --- | --- |
-| FAQ | Itens fechados | Itens 1 a 5 abertos (`open` em `Faq.vue`, opcional por item). Passo entre itens 147px, como no Figma (era 148px) |
+| FAQ | Passo entre itens de 148px | Passo de 147px, como no Figma. Por decisão do usuário, os itens carregam fechados com "+" (o Figma os desenha abertos) |
 | Item 3 do FAQ | Resposta com 870px, quebrava uma palavra depois do Figma | A partir de 1400px: 845,833px de largura, deslocada -6,53px e 6px mais curta, como no Figma. Quebra em "cliente ou / esteja" |
 | Sombra do card institucional | Sombra inteira | Container com `overflow-clip` a partir de 992px, como o `overflow-clip` do Figma. Foco por teclado passa a desenhar dentro do card |
 | Hero a 992px | Título a ~15px do header | `min-h-[380px]` a partir de 992px; título a ~38px do header. Sem efeito acima de ~1150px |
@@ -128,7 +128,7 @@ O Figma tem o frame do Hero com 568px porque o Header (85px) fica sobre o topo d
 
 | Divergência | Causa |
 | --- | --- |
-| Ícones dos itens abertos: o Figma desenha o círculo preto com "+" nos itens 1 a 5 e o contorno com "-" no item 6 | O `Faq.vue` mostra "-" no item aberto e "+" no fechado. Reproduzir o Figma deixaria o ícone contradizendo o estado. Não alterado |
+| Estado inicial do FAQ: o Figma desenha os itens 1 a 5 abertos; o site os carrega fechados com "+" | Decisão do usuário: respostas ocultas ao acessar a página |
 | Pergunta 6 do FAQ ausente; a página fica 83px mais curta que o Figma (4251px contra 4334px a 1920px) | Sem resposta no Figma (Q4) |
 | Header: posição do botão "Entrar" difere de 1 a 2px | Componente global, fora desta feature |
 | Abaixo de 1920px não há referência do Figma | Composição verificada só por proporção |

@@ -2,39 +2,33 @@
 interface FaqItem {
   question: string
   answer: string
-  open: boolean
   answerClass?: string
 }
 
 const faqs: FaqItem[] = [
   {
     question: 'Que tipo de vídeos encontro na SUBSEE on?',
-    open: true,
     answer:
       'Você encontra tutoriais, demonstrações de recursos e conteúdos que ajudam a entender como o sistema pode potencializar as vendas da sua imobiliária.'
   },
   {
     question: 'Os vídeos são organizados por categoria?',
-    open: true,
     answer:
       'Sim. Os vídeos são organizados por categoria e duração, facilitando encontrar o conteúdo certo para cada dúvida ou funcionalidade do sistema.'
   },
   {
     question: 'Preciso ser cliente para assistir aos vídeos?',
-    open: true,
     answer:
       'Não. Os vídeos estão disponíveis para qualquer pessoa que queira conhecer o SUBSEE, seja cliente ou esteja avaliando qual sistema contratar.',
     answerClass: 'desktop-full:-mb-[6px] desktop-full:-ml-[6.53px] desktop-full:max-w-[845.833px]'
   },
   {
     question: 'Posso assistir aos vídeos quantas vezes quiser?',
-    open: true,
     answer:
       'Sim, os vídeos ficam disponíveis a qualquer momento, e você pode assistir quantas vezes precisar, no seu próprio ritmo.'
   },
   {
     question: 'Existem vídeos sobre planos e contratação?',
-    open: true,
     answer: 'Sim, também há vídeos explicando pacotes, valores e como escolher o plano ideal para sua imobiliária.'
   }
 ]

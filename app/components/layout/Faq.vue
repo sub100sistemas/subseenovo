@@ -2,7 +2,6 @@
 interface FaqItem {
   question: string
   answer: string
-  open?: boolean
   answerClass?: string
 }
 
@@ -47,10 +46,6 @@ const props = withDefaults(defineProps<Props>(), {
   minusIconSrc: undefined,
   faqs: () => []
 })
-
-const touched = reactive<Record<string, boolean>>({})
-
-const isInitiallyOpen = (faq: FaqItem) => (faq.open && !touched[faq.question] ? '' : null)
 </script>
 
 <template>
@@ -67,8 +62,8 @@ const isInitiallyOpen = (faq: FaqItem) => (faq.open && !touched[faq.question] ? 
         </div>
 
         <div :class="accordionClass">
-          <details v-for="faq in faqs" :key="faq.question" :open="faq.open" :data-initial-open="isInitiallyOpen(faq)" :class="itemClass">
-            <summary :class="summaryClass" @click="touched[faq.question] = true">
+          <details v-for="faq in faqs" :key="faq.question" :class="itemClass">
+            <summary :class="summaryClass">
               <span :class="questionClass">
                 {{ faq.question }}
               </span>
@@ -120,13 +115,5 @@ const isInitiallyOpen = (faq: FaqItem) => (faq.open && !touched[faq.question] ? 
 
 .faq-accordion :deep(details[open] .icon-minus) {
   display: block;
-}
-
-.faq-accordion :deep(details[open][data-initial-open] .icon-plus) {
-  display: block;
-}
-
-.faq-accordion :deep(details[open][data-initial-open] .icon-minus) {
-  display: none;
 }
 </style>
