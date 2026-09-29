@@ -6,7 +6,7 @@ const modulosNavItem = { label: 'Módulos', to: '/modulos' }
 const navItems = [
   modulosNavItem,
   { label: 'Eventos', to: '/eventos' },
-  { label: 'Preços', to: '/#precos' },
+  { label: 'Preços', to: '/planos-e-precos' },
   { label: 'Portal de Imóveis', href: 'https://sub100.com.br/' },
   { label: 'Blog', href: 'https://blog.sub100sistemas.com.br/' },
   { label: 'Sobre a SUB100', to: '/sobre' }
