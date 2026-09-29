@@ -66,7 +66,7 @@ const profiles: VideoProfile[] = [
         <li
           v-for="(profile, index) in profiles"
           :key="profile.title"
-          class="relative flex min-w-0 flex-col overflow-hidden rounded-[22px] px-[28px] pt-[26px] pb-5 tablet-lg:h-[260px]"
+          class="relative flex min-w-0 flex-col overflow-hidden rounded-[22px] px-[28px] pt-[26px] pb-5 tablet-lg:min-h-[260px]"
           :class="profile.bgClass"
         >
           <span class="absolute top-[24px] right-[28px]">

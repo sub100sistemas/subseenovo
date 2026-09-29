@@ -63,7 +63,7 @@ const videos: DemoVideo[] = [
           <li
             v-for="(video, index) in videos"
             :key="video.title"
-            class="relative flex min-w-0 flex-col overflow-hidden rounded-[22px] shadow-[0px_14px_32px_rgba(48,56,77,0.08)] tablet-lg:h-[520px]"
+            class="relative flex min-w-0 flex-col overflow-hidden rounded-[22px] shadow-[0px_14px_32px_rgba(48,56,77,0.08)] tablet-lg:min-h-[520px]"
           >
             <div class="relative flex h-[240px] shrink-0 items-center justify-center" :class="video.thumbClass">
               <span class="absolute top-[25px] left-[28px] text-[13px] leading-normal font-semibold text-white">
