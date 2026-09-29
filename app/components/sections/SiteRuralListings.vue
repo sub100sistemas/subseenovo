@@ -47,7 +47,7 @@ const features: PortfolioFeature[] = [
   <CrmPortfolio
     section-id="site-rural-anuncios"
     :features="features"
-    cta-to="/contato"
+    cta-to="/agendar-demonstracao"
     cta-text="Agendar Demonstração"
   >
     <template #heading>

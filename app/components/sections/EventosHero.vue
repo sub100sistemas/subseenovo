@@ -55,7 +55,7 @@
             Avaliação, ampliando a gestão comercial e a inteligência do atendimento.
           </p>
           <a
-            href="#"
+            href="/inscreva-se"
             class="flex h-[52px] w-[193px] items-center justify-center rounded-[5px] border border-brand text-[15px] font-bold text-brand"
           >
             Inscreva-se!!!

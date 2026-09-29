@@ -44,7 +44,7 @@ const features: PortfolioFeature[] = [
 </script>
 
 <template>
-  <CrmPortfolio section-id="site-urbano-fichas" :features="features" cta-to="/contato" cta-text="Agendar Demonstração">
+  <CrmPortfolio section-id="site-urbano-fichas" :features="features" cta-to="/agendar-demonstracao" cta-text="Agendar Demonstração">
     <template #heading>
       A tecnologia que entende<br class="hidden tablet-lg:block" />
       o ritmo da <span class="text-brand">cidade</span>

@@ -4,7 +4,7 @@
   <section id="eventos-inscricao" class="section-py">
     <div class="container-page flex justify-center">
       <a
-        href="#"
+        href="/inscreva-se"
         class="relative flex w-full max-w-[1080px] flex-col overflow-hidden rounded-[30px] bg-[#f2f5f4] tablet-lg:min-h-[350px] tablet-lg:flex-row tablet-lg:rounded-[50px]"
       >
         <div class="flex w-full flex-col items-start gap-4 px-6 py-8 tablet-lg:w-[55%] tablet-lg:justify-center tablet-lg:px-12 tablet-lg:py-10">
