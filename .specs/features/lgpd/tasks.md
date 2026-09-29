@@ -225,10 +225,10 @@ T23
 
 **Done when**:
 
-- [ ] Arquivo não vazio, com `width="2220" height="753"` e `viewBox` como o exportado; sem edição do SVG
-- [ ] Comparação dos SVGs dos dois nodes registrada (idênticos ou não); se forem diferentes, a tarefa lista o segundo arquivo e o design é ajustado antes do T6
-- [ ] Nenhuma cópia por página do mesmo arquivo
-- [ ] `pnpm build` exit 0
+- [x] Arquivo não vazio, com `width="2220" height="753"` e `viewBox` como o exportado; sem edição do SVG
+- [x] Comparação dos SVGs dos dois nodes registrada (idênticos ou não); se forem diferentes, a tarefa lista o segundo arquivo e o design é ajustado antes do T6
+- [x] Nenhuma cópia por página do mesmo arquivo
+- [x] `pnpm build` exit 0
 
 **Tests**: none
 **Gate**: quick
