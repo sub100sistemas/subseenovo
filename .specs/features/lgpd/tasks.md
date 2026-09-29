@@ -141,11 +141,11 @@ T23
 
 **Done when**:
 
-- [ ] Fundo branco, borda 1px `#e5e7eb`, raio 16px, padding 40px horizontal e 36px vertical, gap 24px; título Poppins SemiBold 26px `#5d5fef` centralizado; divisor 1px `#e5e7eb`; corpo Poppins Regular 18px `#4b5563` `leading-[1.7]`
-- [ ] Título renderizado como `<h2>`; nenhum texto de produto no componente
-- [ ] Sem altura fixa e com `overflow-wrap: anywhere` no corpo; valores de mobile (padding 20px, título 20px, corpo 16px) atrás dos breakpoints do projeto
-- [ ] Renderizado num arquivo temporário fora do repositório e conferido contra o node `1215:1044`
-- [ ] `pnpm build` exit 0
+- [x] Fundo branco, borda 1px `#e5e7eb`, raio 16px, padding 40px horizontal e 36px vertical, gap 24px; título Poppins SemiBold 26px `#5d5fef` centralizado; divisor 1px `#e5e7eb`; corpo Poppins Regular 18px `#4b5563` `leading-[1.7]`
+- [x] Título renderizado como `<h2>`; nenhum texto de produto no componente
+- [x] Sem altura fixa e com `overflow-wrap: anywhere` no corpo; valores de mobile (padding 20px, título 20px, corpo 16px) atrás dos breakpoints do projeto
+- [x] Renderizado num arquivo temporário fora do repositório e conferido contra o node `1215:1044`
+- [x] `pnpm build` exit 0
 
 **Tests**: none
 **Gate**: full
