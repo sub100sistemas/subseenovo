@@ -125,9 +125,9 @@ T13 → T14
 **Tools**: none (conteúdo já no manifesto)
 
 **Done when**:
-- [ ] H1 renderiza exatamente "Planos & Preços" com `<h1>` semântico (único da página — ver T12)
-- [ ] Descrição renderiza verbatim, com "urbana" e "rural" destacados na cor de destaque do projeto (`#5d5fef`)
-- [ ] `pnpm build` passa
+- [x] H1 renderiza exatamente "Planos & Preços" com `<h1>` semântico (único da página — ver T12)
+- [x] Descrição renderiza verbatim, com "urbana" e "rural" destacados na cor de destaque do projeto (`#5d5fef` via classe `text-brand`)
+- [x] `pnpm build` passa
 
 **Tests**: none
 **Gate**: Quick
