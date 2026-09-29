@@ -2,31 +2,39 @@
 interface FaqItem {
   question: string
   answer: string
+  open: boolean
+  answerClass?: string
 }
 
 const faqs: FaqItem[] = [
   {
     question: 'Que tipo de vídeos encontro na SUBSEE on?',
+    open: true,
     answer:
       'Você encontra tutoriais, demonstrações de recursos e conteúdos que ajudam a entender como o sistema pode potencializar as vendas da sua imobiliária.'
   },
   {
     question: 'Os vídeos são organizados por categoria?',
+    open: true,
     answer:
       'Sim. Os vídeos são organizados por categoria e duração, facilitando encontrar o conteúdo certo para cada dúvida ou funcionalidade do sistema.'
   },
   {
     question: 'Preciso ser cliente para assistir aos vídeos?',
+    open: true,
     answer:
-      'Não. Os vídeos estão disponíveis para qualquer pessoa que queira conhecer o SUBSEE, seja cliente ou esteja avaliando qual sistema contratar.'
+      'Não. Os vídeos estão disponíveis para qualquer pessoa que queira conhecer o SUBSEE, seja cliente ou esteja avaliando qual sistema contratar.',
+    answerClass: 'desktop-full:-mb-[6px] desktop-full:-ml-[6.53px] desktop-full:max-w-[845.833px]'
   },
   {
     question: 'Posso assistir aos vídeos quantas vezes quiser?',
+    open: true,
     answer:
       'Sim, os vídeos ficam disponíveis a qualquer momento, e você pode assistir quantas vezes precisar, no seu próprio ritmo.'
   },
   {
     question: 'Existem vídeos sobre planos e contratação?',
+    open: true,
     answer: 'Sim, também há vídeos explicando pacotes, valores e como escolher o plano ideal para sua imobiliária.'
   }
 ]
@@ -42,7 +50,7 @@ const faqs: FaqItem[] = [
     description-class="mt-4 text-lg text-black tablet-lg:text-[20px] desktop-full:mt-[25px]"
     accordion-class="faq-accordion mx-auto mt-10 max-w-[970px] desktop-full:-mt-[3px]"
     summary-class="flex cursor-pointer list-none items-center gap-[13px] pt-[28px] pb-[24px] [details[open]_&]:pb-[13px]!"
-    answer-wrapper-class="pb-[24px]"
+    answer-wrapper-class="pb-[23px]"
     answer-class="max-w-[870px] text-base leading-[26px] text-ink"
     plus-icon-src="/icons/faq-plus-circle.svg"
     minus-icon-src="/icons/faq-minus-circle.svg"
