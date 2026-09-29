@@ -169,10 +169,10 @@ T23
 
 **Done when**:
 
-- [ ] Fundo `#f9fafb`, padding 24px horizontal e 20px vertical, gap 8px; rótulo Poppins SemiBold 15px `#313846` como `<h3>`; texto Poppins Regular 18px `#4b5563` `leading-[1.7]`
-- [ ] `radiusClass` com padrão de 18px; um valor de 12px passado por prop produz o raio do Figma da Política
-- [ ] Rótulo sem quebra forçada e com `overflow-wrap: anywhere` no texto
-- [ ] `pnpm build` exit 0
+- [x] Fundo `#f9fafb`, padding 24px horizontal e 20px vertical, gap 8px; rótulo Poppins SemiBold 15px `#313846` como `<h3>`; texto Poppins Regular 18px `#4b5563` `leading-[1.7]`
+- [x] `radiusClass` com padrão de 18px; um valor de 12px passado por prop produz o raio do Figma da Política
+- [x] Rótulo sem quebra forçada e com `overflow-wrap: anywhere` no texto
+- [x] `pnpm build` exit 0
 
 **Tests**: none
 **Gate**: full
