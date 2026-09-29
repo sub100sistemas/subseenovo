@@ -541,11 +541,11 @@ T11 → T18
 
 **Done when**:
 
-- [ ] All 5 sections compared; each difference above 2px or any wrong color/text/asset is listed with cause and proposed fix
-- [ ] Every visible static asset checked: non-empty file, correct slot, correct callsite, correct rendered size
-- [ ] No text on the page is absent from the manifest and no manifest text is missing on the page (items 6 of the FAQ excepted, see T17)
-- [ ] Gate check passes: `pnpm build`
-- [ ] Test count: n/a ([[AD-002]])
+- [x] All 5 sections compared; each difference above 2px or any wrong color/text/asset is listed with cause and proposed fix
+- [x] Every visible static asset checked: non-empty file, correct slot, correct callsite, correct rendered size
+- [x] No text on the page is absent from the manifest and no manifest text is missing on the page (items 6 of the FAQ excepted, see T17)
+- [x] Gate check passes: `pnpm build`
+- [x] Test count: n/a ([[AD-002]])
 
 **Tests**: none
 **Gate**: build

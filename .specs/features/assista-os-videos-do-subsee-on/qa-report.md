@@ -40,3 +40,55 @@ Abaixo de 992px as duas colunas do Vídeo institucional e as grades de 3 cards f
 ### Rota fora do site estático (a decidir)
 
 `pnpm generate` **não gerou** `assista-os-videos-do-subsee-on/index.html`. O prerenderizador do Nitro só segue links a partir de `/`, e nenhum link do site aponta para a nova rota. Enquanto o botão da Home não apontar para ela (etapa posterior, Q6) ou a rota não for listada em `nitro.prerender.routes`, o deploy estático (`pnpm generate`, Cloudflare Pages) não terá a página. Esta feature não altera `nuxt.config.ts` nem o botão da Home.
+
+## Figma fidelity (T15)
+
+**Método**: build de produção a 1920px, captura de página inteira e comparação com `get_screenshot` do frame `3188:3397` (1920×4334). Para cada seção, o Chrome calculou num canvas a diferença média por canal (0 a 255) e a fração de pixels com diferença acima de 24. Além disso, recortes lado a lado por seção e leitura de textos, links e imagens pelo DOM.
+
+### Posição e altura das seções
+
+| Seção | Figma (y, altura) | Site (y, altura) |
+| --- | --- | --- |
+| Header | 0, 85 | 0, 85 |
+| Hero | 85, 483 (abaixo do header) | 85, 483 |
+| Vídeo institucional | 568, 540 | 568, 540 |
+| Vídeos demonstrativos | 1108, 874 | 1108, 874 |
+| Conteúdo por perfil | 1982, 478 | 1982, 478 |
+| Banner App SUBSEE | 2460, 336 (76 + 220 + 40) | 2460, 336 |
+| FAQ | 2796 | 2796 |
+
+### Diferença de pixels contra o Figma
+
+| Seção | Diferença média | Pixels com diferença > 24 |
+| --- | --- | --- |
+| Hero | 4,81 | 3,54% |
+| Vídeo institucional | 1,82 | 2,22% |
+| Vídeos demonstrativos | 1,74 | 1,71% |
+| Perfis e banner | 1,50 | 1,90% |
+| FAQ (título e subtítulo) | 1,07 | 1,45% |
+
+Cores de fundo do Hero amostradas em 5 pontos: diferença de 0 a 2 níveis por canal. A diferença maior do Hero vem do antialiasing da foto espelhada e das linhas da onda.
+
+### Textos, links e assets
+
+- **Textos**: 0 textos do manifesto ausentes na página e 0 linhas da página fora do manifesto (57 linhas em `<main>`). As respostas do FAQ ficam em `<details>` fechado e foram conferidas no código.
+- **Links**: os 8 links da página apontam para `https://www.youtube.com/@subsee`, com `target="_blank"` e `rel="noopener"`. É o fallback provisório (Q1 a Q3), não uma decisão.
+- **Assets**: 39 imagens em `<main>`, nenhuma quebrada. Tamanhos renderizados conferidos com o Figma: play 92/64/54px, círculos de perfil 54px, elipse do banner 360px, glow 951×1058, curva A 166,2×125,5 e curva B 161,6×206 (as mesmas caixas do Figma), ícones do FAQ 30px. Os arquivos reusados (5 ícones de módulo, curva verde, ícones do FAQ) são os comprovadamente idênticos. A foto usa a versão de 680px para um espaço de 676px.
+
+### Correções feitas durante a comparação
+
+1. `sizes` da foto do Hero apontava para uma chave inexistente (`desktop-full`), e o navegador baixava a versão de 480px para um espaço de 676px. Corrigido.
+2. Cards de perfil com 266px em vez de 260px deslocavam o banner e o FAQ 6px. Corrigido (`pb-[14px]`).
+3. Com itens do FAQ abertos, o `Faq.vue` aplica 18px de padding e o Figma usa 13px; as respostas também quebravam em 970px em vez de 870px. Sobrescritos nesta página.
+4. Deslocamentos de 1 a 2px em eyebrows, números e links dos cards (texto centralizado na caixa em vez de alinhado ao topo). Corrigidos.
+
+### Divergências que permanecem
+
+| Divergência | Causa | Impacto |
+| --- | --- | --- |
+| A sombra do card de vídeo institucional aparece inteira; no Figma o container corta a sombra (`overflow-clip`) | O corte é artefato do frame do Figma | Nenhum; o comportamento do site é o esperado |
+| O FAQ vem com todos os itens fechados; o Figma desenha os itens 1 a 5 abertos | Acordeão nativo do `layout/Faq.vue`, fechado por padrão (decisão da spec) | Altura total da página 3952px contra 4334px |
+| Pergunta 6 do FAQ ausente | Sem texto de resposta no Figma (Q4) | Bloqueia a T17 |
+| Item 3 do FAQ quebra a resposta uma palavra antes do Figma | O Figma desenha esse item 6,5px mais à esquerda e 24px mais estreito (845,8px contra 870px) | Imperfeição do design, não replicada |
+| Diferenças de 1 a 3px em textos de cards | Arredondamento de altura de linha | Imperceptível |
+| Header do site tem sombra sobre o topo do Hero | Header é global e sticky; o frame do Figma não a desenha na captura do Hero | Nenhum |
