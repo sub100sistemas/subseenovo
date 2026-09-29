@@ -13,7 +13,7 @@ interface Props {
 withDefaults(defineProps<Props>(), {
   wrapperClass: 'w-full px-4 mobile-lg:px-6 tablet:px-8',
   listClass: 'mx-auto flex w-full max-w-[992px] flex-col gap-6 tablet-lg:gap-12',
-  paragraphsClass: 'flex flex-col gap-[1.7em]',
+  paragraphsClass: 'flex flex-col gap-[1lh]',
   subsectionsClass: 'flex flex-col gap-6',
   subCardRadiusClass: 'rounded-[18px]'
 })

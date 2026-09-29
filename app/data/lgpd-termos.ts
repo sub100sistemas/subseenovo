@@ -4,7 +4,7 @@ export const lgpdTermosSections: LegalSection[] = [
   {
     id: 'boas-vindas',
     title: 'BOAS-VINDAS',
-    bodyClass: 'w-full text-[16px] leading-[1.7] text-[#4b5563] [overflow-wrap:anywhere]',
+    bodyClass: 'w-full text-[16px] leading-[1.7] text-[#4b5563] [overflow-wrap:anywhere] tablet-lg:leading-[27px]',
     paragraphs: [
       {
         lines: [
@@ -128,11 +128,7 @@ export const lgpdTermosSections: LegalSection[] = [
           '(I) solicitar contato telefônico ou via WhatsApp;',
           '(II) solicitar demonstração dos produtos da SUB100;',
           '(III) trabalhar com a SUB100;',
-          '(IV) receber conteúdos exclusivos sobre temas como inovação tecnológica, novidades dos produtos, mercado, feiras e eventos, ofertas especiais e atualização das políticas SUB100.'
-        ]
-      },
-      {
-        lines: [
+          '(IV) receber conteúdos exclusivos sobre temas como inovação tecnológica, novidades dos produtos, mercado, feiras e eventos, ofertas especiais e atualização das políticas SUB100.',
           'No site do Portal SUB100, o usuário poderá realizar o cadastro no site quando houver interesse da sua parte para:',
           '(I) salvar imóveis favoritos;',
           '(II) emitir propostas aos anunciantes;',
@@ -144,11 +140,7 @@ export const lgpdTermosSections: LegalSection[] = [
           '',
           'O anunciante deverá se cadastrar nos seguintes casos:',
           '(I) possuir interesse na divulgação de imóveis para Lançamentos, Venda, Locação e Temporada;',
-          '(II) usar ferramentas do site para intermediação com o usuário.'
-        ]
-      },
-      {
-        lines: [
+          '(II) usar ferramentas do site para intermediação com o usuário.',
           'Todos os dados serão tratados segundo a Política de Privacidade e poderão ser disponibilizados a SUB100 (e aos anunciantes, quando solicitado pelo usuário) para eventuais contatos.'
         ]
       }
