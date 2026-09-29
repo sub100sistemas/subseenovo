@@ -92,3 +92,43 @@ Cores de fundo do Hero amostradas em 5 pontos: diferença de 0 a 2 níveis por c
 | Item 3 do FAQ quebra a resposta uma palavra antes do Figma | O Figma desenha esse item 6,5px mais à esquerda e 24px mais estreito (845,8px contra 870px) | Imperfeição do design, não replicada |
 | Diferenças de 1 a 3px em textos de cards | Arredondamento de altura de linha | Imperceptível |
 | Header do site projeta sombra sobre o topo do Hero | O Header é um componente global; a captura do frame do Hero no Figma não o inclui | Nenhum |
+
+## Rodada 2: correções visuais
+
+**Método**: build de produção, captura de página inteira em 1920, 1440, 1280, 1024, 992, 768, 576 e 375px, diferença de pixels contra o frame `3188:3397` a 1920px e medidas de DOM. Só existe referência do Figma a 1920px; nas demais larguras a comparação é da composição contra as proporções do frame.
+
+### Corrigido
+
+| Item | Antes | Depois |
+| --- | --- | --- |
+| FAQ | Itens fechados | Itens 1 a 5 abertos (`open` em `Faq.vue`, opcional por item). Passo entre itens 147px, como no Figma (era 148px) |
+| Item 3 do FAQ | Resposta com 870px, quebrava uma palavra depois do Figma | A partir de 1400px: 845,833px de largura, deslocada -6,53px e 6px mais curta, como no Figma. Quebra em "cliente ou / esteja" |
+| Sombra do card institucional | Sombra inteira | Container com `overflow-clip` a partir de 992px, como o `overflow-clip` do Figma. Foco por teclado passa a desenhar dentro do card |
+| Hero a 992px | Título a ~15px do header | `min-h-[380px]` a partir de 992px; título a ~38px do header. Sem efeito acima de ~1150px |
+| Cards do Hero no mobile | Texto de ~7,6px a 375px | Cards em `em` com fonte `max(2.221cqw, 11px)`. Idênticos ao anterior em telas largas; a 375px o texto tem 11px e 12,4px, e abaixo de 576px os cards ficam à esquerda da foto e as curvas decorativas somem |
+| Item institucional | Coluna de texto no topo (espaço perdido numa edição) | Centralizada como no Figma; diferença média 1,82 para 1,16 |
+
+### Diferença de pixels a 1920px
+
+| Região | Média | Pixels > 24 |
+| --- | --- | --- |
+| Header + Hero (0 a 568) | 4,62 | 3,47% |
+| Institucional | 1,16 | 1,30% |
+| Demonstrativos | 1,68 | 1,71% |
+| Perfis e banner | 1,50 | 1,90% |
+| FAQ (2796 a 3496) | 5,87 | 4,57% |
+
+Os pixels do FAQ diferem sobretudo pelo ícone (ver abaixo) e por 1px de antialiasing no texto das perguntas.
+
+### AVS-04
+
+O Figma tem o frame do Hero com 568px porque o Header (85px) fica sobre o topo dele. No site o Header é um componente separado e a seção do Hero mede 483px, então a borda inferior do Hero fica em y=568, igual ao Figma, e todas as seções seguintes ficam nas mesmas posições. Composição e altura conferidas lado a lado. Não há diferença de implementação; o texto do critério (568) mistura a altura do frame com a da seção. O `spec.md` não foi alterado.
+
+### Divergências que permanecem
+
+| Divergência | Causa |
+| --- | --- |
+| Ícones dos itens abertos: o Figma desenha o círculo preto com "+" nos itens 1 a 5 e o contorno com "-" no item 6 | O `Faq.vue` mostra "-" no item aberto e "+" no fechado. Reproduzir o Figma deixaria o ícone contradizendo o estado. Não alterado |
+| Pergunta 6 do FAQ ausente; a página fica 83px mais curta que o Figma (4251px contra 4334px a 1920px) | Sem resposta no Figma (Q4) |
+| Header: posição do botão "Entrar" difere de 1 a 2px | Componente global, fora desta feature |
+| Abaixo de 1920px não há referência do Figma | Composição verificada só por proporção |
