@@ -7,7 +7,7 @@ const tags: string[] = ['Gestão integrada', 'Mais produtividade']
 <template>
   <section id="videos-institucional" class="bg-white py-10">
     <div
-      class="mx-auto flex w-full max-w-[1400px] flex-col gap-10 px-4 mobile-lg:px-6 tablet:px-8 tablet-lg:h-[460px] tablet-lg:flex-row tablet-lg:items-center tablet-lg:gap-[6.86%] desktop-full:px-0"
+      class="mx-auto flex w-full max-w-[1400px] flex-col gap-10 px-4 mobile-lg:px-6 tablet:px-8 tablet-lg:h-[460px] tablet-lg:flex-row tablet-lg:overflow-clip tablet-lg:items-center tablet-lg:gap-[6.86%] desktop-full:px-0"
     >
       <div class="flex min-w-0 flex-col gap-[18px] tablet-lg:h-[420px] tablet-lg:w-[37.14%] tablet-lg:shrink-0">
         <SectionHeading
@@ -40,7 +40,7 @@ const tags: string[] = ['Gestão integrada', 'Mais produtividade']
         :href="videosFallbackUrl"
         target="_blank"
         rel="noopener"
-        class="relative block aspect-[760/460] w-full overflow-hidden rounded-[28px] bg-[linear-gradient(112.44deg,#5d5fef_0%,#2e386b_100%)] shadow-[0px_24px_50px_rgba(46,56,107,0.18)] transition-shadow hover:shadow-[0px_28px_56px_rgba(46,56,107,0.28)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand tablet-lg:aspect-auto tablet-lg:h-[460px] tablet-lg:w-[54.29%] tablet-lg:shrink-0"
+        class="relative block aspect-[760/460] w-full overflow-hidden rounded-[28px] bg-[linear-gradient(112.44deg,#5d5fef_0%,#2e386b_100%)] shadow-[0px_24px_50px_rgba(46,56,107,0.18)] transition-shadow hover:shadow-[0px_28px_56px_rgba(46,56,107,0.28)] focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-white tablet-lg:aspect-auto tablet-lg:h-[460px] tablet-lg:w-[54.29%] tablet-lg:shrink-0"
       >
         <span
           class="absolute top-4 left-4 rounded-full bg-white/16 px-4 py-[10px] text-[13px] leading-normal font-semibold whitespace-nowrap text-white tablet-lg:top-7 tablet-lg:left-7"
