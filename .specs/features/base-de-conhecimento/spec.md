@@ -123,31 +123,31 @@ O mega-menu "Módulos" (`HeaderBar.vue`, coluna "INTEGRAÇÕES E HABILIDADES") j
 
 | Requirement ID | Story | Task | Status |
 | --- | --- | --- | --- |
-| BC-01 | P1: Proposta de valor principal | TBD (fase Tasks) | Pending |
-| BC-02 | P1: Proposta de valor principal | TBD | Pending |
-| BC-03 | P1: Proposta de valor principal | TBD | Pending |
-| BC-04 | P1: Proposta de valor principal | TBD | Pending |
-| BC-05 | P1: Proposta de valor principal | TBD | Pending |
-| BC-06 | P2: Vantagens e valor centralizado | TBD | Pending |
-| BC-07 | P2: Vantagens e valor centralizado | TBD | Pending |
-| BC-08 | P3: Confiança, outros módulos e FAQ | TBD | Pending |
-| BC-09 | P3: Confiança, outros módulos e FAQ | TBD | Pending |
-| BC-10 | P3: Confiança, outros módulos e FAQ | TBD | Pending |
-| BC-11 | P3: Confiança, outros módulos e FAQ | TBD | Pending |
-| BC-12 | P3: Confiança, outros módulos e FAQ | TBD | Pending |
-| BC-13 | Edge case: responsividade | TBD | Pending |
-| BC-14 | Edge case: colisão de nomes | TBD | Pending |
+| BC-01 | P1: Proposta de valor principal | T11 | Verified |
+| BC-02 | P1: Proposta de valor principal | T3 | Verified |
+| BC-03 | P1: Proposta de valor principal | T4 | Verified |
+| BC-04 | P1: Proposta de valor principal | T5 | Verified |
+| BC-05 | P1: Proposta de valor principal | T11 | Verified |
+| BC-06 | P2: Vantagens e valor centralizado | T6 | Verified |
+| BC-07 | P2: Vantagens e valor centralizado | T7 | Verified |
+| BC-08 | P3: Confiança, outros módulos e FAQ | T9 | Verified |
+| BC-09 | P3: Confiança, outros módulos e FAQ | T8 | Verified |
+| BC-10 | P3: Confiança, outros módulos e FAQ | T10 | Verified |
+| BC-11 | P3: Confiança, outros módulos e FAQ | T8 | Verified |
+| BC-12 | P3: Confiança, outros módulos e FAQ | T10 | Verified |
+| BC-13 | Edge case: responsividade | T12 | Verified |
+| BC-14 | Edge case: colisão de nomes | T11 | Verified |
 
 **ID format**: `BC-[NUMBER]`
 **Status values**: Pending → In Design → In Tasks → Implementing → Verified
-**Coverage**: 14 total, 0 implementados — esta feature está na fase Specify; Design (`design.md`) já produzido nesta mesma sessão; Tasks/Execute aguardam aprovação do usuário.
+**Coverage**: 14 total, 14 verificados — ver `.specs/features/base-de-conhecimento/tasks.md` (T1–T12) e `validation.md`.
 
 ---
 
 ## Success Criteria
 
-- [ ] `/modulos/base-de-conhecimento` renderiza as 8 seções do Figma, na ordem correta, com conteúdo extraído fielmente e registrado em `FIGMA_CONTENT_MANIFEST_BASE_CONHECIMENTO.md`.
-- [ ] Ponto de entrada já existente (mega-menu) navega corretamente até a página — sem alteração necessária em `HeaderBar.vue`.
-- [ ] `pnpm build` completa sem erros com a nova rota incluída.
-- [ ] Página visualmente fiel ao Figma e responsiva em 1920/1440/1280/1024/768/576/375px, sem overflow horizontal.
-- [ ] Exatamente 1 `<h1>` na página.
+- [x] `/modulos/base-de-conhecimento` renderiza as 8 seções do Figma, na ordem correta, com conteúdo extraído fielmente e registrado em `FIGMA_CONTENT_MANIFEST_BASE_CONHECIMENTO.md`.
+- [x] Ponto de entrada já existente (mega-menu) navega corretamente até a página — sem alteração necessária em `HeaderBar.vue` (confirmado via Playwright: Home → mega-menu → página).
+- [x] `pnpm build` completa sem erros com a nova rota incluída (chunk `base-de-conhecimento-*.mjs` presente no output).
+- [x] Página visualmente fiel ao Figma e responsiva em 1920/1440/1280/1024/768/576/375px, sem overflow horizontal — verificado com Playwright contra o dev server real e contra `get_screenshot` do Figma por seção. 2 desvios reais encontrados e corrigidos (gradiente do painel de Training; altura/proporções do painel Content/Other) — ver `tasks.md` T11.
+- [x] Exatamente 1 `<h1>` na página (confirmado nos 7 breakpoints).
