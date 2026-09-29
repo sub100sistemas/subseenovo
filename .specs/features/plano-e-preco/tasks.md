@@ -329,12 +329,12 @@ T13 → T14
 **Tools**: none
 
 **Done when**:
-- [ ] Todos os 5 componentes de seção (`PlanoEPrecoTitle`, `PlanoEPrecoPricing`, `PlanoEPrecoFeatures`, `PlanoEPrecoOpcionais`, `PlanoEPrecoFaq`) existem com o prefixo correto, sem colisão com nenhum componente pré-existente (confirmado por busca em `app/components/sections/`)
-- [ ] Todas usam `.section-py`/`.container-page` (ou justificativa documentada para não usar, se a seção tiver largura/fundo diferente do padrão)
-- [ ] Nenhuma seção usa `translate-x-*`/`translate-y-*` para centralização (`AD-007`)
+- [x] Todos os 5 componentes de seção (`PlanoEPrecoTitle`, `PlanoEPrecoPricing`, `PlanoEPrecoFeatures`, `PlanoEPrecoOpcionais`, `PlanoEPrecoFaq`) existem com o prefixo correto, sem colisão com nenhum componente pré-existente (confirmado: `find app/components -iname "PlanoEPreco*.vue"` retorna exatamente 1 arquivo por nome)
+- [x] Todas usam `.section-py`/`.container-page` diretamente, exceto `PlanoEPrecoFaq.vue`, que delega ao `layout/Faq.vue` (já usa `section-py`/container por padrão internamente) — justificativa documentada
+- [x] Nenhuma seção usa `translate-x-*`/`translate-y-*` (`AD-007`) — confirmado via `grep`, zero ocorrências nos 5 arquivos
 
 **Tests**: none
-**Gate**: Quick (revisão de código)
+**Gate**: Quick (revisão de código) — ✅ concluído
 
 ---
 
