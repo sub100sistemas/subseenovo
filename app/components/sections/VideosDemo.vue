@@ -48,7 +48,7 @@ const videos: DemoVideo[] = [
       <div class="mx-auto flex w-full max-w-[1400px] flex-col gap-8 px-4 mobile-lg:px-6 tablet:px-8 desktop-full:px-0">
         <SectionHeading
           wrapper-class="gap-0"
-          eyebrow-class="text-[14px] leading-6 font-semibold tracking-[0.84px] text-brand uppercase"
+          eyebrow-class="h-6 text-[14px] leading-normal font-semibold tracking-[0.84px] text-brand uppercase"
           title-class="mt-[14px] text-[28px] leading-[1.2] font-bold text-ink tablet-lg:text-[32px] desktop-full:text-[38px] desktop-full:leading-[55px]"
           description-class="mx-auto mt-[9px] max-w-[1100px] text-[16px] leading-normal text-[#596273] tablet-lg:text-[18px] desktop-full:min-h-[60px]"
         >
