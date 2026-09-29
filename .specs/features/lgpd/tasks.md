@@ -252,11 +252,11 @@ T23
 
 **Done when**:
 
-- [ ] Fundo cinza curvo do Figma atrás do Header e do Hero (mesma técnica de posicionamento negativo usada nas páginas irmãs), `pointer-events-none`
-- [ ] H1 Poppins Bold 40px `#313846`, subtítulo Poppins Medium 26px `leading-[1.4]`, descrição Poppins Regular 20px `leading-[1.6]` `#6b7280`, tudo centralizado; tamanhos de mobile menores atrás dos breakpoints
-- [ ] Posição vertical do H1 e larguras do subtítulo e da descrição vêm por props de classe (as duas páginas diferem)
-- [ ] Exatamente um `<h1>` no componente; sem texto de produto
-- [ ] `pnpm build` exit 0
+- [x] Fundo cinza curvo do Figma atrás do Header e do Hero (mesma técnica de posicionamento negativo usada nas páginas irmãs), `pointer-events-none`
+- [x] H1 Poppins Bold 40px `#313846`, subtítulo Poppins Medium 26px `leading-[1.4]`, descrição Poppins Regular 20px `leading-[1.6]` `#6b7280`, tudo centralizado; tamanhos de mobile menores atrás dos breakpoints
+- [x] Posição vertical do H1 e larguras do subtítulo e da descrição vêm por props de classe (as duas páginas diferem)
+- [x] Exatamente um `<h1>` no componente; sem texto de produto
+- [x] `pnpm build` exit 0
 
 **Tests**: none
 **Gate**: full
