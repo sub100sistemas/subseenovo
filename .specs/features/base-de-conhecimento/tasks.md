@@ -116,7 +116,7 @@ T12
 
 ---
 
-### T3: Build `BaseConhecimentoHero.vue`
+### T3: Build `BaseConhecimentoHero.vue` ✅
 
 **What**: Hero/top section — H1, description, 2 floating cards (baked into `card_arrow.png`), module-icon row, corner badge — wrapping `layout/Hero.vue`.
 **Where**: `app/components/sections/BaseConhecimentoHero.vue`
@@ -129,15 +129,15 @@ T12
 - Skill: NONE
 
 **Done when**:
-- [ ] H1 "Central de Ajuda, Tutoriais e Documentação do SUBSEE on" renders with "on" styled in the accent color
-- [ ] Description and both floating cards ("Acesso Online", "Equipe treinada") render via `card_arrow.png` (already exported)
-- [ ] No CTA rendered (confirmed absent in Figma)
-- [ ] Corner badge uses the real exported icon from T2, not a placeholder
-- [ ] Module-icon row reuses the existing shared `/icons/crm-hero-icone-*.svg` files (no new assets)
-- [ ] `pnpm build` passes
+- [x] H1 "Central de Ajuda, Tutoriais e Documentação do SUBSEE on" renders with "on" styled in the accent color
+- [x] Description and both floating cards ("Acesso Online", "Equipe treinada") render via `card_arrow.png` (already exported)
+- [x] No CTA rendered (confirmed absent in Figma)
+- [x] Corner badge uses the real exported icon from T2 (`base-conhecimento-icone-badge.svg`), not a placeholder
+- [x] Module-icon row reuses the existing shared `/icons/crm-hero-icone-*.svg` files (no new assets)
+- [x] `pnpm build` passes (full build ran clean — 2m4s)
 
 **Tests**: none
-**Gate**: Quick
+**Gate**: Quick — passed
 
 ---
 
