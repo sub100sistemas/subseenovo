@@ -390,11 +390,11 @@ T23
 
 **Done when**:
 
-- [ ] Diff de texto do DOM renderizado contra o Figma: 0 diferenças
-- [ ] Posições dos cartões conferidas: primeiro cartão em y=465 e altura total da página próxima de 6409px; diferença média de pixels por região registrada
-- [ ] Divergências corrigidas em tarefas de correção antes do commit, ou listadas como pendentes com motivo
-- [ ] Relatório com a tabela de posições, a diferença de pixels e as divergências que permanecem
-- [ ] `pnpm build` exit 0
+- [x] Diff de texto do DOM renderizado contra o Figma: 0 diferenças
+- [x] Posições dos cartões conferidas: primeiro cartão em y=465 e altura total da página próxima de 6409px; diferença média de pixels por região registrada
+- [x] Divergências corrigidas em tarefas de correção antes do commit, ou listadas como pendentes com motivo
+- [x] Relatório com a tabela de posições, a diferença de pixels e as divergências que permanecem
+- [x] `pnpm build` exit 0
 
 **Tests**: none
 **Gate**: full
