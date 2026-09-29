@@ -100,7 +100,7 @@ graph TD
 
 - **Purpose**: Círculo com triângulo de play, sem comportamento próprio (o link envolvente decide).
 - **Location**: `app/components/ui/PlayButton.vue`
-- **Interfaces**: props `size` e `variant`. **`light`** (Vídeo institucional 92px e cards demo 64px): círculo branco, borda `#DDE6F6` de 2px, triângulo `#2764F2` (azul do Figma, não o `#5d5fef` da marca); no Vídeo institucional há ainda um círculo branco de 92px com sombra (`0 10px 24px` a 20% de preto) por trás, exportado como `3188:3434`. **`brand`** (perfis, 54px): círculo sólido na cor do perfil (`#5d5fef`, `#159c96`, `#7652b5`) com triângulo branco de 19,65×15,04. `aria-hidden="true"` sempre. Implementação com os SVGs exportados do Figma, sem redesenhar círculo nem triângulo.
+- **Interfaces**: props `size` (`lg` 92px, `md` 64px, `sm` 54px) e `circleSrc` (só para `sm`). A variante deriva do tamanho: `lg` (Vídeo institucional) usa círculo branco com borda `#DDE6F6` de 2px, triângulo `#2764F2` e o círculo com sombra exportado como `3188:3434` por trás; `md` (cards demo) usa círculo branco com borda e triângulo `#2764F2`; `sm` (perfis) usa o círculo sólido passado em `circleSrc` (`#5d5fef`, `#159c96` ou `#7652b5`) e triângulo branco. `aria-hidden="true"` sempre. Implementação com os SVGs exportados do Figma, sem redesenhar círculo nem triângulo. (Revisado na T4: a proposta original tinha `variant` separado de `size`; as combinações reais são só estas três.)
 - **Chamadores reais**: `VideosFeatured`, `VideosDemo`, `VideosProfiles`.
 
 ### `VideosFeatured`

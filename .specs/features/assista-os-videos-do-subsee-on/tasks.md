@@ -220,12 +220,12 @@ T11 → T18
 
 **Done when**:
 
-- [ ] `light` renders the white circle with `#DDE6F6` 2px border and `#2764F2` triangle at 92px and 64px; `brand` renders the solid profile circle (color via prop) with the white triangle at 54px
-- [ ] The featured variant includes the shadow circle exported as `3188:3434`
-- [ ] No circle or triangle is redrawn in CSS; centered with flexbox, no `translate-*` ([[AD-007]])
-- [ ] No data, copy or URL inside the component; no comments
-- [ ] Gate check passes: `pnpm build`
-- [ ] Test count: n/a ([[AD-002]])
+- [x] `light` renders the white circle with `#DDE6F6` 2px border and `#2764F2` triangle at 92px and 64px; `brand` renders the solid profile circle (color via prop) with the white triangle at 54px
+- [x] The featured variant includes the shadow circle exported as `3188:3434`
+- [x] No circle or triangle is redrawn in CSS; centered with flexbox, no `translate-*` ([[AD-007]])
+- [x] No data, copy or URL inside the component; no comments
+- [x] Gate check passes: `pnpm build`
+- [x] Test count: n/a ([[AD-002]])
 
 **Tests**: none
 **Gate**: quick
