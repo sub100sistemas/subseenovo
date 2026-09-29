@@ -13,9 +13,9 @@ const modalOpen = ref(false)
 <template>
   <section id="videos-institucional" class="bg-white py-10">
     <div
-      class="mx-auto flex w-full max-w-[1400px] flex-col gap-10 px-4 mobile-lg:px-6 tablet:px-8 tablet-lg:h-[460px] tablet-lg:flex-row tablet-lg:overflow-clip tablet-lg:items-center tablet-lg:gap-[6.86%] desktop-full:px-0"
+      class="mx-auto flex w-full max-w-[1400px] flex-col gap-10 px-4 mobile-lg:px-6 tablet:px-8 tablet-lg:h-[485px] tablet-lg:flex-row tablet-lg:items-start tablet-lg:overflow-clip tablet-lg:gap-[6.86%] desktop-full:px-0"
     >
-      <div class="flex min-w-0 flex-col gap-[18px] tablet-lg:h-[420px] tablet-lg:w-[37.14%] tablet-lg:shrink-0">
+      <div class="flex min-w-0 flex-col gap-[18px] tablet-lg:mt-5 tablet-lg:h-[420px] tablet-lg:w-[37.14%] tablet-lg:shrink-0">
         <SectionHeading
           align="left"
           wrapper-class="gap-[18px]"
@@ -46,9 +46,22 @@ const modalOpen = ref(false)
         type="button"
         aria-haspopup="dialog"
         :aria-label="`Assistir ao vídeo: ${featuredVideo.title}`"
-        class="relative block cursor-pointer text-left aspect-[760/460] w-full overflow-hidden rounded-[28px] bg-[linear-gradient(112.44deg,#5d5fef_0%,#2e386b_100%)] shadow-[0px_24px_50px_rgba(46,56,107,0.18)] transition-shadow hover:shadow-[0px_28px_56px_rgba(46,56,107,0.28)] focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-white tablet-lg:aspect-auto tablet-lg:h-[460px] tablet-lg:w-[54.29%] tablet-lg:shrink-0"
+        class="relative block cursor-pointer text-left aspect-[760/460] w-full overflow-hidden rounded-[28px] bg-[#2e386b] drop-shadow-[0px_10px_7.5px_rgba(46,56,107,0.3)] focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-white tablet-lg:aspect-auto tablet-lg:h-[460px] tablet-lg:w-[54.29%] tablet-lg:shrink-0"
         @click="modalOpen = true"
       >
+        <NuxtImg
+          src="/images/assista-videos/featured-thumb.png"
+          :width="1672"
+          :height="941"
+          sizes="380px mobile-lg:600px tablet:800px tablet-lg:560px desktop-compact:660px desktop:820px"
+          alt=""
+          aria-hidden="true"
+          class="pointer-events-none absolute top-[-0.435%] left-[-5.13%] block h-[100.87%] w-[108.42%] max-w-none object-cover"
+          loading="lazy"
+        />
+        <span
+          class="pointer-events-none absolute top-[44.783%] left-[-2.105%] block h-[59.13%] w-[105.263%] bg-[linear-gradient(to_bottom,rgba(255,255,255,0)_15.865%,rgba(128,128,128,0.58)_49.279%,rgba(0,0,0,0.68)_82.692%)]"
+        />
         <span
           class="absolute top-4 left-4 rounded-full bg-white/16 px-4 py-[10px] text-[13px] leading-normal font-semibold whitespace-nowrap text-white tablet-lg:top-7 tablet-lg:left-7"
         >
