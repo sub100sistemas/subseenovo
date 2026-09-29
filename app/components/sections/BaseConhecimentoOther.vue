@@ -3,11 +3,11 @@
 <template>
   <section id="base-conhecimento-informacao-centralizada" class="section-py">
     <div class="container-page">
-      <div class="relative flex flex-col tablet-lg:h-[596px] tablet-lg:flex-row tablet-lg:items-stretch tablet-lg:overflow-clip">
+      <div class="relative flex flex-col tablet-lg:min-h-[425px] tablet-lg:flex-row tablet-lg:items-stretch tablet-lg:overflow-clip">
         <div class="absolute inset-0 -z-10 rounded-[50px] bg-[#f5f5f5]" aria-hidden="true"></div>
 
         <div
-          class="flex w-full flex-col items-start gap-4 px-10 py-10 tablet-lg:w-[40.71%] tablet-lg:justify-center tablet-lg:gap-5 tablet-lg:px-16 tablet-lg:py-0"
+          class="flex w-full flex-col items-start gap-4 px-10 py-10 tablet-lg:w-[43.75%] tablet-lg:justify-center tablet-lg:gap-5 tablet-lg:px-16 tablet-lg:py-0"
         >
           <span class="inline-flex items-center gap-2 rounded-full bg-[#e0e1ff] px-3 py-1.5">
             <img src="/icons/base-conhecimento-icone-award.svg" width="14" height="14" alt="" aria-hidden="true" />
@@ -29,14 +29,14 @@
           </p>
         </div>
 
-        <div class="flex w-full items-center justify-center px-6 pb-10 tablet-lg:w-[59.29%] tablet-lg:px-10 tablet-lg:py-0">
+        <div class="flex w-full items-center justify-center px-6 pb-10 tablet-lg:w-[50.5%] tablet-lg:px-10 tablet-lg:py-0">
           <NuxtImg
             src="/images/modulos-base-de-conhecimento/devices-composition.png"
             :width="1552"
             :height="960"
             sizes="mobile-lg:100vw tablet-lg:600px desktop:732px"
             alt="Painel de treinamentos do SUBSEE com biblioteca de manuais e trilha de integração, ao lado de um celular exibindo o progresso de um curso e um vídeo de suporte"
-            class="h-auto w-full max-w-[600px] tablet-lg:max-w-[732px]"
+            class="h-auto w-full max-w-[550px] tablet-lg:max-w-[703px]"
             loading="lazy"
           />
         </div>

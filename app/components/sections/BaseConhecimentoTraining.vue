@@ -32,6 +32,7 @@ const trainingFeatures: TrainingFeatureItem[] = [
 <template>
   <Portfolio
     section-id="base-conhecimento-treinamento"
+    panel-class="overflow-hidden rounded-[30px] bg-[linear-gradient(75.89deg,_#e6faf1_5.56%,_#ecf8f9_30.92%,_#eff2fa_76.37%,_#c5dcf0_98.37%)] px-6 py-10 tablet:px-10 tablet:py-14 tablet-lg:rounded-[50px] desktop-full:px-[65px] desktop-full:py-[85px]"
     :features="trainingFeatures"
     cta-to="/testar-gratis"
     cta-text="Testar grátis por 30 dias"

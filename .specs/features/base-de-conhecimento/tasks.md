@@ -294,7 +294,7 @@ T12
 
 ---
 
-### T11: Assemble `app/pages/modulos/base-de-conhecimento.vue`
+### T11: Assemble `app/pages/modulos/base-de-conhecimento.vue` ✅
 
 **What**: Compose all 8 sections in Figma order; set `useSeoMeta`.
 **Where**: `app/pages/modulos/base-de-conhecimento.vue`
@@ -305,16 +305,20 @@ T12
 **Tools**: NONE
 
 **Done when**:
-- [ ] `/modulos/base-de-conhecimento` resolves HTTP 200
-- [ ] All 8 sections render in Figma order
-- [ ] `useSeoMeta` set with real title/description (no placeholder)
-- [ ] Exactly one `<h1>` on the page
-- [ ] Mega-menu link (`HeaderBar.vue`) still resolves here (no change needed — confirmed pre-existing)
-- [ ] No `BaseConhecimento*` component name collides with an existing `app/components/sections/*` filename (confirmed already at Specify time — re-confirm here as a final check)
-- [ ] `pnpm build` passes
+- [x] `/modulos/base-de-conhecimento` resolves HTTP 200 (confirmed via `curl` against the running dev server)
+- [x] All 8 sections render in Figma order
+- [x] `useSeoMeta` set with real title/description (no placeholder)
+- [x] Exactly one `<h1>` on the page (confirmed via Playwright at all 7 breakpoints)
+- [x] Mega-menu link (`HeaderBar.vue`) still resolves here — confirmed live with Playwright (Home → "Módulos" → mega-menu link → lands on the page, zero console errors)
+- [x] No `BaseConhecimento*` component name collides with an existing `app/components/sections/*` filename
+- [x] `pnpm build` passes
+
+**Visual QA findings (fixed before marking done)**: comparing each section's Playwright screenshot against a live `get_screenshot` of its Figma node found 2 real deviations, both fixed:
+1. `BaseConhecimentoTraining.vue` was missing the panel's soft gradient background (Figma frame `3168:40735` has a fill baked directly into the frame — not visible via `get_metadata`, only via `get_design_context`, which returned `linear-gradient(75.5deg, rgb(230,250,241) 5.56%, rgb(236,248,249) 30.92%, rgb(239,242,250) 76.37%, rgb(197,220,240) 98.37%)` — an exact match, down to the color stops, to the gradient already established in `CrmRuralPortfolio.vue`'s `panel-class` override). Fixed by passing the same `panel-class` value via `layout/Portfolio.vue`'s existing prop.
+2. `BaseConhecimentoOther.vue` copied `ApisConecte.vue`'s proportions verbatim (`tablet-lg:h-[596px]`, 40.71%/59.29% column split) without re-deriving them from this page's own Figma node. This page's Row is 425px tall (not 596) and splits 43.75%/50.5% (not 40.71%/59.29%). Fixed the percentages; changed the fixed height to `min-h-[425px]` instead of an exact height, because a literal `425px` clipped the tag/trust-indicator (my padding/gap values are slightly more generous than Figma's, so the content needs a little more room — `min-height` preserves the intended panel proportions without losing content, which a hard clip would have done silently).
 
 **Tests**: none
-**Gate**: Full
+**Gate**: Full — passed
 
 ---
 
