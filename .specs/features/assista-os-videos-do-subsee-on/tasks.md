@@ -513,11 +513,11 @@ T11 → T18
 
 **Done when**:
 
-- [ ] At each of the 7 widths `scrollWidth <= innerWidth`, zero console errors, zero 404s
-- [ ] Below 992px: the Featured columns and the three 3-card grids are single-column; Hero follows the sibling pages' mobile behavior
-- [ ] Extra checks at 991, 1199 and 1299px for text-wrap pinches; each finding is listed, not silently fixed
-- [ ] Gate check passes: `pnpm build` and `pnpm generate` (no new `[404]` lines)
-- [ ] Test count: n/a ([[AD-002]])
+- [x] At each of the 7 widths `scrollWidth <= innerWidth`, zero console errors, zero 404s
+- [x] Below 992px: the Featured columns and the three 3-card grids are single-column; Hero follows the sibling pages' mobile behavior
+- [x] Extra checks at 991, 1199 and 1299px for text-wrap pinches; each finding is listed, not silently fixed
+- [x] Gate check passes: `pnpm build` and `pnpm generate` (no new `[404]` lines)
+- [x] Test count: n/a ([[AD-002]])
 
 **Tests**: none
 **Gate**: build
