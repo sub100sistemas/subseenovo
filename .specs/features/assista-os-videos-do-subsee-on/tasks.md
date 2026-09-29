@@ -454,13 +454,13 @@ T11 → T18
 
 **Done when**:
 
-- [ ] Title "Perguntas Frequentes" (52px SemiBold), subtitle and the 5 question/answer pairs exactly as in the manifest, from one typed array
-- [ ] `panel-class` has no gray background (white), items 970px wide at 1920px, question 20px SemiBold, answer 16px with 26px line height
-- [ ] Accordion is closed by default and toggles "+" / "−" (native `<details>`)
-- [ ] Question 6 is **not** rendered here and no answer text is invented (see T17)
-- [ ] At 1920px the FAQ matches the `3188:3507` screenshot for items 1 to 5
-- [ ] Gate check passes: `pnpm build` and visual check on `pnpm dev`
-- [ ] Test count: n/a ([[AD-002]])
+- [x] Title "Perguntas Frequentes" (52px SemiBold), subtitle and the 5 question/answer pairs exactly as in the manifest, from one typed array
+- [x] `panel-class` has no gray background (white), items 970px wide at 1920px, question 20px SemiBold, answer 16px with 26px line height
+- [x] Accordion is closed by default and toggles "+" / "−" (native `<details>`)
+- [x] Question 6 is **not** rendered here and no answer text is invented (see T17)
+- [x] At 1920px the FAQ matches the `3188:3507` screenshot for items 1 to 5
+- [x] Gate check passes: `pnpm build` and visual check on `pnpm dev`
+- [x] Test count: n/a ([[AD-002]])
 
 **Tests**: none
 **Gate**: quick
