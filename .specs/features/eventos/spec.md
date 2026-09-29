@@ -122,22 +122,22 @@ O nav principal do site (`HeaderBar.vue:8`) já tem o item de topo "Eventos" apo
 
 | Requirement ID | Story | Task | Status |
 | --- | --- | --- | --- |
-| EV-01 | P1: Proposta de valor + próximo evento | TBD (fase Tasks) | Pending |
-| EV-02 | P1: Proposta de valor + próximo evento | TBD | Pending |
-| EV-03 | P1: Proposta de valor + próximo evento | TBD | Pending |
-| EV-04 | P1: Proposta de valor + próximo evento | TBD | Pending |
-| EV-05 | P2: Replays e visão geral | TBD | Pending |
-| EV-06 | P2: Replays e visão geral | TBD | Pending |
-| EV-07 | P3: Inscrição e FAQ | TBD | Pending |
-| EV-08 | P3: Inscrição e FAQ | TBD | Pending |
-| EV-09 | P3: Inscrição e FAQ | TBD | Pending |
-| EV-10 | P3: Inscrição e FAQ | TBD | Pending |
-| EV-11 | Edge case: responsividade | TBD | Pending |
-| EV-12 | Edge case: colisão de nomes | TBD | Pending |
+| EV-01 | P1: Proposta de valor + próximo evento | T9 | Verified |
+| EV-02 | P1: Proposta de valor + próximo evento | T3 | Verified |
+| EV-03 | P1: Proposta de valor + próximo evento | T4 | Verified |
+| EV-04 | P1: Proposta de valor + próximo evento | T9 | Verified |
+| EV-05 | P2: Replays e visão geral | T5 | Verified |
+| EV-06 | P2: Replays e visão geral | T6 | Verified |
+| EV-07 | P3: Inscrição e FAQ | T7 | Verified |
+| EV-08 | P3: Inscrição e FAQ | T8 | Verified |
+| EV-09 | P3: Inscrição e FAQ | T8 | Verified |
+| EV-10 | P3: Inscrição e FAQ | T4, T7 | Verified |
+| EV-11 | Edge case: responsividade | T10 | Verified |
+| EV-12 | Edge case: colisão de nomes | T9 | Verified |
 
 **ID format**: `EV-[NUMBER]`
 **Status values**: Pending → In Design → In Tasks → Implementing → Verified
-**Coverage**: 12 total, 0 implementados — esta feature está na fase Specify; Design (`design.md`) produzido na mesma sessão; Tasks/Execute aguardam aprovação do usuário.
+**Coverage**: 12 total, 12 verificados — ver `.specs/features/eventos/tasks.md` (T1–T10) e `validation.md`.
 
 ---
 
@@ -157,8 +157,8 @@ O nav principal do site (`HeaderBar.vue:8`) já tem o item de topo "Eventos" apo
 
 ## Success Criteria
 
-- [ ] `/eventos` renderiza os 6 blocos do Figma, na ordem correta, com conteúdo extraído fielmente e registrado em `FIGMA_CONTENT_MANIFEST_EVENTOS.md`.
-- [ ] Ponto de entrada já existente (nav principal) navega corretamente até a página — sem alteração necessária em `HeaderBar.vue`.
-- [ ] `pnpm build` completa sem erros com a nova rota incluída.
-- [ ] Página visualmente fiel ao Figma e responsiva em 1920/1440/1280/1024/768/576/375px, sem overflow horizontal.
-- [ ] Exatamente 1 `<h1>` na página.
+- [x] `/eventos` renderiza os 6 blocos do Figma, na ordem correta, com conteúdo extraído fielmente e registrado em `FIGMA_CONTENT_MANIFEST_EVENTOS.md`.
+- [x] Ponto de entrada já existente (nav principal) navega corretamente até a página — sem alteração necessária em `HeaderBar.vue`.
+- [x] `pnpm build` completa sem erros com a nova rota incluída (chunk `eventos-*.mjs` presente no output).
+- [x] Página visualmente fiel ao Figma e responsiva em 1920/1440/1280/1024/768/576/375px, sem overflow horizontal — verificado com Playwright contra o dev server real e contra `get_screenshot` do Figma por seção. 5 desvios reais encontrados e corrigidos (overflow do Replay, blocos decorativos do Overview, badge de versão com padrão translate quebrado, imagem cortada do Signup) — ver `tasks.md` T9.
+- [x] Exatamente 1 `<h1>` na página (confirmado nos 7 breakpoints).
