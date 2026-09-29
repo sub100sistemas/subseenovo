@@ -196,12 +196,12 @@ T23
 
 **Done when**:
 
-- [ ] Um `v-for` sobre `sections` e um `LegalCard`; um `v-for` sobre `subsections` e um `LegalSubCard`; um `v-for` sobre `paragraphs`
-- [ ] Coluna de 992px centralizada com gap de 48px entre cartões (24px no mobile); largura total abaixo de 992px, com recuo do `container-page`
-- [ ] Cada `lines` vira um `<p>` com `<br>` entre as linhas; nenhum `<p>` vazio; `bodyClass` aplicado ao corpo
-- [ ] Seção sem `paragraphs` nem `subsections` não renderiza cartão vazio (Edge Case da spec)
-- [ ] Não importa arquivo de `app/data/` (regra do `CLAUDE.md`: `layout/` é agnóstico de conteúdo)
-- [ ] Verificado com um array de teste temporário fora do repositório: ordem, espaçamento e `<br>`; `pnpm build` exit 0
+- [x] Um `v-for` sobre `sections` e um `LegalCard`; um `v-for` sobre `subsections` e um `LegalSubCard`; um `v-for` sobre `paragraphs`
+- [x] Coluna de 992px centralizada com gap de 48px entre cartões (24px no mobile); largura total abaixo de 992px, com recuo do `container-page`
+- [x] Cada `lines` vira um `<p>` com `<br>` entre as linhas; nenhum `<p>` vazio; `bodyClass` aplicado ao corpo
+- [x] Seção sem `paragraphs` nem `subsections` não renderiza cartão vazio (Edge Case da spec)
+- [x] Não importa arquivo de `app/data/` (regra do `CLAUDE.md`: `layout/` é agnóstico de conteúdo)
+- [x] Verificado com um array de teste temporário fora do repositório: ordem, espaçamento e `<br>`; `pnpm build` exit 0
 
 **Tests**: none
 **Gate**: full
