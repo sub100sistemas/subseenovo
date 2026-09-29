@@ -141,7 +141,7 @@ T12
 
 ---
 
-### T4: Build `BaseConhecimentoTechnology.vue`
+### T4: Build `BaseConhecimentoTechnology.vue` ✅
 
 **What**: Heading/description/CTA + static mockup, wrapping `layout/Technology.vue` via `sections/CrmTechnology.vue` (mirrors `ApisTechnology.vue`).
 **Where**: `app/components/sections/BaseConhecimentoTechnology.vue`
@@ -152,17 +152,17 @@ T12
 **Tools**: NONE (content already in the manifest)
 
 **Done when**:
-- [ ] H2/description match the manifest exactly ("Aprenda a usar o sistema com tutoriais e treinamentos" / manual description)
-- [ ] CTA renders "Testar grátis por 30 dias" pointing at `/testar-gratis`
-- [ ] Mockup image has real intrinsic width/height, `loading="lazy"`
-- [ ] `pnpm build` passes
+- [x] H2/description match the manifest exactly ("Aprenda a usar o sistema com tutoriais e treinamentos" / manual description, "Base de conhecimento" in bold)
+- [x] CTA renders "Testar grátis por 30 dias" pointing at `/testar-gratis` (via `CrmTechnology.vue`'s default `#cta` slot)
+- [x] Mockup image has real intrinsic width/height (2200×1292), `loading="lazy"`
+- [x] `pnpm build` passes (shared build run with T5–T10, see T10 note)
 
 **Tests**: none
-**Gate**: Quick
+**Gate**: Quick — passed
 
 ---
 
-### T5: Build `BaseConhecimentoTraining.vue`
+### T5: Build `BaseConhecimentoTraining.vue` ✅
 
 **What**: Two-column bloco — heading/description (panel level) + image (`portfolio-telas-base-conhecimento.png`) + secondary description + 4-item feature list + CTA, wrapping `layout/Portfolio.vue` directly.
 **Where**: `app/components/sections/BaseConhecimentoTraining.vue`
@@ -175,19 +175,19 @@ T12
 - Skill: NONE
 
 **Done when**:
-- [ ] H2 "Como treinar sua equipe para usar o SUBSEE on" + description render verbatim at the panel level
-- [ ] Image column uses `portfolio-telas-base-conhecimento.png` (already exported)
-- [ ] Secondary description + 4 feature items (Suporte e implantação humanizada / Treinamentos em vídeo / Manuais e materiais de apoio / Eventos online) render with real icons from T2, title, description
-- [ ] CTA "Testar grátis por 30 dias" → `/testar-gratis`
-- [ ] No deviation: `layout/Portfolio.vue` fit directly, used as a thin wrapper (no bespoke fallback needed)
-- [ ] `pnpm build` passes
+- [x] H2 "Como treinar sua equipe para usar o SUBSEE on" + description render verbatim at the panel level
+- [x] Image column uses `portfolio-telas-base-conhecimento.png` (already exported)
+- [x] Secondary description + 4 feature items (Suporte e implantação humanizada / Treinamentos em vídeo / Manuais e materiais de apoio / Eventos online) render with real icons from T2, title, description
+- [x] CTA "Testar grátis por 30 dias" → `/testar-gratis`
+- [x] No deviation: `layout/Portfolio.vue` fit directly, used as a thin wrapper (no bespoke fallback needed)
+- [x] `pnpm build` passes
 
 **Tests**: none
-**Gate**: Quick
+**Gate**: Quick — passed
 
 ---
 
-### T6: Build `BaseConhecimentoPublishing.vue`
+### T6: Build `BaseConhecimentoPublishing.vue` ✅
 
 **What**: 3-card "Vantagens" grid (icon + H3 + description), no CTA.
 **Where**: `app/components/sections/BaseConhecimentoPublishing.vue`
@@ -198,16 +198,16 @@ T12
 **Tools**: NONE
 
 **Done when**:
-- [ ] H2 'Vantagens que a "Base de Conhecimento" oferece' + description render verbatim (module name in accent color)
-- [ ] Exactly 3 cards with the manifest's real titles ("Maior engajamento das equipes", "Melhorar o treinamento de novos colaboradores", "Aumenta a satisfação dos clientes") using the team/training/satisfaction icons from T2
-- [ ] `pnpm build` passes
+- [x] H2 'Vantagens que a "Base de Conhecimento" oferece' + description render verbatim (module name in accent color)
+- [x] Exactly 3 cards with the manifest's real titles ("Maior engajamento das equipes", "Melhorar o treinamento de novos colaboradores", "Aumenta a satisfação dos clientes") using the team/training/satisfaction icons from T2
+- [x] `pnpm build` passes
 
 **Tests**: none
-**Gate**: Quick
+**Gate**: Quick — passed
 
 ---
 
-### T7: Build `BaseConhecimentoOther.vue`
+### T7: Build `BaseConhecimentoOther.vue` ✅
 
 **What**: Two-column bloco — tag (icon+text)/H2/description/trust-indicator/CTA + "devices-composition" image.
 **Where**: `app/components/sections/BaseConhecimentoOther.vue`
@@ -218,18 +218,18 @@ T12
 **Tools**: NONE
 
 **Done when**:
-- [ ] Tag "base de conhecimento" (icon + uppercase text) + H2 "Toda a informação que sua equipe precisa, em um só lugar." + 2-line description render verbatim
-- [ ] Trust-indicator line ("Sem compromisso. Teste gratuito por 30 dias para toda a equipe.") renders with its icon from T2
-- [ ] CTA "Testar grátis por 30 dias" → `/testar-gratis`
-- [ ] Image column uses the "devices-composition" asset from T2 (or documents the blocker if not yet exported — never an HTML/CSS approximation, per spec Edge Cases)
-- [ ] `pnpm build` passes
+- [x] Tag "base de conhecimento" (icon + uppercase text) + H2 "Toda a informação que sua equipe precisa, em um só lugar." + 2-line description render verbatim
+- [x] Trust-indicator line ("Sem compromisso. Teste gratuito por 30 dias para toda a equipe.") renders with its icon from T2
+- [x] CTA "Testar grátis por 30 dias" → `/testar-gratis`
+- [x] Image column uses the "devices-composition" asset from T2
+- [x] `pnpm build` passes
 
 **Tests**: none
-**Gate**: Quick
+**Gate**: Quick — passed
 
 ---
 
-### T8: Build `BaseConhecimentoOtherModules.vue`
+### T8: Build `BaseConhecimentoOtherModules.vue` ✅
 
 **What**: Header + single "APIs e HUB Integradores" banner (no card grid).
 **Where**: `app/components/sections/BaseConhecimentoOtherModules.vue`
@@ -240,17 +240,17 @@ T12
 **Tools**: NONE
 
 **Done when**:
-- [ ] H2 "Conheça os outros módulos do Integrações e Habilidades" + description render
-- [ ] Single banner (icon + "APIs e HUB Integradores" + description + "Clique aqui →") links to `/modulos/apis-hub-integrador` — a real, already-existing route, not a placeholder
-- [ ] Banner icon decision from T2 applied (reused `/icons/menu-icone-apis-hub.svg` or a newly exported dedicated icon)
-- [ ] `pnpm build` passes
+- [x] H2 "Conheça os outros módulos do Integrações e Habilidades" + description render
+- [x] Single banner (icon + "APIs e HUB Integradores" + description + "Clique aqui →") links to `/modulos/apis-hub-integrador` via `NuxtLink` (real, already-existing route, not a placeholder — an improvement over `ApisOtherModules.vue`'s unresolved `href="#"`, since this destination is confirmed)
+- [x] Banner icon decision from T2 applied — reused `/icons/menu-icone-apis-hub.svg`
+- [x] `pnpm build` passes
 
 **Tests**: none
-**Gate**: Quick
+**Gate**: Quick — passed
 
 ---
 
-### T9: Build `BaseConhecimentoTestimonials.vue`
+### T9: Build `BaseConhecimentoTestimonials.vue` ✅
 
 **What**: Wrap `layout/Testimonials.vue`, filtering `app/data/testimonials.json` by 2 confirmed ids.
 **Where**: `app/components/sections/BaseConhecimentoTestimonials.vue`
@@ -261,17 +261,17 @@ T12
 **Tools**: NONE
 
 **Done when**:
-- [ ] `testimonials.json` is **not modified**
-- [ ] Exactly 2 testimonials render: `crm-geral-mauro-alencar` (Ideal Imóveis) + `crm-rural-julio-silveira` (Vettore Uruguay)
-- [ ] H2 "O que nossos clientes falam dos nossos produtos e serviços" renders
-- [ ] `pnpm build` passes
+- [x] `testimonials.json` is **not modified**
+- [x] Exactly 2 testimonials render: `crm-geral-mauro-alencar` (Ideal Imóveis) + `crm-rural-julio-silveira` (Vettore Uruguay)
+- [x] H2 "O que nossos clientes falam dos nossos produtos e serviços" renders (default slot content from `layout/Testimonials.vue`)
+- [x] `pnpm build` passes
 
 **Tests**: none
-**Gate**: Quick
+**Gate**: Quick — passed
 
 ---
 
-### T10: Build `BaseConhecimentoFaq.vue`
+### T10: Build `BaseConhecimentoFaq.vue` ✅
 
 **What**: FAQ accordion wrapping `sections/CrmFaq.vue` with the 6 extracted Q&A.
 **Where**: `app/components/sections/BaseConhecimentoFaq.vue`
@@ -282,13 +282,15 @@ T12
 **Tools**: NONE
 
 **Done when**:
-- [ ] All 6 Q&A render verbatim via `CrmFaq.vue`/`layout/Faq.vue`
-- [ ] "+"/"−" icons reused from `/icons/faq-plus-circle.svg`/`faq-minus-circle.svg` (no new icon export)
-- [ ] Opening/closing an accordion item visibly toggles the expanded state (native `<details>`/`<summary>` behavior from `layout/Faq.vue`)
-- [ ] `pnpm build` passes
+- [x] All 6 Q&A render verbatim via `CrmFaq.vue`/`layout/Faq.vue`
+- [x] "+"/"−" icons reused from `/icons/faq-plus-circle.svg`/`faq-minus-circle.svg` (no new icon export — via `CrmFaq.vue`'s defaults)
+- [x] Opening/closing an accordion item visibly toggles the expanded state (native `<details>`/`<summary>` behavior from `layout/Faq.vue`)
+- [x] `pnpm build` passes
+
+**Process note**: T4–T10's `pnpm build` gate was run once after all 7 components were written (39s, clean) rather than once per task, since none of these components is referenced by any page until T11 — a build after each one would only re-prove the same project-wide compile health repeatedly. Each task still got its own atomic commit. Flagging this explicitly as a deliberate deviation from literal one-gate-per-task, not a silent skip.
 
 **Tests**: none
-**Gate**: Quick
+**Gate**: Quick — passed
 
 ---
 
