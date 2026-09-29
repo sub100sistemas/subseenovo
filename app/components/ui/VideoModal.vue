@@ -109,10 +109,12 @@ onBeforeUnmount(() => {
           role="dialog"
           aria-modal="true"
           :aria-labelledby="titleId"
-          class="video-modal-panel relative flex h-dvh w-full flex-col bg-[linear-gradient(112.44deg,#5d5fef_0%,#2e386b_100%)] p-4 pt-[max(1rem,env(safe-area-inset-top))] pb-[max(1rem,env(safe-area-inset-bottom))] shadow-[0px_32px_80px_rgba(11,13,31,0.55)] tablet:p-6 tablet:pt-[max(1.5rem,env(safe-area-inset-top))] tablet:pb-[max(1.5rem,env(safe-area-inset-bottom))] tablet-lg:block tablet-lg:h-auto tablet-lg:max-w-[960px] tablet-lg:rounded-[28px] tablet-lg:p-5"
+          class="video-modal-panel relative flex h-dvh w-full flex-col bg-[linear-gradient(112.44deg,#5d5fef_0%,#2e386b_100%)] pb-[env(safe-area-inset-bottom)] shadow-[0px_32px_80px_rgba(11,13,31,0.55)] tablet-lg:block tablet-lg:h-auto tablet-lg:max-w-[960px] tablet-lg:rounded-[28px] tablet-lg:p-5 tablet-lg:pb-5"
           @click.self="closeOnEmptyArea"
         >
-          <div class="flex items-start justify-between gap-4 px-2 pt-1 pb-3 tablet:px-2 tablet:pb-4">
+          <div
+            class="flex items-start justify-between gap-4 px-4 pt-[max(1rem,env(safe-area-inset-top))] pb-3 tablet:px-6 tablet-lg:px-2 tablet-lg:pt-1 tablet-lg:pb-4"
+          >
             <div class="min-w-0">
               <p
                 v-if="eyebrow"
@@ -145,7 +147,7 @@ onBeforeUnmount(() => {
             @click.self="closeOnEmptyArea"
           >
             <div
-              class="aspect-video w-full max-w-[calc((100dvh-9rem)*16/9)] overflow-hidden rounded-[14px] bg-black tablet:rounded-[18px] tablet-lg:max-w-none"
+              class="aspect-video w-full max-w-[calc((100dvh-6rem)*16/9)] overflow-hidden bg-black tablet-lg:max-w-none tablet-lg:rounded-[18px]"
             >
               <iframe
                 :src="embedSrc"
