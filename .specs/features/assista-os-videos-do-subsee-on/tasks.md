@@ -249,11 +249,11 @@ T11 → T18
 
 **Done when**:
 
-- [ ] Slots `eyebrow`, `title`, `description`; class props `wrapperClass`, `eyebrowClass`, `titleClass`, `descriptionClass`, all with defaults
-- [ ] The default eyebrow style is Poppins SemiBold 14px, tracking 0.84px, `text-brand`, uppercase; the description slot is optional
-- [ ] No product copy, no data imports inside
-- [ ] Gate check passes: `pnpm build`
-- [ ] Test count: n/a ([[AD-002]])
+- [x] Slots `eyebrow`, `title`, `description`; class props `wrapperClass`, `eyebrowClass`, `titleClass`, `descriptionClass`, all with defaults
+- [x] The default eyebrow style is Poppins SemiBold 14px, tracking 0.84px, `text-brand`, uppercase; the description slot is optional
+- [x] No product copy, no data imports inside
+- [x] Gate check passes: `pnpm build`
+- [x] Test count: n/a ([[AD-002]])
 
 **Tests**: none
 **Gate**: quick
