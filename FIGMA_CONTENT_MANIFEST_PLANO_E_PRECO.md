@@ -145,19 +145,20 @@ Cada categoria lista N funcionalidades; **em todas as 45 linhas extraídas, tant
 
 ---
 
-## Assets a exportar / confirmar
+## Assets a exportar / confirmar — veredito final (T1, 2026-09-29)
 
-| Elemento | Node(s) | Candidato de reuso já existente | Ação |
+| Elemento | Node(s) | Candidato de reuso já existente | Veredito |
 | --- | --- | --- | --- |
-| Divisor de onda azul/branco (`Horizantal Divider`) | `3220:5998`–`6000` | `crm-hero-divider-onda.svg` (ou variantes irmãs) | Comparar visualmente antes de reusar; exportar novo asset só se divergir |
-| Forma decorativa (blur/gradiente) atrás da tabela de Features | `3220:6096` (`imgShape`) | nenhum candidato óbvio | Exportar novo asset |
-| Selo "12% OFF" (composição de 5 vetores + texto) | `3220:6011`–`6017` | nenhum candidato óbvio | Exportar como imagem única achatada (não recriar com múltiplos elementos) |
-| Checkmark verde da tabela comparativa | `3220:6127` etc. (`Vector`), `3220:6216` etc. (`Visto`) | `icon-check-circle.svg`, `icone-check-verde-circulo.svg` | Comparar visualmente contra o screenshot antes de reusar |
-| Ícone de bullet/check da lista dos cards de preço | `3220:6027` etc. (`imgVector1`) | `icone-check-lista-urbano.svg`, `seta-lista-verde.svg` | Comparar visualmente; pode ser ícone diferente do checkmark da tabela |
-| Seta dos botões CTA | `imgArrowRight`/`1`/`2`, `imgSvg` | `seta-botao-cta.svg`, `icone-seta-cta.svg`, `seta-botao-branca.svg` | Comparar visualmente antes de reusar |
-| Logo "SUBSEE on" no cabeçalho da coluna Urbano (tabela Features) | `3220:6116`/`6117` | `logo-subsee-on.svg` | Comparar visualmente antes de reusar |
-| Ícones plus/minus do FAQ | `imgPlusCircle`, `imgPlusCircle1` | `faq-plus-circle.svg`, `faq-minus-circle.svg` | Comparar visualmente antes de reusar |
-| Linha divisória entre itens de FAQ | `imgLine8` | padrão já usado em `CrmFaq.vue`/`HeroFaq.vue` | Reusar classe/estilo existente, sem novo asset se possível |
+| Divisor de onda azul/branco (`Horizantal Divider`) | `3220:5998`–`6000` | `crm-hero-divider-onda.svg` | **REUSAR** — confirmado por `get_screenshot`: onda pálida azul-lavanda de linha única, e o próprio SVG existente tem o grupo interno nomeado `id="Horizantal Divider"` com stroke `#CEDAFC`, idêntico ao node do Figma. Nenhum export novo. |
+| Forma decorativa (blur/gradiente) atrás da tabela de Features | `3220:6096` (`imgShape`) | nenhum | **NÃO EXPORTAR IMAGEM** — confirmado por `get_screenshot`: é um blur radial simples (lavanda pálido, sem bordas nítidas). Implementar como `radial-gradient` inline via classe Tailwind arbitrária na própria seção, mesmo padrão de `CrmUrbanoLeadsChart.vue:59`/`SiteLoteadorasSglOffer.vue:6-7` — sem wrapper compartilhado, sem asset. |
+| Selo "12% OFF" (composição de 5 vetores + texto) | `3220:6011`–`6017` | nenhum | **EXPORTAR NOVO** — confirmado por `get_screenshot`: ilustração manuscrita única (seta espiral + traços verdes + texto rotacionado "12% OFF"), sem equivalente no repo. Exportar como uma única imagem achatada (T2). |
+| Checkmark verde (tabela comparativa **e** lista de recursos dos cards de preço) | `3220:6127` etc. (`Vector`/tabela), `3220:6216` etc. (`Visto`), `3220:6027` etc. (`imgVector1`/cards de preço) | `icone-check-verde-circulo.svg` | **REUSAR** — confirmado por `get_screenshot` em ambos os contextos: círculo verde `#00D39B` preenchido + check branco, 16×16, bate exatamente. **É o mesmo ícone nos dois contextos** (tabela e lista de cards), não dois ícones diferentes como cogitado na Etapa 1. `icon-check-circle.svg`/`icone-check-lista-urbano.svg` (tick branco sem círculo) e `seta-lista-verde.svg` (chevron) foram descartados — não batem. |
+| Seta dos botões CTA | `imgArrowRight`/`1`/`2`, `imgSvg` | `seta-botao-cta.svg` | **REUSAR** — confirmado por `get_screenshot`: seta fina "→" simples, bate com o path de 2 elementos (linha + chevron) do asset existente. `icone-seta-cta.svg`/`seta-botao-branca.svg` são variações de cor do mesmo path — usar a de cor correta por contexto (branca dentro de botão preenchido roxo, escura dentro de botão outline). |
+| Logo "SUBSEE on" no cabeçalho da coluna Urbano (tabela Features) | `3220:6116`/`6117` | `logo-subsee-on.svg` | **REUSAR** — confirmado por `get_screenshot`: wordmark "SUBSEE" (`#313846`) + "on" em vermelho (`#E72F4D`) boxado, idêntico ao asset existente. Nenhum export novo. |
+| Ícones plus/minus do FAQ | `imgPlusCircle`, `imgPlusCircle1` | `faq-plus-circle.svg`, `faq-minus-circle.svg` | **REUSAR** — confirmado pela estrutura do SVG existente: `faq-plus-circle.svg` = círculo preenchido preto + cruz branca (estado fechado, itens 01–05); `faq-minus-circle.svg` = círculo apenas com contorno + traço horizontal (estado aberto, item 06) — bate exatamente com o padrão visto no screenshot da seção FAQ. |
+| Linha divisória entre itens de FAQ | `imgLine8` | padrão já usado em `CrmFaq.vue`/`HeroFaq.vue` | **REUSAR** — classe/estilo existente (borda inferior), sem novo asset. |
+
+**Resultado da T1**: apenas 1 asset novo precisa ser exportado (selo "12% OFF"). Todos os demais são reuso confirmado ou substituídos por CSS puro (gradiente de fundo).
 
 ---
 

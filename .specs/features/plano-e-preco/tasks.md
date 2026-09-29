@@ -77,12 +77,12 @@ T13 → T14
 **Tools**: Skill: `figma:figma-design-to-code`; MCP: Figma (`get_design_context`, `get_screenshot`)
 
 **Done when**:
-- [ ] Todos os 8 itens da tabela (divisor de onda, forma decorativa `imgShape`, selo "12% OFF", checkmark da tabela comparativa, ícone de bullet da lista de preços, seta dos CTAs, logo "SUBSEE on", ícones plus/minus do FAQ) têm veredito registrado
-- [ ] Cada veredito de reuso cita o arquivo exato de `public/icons/` a ser usado
-- [ ] Cada veredito de rejeição lista o motivo (diferença de cor/forma/proporção) e o node do Figma a exportar na T2
+- [x] Todos os 8 itens da tabela (divisor de onda, forma decorativa `imgShape`, selo "12% OFF", checkmark da tabela comparativa, ícone de bullet da lista de preços, seta dos CTAs, logo "SUBSEE on", ícones plus/minus do FAQ) têm veredito registrado
+- [x] Cada veredito de reuso cita o arquivo exato de `public/icons/` a ser usado
+- [x] Cada veredito de rejeição lista o motivo (diferença de cor/forma/proporção) e o node do Figma a exportar na T2 — **resultado real**: apenas 1 item (selo "12% OFF") precisou de export novo; a forma decorativa de fundo virou CSS puro (gradiente), não um asset
 
 **Tests**: none
-**Gate**: Manual (comparação visual documentada)
+**Gate**: Manual (comparação visual documentada) — ✅ concluído, veredito completo em `FIGMA_CONTENT_MANIFEST_PLANO_E_PRECO.md`
 
 ---
 
