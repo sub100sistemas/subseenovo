@@ -135,12 +135,12 @@ T11 → T18
 
 **Done when**:
 
-- [ ] `headingClass` default is `text-[32px] leading-[1.2] font-bold text-ink tablet-lg:text-[30px] desktop-full:text-[42px]` and `descriptionClass` default is `mt-[13px] max-w-[520px] text-[16px] leading-[1.4] text-ink tablet-lg:max-w-[675px] desktop-full:text-[24px]` (the strings currently at lines 69 and 72)
-- [ ] The template binds the props with `:class`; no other line of the file changes; no comments added
-- [ ] None of the 9 callers (`ApisHero`, `BaseConhecimentoHero`, `CrmHero`, `CrmRuralHero`, `CrmTemporadaHero`, `CrmUrbanoHero`, `SiteLoteadorasHero`, `SiteRuralHero`, `SiteUrbanoHero`) is edited
-- [ ] Built HTML of `/modulos/base-de-conhecimento` before and after has identical `<h1>` and description `<p>` `class` attributes
-- [ ] Gate check passes: `pnpm build`
-- [ ] Test count: n/a (no test runner, [[AD-002]])
+- [x] `headingClass` default is `text-[32px] leading-[1.2] font-bold text-ink tablet-lg:text-[30px] desktop-full:text-[42px]` and `descriptionClass` default is `mt-[13px] max-w-[520px] text-[16px] leading-[1.4] text-ink tablet-lg:max-w-[675px] desktop-full:text-[24px]` (the strings currently at lines 69 and 72)
+- [x] The template binds the props with `:class`; no other line of the file changes; no comments added
+- [x] None of the 9 callers (`ApisHero`, `BaseConhecimentoHero`, `CrmHero`, `CrmRuralHero`, `CrmTemporadaHero`, `CrmUrbanoHero`, `SiteLoteadorasHero`, `SiteRuralHero`, `SiteUrbanoHero`) is edited
+- [x] Built HTML of `/modulos/base-de-conhecimento` before and after has identical `<h1>` and description `<p>` `class` attributes
+- [x] Gate check passes: `pnpm build`
+- [x] Test count: n/a (no test runner, [[AD-002]])
 
 **Tests**: none
 **Gate**: quick
