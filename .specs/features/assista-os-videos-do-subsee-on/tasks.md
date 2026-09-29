@@ -277,11 +277,11 @@ T11 → T18
 
 **Done when**:
 
-- [ ] Exports only `videosFallbackUrl`; the value is the URL already used in `HeroMain.vue:84`
-- [ ] The file states no title, duration or destination for any video
-- [ ] No comments; the constant name carries the "provisional" meaning
-- [ ] Gate check passes: `pnpm build`
-- [ ] Test count: n/a ([[AD-002]])
+- [x] Exports only `videosFallbackUrl`; the value is the URL already used in `HeroMain.vue:84`
+- [x] The file states no title, duration or destination for any video
+- [x] No comments; the constant name carries the "provisional" meaning
+- [x] Gate check passes: `pnpm build`
+- [x] Test count: n/a ([[AD-002]])
 
 **Tests**: none
 **Gate**: quick
