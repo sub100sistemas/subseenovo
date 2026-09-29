@@ -305,13 +305,13 @@ T11 → T18
 
 **Done when**:
 
-- [ ] Heading "Assista aos vídeos do SUBSEE on" with "on" in `#e72f4d`; description exactly as in the manifest; only one `<h1>` in the component
-- [ ] Heading 36px Bold and description 20px (630px wide) through the new props; page-specific gradient background and wave divider from T2, not the `Hero.vue` defaults
-- [ ] The 5 module icons reuse the existing `crm-hero-icone-*.svg` files
-- [ ] Photo framed as in Figma (window 344×451, width 196.66%, offset −51.38%) with the blurred glow behind and the bottom clipped by the hero curve; floating cards "Vídeos Práticos" and "Time Capacitado" with the manifest text, HTML/CSS or a composed image (decide by screenshot comparison and record the choice in `design.md`)
-- [ ] At 1920px the Hero matches the `3188:3398` screenshot (568px total height, text at x=259); below 992px it behaves like the sibling Hero pages
-- [ ] Gate check passes: `pnpm build` and visual check on `pnpm dev`
-- [ ] Test count: n/a ([[AD-002]])
+- [x] Heading "Assista aos vídeos do SUBSEE on" with "on" in `#e72f4d`; description exactly as in the manifest; only one `<h1>` in the component
+- [x] Heading 36px Bold and description 20px (630px wide) through the new props; page-specific gradient background and wave divider from T2, not the `Hero.vue` defaults
+- [x] The 5 module icons reuse the existing `crm-hero-icone-*.svg` files
+- [x] Photo framed as in Figma (window 344×451, width 196.66%, offset −51.38%) with the blurred glow behind and the bottom clipped by the hero curve; floating cards "Vídeos Práticos" and "Time Capacitado" with the manifest text, HTML/CSS or a composed image (decide by screenshot comparison and record the choice in `design.md`)
+- [x] At 1920px the Hero matches the `3188:3398` screenshot (568px total height, text at x=259); below 992px it behaves like the sibling Hero pages
+- [x] Gate check passes: `pnpm build` and visual check on `pnpm dev`
+- [x] Test count: n/a ([[AD-002]])
 
 **Tests**: none
 **Gate**: quick
