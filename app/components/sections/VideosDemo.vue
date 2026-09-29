@@ -10,6 +10,7 @@ interface DemoVideo {
   thumbClass: string
   href: string
   youtubeId?: string
+  aspect?: string
 }
 
 const videos: DemoVideo[] = [
@@ -21,7 +22,8 @@ const videos: DemoVideo[] = [
     linkLabel: 'Assistir ao vídeo →',
     thumbClass: 'bg-[linear-gradient(90deg,#5d5fef,#8b8dff)]',
     href: videosFallbackUrl,
-    youtubeId: 'kmwo-MkJ34M'
+    youtubeId: 'kmwo-MkJ34M',
+    aspect: '9/16'
   },
   {
     duration: '05:02',
@@ -131,6 +133,7 @@ const openVideo = (video: DemoVideo) => {
       :video-id="activeVideo.youtubeId"
       :title="activeVideo.title"
       :eyebrow="activeVideo.type"
+      :aspect="activeVideo.aspect"
     />
   </section>
 </template>

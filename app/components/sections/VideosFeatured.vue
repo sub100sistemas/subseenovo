@@ -3,6 +3,7 @@ const tags: string[] = ['Gestão integrada', 'Mais produtividade']
 
 const featuredVideo = {
   youtubeId: 'kmwo-MkJ34M',
+  aspect: '9/16',
   title: 'Uma visão completa da plataforma'
 }
 
@@ -69,6 +70,7 @@ const modalOpen = ref(false)
       :video-id="featuredVideo.youtubeId"
       :title="featuredVideo.title"
       eyebrow="Vídeo institucional"
+      :aspect="featuredVideo.aspect"
     />
   </section>
 </template>

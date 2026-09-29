@@ -5,11 +5,13 @@ interface Props {
   title: string
   eyebrow?: string
   closeLabel?: string
+  aspect?: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
   eyebrow: '',
-  closeLabel: 'Fechar vídeo'
+  closeLabel: 'Fechar vídeo',
+  aspect: '16/9'
 })
 
 const emit = defineEmits<{ 'update:modelValue': [value: boolean] }>()
@@ -109,7 +111,8 @@ onBeforeUnmount(() => {
           role="dialog"
           aria-modal="true"
           :aria-labelledby="titleId"
-          class="video-modal-panel relative flex w-full flex-col bg-[linear-gradient(112.44deg,#5d5fef_0%,#2e386b_100%)] px-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] shadow-[0px_32px_80px_rgba(11,13,31,0.55)] max-tablet-lg:max-h-dvh max-tablet-lg:overflow-y-auto tablet-lg:block tablet-lg:max-w-[960px] tablet-lg:rounded-[28px] tablet-lg:p-5 tablet-lg:pb-5"
+          :style="{ '--video-ratio': aspect }"
+          class="video-modal-panel relative flex w-full flex-col bg-[linear-gradient(112.44deg,#5d5fef_0%,#2e386b_100%)] px-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] shadow-[0px_32px_80px_rgba(11,13,31,0.55)] max-tablet-lg:h-dvh tablet-lg:block tablet-lg:max-w-[960px] tablet-lg:rounded-[28px] tablet-lg:p-5 tablet-lg:pb-5"
           @click.self="closeOnEmptyArea"
         >
           <div
@@ -143,11 +146,11 @@ onBeforeUnmount(() => {
           </div>
 
           <div
-            class="flex justify-center tablet-lg:block"
+            class="flex min-h-0 flex-1 justify-center max-tablet-lg:[container-type:size] tablet-lg:block tablet-lg:flex-none"
             @click.self="closeOnEmptyArea"
           >
             <div
-              class="aspect-video w-full max-w-[calc((100dvh-8rem)*16/9)] overflow-hidden bg-black tablet-lg:max-w-none tablet-lg:rounded-[18px]"
+              class="overflow-hidden bg-black max-tablet-lg:aspect-(--video-ratio) max-tablet-lg:h-[min(100cqh,calc(100cqw/(var(--video-ratio))))] tablet-lg:aspect-video tablet-lg:w-full tablet-lg:rounded-[18px]"
             >
               <iframe
                 :src="embedSrc"
