@@ -304,10 +304,10 @@ T13 → T14
 **Tools**: none (conteúdo já no manifesto)
 
 **Done when**:
-- [ ] As 6 perguntas/respostas renderizam verbatim, na ordem 01→06, idênticas ao manifesto
-- [ ] Abrir um item indica visualmente o estado expandido (rotação do ícone plus/minus), consistente com `CrmFaq.vue`
-- [ ] Heading "Perguntas Frequentes" + descrição renderizam acima do accordion
-- [ ] `pnpm build` passa
+- [x] As 6 perguntas/respostas renderizam verbatim, na ordem 01→06, idênticas ao manifesto
+- [x] Abrir um item indica visualmente o estado expandido (troca do ícone plus/minus via `layout/Faq.vue`'s `details[open]` CSS), consistente com `CrmFaq.vue`
+- [x] Heading "Perguntas Frequentes" + descrição renderizam acima do accordion
+- [x] `pnpm build` passa
 
 **Tests**: none
 **Gate**: Quick
