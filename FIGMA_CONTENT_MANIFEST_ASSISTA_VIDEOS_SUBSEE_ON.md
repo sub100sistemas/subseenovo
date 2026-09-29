@@ -108,7 +108,7 @@ Os 29 arquivos abaixo foram baixados do MCP para uma pasta temporária, só para
 | Foto do Hero | `3188:3630` | PNG RGBA | 1536×1024 | Novo. Transparência real. Enquadramento: largura 196,66%, deslocamento −51,38% numa janela de 344×451 |
 | Divisor de onda | `3188:3400` | SVG | 1918,37×146,5 | Novo. Duas linhas (`#CEDAFC` e branca, 2px). Não é o `crm-hero-divider-onda.svg` |
 | Curva decorativa A | `3188:3632` | SVG | 161×53 | Novo |
-| Curva decorativa B | `3188:3633` | SVG | 183×124 | Novo |
+| Curva decorativa B | `3188:3633` | SVG | 183×124 | **Reusar** `crm-hero-seta-curva-verde.svg` (byte a byte idêntico ao exportado, comprovado na T2) |
 | Ícone globo (card 1) | `3188:3640` | SVG | 23,88×23,88 | Novo |
 | Ícone pessoas (card 2) | `3188:3649` | SVG | 27×25 | Novo |
 | Módulo: venda | `3188:3414` | SVG | 16,409×19,017 | **Reusar** `crm-hero-icone-venda.svg` (paths idênticos, comprovado) |

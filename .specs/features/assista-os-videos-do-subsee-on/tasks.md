@@ -164,12 +164,12 @@ T11 → T18
 
 **Done when**:
 
-- [ ] 1 PNG (RGBA, 1536×1024) and 7 SVGs saved, each non-empty, each with the dimensions listed in `FIGMA_CONTENT_MANIFEST_ASSISTA_VIDEOS_SUBSEE_ON.md`
-- [ ] No file duplicates an existing one (byte or path comparison done against `public/icons/`)
-- [ ] Photo alpha channel confirmed (PNG color type 6)
-- [ ] No reference to a temporary Figma URL remains anywhere in the repo
-- [ ] Gate check passes: `pnpm build`
-- [ ] Test count: n/a ([[AD-002]])
+- [x] 1 PNG (RGBA, 1536×1024) and 7 SVGs saved, each non-empty, each with the dimensions listed in `FIGMA_CONTENT_MANIFEST_ASSISTA_VIDEOS_SUBSEE_ON.md`
+- [x] No file duplicates an existing one (byte or path comparison done against `public/icons/`)
+- [x] Photo alpha channel confirmed (PNG color type 6)
+- [x] No reference to a temporary Figma URL remains anywhere in the repo
+- [x] Gate check passes: `pnpm build`
+- [x] Test count: n/a ([[AD-002]])
 
 **Tests**: none
 **Gate**: quick
