@@ -9,6 +9,7 @@ interface DemoVideo {
   linkLabel: string
   thumbClass: string
   href: string
+  youtubeId?: string
 }
 
 const videos: DemoVideo[] = [
@@ -19,7 +20,8 @@ const videos: DemoVideo[] = [
     description: 'Cadastre, organize e distribua seus imóveis nos principais canais com mais eficiência.',
     linkLabel: 'Assistir ao vídeo →',
     thumbClass: 'bg-[linear-gradient(90deg,#5d5fef,#8b8dff)]',
-    href: videosFallbackUrl
+    href: videosFallbackUrl,
+    youtubeId: 'kmwo-MkJ34M'
   },
   {
     duration: '05:02',
@@ -40,6 +42,17 @@ const videos: DemoVideo[] = [
     href: videosFallbackUrl
   }
 ]
+
+const linkClass =
+  "mt-[4px] cursor-pointer text-left text-[14px] leading-6 font-semibold text-brand after:absolute after:inset-0 after:content-[''] focus-visible:after:outline-2 focus-visible:after:-outline-offset-2 focus-visible:after:outline-brand"
+
+const activeVideo = ref<DemoVideo | null>(null)
+const modalOpen = ref(false)
+
+const openVideo = (video: DemoVideo) => {
+  activeVideo.value = video
+  modalOpen.value = true
+}
 </script>
 
 <template>
@@ -84,13 +97,25 @@ const videos: DemoVideo[] = [
               <p class="mt-[7px] text-[15px] leading-[23px] text-[#657083] tablet-lg:min-h-[78px]">
                 {{ video.description }}
               </p>
+              <button
+                v-if="video.youtubeId"
+                :id="`demo-video-${index}-link`"
+                type="button"
+                aria-haspopup="dialog"
+                :aria-labelledby="`demo-video-${index}-link demo-video-${index}-title`"
+                :class="linkClass"
+                @click="openVideo(video)"
+              >
+                {{ video.linkLabel }}
+              </button>
               <a
+                v-else
                 :id="`demo-video-${index}-link`"
                 :href="video.href"
                 target="_blank"
                 rel="noopener"
                 :aria-labelledby="`demo-video-${index}-link demo-video-${index}-title`"
-                class="mt-[4px] text-[14px] leading-6 font-semibold text-brand after:absolute after:inset-0 after:content-[''] focus-visible:after:outline-2 focus-visible:after:-outline-offset-2 focus-visible:after:outline-brand"
+                :class="linkClass"
               >
                 {{ video.linkLabel }}
               </a>
@@ -99,5 +124,13 @@ const videos: DemoVideo[] = [
         </ul>
       </div>
     </div>
+
+    <VideoModal
+      v-if="activeVideo?.youtubeId"
+      v-model="modalOpen"
+      :video-id="activeVideo.youtubeId"
+      :title="activeVideo.title"
+      :eyebrow="activeVideo.type"
+    />
   </section>
 </template>

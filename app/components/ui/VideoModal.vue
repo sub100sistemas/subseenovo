@@ -1,0 +1,184 @@
+<script setup lang="ts">
+interface Props {
+  modelValue: boolean
+  videoId: string
+  title: string
+  eyebrow?: string
+  closeLabel?: string
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  eyebrow: '',
+  closeLabel: 'Fechar vídeo'
+})
+
+const emit = defineEmits<{ 'update:modelValue': [value: boolean] }>()
+
+const dialogEl = ref<HTMLElement | null>(null)
+const closeButton = ref<HTMLButtonElement | null>(null)
+const embedSrc = computed(
+  () => `https://www.youtube-nocookie.com/embed/${props.videoId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`
+)
+const titleId = useId()
+
+let previousFocus: HTMLElement | null = null
+let scrollLocked = false
+
+const close = () => emit('update:modelValue', false)
+
+const focusableItems = () =>
+  Array.from(dialogEl.value?.querySelectorAll<HTMLElement>('button, iframe, a[href]') ?? [])
+
+const onKeydown = (event: KeyboardEvent) => {
+  if (event.key === 'Escape') {
+    event.preventDefault()
+    close()
+    return
+  }
+  if (event.key !== 'Tab') return
+  const items = focusableItems()
+  if (!items.length) return
+  const first = items[0]!
+  const last = items[items.length - 1]!
+  const active = document.activeElement
+  if (event.shiftKey && (active === first || !dialogEl.value?.contains(active))) {
+    event.preventDefault()
+    last.focus()
+  } else if (!event.shiftKey && (active === last || !dialogEl.value?.contains(active))) {
+    event.preventDefault()
+    first.focus()
+  }
+}
+
+const lockScroll = () => {
+  const scrollbar = window.innerWidth - document.documentElement.clientWidth
+  document.body.style.overflow = 'hidden'
+  document.body.style.paddingRight = scrollbar > 0 ? `${scrollbar}px` : ''
+  scrollLocked = true
+}
+
+const unlockScroll = () => {
+  document.body.style.overflow = ''
+  document.body.style.paddingRight = ''
+  scrollLocked = false
+}
+
+watch(
+  () => props.modelValue,
+  async (isOpen) => {
+    if (!import.meta.client) return
+    if (isOpen) {
+      previousFocus = document.activeElement as HTMLElement | null
+      lockScroll()
+      document.addEventListener('keydown', onKeydown)
+      await nextTick()
+      closeButton.value?.focus()
+      return
+    }
+    document.removeEventListener('keydown', onKeydown)
+    unlockScroll()
+    previousFocus?.focus()
+    previousFocus = null
+  },
+  { immediate: true }
+)
+
+onBeforeUnmount(() => {
+  if (!import.meta.client) return
+  document.removeEventListener('keydown', onKeydown)
+  if (scrollLocked) unlockScroll()
+})
+</script>
+
+<template>
+  <Teleport to="body">
+    <Transition name="video-modal">
+      <div
+        v-if="modelValue"
+        class="fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto bg-[#0b0d1f]/75 p-4 backdrop-blur-[6px] tablet:p-8"
+        @click.self="close"
+      >
+        <div
+          ref="dialogEl"
+          role="dialog"
+          aria-modal="true"
+          :aria-labelledby="titleId"
+          class="video-modal-panel relative w-full max-w-[960px] rounded-[22px] bg-[linear-gradient(112.44deg,#5d5fef_0%,#2e386b_100%)] p-3 shadow-[0px_32px_80px_rgba(11,13,31,0.55)] tablet:rounded-[28px] tablet:p-5"
+        >
+          <div class="flex items-start justify-between gap-4 px-2 pt-1 pb-3 tablet:px-2 tablet:pb-4">
+            <div class="min-w-0">
+              <p
+                v-if="eyebrow"
+                class="text-[12px] leading-[18px] font-semibold tracking-[0.6px] text-white/70 uppercase"
+              >
+                {{ eyebrow }}
+              </p>
+              <h2
+                :id="titleId"
+                class="text-[16px] leading-[1.35] font-semibold text-white tablet:text-[20px]"
+              >
+                {{ title }}
+              </h2>
+            </div>
+            <button
+              ref="closeButton"
+              type="button"
+              :aria-label="closeLabel"
+              class="flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-full bg-white text-brand shadow-[0px_8px_20px_rgba(11,13,31,0.3)] transition-transform hover:scale-105 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              @click="close"
+            >
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 3L13 13M13 3L3 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="aspect-video w-full overflow-hidden rounded-[14px] bg-black tablet:rounded-[18px]">
+            <iframe
+              :src="embedSrc"
+              :title="title"
+              class="size-full border-0"
+              allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+              allowfullscreen
+              referrerpolicy="strict-origin-when-cross-origin"
+            />
+          </div>
+        </div>
+      </div>
+    </Transition>
+  </Teleport>
+</template>
+
+<style scoped>
+.video-modal-enter-active,
+.video-modal-leave-active {
+  transition: opacity 0.25s ease;
+}
+
+.video-modal-enter-active .video-modal-panel,
+.video-modal-leave-active .video-modal-panel {
+  transition:
+    transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.25s ease;
+}
+
+.video-modal-enter-from,
+.video-modal-leave-to {
+  opacity: 0;
+}
+
+.video-modal-enter-from .video-modal-panel,
+.video-modal-leave-to .video-modal-panel {
+  opacity: 0;
+  transform: translateY(16px) scale(0.96);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .video-modal-enter-active,
+  .video-modal-leave-active,
+  .video-modal-enter-active .video-modal-panel,
+  .video-modal-leave-active .video-modal-panel {
+    transition-duration: 0.01ms;
+  }
+}
+</style>
