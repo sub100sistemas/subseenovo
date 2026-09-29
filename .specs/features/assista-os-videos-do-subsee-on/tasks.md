@@ -193,10 +193,10 @@ T11 → T18
 
 **Done when**:
 
-- [ ] 12 SVGs saved (3 featured, 3 demo, 4 profile, 1 banner, 1 FAQ line), each non-empty with the dimensions in the manifest
-- [ ] The FAQ line is kept as a file only if a 1px CSS border cannot reproduce it identically; otherwise it is dropped and the manifest row updated
-- [ ] Gate check passes: `pnpm build`
-- [ ] Test count: n/a ([[AD-002]])
+- [x] 10 SVGs saved (3 featured, 2 demo, 4 profile, 1 banner), each non-empty with the dimensions in the manifest. Deviation from the 12 planned: the FAQ line is #404040 at 20%, the same border `Faq.vue` already draws, and the plain 64px demo circle is a 1px halo under the bordered circle, so neither was exported
+- [x] The FAQ line is kept as a file only if a 1px CSS border cannot reproduce it identically; otherwise it is dropped and the manifest row updated
+- [x] Gate check passes: `pnpm build`
+- [x] Test count: n/a ([[AD-002]])
 
 **Tests**: none
 **Gate**: quick
