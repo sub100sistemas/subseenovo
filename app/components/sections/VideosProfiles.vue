@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { videosFallbackUrl } from '~/data/videos'
+import { videosAppUrl } from '~/data/videos'
 
 interface VideoProfile {
   number: string
@@ -21,7 +21,7 @@ const profiles: VideoProfile[] = [
     bgClass: 'bg-[#eef0ff]',
     accentClass: 'text-[#5d5fef]',
     circleSrc: '/icons/videos-profile-1.svg',
-    href: videosFallbackUrl
+    href: videosAppUrl
   },
   {
     number: '02',
@@ -31,7 +31,7 @@ const profiles: VideoProfile[] = [
     bgClass: 'bg-[#eaf9f7]',
     accentClass: 'text-[#159c96]',
     circleSrc: '/icons/videos-profile-2.svg',
-    href: videosFallbackUrl
+    href: videosAppUrl
   },
   {
     number: '03',
@@ -41,7 +41,7 @@ const profiles: VideoProfile[] = [
     bgClass: 'bg-[#f4eefc]',
     accentClass: 'text-[#7652b5]',
     circleSrc: '/icons/videos-profile-3.svg',
-    href: videosFallbackUrl
+    href: videosAppUrl
   }
 ]
 </script>
@@ -84,7 +84,7 @@ const profiles: VideoProfile[] = [
             :id="`profile-${index}-link`"
             :href="profile.href"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             :aria-labelledby="`profile-${index}-link profile-${index}-title`"
             class="mt-2 h-6 text-[14px] leading-normal font-semibold after:absolute after:inset-0 after:content-[''] focus-visible:after:outline-2 focus-visible:after:-outline-offset-2 focus-visible:after:outline-brand"
             :class="profile.accentClass"
