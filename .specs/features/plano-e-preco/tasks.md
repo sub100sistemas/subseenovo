@@ -178,7 +178,7 @@ T13 → T14
 - [ ] Os 2 cards renderizam nome, descrição (diferente entre Urbano/Rural) e preço "R$450/mês + opcionais" (idêntico nos dois)
 - [ ] Os 9 itens de recurso renderizam idênticos, na mesma ordem, nos dois cards, incluindo os marcadores `*` e `**` como texto literal (sem link/tooltip para `**`, conforme decisão aprovada)
 - [ ] O marcador `*` tem uma nota de rodapé associada disponível em algum ponto da página (a nota real está fisicamente na seção Features do Figma — decidir na implementação se é replicada aqui ou apenas na seção Features, documentando a escolha no `validation.md` da Etapa 3)
-- [ ] CTA "Testar grátis por 30 dias" usa `href="#"` (ou `to="#"`) em ambos os cards, conforme decisão aprovada
+- [ ] CTA "Testar grátis por 30 dias" usa `to="/testar-gratis"` (rota real sitewide, corrigida em 2026-09-29 — ver `spec.md` Assumptions) em ambos os cards
 - [ ] CTA "+ Opcionais" usa `href="#"` (ou uma âncora interna `#opcionais`, à escolha da implementação, desde que documentada) em ambos os cards
 - [ ] `pnpm build` passa
 
@@ -281,7 +281,7 @@ T13 → T14
 **Done when**:
 - [ ] As 3 linhas renderizam com os preços exatos: R$ 100,00 / R$ 1.200,00 / Consulte, idênticos nas colunas Urbano e Rural
 - [ ] Cabeçalhos "Urbano"/"Rural" renderizam acima das respectivas colunas de preço
-- [ ] CTA "Testar grátis por 30 dias" usa `href="#"`, conforme decisão aprovada
+- [ ] CTA "Testar grátis por 30 dias" usa `to="/testar-gratis"` (rota real sitewide, corrigida em 2026-09-29)
 - [ ] `pnpm build` passa
 
 **Tests**: none

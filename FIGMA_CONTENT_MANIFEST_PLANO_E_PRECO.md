@@ -41,7 +41,7 @@ Figma: arquivo `vX7qKnnXSOW8zv4kAuS2eN`, seção raiz `1116:5607` ("Plano e Pre�
 - **H2** (`3220:6020`): "Urbano"
 - **Descrição** (`3220:6021`): "Gestão de apartamentos, casas e imóveis comerciais em áreas urbanas, com foco em resultados e eficiência."
 - **Preço** (`3220:6022`): "R$450/mês + opcionais"
-- **CTA primário** (`3220:6023`, instância "Link → Agendar Demonstração" — nome de instância não bate com o texto): texto renderizado **"Testar grátis por 30 dias"**. Sem `href` real definido no Figma.
+- **CTA primário** (`3220:6023`, instância "Link → Agendar Demonstração" — nome de instância não bate com o texto): texto renderizado **"Testar grátis por 30 dias"**. Sem `href` real definido no Figma — mas confirmado em T3/Etapa 3 como `to="/testar-gratis"`, rota real já estabelecida sitewide (29 arquivos) para este texto exato de botão.
 - **Lista de 9 itens** (`3220:6024`, ordem visual topo→base confirmada por `get_design_context`):
   1. "Até **10 usuários** para sua equipe"
   2. "Organize seus **leads** e clientes em um só lugar"
@@ -111,7 +111,7 @@ Cada categoria lista N funcionalidades; **em todas as 45 linhas extraídas, tant
   1. "5 usuários adicionais" → **R$ 100,00** (Urbano) / **R$ 100,00** (Rural)
   2. "Site & Hotsite Padrão" → **R$ 1.200,00** / **R$ 1.200,00**
   3. "Site & Hotsite personalizado" → **Consulte** / **Consulte**
-- **CTA** (`3220:6357`, instância "Link → Testar grátis por 30 dias"): texto renderizado "Testar grátis por 30 dias". Sem `href` real definido no Figma.
+- **CTA** (`3220:6357`, instância "Link → Testar grátis por 30 dias"): texto renderizado "Testar grátis por 30 dias". Sem `href` real definido no Figma — mas confirmado em T3/Etapa 3 como `to="/testar-gratis"`, rota real já estabelecida sitewide.
 
 **Achado**: assim como a lista de 9 recursos dos cards de preço e a tabela de Features, os preços dos Opcionais são **idênticos entre Urbano e Rural** — não há diferenciação de preço por perfil de plano em nenhum ponto do Figma desta página.
 
