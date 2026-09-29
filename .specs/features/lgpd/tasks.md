@@ -364,9 +364,9 @@ T23
 
 **Done when**:
 
-- [ ] `<main>` com `LgpdTermosHero` e `LgpdTermosContent`, sem `useSeoMeta` (Q5)
-- [ ] `/lgpd/termos-de-uso/` responde 200, tem 1 `<h1>`, 9 `<h2>` de cartão e 7 `<h3>` de subcartão, sem erro de console e sem 4xx
-- [ ] `pnpm build` exit 0
+- [x] `<main>` com `LgpdTermosHero` e `LgpdTermosContent`, sem `useSeoMeta` (Q5)
+- [x] `/lgpd/termos-de-uso/` responde 200, tem 1 `<h1>`, 9 `<h2>` de cartão e 7 `<h3>` de subcartão, sem erro de console e sem 4xx
+- [x] `pnpm build` exit 0
 
 **Tests**: none
 **Gate**: full
