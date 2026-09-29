@@ -353,11 +353,11 @@ T13 → T14
 **Tools**: none
 
 **Done when**:
-- [ ] `/planos-e-precos` resolve HTTP 200
-- [ ] As 5 seções renderizam na ordem do Figma
-- [ ] `useSeoMeta` definido com título/descrição reais (sem placeholder genérico)
-- [ ] Exatamente um `<h1>` na página (o de `PlanoEPrecoTitle.vue`)
-- [ ] `pnpm build` passa
+- [x] `/planos-e-precos` resolve HTTP 200 (confirmado via `curl`, servidor de dev limpo — `.nuxt`/`node_modules/.vite` reiniciados a frio)
+- [x] As 5 seções renderizam na ordem do Figma (confirmado por inspeção do HTML: título, 2 preços, 9 categorias, 3 linhas de opcionais, 6 perguntas de FAQ, todos presentes)
+- [x] `useSeoMeta` definido com título/descrição reais (sem placeholder genérico)
+- [x] Exatamente um `<h1>` na página (confirmado: 1 ocorrência de `<h1` no HTML renderizado)
+- [x] `pnpm build` passa
 
 **Tests**: none
 **Gate**: Full
