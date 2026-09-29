@@ -1,4 +1,4 @@
-# Assista os vídeos do SUBSEE on (página `/assista-os-videos-do-subsee-on`) Specification
+| Implementing || Implementing || Implementing || Implementing || Implementing |# Assista os vídeos do SUBSEE on (página `/assista-os-videos-do-subsee-on`) Specification
 
 ## Problem Statement
 

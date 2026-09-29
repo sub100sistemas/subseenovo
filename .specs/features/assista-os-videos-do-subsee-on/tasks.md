@@ -335,13 +335,13 @@ T11 → T18
 
 **Done when**:
 
-- [ ] Eyebrow, H2, description, tags "Gestão integrada" and "Mais produtividade" (one typed array, one `v-for`), badge "SUBSEE ON • 03:24" and caption exactly as in the manifest
-- [ ] Card 760×460, `rounded-[28px]`, gradient 112.44° `#5d5fef`→`#2e386b`, shadow `0 24px 50px rgba(46,56,107,0.18)`; two columns 520px + 760px with a 96px gap from `tablet-lg` up, one column below
-- [ ] The card is one focusable link with an accessible name; its `href` is `videosFallbackUrl`, opens in a new tab with `rel="noopener"`; it is marked as provisional in the manifest until Q1 is answered
-- [ ] No video title, duration or destination beyond the Figma text and the fallback is added
-- [ ] At 1920px the block matches the `3188:3420` screenshot
-- [ ] Gate check passes: `pnpm build` and visual check on `pnpm dev`
-- [ ] Test count: n/a ([[AD-002]])
+- [x] Eyebrow, H2, description, tags "Gestão integrada" and "Mais produtividade" (one typed array, one `v-for`), badge "SUBSEE ON • 03:24" and caption exactly as in the manifest
+- [x] Card 760×460, `rounded-[28px]`, gradient 112.44° `#5d5fef`→`#2e386b`, shadow `0 24px 50px rgba(46,56,107,0.18)`; two columns 520px + 760px with a 96px gap from `tablet-lg` up, one column below
+- [x] The card is one focusable link with an accessible name; its `href` is `videosFallbackUrl`, opens in a new tab with `rel="noopener"`; it is marked as provisional in the manifest until Q1 is answered
+- [x] No video title, duration or destination beyond the Figma text and the fallback is added
+- [x] At 1920px the block matches the `3188:3420` screenshot
+- [x] Gate check passes: `pnpm build` and visual check on `pnpm dev`
+- [x] Test count: n/a ([[AD-002]])
 
 **Tests**: none
 **Gate**: quick
