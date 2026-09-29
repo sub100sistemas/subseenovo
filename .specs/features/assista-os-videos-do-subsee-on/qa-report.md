@@ -86,7 +86,6 @@ Cores de fundo do Hero amostradas em 5 pontos: diferença de 0 a 2 níveis por c
 
 | Divergência | Causa | Impacto |
 | --- | --- | --- |
-| A sombra do card de vídeo institucional aparece inteira; no Figma o container corta a sombra (`overflow-clip`) | O corte é artefato do frame do Figma | Nenhum; o comportamento do site é o esperado |
 | O FAQ vem com todos os itens fechados; o Figma desenha os itens 1 a 5 abertos | Acordeão nativo do `layout/Faq.vue`, fechado por padrão (decisão da spec) | Altura total da página 3952px contra 4334px |
 | Pergunta 6 do FAQ ausente | Sem texto de resposta no Figma (Q4) | Bloqueia a T17 |
 | Item 3 do FAQ quebra a resposta uma palavra antes do Figma | O Figma desenha esse item 6,5px mais à esquerda e 24px mais estreito (845,8px contra 870px) | Imperfeição do design, não replicada |
@@ -132,3 +131,19 @@ O Figma tem o frame do Hero com 568px porque o Header (85px) fica sobre o topo d
 | Pergunta 6 do FAQ ausente; a página fica 83px mais curta que o Figma (4251px contra 4334px a 1920px) | Sem resposta no Figma (Q4) |
 | Header: posição do botão "Entrar" difere de 1 a 2px | Componente global, fora desta feature |
 | Abaixo de 1920px não há referência do Figma | Composição verificada só por proporção |
+
+## Rodada 3: thumbnail do vídeo institucional
+
+O Figma ganhou a imagem `3831:3865` (thumbnail) e o overlay `3831:3867` no card `3188:3431`, sombra nova (`drop-shadow(0 10px 7.5px rgba(46,56,107,.30))`) e container de 485px (seção institucional de 540 para 565px).
+
+| Item | Figma | Site (1920px) |
+| --- | --- | --- |
+| Seção institucional | y=568, altura 565 | y=568, altura 565 |
+| Demonstrativos | y=1133 | y=1133 |
+| Perfis e banner | y=2007 | y=2007 |
+| FAQ | y=2821 | y=2821 |
+| Card institucional | 760×460 em x=876 | 760×460 em x=876, y=608 |
+
+Diferença média de pixels do card com a sombra (790×485) contra o Figma: 6,09, com 2,15% dos pixels acima de 24. A imagem sai em avif/webp pelo `NuxtImg` (versão de 820px a 1920px), o que explica a diferença. Lado a lado, imagem, overlay, badge, play, legenda e sombra coincidem.
+
+O hover com sombra maior foi removido para priorizar a sombra do Figma. A sobreposição `overflow-clip` continua no container de 485px, que agora deixa a sombra visível. Os pixels de referência das seções anteriores (tabela de posição desta página) descem 25px a partir do institucional.

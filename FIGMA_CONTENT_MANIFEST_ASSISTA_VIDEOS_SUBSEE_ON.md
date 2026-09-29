@@ -1,6 +1,6 @@
 # FIGMA_CONTENT_MANIFEST_ASSISTA_VIDEOS_SUBSEE_ON
 
-Fonte: Figma `vX7qKnnXSOW8zv4kAuS2eN`, seção "Assista os videos do SUBSEE on" (`1033:1855`), frame raiz "Page" `3188:3397` (1920×4334). Conteúdo extraído em 2026-09-29 com `get_metadata` (estrutura) e `get_design_context` (texto, cores, medidas) em cada seção. Todo texto abaixo é transcrição literal do Figma; nada foi inventado. Os assets **não foram baixados** nesta etapa (Etapa 1 é só planejamento).
+Fonte: Figma `vX7qKnnXSOW8zv4kAuS2eN`, seção "Assista os videos do SUBSEE on" (`1033:1855`), frame raiz "Page" `3188:3397` (1920×4359). Conteúdo extraído em 2026-09-29 com `get_metadata` (estrutura) e `get_design_context` (texto, cores, medidas) em cada seção. Todo texto abaixo é transcrição literal do Figma; nada foi inventado. Os assets **não foram baixados** nesta etapa (Etapa 1 é só planejamento).
 
 Regra herdada de [[AD-015]]: nomes de camada não são conteúdo. O texto renderizado prevalece.
 
@@ -10,10 +10,10 @@ Regra herdada de [[AD-015]]: nomes de camada não são conteúdo. O texto render
 | --- | --- | --- | --- | --- |
 | 0 | Header (instância global) | `3188:3559` | 0 | 85 |
 | 1 | Section / Hero / Top | `3188:3398` | 0 | 568 |
-| 2 | Section / Content / Featured Video | `3188:3420` | 568 | 540 |
-| 3 | Section / Content / Demo Videos | `3188:3438` | 1108 | 874 |
-| 4 | Section / Content / By Profile (com CTA - App SUBSEE) | `3188:3474` | 1982 | 814 |
-| 5 | Section / Hero / FAQ | `3188:3507` | 2796 | 1063 |
+| 2 | Section / Content / Featured Video | `3188:3420` | 568 | 565 |
+| 3 | Section / Content / Demo Videos | `3188:3438` | 1133 | 874 |
+| 4 | Section / Content / By Profile (com CTA - App SUBSEE) | `3188:3474` | 2007 | 814 |
+| 5 | Section / Hero / FAQ | `3188:3507` | 2821 | 1063 |
 | 6 | Footer (instância global) | `3188:3558` | 3859 | 475 |
 
 Container de conteúdo: 1400px, de x=260 a x=1660.
@@ -37,7 +37,7 @@ Container 1400×460, `gap-[96px]`, seção com `py-[40px]`, fundo branco.
   - H2 (`3188:3424`, Poppins Bold 38px, leading 46px, `#313846`): "Conheça o SUBSEE on em poucos minutos"
   - Descrição (`3188:3425`, Poppins Regular 20px, leading 30px, `#596273`, largura 510): "Veja como a plataforma conecta imóveis, leads, equipe e atendimento em uma experiência mais simples para sua imobiliária."
   - Tags (`3188:3426`, `gap-[10px]`; cada uma `rounded-[999px]`, fundo `#eef0ff`, `px-[16px] py-[10px]`, Poppins Medium 14px `#5d5fef`): "Gestão integrada", "Mais produtividade"
-- **Card de vídeo** (`3188:3431`, 760×460, `rounded-[28px]`, gradiente 112,44° `#5d5fef`→`#2e386b`, sombra `0 24 50 rgba(46,56,107,.18)`):
+- **Card de vídeo** (`3188:3431`, 760×460, `rounded-[28px]`, `overflow-clip`, sombra `drop-shadow(0 10px 7.5px rgba(46,56,107,.30))`; container `3188:3421` com 485px de altura para a sombra aparecer). Fundo: thumbnail `3831:3865` (PNG 1672×941, `object-cover`, caixa 824×464 em x=-39 y=-2) e overlay `3831:3867` (800×272 em x=-16 y=206, degradê vertical transparente 15,9% → `rgba(128,128,128,.58)` 49,3% → `rgba(0,0,0,.68)` 82,7%). O degradê azul anterior foi removido. Arquivo: `public/images/assista-videos/featured-thumb.png`.
   - Badge (`3188:3432`, fundo branco 16%, `rounded-[999px]`, `px-[16px] py-[10px]`, Poppins SemiBold 13px branco, x=28 y=28): "SUBSEE ON • 03:24"
   - Botão play (`3188:3434`, `3188:3435`, `3188:3436`): círculo branco de 92px, triângulo azul, x=334 y=168
   - Legenda (`3188:3437`, Poppins SemiBold 18px branco, x=36 y=390): "Uma visão completa da plataforma"

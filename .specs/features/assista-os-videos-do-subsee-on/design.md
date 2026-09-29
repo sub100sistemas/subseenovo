@@ -191,7 +191,7 @@ interface FeaturedVideo { badge: string; caption: string; href: string }
 | Tag | fundo `#eef0ff`, texto `#5d5fef` 14px Medium, `px-4 py-2.5`, `rounded-full` | classes no `VideosFeatured` |
 | Card demo | branco, borda `#e6e8f2`, raio 22px, sombra `0 14px 32px rgba(48,56,77,.08)`, 430×520 | classes no `VideosDemo` |
 | Miniaturas | `#5d5fef`→`#8b8dff`, `#17a6a6`→`#66d4c9`, `#7357c7`→`#b491e8` (gradiente à direita, 430×240) | `thumbClass` por item |
-| Card de vídeo institucional | gradiente 112,44° `#5d5fef`→`#2e386b`, raio 28px, sombra `0 24px 50px rgba(46,56,107,.18)`, 760×460 | classes no `VideosFeatured` |
+| Card de vídeo institucional | thumbnail `featured-thumb.png` com overlay de degradê vertical, raio 28px, `drop-shadow(0 10px 7.5px rgba(46,56,107,.30))`, 760×460 | classes no `VideosFeatured` |
 | Perfis | fundos `#eef0ff`, `#eaf9f7`, `#f4eefc`; destaques `#5d5fef`, `#159c96`, `#7652b5`; raio 22px; 430×260 | `bgClass` e `accentClass` por item |
 | Banner App | gradiente `#5d5fef`→`#2e386b`, raio 28px, 1400×220; botão branco 300×58, raio 10px, texto `#5d5fef` 15px SemiBold | classes no `VideosAppCta` |
 | Eyebrow | 14px SemiBold, tracking 0,84px, `#5d5fef`, maiúsculas | `eyebrowClass` |
@@ -206,7 +206,7 @@ interface FeaturedVideo { badge: string; caption: string; href: string }
 | Seção | Altura no Figma | Estrutura |
 | --- | --- | --- |
 | Hero | 568 (fundo 548 + onda) | `Hero.vue`; texto em x=259 (H1 555px, descrição 630px, ícones em y=401) |
-| Vídeo institucional | 540 (`py-10` + 460) | Duas colunas de 520 e 760px, gap 96px, alinhadas ao centro vertical |
+| Vídeo institucional | 565 (`py-10` + 485) | Duas colunas de 520 e 760px, gap 96px; card no topo do container de 485px, coluna de texto 20px abaixo do topo |
 | Vídeos demonstrativos | 874 (`py-10` + 794) | Faixa `#f8f9ff` de largura total com `py-10`; intro (162px) + gap 32px + galeria 3×430 com gap 55px (=1400) |
 | Conteúdo por perfil + banner | 814 (`py-10` + 438 + gap 76 + 220 + ...) | Intro, lista 3×430 com gap 55px, gap 76px, banner de 1400×220 |
 | FAQ | 1063 (`pt-10 pb-20`) | Itens centralizados com 970px de largura útil |
