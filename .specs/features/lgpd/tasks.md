@@ -282,12 +282,12 @@ T23
 
 **Done when**:
 
-- [ ] 9 seções na ordem do Figma: BOAS-VINDAS, DEFINIÇÕES (7 subseções), RESPONSABILIDADES, CADASTRO, USO DO SITE, ARMAZENAMENTO E SEGURANÇA, CONSENTIMENTO, CANAL DE DÚVIDAS, FORO
-- [ ] Título do cartão `1211:1671` é "CADASTRO" (texto desenhado, não o nome da camada)
-- [ ] Listas "(I)" a "(VII)" e "(I)" a "(II)" em `lines` do mesmo parágrafo; parágrafos separados por linha vazia no Figma viram parágrafos separados
-- [ ] BOAS-VINDAS com `bodyClass` de 16px (replicando o Figma, decisão Q6); e-mail e endereços de site como texto puro (Q4)
-- [ ] Diff de texto contra os strings extraídos do `get_design_context`: 0 diferenças (só espaços normalizados); erros de português mantidos
-- [ ] `pnpm build` exit 0
+- [x] 9 seções na ordem do Figma: BOAS-VINDAS, DEFINIÇÕES (7 subseções), RESPONSABILIDADES, CADASTRO, USO DO SITE, ARMAZENAMENTO E SEGURANÇA, CONSENTIMENTO, CANAL DE DÚVIDAS, FORO
+- [x] Título do cartão `1211:1671` é "CADASTRO" (texto desenhado, não o nome da camada)
+- [x] Listas "(I)" a "(VII)" e "(I)" a "(II)" em `lines` do mesmo parágrafo; parágrafos separados por linha vazia no Figma viram parágrafos separados
+- [x] BOAS-VINDAS com `bodyClass` de 16px (replicando o Figma, decisão Q6); e-mail e endereços de site como texto puro (Q4)
+- [x] Diff de texto contra os strings extraídos do `get_design_context`: 0 diferenças (só espaços normalizados); erros de português mantidos
+- [x] `pnpm build` exit 0
 
 **Tests**: none
 **Gate**: quick
