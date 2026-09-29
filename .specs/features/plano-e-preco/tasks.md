@@ -330,7 +330,7 @@ T13 → T14
 
 **Done when**:
 - [x] Todos os 5 componentes de seção (`PlanoEPrecoTitle`, `PlanoEPrecoPricing`, `PlanoEPrecoFeatures`, `PlanoEPrecoOpcionais`, `PlanoEPrecoFaq`) existem com o prefixo correto, sem colisão com nenhum componente pré-existente (confirmado: `find app/components -iname "PlanoEPreco*.vue"` retorna exatamente 1 arquivo por nome)
-- [x] Todas usam `.section-py`/`.container-page` diretamente, exceto `PlanoEPrecoFaq.vue`, que delega ao `layout/Faq.vue` (já usa `section-py`/container por padrão internamente) — justificativa documentada
+- [x] Todas usam `.container-page` diretamente. Para o espaçamento vertical: `PlanoEPrecoPricing.vue`/`PlanoEPrecoFeatures.vue`/`PlanoEPrecoOpcionais.vue` usam `.section-py`; `PlanoEPrecoTitle.vue` usa `.section-pt.pb-0` (evita padding duplicado na emenda com a seção seguinte, ambas as classes já existem em `CLAUDE.md`); `PlanoEPrecoFaq.vue` delega ao `layout/Faq.vue`, que já aplica `section-py` por padrão internamente — nenhuma seção ficou sem espaçamento, apenas não é 100% literalmente `.section-py` em todas (achado do Verifier independente, corrigido aqui)
 - [x] Nenhuma seção usa `translate-x-*`/`translate-y-*` (`AD-007`) — confirmado via `grep`, zero ocorrências nos 5 arquivos
 
 **Tests**: none
