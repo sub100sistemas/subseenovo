@@ -149,11 +149,11 @@ T13 → T14
 **Tools**: MCP: Figma (`get_design_context` no node `3220:6001`, já capturado na Etapa 1 — reconsultar apenas se alguma medida ficar ambígua na implementação)
 
 **Done when**:
-- [ ] "Mensal" renderiza como estado ativo (fundo preenchido roxo, texto branco); "Anual" renderiza como estado inativo (fundo branco, borda)
-- [ ] Nenhum `v-model`/estado reativo controla troca de preço — confirmado por revisão de código, não apenas visual
-- [ ] Selo "12% OFF" renderiza na posição/rotação aproximada do Figma (via asset achatado da T2, se aplicável)
-- [ ] Nenhuma classe `translate-x-*`/`translate-y-*` usada para centralizar texto/ícone dentro do selo ou do toggle — usar flexbox (`items-center justify-center`), conforme `AD-007`
-- [ ] `pnpm build` passa
+- [x] "Mensal" renderiza como estado ativo (fundo preenchido roxo, texto branco); "Anual" renderiza como estado inativo (fundo branco, borda) — via `<span>` estático, sem estado reativo
+- [x] Nenhum `v-model`/estado reativo controla troca de preço — confirmado por revisão de código (nenhum `ref`/`computed` no componente para preço/toggle)
+- [x] Selo "12% OFF" renderiza na posição/rotação aproximada do Figma (via asset achatado da T2) — posicionado de forma absoluta e aproximada ao lado do toggle, oculto abaixo de `desktop-compact` (mesmo padrão de `HeroPricing.vue` para decoração complexa)
+- [x] Nenhuma classe `translate-x-*`/`translate-y-*` é usada em nenhum lugar do componente — o selo é centralizado verticalmente com o truque `inset-y-0 my-auto` (margem automática em elemento absoluto), evitando por completo a classe `translate-*` sabidamente quebrada (`AD-007`)
+- [x] `pnpm build` passa
 
 **Tests**: none
 **Gate**: Quick
@@ -175,12 +175,12 @@ T13 → T14
 **Tools**: none (conteúdo já no manifesto)
 
 **Done when**:
-- [ ] Os 2 cards renderizam nome, descrição (diferente entre Urbano/Rural) e preço "R$450/mês + opcionais" (idêntico nos dois)
-- [ ] Os 9 itens de recurso renderizam idênticos, na mesma ordem, nos dois cards, incluindo os marcadores `*` e `**` como texto literal (sem link/tooltip para `**`, conforme decisão aprovada)
-- [ ] O marcador `*` tem uma nota de rodapé associada disponível em algum ponto da página (a nota real está fisicamente na seção Features do Figma — decidir na implementação se é replicada aqui ou apenas na seção Features, documentando a escolha no `validation.md` da Etapa 3)
-- [ ] CTA "Testar grátis por 30 dias" usa `to="/testar-gratis"` (rota real sitewide, corrigida em 2026-09-29 — ver `spec.md` Assumptions) em ambos os cards
-- [ ] CTA "+ Opcionais" usa `href="#"` (ou uma âncora interna `#opcionais`, à escolha da implementação, desde que documentada) em ambos os cards
-- [ ] `pnpm build` passa
+- [x] Os 2 cards renderizam nome, descrição (diferente entre Urbano/Rural) e preço "R$450/mês + opcionais" (idêntico nos dois)
+- [x] Os 9 itens de recurso renderizam idênticos, na mesma ordem, nos dois cards (array `sharedFeatures` único, referenciado pelos dois planos — sem duplicação de dados), incluindo os marcadores `*` e `**` como texto literal (sem link/tooltip para `**`, conforme decisão aprovada)
+- [x] O marcador `*` tem uma nota de rodapé associada disponível em algum ponto da página — **decisão tomada**: a nota real ("No período gratuito de 30 dias as integrações não estão liberadas.") só é renderizada na seção Features (T7), fiel à única ocorrência física no Figma; nos cards de preço o marcador aparece apenas como texto literal, sem nota duplicada. Registrado em `validation.md`.
+- [x] CTA "Testar grátis por 30 dias" usa `to="/testar-gratis"` (rota real sitewide, corrigida em 2026-09-29 — ver `spec.md` Assumptions) em ambos os cards
+- [x] CTA "+ Opcionais" usa `to="#"` (âncora placeholder via `NuxtLink`, já que `CtaButton` só aceita `to`, não `href`) em ambos os cards
+- [x] `pnpm build` passa
 
 **Tests**: none
 **Gate**: Quick
