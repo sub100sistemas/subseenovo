@@ -98,7 +98,7 @@ T10
 
 ---
 
-### T2: Export missing icon/image assets from Figma
+### T2: Export missing icon/image assets from Figma ✅
 
 **What**: Download (not hand-author) every asset still missing per the manifest's asset summary table: the 5 "Image / Gallery" photos, the 3 Replay thumbnails, the play-button icon (2 variants) + the shared rotated triangle overlay, the Overview section's main photo + its 2 small decorative circles + its own play-button icon, and the Hero's 2 decorative "icone-shape" PNGs.
 **Where**: `public/icons/*.svg` (new files only), `public/images/eventos/*` (new images only)
@@ -111,15 +111,16 @@ T10
 - Skill: `figma:figma-design-to-code`
 
 **Done when**:
-- [ ] All 5 gallery photos exist under `public/images/eventos/` (suggested naming: `eventos-galeria-foto-1.png` … `-5.png`)
-- [ ] All 3 Replay thumbnails exist under `public/images/eventos/` (suggested naming: `eventos-replay-thumb-1/2/3.png`)
-- [ ] Play-button icon(s) + the shared rotated-triangle overlay exist under `public/icons/` (confirm during export whether the 2 "imgPlay"/"imgPlay1" variants are actually visually identical — if so, use one file for both, documented here, rather than 2 redundant near-duplicates)
-- [ ] Overview section's main photo, its 2 small decorative circle SVGs, and its own play-button icon exist under `public/images/eventos/` and `public/icons/`
-- [ ] Hero's 2 decorative "icone-shape" PNGs exist under `public/images/eventos/`
-- [ ] No icon/image is hand-drawn/approximated — each is the exact byte content fetched from the Figma asset URL
+- [x] All 5 gallery photos exist under `public/images/eventos/` (`eventos-galeria-foto-1.png` … `-5.png`)
+- [x] All 3 Replay thumbnails exist under `public/images/eventos/` (`eventos-replay-thumb-1/2/3.png`)
+- [x] Play-button icon(s) + the shared rotated-triangle overlay exist under `public/icons/` — **compared the 2 "imgPlay"/"imgPlay1" variants byte-for-byte (SVG source)**: same circle glyph (`cx`/`cy` centered, `#DDE6F6` border), the only difference is a drop-shadow `<filter>` baked into the "imgPlay1" variant and extra canvas padding for the blur — visually the same button. Consolidated to **one file**, `eventos-icone-play.svg`, reused for all 3 cards; the redundant near-duplicate was downloaded then deleted (not committed)
+- [x] Overview section's main photo, its 2 small decorative circle SVGs, and its own play-button icon exist under `public/images/eventos/` and `public/icons/`
+- [x] Hero's 2 decorative "icone-shape" PNGs exist under `public/images/eventos/`
+- [x] **Divider decision (task rule 9)**: compared `/icons/crm-hero-divider-onda.svg` against the newly-exported `eventos-icone-divider-horizontal.svg` — **not visually identical**: same wave path geometry, but the CRM icon has a solid white background fill shape and opaque `#CEDAFC`/white strokes, while this page's Figma divider has no fill and translucent 15%-opacity `#5D5FEF`/`#1CD9A4` strokes. Used the newly-exported page-specific asset, not the CRM one.
+- [x] No icon/image is hand-drawn/approximated — each is the exact byte content fetched from the Figma asset URL
 
 **Tests**: none
-**Gate**: Quick (visual diff against the `get_design_context`/`get_screenshot` output for each asset)
+**Gate**: Quick (visual diff against the `get_design_context`/`get_screenshot` output for each asset) — passed, see Done when above
 
 ---
 
