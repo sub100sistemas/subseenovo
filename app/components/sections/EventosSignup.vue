@@ -25,14 +25,14 @@
           </div>
         </div>
 
-        <div class="relative w-full tablet-lg:w-[45%]">
+        <div class="relative w-full tablet-lg:w-[48%]">
           <NuxtImg
             src="/images/eventos/eventos_vivo.png"
             :width="2056"
             :height="700"
             sizes="tablet-lg:600px desktop-full:1028px"
             alt="Videochamada com três pessoas em uma reunião online"
-            class="h-full w-full object-contain tablet-lg:absolute tablet-lg:inset-0 tablet-lg:object-cover"
+            class="h-full w-full object-contain object-right tablet-lg:absolute tablet-lg:inset-0 tablet-lg:object-cover"
             loading="lazy"
           />
         </div>

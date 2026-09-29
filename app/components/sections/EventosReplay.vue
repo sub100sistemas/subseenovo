@@ -50,11 +50,11 @@ const replayCards: ReplayCard[] = [
           </p>
         </div>
 
-        <div class="flex w-full flex-col items-center gap-[30px] tablet-lg:flex-row tablet-lg:items-stretch tablet-lg:justify-center">
+        <div class="flex w-full flex-wrap items-stretch justify-center gap-[30px]">
           <div
             v-for="card in replayCards"
             :key="card.title"
-            class="relative w-full max-w-[399px] shrink-0 overflow-hidden rounded-[15px] border border-[#ededf1] bg-white shadow-[0px_2px_5.5px_0px_rgba(0,0,0,0.08)]"
+            class="relative w-full min-w-[280px] max-w-[399px] flex-1 basis-0 overflow-hidden rounded-[15px] border border-[#ededf1] bg-white shadow-[0px_2px_5.5px_0px_rgba(0,0,0,0.08)]"
           >
             <div class="relative aspect-[399/267]">
               <NuxtImg
@@ -78,9 +78,11 @@ const replayCards: ReplayCard[] = [
               </div>
               <div
                 v-if="card.versionBadge"
-                class="absolute top-[89px] left-1/2 -translate-x-1/2 rounded-[4px] bg-[#fdfdfe] px-3 py-1 text-[20px] leading-none font-bold tracking-[-0.28px] text-[#2764f2]"
+                class="absolute top-[89px] left-0 flex w-full items-center justify-center"
               >
-                {{ card.versionBadge }}
+                <span class="rounded-[4px] bg-[#fdfdfe] px-3 py-1 text-[20px] leading-none font-bold tracking-[-0.28px] text-[#2764f2]">
+                  {{ card.versionBadge }}
+                </span>
               </div>
               <p
                 v-if="card.overlayCaption"
@@ -93,9 +95,9 @@ const replayCards: ReplayCard[] = [
               <p class="text-[14px] font-semibold tracking-[1.5px] text-[#3359d9] uppercase">
                 {{ card.tag }}
               </p>
-              <p class="mt-2 text-[16px] leading-[1.45] font-medium text-[#1a1a26]">
+              <h3 class="mt-2 text-[16px] leading-[1.45] font-medium text-[#1a1a26]">
                 {{ card.title }}
-              </p>
+              </h3>
             </div>
           </div>
         </div>

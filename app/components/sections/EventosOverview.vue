@@ -28,11 +28,11 @@
         </p>
       </div>
 
-      <div class="relative w-full tablet-lg:w-[48%]">
-        <div class="absolute top-[55%] left-[75%] hidden size-[35%] rounded-[20px] bg-[#1cd9a4] desktop-full:block" aria-hidden="true" />
-        <div class="absolute top-0 left-0 hidden h-[27%] w-[20%] rounded-[20px] bg-brand desktop-full:block" aria-hidden="true" />
+      <div class="relative w-full tablet-lg:aspect-[674/513] tablet-lg:w-[48%]">
+        <div class="absolute top-[55%] left-[69%] hidden size-[31%] rounded-[20px] bg-[#1cd9a4] desktop-full:block" aria-hidden="true" />
+        <div class="absolute top-0 left-0 hidden h-[27%] w-[18.5%] rounded-[20px] bg-brand desktop-full:block" aria-hidden="true" />
 
-        <div class="relative aspect-[638/471] overflow-hidden rounded-[20px]">
+        <div class="relative aspect-[638/471] overflow-hidden rounded-[20px] tablet-lg:absolute tablet-lg:top-[3.7%] tablet-lg:left-[2.7%] tablet-lg:aspect-auto tablet-lg:h-[91.8%] tablet-lg:w-[94.6%]">
           <NuxtImg
             src="/images/eventos/eventos-overview-foto.png"
             :width="637"

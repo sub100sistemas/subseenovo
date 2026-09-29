@@ -262,7 +262,7 @@ T10
 
 ---
 
-### T9: Assemble `app/pages/eventos.vue`
+### T9: Assemble `app/pages/eventos.vue` ✅
 
 **What**: Compose all 6 sections in Figma order; set `useSeoMeta`.
 **Where**: `app/pages/eventos.vue`
@@ -273,17 +273,28 @@ T10
 **Tools**: NONE
 
 **Done when**:
-- [ ] `/eventos` resolves HTTP 200
-- [ ] All 6 sections render in Figma order (Gallery → Hero → Replay → Overview → Signup → Faq)
-- [ ] `useSeoMeta` set with the title/description documented in `spec.md`'s SEO section (no placeholder, no invented copy)
-- [ ] Exactly one `<h1>` on the page
-- [ ] Nav link (`HeaderBar.vue`'s top-level "Eventos" item) still resolves here — no change needed, confirmed pre-existing
-- [ ] No `Eventos*` component name collides with an existing `app/components/sections/*` filename (confirmed already at Specify time — re-confirm here as a final check)
-- [ ] Page does **not** include its own Header/Footer markup (already globally mounted in `app/app.vue`)
-- [ ] `pnpm build` passes
+- [x] `/eventos` resolves HTTP 200
+- [x] All 6 sections render in Figma order (Gallery → Hero → Replay → Overview → Signup → Faq)
+- [x] `useSeoMeta` set with the title/description documented in `spec.md`'s SEO section (no placeholder, no invented copy)
+- [x] Exactly one `<h1>` on the page
+- [x] Nav link (`HeaderBar.vue`'s top-level "Eventos" item) still resolves here — no change needed, confirmed pre-existing
+- [x] No `Eventos*` component name collides with an existing `app/components/sections/*` filename
+- [x] Page does **not** include its own Header/Footer markup (already globally mounted in `app/app.vue`)
+- [x] `pnpm build` passes
+
+**Visual QA findings (fixed before marking done)**: comparing each section's Playwright screenshot against a live `get_screenshot` of its Figma node found 5 real deviations, all fixed:
+1. **`EventosReplay.vue` overflowed at 1024px/1440px viewports** — 3 fixed-width (`max-w-[399px]`) cards no longer fit the row once `container-page`'s stepped max-width narrows below ~1257px. Changed cards to `flex-1 basis-0 min-w-[280px] max-w-[399px]` so they shrink together and only wrap to a new line when truly needed — verified 0 overflow at all 7 breakpoints afterward.
+2. **`EventosOverview.vue`'s decorative teal block overflowed its column at 1440px** — the original percentage approximation (`left-[75%] size-[35%]`, summing past 100%) was recomputed precisely from the Figma node's own coordinates (`left-[69%] size-[31%]`, summing to exactly 100%).
+3. **`EventosOverview.vue`'s decorative purple block was fully hidden behind the photo** — both were positioned at the same `top-0 left-0`, but Figma's own node places the photo offset by 2.7%/3.7% from the block's corner so a sliver peeks out. Repositioned the photo to those exact offsets so the purple block's peek-out (matching the teal block's) is visible, as in Figma.
+4. **`EventosReplay.vue`'s version badge ("1.0.18") used the sitewide-broken `left-1/2 -translate-x-1/2` centering pattern** (confirmed via `AD-007`: no `translate-x/y` utility generates any CSS on this site) — switched to a flexbox-centered wrapper, matching CLAUDE.md's documented fix for this exact pattern.
+5. **`EventosSignup.vue`'s bleed-in image was cropped to near-invisibility** — `object-cover` with default center positioning cropped into the video-call composition instead of anchoring it to the image's content-rich right side (the image's left half is intentionally transparent). Added `object-right`.
+
+Also converted the 3 Replay card titles from `<p>` to `<h3>` (was accidentally left as paragraphs — spec.md requires 6 total `<h3>` on the page: 3 here + 3 in `TheFooter.vue`; confirmed via Playwright at all 7 breakpoints after the fix).
+
+**Investigated, not a real bug**: a decorative shadow-divider image in the pre-existing, unrelated `TheHeader.vue` (`header-sombra-divisoria.svg`, also using the broken `-translate-x-1/2` pattern) geometrically extends past the viewport at some widths, but is safely clipped by its own ancestor's `overflow-x-hidden` — confirmed this does not contribute to `document.documentElement.scrollWidth` and does not visually leak. Pre-existing, sitewide, out of scope for this feature (same class of issue as `AD-007`, not introduced here).
 
 **Tests**: none
-**Gate**: Full
+**Gate**: Full — passed
 
 ---
 
