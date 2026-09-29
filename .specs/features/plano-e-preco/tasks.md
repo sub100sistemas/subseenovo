@@ -202,12 +202,12 @@ T13 → T14
 **Tools**: none (conteúdo já no manifesto)
 
 **Done when**:
-- [ ] As 9 categorias existem no array, cada uma com o título exato do manifesto (usando o texto real do node de título, não o nome do frame — ex.: "Treinamentos e Evolução", não "Plugin para WhatsApp")
-- [ ] Todas as 45 linhas de feature existem, com `incluidoUrbano: true` e `incluidoRural: true` em cada uma (fiel ao achado da Etapa 1 — nenhuma linha diverge)
-- [ ] Nenhum node de "Vector"/ícone genérico do Figma foi usado como nome de feature — todos os textos vêm do node de título real
+- [x] As 9 categorias existem no array, cada uma com o título exato do manifesto (usando o texto real do node de título, não o nome do frame — ex.: "Treinamentos e Evolução", não "Plugin para WhatsApp")
+- [x] Todas as 45 linhas de feature existem, com `incluidoUrbano: true` e `incluidoRural: true` em cada uma (fiel ao achado da Etapa 1 — nenhuma linha diverge; contagem: 3+8+9+6+7+2+2+4+4 = 45)
+- [x] Nenhum node de "Vector"/ícone genérico do Figma foi usado como nome de feature — todos os textos vêm do node de título real
 
 **Tests**: none
-**Gate**: Quick (revisão de código, sem UI ainda)
+**Gate**: Quick (revisão de código, sem UI ainda) — ✅ concluído
 
 ---
 
@@ -226,12 +226,12 @@ T13 → T14
 **Tools**: none
 
 **Done when**:
-- [ ] As 9 categorias renderizam com seus títulos e todas as features, cada uma com checkmark visível em ambas as colunas
-- [ ] Cabeçalhos "Urbano" e "Rural" renderizam com o CTA "Site & hotsite padrão" (usar `href="#"` se nenhum destino real existir, mesma convenção)
-- [ ] Logo "SUBSEE on" decorativo renderiza acima da coluna Urbano (asset confirmado/exportado na T1/T2)
-- [ ] Nota de rodapé "* No período gratuito de 30 dias as integrações não estão liberadas." renderiza próxima ao botão de ocultar/exibir
-- [ ] Responsivo: a tabela larga (2 colunas + labels) não causa overflow horizontal — usar scroll interno (`overflow-x-auto` em um container dedicado) se necessário abaixo de `tablet` (768px), documentando a escolha
-- [ ] `pnpm build` passa
+- [x] As 9 categorias renderizam com seus títulos e todas as features, cada uma com checkmark visível em ambas as colunas
+- [x] Cabeçalhos "Urbano" e "Rural" renderizam com o CTA "Site & hotsite padrão" (usa `to="#"` via `CtaButton`, nenhum destino real existe — mesma convenção)
+- [x] Logo "SUBSEE on" decorativo renderiza acima da coluna Urbano (asset `logo-subsee-on.svg`, reuso confirmado na T1)
+- [x] Nota de rodapé "* No período gratuito de 30 dias as integrações não estão liberadas." renderiza próxima ao botão de ocultar/exibir
+- [x] Responsivo: a tabela usa `overflow-x-auto` num container dedicado (`min-w-[720px]` interno) para rolar horizontalmente sem nunca vazar para o body da página, abaixo de `tablet-lg`
+- [x] `pnpm build` passa
 
 **Tests**: none
 **Gate**: Quick
@@ -253,11 +253,11 @@ T13 → T14
 **Tools**: none
 
 **Done when**:
-- [ ] Clicar no botão no estado "Ocultar as funcionalidades" recolhe a tabela e troca o texto/ícone para "Ver todas as funcionalidades"
-- [ ] Clicar novamente reverte ambos
-- [ ] O estado inicial (padrão ao carregar a página) é "visível"/"Ocultar as funcionalidades", conforme o Figma (o outro estado está marcado `hidden="true"` no arquivo original)
-- [ ] Nenhum salto de layout abrupto sem transição perceptível (transição simples de altura/opacidade é suficiente; não é exigido animação complexa)
-- [ ] `pnpm build` passa
+- [x] Clicar no botão no estado "Ocultar as funcionalidades" recolhe a tabela e troca o texto/ícone para "Ver todas as funcionalidades" (`ref<boolean> tabelaVisivel`, `v-show` + rótulo condicional)
+- [x] Clicar novamente reverte ambos
+- [x] O estado inicial (padrão ao carregar a página) é "visível"/"Ocultar as funcionalidades", conforme o Figma (`tabelaVisivel` inicia `true`)
+- [x] Nenhum salto de layout abrupto sem transição perceptível — `<Transition name="features-fade">` com fade de opacidade 0.2s (CSS simples, sem `translate`)
+- [x] `pnpm build` passa
 
 **Tests**: none
 **Gate**: Quick
