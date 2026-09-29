@@ -379,9 +379,9 @@ T13 → T14
 **Tools**: none
 
 **Done when**:
-- [ ] `app/components/layout/HeaderBar.vue` permanece sem modificações nesta feature (diff vazio para este arquivo)
-- [ ] `app/components/sections/HeroPricing.vue` permanece sem modificações nesta feature (diff vazio para este arquivo)
-- [ ] Registrado no `validation.md` da Etapa 3 que a atualização desses 2 pontos de entrada é uma tarefa futura isolada, não desta feature
+- [x] `app/components/layout/HeaderBar.vue` permanece sem modificações nesta feature — `git diff master...feature/plano-e-preco -- app/components/layout/HeaderBar.vue` retorna vazio
+- [x] `app/components/sections/HeroPricing.vue` permanece sem modificações nesta feature — mesmo diff vazio confirmado
+- [x] Registrado no `validation.md` da Etapa 3 que a atualização desses 2 pontos de entrada é uma tarefa futura isolada, não desta feature
 
 **Tests**: none
 **Gate**: Manual (revisão de `git diff`)
