@@ -338,9 +338,9 @@ T23
 
 **Done when**:
 
-- [ ] Forwarda a lista de T7 para `LegalSections` sem markup próprio de cartão
-- [ ] Bloco inicia em y=465 do frame de 1920px (40px de padding vertical e sobreposição de 10px sobre o Hero), aplicado nesta section e não no componente compartilhado
-- [ ] `pnpm build` exit 0
+- [x] Forwarda a lista de T7 para `LegalSections` sem markup próprio de cartão
+- [x] Bloco inicia em y=465 do frame de 1920px (40px de padding vertical e sobreposição de 10px sobre o Hero), aplicado nesta section e não no componente compartilhado
+- [x] `pnpm build` exit 0
 
 **Tests**: none
 **Gate**: full
