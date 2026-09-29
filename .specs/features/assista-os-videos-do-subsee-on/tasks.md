@@ -484,12 +484,12 @@ T11 → T18
 
 **Done when**:
 
-- [ ] `/assista-os-videos-do-subsee-on` answers 200 in `pnpm dev` and appears in the `pnpm build` output
-- [ ] Sections in order: `VideosHero`, `VideosFeatured`, `VideosDemo`, `VideosProfiles`, `VideosAppCta`, `VideosFaq`, inside `<main>`, with the global Header and Footer around them
-- [ ] Exactly one `<h1>` on the rendered page
-- [ ] No `useSeoMeta` values are invented here (see T16); the page works without them
-- [ ] Gate check passes: `pnpm build` and `pnpm dev` route check
-- [ ] Test count: n/a ([[AD-002]])
+- [x] `/assista-os-videos-do-subsee-on` answers 200 in `pnpm dev` and appears in the `pnpm build` output
+- [x] Sections in order: `VideosHero`, `VideosFeatured`, `VideosDemo`, `VideosProfiles`, `VideosAppCta`, `VideosFaq`, inside `<main>`, with the global Header and Footer around them
+- [x] Exactly one `<h1>` on the rendered page
+- [x] No `useSeoMeta` values are invented here (see T16); the page works without them
+- [x] Gate check passes: `pnpm build` and `pnpm dev` route check
+- [x] Test count: n/a ([[AD-002]])
 
 **Tests**: none
 **Gate**: full
