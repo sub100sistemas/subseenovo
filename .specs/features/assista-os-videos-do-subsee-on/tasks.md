@@ -24,7 +24,7 @@ Implement these tasks with the `tlc-spec-driven` skill: **activate it by name an
 ---
 
 **Design**: `.specs/features/assista-os-videos-do-subsee-on/design.md`
-**Status**: Draft — awaiting user approval before Execute
+**Status**: In Progress — T1 to T15 done; T16 to T18 blocked by Q1 to Q5
 
 ---
 

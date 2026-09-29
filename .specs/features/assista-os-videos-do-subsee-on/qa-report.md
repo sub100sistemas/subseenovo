@@ -23,7 +23,7 @@ Verificado em cada largura: `scrollWidth <= innerWidth`, erros de console, respo
 | 576 | não | 0 | 0 | 0 | 1 |
 | 375 | não | 0 | 0 | 0 | 1 |
 
-Abaixo de 992px as duas colunas do Vídeo institucional e as grades de 3 cards ficam em coluna única (2 colunas entre 768 e 991px). O Hero segue o comportamento das páginas irmãs (composição empilhada, onda como divisor mobile).
+Abaixo de 992px as duas colunas do Vídeo institucional e as grades de 3 cards ficam em coluna única (inclusive entre 768 e 991px). O Hero segue o comportamento das páginas irmãs (composição empilhada, onda como divisor mobile).
 
 ### Achados
 
@@ -91,4 +91,4 @@ Cores de fundo do Hero amostradas em 5 pontos: diferença de 0 a 2 níveis por c
 | Pergunta 6 do FAQ ausente | Sem texto de resposta no Figma (Q4) | Bloqueia a T17 |
 | Item 3 do FAQ quebra a resposta uma palavra antes do Figma | O Figma desenha esse item 6,5px mais à esquerda e 24px mais estreito (845,8px contra 870px) | Imperfeição do design, não replicada |
 | Diferenças de 1 a 3px em textos de cards | Arredondamento de altura de linha | Imperceptível |
-| Header do site tem sombra sobre o topo do Hero | Header é global e sticky; o frame do Figma não a desenha na captura do Hero | Nenhum |
+| Header do site projeta sombra sobre o topo do Hero | O Header é um componente global; a captura do frame do Hero no Figma não o inclui | Nenhum |

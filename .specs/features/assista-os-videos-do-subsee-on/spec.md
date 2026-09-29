@@ -1,4 +1,4 @@
-| Implementing || Implementing || Implementing || Implementing || Implementing |# Assista os vídeos do SUBSEE on (página `/assista-os-videos-do-subsee-on`) Specification
+# Assista os vídeos do SUBSEE on (página `/assista-os-videos-do-subsee-on`) Specification
 
 ## Problem Statement
 
@@ -154,18 +154,18 @@ A Home tem o botão "Assista os vídeos do SUBSEE on" (`HeroMain.vue:83-88`) que
 
 | Requirement ID | Story | Phase | Status |
 | -------------- | ----- | ----- | ------ |
-| AVS-01 | P1: Rota responde 200 com Header e Footer | Tasks (T13) | In Tasks |
-| AVS-02 | P1: Hero (H1, descrição, ícones, foto, cards) | Tasks (T2, T7, T15) | In Tasks |
-| AVS-03 | P1: Um único `<h1>` | Tasks (T7, T13) | In Tasks |
-| AVS-04 | P1: Fidelidade do Hero a 1920px | Tasks (T1, T7, T15) | In Tasks |
-| AVS-05 | P1: Seção Vídeo institucional | Tasks (T3, T4, T5, T8, T15) | In Tasks |
-| AVS-06 | P1: Seção Vídeos demonstrativos (3 cards, 1 array) | Tasks (T3, T4, T5, T9, T15) | In Tasks |
-| AVS-07 | P1: Destino dos cards e acesso por teclado | Tasks (T4, T6, T8, T9, T10; T18 bloqueada por Q1 a Q3) | In Tasks |
-| AVS-08 | P2: Seção Conteúdo por perfil (3 cards, 1 array) | Tasks (T3, T4, T5, T10, T15) | In Tasks |
-| AVS-09 | P2: Banner CTA App SUBSEE | Tasks (T3, T11, T15) | In Tasks |
-| AVS-10 | P2: FAQ (6 perguntas, `layout/Faq.vue`, sem resposta inventada no item 6) | Tasks (T12, T15; T17 bloqueada por Q4) | In Tasks |
-| AVS-11 | P3: Sem overflow horizontal de 375px a 1920px | Tasks (T14) | In Tasks |
-| AVS-12 | P3: Empilhamento abaixo de 992px | Tasks (T14) | In Tasks |
+| AVS-01 | P1: Rota responde 200 com Header e Footer | Tasks (T13) | Implementing |
+| AVS-02 | P1: Hero (H1, descrição, ícones, foto, cards) | Tasks (T2, T7, T15) | Implementing |
+| AVS-03 | P1: Um único `<h1>` | Tasks (T7, T13) | Implementing |
+| AVS-04 | P1: Fidelidade do Hero a 1920px | Tasks (T1, T7, T15) | Implementing |
+| AVS-05 | P1: Seção Vídeo institucional | Tasks (T3, T4, T5, T8, T15) | Implementing |
+| AVS-06 | P1: Seção Vídeos demonstrativos (3 cards, 1 array) | Tasks (T3, T4, T5, T9, T15) | Implementing |
+| AVS-07 | P1: Destino dos cards e acesso por teclado | Tasks (T4, T6, T8, T9, T10; T18 bloqueada por Q1 a Q3) | Implementing |
+| AVS-08 | P2: Seção Conteúdo por perfil (3 cards, 1 array) | Tasks (T3, T4, T5, T10, T15) | Implementing |
+| AVS-09 | P2: Banner CTA App SUBSEE | Tasks (T3, T11, T15) | Implementing |
+| AVS-10 | P2: FAQ (6 perguntas, `layout/Faq.vue`, sem resposta inventada no item 6) | Tasks (T12, T15; T17 bloqueada por Q4) | Implementing |
+| AVS-11 | P3: Sem overflow horizontal de 375px a 1920px | Tasks (T14) | Implementing |
+| AVS-12 | P3: Empilhamento abaixo de 992px | Tasks (T14) | Implementing |
 | AVS-13 | P3: SEO via `useSeoMeta` | Tasks (T16, bloqueada por Q5) | In Tasks |
 
 **Coverage:** 13 total, 13 mapped to tasks, 0 unmapped. 3 tarefas bloqueadas por decisões pendentes (T16 por Q5, T17 por Q4, T18 por Q1 a Q3); AVS-13 só é atendido por uma tarefa bloqueada.
