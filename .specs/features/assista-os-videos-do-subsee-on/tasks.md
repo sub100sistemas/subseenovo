@@ -425,12 +425,12 @@ T11 → T18
 
 **Done when**:
 
-- [ ] Title, text (24px, 82% white) and button label "Veja mais no App SUBSEE →" exactly as in the manifest
-- [ ] Banner 1400×220, `rounded-[28px]`, gradient `#5d5fef`→`#2e386b`, ellipse 360×360 clipped by `overflow-hidden`; button 300×58, white, `rounded-[10px]`, text `#5d5fef` 15px SemiBold
-- [ ] The button uses `videosFallbackUrl` (new tab, `rel="noopener"`), pending Q3; text and button stack below `tablet-lg`
-- [ ] At 1920px the banner matches the `3188:3501` screenshot
-- [ ] Gate check passes: `pnpm build` and visual check on `pnpm dev`
-- [ ] Test count: n/a ([[AD-002]])
+- [x] Title, text (24px, 82% white) and button label "Veja mais no App SUBSEE →" exactly as in the manifest
+- [x] Banner 1400×220, `rounded-[28px]`, gradient `#5d5fef`→`#2e386b`, ellipse 360×360 clipped by `overflow-hidden`; button 300×58, white, `rounded-[10px]`, text `#5d5fef` 15px SemiBold
+- [x] The button uses `videosFallbackUrl` (new tab, `rel="noopener"`), pending Q3; text and button stack below `tablet-lg`
+- [x] At 1920px the banner matches the `3188:3501` screenshot
+- [x] Gate check passes: `pnpm build` and visual check on `pnpm dev`
+- [x] Test count: n/a ([[AD-002]])
 
 **Tests**: none
 **Gate**: quick
