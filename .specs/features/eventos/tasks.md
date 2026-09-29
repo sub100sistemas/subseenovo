@@ -124,7 +124,7 @@ T10
 
 ---
 
-### T3: Build `EventosGallery.vue`
+### T3: Build `EventosGallery.vue` ✅
 
 **What**: Decorative top-of-page strip of 5 real photos, no text, blue border top/bottom.
 **Where**: `app/components/sections/EventosGallery.vue`
@@ -135,17 +135,17 @@ T10
 **Tools**: NONE (content already in the manifest)
 
 **Done when**:
-- [ ] Exactly 5 photos render, in Figma order, via a single `v-for` over one typed array (`{ src, alt }[]`)
-- [ ] Renders as the very first element inside `<main>` (before the Hero), matching the Figma order
-- [ ] No text/CTA present (confirmed absent in Figma)
-- [ ] `pnpm build` passes
+- [x] Exactly 5 photos render, in Figma order, via a single `v-for` over one typed array (`{ src, alt }[]`)
+- [x] Renders as the very first element inside `<main>` (before the Hero), matching the Figma order
+- [x] No text/CTA present (confirmed absent in Figma)
+- [x] `pnpm build` passes (shared build run with T4–T8, see T8 note)
 
 **Tests**: none
-**Gate**: Quick
+**Gate**: Quick — passed
 
 ---
 
-### T4: Build `EventosHero.vue`
+### T4: Build `EventosHero.vue` ✅
 
 **What**: H1 + description (centered) + decorative horizontal divider + 2 decorative "icone-shape" blobs + the "Próximo evento" promo row (image `banner-eventos.png` + kicker "PRÓXIMO EVENTO" + highlighted paragraph + CTA "Inscreva-se!!!").
 **Where**: `app/components/sections/EventosHero.vue`
@@ -158,19 +158,19 @@ T10
 - Skill: NONE
 
 **Done when**:
-- [ ] H1 "Eventos Online e Replays do SUBSEE on" renders with "on" in `#e33b48` (**locked-in decision — do not use `#e72f4d` or `text-brand`**)
-- [ ] Description renders verbatim below the H1
-- [ ] "Próximo evento" row renders `banner-eventos.png` as a single flattened image (no HTML text reconstruction over it), plus the live kicker "PRÓXIMO EVENTO" and the highlighted paragraph as real text (not baked into an image)
-- [ ] Neither the kicker nor the highlighted paragraph is marked up as an `<h2>` (locked-in heading-hierarchy decision from spec.md)
-- [ ] CTA "Inscreva-se!!!" renders with `href="#"` (**locked-in decision — do not invent a URL**), documented inline as pending
-- [ ] `pnpm build` passes
+- [x] H1 "Eventos Online e Replays do SUBSEE on" renders with "on" in `#e33b48` (**locked-in decision honored — `text-[#e33b48]`, not `#e72f4d`/`text-brand`**)
+- [x] Description renders verbatim below the H1
+- [x] "Próximo evento" row renders `banner-eventos.png` as a single flattened image (no HTML text reconstruction over it), plus the live kicker "PRÓXIMO EVENTO" and the highlighted paragraph as real text (not baked into an image)
+- [x] Neither the kicker nor the highlighted paragraph is marked up as an `<h2>` (locked-in heading-hierarchy decision from spec.md — both are `<p>`)
+- [x] CTA "Inscreva-se!!!" renders with `href="#"` (**locked-in decision honored — no URL invented**), documented inline as pending
+- [x] `pnpm build` passes
 
 **Tests**: none
-**Gate**: Quick
+**Gate**: Quick — passed
 
 ---
 
-### T5: Build `EventosReplay.vue`
+### T5: Build `EventosReplay.vue` ✅
 
 **What**: Centered H2 + description, a gradient rounded panel containing a row of exactly 3 video/replay cards (thumbnail + colored tag + title + play-button overlay, with card-specific variations), and a CTA linking to a real external URL.
 **Where**: `app/components/sections/EventosReplay.vue`
@@ -183,18 +183,18 @@ T10
 - Skill: NONE
 
 **Done when**:
-- [ ] H2 "Reveja nossos eventos e novidades" + description ("Assista aos **replays de lives**, treinamentos e lançamentos...") render verbatim, "eventos"/"novidades" in `#5d5fef`
-- [ ] Panel background uses the gradient documented in the manifest (`linear-gradient(117.49deg, rgb(235,244,254) 2.78%, rgb(239,240,251) 65.12%, rgba(178,200,241,0.45) 104.45%)`)
-- [ ] Exactly 3 cards render via a single `v-for` over one typed `ReplayCard[]` array (per design.md's shape: `thumbnail`, `tag`, `title`, optional `overlayCaption`, optional `versionBadge`) — card 1 has its overlay caption ("SVN Investimentos SUB100 Sistemas"), card 2 has its version badge ("1.0.18"), card 3 has neither extra
-- [ ] CTA "Ver mais vídeos no App SUBSEE" links to `https://app.subsee.com.br/treinamentos/eventos-online?page=1&order=default` with `target="_blank"` `rel="noopener"` (**real, confirmed external URL — not a placeholder**)
-- [ ] `pnpm build` passes
+- [x] H2 "Reveja nossos eventos e novidades" + description ("Assista aos **replays de lives**, treinamentos e lançamentos...") render verbatim, "eventos"/"novidades" in `#5d5fef`
+- [x] Panel background uses the gradient documented in the manifest (`linear-gradient(117.49deg, rgb(235,244,254) 2.78%, rgb(239,240,251) 65.12%, rgba(178,200,241,0.45) 104.45%)`)
+- [x] Exactly 3 cards render via a single `v-for` over one typed `ReplayCard[]` array (per design.md's shape: `thumbnail`, `tag`, `title`, optional `overlayCaption`, optional `versionBadge`) — card 1 has its overlay caption ("SVN Investimentos SUB100 Sistemas"), card 2 has its version badge ("1.0.18"), card 3 has neither extra
+- [x] CTA "Ver mais vídeos no App SUBSEE" links to `https://app.subsee.com.br/treinamentos/eventos-online?page=1&order=default` with `target="_blank"` `rel="noopener"` (**real, confirmed external URL — not a placeholder**)
+- [x] `pnpm build` passes
 
 **Tests**: none
-**Gate**: Quick
+**Gate**: Quick — passed
 
 ---
 
-### T6: Build `EventosOverview.vue`
+### T6: Build `EventosOverview.vue` ✅
 
 **What**: Two-column section — H2 + description on the left; a rounded photo with 2 solid decorative color blocks behind it and a decorative (non-functional) play-button icon on top, on the right.
 **Where**: `app/components/sections/EventosOverview.vue`
@@ -205,18 +205,18 @@ T10
 **Tools**: NONE (content already in the manifest)
 
 **Done when**:
-- [ ] H2 "Tudo que sua imobiliária precisa, em um só sistema com o **SUBSEE on**" (bold on "SUBSEE on") + description render verbatim
-- [ ] Photo renders with the 2 solid decorative blocks (`#1cd9a4` and `#5d5fef`, both `rounded-[20px]`) positioned behind it, matching the Figma layering
-- [ ] Play-button icon renders as purely decorative — no `<a>`, no video embed, no invented link (confirmed absent in Figma)
-- [ ] No CTA present (confirmed absent in Figma)
-- [ ] `pnpm build` passes
+- [x] H2 "Tudo que sua imobiliária precisa, em um só sistema com o **SUBSEE on**" (bold on "SUBSEE on") + description render verbatim
+- [x] Photo renders with the 2 solid decorative blocks (`#1cd9a4` and `#5d5fef`, both `rounded-[20px]`) positioned behind it, matching the Figma layering
+- [x] Play-button icon renders as purely decorative — no `<a>`, no video embed, no invented link (confirmed absent in Figma)
+- [x] No CTA present (confirmed absent in Figma)
+- [x] `pnpm build` passes
 
 **Tests**: none
-**Gate**: Quick
+**Gate**: Quick — passed
 
 ---
 
-### T7: Build `EventosSignup.vue`
+### T7: Build `EventosSignup.vue` ✅
 
 **What**: A single fully-clickable card — badge "EVENTO ONLINE", H2, description, a button-styled CTA, a small note, and a bleed-in image on the right.
 **Where**: `app/components/sections/EventosSignup.vue`
@@ -227,18 +227,18 @@ T10
 **Tools**: NONE (content already in the manifest)
 
 **Done when**:
-- [ ] The entire card (badge + H2 + description + CTA + note + image) is wrapped in a single `<a>`/`<NuxtLink>`, matching the Figma structure (not just the CTA text being a link)
-- [ ] Badge "EVENTO ONLINE", H2 "Participe dos Nossos Eventos ao Vivo", description, CTA-styled "Inscreva-se!!! →", and note "Vagas limitadas por evento" all render verbatim
-- [ ] `href="#"` used for the whole card (**locked-in decision — do not invent a URL**), documented inline as pending
-- [ ] Image uses `eventos_vivo.png` (already exported, transparent-left confirmed) bleeding in from the right
-- [ ] `pnpm build` passes
+- [x] The entire card (badge + H2 + description + CTA + note + image) is wrapped in a single `<a>`/`<NuxtLink>`, matching the Figma structure (not just the CTA text being a link)
+- [x] Badge "EVENTO ONLINE", H2 "Participe dos Nossos Eventos ao Vivo", description, CTA-styled "Inscreva-se!!! →", and note "Vagas limitadas por evento" all render verbatim
+- [x] `href="#"` used for the whole card (**locked-in decision honored — no URL invented**), documented inline as pending
+- [x] Image uses `eventos_vivo.png` (already exported, transparent-left confirmed) bleeding in from the right
+- [x] `pnpm build` passes
 
 **Tests**: none
-**Gate**: Quick
+**Gate**: Quick — passed
 
 ---
 
-### T8: Build `EventosFaq.vue`
+### T8: Build `EventosFaq.vue` ✅
 
 **What**: FAQ accordion wrapping `layout/Faq.vue` (via the same thin-wrapper shape as `CrmFaq.vue`/`BaseConhecimentoFaq.vue`) with the 6 extracted Q&A.
 **Where**: `app/components/sections/EventosFaq.vue`
@@ -249,14 +249,16 @@ T10
 **Tools**: NONE
 
 **Done when**:
-- [ ] All 6 Q&A render verbatim via `layout/Faq.vue`
-- [ ] Question 6's answer is reproduced exactly as extracted (**locked-in decision — identical to question 5's answer, do not invent or silently correct it**), matching the manifest's flagged inconsistency
-- [ ] "+"/"−" icons reused from `/icons/faq-plus-circle.svg`/`faq-minus-circle.svg` (no new icon export)
-- [ ] Opening/closing an accordion item visibly toggles the expanded state (native `<details>`/`<summary>` behavior from `layout/Faq.vue`)
-- [ ] `pnpm build` passes
+- [x] All 6 Q&A render verbatim via `layout/Faq.vue` (wrapped directly, not via `CrmFaq.vue` — its default array is CRM-specific content, not reused here)
+- [x] Question 6's answer is reproduced exactly as extracted (**locked-in decision honored — identical to question 5's answer, not corrected or replaced**), matching the manifest's flagged inconsistency
+- [x] "+"/"−" icons reused from `/icons/faq-plus-circle.svg`/`faq-minus-circle.svg` (no new icon export)
+- [x] Opening/closing an accordion item visibly toggles the expanded state (native `<details>`/`<summary>` behavior from `layout/Faq.vue`)
+- [x] `pnpm build` passes
+
+**Process note**: T4–T8's `pnpm build` gate was run once after all 5 remaining components were written (46s, clean) rather than once per task, since none of these components is referenced by any page until T9 — a build after each one would only re-prove the same project-wide compile health repeatedly. Each task still got its own atomic commit. Flagging this explicitly as a deliberate deviation from literal one-gate-per-task, not a silent skip (same deviation already used and documented in `base-de-conhecimento`'s tasks.md).
 
 **Tests**: none
-**Gate**: Quick
+**Gate**: Quick — passed
 
 ---
 
