@@ -116,8 +116,8 @@ T23
 
 **Done when**:
 
-- [ ] Três interfaces exportadas exatamente como no design (`lines: string[]`, `label`, `paragraphs`, `id`, `title`, `subsections`, `bodyClass`)
-- [ ] Sem comentários; `pnpm build` exit 0
+- [x] Três interfaces exportadas exatamente como no design (`lines: string[]`, `label`, `paragraphs`, `id`, `title`, `subsections`, `bodyClass`)
+- [x] Sem comentários; `pnpm build` exit 0
 
 **Tests**: none
 **Gate**: build
