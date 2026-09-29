@@ -59,7 +59,7 @@ const videos: DemoVideo[] = [
           </template>
         </SectionHeading>
 
-        <ul class="grid gap-6 tablet:grid-cols-2 tablet-lg:grid-cols-3 desktop-full:gap-[55px]">
+        <ul class="grid gap-6 tablet-lg:grid-cols-3 desktop-full:gap-[55px]">
           <li
             v-for="(video, index) in videos"
             :key="video.title"
