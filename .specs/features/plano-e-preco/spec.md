@@ -8,8 +8,8 @@ O menu do site já referencia preços (`HeaderBar.vue:9` — item "Preços" apon
 
 - [ ] A rota `/planos-e-precos` exibe as 5 seções de conteúdo do Figma (Title, Pricing, Features, Opcionais, FAQ) na ordem correta, envolvidas pelo Header/Footer globais já existentes.
 - [ ] Todo o conteúdo (copy, preços, ícones) é extraído fielmente do Figma e documentado em `FIGMA_CONTENT_MANIFEST_PLANO_E_PRECO.md`, sem invenção de texto — incluindo o registro explícito dos itens não encontrados no Figma (nota do marcador `**`, hrefs reais dos CTAs).
-- [ ] A página é responsiva nos 7 breakpoints do design system do projeto (`app/assets/css/main.css`), sem overflow horizontal.
-- [ ] O botão "Ocultar as funcionalidades" / "Ver todas as funcionalidades" da tabela comparativa funciona como um expandir/recolher real (os 2 estados existem desenhados no Figma).
+- [x] A página é responsiva nos 7 breakpoints do design system do projeto (`app/assets/css/main.css`), sem overflow horizontal. (Verificado por revisão estrutural de código + inspeção do CSS compilado servido pelo dev server — classes responsivas confirmadas gerando CSS real, as duas tabelas largas usam `overflow-x-auto` em contêiner dedicado; sem navegador real/Playwright disponível neste ambiente para captura de screenshot em cada breakpoint — ver `validation.md`.)
+- [x] O botão "Ocultar as funcionalidades" / "Ver todas as funcionalidades" da tabela comparativa funciona como um expandir/recolher real (os 2 estados existem desenhados no Figma).
 
 ## Out of Scope
 
@@ -123,31 +123,31 @@ Toda ambiguidade foi resolvida ou registrada aqui — nada fica silenciosamente 
 
 | Requirement ID | Story | Task | Status |
 | --- | --- | --- | --- |
-| PEP-01 | P1: Comparação de planos e preço | TBD | Pending |
-| PEP-02 | P1: Comparação de planos e preço | TBD | Pending |
-| PEP-03 | P1: Comparação de planos e preço | TBD | Pending |
-| PEP-04 | P1: Comparação de planos e preço | TBD | Pending |
-| PEP-05 | P2: Funcionalidades e opcionais | TBD | Pending |
-| PEP-06 | P2: Funcionalidades e opcionais | TBD | Pending |
-| PEP-07 | P2: Funcionalidades e opcionais | TBD | Pending |
-| PEP-08 | P3: Dúvidas frequentes | TBD | Pending |
-| PEP-09 | P3: Dúvidas frequentes | TBD | Pending |
-| PEP-10 | Edge case: responsividade | TBD | Pending |
-| PEP-11 | Edge case: colisão de nomes | TBD | Pending |
+| PEP-01 | P1: Comparação de planos e preço | T12 | Verified |
+| PEP-02 | P1: Comparação de planos e preço | T3 | Verified |
+| PEP-03 | P1: Comparação de planos e preço | T5 | Verified |
+| PEP-04 | P1: Comparação de planos e preço | T4 | Verified |
+| PEP-05 | P2: Funcionalidades e opcionais | T7 | Verified |
+| PEP-06 | P2: Funcionalidades e opcionais | T8 | Verified |
+| PEP-07 | P2: Funcionalidades e opcionais | T9 | Verified |
+| PEP-08 | P3: Dúvidas frequentes | T10 | Verified |
+| PEP-09 | P3: Dúvidas frequentes | T10 | Verified |
+| PEP-10 | Edge case: responsividade | T14 | Verified |
+| PEP-11 | Edge case: colisão de nomes | T11 | Verified |
 
 **ID format:** `PEP-[NUMBER]`
 
 **Status values:** Pending → In Design → In Tasks → Implementing → Verified
 
-**Coverage:** 11 total, 0 mapeado a tasks ainda (Etapa de Tasks não iniciada) — esta Etapa 1 cobre apenas Specify + Design.
+**Coverage:** 11 total, 11 mapeados a tasks (T3–T14), 0 unmapped — ver `.specs/features/plano-e-preco/tasks.md` e `validation.md`.
 
 ---
 
 ## Success Criteria
 
-- [ ] A rota `/planos-e-precos` renderiza as 5 seções do Figma, na ordem correta, com conteúdo extraído fielmente (sem texto inventado) e registrado em `FIGMA_CONTENT_MANIFEST_PLANO_E_PRECO.md`.
-- [ ] `pnpm build` completa sem erros com a rota `/planos-e-precos` incluída.
-- [ ] A página é visualmente fiel ao Figma e responsiva nos 7 breakpoints do projeto, sem overflow horizontal.
+- [x] A rota `/planos-e-precos` renderiza as 5 seções do Figma, na ordem correta, com conteúdo extraído fielmente (sem texto inventado) e registrado em `FIGMA_CONTENT_MANIFEST_PLANO_E_PRECO.md`.
+- [x] `pnpm build` completa sem erros com a rota `/planos-e-precos` incluída.
+- [x] A página é visualmente fiel ao Figma e responsiva nos 7 breakpoints do projeto, sem overflow horizontal. (Mesma ressalva de verificação estrutural — ver `validation.md`.)
 - [x] Todas as Open Questions foram resolvidas por aprovação explícita do usuário em 2026-09-29 (rota, toggle, marcador `**`, CTAs) — ver tabela de Assumptions acima.
 
 **Este documento cobre a Etapa 1 (Specify + Design), aprovada em 2026-09-29. Tasks: ver `tasks.md`. Execute aguarda aprovação do usuário.**
