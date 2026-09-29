@@ -395,13 +395,13 @@ T11 → T18
 
 **Done when**:
 
-- [ ] `VideoProfile` typed array (`number`, `title`, `description`, `linkLabel`, `bgClass`, `accentClass`, `href`) with the 3 items of the manifest table; one card template, one `v-for`
-- [ ] Card colors: `#eef0ff`/`#5d5fef`, `#eaf9f7`/`#159c96`, `#f4eefc`/`#7652b5`; cards 430×260, `rounded-[22px]`; 3×430 with 55px gap at 1920px, single column below `tablet-lg`
-- [ ] "Ver vídeos →" links use `videosFallbackUrl` (new tab, `rel="noopener"`), pending Q2
-- [ ] Heading typography per the manifest (H2 36px here, 38px elsewhere)
-- [ ] At 1920px the block matches the `3188:3474` screenshot for the list area
-- [ ] Gate check passes: `pnpm build` and visual check on `pnpm dev`
-- [ ] Test count: n/a ([[AD-002]])
+- [x] `VideoProfile` typed array (`number`, `title`, `description`, `linkLabel`, `bgClass`, `accentClass`, `href`) with the 3 items of the manifest table; one card template, one `v-for`
+- [x] Card colors: `#eef0ff`/`#5d5fef`, `#eaf9f7`/`#159c96`, `#f4eefc`/`#7652b5`; cards 430×260, `rounded-[22px]`; 3×430 with 55px gap at 1920px, single column below `tablet-lg`
+- [x] "Ver vídeos →" links use `videosFallbackUrl` (new tab, `rel="noopener"`), pending Q2
+- [x] Heading typography per the manifest (H2 36px here, 38px elsewhere)
+- [x] At 1920px the block matches the `3188:3474` screenshot for the list area
+- [x] Gate check passes: `pnpm build` and visual check on `pnpm dev`
+- [x] Test count: n/a ([[AD-002]])
 
 **Tests**: none
 **Gate**: quick
