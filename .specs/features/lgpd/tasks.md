@@ -311,10 +311,10 @@ T23
 
 **Done when**:
 
-- [ ] H1 "Termos de Uso", subtítulo "Transparência e compromisso com você" e descrição com "segurança", "privacidade" e "confiança" em `#5d5fef` semibold, textos idênticos ao Figma
-- [ ] H1 a 131px abaixo do Header (y=216 no frame de 1920px), descrição com 661px de largura
-- [ ] Renderizado a 1920px e comparado com o node `1182:1656`
-- [ ] `pnpm build` exit 0
+- [x] H1 "Termos de Uso", subtítulo "Transparência e compromisso com você" e descrição com "segurança", "privacidade" e "confiança" em `#5d5fef` semibold, textos idênticos ao Figma
+- [x] H1 a 131px abaixo do Header (y=216 no frame de 1920px), descrição com 661px de largura
+- [x] Renderizado a 1920px e comparado com o node `1182:1656`
+- [x] `pnpm build` exit 0
 
 **Tests**: none
 **Gate**: full
