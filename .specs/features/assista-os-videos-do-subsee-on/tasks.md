@@ -365,13 +365,13 @@ T11 → T18
 
 **Done when**:
 
-- [ ] `DemoVideo` typed array (`duration`, `type`, `title`, `description`, `linkLabel`, `thumbClass`, `href`) with the 3 items of the manifest table; one card template, one `v-for`
-- [ ] Section background `#f8f9ff`; cards 430×520, `rounded-[22px]`, border `#e6e8f2`, shadow `0 14px 32px rgba(48,56,77,0.08)`; gallery 3×430 with 55px gap at 1920px, single column below `tablet-lg`
-- [ ] Card titles are `<h3>`; the "Assistir ao vídeo →" link is the single tab stop, stretched over the card, with an accessible name containing the video title; `href` is `videosFallbackUrl`, new tab, `rel="noopener"`
-- [ ] Durations and titles are the Figma text; they stay flagged as unconfirmed (Q1) in the manifest
-- [ ] At 1920px the section matches the `3188:3438` screenshot
-- [ ] Gate check passes: `pnpm build` and visual check on `pnpm dev`
-- [ ] Test count: n/a ([[AD-002]])
+- [x] `DemoVideo` typed array (`duration`, `type`, `title`, `description`, `linkLabel`, `thumbClass`, `href`) with the 3 items of the manifest table; one card template, one `v-for`
+- [x] Section background `#f8f9ff`; cards 430×520, `rounded-[22px]`, border `#e6e8f2`, shadow `0 14px 32px rgba(48,56,77,0.08)`; gallery 3×430 with 55px gap at 1920px, single column below `tablet-lg`
+- [x] Card titles are `<h3>`; the "Assistir ao vídeo →" link is the single tab stop, stretched over the card, with an accessible name containing the video title; `href` is `videosFallbackUrl`, new tab, `rel="noopener"`
+- [x] Durations and titles are the Figma text; they stay flagged as unconfirmed (Q1) in the manifest
+- [x] At 1920px the section matches the `3188:3438` screenshot
+- [x] Gate check passes: `pnpm build` and visual check on `pnpm dev`
+- [x] Test count: n/a ([[AD-002]])
 
 **Tests**: none
 **Gate**: quick
