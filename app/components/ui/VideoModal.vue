@@ -26,6 +26,12 @@ let scrollLocked = false
 
 const close = () => emit('update:modelValue', false)
 
+const closeOnEmptyArea = (event: MouseEvent) => {
+  if (event.target !== event.currentTarget) return
+  if (window.matchMedia('(min-width: 62rem)').matches) return
+  close()
+}
+
 const focusableItems = () =>
   Array.from(dialogEl.value?.querySelectorAll<HTMLElement>('button, iframe, a[href]') ?? [])
 
@@ -95,7 +101,7 @@ onBeforeUnmount(() => {
     <Transition name="video-modal">
       <div
         v-if="modelValue"
-        class="fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto bg-[#0b0d1f]/75 p-4 backdrop-blur-[6px] tablet:p-8"
+        class="fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto bg-[#0b0d1f]/75 backdrop-blur-[6px] tablet-lg:p-8"
         @click.self="close"
       >
         <div
@@ -103,7 +109,8 @@ onBeforeUnmount(() => {
           role="dialog"
           aria-modal="true"
           :aria-labelledby="titleId"
-          class="video-modal-panel relative w-full max-w-[960px] rounded-[22px] bg-[linear-gradient(112.44deg,#5d5fef_0%,#2e386b_100%)] p-3 shadow-[0px_32px_80px_rgba(11,13,31,0.55)] tablet:rounded-[28px] tablet:p-5"
+          class="video-modal-panel relative flex h-dvh w-full flex-col bg-[linear-gradient(112.44deg,#5d5fef_0%,#2e386b_100%)] p-4 pt-[max(1rem,env(safe-area-inset-top))] pb-[max(1rem,env(safe-area-inset-bottom))] shadow-[0px_32px_80px_rgba(11,13,31,0.55)] tablet:p-6 tablet:pt-[max(1.5rem,env(safe-area-inset-top))] tablet:pb-[max(1.5rem,env(safe-area-inset-bottom))] tablet-lg:block tablet-lg:h-auto tablet-lg:max-w-[960px] tablet-lg:rounded-[28px] tablet-lg:p-5"
+          @click.self="closeOnEmptyArea"
         >
           <div class="flex items-start justify-between gap-4 px-2 pt-1 pb-3 tablet:px-2 tablet:pb-4">
             <div class="min-w-0">
@@ -124,7 +131,7 @@ onBeforeUnmount(() => {
               ref="closeButton"
               type="button"
               :aria-label="closeLabel"
-              class="flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-full bg-white text-brand shadow-[0px_8px_20px_rgba(11,13,31,0.3)] transition-transform hover:scale-105 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              class="flex size-11 shrink-0 cursor-pointer tablet-lg:size-10 items-center justify-center rounded-full bg-white text-brand shadow-[0px_8px_20px_rgba(11,13,31,0.3)] transition-transform hover:scale-105 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               @click="close"
             >
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -133,15 +140,22 @@ onBeforeUnmount(() => {
             </button>
           </div>
 
-          <div class="aspect-video w-full overflow-hidden rounded-[14px] bg-black tablet:rounded-[18px]">
-            <iframe
-              :src="embedSrc"
-              :title="title"
-              class="size-full border-0"
-              allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
-              allowfullscreen
-              referrerpolicy="strict-origin-when-cross-origin"
-            />
+          <div
+            class="flex flex-1 items-center justify-center tablet-lg:block tablet-lg:flex-none"
+            @click.self="closeOnEmptyArea"
+          >
+            <div
+              class="aspect-video w-full max-w-[calc((100dvh-9rem)*16/9)] overflow-hidden rounded-[14px] bg-black tablet:rounded-[18px] tablet-lg:max-w-none"
+            >
+              <iframe
+                :src="embedSrc"
+                :title="title"
+                class="size-full border-0"
+                allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+                allowfullscreen
+                referrerpolicy="strict-origin-when-cross-origin"
+              />
+            </div>
           </div>
         </div>
       </div>
