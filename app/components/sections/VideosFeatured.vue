@@ -1,7 +1,12 @@
 <script setup lang="ts">
-import { videosFallbackUrl } from '~/data/videos'
-
 const tags: string[] = ['Gestão integrada', 'Mais produtividade']
+
+const featuredVideo = {
+  youtubeId: 'kmwo-MkJ34M',
+  title: 'Uma visão completa da plataforma'
+}
+
+const modalOpen = ref(false)
 </script>
 
 <template>
@@ -36,11 +41,12 @@ const tags: string[] = ['Gestão integrada', 'Mais produtividade']
         </ul>
       </div>
 
-      <a
-        :href="videosFallbackUrl"
-        target="_blank"
-        rel="noopener"
-        class="relative block aspect-[760/460] w-full overflow-hidden rounded-[28px] bg-[linear-gradient(112.44deg,#5d5fef_0%,#2e386b_100%)] shadow-[0px_24px_50px_rgba(46,56,107,0.18)] transition-shadow hover:shadow-[0px_28px_56px_rgba(46,56,107,0.28)] focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-white tablet-lg:aspect-auto tablet-lg:h-[460px] tablet-lg:w-[54.29%] tablet-lg:shrink-0"
+      <button
+        type="button"
+        aria-haspopup="dialog"
+        :aria-label="`Assistir ao vídeo: ${featuredVideo.title}`"
+        class="relative block cursor-pointer text-left aspect-[760/460] w-full overflow-hidden rounded-[28px] bg-[linear-gradient(112.44deg,#5d5fef_0%,#2e386b_100%)] shadow-[0px_24px_50px_rgba(46,56,107,0.18)] transition-shadow hover:shadow-[0px_28px_56px_rgba(46,56,107,0.28)] focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-white tablet-lg:aspect-auto tablet-lg:h-[460px] tablet-lg:w-[54.29%] tablet-lg:shrink-0"
+        @click="modalOpen = true"
       >
         <span
           class="absolute top-4 left-4 rounded-full bg-white/16 px-4 py-[10px] text-[13px] leading-normal font-semibold whitespace-nowrap text-white tablet-lg:top-7 tablet-lg:left-7"
@@ -53,9 +59,16 @@ const tags: string[] = ['Gestão integrada', 'Mais produtividade']
         <span
           class="absolute bottom-4 left-4 text-[16px] leading-normal font-semibold text-white tablet-lg:bottom-[43px] tablet-lg:left-9 tablet-lg:text-[18px]"
         >
-          Uma visão completa da plataforma
+          {{ featuredVideo.title }}
         </span>
-      </a>
+      </button>
     </div>
+
+    <VideoModal
+      v-model="modalOpen"
+      :video-id="featuredVideo.youtubeId"
+      :title="featuredVideo.title"
+      eyebrow="Vídeo institucional"
+    />
   </section>
 </template>
