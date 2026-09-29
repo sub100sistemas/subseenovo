@@ -24,7 +24,7 @@ const descriptionClass =
     section-id="videos-hero"
     :section-class="sectionClass"
     :container-class="containerClass"
-    aspect-class="tablet-lg:aspect-[1400/483]"
+    aspect-class="tablet-lg:aspect-[1400/483] tablet-lg:min-h-[380px]"
     top-class="tablet-lg:top-[2.48%]"
     height-class="tablet-lg:h-[79.92%]"
     content-gap="gap-[26px]"
@@ -55,7 +55,7 @@ const descriptionClass =
         />
 
         <div
-          class="absolute top-[5.969cqw] left-[31.302cqw] h-[62.604cqw] w-[47.751cqw] overflow-hidden [transform:scaleX(-1)]"
+          class="absolute top-[5.969cqw] left-[31.302cqw] h-[62.604cqw] max-mobile-lg:left-[50cqw] w-[47.751cqw] overflow-hidden [transform:scaleX(-1)]"
         >
           <NuxtImg
             src="/images/assista-videos/hero-photo.png"
@@ -72,51 +72,47 @@ const descriptionClass =
           src="/icons/videos-hero-curve-a.svg"
           alt=""
           aria-hidden="true"
-          class="pointer-events-none absolute top-[48.896cqw] left-[57.919cqw] block h-auto w-[22.349cqw] max-w-none [transform:rotate(150.44deg)]"
+          class="pointer-events-none absolute top-[48.896cqw] left-[57.919cqw] block max-mobile-lg:hidden h-auto w-[22.349cqw] max-w-none [transform:rotate(150.44deg)]"
         />
         <img
           src="/icons/crm-hero-seta-curva-verde.svg"
           alt=""
           aria-hidden="true"
-          class="pointer-events-none absolute top-[22.904cqw] left-[12.32cqw] block h-auto w-[25.403cqw] max-w-none [transform:rotate(77.14deg)_scaleX(-1)]"
+          class="pointer-events-none absolute top-[22.904cqw] left-[12.32cqw] block max-mobile-lg:hidden h-auto w-[25.403cqw] max-w-none [transform:rotate(77.14deg)_scaleX(-1)]"
         />
 
         <div
-          class="absolute top-[11.799cqw] left-[5.344cqw] h-[14.575cqw] w-[44.836cqw] rounded-[2.776cqw] border border-[#eee] bg-white/80 backdrop-blur-[10px]"
+          class="absolute top-[11.799cqw] left-[5.344cqw] h-[6.562em] w-[20.187em] rounded-[1.25em] border border-[#eee] bg-white/80 text-[length:max(2.221cqw,11px)] backdrop-blur-[10px] max-mobile-lg:top-[3cqw] max-mobile-lg:left-0"
         >
           <span
-            class="absolute top-[3.38cqw] left-[2.88cqw] flex h-[5.557cqw] w-[5.493cqw] items-center justify-center rounded-[1.11cqw] bg-brand"
+            class="absolute top-[1.522em] left-[1.297em] flex h-[2.502em] w-[2.473em] items-center justify-center rounded-[0.5em] bg-brand"
           >
-            <img src="/icons/videos-hero-globe.svg" alt="" aria-hidden="true" class="block size-[3.315cqw]" />
+            <img src="/icons/videos-hero-globe.svg" alt="" aria-hidden="true" class="block size-[1.493em]" />
           </span>
           <p
-            class="absolute top-[1.966cqw] left-[10.966cqw] text-[2.499cqw] leading-[1.8] font-bold tracking-[0.05cqw] whitespace-nowrap text-ink"
+            class="absolute top-[0.787em] left-[4.389em] text-[1.125em] leading-[1.8] font-bold tracking-[0.02em] whitespace-nowrap text-ink"
           >
             Vídeos Práticos
           </p>
-          <p
-            class="absolute top-[6.177cqw] left-[10.966cqw] w-[32.204cqw] text-[2.221cqw] leading-[1.2] font-medium text-[#545567]"
-          >
+          <p class="absolute top-[2.781em] left-[4.937em] w-[14.5em] leading-[1.2] font-medium text-[#545567]">
             Aprenda no seu ritmo com tutoriais rápidos.
           </p>
         </div>
 
         <div
-          class="absolute top-[30.4cqw] left-[56.011cqw] h-[14.575cqw] w-[44.003cqw] rounded-[2.776cqw] border border-[#eee] bg-white/60 backdrop-blur-[10px]"
+          class="absolute top-[30.4cqw] left-[56.011cqw] h-[6.562em] w-[19.812em] rounded-[1.25em] border border-[#eee] bg-white/60 text-[length:max(2.221cqw,11px)] backdrop-blur-[10px] max-mobile-lg:top-[calc(3cqw+8.2em)] max-mobile-lg:left-[4cqw]"
         >
           <span
-            class="absolute top-[3.164cqw] left-[3.545cqw] flex size-[5.493cqw] items-center justify-center rounded-[1.11cqw] border border-[#eee] bg-brand"
+            class="absolute top-[1.425em] left-[1.596em] flex size-[2.473em] items-center justify-center rounded-[0.5em] border border-[#eee] bg-brand"
           >
-            <img src="/icons/videos-hero-people.svg" alt="" aria-hidden="true" class="block h-[3.47cqw] w-[3.748cqw]" />
+            <img src="/icons/videos-hero-people.svg" alt="" aria-hidden="true" class="block h-[1.562em] w-[1.688em]" />
           </span>
           <p
-            class="absolute top-[1.805cqw] left-[11.105cqw] text-[2.499cqw] leading-[1.8] font-bold tracking-[0.05cqw] whitespace-nowrap text-ink"
+            class="absolute top-[0.723em] left-[4.444em] text-[1.125em] leading-[1.8] font-bold tracking-[0.02em] whitespace-nowrap text-ink"
           >
             Time Capacitado
           </p>
-          <p
-            class="absolute top-[6.385cqw] left-[11.244cqw] w-[29.983cqw] text-[2.221cqw] leading-[1.2] font-medium text-[#545567]"
-          >
+          <p class="absolute top-[2.875em] left-[5.063em] w-[13.5em] leading-[1.2] font-medium text-[#545567]">
             Treine sua equipe direto na plataforma.
           </p>
         </div>
