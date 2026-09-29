@@ -13,7 +13,7 @@ const moduleIcons: HeroModuleIcon[] = [
 <template>
   <Hero section-id="base-conhecimento-hero" divider-src="/icons/crm-hero-divider-onda.svg" :module-icons="moduleIcons">
     <template #heading>
-      Central de Ajuda, Tutoriais e Documentação do SUBSEE <span class="text-brand">on</span>
+      Central de Ajuda, Tutoriais e Documentação do SUBSEE <span class="text-[#e72f4d]">on</span>
     </template>
 
     <template #description>

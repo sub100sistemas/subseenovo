@@ -5,6 +5,7 @@ interface AdvantageCard {
   iconHeight: number
   title: string
   description: string
+  descriptionBold?: boolean
 }
 
 const advantageCards: AdvantageCard[] = [
@@ -20,7 +21,8 @@ const advantageCards: AdvantageCard[] = [
     iconWidth: 52,
     iconHeight: 52,
     title: 'Melhorar o treinamento de novos colaboradores',
-    description: 'O treinamento para colaboradores e parceiros se torna fácil e prático, com acesso a tudo que precisam saber sobre o sistema de forma rápida, organizada e muito eficiente para todos.'
+    description: 'O treinamento para colaboradores e parceiros se torna fácil e prático, com acesso a tudo que precisam saber sobre o sistema de forma rápida, organizada e muito eficiente para todos.',
+    descriptionBold: true
   },
   {
     icon: '/icons/base-conhecimento-icone-satisfaction.svg',
@@ -56,7 +58,7 @@ const advantageCards: AdvantageCard[] = [
             class="flex w-full flex-col items-center gap-6 rounded-[20px] border border-brand bg-white px-6 pt-[57px] pb-8 text-center shadow-[0px_10px_20px_rgba(38,45,118,0.08)] tablet-lg:gap-9 tablet-lg:px-[43px] tablet-lg:pt-[77px] tablet-lg:pb-[49px]"
           >
             <h3 class="text-xl leading-[1.4] font-medium text-brand tablet-lg:text-[28px]">{{ card.title }}</h3>
-            <p class="text-base leading-[1.8] text-[#696984]">{{ card.description }}</p>
+            <p class="text-base leading-[1.8] text-[#696984]" :class="{ 'font-bold': card.descriptionBold }">{{ card.description }}</p>
           </div>
         </div>
       </div>

@@ -38,7 +38,7 @@ const trainingFeatures: TrainingFeatureItem[] = [
     cta-text="Testar grátis por 30 dias"
   >
     <template #heading>
-      Como treinar sua equipe para usar o SUBSEE <span class="text-brand">on</span>
+      Como treinar sua equipe para usar o SUBSEE <span class="text-[#e72f4d]">on</span>
     </template>
 
     <template #lead>
