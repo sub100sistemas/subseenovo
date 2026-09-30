@@ -473,11 +473,11 @@ T23
 
 **Done when**:
 
-- [ ] H1 "Política de Privacidade", subtítulo "Seu direito à proteção de dados é nossa prioridade" e descrição com "SUB100" e "LGPD" em `#5d5fef` bold, textos idênticos ao Figma
-- [ ] H1 a 71px abaixo do Header (y=156 no frame de 1920px); subtítulo a 10px do H1 e descrição a 26px do subtítulo; descrição com 650px de largura
-- [ ] Elipse em x=90, y=326, 1760×372 no frame de 1920px, posicionada em unidades relativas ao container, `pointer-events-none`, atrás dos cartões
-- [ ] Renderizado a 1920px e comparado com o node `1211:1892`
-- [ ] `pnpm build` exit 0
+- [x] H1 "Política de Privacidade", subtítulo "Seu direito à proteção de dados é nossa prioridade" e descrição com "SUB100" e "LGPD" em `#5d5fef` bold, textos idênticos ao Figma
+- [x] H1 a 71px abaixo do Header (y=156 no frame de 1920px); subtítulo a 10px do H1 e descrição a 26px do subtítulo; descrição com 650px de largura
+- [x] Elipse em x=90, y=326, 1760×372 no frame de 1920px, posicionada em unidades relativas ao container, `pointer-events-none`, atrás dos cartões
+- [x] Renderizado a 1920px e comparado com o node `1211:1892`
+- [x] `pnpm build` exit 0
 
 **Tests**: none
 **Gate**: full
