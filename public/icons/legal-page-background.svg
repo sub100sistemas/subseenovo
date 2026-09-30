@@ -1,0 +1,24 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="2220" height="753" viewBox="0 0 2220 753" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Background">
+<path id="BG" d="M1125.98 723.373C1513.3 656.302 1735.5 710.868 2070 723.373V240H151V723.373C346.887 745.73 816.124 777.03 1125.98 723.373Z" fill="#F5F5F5"/>
+<g id="Rectangle 4" opacity="0.5" filter="url(#filter0_f_0_4)">
+<path d="M150 150H2070V504.579C2070 504.579 1588 582 1110 582C632 582 150 504.579 150 504.579V150Z" fill="url(#paint0_linear_0_4)"/>
+</g>
+<g id="Horizantal Divider">
+<path id="Azul" d="M150 637.445C293.262 601.842 582.294 572.407 888.771 667.247C1218 769.127 1472 644.405 1691.61 610.623C1794.45 594.802 1949.85 570.752 2065.85 564.813" stroke="#CEDAFC" stroke-width="2"/>
+<path id="branca" d="M151 562C452.937 575.204 872.073 768.39 1200.56 655.541C1488.68 556.562 1739.15 572.254 2067.9 650.414" stroke="white" stroke-width="2"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_0_4" x="0" y="0" width="2220" height="732" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_0_4"/>
+</filter>
+<linearGradient id="paint0_linear_0_4" x1="150" y1="366" x2="2070" y2="366" gradientUnits="userSpaceOnUse">
+<stop offset="0.173077" stop-color="#E6FDF7"/>
+<stop offset="0.475962" stop-color="#EFF8F5"/>
+<stop offset="1" stop-color="#E1E9F9"/>
+</linearGradient>
+</defs>
+</svg>

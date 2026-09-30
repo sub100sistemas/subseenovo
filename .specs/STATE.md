@@ -129,6 +129,14 @@
 - **Date**: 2026-09-11
 - **Status**: active
 
+### AD-017
+- **Decision**: Internal links to the two legal pages always use the trailing-slash form `/lgpd/termos-de-uso/` and `/lgpd/politica-de-privacidade/`. The pages live at `app/pages/lgpd/termos-de-uso.vue` and `app/pages/lgpd/politica-de-privacidade.vue`, and every internal link to them (`TheFooter.vue`, the mobile menu in `HeaderBar.vue`, and `formTermsLinks` in `app/data/forms.ts` on `feature/formularios`) uses exactly those two strings. The old `/termos-de-uso` and `/politica-de-privacidade` routes never existed in this repo and must not be linked again; no 301 redirect was created for them.
+- **Reason**: User decision for the LGPD feature (`.specs/features/lgpd/spec.md`, Q2 and Q3): the new pages are already live in production under `/lgpd/`, so the footer links that pointed at the old routes (404 in `pnpm generate`) were replaced, and one spelling avoids two URLs for the same page.
+- **Trade-off**: Nuxt matches the route with or without the slash, so a link written without it still works; the convention is kept by review and by grepping `app/` for the old routes (`/termos-de-uso`, `/politica-de-privacidade` outside `/lgpd/`), not by the router.
+- **Scope**: Every current and future internal link to the legal pages.
+- **Date**: 2026-09-29
+- **Status**: active
+
 ## Handoff
 
 - **Feature**: apis-hub-integrador (`.specs/features/apis-hub-integrador`) — **DONE**
