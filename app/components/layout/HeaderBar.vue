@@ -399,7 +399,7 @@ function splitDescription(description: string) {
 
         <div class="mt-6 flex flex-col gap-2">
           <NuxtLink to="/lgpd/termos-de-uso/" class="text-sm text-ink-soft hover:text-brand">Termos de uso</NuxtLink>
-          <NuxtLink to="/lgpd/politica-de-privacidade" class="text-sm text-ink-soft hover:text-brand">
+          <NuxtLink to="/lgpd/politica-de-privacidade/" class="text-sm text-ink-soft hover:text-brand">
             Política de privacidade
           </NuxtLink>
         </div>

@@ -608,9 +608,9 @@ T23
 
 **Done when**:
 
-- [ ] `HeaderBar.vue:402` aponta para `/lgpd/politica-de-privacidade/`; a linha 401 já usa `/lgpd/termos-de-uso/` e fica como está
-- [ ] Abrir o menu mobile (largura menor que 992px) e clicar nos dois links leva às novas páginas
-- [ ] `pnpm build` exit 0
+- [x] `HeaderBar.vue:402` aponta para `/lgpd/politica-de-privacidade/`; a linha 401 já usa `/lgpd/termos-de-uso/` e fica como está
+- [x] Abrir o menu mobile (largura menor que 992px) e clicar nos dois links leva às novas páginas
+- [x] `pnpm build` exit 0
 
 **Tests**: none
 **Gate**: full
