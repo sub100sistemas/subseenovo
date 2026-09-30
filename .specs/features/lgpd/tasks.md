@@ -662,9 +662,9 @@ T23
 
 **Done when**:
 
-- [ ] Novo `AD-NNN` (próximo número livre) com decisão, motivo e alcance: URLs legais novas com barra final em todos os pontos
-- [ ] Nenhum AD existente alterado
-- [ ] `pnpm build` exit 0
+- [x] Novo `AD-NNN` (próximo número livre) com decisão, motivo e alcance: URLs legais novas com barra final em todos os pontos
+- [x] Nenhum AD existente alterado
+- [x] `pnpm build` exit 0
 
 **Tests**: none
 **Gate**: build
