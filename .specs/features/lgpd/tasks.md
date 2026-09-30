@@ -553,10 +553,10 @@ T23
 
 **Done when**:
 
-- [ ] Diff de texto do DOM renderizado contra o Figma: 0 diferenças
-- [ ] Primeiro cartão em y=394 e altura total da página próxima de 5666px; diferença média de pixels por região registrada
-- [ ] Divergências corrigidas ou listadas como pendentes com motivo
-- [ ] `pnpm build` exit 0
+- [x] Diff de texto do DOM renderizado contra o Figma: 0 diferenças
+- [x] Primeiro cartão em y=394 e altura total da página próxima de 5666px; diferença média de pixels por região registrada
+- [x] Divergências corrigidas ou listadas como pendentes com motivo
+- [x] `pnpm build` exit 0
 
 **Tests**: none
 **Gate**: full

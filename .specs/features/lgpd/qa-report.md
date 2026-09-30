@@ -72,3 +72,69 @@ O usuário decidiu **manter o texto jurídico completo**: nenhum trecho é escon
 | Diferenças de antialiasing do texto | Rasterizador do Figma | Imperceptível |
 
 Os textos que o Figma corta continuam nos dados e no HTML; a decisão de mostrá-los foi da spec (AC 5 de "Estrutura visual compartilhada").
+
+## Política de Privacidade `/lgpd/politica-de-privacidade/` (T17)
+
+Frame do Figma: `1211:1826` (1920×5666). Mesmo método dos Termos.
+
+### Texto
+
+- Os dados (`app/data/lgpd-politica.ts`) foram conferidos contra os nomes dos nós de texto do Figma: 4 unidades batem exatamente (CONSIDERANDO QUE, 3.1, 3.4 e 7). As demais foram revisadas contra o `get_design_context`.
+- O nó `1215:1051` (2. FORNECIMENTO DE DADOS) tem nome de camada "O não fornecimento dos dados implicará no bloqueio/inutilização de algumas funcionalidades." (só a última frase), mas o texto desenhado é o parágrafo inteiro, que começa em "Tanto para o usuário quanto para os anunciantes, ...". Vale o texto desenhado (a altura do nó, 124px, corresponde a 4 linhas, não a 1). O nome da camada é um resto de edição.
+- O texto renderizado no navegador foi comparado com os dados: 0 diferenças (11 títulos, 4 rótulos de subcartão, todos os parágrafos e a lista "a)" a "e)").
+- Estrutura: 1 `<h1>`, 11 `<h2>` de cartão, 4 `<h3>` de subcartão, 0 parágrafos vazios.
+- O texto do Figma foi reproduzido sem correção: "Como compartilharmos" (item c), "sistema operacionais" (3.1 b), aspas retas em `"SUB100"`, `"Anunciante"` e `"usuário"`; e-mail e endereços de site como texto puro.
+
+### Posições a 1920px (todas iguais ao Figma)
+
+| Elemento | Figma (y, altura) | Site (y, altura) |
+| --- | --- | --- |
+| Hero (seção) | 85, 358; H1 em y=156, subtítulo em 226, descrição em x=635, y=288, largura 650 | 85, 358; H1 em 156, subtítulo em 226, descrição em x=635, y=288, largura 650 |
+| Elipse decorativa | 90, 326, 1760×372 | 90, 326, 1760×372 (SVG 2160×772 em x=-110, y=126) |
+| Fundo do Hero | SVG 2220×753 em x=-150, y=-150 | igual |
+| CONSIDERANDO QUE | 394, 1028 | 394, 1028 |
+| 1. RESTRIÇÃO PARA MENORES | 1470, 253 | 1470, 253 |
+| 2. FORNECIMENTO DE DADOS | 1771, 284 | 1771, 284 |
+| 3. USUÁRIOS E ANUNCIANTES | 2103, 1105 (3.1 em +124 e 288; 3.2 em +436 e 257; 3.3 em +717 e 164; 3.4 em +905 e 164) | 2103, 1105 (mesmas posições e alturas) |
+| 4. COOKIES | 3256, 222 | 3256, 222 |
+| 5. SEGURANÇA | 3526, 222 | 3526, 222 |
+| 6. DIREITOS DO TITULAR | 3796, 253 | 3796, 253 |
+| 7. TÉRMINO DO TRATAMENTO | 4097, 222 | 4097, 222 |
+| 8. ALTERAÇÃO NA POLÍTICA DE PRIVACIDADE | 4367, 222 | 4367, 222 |
+| 9. CONTATO | 4637, 222 | 4637, 222 |
+| 10. FORO | 4907, 222 | 4907, 222 |
+| Footer | y=5191 | y=5191 |
+| Altura total da página | 5666 | 5653 (Footer 13px mais baixo) |
+
+Como não há cartão de altura fixa na Política, a página inteira acompanha o Figma sem deslocamento.
+
+### Diferença de pixels contra o Figma (cartão inteiro, 1920px)
+
+| Cartão | Média (0 a 255) | Pixels com diferença > 24 |
+| --- | --- | --- |
+| CONSIDERANDO QUE (Figma reduzido para 989×1024) | 7,20 | 9,63% |
+| 1. RESTRIÇÃO PARA MENORES | 2,41 | 4,00% |
+| 2. FORNECIMENTO DE DADOS | 3,00 | 4,77% |
+| 3. USUÁRIOS E ANUNCIANTES (Figma reduzido para 920×1024) | 5,87 | 7,95% |
+| 4. COOKIES | 1,91 | 3,08% |
+| 5. SEGURANÇA | 2,20 | 3,51% |
+| 6. DIREITOS DO TITULAR | 2,80 | 4,51% |
+| 7. TÉRMINO DO TRATAMENTO | 2,38 | 3,81% |
+| 8. ALTERAÇÃO NA POLÍTICA DE PRIVACIDADE | 2,36 | 3,92% |
+| 9. CONTATO | 1,54 | 2,40% |
+| 10. FORO | 1,99 | 3,14% |
+
+Os dois cartões maiores que 1024px o `get_screenshot` entrega reduzidos, o que eleva a média; os demais têm 1,5 a 3,0. O restante é antialiasing do texto. Lado a lado, quebras de linha, títulos e espaçamentos coincidem.
+
+### Correção feita durante a comparação
+
+- **Quebra de linha nos endereços.** O Figma quebra a linha depois de `//` nos endereços de site ("https://" no fim de uma linha e "www..." na seguinte), e o Chrome não tem oportunidade de quebra ali. O `LegalSections` passou a inserir `<wbr>` depois de cada `//` (não altera o texto: `textContent` fica igual). A correção vale para as duas páginas; nos Termos a comparação continua com 0 diferenças de texto e as mesmas alturas.
+
+### Divergências que permanecem
+
+| Divergência | Causa | Impacto |
+| --- | --- | --- |
+| A elipse decorativa só aparece a partir de 992px | O Figma só desenha a 1920px; abaixo de 992px ela só produziria uma mancha desalinhada | Nenhum a 1920px |
+| Footer com 462px (Figma: 475px) | Componente global fora desta feature | Nenhum |
+| Diferenças de antialiasing do texto | Rasterizador do Figma | Imperceptível |
+| Comparação de pixels dos dois cartões grandes feita com o Figma reduzido | Limite de 1024px do `get_screenshot` | A média sobe cerca de 3 pontos; posições e quebras conferidas por medida |
