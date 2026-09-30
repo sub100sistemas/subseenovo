@@ -703,7 +703,7 @@ T23
 
 ### Phase 5: Bloqueada por decisão
 
-### T23: SEO das duas páginas (BLOQUEADA)
+### T23: SEO das duas páginas
 
 **What**: Definir `useSeoMeta` (title, description e og) das duas páginas.
 **Where**: `app/pages/lgpd/termos-de-uso.vue` (modify) e `app/pages/lgpd/politica-de-privacidade.vue` (modify)
@@ -718,8 +718,8 @@ T23
 
 **Done when**:
 
-- [ ] **BLOQUEADA pela Q5**: o texto de title e description não existe no Figma e não será inventado; só executa depois da decisão do usuário
-- [ ] Depois da decisão: as duas páginas com `useSeoMeta` usando exatamente o texto aprovado; `pnpm build` exit 0
+- [x] Q5 decidida pelo usuário: title e description aprovados, sem texto inventado
+- [x] As duas páginas com `useSeoMeta` usando exatamente o texto aprovado; `pnpm build` exit 0
 
 **Tests**: none
 **Gate**: build
