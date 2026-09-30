@@ -448,8 +448,8 @@ T23
 
 **Done when**:
 
-- [ ] Arquivo não vazio, 2160×772, com a elipse branca, filtro de desfoque e opacidade 0,7, sem edição
-- [ ] `pnpm build` exit 0
+- [x] Arquivo não vazio, 2160×772, com a elipse branca, filtro de desfoque e opacidade 0,7, sem edição
+- [x] `pnpm build` exit 0
 
 **Tests**: none
 **Gate**: quick
