@@ -501,9 +501,9 @@ T23
 
 **Done when**:
 
-- [ ] Forwarda a lista de T12 para `LegalSections` sem markup próprio de cartão; passa o raio de 12px aos subcartões
-- [ ] Bloco inicia em y=394 do frame de 1920px (sem padding vertical e com sobreposição de 49px sobre o Hero), aplicado nesta section
-- [ ] `pnpm build` exit 0
+- [x] Forwarda a lista de T12 para `LegalSections` sem markup próprio de cartão; passa o raio de 12px aos subcartões
+- [x] Bloco inicia em y=394 do frame de 1920px (sem padding vertical e com sobreposição de 49px sobre o Hero), aplicado nesta section
+- [x] `pnpm build` exit 0
 
 **Tests**: none
 **Gate**: full
