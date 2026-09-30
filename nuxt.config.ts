@@ -42,6 +42,13 @@ export default defineNuxtConfig({
     }
   },
 
+  runtimeConfig: {
+    public: {
+      formsEndpoint: 'https://forms.sub100.com.br/sub100sistemas/formularios.php',
+      recaptchaSiteKey: ''
+    }
+  },
+
   css: [
     '~/assets/css/main.css'
   ],

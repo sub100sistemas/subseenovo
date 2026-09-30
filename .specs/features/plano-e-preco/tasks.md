@@ -101,9 +101,9 @@ T13 → T14
 **Tools**: MCP: Figma (`get_design_context` por node, download do asset via `curl`)
 
 **Done when**:
-- [x] Todo asset marcado como "exportar novo" na T1 existe como arquivo real baixado sob `public/icons/` ou `public/images/` — `public/icons/plano-e-preco-selo-12-off.png` (209×135, PNG RGBA real, baixado via `curl` da URL de asset do Figma MCP, não recriado à mão)
+- [x] Todo asset marcado como "exportar novo" na T1 existe como arquivo real baixado sob `public/icons/` ou `public/images/` — `public/images/pricing/plano-e-preco-selo-12-off.svg` (209×135, SVG real, baixado via `curl` da URL de asset do Figma MCP, não recriado à mão)
 - [x] Nenhum ícone é recriado à mão/aproximado — cada um é o conteúdo exato buscado da URL de asset do Figma MCP
-- [x] O selo "12% OFF", se exportado, é uma única imagem achatada (não múltiplos elementos posicionados) — confirmado, 1 único arquivo PNG
+- [x] O selo "12% OFF", se exportado, é uma única imagem achatada (não múltiplos elementos posicionados) — confirmado, 1 único arquivo SVG
 
 **Tests**: none
 **Gate**: Quick (diff visual contra o screenshot do `get_design_context` de cada asset) — ✅ concluído

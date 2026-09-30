@@ -56,7 +56,7 @@ const planos: PricingPlan[] = [
           <span class="rounded-full px-6 py-2.5 text-base font-medium text-ink">Anual</span>
         </div>
         <img
-          src="/icons/plano-e-preco-selo-12-off.png"
+          src="/images/pricing/plano-e-preco-selo-12-off.svg"
           alt="Selo de 12% de desconto no plano anual"
           width="209"
           height="135"
