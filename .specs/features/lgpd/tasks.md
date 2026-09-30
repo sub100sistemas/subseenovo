@@ -420,11 +420,11 @@ T23
 
 **Done when**:
 
-- [ ] 11 seções na ordem do Figma: CONSIDERANDO QUE, "1. RESTRIÇÃO PARA MENORES", "2. FORNECIMENTO DE DADOS", "3. USUÁRIOS E ANUNCIANTES" (4 subseções 3.1 a 3.4), "4. COOKIES", "5. SEGURANÇA", "6. DIREITOS DO TITULAR", "7. TÉRMINO DO TRATAMENTO", "8. ALTERAÇÃO NA POLÍTICA DE PRIVACIDADE", "9. CONTATO", "10. FORO"
-- [ ] Listas "(I)" a "(III)", "a)" a "e)" e "a)" e "b)" (3.1) em `lines`; "Como compartilharmos" e "sistema operacionais" mantidos como no Figma
-- [ ] E-mail e endereços de site como texto puro (Q4)
-- [ ] Diff de texto contra os strings do `get_design_context`: 0 diferenças
-- [ ] `pnpm build` exit 0
+- [x] 11 seções na ordem do Figma: CONSIDERANDO QUE, "1. RESTRIÇÃO PARA MENORES", "2. FORNECIMENTO DE DADOS", "3. USUÁRIOS E ANUNCIANTES" (4 subseções 3.1 a 3.4), "4. COOKIES", "5. SEGURANÇA", "6. DIREITOS DO TITULAR", "7. TÉRMINO DO TRATAMENTO", "8. ALTERAÇÃO NA POLÍTICA DE PRIVACIDADE", "9. CONTATO", "10. FORO"
+- [x] Listas "(I)" a "(III)", "a)" a "e)" e "a)" e "b)" (3.1) em `lines`; "Como compartilharmos" e "sistema operacionais" mantidos como no Figma
+- [x] E-mail e endereços de site como texto puro (Q4)
+- [x] Diff de texto contra os strings do `get_design_context`: 0 diferenças
+- [x] `pnpm build` exit 0
 
 **Tests**: none
 **Gate**: quick
