@@ -634,11 +634,11 @@ T23
 
 **Done when**:
 
-- [ ] 1920, 1440, 1280, 1024, 768, 576 e 375px nas duas páginas: `scrollWidth <= innerWidth`, 0 erros de console, 0 respostas 4xx, 0 imagens quebradas, 1 `<h1>`
-- [ ] Nenhum endereço de site ou e-mail longo estoura o cartão (`overflow-wrap`); texto com no mínimo 16px abaixo de 992px
-- [ ] Achados corrigidos em commits de correção próprios ou registrados como abertos com motivo
-- [ ] Tabela da varredura registrada no relatório
-- [ ] `pnpm build` exit 0
+- [x] 1920, 1440, 1280, 1024, 768, 576 e 375px nas duas páginas: `scrollWidth <= innerWidth`, 0 erros de console, 0 respostas 4xx, 0 imagens quebradas, 1 `<h1>`
+- [x] Nenhum endereço de site ou e-mail longo estoura o cartão (`overflow-wrap`); texto com no mínimo 16px abaixo de 992px
+- [x] Achados corrigidos em commits de correção próprios ou registrados como abertos com motivo
+- [x] Tabela da varredura registrada no relatório
+- [x] `pnpm build` exit 0
 
 **Tests**: none
 **Gate**: full

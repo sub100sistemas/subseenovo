@@ -138,3 +138,30 @@ Os dois cartões maiores que 1024px o `get_screenshot` entrega reduzidos, o que 
 | Footer com 462px (Figma: 475px) | Componente global fora desta feature | Nenhum |
 | Diferenças de antialiasing do texto | Rasterizador do Figma | Imperceptível |
 | Comparação de pixels dos dois cartões grandes feita com o Figma reduzido | Limite de 1024px do `get_screenshot` | A média sobe cerca de 3 pontos; posições e quebras conferidas por medida |
+
+## Varredura responsiva (T20)
+
+**Método**: build de produção; Chrome headless com largura de viewport exata. Verificado nas duas páginas, em cada largura: `scrollWidth <= innerWidth`, um `<h1>`, imagens quebradas, erros de console, respostas 4xx, cartões e textos que passam da borda do cartão e tamanho mínimo de fonte do texto.
+
+| Página | Larguras | Overflow horizontal | `<h1>` | Imagens quebradas | Cartões/texto fora da borda | Console | 4xx |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Termos de Uso (9 cartões) | 1920, 1440, 1280, 1024, 768, 576, 375 | não | 1 | 0 | 0 | 0 | 0 |
+| Política de Privacidade (11 cartões) | 1920, 1440, 1280, 1024, 768, 576, 375 | não | 1 | 0 | 0 | 0 | 0 |
+
+| Largura | Largura do cartão (x) | Fonte do parágrafo | Fonte do H1 do Hero |
+| --- | --- | --- | --- |
+| 1920, 1440, 1280 | 992 (centralizado) | 18px | 40px |
+| 1024 | 960 (x=32) | 18px | 40px |
+| 768 | 704 (x=32) | 16px | 28px |
+| 576 | 528 (x=24) | 16px | 28px |
+| 375 | 343 (x=16) | 16px | 28px |
+
+- Abaixo de 992px o cartão ocupa a largura do container, o Hero empilha sem sobrepor os cartões (o primeiro cartão começa 24px abaixo do Hero) e a elipse decorativa da Política não aparece.
+- Endereços longos (`https://www.sub100sistemas.com.br/...`) e o e-mail quebram dentro do cartão em todas as larguras: nenhum texto passa da borda direita do cartão.
+- Conferido visualmente a 375px (Política) e 768px (Termos).
+
+### Achado
+
+| Achado | Causa | Decisão |
+| --- | --- | --- |
+| Rótulos dos subcartões (`<h3>`) têm 15px abaixo de 992px, e a spec pede texto de no mínimo 16px | 15px é o tamanho do rótulo no Figma; o texto corrido tem 16px | Mantido como no Figma. Só é texto de rótulo, curto, em negrito |
