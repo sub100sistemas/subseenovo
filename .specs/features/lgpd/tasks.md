@@ -582,9 +582,9 @@ T23
 
 **Done when**:
 
-- [ ] `TheFooter.vue` aponta para `/lgpd/termos-de-uso/` e `/lgpd/politica-de-privacidade/` com barra final; textos e classes dos links inalterados
-- [ ] Clique no rodapé de uma página qualquer abre as duas novas páginas (200), sem 404
-- [ ] `pnpm build` exit 0
+- [x] `TheFooter.vue` aponta para `/lgpd/termos-de-uso/` e `/lgpd/politica-de-privacidade/` com barra final; textos e classes dos links inalterados
+- [x] Clique no rodapé de uma página qualquer abre as duas novas páginas (200), sem 404
+- [x] `pnpm build` exit 0
 
 **Tests**: none
 **Gate**: full
