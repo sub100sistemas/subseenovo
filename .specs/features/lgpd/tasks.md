@@ -527,9 +527,9 @@ T23
 
 **Done when**:
 
-- [ ] `<main>` com `LgpdPoliticaHero` e `LgpdPoliticaContent`, sem `useSeoMeta` (Q5)
-- [ ] `/lgpd/politica-de-privacidade/` responde 200, tem 1 `<h1>`, 11 `<h2>` de cartão e 4 `<h3>` de subcartão, sem erro de console e sem 4xx
-- [ ] `pnpm build` exit 0
+- [x] `<main>` com `LgpdPoliticaHero` e `LgpdPoliticaContent`, sem `useSeoMeta` (Q5)
+- [x] `/lgpd/politica-de-privacidade/` responde 200, tem 1 `<h1>`, 11 `<h2>` de cartão e 4 `<h3>` de subcartão, sem erro de console e sem 4xx
+- [x] `pnpm build` exit 0
 
 **Tests**: none
 **Gate**: full
