@@ -688,11 +688,11 @@ T23
 
 **Done when**:
 
-- [ ] `grep` por `termos-de-uso` e `politica-de-privacidade` em `app/` sem nenhuma ocorrência fora de `/lgpd/`
-- [ ] `pnpm generate` exit 0 (lido com `rc=$?`); existem `.output/public/lgpd/termos-de-uso/index.html` e `.output/public/lgpd/politica-de-privacidade/index.html`
-- [ ] O log do generate deixa de listar `/termos-de-uso`, `/politica-de-privacidade` e `/lgpd/termos-de-uso/` como 404
-- [ ] Resultado registrado no relatório
-- [ ] `pnpm build` exit 0
+- [x] `grep` por `termos-de-uso` e `politica-de-privacidade` em `app/` sem nenhuma ocorrência fora de `/lgpd/`
+- [x] `pnpm generate` exit 0 (lido com `rc=$?`); existem `.output/public/lgpd/termos-de-uso/index.html` e `.output/public/lgpd/politica-de-privacidade/index.html`
+- [x] O log do generate deixa de listar `/termos-de-uso`, `/politica-de-privacidade` e `/lgpd/termos-de-uso/` como 404
+- [x] Resultado registrado no relatório
+- [x] `pnpm build` exit 0
 
 **Tests**: none
 **Gate**: build

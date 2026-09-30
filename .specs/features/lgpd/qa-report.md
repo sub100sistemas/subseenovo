@@ -165,3 +165,18 @@ Os dois cartões maiores que 1024px o `get_screenshot` entrega reduzidos, o que 
 | Achado | Causa | Decisão |
 | --- | --- | --- |
 | Rótulos dos subcartões (`<h3>`) têm 15px abaixo de 992px, e a spec pede texto de no mínimo 16px | 15px é o tamanho do rótulo no Figma; o texto corrido tem 16px | Mantido como no Figma. Só é texto de rótulo, curto, em negrito |
+
+## Geração estática e rotas antigas (T22)
+
+| Verificação | Resultado |
+| --- | --- |
+| `pnpm generate` | exit 0 |
+| `.output/public/lgpd/termos-de-uso/index.html` | gerado (1 `<h1>`, "Termos de Uso") |
+| `.output/public/lgpd/politica-de-privacidade/index.html` | gerado (1 `<h1>`, "Política de Privacidade") |
+| Log do generate | as rotas `/lgpd/termos-de-uso/` e `/lgpd/politica-de-privacidade/` são prerenderizadas (também as versões sem barra final, achadas pelo crawler) |
+| 404 do log ligados a esta feature | nenhum: `/termos-de-uso`, `/politica-de-privacidade` e `/lgpd/termos-de-uso/` deixaram de aparecer |
+| Links para as rotas antigas em `app/` | 0. As únicas ocorrências fora de `/lgpd/` são o `id` interno `alteracao-na-politica-de-privacidade` (não é rota) |
+| Links para as rotas antigas em `.output/public` (HTML gerado) | 0 arquivos; 14 arquivos ligam para as duas rotas novas com barra final |
+| Navegação | Rodapé (Termos e Política) e menu mobile (375px) levam às páginas certas, com o H1 esperado |
+
+Os `[404]` que restam no log já existiam e não vêm desta feature: `/entrar`, `/sobre`, `/modulos/sites`, `/modulos/sgl`, três posts do blog, e `/testar-gratis` e `/contato`, que são páginas da branch `feature/formularios` (ainda não integrada em `master`), conforme [[AD-016]].
