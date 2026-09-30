@@ -2,6 +2,7 @@
 interface FaqItem {
   question: string
   answer: string
+  answerClass?: string
 }
 
 interface Props {
@@ -86,7 +87,7 @@ const props = withDefaults(defineProps<Props>(), {
               </span>
             </summary>
             <div :class="answerWrapperClass">
-              <p :class="answerClass">{{ faq.answer }}</p>
+              <p :class="[answerClass, faq.answerClass]">{{ faq.answer }}</p>
             </div>
           </details>
         </div>

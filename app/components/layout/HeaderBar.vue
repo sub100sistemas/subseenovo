@@ -6,7 +6,7 @@ const modulosNavItem = { label: 'Módulos', to: '/modulos' }
 const navItems = [
   modulosNavItem,
   { label: 'Eventos', to: '/eventos' },
-  { label: 'Preços', to: '/#precos' },
+  { label: 'Preços', to: '/planos-e-precos' },
   { label: 'Portal de Imóveis', href: 'https://sub100.com.br/' },
   { label: 'Blog', href: 'https://blog.sub100sistemas.com.br/' },
   { label: 'Sobre a SUB100', to: '/sobre' }
@@ -399,7 +399,7 @@ function splitDescription(description: string) {
 
         <div class="mt-6 flex flex-col gap-2">
           <NuxtLink to="/lgpd/termos-de-uso/" class="text-sm text-ink-soft hover:text-brand">Termos de uso</NuxtLink>
-          <NuxtLink to="/lgpd/politica-de-privacidade" class="text-sm text-ink-soft hover:text-brand">
+          <NuxtLink to="/lgpd/politica-de-privacidade/" class="text-sm text-ink-soft hover:text-brand">
             Política de privacidade
           </NuxtLink>
         </div>

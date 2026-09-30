@@ -24,6 +24,8 @@ interface Props {
   moduleIcons?: HeroModuleIcon[]
   contentGap?: string
   contentPad?: string
+  headingClass?: string
+  descriptionClass?: string
 }
 
 withDefaults(defineProps<Props>(), {
@@ -43,6 +45,9 @@ withDefaults(defineProps<Props>(), {
   moduleIcons: undefined,
   contentGap: 'gap-[38px]',
   contentPad: '',
+  headingClass: 'text-[32px] leading-[1.2] font-bold text-ink tablet-lg:text-[30px] desktop-full:text-[42px]',
+  descriptionClass:
+    'mt-[13px] max-w-[520px] text-[16px] leading-[1.4] text-ink tablet-lg:max-w-[675px] desktop-full:text-[24px]',
 })
 </script>
 
@@ -66,10 +71,10 @@ withDefaults(defineProps<Props>(), {
               </div>
 
               <div class="pe-[40px] tablet-lg:pe-0">
-                <h1 class="text-[32px] leading-[1.2] font-bold text-ink tablet-lg:text-[30px] desktop-full:text-[42px]">
+                <h1 :class="headingClass">
                   <slot name="heading" />
                 </h1>
-                <p class="mt-[13px] max-w-[520px] text-[16px] leading-[1.4] text-ink tablet-lg:max-w-[675px] desktop-full:text-[24px]">
+                <p :class="descriptionClass">
                   <slot name="description" />
                 </p>
               </div>

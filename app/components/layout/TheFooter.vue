@@ -71,8 +71,8 @@ const socialLinks = [
             <a href="tel:+554430325200" class="hover:text-brand">44 3032-5200</a>
           </p>
           <div class="mt-14 flex flex-col items-start gap-[13px] text-sm font-medium text-ink desktop-compact:items-end">
-            <NuxtLink to="/termos-de-uso" class="hover:text-brand">Termos de uso</NuxtLink>
-            <NuxtLink to="/politica-de-privacidade" class="hover:text-brand">
+            <NuxtLink to="/lgpd/termos-de-uso/" class="hover:text-brand">Termos de uso</NuxtLink>
+            <NuxtLink to="/lgpd/politica-de-privacidade/" class="hover:text-brand">
               Política de privacidade
             </NuxtLink>
           </div>

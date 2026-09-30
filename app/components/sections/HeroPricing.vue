@@ -140,7 +140,7 @@ const badges = [
               <span class="shrink-0 text-base whitespace-nowrap">{{ plano.complemento }}</span>
             </div>
 
-            <CtaButton variant="outline-teal" :icon="false" to="#" class="mt-7 w-full! px-[10px]! text-center! tablet:px-6!">
+            <CtaButton variant="outline-teal" :icon="false" to="/planos-e-precos" class="mt-7 w-full! px-[10px]! text-center! tablet:px-6!">
               Ver todos os recursos inclusos
             </CtaButton>
             <CtaButton variant="primary" to="/testar-gratis" class="mt-4 w-full!">

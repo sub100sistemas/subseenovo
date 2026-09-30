@@ -121,6 +121,22 @@
 - **Date**: 2026-09-11
 - **Status**: active
 
+### AD-016
+- **Decision**: `nitro.prerender.failOnError` is set to `false` in `nuxt.config.ts`. Nitro's default (`true`) makes the crawler-based prerenderer used by `pnpm generate` — the command Cloudflare Pages actually runs to deploy this site — treat *any* internally-linked route that 404s as a fatal build error, aborting the entire static export. This site intentionally links ahead to pages that don't exist yet (footer legal pages, `/agendar-demonstracao`, `/testar-gratis`, `/entrar`, blog posts, `/modulos/base-de-conhecimento`, the external SGL product at `/modulos/sgl`), per this repo's page-by-page build process — CLAUDE.md forbids inventing stub content to make those routes resolve. With the flag off, `pnpm generate` logs each unresolved link as a warning and still completes successfully; `pnpm build` (SSR) was never affected since it doesn't crawl-prerender.
+- **Reason**: A production Cloudflare Pages build failed outright ("Exiting due to prerender errors") despite `pnpm build` passing cleanly — confirming CLAUDE.md's stated verification gate (`pnpm build` succeeding) is insufficient for this project, since the actual deploy path runs `pnpm generate` and exercises the crawler. Reproduced locally: `pnpm generate` exited 1 before this change, exited 0 after.
+- **Trade-off**: A genuinely broken internal link (wrong slug pointing to a real, existing page — as opposed to a not-yet-built page) will no longer fail CI; it will only show up as a `[404]` warning line in the `pnpm generate` output, so that output must still be skimmed after any nav/link change rather than trusting a green exit code alone. While fixing this, also corrected two such real bugs found in the same log: `HeroUrbano.vue`'s "Conheça o módulo Urbanos" CTA linked to `/modulos/urbanos` instead of the existing `/modulos/crm-imobiliario-urbano`, and `HeroTemporada.vue`'s equivalent CTA linked to `/modulos/temporada` instead of the existing `/modulos/crm-imobiliario-temporada`.
+- **Scope**: Site-wide build configuration; applies to every current and future page's internal links.
+- **Date**: 2026-09-11
+- **Status**: active
+
+### AD-017
+- **Decision**: Internal links to the two legal pages always use the trailing-slash form `/lgpd/termos-de-uso/` and `/lgpd/politica-de-privacidade/`. The pages live at `app/pages/lgpd/termos-de-uso.vue` and `app/pages/lgpd/politica-de-privacidade.vue`, and every internal link to them (`TheFooter.vue`, the mobile menu in `HeaderBar.vue`, and `formTermsLinks` in `app/data/forms.ts` on `feature/formularios`) uses exactly those two strings. The old `/termos-de-uso` and `/politica-de-privacidade` routes never existed in this repo and must not be linked again; no 301 redirect was created for them.
+- **Reason**: User decision for the LGPD feature (`.specs/features/lgpd/spec.md`, Q2 and Q3): the new pages are already live in production under `/lgpd/`, so the footer links that pointed at the old routes (404 in `pnpm generate`) were replaced, and one spelling avoids two URLs for the same page.
+- **Trade-off**: Nuxt matches the route with or without the slash, so a link written without it still works; the convention is kept by review and by grepping `app/` for the old routes (`/termos-de-uso`, `/politica-de-privacidade` outside `/lgpd/`), not by the router.
+- **Scope**: Every current and future internal link to the legal pages.
+- **Date**: 2026-09-29
+- **Status**: active
+
 ## Handoff
 
 - **Feature**: apis-hub-integrador (`.specs/features/apis-hub-integrador`) — **DONE**

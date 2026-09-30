@@ -81,7 +81,7 @@ const propertyIcons = [
             <CtaButton
               variant="outline"
               :icon="false"
-              to="https://www.youtube.com/@subsee"
+              to="/assista-os-videos-do-subsee-on"
               class="whitespace-nowrap"
             >
               Assista os vídeos do SUBSEE on
