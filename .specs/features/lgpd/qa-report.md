@@ -58,6 +58,10 @@ A diferença restante vem do antialiasing do texto (o Figma e o Chrome rasteriza
 3. **CADASTRO sem linha em branco entre os três parágrafos.** No Figma os três parágrafos são contíguos, e só existe uma linha em branco dentro do segundo, antes de "O anunciante deverá se cadastrar nos seguintes casos:". Os três viraram um único parágrafo com quebras de linha, com a mesma linha em branco. Com isso a altura do cartão passou de 873 para 811px, igual ao Figma.
 4. **Espaço sob o último cartão.** O bloco do Figma termina 47px abaixo do FORO; adicionado `pb-[47px]` a partir de 992px.
 
+### Decisão do usuário: texto jurídico completo
+
+O usuário decidiu **manter o texto jurídico completo**: nenhum trecho é escondido ou cortado só para reproduzir a altura fixa do Figma. USO DO SITE, ARMAZENAMENTO E SEGURANÇA e FORO mantêm todos os parágrafos, a altura dos cartões acompanha o conteúdo real e nenhum cartão usa `overflow: hidden` para esconder texto. A decisão vale para as duas páginas.
+
 ### Divergências que permanecem
 
 | Divergência | Causa | Impacto |

@@ -40,6 +40,7 @@ As duas páginas têm a mesma anatomia (hero centrado com fundo cinza curvo, car
 | Fonte da estrutura | Figma. O Hero é um `layout/LegalHero.vue` novo: a base da feature é `master`, onde `FormPageHero.vue` (só existe em `feature/formularios`, não integrada) ainda não existe | Fluxo Figma-to-code do `CLAUDE.md`: Figma manda no visual; branch `feature/lgpd` criada de `master` por decisão do usuário | y |
 | Conteúdo dos cartões | Array tipado por página, um `v-for` por cartão; cartão e subcartão são componentes únicos | Padrão de dados do `CLAUDE.md` | y |
 | Frames abaixo de 1920px | Não existem no Figma. O layout segue o sistema responsivo do projeto (`container-page`, breakpoints do `main.css`) | Mesma situação das demais páginas | y |
+| Altura dos cartões e texto jurídico | Altura pelo conteúdo real; nenhum trecho é cortado ou escondido, nem com `overflow: hidden`, mesmo onde o Figma usa altura fixa (USO DO SITE, ARMAZENAMENTO E SEGURANÇA e FORO nos Termos) | Decisão do usuário, Lote 2: manter o texto jurídico completo | y |
 | Semântica | 1 `<h1>` (título do Hero), `<h2>` nos títulos de cartão, `<h3>` nos subcartões | Acessibilidade e SEO; o Figma só define o visual | y |
 
 **Decisões do usuário (Etapa 1 aprovada)**: Q1 confirmada (conteúdo oficial é o do Figma; as páginas novas já existem em produção); Q2 sem redirecionamento 301 por enquanto; Q3 todas as URLs novas com barra final; Q4 e-mail e endereços de site como texto puro, igual ao Figma; Q6 reproduzir textos e inconsistências exatamente como no Figma, sem corrigir texto jurídico.

@@ -170,7 +170,7 @@ Figma só tem 1920px; os valores de mobile são derivados do sistema do projeto 
 | Hero com posições diferentes nas duas páginas | `LgpdTermosHero`, `LgpdPoliticaHero` | Cada Hero passa o próprio `containerClass`/padding; conferir por pixel diff |
 | Sobreposição Hero/cartões (10px nos Termos, 49px na Política) | Hero e Content | Margem negativa no bloco de conteúdo por página, não no componente compartilhado |
 | Elipse decorativa só na Política | `LgpdPoliticaHero` | Posicionada em `%`/`cqw` como no Hero da página de vídeos, `pointer-events-none`, atrás dos cartões |
-| Alturas fixas do Figma (436, 355, 194px) cortariam o texto | `LegalCard` | Altura pelo conteúdo |
+| Alturas fixas do Figma (436, 355, 194px) cortariam o texto | `LegalCard` | Altura pelo conteúdo. **Decisão do usuário confirmada**: texto jurídico completo, sem `overflow: hidden` |
 | Grafia da URL (barra final) inconsistente | Footer, HeaderBar | Padronizar (Q3) |
 | Rotas antigas nunca existiram aqui | Footer | Só corrigir os links; sem redirect 301 (Q2) |
 | `pnpm generate` só prerenderiza rotas linkadas | páginas novas | Rodapé e menu mobile já linkam as duas; validar que os `index.html` saem ([[AD-016]]) |
