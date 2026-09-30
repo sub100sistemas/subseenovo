@@ -17,6 +17,8 @@ withDefaults(defineProps<Props>(), {
   subsectionsClass: 'flex flex-col gap-6',
   subCardRadiusClass: 'rounded-[18px]'
 })
+
+const urlParts = (line: string) => line.split(/(?<=\/\/)/)
 </script>
 
 <template>
@@ -32,7 +34,9 @@ withDefaults(defineProps<Props>(), {
         <div v-if="section.paragraphs?.length" :class="paragraphsClass">
           <p v-for="(paragraph, paragraphIndex) in section.paragraphs" :key="paragraphIndex">
             <template v-for="(line, lineIndex) in paragraph.lines" :key="lineIndex"
-              ><br v-if="lineIndex > 0" />{{ line }}</template
+              ><br v-if="lineIndex > 0" /><template v-for="(part, partIndex) in urlParts(line)" :key="partIndex"
+                ><wbr v-if="partIndex > 0" />{{ part }}</template
+              ></template
             >
           </p>
         </div>
@@ -47,7 +51,9 @@ withDefaults(defineProps<Props>(), {
             <div :class="paragraphsClass">
               <p v-for="(paragraph, paragraphIndex) in subsection.paragraphs" :key="paragraphIndex">
                 <template v-for="(line, lineIndex) in paragraph.lines" :key="lineIndex"
-                  ><br v-if="lineIndex > 0" />{{ line }}</template
+                  ><br v-if="lineIndex > 0" /><template v-for="(part, partIndex) in urlParts(line)" :key="partIndex"
+                    ><wbr v-if="partIndex > 0" />{{ part }}</template
+                  ></template
                 >
               </p>
             </div>
