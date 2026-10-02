@@ -1,23 +1,27 @@
 <script setup lang="ts">
 interface FeatureItem {
   icon: string
+  iconClass: string
   title: string
   description: string
 }
 
 const features: FeatureItem[] = [
   {
-    icon: '/icons/icone-crm-overview-leads.svg',
+    icon: '/icons/crm-temporada-financial-icone-olho.svg',
+    iconClass: 'h-3 w-5',
     title: 'Rastreio completo do pagamento',
     description: 'Veja o progresso de cada cobrança em tempo real, com status atualizado a cada parcela confirmada.'
   },
   {
-    icon: '/icons/crm-temporada-calendar-icone-gestao.svg',
+    icon: '/icons/crm-temporada-financial-icone-sol.svg',
+    iconClass: 'size-5',
     title: 'Repasse calculado automaticamente',
     description: 'O valor devido a cada proprietário é calculado sozinho a partir do pagamento confirmado, sem erro manual.'
   },
   {
-    icon: '/icons/crm-temporada-calendar-icone-status.svg',
+    icon: '/icons/crm-temporada-financial-icone-relogio.svg',
+    iconClass: 'size-5',
     title: 'Histórico sempre à mão',
     description: 'Toda transação (parcela, forma de pagamento, data) fica registrada e visível num histórico único por reserva.'
   }
@@ -44,7 +48,7 @@ const features: FeatureItem[] = [
               class="flex items-start gap-4"
             >
               <div class="flex size-[38px] shrink-0 items-center justify-center rounded-full border border-[#e5e7eb] bg-white">
-                <img :src="feature.icon" alt="" aria-hidden="true" class="size-5" />
+                <img :src="feature.icon" alt="" aria-hidden="true" :class="feature.iconClass" />
               </div>
               <div>
                 <p class="text-[15px] font-bold leading-[1.3] text-ink">{{ feature.title }}</p>

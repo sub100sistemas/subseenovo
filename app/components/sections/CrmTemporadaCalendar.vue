@@ -33,7 +33,7 @@ const legends = [
           <div class="flex flex-col gap-6">
             <div class="flex items-start gap-4">
               <img
-                src="/icons/crm-temporada-calendar-icone-status.svg"
+                src="/icons/crm-temporada-calendar-icone-gestao.svg"
                 alt=""
                 aria-hidden="true"
                 class="mt-0.5 size-[34px] shrink-0"
@@ -47,7 +47,7 @@ const legends = [
             </div>
             <div class="flex items-start gap-4">
               <img
-                src="/icons/crm-temporada-calendar-icone-gestao.svg"
+                src="/icons/crm-temporada-calendar-icone-status.svg"
                 alt=""
                 aria-hidden="true"
                 class="mt-0.5 size-[34px] shrink-0"

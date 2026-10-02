@@ -9,23 +9,23 @@ interface PortfolioFeature {
 
 const features: PortfolioFeature[] = [
   {
-    icon: '/icons/crm-urbano-portfolio-icone-organizacao.svg',
-    iconWidth: 33,
-    iconHeight: 42.471,
+    icon: '/icons/crm-temporada-portfolio-icone-calendario-reservas.svg',
+    iconWidth: 34,
+    iconHeight: 34.5,
     title: 'Calendário de reservas',
     description: 'Visualize a ocupação de cada imóvel por período, evite conflitos de datas e maximize a taxa de ocupação ao longo do ano.'
   },
   {
-    icon: '/icons/crm-urbano-portfolio-icone-midias.svg',
-    iconWidth: 27.126,
-    iconHeight: 36.577,
+    icon: '/icons/crm-temporada-portfolio-icone-camera.svg',
+    iconWidth: 35.467,
+    iconHeight: 29.29,
     title: 'Fotos e tour virtual',
     description: 'Cadastre fotos profissionais, vídeos e tours 360° de cada imóvel para atrair hóspedes e aumentar as reservas.'
   },
   {
-    icon: '/icons/crm-urbano-portfolio-icone-proprietario.svg',
-    iconWidth: 33.008,
-    iconHeight: 38.011,
+    icon: '/icons/crm-urbano-portfolio-icone-organizacao.svg',
+    iconWidth: 33,
+    iconHeight: 42.471,
     title: 'Gestão de proprietários e contratos',
     description: 'Controle repasses, comissões e contratos com proprietários de forma transparente e automatizada.'
   },
