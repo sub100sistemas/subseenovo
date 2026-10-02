@@ -71,7 +71,7 @@ const legends = [
         </div>
 
         <div
-          class="w-full overflow-hidden rounded-[16px] bg-white shadow-[0px_0px_30px_0px_rgba(0,0,0,0.08)] tablet-lg:max-w-[620px] tablet-lg:shrink-0"
+          class="w-full overflow-hidden rounded-[16px] bg-white shadow-[0px_0px_30px_0px_rgba(0,0,0,0.08)] tablet-lg:min-w-0 tablet-lg:max-w-[620px] tablet-lg:shrink desktop:shrink-0"
         >
           <div class="p-6 tablet-lg:p-8">
             <p class="font-bold text-[20px] leading-normal text-[#171b25]">Ocupação – Janeiro</p>
