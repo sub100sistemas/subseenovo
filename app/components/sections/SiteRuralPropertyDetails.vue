@@ -30,7 +30,7 @@ const attributes: Attribute[] = [
             :width="337"
             :height="633"
             sizes="mobile-lg:320px tablet-lg:260px desktop:320px desktop-full:378px"
-            alt="Mockup de celular mostrando a ficha técnica detalhada de uma propriedade rural"
+            alt="Ficha técnica rural no celular"
             class="mx-auto h-auto w-full max-w-[378px]"
             loading="lazy"
           />

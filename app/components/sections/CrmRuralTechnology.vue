@@ -11,7 +11,7 @@
     :mockup-height="1290"
     mockup-sizes="mobile-lg:100vw tablet-lg:920px desktop:1100px"
     :mockup-img-attrs="{
-      alt: 'Mockup da tela de Cadastro de Imóvel do SUB100, mostrando o formulário de características de uma fazenda com dados de solo, cultivo e área',
+      alt: 'Tela de cadastro de imóvel rural',
       class: 'mx-auto h-auto w-full max-w-[1100px]',
       loading: 'lazy'
     }"

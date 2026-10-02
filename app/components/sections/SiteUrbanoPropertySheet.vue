@@ -39,7 +39,7 @@ const attributes: Attribute[] = [
               :width="378"
               :height="641"
               sizes="mobile-lg:320px tablet-lg:260px desktop:340px desktop-full:370px desktop-lg:420px"
-              alt="Mockup de celular mostrando a ficha técnica detalhada de um imóvel urbano"
+              alt="Ficha técnica de imóvel no celular"
               class="relative h-auto w-full"
               loading="lazy"
             />
@@ -69,7 +69,7 @@ const attributes: Attribute[] = [
               >
                 <img
                   :src="attr.icon"
-                  :alt="attr.label"
+                  alt=""
                   aria-hidden="true"
                   class="size-6 shrink-0 object-contain"
                 />

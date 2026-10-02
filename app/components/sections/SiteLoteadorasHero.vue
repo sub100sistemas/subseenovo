@@ -32,7 +32,7 @@ const moduleIcons: HeroModuleIcon[] = [
           :width="724"
           :height="912"
           sizes="mobile-lg:180px tablet:340px tablet-lg:240px desktop:300px desktop-full:362px"
-          alt="Corretora sorridente com tablet nas mãos, ao lado de cartões destacando o Meu Site para loteadoras e o Sistema SGL"
+          alt="Corretora com tablet e cartões do SGL"
           class="h-full w-full object-cover"
           loading="eager"
         />

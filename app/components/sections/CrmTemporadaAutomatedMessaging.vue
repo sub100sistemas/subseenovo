@@ -121,7 +121,7 @@ const features = [
             </div>
 
             <NuxtLink
-              to="/testar-gratis"
+              to="/testar-gratis/"
               class="inline-flex h-[52px] items-center justify-center gap-3 rounded-[12px] bg-brand px-6 text-[15px] font-semibold text-white"
             >
               Testar grátis por 30 dias

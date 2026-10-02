@@ -39,7 +39,7 @@
             :width="637"
             :height="471"
             sizes="mobile-lg:100vw tablet-lg:500px desktop-full:638px"
-            alt="Corretora apresentando resultados do CRM SUBSEE para a equipe em uma sala de reunião"
+            alt="Corretora apresentando resultados à equipe"
             class="h-full w-full rounded-[20px] object-cover"
             loading="lazy"
           />

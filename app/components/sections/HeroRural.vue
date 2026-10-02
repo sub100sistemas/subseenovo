@@ -50,13 +50,13 @@ const featureItems = [
           <FeatureList class="mt-3" :items="featureItems" />
 
           <div class="mt-8 flex flex-col gap-3 desktop-compact:flex-row desktop-compact:gap-4">
-            <CtaButton variant="primary" to="/testar-gratis" class="whitespace-nowrap">
+            <CtaButton variant="primary" to="/testar-gratis/" class="whitespace-nowrap">
               Testar grátis por 30 dias
             </CtaButton>
             <CtaButton
               variant="outline"
               :icon="false"
-              to="/modulos/crm-imobiliario-rural"
+              to="/modulos/crm-imobiliario-rural/"
               class="whitespace-nowrap"
             >
               Conheça o módulo Rurais
@@ -72,7 +72,7 @@ const featureItems = [
             :quality="60"
             :width="665"
             :height="663"
-            alt="Aplicativo SUBSEE on exibindo ficha de fazenda com fotos, selo 'Sincronizado com 13 portais', cartão com VGV em aberto de R$ 84,2 milhões e mapa com talhão demarcado por georreferenciamento"
+            alt="Fazenda e mapa no aplicativo SUBSEE"
             loading="lazy"
           />
         </div>

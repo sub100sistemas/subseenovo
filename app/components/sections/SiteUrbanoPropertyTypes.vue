@@ -10,35 +10,35 @@ interface PropertyType {
 const terreno: PropertyType = {
   label: 'Terreno',
   src: '/images/modulos-site-urbano/property-type-terreno.jpeg',
-  alt: 'Terreno visto de cima, mostrando uma área com estrada e vegetação ao redor',
+  alt: 'Terreno visto de cima',
   width: 220,
   height: 240
 }
 const lazer: PropertyType = {
   label: 'Lazer',
   src: '/images/modulos-site-urbano/property-type-lazer.jpeg',
-  alt: 'Área de lazer verde com lago em paisagem campestre',
+  alt: 'Área de lazer com lago',
   width: 220,
   height: 431
 }
 const lancamento: PropertyType = {
   label: 'Lançamento',
   src: '/images/modulos-site-urbano/property-type-lancamento.png',
-  alt: 'Torre residencial moderna ao entardecer com iluminação urbana ao fundo',
+  alt: 'Torre residencial ao entardecer',
   width: 220,
   height: 581
 }
 const residencial: PropertyType = {
   label: 'Residencial',
   src: '/images/modulos-site-urbano/property-type-residencial.png',
-  alt: 'Villa residencial de luxo com piscina ao pôr do sol',
+  alt: 'Residência de luxo com piscina',
   width: 220,
   height: 431
 }
 const comercial: PropertyType = {
   label: 'Comercial',
   src: '/images/modulos-site-urbano/property-type-comercial.jpeg',
-  alt: 'Interior de escritório comercial moderno com vista para a cidade',
+  alt: 'Escritório comercial moderno',
   width: 220,
   height: 240
 }

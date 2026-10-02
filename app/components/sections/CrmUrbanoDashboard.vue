@@ -96,7 +96,7 @@ const benefits: DashboardBenefit[] = [
             densities="x1 x2"
             sizes="mobile-lg:100vw tablet-lg:520px desktop:660px desktop-full:808px"
             :img-attrs="{
-              alt: 'Mockup do Dashboard SUBSEE em um notebook, com os indicadores de imóveis, propostas, leads e financeiro',
+              alt: 'Dashboard do SUBSEE no notebook',
               class: 'absolute h-auto max-w-none left-[0.49%] top-[13.36%] w-[98.84%]',
               loading: 'lazy'
             }"

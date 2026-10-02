@@ -39,7 +39,7 @@
             :width="1550"
             :height="976"
             sizes="mobile-lg:100vw tablet-lg:600px desktop-full:775px"
-            alt="Nova versão 1.0.19 do CRM SUBSEE on — evento ao vivo em 29 out 2026 às 09h"
+            alt="Versão 1.0.19: evento ao vivo, 29 out às 09h"
             class="h-auto w-full rounded-[20px]"
             loading="eager"
             fetchpriority="high"
@@ -57,7 +57,7 @@
             Avaliação, ampliando a gestão comercial e a inteligência do atendimento.
           </p>
           <a
-            href="/inscreva-se"
+            href="/inscreva-se/"
             class="flex h-[52px] w-[193px] items-center justify-center rounded-[5px] border border-brand text-[15px] font-bold text-brand"
           >
             Inscreva-se!!!

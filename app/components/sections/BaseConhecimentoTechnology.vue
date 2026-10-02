@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const mockupImgAttrs = {
-  alt: 'Mockup do painel Base de conhecimento do SUBSEE, mostrando o menu lateral do CRM com biblioteca de treinamentos e cards de vídeos como "Seja bem-vindo ao Sistema SUBSEE ON" e "Cadastro de Pessoas"',
+  alt: 'Painel da Base de conhecimento',
   class: 'mx-auto h-auto w-full max-w-[1100px] rounded-[16px] tablet-lg:rounded-[24px]',
   loading: 'lazy'
 }

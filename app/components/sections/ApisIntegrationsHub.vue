@@ -33,7 +33,7 @@ const hubFeatures: HubFeatureItem[] = [
   <Portfolio
     section-id="apis-hub-integracoes"
     :features="hubFeatures"
-    cta-to="/testar-gratis"
+    cta-to="/testar-gratis/"
     cta-text="Testar grátis por 30 dias"
   >
     <template #heading>
@@ -51,7 +51,7 @@ const hubFeatures: HubFeatureItem[] = [
         :width="1301"
         :height="1257"
         sizes="mobile-lg:100vw tablet-lg:600px desktop:650px"
-        alt="Tela de ficha de imóvel ao lado de um celular mostrando o HUB de integrações com portais imobiliários, Facebook Leads, API e Meu Site conectados"
+        alt="Telas do HUB de integrações"
         class="mx-auto h-auto w-full max-w-[650px]"
         loading="lazy"
       />

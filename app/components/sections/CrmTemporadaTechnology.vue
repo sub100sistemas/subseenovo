@@ -11,7 +11,7 @@
     :mockup-height="1292"
     mockup-sizes="mobile-lg:100vw tablet-lg:920px desktop:1100px"
     :mockup-img-attrs="{
-      alt: 'Interface do sistema SUBSEE mostrando cadastro de imóvel para temporada com diárias e disponibilidade',
+      alt: 'Cadastro de imóvel para temporada',
       class: 'mx-auto h-auto w-full max-w-[1100px]',
       loading: 'lazy'
     }"

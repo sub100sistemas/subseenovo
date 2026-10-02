@@ -36,7 +36,7 @@ const steps: ToolsStep[] = [
     eyebrow="Simples de configurar"
     :steps="steps"
     diagram-src="/images/modulos-site-urbano/tools-diagrama-integracoes.png"
-    diagram-alt="Diagrama circular com o SUB100 Meu Site ao centro conectado a ferramentas de marketing, análise e atendimento"
+    diagram-alt="Diagrama do Meu Site e integrações"
   >
     <template #title>
       Adicione as principais ferramentas ao <span class="text-brand">seu site</span>

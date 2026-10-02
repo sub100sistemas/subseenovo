@@ -60,7 +60,7 @@ const cards: FeatureCard[] = [
         </div>
 
         <div class="mt-10">
-          <CtaButton variant="primary" to="/testar-gratis" class="whitespace-nowrap !bg-white !text-brand hover:!bg-white/90">
+          <CtaButton variant="primary" to="/testar-gratis/" class="whitespace-nowrap !bg-white !text-brand hover:!bg-white/90">
             Testar grátis por 30 dias
           </CtaButton>
         </div>

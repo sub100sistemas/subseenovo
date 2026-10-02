@@ -5,11 +5,11 @@ const modulosNavItem = { label: 'Módulos', to: '/modulos' }
 
 const navItems = [
   modulosNavItem,
-  { label: 'Eventos', to: '/eventos' },
-  { label: 'Preços', to: '/planos-e-precos' },
+  { label: 'Eventos', to: '/eventos/' },
+  { label: 'Preços', to: '/planos-e-precos/' },
   { label: 'Portal de Imóveis', href: 'https://sub100.com.br/' },
   { label: 'Blog', href: 'https://blog.sub100sistemas.com.br/' },
-  { label: 'Sobre a SUB100', to: '/sobre' }
+  { label: 'Sobre a SUB100', href: 'https://sub100sistemas.com.br/' }
 ]
 
 const restNavItems = navItems.filter((item) => item !== modulosNavItem)
@@ -22,25 +22,25 @@ const modulosColumns = [
         icon: '/icons/menu-icone-crm-generico.svg',
         label: 'CRM Imobiliário',
         description: 'Inteligência artificial, automações e integrações, conheça todos os recursos inovadores da plataforma',
-        to: '/modulos/crm'
+        to: '/modulos/crm/'
       },
       {
         icon: '/icons/menu-icone-crm-urbano.svg',
         label: 'CRM Imobiliário Urbano',
         description: 'Gerencie imóveis urbanos, clientes e negociações em plataforma prática e integrada para sua equipe.',
-        to: '/modulos/crm-imobiliario-urbano'
+        to: '/modulos/crm-imobiliario-urbano/'
       },
       {
         icon: '/icons/menu-icone-crm-rural.svg',
         label: 'CRM Imobiliário Rural',
         description: 'Gerencie imóveis rurais, clientes e negociações em uma plataforma prática e integrada para sua equipe.',
-        to: '/modulos/crm-imobiliario-rural'
+        to: '/modulos/crm-imobiliario-rural/'
       },
       {
         icon: '/icons/menu-icone-crm-temporada.svg',
         label: 'CRM para Temporada',
         description: 'Gerencie reservas, check-in/check-out e locações por temporada em uma plataforma completa',
-        to: '/modulos/crm-imobiliario-temporada'
+        to: '/modulos/crm-imobiliario-temporada/'
       }
     ]
   },
@@ -51,19 +51,19 @@ const modulosColumns = [
         icon: '/icons/menu-icone-site-urbanas.svg',
         label: 'Site para Imobiliárias Urbanas',
         description: 'Crie sites modernos para imobiliárias urbanas, apresente imóveis e gere oportunidades de negócio.',
-        to: '/modulos/site-para-imobiliarias-urbanas'
+        to: '/modulos/site-para-imobiliarias-urbanas/'
       },
       {
         icon: '/icons/menu-icone-site-portais.svg',
         label: 'Site para Imobiliárias Rurais',
         description: 'Crie sites modernos para imobiliárias rurais, apresente imóveis e gere novas oportunidades de negócio.',
-        to: '/modulos/site-para-imobiliarias-rurais'
+        to: '/modulos/site-para-imobiliarias-rurais/'
       },
       {
         icon: '/icons/menu-icone-site-loteadoras.svg',
         label: 'Site para Loteadoras',
         description: 'Crie sites modernos para empreendimentos e gere novas oportunidades de negócio.',
-        to: '/modulos/site-para-loteadoras',
+        to: '/modulos/site-para-loteadoras/',
         badge: { text: 'breve', bg: '#ea4335', color: '#ffffff' }
       }
     ]
@@ -76,13 +76,13 @@ const modulosColumns = [
         icon: '/icons/menu-icone-apis-hub.svg',
         label: 'APIs & HUB integrador',
         description: 'Integre seu sistema de loteamento com outras ferramentas através de APIs.',
-        to: '/modulos/apis-hub-integrador'
+        to: '/modulos/apis-hub-integrador/'
       },
       {
         icon: '/icons/menu-icone-base-conhecimento.svg',
         label: 'Base de conhecimento',
         description: 'Implantação e suporte humanizado, eventos on-line, tutoriais com vídeos, **pergunte ao SUBSEE - IA**',
-        to: '/modulos/base-de-conhecimento',
+        to: '/modulos/base-de-conhecimento/',
         badge: { text: 'novo', bg: '#ffc107', color: '#313846' }
       }
     ]
@@ -202,7 +202,7 @@ function splitDescription(description: string) {
         <div class="hidden desktop-compact:block">
           <CtaButton
             variant="small"
-            to="/entrar"
+            href="https://app.subsee.com.br"
             :icon="false"
             class="min-h-[42px] box-border px-[25px] py-[8px] text-[16px] font-semibold"
           >
@@ -216,10 +216,9 @@ function splitDescription(description: string) {
           class="relative z-40 inline-flex size-10 items-center justify-center rounded-lg desktop-compact:hidden"
           :aria-expanded="isMenuOpen"
           :aria-controls="mobileNavId"
-          aria-label="Abrir menu"
+          :aria-label="isMenuOpen ? 'Fechar menu' : 'Abrir menu'"
           @click="isMenuOpen = !isMenuOpen"
         >
-          <span class="sr-only">Abrir menu</span>
           <svg v-if="!isMenuOpen" viewBox="0 0 24 24" fill="none" class="size-6" aria-hidden="true">
             <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
           </svg>
@@ -280,7 +279,7 @@ function splitDescription(description: string) {
 
             <NuxtLink
               v-if="col.banner"
-              to="/testar-gratis"
+              to="/testar-gratis/"
               class="mt-4 flex h-[183px] w-full max-w-[233px] flex-col items-center justify-center mx-auto rounded-[20px] bg-[linear-gradient(229deg,_rgb(56,177,192)_3%,_rgb(71,126,205)_27%,_rgb(93,95,239)_50%,_rgb(48,156,171)_129%)] px-4 text-center text-white"
             >
               <p class="text-[20px] leading-[1.1] font-light">
@@ -377,7 +376,7 @@ function splitDescription(description: string) {
       </div>
 
       <div class="px-6 py-6">
-        <CtaButton variant="small" to="/entrar" :icon="false" class="w-full">
+        <CtaButton variant="small" href="https://app.subsee.com.br" :icon="false" class="w-full">
           <IconUser class="size-[15px]" />
           Entrar
         </CtaButton>

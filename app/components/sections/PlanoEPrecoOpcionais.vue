@@ -13,7 +13,7 @@ const opcionais: OpcionalRow[] = [
 </script>
 
 <template>
-  <section class="section-py">
+  <section id="opcionais" class="section-py">
     <div class="container-page overflow-x-auto">
       <div class="mx-auto min-w-[560px] max-w-[1085px] rounded-2xl border-2 border-brand">
         <div class="grid grid-cols-[1fr_180px_180px] items-center gap-4 border-b border-ink/10 px-6 py-4 tablet-lg:grid-cols-[1fr_220px_220px]">
@@ -34,7 +34,7 @@ const opcionais: OpcionalRow[] = [
       </div>
 
       <div class="mt-8 flex justify-center">
-        <CtaButton variant="primary" to="/testar-gratis" class="w-full! max-w-[297px]">
+        <CtaButton variant="primary" to="/testar-gratis/" class="w-full! max-w-[297px]">
           Testar grátis por 30 dias
         </CtaButton>
       </div>

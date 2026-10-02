@@ -34,7 +34,7 @@ const trainingFeatures: TrainingFeatureItem[] = [
     section-id="base-conhecimento-treinamento"
     panel-class="overflow-hidden rounded-[30px] bg-[linear-gradient(75.89deg,_#e6faf1_5.56%,_#ecf8f9_30.92%,_#eff2fa_76.37%,_#c5dcf0_98.37%)] px-6 py-10 tablet:px-10 tablet:py-14 tablet-lg:rounded-[50px] desktop-full:px-[65px] desktop-full:py-[85px]"
     :features="trainingFeatures"
-    cta-to="/testar-gratis"
+    cta-to="/testar-gratis/"
     cta-text="Testar grátis por 30 dias"
   >
     <template #heading>
@@ -53,7 +53,7 @@ const trainingFeatures: TrainingFeatureItem[] = [
         :width="1298"
         :height="1182"
         sizes="mobile-lg:100vw tablet-lg:600px desktop:650px"
-        alt="Tela de proposta de compra e venda de imóvel ao lado de um celular mostrando o SUBSEE on com termômetro de atendimento e funil de vendas"
+        alt="Tela de proposta e funil de vendas"
         class="mx-auto h-auto w-full max-w-[650px]"
         loading="lazy"
       />

@@ -141,7 +141,7 @@ const columns: FunnelColumn[] = [
       </div>
 
       <div class="mt-8 flex justify-center">
-        <CtaButton variant="primary" to="/testar-gratis" class="whitespace-nowrap">
+        <CtaButton variant="primary" to="/testar-gratis/" class="whitespace-nowrap">
           Testar grátis por 30 dias
         </CtaButton>
       </div>

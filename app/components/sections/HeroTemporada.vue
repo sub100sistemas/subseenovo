@@ -64,13 +64,13 @@ const featureItems = [
           <FeatureList class="mt-3" :items="featureItems" />
 
           <div class="mt-8 flex flex-col gap-3 desktop-compact:flex-row desktop-compact:gap-4">
-            <CtaButton variant="primary" to="/testar-gratis" class="whitespace-nowrap">
+            <CtaButton variant="primary" to="/testar-gratis/" class="whitespace-nowrap">
               Testar grátis por 30 dias
             </CtaButton>
             <CtaButton
               variant="outline"
               :icon="false"
-              to="/modulos/crm-imobiliario-temporada"
+              to="/modulos/crm-imobiliario-temporada/"
               class="whitespace-nowrap"
             >
               Conheça o módulo Temporadas
@@ -85,7 +85,7 @@ const featureItems = [
             sizes="100vw tablet-lg:400px desktop-compact:460px desktop:714px"
             :width="714"
             :height="522"
-            alt="Aplicativo SUBSEE on exibindo anúncio de apartamento para temporada em Canasvieiras com fotos, selo 'Sincronizado com 11 portais', card de leads da semana, calendário de disponibilidade e app mobile de reserva com valores de diária"
+            alt="Imóvel de temporada no aplicativo SUBSEE"
             loading="lazy"
           />
         </div>

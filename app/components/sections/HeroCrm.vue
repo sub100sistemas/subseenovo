@@ -101,10 +101,10 @@ const cards = [
     </div>
     <div class="container-page relative">
       <div class="mt-10 flex flex-col gap-3 tablet:flex-row">
-        <CtaButton variant="primary" to="/testar-gratis" class="whitespace-nowrap">
+        <CtaButton variant="primary" to="/testar-gratis/" class="whitespace-nowrap">
           Testar grátis por 30 dias
         </CtaButton>
-        <CtaButton variant="outline" :icon="false" to="/modulos/crm" class="whitespace-nowrap">
+        <CtaButton variant="outline" :icon="false" to="/modulos/crm/" class="whitespace-nowrap">
           Conheça o módulo CRM Imobiliário
         </CtaButton>
       </div>

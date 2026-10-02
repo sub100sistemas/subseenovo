@@ -65,7 +65,7 @@ const features: PortfolioFeature[] = [
         densities="x1 x2"
         sizes="mobile-lg:100vw tablet-lg:440px desktop:580px desktop-full:664px"
         :img-attrs="{
-          alt: 'Mockup das telas de portfólio de imóveis urbanos do SUB100, com listagem, mapa e o app de busca, e o selo Sincronizado com 15 portais',
+          alt: 'Telas de imóveis urbanos e busca',
           class: 'mx-auto h-auto w-full max-w-[664px]',
           loading: 'lazy'
         }"

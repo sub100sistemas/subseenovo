@@ -12,14 +12,14 @@ const modules: OtherModuleCard[] = [
     icon: '/icons/menu-icone-crm-rural.svg',
     title: 'Site para Imobiliárias Rurais',
     description: 'Destaque fazendas, sítios e chácaras com um site profissional.',
-    href: '/modulos/site-para-imobiliarias-rurais'
+    href: '/modulos/site-para-imobiliarias-rurais/'
   },
   {
     icon: '/icons/menu-icone-site-loteadoras.svg',
     title: 'Site para Loteadoras',
     badge: 'breve',
     description: 'Venda mais lotes com uma presença digital completa e moderna.',
-    href: '/modulos/site-para-loteadoras'
+    href: '/modulos/site-para-loteadoras/'
   }
 ]
 </script>

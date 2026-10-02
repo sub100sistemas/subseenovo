@@ -116,7 +116,7 @@ const faqs = [
                 src="/images/hero-faq/foto-pessoa-duvidas.png"
                 :width="251"
                 :height="373"
-                alt="Mulher sorrindo apontando para cima, ilustrando dúvidas sobre o sistema"
+                alt="Mulher sorrindo apontando para cima"
                 class="mt-6 h-auto w-[190px] rounded-2xl object-cover tablet-lg:w-[251px]"
                 loading="lazy"
               />

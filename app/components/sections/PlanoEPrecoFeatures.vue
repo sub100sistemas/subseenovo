@@ -99,11 +99,11 @@ const tabelaVisivel = ref(true)
           <div class="flex flex-col items-center gap-3 rounded-2xl border-2 border-brand bg-white px-4 py-6">
             <img src="/icons/logo-subsee-on.svg" alt="SUBSEE on" width="184" height="40" class="h-auto w-[140px]" />
             <h3 class="text-brand">Urbano</h3>
-            <CtaButton variant="outline" :icon="false" to="#" class="w-full!">Site &amp; hotsite padrão</CtaButton>
+            <CtaButton variant="outline" :icon="false" to="/modulos/site-para-imobiliarias-urbanas/" class="w-full!">Site &amp; hotsite padrão</CtaButton>
           </div>
           <div class="flex flex-col items-center justify-end gap-3 rounded-2xl border-2 border-brand bg-white px-4 py-6">
             <h3 class="text-brand">Rural</h3>
-            <CtaButton variant="outline" :icon="false" to="#" class="w-full!">Site &amp; hotsite padrão</CtaButton>
+            <CtaButton variant="outline" :icon="false" to="/modulos/site-para-imobiliarias-rurais/" class="w-full!">Site &amp; hotsite padrão</CtaButton>
           </div>
         </div>
 

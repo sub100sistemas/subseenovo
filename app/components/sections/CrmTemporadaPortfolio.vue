@@ -58,7 +58,7 @@ const features: PortfolioFeature[] = [
         densities="x1 x2"
         sizes="mobile-lg:100vw tablet-lg:440px desktop:580px desktop-full:664px"
         :img-attrs="{
-          alt: 'Interface do SUBSEE mostrando lista de imóveis de temporada sincronizados com 6 portais',
+          alt: 'Lista de imóveis de temporada',
           class: 'mx-auto h-auto w-full max-w-[664px]',
           loading: 'lazy'
         }"

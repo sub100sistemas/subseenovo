@@ -17,7 +17,7 @@
             Conecte o WhatsApp, redes sociais e o RD Station diretamente ao seu funil de
             atendimento, sem precisar alternar entre sistemas
           </p>
-          <CtaButton variant="primary" to="/testar-gratis" class="mt-2 whitespace-nowrap">
+          <CtaButton variant="primary" to="/testar-gratis/" class="mt-2 whitespace-nowrap">
             Testar grátis por 30 dias
           </CtaButton>
         </div>
@@ -28,7 +28,7 @@
             :width="1694"
             :height="1088"
             sizes="mobile-lg:100vw tablet-lg:600px desktop:732px"
-            alt="Painel do CRM SUBSEE com funil de atendimento, próximas ações e métricas de leads, conectado a WhatsApp, Meta, RD Station e portais imobiliários"
+            alt="Painel do CRM conectado a integrações"
             class="h-auto w-full max-w-[600px] tablet-lg:max-w-[732px]"
             loading="lazy"
           />

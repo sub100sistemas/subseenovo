@@ -77,13 +77,12 @@ const socialLinks = [
             </NuxtLink>
           </div>
 
-          <button
-            type="button"
-            aria-label="Alternar tema claro/escuro"
-            class="mt-[52px] inline-flex size-6 items-center justify-center hover:opacity-70"
+          <span
+            aria-hidden="true"
+            class="mt-[52px] inline-flex size-6 items-center justify-center"
           >
             <img src="/icons/icone-modo-escuro.svg" width="24" height="24" alt="" aria-hidden="true" />
-          </button>
+          </span>
         </div>
       </div>
 

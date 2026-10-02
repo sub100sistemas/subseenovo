@@ -11,19 +11,19 @@ const modules: OtherModuleCard[] = [
     icon: '/icons/menu-icone-crm-generico.svg',
     title: 'CRM Imobiliário',
     description: 'Conheça recursos de IA, automações e integrações da plataforma.',
-    href: '/modulos/crm'
+    href: '/modulos/crm/'
   },
   {
     icon: '/icons/menu-icone-crm-urbano.svg',
     title: 'CRM Imobiliário Urbano',
     description: 'Centralize imóveis, clientes e negociações em um só lugar.',
-    href: '/modulos/crm-imobiliario-urbano'
+    href: '/modulos/crm-imobiliario-urbano/'
   },
   {
     icon: '/icons/menu-icone-crm-rural.svg',
     title: 'CRM Imobiliário Rural',
     description: 'Gestão completa de propriedades rurais e negociações do campo.',
-    href: '/modulos/crm-imobiliario-rural'
+    href: '/modulos/crm-imobiliario-rural/'
   }
 ]
 </script>

@@ -31,7 +31,7 @@ const moduleIcons: HeroModuleIcon[] = [
           :width="820"
           :height="888"
           sizes="mobile-lg:180px tablet:340px tablet-lg:240px desktop:300px desktop-full:362px"
-          alt="Composição mostrando um celular exibindo o mapa de uma propriedade rural com camadas e um homem apontando para o mapa"
+          alt="Mapa de propriedade rural no celular"
           class="h-full w-full object-cover"
           loading="eager"
         />

@@ -29,7 +29,7 @@ const moduleIcons: HeroModuleIcon[] = [
           :width="724"
           :height="912"
           sizes="mobile-lg:180px tablet:340px tablet-lg:240px desktop:300px desktop-full:362px"
-          alt="Corretor de camisa azul com os braços cruzados, ao lado de cartões destacando a publicação integrada em portais e o painel Meu Site"
+          alt="Corretor de camisa azul"
           class="h-full w-full object-cover"
           loading="eager"
         />

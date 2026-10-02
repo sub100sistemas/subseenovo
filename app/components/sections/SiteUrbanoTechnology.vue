@@ -11,7 +11,7 @@
     :mockup-height="1293"
     mockup-sizes="mobile-lg:100vw tablet-lg:920px desktop:1100px"
     :mockup-img-attrs="{
-      alt: 'Mockup do site de imobiliária urbana mostrando a interface de busca com lançamentos em destaque',
+      alt: 'Site de imobiliária urbana',
       class: 'mx-auto h-auto w-full max-w-[1100px] rounded-[16px] tablet-lg:rounded-[24px]',
       loading: 'lazy'
     }"

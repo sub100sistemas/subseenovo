@@ -23,7 +23,7 @@
               sistema de gestão fácil que se integra aos seus processos
             </p>
 
-            <CtaButton to="/modulos/sgl" class="mb-9">Acessar o Sistema SGL</CtaButton>
+            <CtaButton href="https://sistemasgl.com.br/" class="mb-9">Acessar o Sistema SGL</CtaButton>
           </div>
 
           <div class="relative w-full tablet-lg:w-[45%]">
@@ -32,7 +32,7 @@
               :width="483"
               :height="331"
               sizes="mobile-lg:340px tablet-lg:380px desktop:440px desktop-full:483px"
-              alt="Mockup de celular mostrando o painel do Sistema SGL, com menu de extrato financeiro, boletos, empreendimentos e demonstrativos"
+              alt="Painel do SGL no celular"
               class="mx-auto h-auto w-full max-w-[483px]"
               loading="lazy"
             />

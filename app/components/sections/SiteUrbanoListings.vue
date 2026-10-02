@@ -44,7 +44,7 @@ const features: PortfolioFeature[] = [
 </script>
 
 <template>
-  <CrmPortfolio section-id="site-urbano-fichas" :features="features" cta-to="/agendar-demonstracao" cta-text="Agendar Demonstração">
+  <CrmPortfolio section-id="site-urbano-fichas" :features="features" cta-to="/agendar-demonstracao/" cta-text="Agendar Demonstração">
     <template #heading>
       A tecnologia que entende<br class="hidden tablet-lg:block" />
       o ritmo da <span class="text-brand">cidade</span>
@@ -62,7 +62,7 @@ const features: PortfolioFeature[] = [
         :width="1344"
         :height="1455"
         sizes="mobile-lg:100vw tablet-lg:440px desktop:580px desktop-full:664px"
-        alt="Mockup do tablet mostrando a listagem de imóveis urbanos com filtros e cards de propriedades"
+        alt="Listagem de imóveis no tablet"
         class="mx-auto h-auto w-full max-w-[664px]"
         loading="lazy"
       />

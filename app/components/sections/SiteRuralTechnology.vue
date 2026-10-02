@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const mockupImgAttrs = {
-  alt: 'Mockup do site de imobiliária rural mostrando a busca de fazendas e propriedades rurais',
+  alt: 'Site de imobiliária rural',
   class: 'mx-auto h-auto w-full max-w-[1100px] rounded-[16px] tablet-lg:rounded-[24px]',
   loading: 'lazy'
 }

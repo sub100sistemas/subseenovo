@@ -62,7 +62,7 @@ const legends = [
           </div>
 
           <NuxtLink
-            to="/testar-gratis"
+            to="/testar-gratis/"
             class="inline-flex h-[56px] w-[297px] items-center justify-center gap-3 rounded-[12px] bg-brand text-[16px] font-semibold text-white"
           >
             Testar grátis por 30 dias

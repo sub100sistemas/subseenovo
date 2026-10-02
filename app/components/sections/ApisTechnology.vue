@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const mockupImgAttrs = {
-  alt: 'Mockup do painel do HUB de integrações, mostrando funil imobiliário, chatbot Mel e notificações',
+  alt: 'Painel do HUB de integrações',
   class: 'mx-auto h-auto w-full max-w-[1100px] rounded-[16px] tablet-lg:rounded-[24px]',
   loading: 'lazy'
 }

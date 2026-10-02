@@ -1,10 +1,10 @@
 <script setup lang="ts">
 const avatars = [
-  { n: 5, alt: 'Foto de cliente/corretor 5', marginLeft: 0 },
-  { n: 4, alt: 'Foto de cliente/corretor 4', marginLeft: -13.67 },
-  { n: 3, alt: 'Foto de cliente/corretor 3', marginLeft: -25.06 },
-  { n: 2, alt: 'Foto de cliente/corretor 2', marginLeft: -21.64 },
-  { n: 1, alt: 'Foto de cliente/corretor 1', marginLeft: -17.09 }
+  { n: 5, alt: '', marginLeft: 0 },
+  { n: 4, alt: '', marginLeft: -13.67 },
+  { n: 3, alt: '', marginLeft: -25.06 },
+  { n: 2, alt: '', marginLeft: -21.64 },
+  { n: 1, alt: '', marginLeft: -17.09 }
 ]
 
 const backgroundStyle = {
@@ -75,13 +75,13 @@ const propertyIcons = [
           <div
             class="mt-8 flex flex-col items-start gap-3 tablet:flex-row tablet:gap-4 tablet-lg:flex-col desktop:flex-row desktop:gap-[30px]"
           >
-            <CtaButton variant="primary" to="/testar-gratis" class="whitespace-nowrap">
+            <CtaButton variant="primary" to="/testar-gratis/" class="whitespace-nowrap">
               Testar grátis por 30 dias
             </CtaButton>
             <CtaButton
               variant="outline"
               :icon="false"
-              to="/assista-os-videos-do-subsee-on"
+              to="/assista-os-videos-do-subsee-on/"
               class="whitespace-nowrap"
             >
               Assista os vídeos do SUBSEE on
@@ -146,7 +146,7 @@ const propertyIcons = [
             sizes="100vw mobile-lg:490px tablet:650px tablet-lg:400px desktop-compact:460px desktop:660px"
             :width="711"
             :height="794"
-            alt="Aplicativo SUBSEE on em dois celulares: tela de busca de imóveis com filtros e resultado em destaque, e painel com os módulos Imóveis, Edifícios e Condomínios, Pessoas, Destaques, Meu Site, CRM Kanban Imobiliário, Agenda e Treinamentos"
+            alt="Aplicativo SUBSEE on em dois celulares"
             loading="eager"
           />
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const mockupImgAttrs = {
-  alt: 'Mockup do site de uma loteadora mostrando o lançamento Cabo Verde Condomínio Náutico com fotos aéreas e atributos do empreendimento',
+  alt: 'Site de loteadora com lançamento',
   class: 'mx-auto h-auto w-full max-w-[1100px] rounded-[16px] tablet-lg:rounded-[24px]',
   loading: 'lazy'
 }

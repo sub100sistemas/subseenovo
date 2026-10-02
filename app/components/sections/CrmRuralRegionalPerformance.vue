@@ -41,7 +41,7 @@ const checklist = [
             </li>
           </ul>
 
-          <CtaButton variant="primary" to="/testar-gratis" class="whitespace-nowrap">
+          <CtaButton variant="primary" to="/testar-gratis/" class="whitespace-nowrap">
             Testar grátis por 30 dias
           </CtaButton>
         </div>
@@ -58,7 +58,7 @@ const checklist = [
               :width="464"
               :height="410"
               sizes="mobile-lg:80vw tablet:400px tablet-lg:560px"
-              alt="Mapa com propriedades rurais no Brasil e na Argentina, indicando as regiões de destaque"
+              alt="Mapa de propriedades rurais"
               class="h-auto w-full self-start rounded-[18px] object-cover tablet:w-[60%]"
               loading="lazy"
             />

@@ -15,7 +15,7 @@ const modules: OtherModuleCard[] = [
     iconHeight: 51,
     title: 'CRM Imobiliário',
     description: 'Conheça recursos de IA, automações e integrações da plataforma.',
-    href: '/modulos/crm'
+    href: '/modulos/crm/'
   },
   {
     icon: '/icons/crm-urbano-modulos-icone-rural.svg',
@@ -23,7 +23,7 @@ const modules: OtherModuleCard[] = [
     iconHeight: 40,
     title: 'CRM Imobiliário Rural',
     description: 'Gestão completa de propriedades rurais e negociações do campo.',
-    href: '/modulos/crm-imobiliario-rural'
+    href: '/modulos/crm-imobiliario-rural/'
   },
   {
     icon: '/icons/crm-urbano-modulos-icone-temporada.svg',
@@ -31,7 +31,7 @@ const modules: OtherModuleCard[] = [
     iconHeight: 40,
     title: 'CRM para Temporada',
     description: 'Gestão completa de aluguéis por temporada e reservas de imóveis.',
-    href: '/modulos/crm-imobiliario-temporada'
+    href: '/modulos/crm-imobiliario-temporada/'
   }
 ]
 </script>

@@ -239,7 +239,7 @@ const brokers: Broker[] = [
           </div>
 
           <div class="mt-10 flex justify-center desktop-full:mt-[45px]">
-            <CtaButton variant="primary" to="/testar-gratis" class="whitespace-nowrap">
+            <CtaButton variant="primary" to="/testar-gratis/" class="whitespace-nowrap">
               Testar grátis por 30 dias
             </CtaButton>
           </div>

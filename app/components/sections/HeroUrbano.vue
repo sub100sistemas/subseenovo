@@ -52,13 +52,13 @@ const featureItems = [
           <FeatureList class="mt-3" :items="featureItems" />
 
           <div class="mt-8 flex flex-col gap-3 tablet:flex-row tablet:gap-4">
-             <CtaButton variant="primary" to="/testar-gratis" class="whitespace-nowrap">
+             <CtaButton variant="primary" to="/testar-gratis/" class="whitespace-nowrap">
               Testar grátis por 30 dias
             </CtaButton>
             <CtaButton
               variant="outline"
               :icon="false"
-              to="/modulos/crm-imobiliario-urbano"
+              to="/modulos/crm-imobiliario-urbano/"
               class="whitespace-nowrap"
             >
               Conheça o módulo Urbanos
@@ -74,7 +74,7 @@ const featureItems = [
             :quality="65"
             :width="708"
             :height="631"
-            alt="Aplicativo SUBSEE on exibindo listagem de imóveis urbanos com filtros de busca, cartão com VGV em aberto de R$ 84,2 milhões e mapa com imóveis por região"
+            alt="Imóveis urbanos no aplicativo SUBSEE"
             loading="lazy"
           />
         </div>

@@ -58,7 +58,7 @@
             Conecte o WhatsApp, Redes Sociais e o RD Station diretamente ao seu funil de
             atendimento, sem precisar alternar entre sistemas
           </p>
-          <CtaButton variant="primary" to="/testar-gratis" class="whitespace-nowrap">
+          <CtaButton variant="primary" to="/testar-gratis/" class="whitespace-nowrap">
             Testar grátis por 30 dias
           </CtaButton>
         </div>

@@ -30,7 +30,7 @@ const moduleIcons: HeroModuleIcon[] = [
           :width="776"
           :height="894"
           sizes="mobile-lg:180px tablet:340px tablet-lg:240px desktop:300px desktop-full:362px"
-          alt="Homem sorridente com laptop mostrando sistema de gestão de imóveis por temporada"
+          alt="Homem sorridente com laptop"
           class="h-full w-full object-cover"
           loading="eager"
         />

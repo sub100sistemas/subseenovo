@@ -5,6 +5,7 @@ const props = withDefaults(
   defineProps<{
     variant?: Variant
     to?: string
+    href?: string
     icon?: boolean
   }>(),
   {
@@ -16,6 +17,10 @@ const props = withDefaults(
 const showIcon = computed(() => props.icon ?? props.variant === 'primary')
 
 const NuxtLink = resolveComponent('NuxtLink')
+
+const linkAttrs = computed(() =>
+  props.href ? { href: props.href, target: '_blank', rel: 'noopener' } : { to: props.to }
+)
 
 const classesByVariant: Record<Variant, string> = {
   primary:
@@ -31,8 +36,8 @@ const classesByVariant: Record<Variant, string> = {
 
 <template>
   <component
-    :is="to ? NuxtLink : 'button'"
-    :to="to"
+    :is="href ? 'a' : to ? NuxtLink : 'button'"
+    v-bind="linkAttrs"
     class="inline-flex self-center items-center justify-center gap-2 text-center transition-colors tablet-lg:self-auto"
     :class="classesByVariant[variant]"
   >

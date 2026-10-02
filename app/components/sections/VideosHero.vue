@@ -63,7 +63,7 @@ const descriptionClass =
             :width="1536"
             :height="1024"
             sizes="mobile-lg:620px tablet:880px tablet-lg:560px desktop-compact:600px desktop:680px"
-            alt="Profissional sorridente de blazer marrom segurando um celular"
+            alt="Profissional de blazer marrom com celular"
             class="absolute top-0 left-[-51.38%] block h-full w-[196.66%] max-w-none"
             loading="eager"
           />

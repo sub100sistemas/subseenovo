@@ -47,7 +47,7 @@ const features: PortfolioFeature[] = [
   <CrmPortfolio
     section-id="site-rural-anuncios"
     :features="features"
-    cta-to="/agendar-demonstracao"
+    cta-to="/agendar-demonstracao/"
     cta-text="Agendar Demonstração"
   >
     <template #heading>
@@ -67,7 +67,7 @@ const features: PortfolioFeature[] = [
         :width="1344"
         :height="1415"
         sizes="mobile-lg:100vw tablet-lg:440px desktop:580px desktop-full:664px"
-        alt="Mockup das telas de imóveis rurais com mapa georreferenciado, atributos técnicos e fotos da propriedade"
+        alt="Telas de imóveis rurais com mapa"
         class="mx-auto h-auto w-full max-w-[664px]"
         loading="lazy"
       />

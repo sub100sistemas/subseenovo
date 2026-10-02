@@ -93,7 +93,7 @@ const badges: PortalBadge[] = [
             :width="1362"
             :height="1146"
             sizes="mobile-lg:100vw tablet-lg:450px desktop:580px desktop-full:681px"
-            alt="Mockup do app SUB100 na etapa de Marketing, com os portais imobiliários integrados e seus interruptores ativos"
+            alt="Portais integrados no aplicativo"
             class="absolute left-[5.42%] top-[3.86%] w-[94.58%] h-auto max-w-none"
             loading="lazy"
           />
@@ -133,7 +133,7 @@ const badges: PortalBadge[] = [
             envie seus anúncios para diferentes portais imobiliários de forma integrada, facilitando
             a gestão e ampliando a visibilidade
           </p>
-          <CtaButton variant="primary" to="/testar-gratis" class="whitespace-nowrap">
+          <CtaButton variant="primary" to="/testar-gratis/" class="whitespace-nowrap">
             Testar grátis por 30 dias
           </CtaButton>
         </div>

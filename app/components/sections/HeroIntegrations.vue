@@ -148,8 +148,8 @@ const badges = [
         <div
           class="relative mt-10 flex flex-col items-center justify-center gap-3 tablet:flex-row tablet-lg:absolute tablet-lg:left-[15.9%] tablet-lg:top-[83.98%] tablet-lg:mt-0 tablet-lg:items-start tablet-lg:justify-start"
         >
-          <CtaButton variant="primary" to="/testar-gratis" class="whitespace-nowrap">Testar grátis por 30 dias</CtaButton>
-          <CtaButton variant="outline" :icon="false" to="/modulos/apis-hub-integrador" class="whitespace-nowrap">
+          <CtaButton variant="primary" to="/testar-gratis/" class="whitespace-nowrap">Testar grátis por 30 dias</CtaButton>
+          <CtaButton variant="outline" :icon="false" to="/modulos/apis-hub-integrador/" class="whitespace-nowrap">
             Conheça APIs & HUB Integrador
           </CtaButton>
         </div>

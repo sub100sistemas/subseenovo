@@ -29,6 +29,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
+      siteUrl: 'http://localhost:3000',
       formsEndpoint: 'https://forms.sub100.com.br/sub100sistemas/formularios.php',
       recaptchaSiteKey: ''
     }

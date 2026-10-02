@@ -6,6 +6,7 @@ interface Post {
   alt: string
   title: string
   excerpt: string
+  cta: string
   href: string
 }
 
@@ -14,30 +15,33 @@ const posts: Post[] = [
     image: '/images/blog/corretor-aperto-de-mao.png',
     width: 1536,
     height: 773,
-    alt: 'Dois corretores se cumprimentando com aperto de mão',
+    alt: 'Dois corretores em aperto de mão',
     title: 'Como escolher um corretor',
+    cta: 'Ler sobre como escolher corretor',
     excerpt:
       'Encontrar o corretor certo pode fazer toda a diferença na compra ou na venda de um imóvel.',
-    href: '/blog/como-escolher-um-corretor'
+    href: 'https://blog.sub100sistemas.com.br/2024/07/como-escolher-um-corretor-de-imoveis-de-confianca/'
   },
   {
     image: '/images/blog/agrocorretor-plantacao-milho.png',
     width: 1024,
     height: 516,
-    alt: 'Homem em plantação de milho segurando celular com mapa de imóvel rural',
+    alt: 'Homem no milharal com celular',
     title: 'Inovação para Agrocorretores',
+    cta: 'Ler sobre corretores rurais',
     excerpt: 'Corretores de imóveis inovam com a expansão do agronegócio no Brasil.',
-    href: '/blog/inovacao-para-agrocorretores'
+    href: 'https://blog.sub100sistemas.com.br/2024/07/subsee-on-para-corretores-de-imoveis-rurais/'
   },
   {
     image: '/images/blog/ilha-porto-rico-vista-aerea.png',
     width: 1536,
     height: 773,
-    alt: 'Vista aérea de ilha com praias e rios em Porto Rico (Paraná)',
+    alt: 'Vista aérea de Porto Rico (PR)',
     title: 'Descubra Porto Rico',
+    cta: 'Conhecer Porto Rico',
     excerpt:
       'Paraíso da natureza, com praias de água doce e um dos maiores canteiros de obras do Paraná.',
-    href: '/blog/descubra-porto-rico'
+    href: 'https://blog.sub100sistemas.com.br/2024/07/descubra-porto-rico-pr-um-paraiso-da-natureza-no-rio-parana/'
   }
 ]
 </script>
@@ -93,10 +97,10 @@ const posts: Post[] = [
             <p class="mt-[10px] flex-1 text-base leading-[1.4] text-ink">{{ post.excerpt }}</p>
 
             <div class="mt-4 h-px bg-[#f3f4f6]" />
-            <NuxtLink :to="post.href" class="mt-4 flex items-center gap-2 text-teal-link">
-              <span class="text-base">Saiba mais</span>
+            <a :href="post.href" target="_blank" rel="noopener" class="mt-4 flex items-center gap-2 text-teal-link">
+              <span class="text-base">{{ post.cta }}</span>
               <span class="text-[19px] font-bold" aria-hidden="true">→</span>
-            </NuxtLink>
+            </a>
           </div>
         </article>
       </div>

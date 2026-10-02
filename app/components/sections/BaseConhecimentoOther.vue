@@ -20,7 +20,7 @@
             Acesse treinamentos, manuais e documentação de forma rápida e centralizada, direto na
             plataforma. Gerencie permissões e controle de acesso com facilidade e segurança.
           </p>
-          <CtaButton variant="primary" to="/testar-gratis" class="mt-2 whitespace-nowrap">
+          <CtaButton variant="primary" to="/testar-gratis/" class="mt-2 whitespace-nowrap">
             Testar grátis por 30 dias
           </CtaButton>
           <p class="mt-[18px] flex items-center gap-2 text-xs text-[#6b7280]">
@@ -36,7 +36,7 @@
             :width="1552"
             :height="960"
             sizes="mobile-lg:100vw tablet-lg:600px desktop:732px"
-            alt="Painel de treinamentos do SUBSEE com biblioteca de manuais e trilha de integração, ao lado de um celular exibindo o progresso de um curso e um vídeo de suporte"
+            alt="Painel de treinamentos e celular"
             class="h-auto w-full max-w-[550px] tablet-lg:max-w-[703px]"
             loading="lazy"
           />

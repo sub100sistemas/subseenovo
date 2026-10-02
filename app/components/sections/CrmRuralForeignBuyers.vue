@@ -26,7 +26,7 @@ const countries: CountryChip[] = [
             Argentina e Bolívia e alcance compradores interessados em investir na América do Sul.
           </p>
 
-          <CtaButton variant="primary" to="/testar-gratis" class="whitespace-nowrap">
+          <CtaButton variant="primary" to="/testar-gratis/" class="whitespace-nowrap">
             Testar grátis por 30 dias
           </CtaButton>
         </div>
@@ -36,7 +36,7 @@ const countries: CountryChip[] = [
           :width="889"
           :height="521"
           sizes="mobile-lg:90vw tablet-lg:520px desktop-full:640px"
-          alt="Cards sobrepostos de propriedades rurais no Uruguai, Paraguai, Bolívia, Argentina e Brasil"
+          alt="Propriedades rurais sul-americanas"
           class="h-auto w-full max-w-[640px] shrink-0 tablet-lg:w-[46%]"
           loading="lazy"
         />

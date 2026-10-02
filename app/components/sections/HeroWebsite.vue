@@ -3,22 +3,22 @@ const categories = [
   {
     icon: '/icons/icone-site-imobiliarias-corretores.png',
     label: ['Imobiliárias', 'e Corretores'],
-    alt: 'Ícone representando imobiliárias e corretores'
+    alt: ''
   },
   {
     icon: '/icons/icone-site-agrocorretores.png',
     label: ['Agrocorretores'],
-    alt: 'Ícone representando agrocorretores'
+    alt: ''
   },
   {
     icon: '/icons/icone-site-loteadoras.png',
     label: ['Loteadoras'],
-    alt: 'Ícone representando loteadoras'
+    alt: ''
   },
   {
     icon: '/icons/icone-site-incorporadoras.png',
     label: ['Incorporadoras'],
-    alt: 'Ícone representando incorporadoras'
+    alt: ''
   }
 ]
 </script>
@@ -86,13 +86,13 @@ const categories = [
           </div>
 
           <div class="mt-[45px] flex flex-col gap-3 tablet:flex-row tablet:gap-4">
-            <CtaButton variant="primary" to="/testar-gratis" class="whitespace-nowrap">
+            <CtaButton variant="primary" to="/testar-gratis/" class="whitespace-nowrap">
               Testar grátis por 30 dias
             </CtaButton>
             <CtaButton
               variant="outline"
               :icon="false"
-              to="/modulos/sites"
+              to="/modulos/site-para-imobiliarias-urbanas/"
               class="whitespace-nowrap"
             >
               Conheça o módulo Sites e Hotsites
@@ -107,7 +107,7 @@ const categories = [
             sizes="100vw tablet-lg:400px desktop-compact:460px desktop:711px"
             :width="711"
             :height="439"
-            alt="Mockup do site 'Ideal Imóveis' em notebook e celular, com busca de imóveis por lançamento, compra e aluguel, e destaques de lançamento"
+            alt="Site de imobiliária no notebook"
             loading="lazy"
           />
         </div>

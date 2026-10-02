@@ -11,13 +11,13 @@ const modules: OtherModuleCard[] = [
     icon: '/icons/menu-icone-site-urbanas.svg',
     title: 'Site para Imobiliárias Urbanas',
     description: 'Destaque seus imóveis urbanos com um site profissional na web.',
-    href: '/modulos/site-para-imobiliarias-urbanas'
+    href: '/modulos/site-para-imobiliarias-urbanas/'
   },
   {
     icon: '/icons/menu-icone-crm-rural.svg',
     title: 'Site para Imobiliárias Rurais',
     description: 'Destaque fazendas, sítios e chácaras com um site profissional.',
-    href: '/modulos/site-para-imobiliarias-rurais'
+    href: '/modulos/site-para-imobiliarias-rurais/'
   }
 ]
 </script>

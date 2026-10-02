@@ -7,19 +7,19 @@ interface PhoneMockup {
 const mockups: PhoneMockup[] = [
   {
     src: '/images/modulos-crm/publishing-mockup-funil.png',
-    alt: 'Mockup do celular mostrando a tela "Funil Imobiliário" com termômetro de 100% e funil de vendas'
+    alt: 'Funil imobiliário no celular'
   },
   {
     src: '/images/modulos-crm/publishing-mockup-kanban.png',
-    alt: 'Mockup do celular mostrando o Kanban de atendimentos com colunas Sem Contato, Em Atendimento e Em Negociação'
+    alt: 'Kanban de atendimentos no celular'
   },
   {
     src: '/images/modulos-crm/publishing-mockup-dados-atendimento.png',
-    alt: 'Mockup do celular mostrando os dados de atendimento de um cliente, com abas e um imóvel de interesse'
+    alt: 'Dados de atendimento no celular'
   },
   {
     src: '/images/modulos-crm/publishing-mockup-agenda.png',
-    alt: 'Mockup do celular mostrando a Agenda integrada ao Google Calendar'
+    alt: 'Agenda integrada no celular'
   }
 ]
 </script>

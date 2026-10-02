@@ -50,7 +50,7 @@ withDefaults(defineProps<Props>(), {
   mockupDensities: 'x1 x2',
   mockupSizes: 'mobile-lg:100vw tablet-lg:1000px desktop:1100px',
   mockupImgAttrs: () => ({
-    alt: 'Mockup do painel Kanban de atendimentos do SUBSEE, mostrando menu lateral do CRM e cartões de clientes organizados por etapa de atendimento',
+    alt: 'Kanban de atendimentos no CRM',
     class: 'mx-auto h-auto w-full max-w-[1100px]',
     loading: 'lazy',
   }),
@@ -95,7 +95,7 @@ withDefaults(defineProps<Props>(), {
 
     <template #cta>
       <slot name="cta">
-        <CtaButton variant="primary" to="/testar-gratis" class="whitespace-nowrap">
+        <CtaButton variant="primary" to="/testar-gratis/" class="whitespace-nowrap">
           Testar grátis por 30 dias
         </CtaButton>
       </slot>

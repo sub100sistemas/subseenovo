@@ -74,7 +74,7 @@ const items: FeatureItem[] = [
         :width="655"
         :height="640"
         sizes="mobile-lg:80vw tablet-lg:420px desktop-full:520px"
-        alt="Composição mostrando a ficha de uma propriedade rural, um mockup de celular com mapa e um card de sincronização com portais imobiliários"
+        alt="Ficha e mapa de propriedade rural"
         class="h-auto w-full max-w-[420px] shrink-0 desktop-full:max-w-[520px]"
         loading="lazy"
       />
@@ -86,7 +86,7 @@ const items: FeatureItem[] = [
     </template>
 
     <template #cta>
-      <CtaButton variant="primary" to="/testar-gratis" class="whitespace-nowrap">
+      <CtaButton variant="primary" to="/testar-gratis/" class="whitespace-nowrap">
         Testar grátis por 30 dias
       </CtaButton>
     </template>

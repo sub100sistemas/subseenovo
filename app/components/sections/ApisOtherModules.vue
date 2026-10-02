@@ -12,8 +12,8 @@
       </div>
 
       <div class="mx-auto mt-10 max-w-[1120px]">
-        <a
-          href="#"
+        <NuxtLink
+          to="/modulos/base-de-conhecimento/"
           class="flex flex-col items-center gap-4 rounded-[20px] bg-white p-6 text-center shadow-[0px_2px_35px_rgba(31,56,115,0.08)] tablet:flex-row tablet:items-center tablet:gap-6 tablet:text-left"
         >
           <span class="flex size-[78px] shrink-0 items-center justify-center rounded-2xl bg-[#F7F7FF]">
@@ -37,7 +37,7 @@
           >
             Clique aqui →
           </span>
-        </a>
+        </NuxtLink>
       </div>
     </div>
   </section>

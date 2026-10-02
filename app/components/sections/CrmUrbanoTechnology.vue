@@ -11,7 +11,7 @@
     :mockup-height="1292"
     mockup-sizes="mobile-lg:100vw tablet-lg:920px desktop:1100px"
     :mockup-img-attrs="{
-      alt: 'Mockup da tela de cadastro de imóvel do SUB100, com o fluxo guiado por etapas e os campos de identificação e valores',
+      alt: 'Cadastro de imóvel urbano por etapas',
       class: 'mx-auto h-auto w-full max-w-[1100px]',
       loading: 'lazy'
     }"

@@ -5,11 +5,11 @@ interface GalleryPhoto {
 }
 
 const photos: GalleryPhoto[] = [
-  { src: '/images/eventos/eventos-galeria-foto-1.png', alt: 'Corretor sorrindo em um escritório com estante de livros' },
-  { src: '/images/eventos/eventos-galeria-foto-2.png', alt: 'Corretora sorrindo em um ambiente com plantas' },
+  { src: '/images/eventos/eventos-galeria-foto-1.png', alt: 'Corretor sorrindo no escritório' },
+  { src: '/images/eventos/eventos-galeria-foto-2.png', alt: 'Corretora sorrindo entre plantas' },
   { src: '/images/eventos/eventos-galeria-foto-3.png', alt: 'Corretora sorrindo com cabelo cacheado' },
-  { src: '/images/eventos/eventos-galeria-foto-4.png', alt: 'Corretor sorrindo com a cidade ao fundo' },
-  { src: '/images/eventos/eventos-galeria-foto-5.png', alt: 'Corretora sorrindo em um escritório com estante de livros' }
+  { src: '/images/eventos/eventos-galeria-foto-4.png', alt: 'Corretor sorrindo com cidade ao fundo' },
+  { src: '/images/eventos/eventos-galeria-foto-5.png', alt: 'Corretora sorrindo no escritório' }
 ]
 </script>
 

@@ -78,7 +78,7 @@ const badges = [
               :width="886"
               :height="1068"
               sizes="416px"
-              alt="Homem sorrindo apontando para os planos de preços"
+              alt="Homem sorrindo apontando para os planos"
               class="relative z-10 h-auto w-full"
               loading="lazy"
             />
@@ -141,10 +141,10 @@ const badges = [
               <span class="shrink-0 text-base whitespace-nowrap">{{ plano.complemento }}</span>
             </div>
 
-            <CtaButton variant="outline-teal" :icon="false" to="/planos-e-precos" class="mt-7 w-full! px-[10px]! text-center! tablet:px-6!">
+            <CtaButton variant="outline-teal" :icon="false" to="/planos-e-precos/" class="mt-7 w-full! px-[10px]! text-center! tablet:px-6!">
               Ver todos os recursos inclusos
             </CtaButton>
-            <CtaButton variant="primary" to="/testar-gratis" class="mt-4 w-full!">
+            <CtaButton variant="primary" to="/testar-gratis/" class="mt-4 w-full!">
               Testar grátis por 30 dias
             </CtaButton>
           </div>

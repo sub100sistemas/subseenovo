@@ -28,7 +28,7 @@ const moduleIcons: HeroModuleIcon[] = [
           :width="346"
           :height="457"
           sizes="mobile-lg:300px tablet:340px tablet-lg:240px desktop:300px desktop-full:346px"
-          alt="Corretora sorridente segurando um tablet, ao lado de cartões destacando troca de dados e conexão via API"
+          alt="Corretora sorridente segurando um tablet"
           class="h-full w-full object-cover"
           loading="eager"
         />

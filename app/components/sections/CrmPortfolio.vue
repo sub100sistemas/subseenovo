@@ -64,7 +64,7 @@ const props = withDefaults(defineProps<Props>(), {
   featureDescriptionClass: 'text-[16px] leading-[1.4] text-ink',
   ctaWrapperClass: 'flex justify-center pt-5',
   ctaClass: 'whitespace-nowrap',
-  ctaTo: '/testar-gratis',
+  ctaTo: '/testar-gratis/',
   ctaText: 'Testar grátis por 30 dias',
   features: () => []
 })

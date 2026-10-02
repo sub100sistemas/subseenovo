@@ -57,7 +57,7 @@ const planos: PricingPlan[] = [
         </div>
         <img
           src="/images/pricing/plano-e-preco-selo-12-off.svg"
-          alt="Selo de 12% de desconto no plano anual"
+          alt="Selo de 12% de desconto anual"
           width="209"
           height="135"
           class="pointer-events-none absolute inset-y-0 left-[calc(100%-40px)] my-auto hidden h-fit w-[140px] desktop-compact:block"
@@ -78,7 +78,7 @@ const planos: PricingPlan[] = [
             <span class="text-[22px] text-[#404040]">{{ plano.complemento }}</span>
           </p>
 
-          <CtaButton variant="primary" to="/testar-gratis" class="mt-6 w-full!">
+          <CtaButton variant="primary" to="/testar-gratis/" class="mt-6 w-full!">
             Testar grátis por 30 dias
           </CtaButton>
 
@@ -102,7 +102,7 @@ const planos: PricingPlan[] = [
             </li>
           </ul>
 
-          <CtaButton variant="outline" :icon="false" to="#" class="mt-8 w-full! border-ink! text-ink! hover:bg-ink/5!">
+          <CtaButton variant="outline" :icon="false" to="#opcionais" class="mt-8 w-full! border-ink! text-ink! hover:bg-ink/5!">
             + Opcionais
           </CtaButton>
         </div>

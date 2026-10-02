@@ -18,14 +18,14 @@ const replayCards: ReplayCard[] = [
   },
   {
     thumbnail: '/images/eventos/eventos-replay-thumb-2.png',
-    alt: 'Mockup de tela mostrando gráficos e a versão 1.0.18 do sistema',
+    alt: 'Gráficos da versão 1.0.18',
     tag: 'VERSÃO ATUAL',
     title: 'Nova versão 1.0.18 do CRM SUBSEE — A maturidade nos processos.',
     versionBadge: '1.0.18'
   },
   {
     thumbnail: '/images/eventos/eventos-replay-thumb-3.png',
-    alt: 'Notebook com capelo de formatura na tela, cercado de plantas e livros',
+    alt: 'Notebook com capelo de formatura',
     tag: 'NOVOS TREINAMENTOS',
     title: 'Acesse a base de conhecimento e aprimore-se com as novas funcionalidades do CRM SUBSEE.'
   }

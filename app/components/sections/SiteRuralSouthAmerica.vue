@@ -10,35 +10,35 @@ interface CountryCard {
 const bolivia: CountryCard = {
   label: 'Bolívia',
   src: '/images/modulos-site-rural/south-america-bolivia.png',
-  alt: 'Trator em plantação de milho ao pôr do sol, com a bandeira da Bolívia',
+  alt: 'Trator em plantação na Bolívia',
   width: 220,
   height: 240
 }
 const uruguai: CountryCard = {
   label: 'Uruguai',
   src: '/images/modulos-site-rural/south-america-uruguai.png',
-  alt: 'Gado em pastagem verde, com a bandeira do Uruguai',
+  alt: 'Gado em pastagem no Uruguai',
   width: 220,
   height: 431
 }
 const brasil: CountryCard = {
   label: 'Brasil',
   src: '/images/modulos-site-rural/south-america-brasil.png',
-  alt: 'Plantação de soja em linhas, com a bandeira do Brasil',
+  alt: 'Plantação de soja no Brasil',
   width: 220,
   height: 581
 }
 const argentina: CountryCard = {
   label: 'Argentina',
   src: '/images/modulos-site-rural/south-america-argentina.png',
-  alt: 'Colheitadeira em campo de trigo, com a bandeira da Argentina',
+  alt: 'Colheitadeira na Argentina',
   width: 220,
   height: 431
 }
 const paraguai: CountryCard = {
   label: 'Paraguai',
   src: '/images/modulos-site-rural/south-america-paraguai.png',
-  alt: 'Estrada de terra entre plantação de milho, com a bandeira do Paraguai',
+  alt: 'Estrada rural no Paraguai',
   width: 220,
   height: 240
 }

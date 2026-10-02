@@ -7,6 +7,7 @@ interface Product {
   badge: string
   title: string
   description: string
+  cta: string
   href: string
   external?: boolean
 }
@@ -16,11 +17,12 @@ const products: Product[] = [
     logo: '/icons/logo-sub100-imoveis-produto.svg',
     logoWidth: 120,
     logoHeight: 138,
-    logoAlt: 'Ícone/logo do produto SUB100 Imóveis',
+    logoAlt: '',
     badge: 'SUB100 Imóveis',
     title: 'Anuncie seus imóveis e empreendimentos em um dos maiores portais do Brasil',
     description:
       'Anuncie seus Lançamentos, Imóveis de Venda, Locação, Imóveis Rurais e Temporada em um portal com mais de 26 anos de experiência',
+    cta: 'Conhecer o SUB100 Imóveis',
     href: 'https://sub100.com.br/',
     external: true
   },
@@ -28,12 +30,14 @@ const products: Product[] = [
     logo: '/icons/logo-sgl-produto.svg',
     logoWidth: 158,
     logoHeight: 160,
-    logoAlt: 'Ícone/logo do produto SGL',
+    logoAlt: '',
     badge: 'SUB100 Loteadoras e Incorporadas',
     title: 'Simulador de vendas, mapa interativo, financeiro completo e portal do cliente',
     description:
       'O ERP para loteadoras e incorporadas, o SGL é um sistema de gestão fácil que se integra aos seus processos',
-    href: '/modulos/sgl'
+    cta: 'Conhecer o SGL',
+    href: 'https://sistemasgl.com.br/',
+    external: true
   }
 ]
 </script>
@@ -95,7 +99,7 @@ const products: Product[] = [
               v-bind="product.external ? { target: '_blank', rel: 'noopener' } : {}"
               class="mx-auto mt-6 inline-flex h-14 w-[180px] items-center justify-center gap-1.5 rounded-xl border border-teal-link text-teal-link transition-colors hover:bg-teal-link/5 desktop-full:mx-0"
             >
-              <span class="text-base">Saiba mais</span>
+              <span class="text-base">{{ product.cta }}</span>
               <span class="text-[19px] font-bold" aria-hidden="true">→</span>
             </component>
           </div>
