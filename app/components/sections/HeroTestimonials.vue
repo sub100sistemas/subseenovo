@@ -30,7 +30,7 @@ const testimonials = [
 <template>
   <section id="depoimentos" class="section-py relative overflow-hidden bg-[linear-gradient(to_bottom,rgba(219,234,254,0.6),white_76.442%)]">
     <div class="pointer-events-none absolute inset-x-0 top-0 h-auto w-full" aria-hidden="true">
-      <img src="/icons/hero-depoimentos-onda-decorativa.svg" alt="" class="block h-auto w-full max-w-none" />
+      <img loading="lazy" decoding="async" src="/icons/hero-depoimentos-onda-decorativa.svg" width="1918" height="196" alt="" class="block h-auto w-full max-w-none" />
     </div>
 
     <div class="container-page relative">
@@ -47,7 +47,7 @@ const testimonials = [
           :key="testimonial.name"
           class="relative flex flex-col items-center gap-[30px] overflow-hidden rounded-2xl bg-white p-10 shadow-[0px_2px_40px_-6px_rgba(103,105,240,0.1)]"
         >
-          <img
+          <img loading="lazy" decoding="async"
             src="/icons/icone-estrelas-avaliacao.svg"
             width="161"
             height="27"
@@ -59,13 +59,13 @@ const testimonials = [
             {{ testimonial.quote }}
           </blockquote>
 
-          <img
+          <img loading="lazy" decoding="async"
             src="/icons/aspas-abertura.svg"
             alt=""
             aria-hidden="true"
             class="pointer-events-none absolute -left-[14px] bottom-[146px] w-[93px]"
           />
-          <img
+          <img loading="lazy" decoding="async"
             src="/icons/aspas-fechamento.svg"
             alt=""
             aria-hidden="true"
@@ -74,7 +74,7 @@ const testimonials = [
 
           <div class="flex w-full flex-col items-center">
             <div class="flex h-[65px] w-full items-center justify-center">
-              <img
+              <img loading="lazy" decoding="async"
                 :src="testimonial.logo.src"
                 :width="testimonial.logo.width"
                 :height="testimonial.logo.height"

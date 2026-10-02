@@ -22,6 +22,7 @@ const photos: GalleryPhoto[] = [
         class="aspect-square w-[20%] min-w-[140px] shrink-0"
       >
         <NuxtImg
+          format="avif"
           :src="photo.src"
           :width="379"
           :height="360"

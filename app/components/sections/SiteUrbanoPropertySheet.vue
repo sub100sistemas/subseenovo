@@ -34,6 +34,7 @@ const attributes: Attribute[] = [
             <div class="pointer-events-none absolute rounded-full" style="width:82%;height:43%;top:50%;left:-5%;background:rgba(190,242,255,0.7);filter:blur(95px)"></div>
             <div class="pointer-events-none absolute rounded-full" style="width:93%;height:50%;top:24%;left:-25%;background:rgba(255,250,175,0.7);filter:blur(109px)"></div>
             <NuxtImg
+              format="avif"
               src="/images/modulos-site-urbano/property-sheet-mockup-phone.png"
               :width="378"
               :height="641"

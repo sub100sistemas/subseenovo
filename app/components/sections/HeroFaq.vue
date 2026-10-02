@@ -50,7 +50,7 @@ const faqs = [
 
 <template>
   <section id="duvidas-frequentes" class="section-py relative overflow-hidden">
-    <img
+    <img loading="lazy" decoding="async"
       src="/icons/hero-faq-interrogacao-topo-esquerda.svg"
       alt=""
       aria-hidden="true"
@@ -64,25 +64,25 @@ const faqs = [
       </div>
 
       <div class="relative mt-10">
-        <img
+        <img loading="lazy" decoding="async"
           src="/icons/hero-faq-interrogacao-inferior-esquerda-1.svg"
           alt=""
           aria-hidden="true"
           class="pointer-events-none absolute hidden -left-[22.33%] top-[15.45%] w-[21.45%] tablet-lg:block"
         />
-        <img
+        <img loading="lazy" decoding="async"
           src="/icons/hero-faq-interrogacao-inferior-esquerda-2.svg"
           alt=""
           aria-hidden="true"
           class="pointer-events-none absolute hidden -left-[24.75%] top-[13.65%] w-[18.45%] tablet-lg:block"
         />
-        <img
+        <img loading="lazy" decoding="async"
           src="/icons/hero-faq-interrogacao-superior-direita-1.svg"
           alt=""
           aria-hidden="true"
           class="pointer-events-none absolute hidden left-[102.4%] -top-[2.96%] w-[21.44%] tablet-lg:block"
         />
-        <img
+        <img loading="lazy" decoding="async"
           src="/icons/hero-faq-interrogacao-superior-direita-2.svg"
           alt=""
           aria-hidden="true"
@@ -92,13 +92,13 @@ const faqs = [
         <div
           class="relative overflow-hidden rounded-[28px] bg-[#F2F1F8] px-6 py-10 tablet-lg:rounded-[54px] tablet-lg:px-16 tablet-lg:py-16"
         >
-          <img
+          <img loading="lazy" decoding="async"
             src="/icons/hero-faq-interrogacao-caixa-esquerda.svg"
             alt=""
             aria-hidden="true"
             class="pointer-events-none absolute hidden -left-[12.77%] top-[84.26%] w-[31.7%] tablet-lg:block"
           />
-          <img
+          <img loading="lazy" decoding="async"
             src="/icons/hero-faq-interrogacao-caixa-direita.svg"
             alt=""
             aria-hidden="true"
@@ -111,7 +111,8 @@ const faqs = [
                 Tire suas dúvidas sobre o <span class="font-bold">SUBSEE</span> <span class="font-bold text-[#e7304d]">on</span> de forma rápida e simples
               </h3>
 
-              <NuxtImg
+              <NuxtImg decoding="async"
+                format="avif"
                 src="/images/hero-faq/foto-pessoa-duvidas.png"
                 :width="251"
                 :height="373"
@@ -134,7 +135,7 @@ const faqs = [
                     <span class="flex-1 text-[18px] leading-[1.2] font-medium text-ink tablet-lg:text-[20px]">
                       {{ faq.question }}
                     </span>
-                    <img src="/icons/icone-seta-faq.svg" alt="" class="chevron mt-1 h-[10px] w-4 shrink-0" />
+                    <img loading="lazy" decoding="async" src="/icons/icone-seta-faq.svg" alt="" class="chevron mt-1 h-[10px] w-4 shrink-0" />
                   </span>
                 </summary>
                 <div class="pb-[30px] pl-[27px]">

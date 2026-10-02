@@ -8,6 +8,25 @@ const segments = [
   { icon: '/images/hero-integrations/icone-incorporadoras.png', label: 'Incorporadoras' }
 ]
 
+const diagramViewBox = { width: 1017, height: 305 }
+
+const percent = (value: number, total: number) => `${Number(((value / total) * 100).toFixed(4))}%`
+
+const diagramIcons = [
+  { src: segments[0].icon, x: 33.992, y: 34.685, size: 31.356 },
+  { src: segments[1].icon, x: 33.992, y: 103.661, size: 31.36 },
+  { src: segments[2].icon, x: 33.992, y: 172.641, size: 31.356 },
+  { src: segments[3].icon, x: 36.992, y: 244.297, size: 26 }
+].map((icon) => ({
+  src: icon.src,
+  style: {
+    left: percent(icon.x, diagramViewBox.width),
+    top: percent(icon.y, diagramViewBox.height),
+    width: percent(icon.size, diagramViewBox.width),
+    height: percent(icon.size, diagramViewBox.height)
+  }
+}))
+
 const integrationLines = [
   { label: 'Integrações com dezenas de Portais', color: '#5D5FEF' },
   { label: 'Integrações com Redes de Parcerias', color: '#1CD9A4' },
@@ -56,8 +75,21 @@ const badges = [
           class="hero-integrations-diagram relative mx-auto mt-10 hidden max-w-[640px] tablet-lg:absolute tablet-lg:left-[15.4%] tablet-lg:top-[41.09%] tablet-lg:mt-0 tablet-lg:block tablet-lg:w-[72.59%] tablet-lg:max-w-none"
           role="img"
           aria-label="Diagrama mostrando o CRM SUBSEE on conectado a Imobiliárias e Corretores, Agrocorretores, Loteadoras e Incorporadoras, com integrações para dezenas de portais, redes de parcerias e MCP/APIs"
-          v-html="diagramaIntegracoes"
-        />
+        >
+          <div v-html="diagramaIntegracoes" />
+          <img
+            v-for="icon in diagramIcons"
+            :key="icon.src"
+            loading="lazy"
+            decoding="async"
+            :src="icon.src"
+            width="82"
+            height="82"
+            alt=""
+            class="absolute"
+            :style="icon.style"
+          />
+        </div>
 
         <div class="relative mx-auto mt-10 max-w-[420px] tablet-lg:hidden">
           <div class="overflow-hidden rounded-2xl border border-[#D9DEE8] bg-white">
@@ -68,7 +100,7 @@ const badges = [
                 class="flex flex-col items-center justify-center gap-2 px-3 py-5 text-center"
                 :class="[i % 2 === 0 ? 'border-r border-[#D9DEE8]' : '', i < 2 ? 'border-b border-[#D9DEE8]' : '']"
               >
-                <img :src="segment.icon" width="82" height="82" alt="" class="size-10 shrink-0" />
+                <img loading="lazy" decoding="async" :src="segment.icon" width="82" height="82" alt="" class="size-10 shrink-0" />
                 <span class="text-sm text-ink">{{ segment.label }}</span>
               </div>
             </div>
@@ -80,7 +112,7 @@ const badges = [
           </div>
 
           <div class="mx-auto flex w-fit items-center justify-center rounded-2xl border border-[#D9DEE8] bg-white px-8 py-4">
-            <img src="/icons/logo-subsee-on.svg" width="184" height="40" alt="SUBSEE on" class="h-8 w-auto" />
+            <img loading="lazy" decoding="async" src="/icons/logo-subsee-on.svg" width="184" height="40" alt="SUBSEE on" class="h-8 w-auto" />
           </div>
 
           <div class="relative mx-auto h-6 w-px bg-[#D9DEE8]" aria-hidden="true">
@@ -109,7 +141,7 @@ const badges = [
             :class="badge.hideOnMobile ? 'hidden tablet-lg:block' : ''"
             :style="{ '--badge-x': badge.x + '%', '--badge-y': badge.y + '%' }"
           >
-            <img :src="badge.src" width="98" height="98" :alt="badge.alt" class="block size-full" />
+            <img loading="lazy" decoding="async" :src="badge.src" width="98" height="98" :alt="badge.alt" class="block size-full" />
           </div>
         </div>
 

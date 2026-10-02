@@ -45,14 +45,14 @@ const posts: Post[] = [
 <template>
   <section id="blog" class="section-py relative overflow-hidden">
     <div class="pointer-events-none absolute inset-x-0 top-0 h-[206px]" aria-hidden="true">
-      <img
+      <img loading="lazy" decoding="async"
         src="/icons/hero-blog-onda-decorativa-branca.svg"
         width="1920"
         height="173"
         alt=""
         class="absolute -left-px top-[11px] w-[1920px] h-[173.455px] rotate-180 -scale-y-100 max-w-none"
       />
-      <img
+      <img loading="lazy" decoding="async"
         src="/icons/hero-website-onda-decorativa-azul.svg"
         width="1920"
         height="191"
@@ -75,7 +75,8 @@ const posts: Post[] = [
           :key="post.href"
           class="flex flex-col overflow-hidden rounded-[20px] border border-ink/[0.06] bg-white shadow-[0px_10px_10px_rgba(0,0,0,0.04),0px_4px_3px_rgba(0,0,0,0.04)]"
         >
-          <NuxtImg
+          <NuxtImg decoding="async"
+            format="avif"
             :src="post.image"
             :width="post.width"
             :height="post.height"

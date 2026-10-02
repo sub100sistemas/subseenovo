@@ -27,6 +27,7 @@
 
         <div class="relative w-full tablet-lg:w-[48%]">
           <NuxtImg
+            format="avif"
             src="/images/eventos/eventos_vivo.png"
             :width="2056"
             :height="700"

@@ -34,6 +34,7 @@
 
         <div class="w-full tablet-lg:w-[55.36%]">
           <NuxtImg
+            format="avif"
             src="/images/eventos/banner-eventos.png"
             :width="1550"
             :height="976"
@@ -41,6 +42,7 @@
             alt="Nova versão 1.0.19 do CRM SUBSEE on — evento ao vivo em 29 out 2026 às 09h"
             class="h-auto w-full rounded-[20px]"
             loading="eager"
+            fetchpriority="high"
           />
         </div>
 

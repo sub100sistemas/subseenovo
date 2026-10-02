@@ -58,6 +58,7 @@ const descriptionClass =
           class="absolute top-[5.969cqw] left-[31.302cqw] h-[62.604cqw] max-mobile-lg:left-[50cqw] w-[47.751cqw] overflow-hidden [transform:scaleX(-1)]"
         >
           <NuxtImg
+            format="avif"
             src="/images/assista-videos/hero-photo.png"
             :width="1536"
             :height="1024"

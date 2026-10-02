@@ -54,9 +54,9 @@ const badges = [
 <template>
   <section id="precos" class="section-py pb-0 relative overflow-hidden">
     <div class="pointer-events-none absolute inset-0 hidden desktop-compact:block" aria-hidden="true">
-      <img src="/icons/hero-pricing-bg-sol.svg" alt="" class="absolute left-[1.35%] top-[16.46%] w-[10.91%]" />
-      <img src="/icons/hero-pricing-bg-blob.svg" alt="" class="absolute left-[4.34%] top-[36.69%] w-[31.6%]" />
-      <img src="/icons/hero-pricing-bg-trator.svg" alt="" class="absolute left-[97.76%] top-[60.36%] w-[18.14%]" />
+      <img loading="lazy" decoding="async" src="/icons/hero-pricing-bg-sol.svg" alt="" class="absolute left-[1.35%] top-[16.46%] w-[10.91%]" />
+      <img loading="lazy" decoding="async" src="/icons/hero-pricing-bg-blob.svg" alt="" class="absolute left-[4.34%] top-[36.69%] w-[31.6%]" />
+      <img loading="lazy" decoding="async" src="/icons/hero-pricing-bg-trator.svg" alt="" class="absolute left-[97.76%] top-[60.36%] w-[18.14%]" />
     </div>
 
     <div class="container-page relative">
@@ -72,7 +72,8 @@ const badges = [
           </div>
 
           <div class="relative order-3 mt-10 w-full max-w-[416px] self-center desktop-full:mt-16 desktop-full:self-auto">
-            <NuxtImg
+            <NuxtImg decoding="async"
+              format="avif"
               src="/images/pricing/pessoa-apontando.png"
               :width="886"
               :height="1068"
@@ -89,7 +90,7 @@ const badges = [
               :style="{ left: badge.left + '%', top: badge.top + '%', filter: badge.shadow }"
             >
               <div class="absolute inset-[22.5%_24.5%]">
-                <img :src="badge.icon" :alt="badge.alt" class="block size-full max-w-none" />
+                <img loading="lazy" decoding="async" :src="badge.icon" :alt="badge.alt" class="block size-full max-w-none" />
               </div>
             </div>
           </div>
@@ -116,7 +117,7 @@ const badges = [
                 :key="featIndex"
                 class="flex items-start gap-[10px] text-base leading-[27.84px] text-ink"
               >
-                <img
+                <img loading="lazy" decoding="async"
                   src="/icons/seta-lista-verde.svg"
                   width="10"
                   height="15"

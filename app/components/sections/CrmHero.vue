@@ -54,6 +54,7 @@ withDefaults(
 
         <div class="absolute left-[31.07%] top-0 w-[47.57%] h-full overflow-hidden">
           <NuxtImg
+            format="avif"
             src="/images/modulos-crm/hero-foto-mulher-notebook.png"
             :width="343"
             :height="456"
@@ -64,8 +65,12 @@ withDefaults(
           />
         </div>
 
-        <img
+        <NuxtImg
+          format="avif"
           src="/images/modulos-crm/card_arrow.png"
+          :width="1440"
+          :height="816"
+          sizes="100vw tablet-lg:50vw desktop-full:720px"
           alt=""
           aria-hidden="true"
           class="pointer-events-none absolute z-[1] left-0 top-0 w-full h-auto"

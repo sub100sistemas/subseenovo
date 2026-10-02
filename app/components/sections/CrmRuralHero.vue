@@ -26,6 +26,7 @@ const moduleIcons: HeroModuleIcon[] = [
     <template #visual>
       <div class="absolute left-[29.26%] top-0 w-[55.21%] h-full overflow-hidden">
         <NuxtImg
+          format="avif"
           src="/images/modulos-crm-rural/hero-composicao-mapa-propriedade.png"
           :width="820"
           :height="888"
@@ -36,8 +37,12 @@ const moduleIcons: HeroModuleIcon[] = [
         />
       </div>
 
-      <img
+      <NuxtImg
+        format="avif"
         src="/images/modulos-crm-rural/card_arrow.png"
+        :width="1440"
+        :height="816"
+        sizes="100vw tablet-lg:50vw desktop-full:720px"
         alt=""
         aria-hidden="true"
         class="pointer-events-none absolute z-[1] left-0 top-0 w-full h-auto"

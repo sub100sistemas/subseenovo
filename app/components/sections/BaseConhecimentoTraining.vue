@@ -48,6 +48,7 @@ const trainingFeatures: TrainingFeatureItem[] = [
 
     <template #image>
       <NuxtImg
+        format="avif"
         src="/images/modulos-base-de-conhecimento/portfolio-telas-base-conhecimento.png"
         :width="1298"
         :height="1182"

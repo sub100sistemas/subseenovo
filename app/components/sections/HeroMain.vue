@@ -142,7 +142,7 @@ const propertyIcons = [
         <div class="relative w-full mt-8 md:mt-8 lg:mt-0">
           <NuxtPicture
             src="/images/hero-main/celulares-subsee-composicao.png"
-            :img-attrs="{ class: 'block w-full h-auto', fetchpriority: 'high' }"
+            :img-attrs="{ class: 'block w-full h-auto' }"
             sizes="100vw mobile-lg:490px tablet:650px tablet-lg:400px desktop-compact:460px desktop:660px"
             :width="711"
             :height="794"

@@ -26,14 +26,14 @@ const categories = [
 <template>
   <section id="site-hotsites" class="section-py relative overflow-hidden">
     <div class="pointer-events-none absolute inset-x-0 top-0 h-[206px]" aria-hidden="true">
-      <img
+      <img loading="lazy" decoding="async"
         src="/icons/hero-website-onda-decorativa-branca.svg"
         width="1920"
         height="174"
         alt=""
         class="absolute -left-px top-[11px] w-[1920px] h-[173.455px] rotate-180 -scale-y-100 max-w-none"
       />
-      <img
+      <img loading="lazy" decoding="async"
         src="/icons/hero-website-onda-decorativa-azul.svg"
         width="1920"
         height="191"
@@ -75,7 +75,7 @@ const categories = [
           >
             <div v-for="cat in categories" :key="cat.alt" class="flex flex-col items-center gap-[10px] text-center">
               <div class="flex size-[64px] shrink-0 items-center justify-center rounded-full border border-[#CCCCCC] bg-white/35 tablet:size-[130px]">
-                <NuxtImg :src="cat.icon" format="webp" width="82" height="82" :alt="cat.alt" class="size-10 tablet:size-[82px]" />
+                <NuxtImg loading="lazy" decoding="async" :src="cat.icon" format="webp" width="82" height="82" :alt="cat.alt" class="size-10 tablet:size-[82px]" />
               </div>
               <p class="text-[12px] leading-[1.15] text-[#4F4F4F] tablet:text-[19px] tablet:leading-[1.2]">
                 <template v-for="(line, i) in cat.label" :key="i">

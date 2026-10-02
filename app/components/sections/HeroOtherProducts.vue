@@ -41,14 +41,14 @@ const products: Product[] = [
 <template>
   <section id="outros-produtos" class="section-py relative overflow-hidden">
     <div class="pointer-events-none absolute inset-x-0 top-0 h-[206px]" aria-hidden="true">
-      <img
+      <img loading="lazy" decoding="async"
         src="/icons/hero-outros-produtos-onda-decorativa-branca.svg"
         width="1920"
         height="175"
         alt=""
         class="absolute -left-px top-[21.19px] w-[1920.36px] h-[175.453px] rotate-180 max-w-none"
       />
-      <img
+      <img loading="lazy" decoding="async"
         src="/icons/hero-website-onda-decorativa-azul.svg"
         width="1920"
         height="191"
@@ -74,7 +74,7 @@ const products: Product[] = [
           :key="product.badge"
           class="flex flex-col items-center gap-8 border border-[#dee2e6] p-9 text-center desktop-full:h-[330px] desktop-full:w-[610px] desktop-full:flex-row desktop-full:items-center desktop-full:p-9 desktop-full:text-left"
         >
-          <img
+          <img loading="lazy" decoding="async"
             :src="product.logo"
             :width="product.logoWidth"
             :height="product.logoHeight"

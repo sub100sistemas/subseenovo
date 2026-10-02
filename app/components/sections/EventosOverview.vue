@@ -34,6 +34,7 @@
 
         <div class="relative aspect-[638/471] overflow-hidden rounded-[20px] tablet-lg:absolute tablet-lg:top-[3.7%] tablet-lg:left-[2.7%] tablet-lg:aspect-auto tablet-lg:h-[91.8%] tablet-lg:w-[94.6%]">
           <NuxtImg
+            format="avif"
             src="/images/eventos/eventos-overview-foto.png"
             :width="637"
             :height="471"

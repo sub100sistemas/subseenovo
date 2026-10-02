@@ -57,6 +57,7 @@ const features: PortfolioFeature[] = [
 
     <template #image>
       <NuxtImg
+        format="avif"
         src="/images/modulos-site-urbano/listings-mockup-tablet.png"
         :width="1344"
         :height="1455"

@@ -58,6 +58,7 @@ const replayCards: ReplayCard[] = [
           >
             <div class="relative aspect-[399/267]">
               <NuxtImg
+                format="avif"
                 :src="card.thumbnail"
                 :width="399"
                 :height="267"

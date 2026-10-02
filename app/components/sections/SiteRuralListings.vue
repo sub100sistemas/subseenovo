@@ -62,6 +62,7 @@ const features: PortfolioFeature[] = [
 
     <template #image>
       <NuxtImg
+        format="avif"
         src="/images/modulos-site-rural/listings-mockup-telas.png"
         :width="1344"
         :height="1415"

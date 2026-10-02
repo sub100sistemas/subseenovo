@@ -50,6 +50,7 @@ const modalOpen = ref(false)
         @click="modalOpen = true"
       >
         <NuxtImg
+          format="avif"
           src="/images/assista-videos/featured-thumb.png"
           :width="1672"
           :height="941"

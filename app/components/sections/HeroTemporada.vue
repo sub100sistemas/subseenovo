@@ -53,7 +53,7 @@ const featureItems = [
 
           <div class="mt-4 flex items-center gap-2">
             <h3 class="text-[20px] leading-[1.125] font-semibold text-ink">Principais funcionalidades:</h3>
-            <img
+            <img loading="lazy" decoding="async"
               src="/icons/icone-h3-funcionalidades-temporada.svg"
               width="28"
               height="30"

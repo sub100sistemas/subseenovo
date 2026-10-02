@@ -25,6 +25,7 @@ const attributes: Attribute[] = [
       <div class="flex flex-col items-center gap-10 tablet-lg:flex-row tablet-lg:items-center tablet-lg:justify-between">
         <div class="w-full tablet-lg:w-[27%]">
           <NuxtImg
+            format="avif"
             src="/images/modulos-site-rural/property-details-mockup-phone.png"
             :width="337"
             :height="633"

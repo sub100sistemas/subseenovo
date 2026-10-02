@@ -69,6 +69,7 @@ const items: FeatureItem[] = [
 
     <template #image>
       <NuxtImg
+        format="avif"
         src="/images/modulos-crm-rural/portfolio-mockup-telas-fazenda.png"
         :width="655"
         :height="640"

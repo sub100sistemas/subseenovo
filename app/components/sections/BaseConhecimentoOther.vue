@@ -31,6 +31,7 @@
 
         <div class="flex w-full items-center justify-center px-6 pb-10 tablet-lg:w-[50.5%] tablet-lg:px-10 tablet-lg:py-0">
           <NuxtImg
+            format="avif"
             src="/images/modulos-base-de-conhecimento/devices-composition.png"
             :width="1552"
             :height="960"

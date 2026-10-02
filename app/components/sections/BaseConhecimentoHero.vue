@@ -24,6 +24,7 @@ const moduleIcons: HeroModuleIcon[] = [
     <template #visual>
       <div class="absolute left-[31.07%] top-0 h-full w-[47.57%] overflow-hidden">
         <NuxtImg
+          format="avif"
           src="/images/modulos-base-de-conhecimento/hero-visual.png"
           :width="346"
           :height="457"
@@ -31,11 +32,16 @@ const moduleIcons: HeroModuleIcon[] = [
           alt="Profissional sorridente segurando um tablet, ao lado de cartões destacando acesso online a tutoriais e equipe treinada"
           class="h-full w-full object-cover"
           loading="eager"
+          fetchpriority="high"
         />
       </div>
 
-      <img
+      <NuxtImg
+        format="avif"
         src="/images/modulos-base-de-conhecimento/card_arrow.png"
+        :width="1440"
+        :height="816"
+        sizes="100vw tablet-lg:50vw desktop-full:720px"
         alt=""
         aria-hidden="true"
         class="pointer-events-none absolute z-[1] left-0 top-0 h-auto w-full"
