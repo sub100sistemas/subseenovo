@@ -12,16 +12,16 @@ useSeoMeta({
 <template>
   <main>
     <HeroMain />
-    <HeroUrbano />
-    <HeroRural />
-    <HeroTemporada />
-    <HeroWebsite />
-    <HeroCrm />
-    <HeroIntegrations />
-    <HeroTestimonials />
-    <HeroFaq />
-    <HeroPricing />
-    <HeroBlog />
-    <HeroOtherProducts />
+    <LazyHeroUrbano hydrate-on-visible />
+    <LazyHeroRural hydrate-on-visible />
+    <LazyHeroTemporada hydrate-on-visible />
+    <LazyHeroWebsite hydrate-on-visible />
+    <LazyHeroCrm hydrate-on-visible />
+    <LazyHeroIntegrations hydrate-on-visible />
+    <LazyHeroTestimonials hydrate-on-visible />
+    <LazyHeroFaq hydrate-on-visible />
+    <LazyHeroPricing hydrate-on-visible />
+    <LazyHeroBlog hydrate-on-visible />
+    <LazyHeroOtherProducts hydrate-on-visible />
   </main>
 </template>

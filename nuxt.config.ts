@@ -51,6 +51,14 @@ export default defineNuxtConfig({
     }
   },
 
+  hooks: {
+    'build:manifest': (manifest) => {
+      for (const chunk of Object.values(manifest)) {
+        chunk.prefetch = false
+      }
+    }
+  },
+
   vite: {
     plugins: [
       tailwindcss()
