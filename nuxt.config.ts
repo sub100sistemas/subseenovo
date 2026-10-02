@@ -19,25 +19,10 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: { lang: 'pt-BR' },
       link: [
-        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
-        {
-          rel: 'preload',
-          as: 'style',
-          href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Outfit:wght@300;600&family=Nunito+Sans:wght@800&display=swap'
-        },
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Outfit:wght@300;600&family=Nunito+Sans:wght@800&display=swap',
-          media: 'print',
-          onload: "this.media='all'"
-        }
-      ],
-      noscript: [
-        {
-          innerHTML:
-            '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Outfit:wght@300;600&family=Nunito+Sans:wght@800&display=swap">'
-        }
+        { rel: 'preload', as: 'font', type: 'font/woff2', href: '/fonts/poppins-400-latin.woff2', crossorigin: 'anonymous' },
+        { rel: 'preload', as: 'font', type: 'font/woff2', href: '/fonts/poppins-500-latin.woff2', crossorigin: 'anonymous' },
+        { rel: 'preload', as: 'font', type: 'font/woff2', href: '/fonts/poppins-600-latin.woff2', crossorigin: 'anonymous' },
+        { rel: 'preload', as: 'font', type: 'font/woff2', href: '/fonts/poppins-700-latin.woff2', crossorigin: 'anonymous' }
       ]
     }
   },
