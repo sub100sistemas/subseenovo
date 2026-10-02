@@ -19,8 +19,8 @@ const mockupImgAttrs = {
     :mockup-img-attrs="mockupImgAttrs"
   >
     <template #title>
-      Sites desenvolvidos para atender às
-      <span class="text-brand">necessidades da sua imobiliária rural</span>
+      Sites desenvolvidos para atender às<br class="hidden tablet-lg:block" />
+      necessidades da <span class="text-brand">sua imobiliária rural</span>
     </template>
 
     <template #description>

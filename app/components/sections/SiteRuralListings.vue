@@ -17,25 +17,25 @@ const features: PortfolioFeature[] = [
       'Descritivo técnico completo, com campos específicos para as características de imóveis rurais'
   },
   {
-    icon: '/icons/site-rural-listings-icone-hidrica.svg',
-    iconWidth: 33,
-    iconHeight: 37,
+    icon: '/icons/site-rural-listings-icone-mapas.svg',
+    iconWidth: 34,
+    iconHeight: 36,
     title: 'Disponibilidade hídrica e logística',
     description:
       'Registro de disponibilidade hídrica, logística de acesso à propriedade e capacidade de armazenamento'
   },
   {
-    icon: '/icons/site-rural-listings-icone-documentos.svg',
-    iconWidth: 34,
-    iconHeight: 34,
+    icon: '/icons/site-rural-listings-icone-hidrica.svg',
+    iconWidth: 33,
+    iconHeight: 37,
     title: 'Documentos de apoio',
     description:
       'Disponibilização de links públicos com documentos de apoio no anúncio, como laudos técnicos, histórico de pluviometria e informações do CAR;'
   },
   {
-    icon: '/icons/site-rural-listings-icone-mapas.svg',
+    icon: '/icons/site-rural-listings-icone-documentos.svg',
     iconWidth: 34,
-    iconHeight: 36,
+    iconHeight: 34,
     title: 'Mapas interativos',
     description:
       'Integração com atributos georreferenciados em KML, com visualização interativa de informações e controle de camadas'
