@@ -1,10 +1,10 @@
 import routes from '#seo-routes'
-import { isProductionSite, normalizeSiteUrl } from '../../app/data/seo'
+import { isIndexableSite, normalizeSiteUrl } from '../../app/data/seo'
 
 export default defineEventHandler((event) => {
   const siteUrl = normalizeSiteUrl(String(useRuntimeConfig(event).public.siteUrl))
 
-  if (!isProductionSite(siteUrl)) {
+  if (!isIndexableSite(siteUrl)) {
     throw createError({ statusCode: 404, statusMessage: 'Not Found' })
   }
 

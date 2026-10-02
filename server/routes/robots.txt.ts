@@ -1,10 +1,10 @@
-import { isProductionSite, normalizeSiteUrl } from '../../app/data/seo'
+import { isIndexableSite, normalizeSiteUrl } from '../../app/data/seo'
 
 export default defineEventHandler((event) => {
   const siteUrl = normalizeSiteUrl(String(useRuntimeConfig(event).public.siteUrl))
   setHeader(event, 'content-type', 'text/plain; charset=utf-8')
 
-  if (!isProductionSite(siteUrl)) {
+  if (!isIndexableSite(siteUrl)) {
     return 'User-agent: *\nDisallow: /\n'
   }
 

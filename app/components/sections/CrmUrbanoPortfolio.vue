@@ -12,7 +12,7 @@ const features: PortfolioFeature[] = [
     icon: '/icons/crm-urbano-portfolio-icone-organizacao.svg',
     iconWidth: 33,
     iconHeight: 42.471,
-    title: 'Organização do portfólio2222',
+    title: 'Organização do portfólio',
     description:
       'Acompanhe todo o portfólio de venda, locação e lançamento, com indicadores de negócio sempre atualizados, como VGV, propostas e leads'
   },

@@ -29,7 +29,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      siteUrl: 'http://localhost:3000',
+      siteUrl: process.env.CF_PAGES === '1' && process.env.CF_PAGES_BRANCH === 'master' ? 'https://subseenovo.pages.dev' : 'http://localhost:3000',
       formsEndpoint: 'https://forms.sub100.com.br/sub100sistemas/formularios.php',
       recaptchaSiteKey: ''
     }

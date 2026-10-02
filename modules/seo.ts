@@ -1,7 +1,7 @@
 import { readdirSync } from 'node:fs'
 import { join, relative, sep } from 'node:path'
 import { defineNuxtModule, useLogger } from 'nuxt/kit'
-import { isNoindexPath, isProductionSite, normalizeSiteUrl, withTrailingSlash } from '../app/data/seo'
+import { isIndexableSite, isNoindexPath, normalizeSiteUrl, withTrailingSlash } from '../app/data/seo'
 
 const collectPageFiles = (dir: string): string[] =>
   readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
@@ -20,7 +20,7 @@ export default defineNuxtModule({
   setup(_options, nuxt) {
     const logger = useLogger('seo')
     const siteUrl = normalizeSiteUrl(process.env.NUXT_PUBLIC_SITE_URL ?? String(nuxt.options.runtimeConfig.public.siteUrl))
-    const production = isProductionSite(siteUrl)
+    const production = isIndexableSite(siteUrl)
 
     const pagesDir = join(nuxt.options.srcDir, nuxt.options.dir.pages)
     const sitemapRoutes = collectPageFiles(pagesDir)
