@@ -10,7 +10,7 @@ A feature não tem `design.md` (decisão registrada no `tasks.md`: "Design: skip
 
 ## Veredito: **PASS with ressalvas**
 
-A feature está funcional, responsiva, sem overflow horizontal após `baae9f8`, com build aprovado e com os ícones objetivos alinhados ao Figma. Os 12 critérios de aceite da SPEC estão atendidos.
+A feature está funcional, responsiva, sem overflow horizontal após `baae9f8`, com build aprovado e com os ícones objetivos alinhados ao Figma. Os 16 critérios de aceite da SPEC estão atendidos.
 
 **Não é PASS limpo:** há diferenças visuais reais em relação ao Figma (Key Board, Pricing Rules, paleta do Calendar), uma diferença de baixa severidade no tamanho dos ícones do Financial Transfer e um corte de abas no mobile. Nenhuma é falha funcional e nenhuma foi corrigida nesta validação.
 
