@@ -47,7 +47,7 @@ const advantageCards: AdvantageCard[] = [
         </p>
       </div>
 
-      <div class="mt-[58px] flex flex-col items-center gap-[70px] tablet-lg:flex-row tablet-lg:items-start tablet-lg:justify-center tablet-lg:gap-[58px]">
+      <div class="mt-[58px] flex flex-col items-center gap-[70px] tablet-lg:flex-row tablet-lg:items-stretch tablet-lg:justify-center tablet-lg:gap-[58px]">
         <div v-for="card in advantageCards" :key="card.title" class="flex w-full max-w-[428px] flex-col items-center">
           <div
             class="z-10 -mb-[43px] flex size-[100px] shrink-0 items-center justify-center rounded-full border border-brand bg-white shadow-[0px_10px_20px_rgba(38,45,118,0.08)]"
@@ -55,7 +55,7 @@ const advantageCards: AdvantageCard[] = [
             <img :src="card.icon" :width="card.iconWidth" :height="card.iconHeight" alt="" aria-hidden="true" />
           </div>
           <div
-            class="flex w-full flex-col items-center gap-6 rounded-[20px] border border-brand bg-white px-6 pt-[57px] pb-8 text-center shadow-[0px_10px_20px_rgba(38,45,118,0.08)] tablet-lg:gap-9 tablet-lg:px-[43px] tablet-lg:pt-[77px] tablet-lg:pb-[49px]"
+            class="flex w-full flex-col items-center gap-6 rounded-[20px] tablet-lg:min-h-[432px] tablet-lg:flex-1 border border-brand bg-white px-6 pt-[57px] pb-8 text-center shadow-[0px_10px_20px_rgba(38,45,118,0.08)] tablet-lg:gap-9 tablet-lg:px-[43px] tablet-lg:pt-[77px] tablet-lg:pb-[49px]"
           >
             <h3 class="text-xl leading-[1.4] font-medium text-brand tablet-lg:text-[28px]">{{ card.title }}</h3>
             <p class="text-base leading-[1.8] text-[#696984]" :class="{ 'font-bold': card.descriptionBold }">{{ card.description }}</p>
