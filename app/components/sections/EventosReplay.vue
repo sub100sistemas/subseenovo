@@ -79,7 +79,7 @@ const replayCards: ReplayCard[] = [
               </div>
               <div
                 v-if="card.versionBadge"
-                class="absolute top-[89px] left-0 flex w-full items-center justify-center"
+                class="absolute top-[33.3%] left-[38.1%] flex"
               >
                 <span class="rounded-[4px] bg-[#fdfdfe] px-3 py-1 text-[20px] leading-none font-bold tracking-[-0.28px] text-[#2764f2]">
                   {{ card.versionBadge }}
@@ -107,7 +107,7 @@ const replayCards: ReplayCard[] = [
           href="https://app.subsee.com.br/treinamentos/eventos-online?page=1&order=default"
           target="_blank"
           rel="noopener"
-          class="flex h-[56px] w-[349px] items-center justify-center gap-2 rounded-[12px] bg-brand text-[18px] text-white"
+          class="flex h-[56px] w-full max-w-[349px] items-center justify-center gap-2 rounded-[12px] bg-brand text-[18px] text-white"
         >
           Ver mais vídeos no App SUBSEE
           <IconArrowRight class="size-5 shrink-0" />
