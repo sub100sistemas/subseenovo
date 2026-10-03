@@ -11,6 +11,8 @@ type FieldErrors = Partial<Record<FormErrorKey, string>>
 
 const requiredFields: FormFieldKey[] = ['empresa', 'contato', 'phone', 'email', 'cidade', 'estado']
 
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
 export function useLeadForm(config: FormPageConfig) {
   const runtimeConfig = useRuntimeConfig()
   const recaptcha = useRecaptchaV3()
@@ -38,9 +40,13 @@ export function useLeadForm(config: FormPageConfig) {
   function collectErrors(): FieldErrors {
     const found: FieldErrors = {}
     for (const key of requiredFields) {
-      if (!fields[key].trim()) {
+      const value = key === 'phone' ? fields.phone.replace(/\D/g, '') : fields[key].trim()
+      if (!value) {
         found[key] = formProvisionalMessages.required
       }
+    }
+    if (!found.email && !emailPattern.test(fields.email.trim())) {
+      found.email = formProvisionalMessages.invalidEmail
     }
     if (config.message?.required && !fields.message.trim()) {
       found.message = formProvisionalMessages.required

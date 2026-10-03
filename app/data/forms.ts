@@ -2,6 +2,8 @@ import type { FormChoiceOption, FormStateOption, FormTrustItem } from '~/types/f
 
 export const formBadgeLabel = 'Seus dados estão seguros'
 
+export const formPhoneMasks = ['(##) ####-####', '(##) #####-####']
+
 export const formTrustItems: FormTrustItem[] = [
   {
     icon: '/icons/form-shield-check.svg',
@@ -69,6 +71,7 @@ export const formStateOptions: FormStateOption[] = [
 
 export const formProvisionalMessages = {
   required: 'Campo obrigatório.',
+  invalidEmail: 'Informe um e-mail válido.',
   contactPreference: 'Selecione ao menos uma preferência de contato.',
   accepted: 'É necessário aceitar os termos para continuar.',
   success: 'Formulário enviado.',

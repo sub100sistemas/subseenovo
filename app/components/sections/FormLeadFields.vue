@@ -2,6 +2,7 @@
 import {
   formAreaOptions,
   formContactOptions,
+  formPhoneMasks,
   formProvisionalMessages,
   formStateOptions,
   formTermsLinks
@@ -17,6 +18,7 @@ interface FieldDefinition {
   type?: string
   inputmode?: 'text' | 'tel' | 'email' | 'url'
   autocomplete?: string
+  mask?: string[]
   fullWidth?: boolean
 }
 
@@ -60,7 +62,8 @@ const fieldDefinitions = computed<FieldDefinition[]>(() => {
       required: true,
       type: 'tel',
       inputmode: 'tel',
-      autocomplete: 'tel'
+      autocomplete: 'tel',
+      mask: formPhoneMasks
     },
     {
       key: 'email',
@@ -121,6 +124,7 @@ const fieldDefinitions = computed<FieldDefinition[]>(() => {
         :required="field.required"
         :inputmode="field.inputmode"
         :autocomplete="field.autocomplete"
+        :mask="field.mask"
         :options="field.kind === 'select' ? stateOptions : undefined"
         :error="errors[field.key]"
         :disabled="status === 'submitting'"

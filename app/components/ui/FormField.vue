@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { MaskInput } from 'maska'
+
 type FieldKind = 'text' | 'select' | 'textarea'
 
 interface FieldOption {
@@ -17,6 +19,7 @@ interface Props {
   options?: FieldOption[]
   autocomplete?: string
   inputmode?: 'text' | 'tel' | 'email' | 'url' | 'numeric'
+  mask?: string | string[]
   disabled?: boolean
   wrapperClass?: string
   labelClass?: string
@@ -34,6 +37,7 @@ const props = withDefaults(defineProps<Props>(), {
   options: () => [],
   autocomplete: undefined,
   inputmode: undefined,
+  mask: undefined,
   disabled: false,
   wrapperClass: 'flex min-w-0 flex-col gap-[6px]',
   labelClass: 'text-[13px] font-semibold text-[#0f172a]',
@@ -46,6 +50,17 @@ const model = defineModel<string>({ default: '' })
 
 const id = useId()
 const errorId = computed(() => `${id}-error`)
+
+const control = useTemplateRef<HTMLInputElement>('control')
+let maskInput: MaskInput | undefined
+
+onMounted(() => {
+  if (props.mask && control.value) {
+    maskInput = new MaskInput(control.value, { mask: props.mask })
+  }
+})
+
+onBeforeUnmount(() => maskInput?.destroy())
 
 const borderClass = computed(() => (props.error ? 'border-[#dc2626]' : 'border-[#e2e8f0]'))
 const wrapperKindClass = computed(() => (props.kind === 'textarea' ? 'pt-2' : ''))
@@ -107,6 +122,7 @@ const kindClass = computed(() => {
     <input
       v-else
       :id="id"
+      ref="control"
       v-model="model"
       :type="type"
       :name="name"
