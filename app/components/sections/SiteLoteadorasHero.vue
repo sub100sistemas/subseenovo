@@ -12,6 +12,7 @@ const moduleIcons: HeroModuleIcon[] = [
     <template #heading>
       Site para <br class="hidden tablet-lg:block" /><span class="text-brand">Loteadoras</span>
       <span
+        aria-hidden="true"
         class="ml-2 inline-flex h-[25px] items-center rounded-full bg-[#ea4335] px-3 align-middle text-[13px] font-medium text-white tablet-lg:text-[16px]"
       >
         breve
