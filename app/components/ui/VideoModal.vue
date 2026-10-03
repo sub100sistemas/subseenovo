@@ -58,6 +58,11 @@ const onKeydown = (event: KeyboardEvent) => {
   }
 }
 
+const keepFocusInside = (event: FocusEvent) => {
+  const target = event.target as Node | null
+  if (target && !dialogEl.value?.contains(target)) closeButton.value?.focus()
+}
+
 const lockScroll = () => {
   const scrollbar = window.innerWidth - document.documentElement.clientWidth
   document.body.style.overflow = 'hidden'
@@ -79,11 +84,13 @@ watch(
       previousFocus = document.activeElement as HTMLElement | null
       lockScroll()
       document.addEventListener('keydown', onKeydown)
+      document.addEventListener('focusin', keepFocusInside)
       await nextTick()
       closeButton.value?.focus()
       return
     }
     document.removeEventListener('keydown', onKeydown)
+    document.removeEventListener('focusin', keepFocusInside)
     unlockScroll()
     previousFocus?.focus()
     previousFocus = null
@@ -94,6 +101,7 @@ watch(
 onBeforeUnmount(() => {
   if (!import.meta.client) return
   document.removeEventListener('keydown', onKeydown)
+  document.removeEventListener('focusin', keepFocusInside)
   if (scrollLocked) unlockScroll()
 })
 </script>
@@ -157,7 +165,6 @@ onBeforeUnmount(() => {
                 :title="title"
                 class="size-full border-0"
                 allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
-                allowfullscreen
                 referrerpolicy="strict-origin-when-cross-origin"
               />
             </div>
