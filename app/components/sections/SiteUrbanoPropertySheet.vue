@@ -24,7 +24,7 @@ const attributes: Attribute[] = [
 </script>
 
 <template>
-  <section id="site-urbano-ficha-tecnica" class="section-py">
+  <section id="site-urbano-ficha-tecnica" class="section-py overflow-x-clip">
     <div class="container-page">
       <div class="flex flex-col items-center gap-10 tablet-lg:flex-row tablet-lg:items-center tablet-lg:justify-between">
         <div class="w-full tablet-lg:w-[28%]">

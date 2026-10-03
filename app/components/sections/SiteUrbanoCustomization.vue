@@ -78,10 +78,5 @@ const features: PortfolioFeature[] = [
         />
       </div>
     </template>
-
-    <template #summary>
-      Com ferramentas simples e intuitivas, ajuste textos, banners, imagens e seções do site
-      sem depender de agências ou equipes técnicas.
-    </template>
   </CrmPortfolio>
 </template>

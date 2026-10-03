@@ -47,7 +47,7 @@ const groups: PropertyType[][] = [[terreno, lazer], [lancamento], [residencial, 
 </script>
 
 <template>
-  <section id="site-urbano-tipos-de-imovel" class="section-py">
+  <section id="site-urbano-tipos-de-imovel" class="section-py overflow-x-clip">
     <div class="container-page">
       <div class="mx-auto max-w-[900px] text-center">
         <h2 class="leading-[1.2]">
