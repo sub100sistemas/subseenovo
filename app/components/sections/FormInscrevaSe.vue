@@ -3,6 +3,11 @@ import { formBadgeLabel, formTrustItems } from '~/data/forms'
 import type { FormBenefit, FormPageConfig } from '~/types/forms'
 
 const config: FormPageConfig = {
+  tipoMail: 'Eventos',
+  formSite: 'SUB100 Imobiliárias',
+  produto: 'SUBSEE – Eventos',
+  recaptchaAction: 'subsee_eventos',
+  thankYouPath: '/inscreva-se/obrigado/',
   ctaLabel: 'Quero me inscrever no evento',
   ctaClass: 'text-[16px] leading-[22px] font-normal tablet-lg:text-[20px]',
   message: {

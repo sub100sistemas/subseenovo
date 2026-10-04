@@ -30,8 +30,7 @@ export const formContactOptions: FormChoiceOption[] = [
 
 export const formAreaOptions: FormChoiceOption[] = [
   { value: 'urbana', label: 'Urbana', icon: '/icons/form-building.svg' },
-  { value: 'rural', label: 'Rural', icon: '/icons/form-leaf.svg' },
-  { value: 'temporada', label: 'Temporada', icon: '/icons/form-sun.svg' }
+  { value: 'rural', label: 'Rural', icon: '/icons/form-leaf.svg' }
 ]
 
 export const formTermsLinks = {

@@ -1,3 +1,3 @@
-export function isSuccessResponse(_response: unknown): boolean {
-  return false
+export function isSuccessResponse(response: unknown): boolean {
+  return typeof response === 'object' && response !== null && (response as { success?: unknown }).success === true
 }

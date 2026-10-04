@@ -3,6 +3,11 @@ import { formBadgeLabel, formTrustItems } from '~/data/forms'
 import type { FormBenefit, FormPageConfig } from '~/types/forms'
 
 const config: FormPageConfig = {
+  tipoMail: 'Solicite uma demonstração',
+  formSite: 'SUB100 Imobiliárias',
+  produto: 'SUBSEE – Demonstração',
+  recaptchaAction: 'subsee_demo',
+  thankYouPath: '/agendar-demonstracao/obrigado/',
   ctaLabel: 'Quero agendar uma demonstração',
   ctaClass: 'text-[16px] leading-[22px] font-normal tablet-lg:text-[20px]',
   message: {

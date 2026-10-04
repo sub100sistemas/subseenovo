@@ -1,5 +1,5 @@
 <script setup lang="ts">
-type Variant = 'primary' | 'outline' | 'outline-teal' | 'small'
+type Variant = 'primary' | 'outline' | 'outline-teal' | 'small' | 'success'
 
 const props = withDefaults(
   defineProps<{
@@ -14,7 +14,7 @@ const props = withDefaults(
   }
 )
 
-const showIcon = computed(() => props.icon ?? props.variant === 'primary')
+const showIcon = computed(() => props.icon ?? (props.variant === 'primary' || props.variant === 'success'))
 
 const NuxtLink = resolveComponent('NuxtLink')
 
@@ -30,7 +30,9 @@ const classesByVariant: Record<Variant, string> = {
   'outline-teal':
     'min-h-14 rounded-xl border border-teal px-6 py-3 text-teal text-base font-medium hover:bg-teal/5',
   small:
-    'min-h-11 tablet:min-h-13 rounded-[5px] border border-brand px-5 py-2 text-brand text-sm tablet:text-base font-bold hover:bg-brand/5'
+    'min-h-11 tablet:min-h-13 rounded-[5px] border border-brand px-5 py-2 text-brand text-sm tablet:text-base font-bold hover:bg-brand/5',
+  success:
+    'h-[52px] w-full max-w-[406px] gap-[10px]! rounded-xl bg-teal-link px-4 text-base leading-[22px] font-normal text-white drop-shadow-[0px_6px_10px_rgba(93,95,239,0.25)] hover:opacity-95 tablet-lg:text-[20px]'
 }
 </script>
 
@@ -42,6 +44,7 @@ const classesByVariant: Record<Variant, string> = {
     :class="classesByVariant[variant]"
   >
     <slot />
-    <IconArrowRight v-if="showIcon" class="size-5 shrink-0" />
+    <img v-if="showIcon && variant === 'success'" src="/icons/form-arrow-right.svg" alt="" width="18" height="18" class="block shrink-0" />
+    <IconArrowRight v-else-if="showIcon" class="size-5 shrink-0" />
   </component>
 </template>

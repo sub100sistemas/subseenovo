@@ -3,7 +3,12 @@ import { formBadgeLabel, formTrustItems } from '~/data/forms'
 import type { FormBenefit, FormPageConfig } from '~/types/forms'
 
 const config: FormPageConfig = {
-  ctaLabel: 'Começar teste grátis'
+  tipoMail: 'Solicite um teste grátis por 30 dias',
+  formSite: 'SUB100 Imobiliárias',
+  produto: 'SUBSEE – Teste Grátis',
+  ctaLabel: 'Começar teste grátis',
+  recaptchaAction: 'subsee_teste',
+  thankYouPath: '/testar-gratis/obrigado/'
 }
 
 const benefits: FormBenefit[] = [

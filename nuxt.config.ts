@@ -50,7 +50,7 @@ export default defineNuxtConfig({
           ? 'https://subsee.com.br'
           : 'http://localhost:3000',
       formsEndpoint: 'https://forms.sub100.com.br/sub100sistemas/formularios.php',
-      recaptchaSiteKey: ''
+      recaptchaSiteKey: runtimeEnv.NUXT_PUBLIC_RECAPTCHA_SITE_KEY
     }
   },
 

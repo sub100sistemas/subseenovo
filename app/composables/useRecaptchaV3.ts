@@ -9,9 +9,10 @@ declare global {
   }
 }
 
+let loading: Promise<void> | null = null
+
 export function useRecaptchaV3() {
   const siteKey = String(useRuntimeConfig().public.recaptchaSiteKey ?? '')
-  let loading: Promise<void> | null = null
 
   function load(): Promise<void> {
     if (!import.meta.client) {

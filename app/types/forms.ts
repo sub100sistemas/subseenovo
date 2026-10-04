@@ -10,7 +10,7 @@ export type FormFieldKey =
 
 export type ContactPreference = 'ligacao' | 'email' | 'whatsapp'
 
-export type AreaOfActivity = 'urbana' | 'rural' | 'temporada'
+export type AreaOfActivity = 'urbana' | 'rural'
 
 export type FormErrorKey = FormFieldKey | 'contactPreference' | 'area' | 'accepted'
 
@@ -48,6 +48,8 @@ export interface FormMessageConfig {
 export interface FormPageConfig {
   tipoMail?: string
   formSite?: string
+  produto?: string
+  thankYouPath?: string
   recaptchaAction?: string
   ctaLabel: string
   ctaClass?: string

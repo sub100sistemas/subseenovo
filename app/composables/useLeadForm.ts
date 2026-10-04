@@ -103,6 +103,9 @@ export function useLeadForm(config: FormPageConfig) {
     if (config.formSite) {
       payload.formSite = config.formSite
     }
+    if (config.produto) {
+      payload.produto = config.produto
+    }
     if (config.message) {
       payload.message = fields.message.trim()
     }
@@ -127,7 +130,11 @@ export function useLeadForm(config: FormPageConfig) {
       if (!isSuccessResponse(response)) {
         throw new Error('submit-rejected')
       }
-      status.value = 'success'
+      if (config.thankYouPath) {
+        await navigateTo(config.thankYouPath)
+      } else {
+        status.value = 'success'
+      }
     } catch {
       submitError.value = formProvisionalMessages.failure
       status.value = 'failure'

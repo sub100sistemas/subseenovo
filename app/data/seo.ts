@@ -1,6 +1,11 @@
 export const productionSiteUrl = 'https://subsee.com.br'
 
-export const noindexPaths = ['/inscreva-se/']
+export const noindexPaths = [
+  '/inscreva-se/',
+  '/testar-gratis/obrigado/',
+  '/agendar-demonstracao/obrigado/',
+  '/inscreva-se/obrigado/'
+]
 
 export const normalizeSiteUrl = (url: string) => url.trim().replace(/\/+$/, '')
 
