@@ -11,18 +11,10 @@ export interface SchemaFaqEntry {
   answer: string
 }
 
-export interface SchemaPlanPrice {
-  name: string
-  monthly: number
-  annual: number
-}
-
 const organizationName = 'SUB100 Sistemas'
 const organizationAlternateName = 'SUBSEE'
 const siteName = 'SUBSEE'
-const productAlternateName = 'SUBSEE on'
 const language = 'pt-BR'
-const currency = 'BRL'
 
 const organizationSameAs = [
   'https://www.facebook.com/sub100brasil',
@@ -46,9 +38,6 @@ const organizationLogoPath = '/icons/logo-sub100-imobiliarias.svg'
 
 const organizationId = (siteUrl: string) => `${siteUrl}/#organization`
 const websiteId = (siteUrl: string) => `${siteUrl}/#website`
-const softwareId = (siteUrl: string) => `${siteUrl}/#software`
-
-export const parseBrlAmount = (text: string) => Number(text.replace(/[^\d,]/g, '').replace(',', '.'))
 
 export const buildOrganization = ({ siteUrl }: SchemaContext): SchemaNode => ({
   '@type': 'Organization',
@@ -79,38 +68,6 @@ export const buildWebPage = (context: SchemaContext, name: string, description: 
   description,
   inLanguage: language,
   isPartOf: { '@id': websiteId(context.siteUrl) }
-})
-
-const buildPlanOffers = (context: SchemaContext, plans: SchemaPlanPrice[]): SchemaNode[] =>
-  plans.flatMap((plan) => [
-    { label: 'mensal', price: plan.monthly, description: 'Valor por mês, mais opcionais' },
-    { label: 'anual', price: plan.annual, description: 'Valor por mês no plano anual, mais opcionais' }
-  ].map((option) => ({
-    '@type': 'Offer',
-    name: `Plano ${plan.name} ${option.label}`,
-    description: option.description,
-    url: context.url,
-    price: option.price,
-    priceCurrency: currency,
-    priceSpecification: {
-      '@type': 'UnitPriceSpecification',
-      price: option.price,
-      priceCurrency: currency,
-      unitCode: 'MON'
-    }
-  })))
-
-export const buildSoftwareApplication = (context: SchemaContext, plans?: SchemaPlanPrice[]): SchemaNode => ({
-  '@type': 'SoftwareApplication',
-  '@id': softwareId(context.siteUrl),
-  name: siteName,
-  alternateName: productAlternateName,
-  url: `${context.siteUrl}/`,
-  applicationCategory: 'BusinessApplication',
-  operatingSystem: 'Web',
-  inLanguage: language,
-  publisher: { '@id': organizationId(context.siteUrl) },
-  ...(plans?.length ? { offers: buildPlanOffers(context, plans) } : {})
 })
 
 export const buildFaqPage = (context: SchemaContext, faqs: SchemaFaqEntry[]): SchemaNode | undefined =>
