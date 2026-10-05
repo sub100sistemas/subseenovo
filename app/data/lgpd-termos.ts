@@ -136,8 +136,11 @@ export const lgpdTermosSections: LegalSection[] = [
           '(IV) programar e receber alerta de interesses por imóveis específicos;',
           '(V) solicitar que algum anunciante procure um imóvel específico que não existe no portal;',
           '(VI) acessar informações sobre seus imóveis;',
-          '(VII) enviar um imóvel para ser divulgado por algum anunciante.',
-          '',
+          '(VII) enviar um imóvel para ser divulgado por algum anunciante.'
+        ]
+      },
+      {
+        lines: [
           'O anunciante deverá se cadastrar nos seguintes casos:',
           '(I) possuir interesse na divulgação de imóveis para Lançamentos, Venda, Locação e Temporada;',
           '(II) usar ferramentas do site para intermediação com o usuário.',
