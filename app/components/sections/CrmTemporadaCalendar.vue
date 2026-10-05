@@ -34,7 +34,7 @@ const legends = [
             <div class="flex items-start gap-4">
               <img
                 src="/icons/crm-temporada-calendar-icone-gestao.svg"
-                alt=""
+                alt="Ícone de gestão de reservas" title="Ícone de gestão de reservas"
                 aria-hidden="true"
                 class="mt-0.5 size-[34px] shrink-0"
               />
@@ -48,7 +48,7 @@ const legends = [
             <div class="flex items-start gap-4">
               <img
                 src="/icons/crm-temporada-calendar-icone-status.svg"
-                alt=""
+                alt="Ícone de status da reserva" title="Ícone de status da reserva"
                 aria-hidden="true"
                 class="mt-0.5 size-[34px] shrink-0"
               />
@@ -62,11 +62,11 @@ const legends = [
           </div>
 
           <NuxtLink
-            to="/testar-gratis/"
+            to="/testar-gratis/" :title="titleForLink('/testar-gratis/')" :aria-label="titleForLink('/testar-gratis/')"
             class="inline-flex h-[56px] w-[297px] items-center justify-center gap-3 rounded-[12px] bg-brand text-[16px] font-semibold text-white"
           >
             Testar grátis por 30 dias
-            <img src="/icons/crm-temporada-cta-arrow.svg" alt="" aria-hidden="true" class="size-5" />
+            <img src="/icons/crm-temporada-cta-arrow.svg" alt="Seta do botão" title="Seta do botão" aria-hidden="true" class="size-5" />
           </NuxtLink>
         </div>
 

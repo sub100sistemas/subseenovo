@@ -64,7 +64,7 @@ const groups: CountryCard[][] = [[bolivia, uruguai], [brasil], [argentina, parag
       <div class="relative mt-10 tablet-lg:mt-16">
         <img
           src="/icons/site-urbano-property-types-curva.svg"
-          alt=""
+          alt="Curva decorativa" title="Curva decorativa"
           aria-hidden="true"
           class="pointer-events-none absolute -bottom-4 left-[-1%] hidden w-[102%] tablet-lg:block"
         />
@@ -83,7 +83,7 @@ const groups: CountryCard[][] = [[bolivia, uruguai], [brasil], [argentina, parag
             >
               <NuxtImg
                 :src="type.src"
-                :alt="type.alt"
+                :alt="type.alt || imageLabel(type.src)" :title="type.alt || imageLabel(type.src)"
                 :width="type.width"
                 :height="type.height"
                 sizes="mobile-lg:15vw tablet:16vw desktop:220px"

@@ -19,7 +19,7 @@ const descriptionClass =
         aria-hidden="true"
       >
         <div class="absolute inset-[-53.76%_-11.36%]">
-          <img src="/icons/legal-hero-ellipse.svg" alt="" class="block size-full max-w-none" />
+          <img src="/icons/legal-hero-ellipse.svg" alt="Elipse decorativa" title="Elipse decorativa" class="block size-full max-w-none" />
         </div>
       </div>
     </template>

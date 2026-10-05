@@ -43,7 +43,7 @@ const featureItems = [
               src="/icons/icone-h3-funcionalidades-rurais.svg"
               width="28"
               height="30"
-              alt=""
+              alt="Ícone das funcionalidades rurais" title="Ícone das funcionalidades rurais"
               class="shrink-0 drop-shadow-[9px_0px_20px_rgba(93,95,239,0.6)]"
             />
           </div>
@@ -67,7 +67,7 @@ const featureItems = [
         <div class="w-full max-w-[652px] desktop:w-[calc(100%+2rem)] desktop:max-w-none desktop:-ml-8 desktop-lg:w-[calc(100%+1.25rem)] desktop-lg:-ml-5 mt-10">
           <NuxtPicture
             src="/images/hero-rural/mockup-telas-imoveis-rurais.png"
-            :img-attrs="{ class: 'block w-full h-auto' }"
+            :img-attrs="{ class: 'block w-full h-auto', title: 'Fazenda e mapa no aplicativo SUBSEE' }"
             sizes="100vw tablet-lg:400px desktop-compact:460px desktop:652px"
             :quality="60"
             :width="665"

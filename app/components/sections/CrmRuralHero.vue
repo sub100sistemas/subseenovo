@@ -31,7 +31,7 @@ const moduleIcons: HeroModuleIcon[] = [
           :width="820"
           :height="888"
           sizes="mobile-lg:180px tablet:340px tablet-lg:240px desktop:300px desktop-full:362px"
-          alt="Mapa de propriedade rural no celular"
+          alt="Mapa de propriedade rural no celular" title="Mapa de propriedade rural no celular"
           class="h-full w-full object-cover"
           loading="eager"
         />
@@ -43,7 +43,7 @@ const moduleIcons: HeroModuleIcon[] = [
         :width="1440"
         :height="816"
         sizes="100vw tablet-lg:50vw desktop-full:720px"
-        alt=""
+        alt="Cartões flutuantes do módulo" title="Cartões flutuantes do módulo"
         aria-hidden="true"
         class="pointer-events-none absolute z-[1] left-0 top-0 w-full h-auto"
       />
@@ -53,7 +53,7 @@ const moduleIcons: HeroModuleIcon[] = [
       >
         <img
           src="/icons/crm-rural-hero-badge.svg"
-          alt=""
+          alt="Selo do CRM Rural" title="Selo do CRM Rural"
           aria-hidden="true"
           class="absolute "
         />

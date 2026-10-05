@@ -108,14 +108,14 @@ withDefaults(
               ></div>
               <img
                 :src="arrowOneSrc"
-                alt=""
+                :alt="imageLabel(arrowOneSrc)" :title="imageLabel(arrowOneSrc)"
                 aria-hidden="true"
                 class="pointer-events-none absolute hidden size-[18px] tablet:block"
                 style="top: 33px; left: calc(33.3333% - 9px)"
               />
               <img
                 :src="arrowTwoSrc"
-                alt=""
+                :alt="imageLabel(arrowTwoSrc)" :title="imageLabel(arrowTwoSrc)"
                 aria-hidden="true"
                 class="pointer-events-none absolute hidden size-[18px] tablet:block"
                 style="top: 33px; left: calc(66.6667% - 9px)"
@@ -130,7 +130,7 @@ withDefaults(
                   class="relative flex size-[84px] items-center justify-center rounded-full"
                   :class="step.circleClass"
                 >
-                  <img :src="step.icon" alt="" aria-hidden="true" class="size-10" />
+                  <img :src="step.icon" :alt="imageLabel(step.icon)" :title="imageLabel(step.icon)" aria-hidden="true" class="size-10" />
                   <span
                     class="absolute inset-x-0 -bottom-[18px] mx-auto flex size-8 items-center justify-center rounded-full text-[13px] font-semibold text-white"
                     :class="step.badgeClass"
@@ -145,7 +145,7 @@ withDefaults(
                 <div v-if="step.status" :class="statusClass">
                   <img
                     :src="statusIconSrc"
-                    alt=""
+                    :alt="imageLabel(statusIconSrc)" :title="imageLabel(statusIconSrc)"
                     aria-hidden="true"
                     class="size-[17px] shrink-0"
                   />
@@ -161,7 +161,7 @@ withDefaults(
               :width="diagramWidth"
               :height="diagramHeight"
               :sizes="diagramSizes"
-              :alt="diagramAlt"
+              :alt="diagramAlt || imageLabel(diagramSrc)" :title="diagramAlt || imageLabel(diagramSrc)"
               :class="diagramClass"
               loading="lazy"
             />

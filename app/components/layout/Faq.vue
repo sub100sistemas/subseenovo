@@ -71,7 +71,7 @@ const props = withDefaults(defineProps<Props>(), {
                 <img
                   v-if="plusIconSrc"
                   :src="plusIconSrc"
-                  alt=""
+                  :alt="imageLabel(plusIconSrc)" :title="imageLabel(plusIconSrc)"
                   aria-hidden="true"
                   class="icon-plus"
                   :class="iconClass"
@@ -79,7 +79,7 @@ const props = withDefaults(defineProps<Props>(), {
                 <img
                   v-if="minusIconSrc"
                   :src="minusIconSrc"
-                  alt=""
+                  :alt="imageLabel(minusIconSrc)" :title="imageLabel(minusIconSrc)"
                   aria-hidden="true"
                   class="icon-minus"
                   :class="iconClass"

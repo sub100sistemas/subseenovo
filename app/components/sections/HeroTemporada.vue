@@ -57,7 +57,7 @@ const featureItems = [
               src="/icons/icone-h3-funcionalidades-temporada.svg"
               width="28"
               height="30"
-              alt=""
+              alt="Ícone das funcionalidades de temporada" title="Ícone das funcionalidades de temporada"
               class="shrink-0 drop-shadow-[9px_0px_20px_rgba(93,95,239,0.6)]"
             />
           </div>
@@ -81,7 +81,7 @@ const featureItems = [
         <div class="w-full max-w-[714px] desktop:w-[calc(100%+2rem)] desktop:max-w-none desktop:-mr-8 desktop-lg:w-[calc(100%+1.25rem)] desktop-lg:-mr-5">
           <NuxtPicture
             src="/images/hero-temporada/mockup-telas-imoveis-temporada.png"
-            :img-attrs="{ class: 'block w-full h-auto' }"
+            :img-attrs="{ class: 'block w-full h-auto', title: 'Imóvel de temporada no aplicativo SUBSEE' }"
             sizes="100vw tablet-lg:400px desktop-compact:460px desktop:714px"
             :width="714"
             :height="522"

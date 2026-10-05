@@ -1,18 +1,21 @@
 <script setup lang="ts">
+const title = 'Preço do CRM Imobiliário: Planos Urbano e Rural | SUBSEE'
+const description =
+  'Veja o preço do CRM imobiliário SUBSEE: planos Urbano e Rural por R$ 450/mês + opcionais, com funcionalidades incluídas. Teste grátis por 30 dias.'
+const keywords = 'preço CRM imobiliário, planos CRM imobiliário, valor CRM para imobiliárias, CRM urbano e rural'
+
 useSeoMeta({
-  title: 'Planos & Preços | SUBSEE CRM Imobiliário',
-  description:
-    'Compare os planos Urbano e Rural do CRM Imobiliário SUBSEE, veja o preço, todas as funcionalidades incluídas e os complementos opcionais disponíveis.',
-  ogTitle: 'Planos & Preços | SUBSEE CRM Imobiliário',
-  ogDescription:
-    'Compare os planos Urbano e Rural do CRM Imobiliário SUBSEE, veja o preço, todas as funcionalidades incluídas e os complementos opcionais disponíveis.'
+  title,
+  description,
+  keywords,
+  ogTitle: title,
+  ogDescription: description
 })
 </script>
 
 <template>
   <main>
-    <PlanoEPrecoTitle />
-    <PlanoEPrecoPricing />
+    <PlanoEPrecoHero />
     <PlanoEPrecoFeatures />
     <PlanoEPrecoOpcionais />
     <PlanoEPrecoFaq />

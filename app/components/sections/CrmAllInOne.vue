@@ -53,7 +53,7 @@ const cards: FeatureCard[] = [
 
         <div class="mt-10 grid grid-cols-1 gap-x-8 gap-y-10 tablet:grid-cols-2 tablet-lg:grid-cols-3">
           <div v-for="card in cards" :key="card.title" class="flex flex-col items-center gap-4">
-            <img :src="card.icon" width="48" height="53" alt="" aria-hidden="true" class="h-12 w-auto" />
+            <img :src="card.icon" width="48" height="53" :alt="imageLabel(card.icon)" :title="imageLabel(card.icon)" aria-hidden="true" class="h-12 w-auto" />
             <h3 class="text-lg font-bold text-white">{{ card.title }}</h3>
             <p class="text-sm leading-[1.5] text-white/70">{{ card.description }}</p>
           </div>

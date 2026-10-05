@@ -281,7 +281,7 @@ T13 → T14
 **Done when**:
 - [x] As 3 linhas renderizam com os preços exatos: R$ 100,00 / R$ 1.200,00 / Consulte, idênticos nas colunas Urbano e Rural
 - [x] Cabeçalhos "Urbano"/"Rural" renderizam acima das respectivas colunas de preço
-- [x] CTA "Testar grátis por 30 dias" usa `to="/testar-gratis"` (rota real sitewide, corrigida em 2026-09-29)
+- [x] CTA "Agendar Demonstração" usa `to="/agendar-demonstracao/"` (Figma `3220:6334`, atualizado em 2026-10-04; antes "Testar grátis por 30 dias" → `/testar-gratis`)
 - [x] `pnpm build` passa
 
 **Tests**: none

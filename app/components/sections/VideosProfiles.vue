@@ -82,7 +82,7 @@ const profiles: VideoProfile[] = [
           <p class="mt-3 text-[15px] leading-[23px] text-[#596273] tablet-lg:min-h-[72px]">{{ profile.description }}</p>
           <a
             :id="`profile-${index}-link`"
-            :href="profile.href"
+            :href="profile.href" :title="titleForLink(profile.href)" :aria-label="titleForLink(profile.href)"
             target="_blank"
             rel="noopener noreferrer"
             :aria-labelledby="`profile-${index}-link profile-${index}-title`"

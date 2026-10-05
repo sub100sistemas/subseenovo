@@ -65,7 +65,7 @@ const benefits: FormBenefit[] = [
       <FormCard title-class="text-[20px] leading-[34px] font-bold text-ink mobile-lg:text-[22px]" subtitle-class="-mt-[5px] text-[14px] leading-[1.2] text-[#6b7280]">
         <template #icon>
           <span class="flex size-14 shrink-0 items-center justify-center rounded-full bg-[#eef2ff]">
-            <img src="/icons/form-message-circle-header.svg" alt="" width="24.375" height="24.375" class="block" />
+            <img src="/icons/form-message-circle-header.svg" alt="Ícone de mensagem" title="Ícone de mensagem" width="24.375" height="24.375" class="block" />
           </span>
         </template>
         <template #title>Vamos conversar?</template>

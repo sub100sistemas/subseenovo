@@ -48,7 +48,7 @@ const features: FeatureItem[] = [
               class="flex items-start gap-4"
             >
               <div class="flex size-[38px] shrink-0 items-center justify-center rounded-full border border-[#e5e7eb] bg-white">
-                <img :src="feature.icon" alt="" aria-hidden="true" :class="feature.iconClass" />
+                <img :src="feature.icon" :alt="imageLabel(feature.icon)" :title="imageLabel(feature.icon)" aria-hidden="true" :class="feature.iconClass" />
               </div>
               <div>
                 <p class="text-[15px] font-bold leading-[1.3] text-ink">{{ feature.title }}</p>
@@ -58,11 +58,11 @@ const features: FeatureItem[] = [
           </div>
 
           <NuxtLink
-            to="/testar-gratis/"
+            to="/testar-gratis/" :title="titleForLink('/testar-gratis/')" :aria-label="titleForLink('/testar-gratis/')"
             class="inline-flex h-[56px] w-[297px] items-center justify-center gap-3 rounded-[12px] bg-brand text-[16px] font-semibold text-white"
           >
             Testar grátis por 30 dias
-            <img src="/icons/crm-temporada-cta-arrow.svg" alt="" aria-hidden="true" class="size-5" />
+            <img src="/icons/crm-temporada-cta-arrow.svg" alt="Seta do botão" title="Seta do botão" aria-hidden="true" class="size-5" />
           </NuxtLink>
         </div>
 

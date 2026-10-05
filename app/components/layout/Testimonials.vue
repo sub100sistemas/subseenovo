@@ -103,7 +103,7 @@ const props = withDefaults(defineProps<Props>(), {
         <img
           v-if="decorativeWaveSrc"
           :src="decorativeWaveSrc"
-          alt=""
+          :alt="imageLabel(decorativeWaveSrc)" :title="imageLabel(decorativeWaveSrc)"
           aria-hidden="true"
           :class="decorativeWaveClass"
         />
@@ -124,7 +124,7 @@ const props = withDefaults(defineProps<Props>(), {
                 :src="brandLogoSrc"
                 :width="brandLogoWidth"
                 :height="brandLogoHeight"
-                :alt="brandLogoAlt"
+                :alt="brandLogoAlt || imageLabel(brandLogoSrc)" :title="brandLogoAlt || imageLabel(brandLogoSrc)"
                 :class="brandLogoClass"
               />
             </div>
@@ -140,7 +140,7 @@ const props = withDefaults(defineProps<Props>(), {
               :src="starsSrc"
               :width="starsWidth"
               :height="starsHeight"
-              :alt="starsAlt"
+              :alt="starsAlt || imageLabel(starsSrc)" :title="starsAlt || imageLabel(starsSrc)"
               :class="starsClass"
             />
 
@@ -151,14 +151,14 @@ const props = withDefaults(defineProps<Props>(), {
             <img
               v-if="openingQuoteSrc"
               :src="openingQuoteSrc"
-              alt=""
+              :alt="imageLabel(openingQuoteSrc)" :title="imageLabel(openingQuoteSrc)"
               aria-hidden="true"
               :class="openingQuoteClass"
             />
             <img
               v-if="closingQuoteSrc"
               :src="closingQuoteSrc"
-              alt=""
+              :alt="imageLabel(closingQuoteSrc)" :title="imageLabel(closingQuoteSrc)"
               aria-hidden="true"
               :class="closingQuoteClass"
             />
@@ -170,7 +170,7 @@ const props = withDefaults(defineProps<Props>(), {
                     :src="logo.src"
                     :width="logo.width"
                     :height="logo.height"
-                    :alt="logo.alt"
+                    :alt="logo.alt || imageLabel(logo.src)" :title="logo.alt || imageLabel(logo.src)"
                     :class="logoClass"
                   />
                 </div>

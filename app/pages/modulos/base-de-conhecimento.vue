@@ -1,11 +1,13 @@
 <script setup lang="ts">
-const title = 'SUBSEE | Base de Conhecimento — Central de Ajuda, Tutoriais e Documentação'
+const title = 'Base de Conhecimento SUBSEE on: Tutoriais e Treinamentos'
 const description =
-  'Centralize vídeos, treinamentos e conteúdos do SUBSEE em uma Base de Conhecimento organizada, facilitando o acesso às informações e a rotina da equipe.'
+  'Central de ajuda do SUBSEE on com vídeos, tutoriais e treinamentos para sua equipe aprender a usar o CRM imobiliário com mais autonomia.'
+const keywords = 'base de conhecimento SUBSEE, central de ajuda SUBSEE, tutoriais CRM imobiliário, treinamento SUBSEE'
 
 useSeoMeta({
   title,
   description,
+  keywords,
   ogTitle: title,
   ogDescription: description
 })

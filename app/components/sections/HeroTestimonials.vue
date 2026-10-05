@@ -30,7 +30,7 @@ const testimonials = [
 <template>
   <section id="depoimentos" class="section-py relative overflow-hidden bg-[linear-gradient(to_bottom,rgba(219,234,254,0.6),white_76.442%)]">
     <div class="pointer-events-none absolute inset-x-0 top-0 h-auto w-full" aria-hidden="true">
-      <img loading="lazy" decoding="async" src="/icons/hero-depoimentos-onda-decorativa.svg" width="1918" height="196" alt="" class="block h-auto w-full max-w-none" />
+      <img loading="lazy" decoding="async" src="/icons/hero-depoimentos-onda-decorativa.svg" width="1918" height="196" alt="Onda decorativa" title="Onda decorativa" class="block h-auto w-full max-w-none" />
     </div>
 
     <div class="container-page relative">
@@ -51,7 +51,7 @@ const testimonials = [
             src="/icons/icone-estrelas-avaliacao.svg"
             width="161"
             height="27"
-            alt="Avaliação 5 estrelas"
+            alt="Avaliação 5 estrelas" title="Avaliação 5 estrelas"
             class="shrink-0"
           />
 
@@ -61,13 +61,13 @@ const testimonials = [
 
           <img loading="lazy" decoding="async"
             src="/icons/aspas-abertura.svg"
-            alt=""
+            alt="Aspas de abertura" title="Aspas de abertura"
             aria-hidden="true"
             class="pointer-events-none absolute -left-[14px] bottom-[146px] w-[93px]"
           />
           <img loading="lazy" decoding="async"
             src="/icons/aspas-fechamento.svg"
-            alt=""
+            alt="Aspas de fechamento" title="Aspas de fechamento"
             aria-hidden="true"
             class="pointer-events-none absolute -left-[14px] bottom-[71px] w-[93px]"
           />
@@ -78,7 +78,7 @@ const testimonials = [
                 :src="testimonial.logo.src"
                 :width="testimonial.logo.width"
                 :height="testimonial.logo.height"
-                :alt="testimonial.logo.alt"
+                :alt="testimonial.logo.alt || imageLabel(testimonial.logo.src)" :title="testimonial.logo.alt || imageLabel(testimonial.logo.src)"
                 class="h-auto max-h-full w-auto"
               />
             </div>

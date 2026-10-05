@@ -17,7 +17,7 @@ const products: Product[] = [
     logo: '/icons/logo-sub100-imoveis-produto.svg',
     logoWidth: 120,
     logoHeight: 138,
-    logoAlt: '',
+    logoAlt: 'SUB100 Imóveis',
     badge: 'SUB100 Imóveis',
     title: 'Anuncie seus imóveis e empreendimentos em um dos maiores portais do Brasil',
     description:
@@ -30,7 +30,7 @@ const products: Product[] = [
     logo: '/icons/logo-sgl-produto.svg',
     logoWidth: 158,
     logoHeight: 160,
-    logoAlt: '',
+    logoAlt: 'Sistema SGL',
     badge: 'SUB100 Loteadoras e Incorporadas',
     title: 'Simulador de vendas, mapa interativo, financeiro completo e portal do cliente',
     description:
@@ -49,14 +49,14 @@ const products: Product[] = [
         src="/icons/hero-outros-produtos-onda-decorativa-branca.svg"
         width="1920"
         height="175"
-        alt=""
+        alt="Onda decorativa branca" title="Onda decorativa branca"
         class="absolute -left-px top-[21.19px] w-[1920.36px] h-[175.453px] rotate-180 max-w-none"
       />
       <img loading="lazy" decoding="async"
         src="/icons/hero-website-onda-decorativa-azul.svg"
         width="1920"
         height="191"
-        alt=""
+        alt="Onda decorativa azul" title="Onda decorativa azul"
         class="absolute -left-[0.95px] top-0 w-[1919.95px] h-[190.853px] rotate-180 max-w-none"
       />
     </div>
@@ -82,7 +82,7 @@ const products: Product[] = [
             :src="product.logo"
             :width="product.logoWidth"
             :height="product.logoHeight"
-            :alt="product.logoAlt"
+            :alt="product.logoAlt || imageLabel(product.logo)" :title="product.logoAlt || imageLabel(product.logo)"
             class="order-first h-auto w-20 shrink-0 tablet:w-24 desktop-full:order-last desktop-full:w-[var(--logo-w)]"
             :style="{ '--logo-w': product.logoWidth + 'px' }"
           />
@@ -96,6 +96,7 @@ const products: Product[] = [
               :is="product.external ? 'a' : 'NuxtLink'"
               :href="product.external ? product.href : undefined"
               :to="product.external ? undefined : product.href"
+              :title="titleForLink(product.href)" :aria-label="titleForLink(product.href)"
               v-bind="product.external ? { target: '_blank', rel: 'noopener' } : {}"
               class="mx-auto mt-6 inline-flex h-14 w-[180px] items-center justify-center gap-1.5 rounded-xl border border-teal-link text-teal-link transition-colors hover:bg-teal-link/5 desktop-full:mx-0"
             >

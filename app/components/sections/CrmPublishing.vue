@@ -46,7 +46,7 @@ const mockups: PhoneMockup[] = [
           :width="560"
           :height="1022"
           sizes="mobile-lg:45vw tablet-lg:280px"
-          :alt="mockup.alt"
+          :alt="mockup.alt || imageLabel(mockup.src)" :title="mockup.alt || imageLabel(mockup.src)"
           class="mx-auto h-auto w-full max-w-[280px]"
           loading="lazy"
         />

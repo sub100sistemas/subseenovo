@@ -69,7 +69,7 @@ const featureItems = [
         <div class="w-full max-w-[692px] desktop:w-[calc(100%+2rem)] desktop:max-w-none desktop:-mr-8 desktop-lg:w-[calc(100%+1.25rem)] desktop-lg:-mr-5">
           <NuxtPicture
             src="/images/hero-urbano/imoveis-urbanos-composicao.png"
-            :img-attrs="{ class: 'block w-full h-auto' }"
+            :img-attrs="{ class: 'block w-full h-auto', title: 'Imóveis urbanos no aplicativo SUBSEE' }"
             sizes="100vw tablet-lg:400px desktop-compact:460px desktop:700px"
             :quality="65"
             :width="708"

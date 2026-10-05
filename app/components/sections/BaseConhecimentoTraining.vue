@@ -53,7 +53,7 @@ const trainingFeatures: TrainingFeatureItem[] = [
         :width="1298"
         :height="1182"
         sizes="mobile-lg:100vw tablet-lg:600px desktop:650px"
-        alt="Tela de proposta e funil de vendas"
+        alt="Tela de proposta e funil de vendas" title="Tela de proposta e funil de vendas"
         class="mx-auto h-auto w-full max-w-[650px]"
         loading="lazy"
       />

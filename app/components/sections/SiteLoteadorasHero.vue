@@ -13,10 +13,8 @@ const moduleIcons: HeroModuleIcon[] = [
       Site para <br class="hidden tablet-lg:block" /><span class="text-brand">Loteadoras</span>
       <span
         aria-hidden="true"
-        class="ml-2 inline-flex h-[25px] items-center rounded-full bg-[#ea4335] px-3 align-middle text-[13px] font-medium text-white tablet-lg:text-[16px]"
-      >
-        breve
-      </span>
+        class="ml-2 inline-flex h-[25px] items-center rounded-full bg-[#ea4335] px-3 align-middle text-[13px] font-medium text-white after:content-['breve'] tablet-lg:text-[16px]"
+      ></span>
     </template>
 
     <template #description>
@@ -33,7 +31,7 @@ const moduleIcons: HeroModuleIcon[] = [
           :width="724"
           :height="912"
           sizes="mobile-lg:180px tablet:340px tablet-lg:240px desktop:300px desktop-full:362px"
-          alt="Corretora com tablet e cartões do SGL"
+          alt="Corretora com tablet e cartões do SGL" title="Corretora com tablet e cartões do SGL"
           class="h-full w-full object-cover"
           loading="eager"
         />
@@ -45,7 +43,7 @@ const moduleIcons: HeroModuleIcon[] = [
         :width="1440"
         :height="816"
         sizes="100vw tablet-lg:50vw desktop-full:720px"
-        alt=""
+        alt="Cartões flutuantes do módulo" title="Cartões flutuantes do módulo"
         aria-hidden="true"
         class="pointer-events-none absolute z-[1] left-0 top-0 w-full h-auto"
       />
@@ -55,7 +53,7 @@ const moduleIcons: HeroModuleIcon[] = [
       >
         <img
           src="/icons/site-loteadoras-hero-icone-localizacao.svg"
-          alt=""
+          alt="Ícone de localização" title="Ícone de localização"
           aria-hidden="true"
           class="absolute left-[30%] top-[26%] w-[40%] h-[50%]"
         />

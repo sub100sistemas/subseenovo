@@ -1,6 +1,6 @@
 # FIGMA_CONTENT_MANIFEST_PLANO_E_PRECO — página "Plano e Preço"
 
-Figma: arquivo `vX7qKnnXSOW8zv4kAuS2eN`, seção raiz `1116:5607` ("Plano e Preço", 2044×6965). Extraído via `get_metadata`/`get_design_context`/`get_screenshot` node a node. Conteúdo verbatim — nenhum texto foi inventado ou parafraseado. Rota ainda não definida pelo usuário — ver `spec.md` (Assumptions & Open Questions).
+Figma (fonte vigente, desde 2026-10-04): arquivo `hMjVAFfVR3dgKDrxmwUhvL`, seção `4:48841` ("Plano e Preço", 2044×6965), frame `Page` `4:48842` (1920×6765). Conteúdo verbatim — nenhum texto foi inventado ou parafraseado. A extração original (2026-09-29) foi feita no arquivo `vX7qKnnXSOW8zv4kAuS2eN`, seção `1116:5607` (mesmas dimensões); os node ids `3220:*` citados abaixo pertencem a essa extração original. Para a implementação visual vale o arquivo `hMjV…` — ver a seção "Correção de fidelidade visual (2026-10-04)" no final deste documento.
 
 ---
 
@@ -49,9 +49,9 @@ Figma: arquivo `vX7qKnnXSOW8zv4kAuS2eN`, seção raiz `1116:5607` ("Plano e Pre�
   4. "Cadastre e gerencie **seus imóveis** com facilidade"
   5. "**Divulgue no SUB100** e em outros portais imobiliários *" — marcador de nota `*`
   6. "Tenha seu **site imobiliário** integrado **" — marcador de nota `**`
-  7. "**Automatize tarefas** e ações do dia a dia"
-  8. "Treinamentos e suporte **especializado**"
-  9. "Conte com a **MEL.IA** para apoiar seus atendimentos"
+  7. "Conte com a **MEL.IA** para apoiar seus atendimentos" — **posição corrigida em 2026-10-04**: no arquivo `hMjV…` (frame `Preço - Ubrana` `4:48867`) o item vem antes de "Automatize" e "Treinamentos"
+  8. "**Automatize tarefas** e ações do dia a dia"
+  9. "Treinamentos e suporte **especializado**"
 - **CTA secundário** (`3220:6052`): "+ Opcionais" (borda, sem preenchimento). Sem `href` real definido no Figma — provavelmente uma âncora interna para a seção Opcionais desta mesma página.
 
 ### 2.3 Card "Rural" — node `3220:6055`
@@ -111,7 +111,7 @@ Cada categoria lista N funcionalidades; **em todas as 45 linhas extraídas, tant
   1. "5 usuários adicionais" → **R$ 100,00** (Urbano) / **R$ 100,00** (Rural)
   2. "Site & Hotsite Padrão" → **R$ 1.200,00** / **R$ 1.200,00**
   3. "Site & Hotsite personalizado" → **Consulte** / **Consulte**
-- **CTA** (`3220:6357`, instância "Link → Testar grátis por 30 dias"): texto renderizado "Testar grátis por 30 dias". Sem `href` real definido no Figma — mas confirmado em T3/Etapa 3 como `to="/testar-gratis"`, rota real já estabelecida sitewide.
+- **CTA** (atualizado em 2026-10-04): no arquivo `vX7qKnnXSOW8zv4kAuS2eN`, seção `3220:6334`, o link é `3849:3129` ("Link → Agendar Demonstração"): texto **"Agendar Demonstração"** (18px), 297×56, `#5d5fef`, raio 12, em x=964 / y=313 dentro da seção (borda esquerda no centro da página, não centralizado). Destino: **`/agendar-demonstracao/`**. O texto anterior desta linha ("Testar grátis por 30 dias" → `/testar-gratis`) vinha da extração original e foi superado; o CTA de Opcionais **não** é o mesmo dos cards de preço.
 
 **Achado**: assim como a lista de 9 recursos dos cards de preço e a tabela de Features, os preços dos Opcionais são **idênticos entre Urbano e Rural** — não há diferenciação de preço por perfil de plano em nenhum ponto do Figma desta página.
 
@@ -149,10 +149,10 @@ Cada categoria lista N funcionalidades; **em todas as 45 linhas extraídas, tant
 
 | Elemento | Node(s) | Candidato de reuso já existente | Veredito |
 | --- | --- | --- | --- |
-| Divisor de onda azul/branco (`Horizantal Divider`) | `3220:5998`–`6000` | `crm-hero-divider-onda.svg` | **REUSAR** — confirmado por `get_screenshot`: onda pálida azul-lavanda de linha única, e o próprio SVG existente tem o grupo interno nomeado `id="Horizantal Divider"` com stroke `#CEDAFC`, idêntico ao node do Figma. Nenhum export novo. |
-| Forma decorativa (blur/gradiente) atrás da tabela de Features | `3220:6096` (`imgShape`) | nenhum | **NÃO EXPORTAR IMAGEM** — confirmado por `get_screenshot`: é um blur radial simples (lavanda pálido, sem bordas nítidas). Implementar como `radial-gradient` inline via classe Tailwind arbitrária na própria seção, mesmo padrão de `CrmUrbanoLeadsChart.vue:59`/`SiteLoteadorasSglOffer.vue:6-7` — sem wrapper compartilhado, sem asset. |
+| Divisor de onda azul/branco (`Horizantal Divider`) | `3220:5998`–`6000` · `4:48846` | `divider-onda-decorativa.svg` (somente strokes `#CEDAFC` e branco, 1918×146, idêntico ao export do Figma `hMjV…`) | **REUSAR** — o `crm-hero-divider-onda.svg` tem um preenchimento branco (`Curva`) que o Figma desta página não tem; o asset correto é o de strokes puros. Na implementação o divisor chega embutido em `legal-page-background.svg` (BG `#F5F5F5` curvo + retângulo com gradiente `#E6FDF7 → #EFF8F5 → #E1E9F9` + divisor), que é o mesmo desenho do frame `Backgroud` `4:48843`. |
+| Forma decorativa (blur/gradiente) atrás da tabela de Features | `3220:6096` · `4:48944` (`shape`) | nenhum | **NÃO EXPORTAR IMAGEM** — elipse com `radialGradient` `#5D5FEF` (opacidade 0,26 → 0), blur de ~100px, opacidade 0,5 (1398×672, base do bloco cinza). Implementada em Tailwind (`bg-[radial-gradient(...)]` + `blur-[100px]` + `opacity-50`), sem `style=` inline. |
 | Selo "12% OFF" (composição de 5 vetores + texto) | `3220:6011`–`6017` | nenhum | **EXPORTAR NOVO** — confirmado por `get_screenshot`: ilustração manuscrita única (seta espiral + traços verdes + texto rotacionado "12% OFF"), sem equivalente no repo. Exportar como uma única imagem achatada (T2). |
-| Checkmark verde (tabela comparativa **e** lista de recursos dos cards de preço) | `3220:6127` etc. (`Vector`/tabela), `3220:6216` etc. (`Visto`), `3220:6027` etc. (`imgVector1`/cards de preço) | `icone-check-verde-circulo.svg` | **REUSAR** — confirmado por `get_screenshot` em ambos os contextos: círculo verde `#00D39B` preenchido + check branco, 16×16, bate exatamente. **É o mesmo ícone nos dois contextos** (tabela e lista de cards), não dois ícones diferentes como cogitado na Etapa 1. `icon-check-circle.svg`/`icone-check-lista-urbano.svg` (tick branco sem círculo) e `seta-lista-verde.svg` (chevron) foram descartados — não batem. |
+| Checkmark verde (tabela comparativa **e** lista de recursos dos cards de preço) | `4:48875` etc. (`Vector`, 23×23, cards) · `Possui Urbano/Rural` (tabela, 25,84px) | **nenhum** — `icone-check-verde-circulo.svg` NÃO corresponde | **EXPORTAR NOVO** (corrige o veredito de 2026-09-29): o Figma usa um selo recortado (badge com check) `#1CD9A4`, e não o círculo `#00D39B` 16×16. Novo asset único `public/icons/plano-e-preco-check-badge.svg` (23×23), usado a 23px nos cards e 26px na tabela. O `icone-check-verde-circulo.svg` permanece intacto para as outras páginas que o usam. |
 | Seta dos botões CTA | `imgArrowRight`/`1`/`2`, `imgSvg` | `seta-botao-cta.svg` | **REUSAR** — confirmado por `get_screenshot`: seta fina "→" simples, bate com o path de 2 elementos (linha + chevron) do asset existente. `icone-seta-cta.svg`/`seta-botao-branca.svg` são variações de cor do mesmo path — usar a de cor correta por contexto (branca dentro de botão preenchido roxo, escura dentro de botão outline). |
 | Logo "SUBSEE on" no cabeçalho da coluna Urbano (tabela Features) | `3220:6116`/`6117` | `logo-subsee-on.svg` | **REUSAR** — confirmado por `get_screenshot`: wordmark "SUBSEE" (`#313846`) + "on" em vermelho (`#E72F4D`) boxado, idêntico ao asset existente. Nenhum export novo. |
 | Ícones plus/minus do FAQ | `imgPlusCircle`, `imgPlusCircle1` | `faq-plus-circle.svg`, `faq-minus-circle.svg` | **REUSAR** — confirmado pela estrutura do SVG existente: `faq-plus-circle.svg` = círculo preenchido preto + cruz branca (estado fechado, itens 01–05); `faq-minus-circle.svg` = círculo apenas com contorno + traço horizontal (estado aberto, item 06) — bate exatamente com o padrão visto no screenshot da seção FAQ. |
@@ -167,4 +167,45 @@ Cada categoria lista N funcionalidades; **em todas as 45 linhas extraídas, tant
 1. Texto da nota do marcador `**` ("Tenha seu site imobiliário integrado **") — não encontrado em nenhum node do Figma.
 2. Rota da página — não especificada pelo usuário nesta rodada (diferente de Base de Conhecimento e Eventos).
 3. Comportamento do toggle Mensal/Anual — apenas 1 estado visual existe no Figma; sem confirmação se é funcional (troca de preço) ou puramente decorativo.
-4. `href` real dos CTAs "Testar grátis por 30 dias" (3 ocorrências) e "+ Opcionais" (2 ocorrências) — nenhum valor definido no Figma.
+4. `href` real dos CTAs "Testar grátis por 30 dias" (2 ocorrências, nos cards de preço, → `/testar-gratis/`) e "+ Opcionais" (2 ocorrências) — nenhum valor definido no Figma. O CTA da seção Opcionais é "Agendar Demonstração" → `/agendar-demonstracao/` (ver item acima).
+
+---
+
+## Correção de fidelidade visual (2026-10-04)
+
+Fonte: arquivo `hMjVAFfVR3dgKDrxmwUhvL`, seção `4:48841` (`Page` `4:48842`, 1920×6765). O node citado no pedido (`4-62872`) é apenas o botão "Testar grátis por 30 dias"; a página é a seção `4:48841` do mesmo arquivo.
+
+### Mapa de nodes (arquivo `hMjV…`)
+
+| Seção | Node | Medidas no Figma (1920px) |
+| --- | --- | --- |
+| Background (BG + gradiente + divisor) | `4:48843` | 1920×1432; BG `#F5F5F5` em y=89 (513 de altura), retângulo gradiente com blur, divisor em y=412 |
+| Title | `4:48939` | y=97, 184 de altura; H1 40px (**"Planos" Poppins Bold**, " & Preços" Medium, tracking −0,25px, `#313846`); descrição 26px, `leading 1.4`, 740px de largura, "urbana"/"rural" em Bold `#5d5fef` |
+| Pricing | `4:48849` | y=281; toggle em grupo de 133px; gap de 32px; linha de cards 1360 de largura |
+| Toggle Mensal/Anual | `4:48851` | pílula 215×59, borda 1px `#313846`, raio 42; "Mensal" 90×39 `#686af1` (texto branco), "Anual" 88×39; rótulos Inter Medium 16px |
+| Selo "12% OFF" | `4:48859` | 207×133, 162px à direita do início da pílula |
+| Cards | `4:48867` (Urbano) · `4:48903` (Rural) | 471×908, borda 2px `#686af1`, raio 16, padding 42/24/46/40, gap 20 (Urbano) / 26 (Rural); gap entre cards 29px |
+| Conteúdo dos cards | — | título 36px Bold `#5d5fef`; descrição 20px `#666e8a` `leading 1.4`; preço "R$450" 48px SemiBold `#313846` (tracking −1,44px) + "/" e "mês + opcionais" 22px; CTA 401×67 `#5d5fef` raio 12; lista 16px `#404040` (itens com 23px de check); "+ Opcionais" 401×67 borda 2px `#313846` raio 12, 20px SemiBold |
+| Features (bloco) | `4:48943` | bloco `#f5f5f5`, raio 50, 1360 de largura; H2 32px Bold `#0b0d0f` + "CRM Imobiliário" `#5d5fef`; descrição 26px `#313846` |
+| Features (painéis e faixas) | `4:48947` | área 1099×2584: painéis brancos (opacidade 0,8, raio 16, 370 de largura) em x=319 (Urbano) e x=729 (Rural); título "Urbano"/"Rural" 32px Bold; botão "Site & hotsite padrão" 310×55,46, borda 1px `#313846`, raio 8, 20px Medium; logo SUBSEE on; 9 categorias com título 16px SemiBold `#5d5fef`, faixa `rgba(93,95,239,.08)` com opacidade 0,5, itens 16px Regular `#0b0d0f` com `list-disc` (linha de 28px, gap 10px) |
+| Nota e botão | `4:49169` | nota 14px Light Italic `#313846`; botão 426×55 `#5d5fef`, raio 8, 20px Medium; gap 219px |
+| Opcionais | `4:49182` | 409 de altura; cartões Urbano (`#5d5fef`) e Rural (`#686af1`) 370×248, borda 2px, raio 16, título 32px Bold; faixa tabular 1085×135 (`rgba(93,95,239,.08)`, opacidade 0,65) com 3 linhas de 45px e divisores `rgba(49,56,70,.12)`; rótulo "Opcionais" 26px SemiBold `#5d5fef`; CTA 297×56 em x=964 / y=313 (no arquivo `hMjV…` o texto é "Testar grátis por 30 dias"; vale "Agendar Demonstração" do arquivo `vX7q`, node `3849:3129`, por decisão do usuário em 2026-10-04) |
+| FAQ | `4:49206` | fundo **branco** (sem painel cinza); H2 52px SemiBold `#313846`; descrição 20px; itens com pergunta 20px SemiBold, resposta 16px/26px, divisor 1px, largura 970px |
+
+### Divergências corrigidas na implementação
+1. H1 passou de 48px/tudo bold para 40px com "Planos" Bold e "& Preços" Medium; descrição passou para 26px com "urbana"/"rural" em Bold roxo.
+2. Fundo do Title + Pricing: gradiente/base cinza curva/divisor de onda (via `legal-page-background.svg`, mesmo desenho do Figma), no novo `PlanoEPrecoHero.vue`.
+3. Cards de preço: 471px, borda `#686af1`, paddings e cores do Figma; preço em três partes; selo "12% OFF" em tamanho real (207×133) e visível em todos os breakpoints (reduzido abaixo de 576px).
+4. Ordem dos 9 itens (MEL.IA em 7º) e novo ícone de check (selo `#1CD9A4`).
+5. Features: bloco cinza com painéis brancos, faixas lavanda por categoria, bullets e botões com seta; `style=` inline removido.
+6. Opcionais: dois cartões separados com bordas roxas sobre faixa tabular.
+7. FAQ: painel cinza removido, lista com 970px (accordion `<details>` preservado).
+8. CTA da seção Opcionais: texto "Agendar Demonstração" (18px), destino `/agendar-demonstracao/`, 297×56 posicionado como no Figma `3220:6334` (borda esquerda no centro da página), centralizado abaixo de `tablet-lg`; os CTAs dos cards de preço continuam "Testar grátis por 30 dias".
+
+### Divergências remanescentes (documentadas, não corrigíveis sem decisão)
+- **Inter** (rótulos Mensal/Anual) e **Poppins Light** / **Light Italic** (lista dos cards e nota): o site só carrega Poppins 400/500/600/700; usados Poppins 400/500 e itálico sintético.
+- Quebras de linha forçadas do Figma na lista dos cards ("…follow-ups / pelo funil de vendas") não são reproduzidas; o texto quebra naturalmente. Nas Features, as quebras forçadas dos 4 rótulos longos e do título "Experiência, Visitas e Relacionamento" **são** reproduzidas.
+- Irregularidades do Figma reproduzidas: gaps 20/26 entre blocos dos cards (preço, CTA e lista do Rural ficam alguns px acima do Urbano) e o título "Rural" dos Opcionais ~15px mais baixo que "Urbano".
+- O Figma mostra todas as respostas do FAQ abertas; o site mantém o accordion fechado por padrão.
+- Não há frames de tablet/mobile; o layout é derivado e a tabela de Features/Opcionais rola horizontalmente abaixo de 760px.
+- O toggle do Figma está ~9px à direita do centro; no site fica centralizado.

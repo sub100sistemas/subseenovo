@@ -155,12 +155,12 @@ function splitDescription(description: string) {
 <template>
   <div class="relative">
     <div data-header-row class="container-page flex h-[64px] items-center justify-between gap-3 mobile-lg:h-[85px]">
-      <NuxtLink to="/" class="shrink-0">
+      <NuxtLink to="/" :title="titleForLink('/')" aria-label="Página inicial" class="shrink-0">
         <NuxtImg
           src="/icons/logo-sub100-imobiliarias.svg"
           width="158"
           height="44"
-          alt="SUB100 Imobiliárias"
+          alt="SUB100 Imobiliárias" title="SUB100 Imobiliárias"
           class="h-auto w-[120px] tablet:w-[140px] desktop-compact:w-[158px]"
         />
       </NuxtLink>
@@ -181,7 +181,7 @@ function splitDescription(description: string) {
         <template v-for="item in restNavItems" :key="item.label">
           <a
             v-if="item.href"
-            :href="item.href"
+            :href="item.href" :title="titleForLink(item.href)" :aria-label="titleForLink(item.href)"
             target="_blank"
             rel="noopener"
             class="flex h-full items-center px-4 text-[16px] text-brand transition-colors hover:font-medium hover:text-[#1CD9A4]"
@@ -190,7 +190,7 @@ function splitDescription(description: string) {
           </a>
           <NuxtLink
             v-else
-            :to="item.to"
+            :to="item.to" :title="titleForLink(item.to)" :aria-label="titleForLink(item.to)"
             class="flex h-full items-center px-4 text-[16px] text-brand transition-colors hover:font-medium hover:text-[#1CD9A4]"
           >
             {{ item.label }}
@@ -252,10 +252,10 @@ function splitDescription(description: string) {
               <NuxtLink
                 v-for="modItem in col.items"
                 :key="modItem.label"
-                :to="modItem.to"
+                :to="modItem.to" :title="titleForLink(modItem.to)" :aria-label="titleForLink(modItem.to)"
                 class="flex h-[95px] items-start gap-2 overflow-hidden rounded-[10px] border border-transparent p-[13px] hover:border-teal hover:bg-[#f5f5fd]"
               >
-                <img :src="modItem.icon" alt="" width="22" height="22" class="mt-[2px] size-[22px] shrink-0" />
+                <img :src="modItem.icon" :alt="imageLabel(modItem.icon)" :title="imageLabel(modItem.icon)" width="22" height="22" class="mt-[2px] size-[22px] shrink-0" />
                 <span class="flex flex-col">
                   <span class="inline-flex items-center gap-2 text-[14px] font-bold text-brand">
                     {{ modItem.label }}
@@ -279,7 +279,7 @@ function splitDescription(description: string) {
 
             <NuxtLink
               v-if="col.banner"
-              to="/testar-gratis/"
+              to="/testar-gratis/" :title="titleForLink('/testar-gratis/')" :aria-label="titleForLink('/testar-gratis/')"
               class="mt-4 flex h-[183px] w-full max-w-[233px] flex-col items-center justify-center mx-auto rounded-[20px] bg-[linear-gradient(229deg,_rgb(56,177,192)_3%,_rgb(71,126,205)_27%,_rgb(93,95,239)_50%,_rgb(48,156,171)_129%)] px-4 text-center text-white"
             >
               <p class="text-[20px] leading-[1.1] font-light">
@@ -352,7 +352,7 @@ function splitDescription(description: string) {
           <NuxtLink
             v-for="modItem in modulosMobileItems"
             :key="modItem.label"
-            :to="modItem.to"
+            :to="modItem.to" :title="titleForLink(modItem.to)" :aria-label="titleForLink(modItem.to)"
             class="px-10 py-2.5 text-sm text-ink-soft"
           >
             {{ modItem.label }}
@@ -362,14 +362,14 @@ function splitDescription(description: string) {
         <template v-for="item in restNavItems" :key="item.label">
           <a
             v-if="item.href"
-            :href="item.href"
+            :href="item.href" :title="titleForLink(item.href)" :aria-label="titleForLink(item.href)"
             target="_blank"
             rel="noopener"
             class="border-b border-[#EDEDED] px-6 py-4 text-base font-medium text-ink"
           >
             {{ item.label }}
           </a>
-          <NuxtLink v-else :to="item.to" class="border-b border-[#EDEDED] px-6 py-4 text-base font-medium text-ink">
+          <NuxtLink v-else :to="item.to" :title="titleForLink(item.to)" :aria-label="titleForLink(item.to)" class="border-b border-[#EDEDED] px-6 py-4 text-base font-medium text-ink">
             {{ item.label }}
           </NuxtLink>
         </template>
@@ -386,19 +386,19 @@ function splitDescription(description: string) {
           <a
             v-for="social in socialLinks"
             :key="social.label"
-            :href="social.href"
+            :href="social.href" :title="titleForLink(social.href)" :aria-label="titleForLink(social.href)"
             target="_blank"
             rel="noopener"
             class="inline-flex size-9 items-center justify-center rounded-full hover:opacity-80"
           >
-            <img :src="social.icon" width="28" height="28" alt="" aria-hidden="true" />
+            <img :src="social.icon" width="28" height="28" :alt="imageLabel(social.icon)" :title="imageLabel(social.icon)" aria-hidden="true" />
             <span class="sr-only">{{ social.label }}</span>
           </a>
         </div>
 
         <div class="mt-6 flex flex-col gap-2">
-          <NuxtLink to="/lgpd/termos-de-uso/" class="text-sm text-ink-soft hover:text-brand">Termos de uso</NuxtLink>
-          <NuxtLink to="/lgpd/politica-de-privacidade/" class="text-sm text-ink-soft hover:text-brand">
+          <NuxtLink to="/lgpd/termos-de-uso/" :title="titleForLink('/lgpd/termos-de-uso/')" :aria-label="titleForLink('/lgpd/termos-de-uso/')" class="text-sm text-ink-soft hover:text-brand">Termos de uso</NuxtLink>
+          <NuxtLink to="/lgpd/politica-de-privacidade/" :title="titleForLink('/lgpd/politica-de-privacidade/')" :aria-label="titleForLink('/lgpd/politica-de-privacidade/')" class="text-sm text-ink-soft hover:text-brand">
             Política de privacidade
           </NuxtLink>
         </div>

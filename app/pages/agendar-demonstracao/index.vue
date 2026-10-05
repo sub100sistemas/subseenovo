@@ -1,11 +1,13 @@
 <script setup lang="ts">
-const title = 'SUBSEE | Agende uma demonstração do SUBSEE'
+const title = 'Agende uma Demonstração do CRM Imobiliário | SUBSEE'
 const description =
-  'Veja como o SUBSEE organiza o atendimento e as vendas da sua imobiliária, do lead à assinatura'
+  'Agende uma demonstração do SUBSEE e veja como o CRM imobiliário organiza atendimento, leads e vendas da sua imobiliária, do lead à assinatura.'
+const keywords = 'demonstração CRM imobiliário, agendar demonstração SUBSEE, apresentação do CRM'
 
 useSeoMeta({
   title,
   description,
+  keywords,
   ogTitle: title,
   ogDescription: description
 })

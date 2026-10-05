@@ -1,11 +1,13 @@
 <script setup lang="ts">
-const title = 'SUBSEE | Teste o SUBSEE grátis por 30 dias'
+const title = 'Teste Grátis do CRM Imobiliário por 30 Dias | SUBSEE'
 const description =
-  'Conheça na prática as funcionalidades do SUBSEE e descubra como simplificar a gestão da sua imobiliária.'
+  'Teste grátis por 30 dias o CRM imobiliário SUBSEE e veja na prática como organizar imóveis, leads e negociações da sua imobiliária.'
+const keywords = 'teste grátis CRM imobiliário, CRM imobiliário grátis, teste SUBSEE 30 dias'
 
 useSeoMeta({
   title,
   description,
+  keywords,
   ogTitle: title,
   ogDescription: description
 })

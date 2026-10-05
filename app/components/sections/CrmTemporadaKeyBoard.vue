@@ -92,7 +92,7 @@ const checkItems = [
             :key="item"
             class="flex items-center gap-2"
           >
-            <img src="/icons/icone-check-verde-circulo.svg" alt="" aria-hidden="true" class="size-5 shrink-0" />
+            <img src="/icons/icone-check-verde-circulo.svg" alt="Ícone de confirmado" title="Ícone de confirmado" aria-hidden="true" class="size-5 shrink-0" />
             <span class="text-[14px] font-medium text-ink tablet-lg:text-[15px]">{{ item }}</span>
           </div>
         </div>

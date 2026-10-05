@@ -34,7 +34,7 @@ A página está funcional, responsiva em 12 larguras (320 a 1920px), com SEO cor
 | Console / HTTP | 0 erros, 0 respostas ≥400, 0 requisições falhas, 0 imagens quebradas, nenhum texto cortado |
 | FAQ | 6 itens `<details>`; abrir leva o item de 91px para 187px, troca "+" por "−", e fechar volta ao estado inicial |
 | Navegação | Mega-menu (1440px), menu mobile (375px), urbana → loteadoras, rural → loteadoras, loteadoras → urbanas e loteadoras → rurais |
-| CTAs | Technology "Testar grátis por 30 dias" → `/testar-gratis/`; SGL "Acessar o Sistema SGL" → `https://sistemasgl.com.br/` com `target="_blank"` e `rel="noopener"` |
+| CTAs | Technology "Agendar Demonstração" → `/agendar-demonstracao/` (atualizado em 2026-10-04; antes "Testar grátis por 30 dias" → `/testar-gratis/`); SGL "Acessar o Sistema SGL" → `https://sistemasgl.com.br/` com `target="_blank"` e `rel="noopener"` |
 | Higiene do código | Sem `translate-*`, sem comentários, nenhum asset faltando |
 | `validate_spec.py` | 0 erros e 0 avisos |
 
@@ -151,3 +151,9 @@ Nenhuma é falha funcional, e **nenhuma foi corrigida nesta validação.**
 - Decidir o tratamento do `<h3>` (padrão do `layout/Faq.vue` e cards do Hero em imagem) e atualizar a SPEC.
 - Ajustar, se desejado, o painel "Em breve", o ícone do card Rurais e as alturas de SGL e Other Modules.
 - Commitar a correção do `<h1>` e repetir `pnpm build` quando o servidor de desenvolvimento estiver parado.
+
+---
+
+## Atualização 2026-10-04 — CTA da seção Technology
+
+O CTA da seção Technology passou de "Testar grátis por 30 dias" (`/testar-gratis/`, default de `CrmTechnology.vue`) para **"Agendar Demonstração" → `/agendar-demonstracao/`**, conforme o Figma atualizado, por um slot `#cta` em `SiteLoteadorasTechnology.vue` (mesmo `CtaButton` primário e classes do default). Verificado no navegador (1440px e 375px): texto e `href` corretos, botão de 270×56 dentro da tela, sem overflow e sem erros de console. O CTA "Acessar o Sistema SGL" não foi alterado.

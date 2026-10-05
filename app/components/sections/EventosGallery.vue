@@ -27,7 +27,7 @@ const photos: GalleryPhoto[] = [
           :width="379"
           :height="360"
           sizes="mobile-lg:180px tablet:220px tablet-lg:300px desktop-full:379px"
-          :alt="photo.alt"
+          :alt="photo.alt || imageLabel(photo.src)" :title="photo.alt || imageLabel(photo.src)"
           class="h-full w-full object-cover"
           loading="lazy"
         />

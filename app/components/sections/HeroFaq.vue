@@ -52,7 +52,7 @@ const faqs = [
   <section id="duvidas-frequentes" class="section-py relative overflow-hidden">
     <img loading="lazy" decoding="async"
       src="/icons/hero-faq-interrogacao-topo-esquerda.svg"
-      alt=""
+      alt="Ponto de interrogação decorativo" title="Ponto de interrogação decorativo"
       aria-hidden="true"
       class="pointer-events-none absolute -left-1 top-0 hidden w-[60px] tablet-lg:block"
     />
@@ -66,25 +66,25 @@ const faqs = [
       <div class="relative mt-10">
         <img loading="lazy" decoding="async"
           src="/icons/hero-faq-interrogacao-inferior-esquerda-1.svg"
-          alt=""
+          alt="Ponto de interrogação decorativo" title="Ponto de interrogação decorativo"
           aria-hidden="true"
           class="pointer-events-none absolute hidden -left-[22.33%] top-[15.45%] w-[21.45%] tablet-lg:block"
         />
         <img loading="lazy" decoding="async"
           src="/icons/hero-faq-interrogacao-inferior-esquerda-2.svg"
-          alt=""
+          alt="Ponto de interrogação decorativo" title="Ponto de interrogação decorativo"
           aria-hidden="true"
           class="pointer-events-none absolute hidden -left-[24.75%] top-[13.65%] w-[18.45%] tablet-lg:block"
         />
         <img loading="lazy" decoding="async"
           src="/icons/hero-faq-interrogacao-superior-direita-1.svg"
-          alt=""
+          alt="Ponto de interrogação decorativo" title="Ponto de interrogação decorativo"
           aria-hidden="true"
           class="pointer-events-none absolute hidden left-[102.4%] -top-[2.96%] w-[21.44%] tablet-lg:block"
         />
         <img loading="lazy" decoding="async"
           src="/icons/hero-faq-interrogacao-superior-direita-2.svg"
-          alt=""
+          alt="Ponto de interrogação decorativo" title="Ponto de interrogação decorativo"
           aria-hidden="true"
           class="pointer-events-none absolute hidden left-[99.96%] -top-[4.76%] w-[18.44%] tablet-lg:block"
         />
@@ -94,13 +94,13 @@ const faqs = [
         >
           <img loading="lazy" decoding="async"
             src="/icons/hero-faq-interrogacao-caixa-esquerda.svg"
-            alt=""
+            alt="Caixa de interrogação decorativa" title="Caixa de interrogação decorativa"
             aria-hidden="true"
             class="pointer-events-none absolute hidden -left-[12.77%] top-[84.26%] w-[31.7%] tablet-lg:block"
           />
           <img loading="lazy" decoding="async"
             src="/icons/hero-faq-interrogacao-caixa-direita.svg"
-            alt=""
+            alt="Caixa de interrogação decorativa" title="Caixa de interrogação decorativa"
             aria-hidden="true"
             class="pointer-events-none absolute hidden left-[23.76%] top-[84.26%] w-[31.3%] tablet-lg:block"
           />
@@ -116,7 +116,7 @@ const faqs = [
                 src="/images/hero-faq/foto-pessoa-duvidas.png"
                 :width="251"
                 :height="373"
-                alt="Mulher sorrindo apontando para cima"
+                alt="Mulher sorrindo apontando para cima" title="Mulher sorrindo apontando para cima"
                 class="mt-6 h-auto w-[190px] rounded-2xl object-cover tablet-lg:w-[251px]"
                 loading="lazy"
               />
@@ -135,7 +135,7 @@ const faqs = [
                     <span class="flex-1 text-[18px] leading-[1.2] font-medium text-ink tablet-lg:text-[20px]">
                       {{ faq.question }}
                     </span>
-                    <img loading="lazy" decoding="async" src="/icons/icone-seta-faq.svg" alt="" class="chevron mt-1 h-[10px] w-4 shrink-0" />
+                    <img loading="lazy" decoding="async" src="/icons/icone-seta-faq.svg" alt="Seta para expandir a pergunta" title="Seta para expandir a pergunta" class="chevron mt-1 h-[10px] w-4 shrink-0" />
                   </span>
                 </summary>
                 <div class="pb-[30px] pl-[27px]">

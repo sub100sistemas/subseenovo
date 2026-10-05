@@ -13,7 +13,7 @@
 
       <div class="mx-auto mt-10 max-w-[1120px]">
         <NuxtLink
-          to="/modulos/apis-hub-integrador/"
+          to="/modulos/apis-hub-integrador/" :title="titleForLink('/modulos/apis-hub-integrador/')" :aria-label="titleForLink('/modulos/apis-hub-integrador/')"
           class="flex flex-col items-center gap-4 rounded-[20px] bg-white p-6 text-center shadow-[0px_2px_35px_rgba(31,56,115,0.08)] tablet:flex-row tablet:items-center tablet:gap-6 tablet:text-left"
         >
           <span class="flex size-[78px] shrink-0 items-center justify-center rounded-2xl bg-[#F7F7FF]">
@@ -21,7 +21,7 @@
               src="/icons/menu-icone-apis-hub.svg"
               width="22"
               height="24"
-              alt=""
+              alt="Ícone de APIs e HUB integrador" title="Ícone de APIs e HUB integrador"
               aria-hidden="true"
               class="size-6"
             />

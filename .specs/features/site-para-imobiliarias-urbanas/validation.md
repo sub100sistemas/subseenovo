@@ -38,7 +38,7 @@ Após as correções, a página está funcional, responsiva em 12 larguras (320 
 | --- | --- | --- |
 | P1-1 rota 200 | HTTP 200 nas 12 larguras; [site-para-imobiliarias-urbanas.vue:16-26](../../../app/pages/modulos/site-para-imobiliarias-urbanas.vue#L16-L26) compõe as 11 seções na ordem do Figma | Atendido |
 | P1-2 Hero | [SiteUrbanoHero.vue:20-27](../../../app/components/sections/SiteUrbanoHero.vue#L20-L27) (H1 e descrição), `:31-66` (foto, `card_arrow.png` com os cards "Publicação integrado" e "Meu Site", selo do canto), `:4-9` (ícones de categoria). Confere com o node `3135:7088`. A SPEC cita "ícones de redes sociais" e "CTA principal", que o Hero do Figma não tem | Atendido (conforme o Figma; a SPEC está imprecisa) |
-| P1-3 Sites Showcase | [SiteUrbanoTechnology.vue:19-27](../../../app/components/sections/SiteUrbanoTechnology.vue#L19-L27): H2, descrição, CTA "Testar grátis por 30 dias" (do `CrmTechnology`) e mockup com o site IDEAL e os 3 cards | Atendido |
+| P1-3 Sites Showcase | [SiteUrbanoTechnology.vue:19-35](../../../app/components/sections/SiteUrbanoTechnology.vue#L19-L35): H2, descrição, CTA "Agendar Demonstração" → `/agendar-demonstracao/` (slot `#cta`, atualizado em 2026-10-04; antes "Testar grátis por 30 dias" do default de `CrmTechnology`) e mockup com o site IDEAL e os 3 cards | Atendido |
 | P1-4 Technology Property | [SiteUrbanoListings.vue:10-43](../../../app/components/sections/SiteUrbanoListings.vue#L10-L43) (4 features), `:47` (CTA "Agendar Demonstração"), `:58-69` (mockup com os indicadores). A ordem dos ícones confere com o Figma | Atendido |
 | P2-1 Technology Mobile | [SiteUrbanoPropertySheet.vue:7-23](../../../app/components/sections/SiteUrbanoPropertySheet.vue#L7-L23): 15 atributos com ícone. O código usa "Visto" e "Ano de construção"; o Figma tem "Visto" e "Ano **do** construção" (erro de digitação do Figma, corrigido no código) | Atendido |
 | P2-2 International | [SiteUrbanoInternational.vue:4-27](../../../app/components/sections/SiteUrbanoInternational.vue#L4-L27): 6 idiomas com bandeira, texto e cadeia de logos (via `LanguageSwitcher`) | Atendido |
@@ -150,3 +150,9 @@ Correções feitas durante esta validação, ainda sem commit:
 - Atualizar a SPEC (nomes, cargos, "breve", links, Hero) e criar ou dispensar formalmente `tasks.md`/`design.md`; marcar os status `SU-01` a `SU-17` e o Success Criteria.
 - Repetir `pnpm build` quando o servidor de desenvolvimento estiver parado.
 - Commitar as três correções.
+
+---
+
+## Atualização 2026-10-04 — CTA da seção Technology
+
+O CTA da seção Technology passou de "Testar grátis por 30 dias" (`/testar-gratis/`) para **"Agendar Demonstração" → `/agendar-demonstracao/`**, conforme o Figma atualizado, por um slot `#cta` em `SiteUrbanoTechnology.vue` (mesmo `CtaButton` primário e classes do default). Verificado no navegador (1440px e 375px): texto e `href` corretos, botão de 270×56 dentro da tela, sem overflow e sem erros de console. O outro CTA "Agendar Demonstração" da página (seção de fichas) não foi alterado.

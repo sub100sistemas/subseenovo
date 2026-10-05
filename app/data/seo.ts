@@ -1,6 +1,8 @@
 export const productionSiteUrl = 'https://subsee.com.br'
 
 export const noindexPaths = [
+  '/testar-gratis/',
+  '/agendar-demonstracao/',
   '/inscreva-se/',
   '/testar-gratis/obrigado/',
   '/agendar-demonstracao/obrigado/',

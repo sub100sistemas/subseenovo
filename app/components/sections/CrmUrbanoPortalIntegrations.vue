@@ -93,7 +93,7 @@ const badges: PortalBadge[] = [
             :width="1362"
             :height="1146"
             sizes="mobile-lg:100vw tablet-lg:450px desktop:580px desktop-full:681px"
-            alt="Portais integrados no aplicativo"
+            alt="Portais integrados no aplicativo" title="Portais integrados no aplicativo"
             class="absolute left-[5.42%] top-[3.86%] w-[94.58%] h-auto max-w-none"
             loading="lazy"
           />
@@ -106,7 +106,7 @@ const badges: PortalBadge[] = [
           >
             <img
               :src="badge.logo"
-              :alt="badge.alt"
+              :alt="badge.alt || imageLabel(badge.logo)" :title="badge.alt || imageLabel(badge.logo)"
               class="absolute max-w-none"
               :style="badge.logoStyle"
             />

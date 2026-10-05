@@ -32,7 +32,7 @@ const moduleIcons: HeroModuleIcon[] = [
           :width="724"
           :height="912"
           sizes="mobile-lg:180px tablet:340px tablet-lg:240px desktop:300px desktop-full:362px"
-          alt="Corretora de blazer branco com tablet"
+          alt="Corretora de blazer branco com tablet" title="Corretora de blazer branco com tablet"
           class="h-full w-full object-cover"
           loading="eager"
         />
@@ -44,7 +44,7 @@ const moduleIcons: HeroModuleIcon[] = [
         :width="1440"
         :height="816"
         sizes="100vw tablet-lg:50vw desktop-full:720px"
-        alt=""
+        alt="Cartões flutuantes do módulo" title="Cartões flutuantes do módulo"
         aria-hidden="true"
         class="pointer-events-none absolute z-[1] left-0 top-0 w-full h-auto"
       />
@@ -54,7 +54,7 @@ const moduleIcons: HeroModuleIcon[] = [
       >
         <img
           src="/icons/crm-urbano-hero-icone-calculadora.svg"
-          alt=""
+          alt="Ícone de calculadora" title="Ícone de calculadora"
           aria-hidden="true"
           class="absolute left-[30%] top-[26%] w-[40%] h-[50%]"
         />

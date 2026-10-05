@@ -54,9 +54,9 @@ const badges = [
 <template>
   <section id="precos" class="section-py pb-0 relative overflow-hidden">
     <div class="pointer-events-none absolute inset-0 hidden desktop-compact:block" aria-hidden="true">
-      <img loading="lazy" decoding="async" src="/icons/hero-pricing-bg-sol.svg" alt="" class="absolute left-[1.35%] top-[16.46%] w-[10.91%]" />
-      <img loading="lazy" decoding="async" src="/icons/hero-pricing-bg-blob.svg" alt="" class="absolute left-[4.34%] top-[36.69%] w-[31.6%]" />
-      <img loading="lazy" decoding="async" src="/icons/hero-pricing-bg-trator.svg" alt="" class="absolute left-[97.76%] top-[60.36%] w-[18.14%]" />
+      <img loading="lazy" decoding="async" src="/icons/hero-pricing-bg-sol.svg" alt="Sol decorativo" title="Sol decorativo" class="absolute left-[1.35%] top-[16.46%] w-[10.91%]" />
+      <img loading="lazy" decoding="async" src="/icons/hero-pricing-bg-blob.svg" alt="Forma decorativa" title="Forma decorativa" class="absolute left-[4.34%] top-[36.69%] w-[31.6%]" />
+      <img loading="lazy" decoding="async" src="/icons/hero-pricing-bg-trator.svg" alt="Trator decorativo" title="Trator decorativo" class="absolute left-[97.76%] top-[60.36%] w-[18.14%]" />
     </div>
 
     <div class="container-page relative">
@@ -78,7 +78,7 @@ const badges = [
               :width="886"
               :height="1068"
               sizes="416px"
-              alt="Homem sorrindo apontando para os planos"
+              alt="Homem sorrindo apontando para os planos" title="Homem sorrindo apontando para os planos"
               class="relative z-10 h-auto w-full"
               loading="lazy"
             />
@@ -90,7 +90,7 @@ const badges = [
               :style="{ left: badge.left + '%', top: badge.top + '%', filter: badge.shadow }"
             >
               <div class="absolute inset-[22.5%_24.5%]">
-                <img loading="lazy" decoding="async" :src="badge.icon" :alt="badge.alt" class="block size-full max-w-none" />
+                <img loading="lazy" decoding="async" :src="badge.icon" :alt="badge.alt || imageLabel(badge.icon)" :title="badge.alt || imageLabel(badge.icon)" class="block size-full max-w-none" />
               </div>
             </div>
           </div>
@@ -121,7 +121,7 @@ const badges = [
                   src="/icons/seta-lista-verde.svg"
                   width="10"
                   height="15"
-                  alt=""
+                  alt="Seta verde da lista" title="Seta verde da lista"
                   aria-hidden="true"
                   class="mt-[6px] shrink-0"
                 />

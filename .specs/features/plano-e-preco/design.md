@@ -37,7 +37,7 @@ Baseado no relatório do agente de exploração (busca em `layout/`, `sections/`
 
 | Component | Location | How to Use |
 | --- | --- | --- |
-| `CtaButton.vue` | `app/components/ui/CtaButton.vue` | Todos os CTAs ("Testar grátis por 30 dias", "+ Opcionais", "Site & hotsite padrão") |
+| `CtaButton.vue` | `app/components/ui/CtaButton.vue` | Todos os CTAs ("Testar grátis por 30 dias" nos cards, "+ Opcionais", "Site & hotsite padrão", "Agendar Demonstração" na seção Opcionais) |
 | `Faq.vue` (layout) + padrão `CrmFaq.vue` (sections) | `app/components/layout/Faq.vue`, `app/components/sections/CrmFaq.vue` | Base para `PlanoEPrecoFaq.vue` — único wrapper de FAQ presente neste branch (Eventos/Base de Conhecimento vivem em branches próprias, ainda não mergeadas); mesma estrutura de accordion nativo `<details>/<summary>` |
 | `ui/FeatureList.vue` | `app/components/ui/FeatureList.vue` | Candidato de base para a lista de 9 recursos dos cards de preço (Pricing) — mais simples que a tabela comparativa; avaliar na Task se cobre o formato bullet+ícone verde do Figma ou se precisa de props adicionais |
 | Ícones já existentes (a confirmar visualmente antes de reusar, ver manifesto) | `public/icons/faq-plus-circle.svg`, `faq-minus-circle.svg`, `icon-check-circle.svg`, `icone-check-verde-circulo.svg`, `icone-check-lista-urbano.svg`, `seta-lista-verde.svg`, `seta-botao-cta.svg`, `icone-seta-cta.svg`, `seta-botao-branca.svg`, `logo-subsee-on.svg`, `crm-hero-divider-onda.svg` (e variantes) | Cada um é candidato de reuso para um ícone/decoração equivalente do Figma — comparação visual pixel-a-pixel é uma task própria antes de qualquer export novo, seguindo o mesmo processo já usado em Eventos para `imgPlay`/`imgPlay1` e o divisor de onda |

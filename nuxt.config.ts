@@ -46,9 +46,10 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteUrl:
-        runtimeEnv.CF_PAGES === '1' && runtimeEnv.CF_PAGES_BRANCH === 'master'
-          ? 'https://subsee.com.br'
-          : 'http://localhost:3000',
+        runtimeEnv.NUXT_PUBLIC_SITE_URL ||
+        (runtimeEnv.CF_PAGES === '1' && runtimeEnv.CF_PAGES_BRANCH === 'master'
+          ? 'https://subseenovo.pages.dev'
+          : 'http://localhost:3000'),
       formsEndpoint: 'https://forms.sub100.com.br/sub100sistemas/formularios.php',
       recaptchaSiteKey: runtimeEnv.NUXT_PUBLIC_RECAPTCHA_SITE_KEY
     }

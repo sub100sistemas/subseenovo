@@ -12,6 +12,7 @@
     mockup-sizes="mobile-lg:100vw tablet-lg:920px desktop:1100px"
     :mockup-img-attrs="{
       alt: 'Site de imobiliária urbana',
+      title: 'Site de imobiliária urbana',
       class: 'mx-auto h-auto w-full max-w-[1100px] rounded-[16px] tablet-lg:rounded-[24px]',
       loading: 'lazy'
     }"
@@ -24,6 +25,12 @@
     <template #description>
       Anuncie imóveis residenciais e comerciais, casas, apartamentos, terrenos e lançamentos,
       com ferramentas para venda e locação em um único sistema.
+    </template>
+
+    <template #cta>
+      <CtaButton variant="primary" to="/agendar-demonstracao/" class="whitespace-nowrap">
+        Agendar Demonstração
+      </CtaButton>
     </template>
   </CrmTechnology>
 </template>

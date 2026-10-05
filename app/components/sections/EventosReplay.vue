@@ -63,7 +63,7 @@ const replayCards: ReplayCard[] = [
                 :width="399"
                 :height="267"
                 sizes="tablet-lg:399px"
-                :alt="card.alt"
+                :alt="card.alt || imageLabel(card.thumbnail)" :title="card.alt || imageLabel(card.thumbnail)"
                 class="h-full w-full object-cover"
                 loading="lazy"
               />
@@ -71,7 +71,7 @@ const replayCards: ReplayCard[] = [
                 <div class="relative flex size-[58px] items-center justify-center rounded-full border border-[#dde6f6] bg-white">
                   <img
                     src="/icons/eventos-icone-play-triangle.svg"
-                    alt=""
+                    alt="Ícone de reproduzir" title="Ícone de reproduzir"
                     aria-hidden="true"
                     class="ml-1 h-[15px] w-[20px] rotate-90"
                   />
@@ -104,7 +104,7 @@ const replayCards: ReplayCard[] = [
         </div>
 
         <a
-          href="https://app.subsee.com.br/treinamentos/eventos-online?page=1&order=default"
+          href="https://app.subsee.com.br/treinamentos/eventos-online?page=1&order=default" :title="titleForLink('https://app.subsee.com.br/treinamentos/eventos-online?page=1&order=default')" :aria-label="titleForLink('https://app.subsee.com.br/treinamentos/eventos-online?page=1&order=default')"
           target="_blank"
           rel="noopener"
           class="flex h-[56px] w-full max-w-[349px] items-center justify-center gap-2 rounded-[12px] bg-brand text-[18px] text-white"

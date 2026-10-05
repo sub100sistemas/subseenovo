@@ -57,7 +57,7 @@ const circle = computed(() => props.circleSrc ?? layers.value.circleSrc)
     <img
       v-if="layers.shadowSrc"
       :src="layers.shadowSrc"
-      alt=""
+      :alt="imageLabel(layers.shadowSrc)" :title="imageLabel(layers.shadowSrc)"
       width="140"
       height="140"
       class="pointer-events-none absolute -top-[14px] -left-[24px] block max-w-none"
@@ -65,14 +65,14 @@ const circle = computed(() => props.circleSrc ?? layers.value.circleSrc)
     <img
       v-if="circle"
       :src="circle"
-      alt=""
+      :alt="imageLabel(circle)" :title="imageLabel(circle)"
       :width="layers.circleSize"
       :height="layers.circleSize"
       class="absolute inset-0 block max-w-none"
     />
     <img
       :src="layers.triangleSrc"
-      alt=""
+      :alt="imageLabel(layers.triangleSrc)" :title="imageLabel(layers.triangleSrc)"
       :width="layers.triangleWidth"
       :height="layers.triangleHeight"
       class="relative block max-w-none rotate-90"

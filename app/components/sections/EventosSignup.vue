@@ -4,7 +4,7 @@
   <section id="eventos-inscricao" class="section-py">
     <div class="container-page flex justify-center">
       <a
-        href="/inscreva-se/"
+        href="/inscreva-se/" :title="titleForLink('/inscreva-se/')" :aria-label="titleForLink('/inscreva-se/')"
         class="relative flex w-full max-w-[1080px] flex-col overflow-hidden rounded-[30px] bg-[#f2f5f4] tablet-lg:min-h-[350px] tablet-lg:flex-row tablet-lg:rounded-[50px]"
       >
         <div class="flex w-full flex-col items-start gap-4 px-6 py-8 tablet-lg:w-[55%] tablet-lg:justify-center tablet-lg:px-12 tablet-lg:py-10">
@@ -32,7 +32,7 @@
             :width="2056"
             :height="700"
             sizes="tablet-lg:600px desktop-full:1028px"
-            alt="Videochamada com três pessoas"
+            alt="Videochamada com três pessoas" title="Videochamada com três pessoas"
             class="h-full w-full object-contain object-right tablet-lg:absolute tablet-lg:inset-0 tablet-lg:object-cover"
             loading="lazy"
           />

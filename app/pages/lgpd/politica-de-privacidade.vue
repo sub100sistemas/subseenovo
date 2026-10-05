@@ -1,11 +1,13 @@
 <script setup lang="ts">
-const title = 'SUBSEE | Política de Privacidade — Proteção de dados e LGPD'
+const title = 'Política de Privacidade e Proteção de Dados (LGPD) | SUBSEE'
 const description =
-  'Saiba como a SUB100 coleta, utiliza e protege suas informações pessoais em conformidade com a LGPD: cookies, segurança, direitos do titular e contato.'
+  'Saiba como a SUB100 coleta, usa e protege seus dados pessoais, em conformidade com a LGPD: cookies, segurança e direitos do titular.'
+const keywords = 'política de privacidade SUBSEE, LGPD, proteção de dados SUB100'
 
 useSeoMeta({
   title,
   description,
+  keywords,
   ogTitle: title,
   ogDescription: description
 })

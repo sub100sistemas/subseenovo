@@ -1,11 +1,13 @@
 <script setup lang="ts">
-const title = 'SUBSEE | Site para Loteadoras — Presença digital para lotes e lançamentos'
+const title = 'Site para Loteadoras: Lotes e Lançamentos | SUBSEE'
 const description =
-  'Site institucional para loteadoras, com apresentação completa de lotes e lançamentos e integração com o CRM SUBSEE e o Sistema SGL.'
+  'Site para loteadoras que apresenta lotes e lançamentos de forma completa, com integração ao CRM SUBSEE e ao Sistema SGL. Em breve.'
+const keywords = 'site para loteadoras, site de loteamento, site para lançamento de lotes, Sistema SGL'
 
 useSeoMeta({
   title,
   description,
+  keywords,
   ogTitle: title,
   ogDescription: description
 })

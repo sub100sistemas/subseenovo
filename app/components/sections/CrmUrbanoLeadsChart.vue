@@ -60,7 +60,7 @@ const brokers: Broker[] = [
       >
         <img
           src="/icons/crm-urbano-leads-bloco-blobs.svg"
-          alt=""
+          alt="Formas decorativas" title="Formas decorativas"
           aria-hidden="true"
           class="pointer-events-none absolute inset-0 h-full w-full max-w-none object-cover"
         />
@@ -81,37 +81,37 @@ const brokers: Broker[] = [
           <div class="relative mx-auto mt-10 flex max-w-[420px] flex-col gap-4 tablet-lg:mt-[49px] tablet-lg:block tablet-lg:aspect-[1195/460] tablet-lg:max-w-[85.36%] tablet-lg:gap-0">
             <img
               src="/icons/crm-urbano-leads-conectores-esquerda.svg"
-              alt=""
+              alt="Conectores decorativos" title="Conectores decorativos"
               aria-hidden="true"
               class="pointer-events-none absolute hidden max-w-none tablet-lg:block tablet-lg:left-[24.18%] tablet-lg:top-[8.02%] tablet-lg:h-[83.96%] tablet-lg:w-[13.95%]"
             />
             <img
               src="/icons/crm-urbano-leads-pontos-esquerda.svg"
-              alt=""
+              alt="Pontos decorativos" title="Pontos decorativos"
               aria-hidden="true"
               class="pointer-events-none absolute hidden max-w-none tablet-lg:block tablet-lg:left-[23.52%] tablet-lg:top-[6.3%] tablet-lg:h-[87.39%] tablet-lg:w-[1.51%]"
             />
             <img
               src="/icons/crm-urbano-leads-conectores-direita.svg"
-              alt=""
+              alt="Conectores decorativos" title="Conectores decorativos"
               aria-hidden="true"
               class="pointer-events-none absolute hidden max-w-none tablet-lg:block tablet-lg:left-[63.17%] tablet-lg:top-[19.98%] tablet-lg:h-[60.04%] tablet-lg:w-[12.65%]"
             />
             <img
               src="/icons/crm-urbano-leads-pontos-direita.svg"
-              alt=""
+              alt="Pontos decorativos" title="Pontos decorativos"
               aria-hidden="true"
               class="pointer-events-none absolute hidden max-w-none tablet-lg:block tablet-lg:left-[74.98%] tablet-lg:top-[18.26%] tablet-lg:h-[63.48%] tablet-lg:w-[1.51%]"
             />
             <img
               src="/icons/crm-urbano-leads-ponto-central.svg"
-              alt=""
+              alt="Ponto decorativo central" title="Ponto decorativo central"
               aria-hidden="true"
               class="pointer-events-none absolute hidden max-w-none tablet-lg:block tablet-lg:left-[37.16%] tablet-lg:top-[47.83%] tablet-lg:h-[4.35%] tablet-lg:w-[1.67%]"
             />
             <img
               src="/icons/crm-urbano-leads-ponto-central.svg"
-              alt=""
+              alt="Ponto decorativo central" title="Ponto decorativo central"
               aria-hidden="true"
               class="pointer-events-none absolute hidden max-w-none tablet-lg:block tablet-lg:left-[62.43%] tablet-lg:top-[47.83%] tablet-lg:h-[4.35%] tablet-lg:w-[1.67%]"
             />
@@ -129,7 +129,7 @@ const brokers: Broker[] = [
                 >
                   <img
                     :src="source.icon"
-                    alt=""
+                    :alt="imageLabel(source.icon)" :title="imageLabel(source.icon)"
                     aria-hidden="true"
                     class="max-h-[60%] max-w-[60%] object-contain"
                   />
@@ -147,7 +147,7 @@ const brokers: Broker[] = [
                 >
                   <img
                     src="/icons/crm-urbano-leads-icone-camadas.svg"
-                    alt=""
+                    alt="Ícone de camadas" title="Ícone de camadas"
                     aria-hidden="true"
                     class="max-h-[46%] max-w-[44%] object-contain"
                   />
@@ -180,19 +180,19 @@ const brokers: Broker[] = [
                 <span class="relative block size-[80%]">
                   <img
                     src="/icons/crm-urbano-leads-icone-tempo-1.svg"
-                    alt=""
+                    alt="Ícone de tempo" title="Ícone de tempo"
                     aria-hidden="true"
                     class="absolute left-[8.33%] top-[16.67%] w-[83.33%] h-[38.89%] max-w-none"
                   />
                   <img
                     src="/icons/crm-urbano-leads-icone-tempo-2.svg"
-                    alt=""
+                    alt="Ícone de tempo" title="Ícone de tempo"
                     aria-hidden="true"
                     class="absolute left-[25%] top-[27.78%] w-1/2 h-1/2 max-w-none"
                   />
                   <img
                     src="/icons/crm-urbano-leads-icone-tempo-3.svg"
-                    alt=""
+                    alt="Ícone de tempo" title="Ícone de tempo"
                     aria-hidden="true"
                     class="absolute left-[47.22%] top-[38.89%] w-[19.44%] h-[16.67%] max-w-none"
                   />

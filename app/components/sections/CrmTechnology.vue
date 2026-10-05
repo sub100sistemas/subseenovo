@@ -51,6 +51,7 @@ withDefaults(defineProps<Props>(), {
   mockupSizes: 'mobile-lg:100vw tablet-lg:1000px desktop:1100px',
   mockupImgAttrs: () => ({
     alt: 'Kanban de atendimentos no CRM',
+    title: 'Kanban de atendimentos no CRM',
     class: 'mx-auto h-auto w-full max-w-[1100px]',
     loading: 'lazy',
   }),

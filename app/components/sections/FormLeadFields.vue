@@ -155,9 +155,9 @@ const fieldDefinitions = computed<FieldDefinition[]>(() => {
 
       <FormCheckbox v-model="accepted" name="accepted" required :error="errors.accepted" class="mobile-lg:col-span-2">
         Li e aceito os
-        <a :href="formTermsLinks.terms" target="_blank" rel="noopener" class="font-medium underline">Termos de Uso</a>
+        <a :href="formTermsLinks.terms" :title="titleForLink(formTermsLinks.terms)" :aria-label="titleForLink(formTermsLinks.terms)" target="_blank" rel="noopener" class="font-medium underline">Termos de Uso</a>
         e a
-        <a :href="formTermsLinks.privacy" target="_blank" rel="noopener" class="font-medium underline">
+        <a :href="formTermsLinks.privacy" :title="titleForLink(formTermsLinks.privacy)" :aria-label="titleForLink(formTermsLinks.privacy)" target="_blank" rel="noopener" class="font-medium underline">
           Política de Privacidade</a
         >.
       </FormCheckbox>

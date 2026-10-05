@@ -32,7 +32,7 @@ withDefaults(defineProps<Props>(), {
         <span :class="chipClass">
           <img
             :src="item.icon"
-            alt=""
+            :alt="imageLabel(item.icon)" :title="imageLabel(item.icon)"
             :width="item.iconSize ?? 30"
             :height="item.iconSize ?? 30"
             class="block shrink-0"

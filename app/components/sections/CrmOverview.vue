@@ -46,7 +46,7 @@ const cards: FeatureCard[] = [
            :key="card.title"
             class="mt-13 flex h-[calc(100%-3.25rem)] flex-col items-center gap-6 rounded-[20px] border border-brand bg-white px-8 py-10 text-center shadow-[0px_10px_20px_rgba(38,45,118,0.08)]">
             <span class="flex size-[100px] shrink-0 items-center justify-center rounded-full border border-brand absolute top-0 bg-white">
-              <img :src="card.icon" width="40" height="40" alt="" aria-hidden="true" class="size-10" />
+              <img :src="card.icon" width="40" height="40" :alt="imageLabel(card.icon)" :title="imageLabel(card.icon)" aria-hidden="true" class="size-10" />
             </span>
             <h3 class="text-xl font-medium text-brand tablet-lg:text-2xl mt-10">{{ card.title }}</h3>
             <p class="text-base leading-[1.8] text-ink-soft">{{ card.description }}</p>

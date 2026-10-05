@@ -85,7 +85,7 @@ const badges = [
             :src="icon.src"
             width="82"
             height="82"
-            alt=""
+            :alt="imageLabel(icon.src)" :title="imageLabel(icon.src)"
             class="absolute"
             :style="icon.style"
           />
@@ -100,7 +100,7 @@ const badges = [
                 class="flex flex-col items-center justify-center gap-2 px-3 py-5 text-center"
                 :class="[i % 2 === 0 ? 'border-r border-[#D9DEE8]' : '', i < 2 ? 'border-b border-[#D9DEE8]' : '']"
               >
-                <img loading="lazy" decoding="async" :src="segment.icon" width="82" height="82" alt="" class="size-10 shrink-0" />
+                <img loading="lazy" decoding="async" :src="segment.icon" width="82" height="82" :alt="imageLabel(segment.icon)" :title="imageLabel(segment.icon)" class="size-10 shrink-0" />
                 <span class="text-sm text-ink">{{ segment.label }}</span>
               </div>
             </div>
@@ -112,7 +112,7 @@ const badges = [
           </div>
 
           <div class="mx-auto flex w-fit items-center justify-center rounded-2xl border border-[#D9DEE8] bg-white px-8 py-4">
-            <img loading="lazy" decoding="async" src="/icons/logo-subsee-on.svg" width="184" height="40" alt="SUBSEE on" class="h-8 w-auto" />
+            <img loading="lazy" decoding="async" src="/icons/logo-subsee-on.svg" width="184" height="40" alt="SUBSEE on" title="SUBSEE on" class="h-8 w-auto" />
           </div>
 
           <div class="relative mx-auto h-6 w-px bg-[#D9DEE8]" aria-hidden="true">
@@ -141,7 +141,7 @@ const badges = [
             :class="badge.hideOnMobile ? 'hidden tablet-lg:block' : ''"
             :style="{ '--badge-x': badge.x + '%', '--badge-y': badge.y + '%' }"
           >
-            <img loading="lazy" decoding="async" :src="badge.src" width="98" height="98" :alt="badge.alt" class="block size-full" />
+            <img loading="lazy" decoding="async" :src="badge.src" width="98" height="98" :alt="badge.alt || imageLabel(badge.src)" :title="badge.alt || imageLabel(badge.src)" class="block size-full" />
           </div>
         </div>
 

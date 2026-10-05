@@ -55,7 +55,7 @@ const modalOpen = ref(false)
           :width="1672"
           :height="941"
           sizes="380px mobile-lg:600px tablet:800px tablet-lg:560px desktop-compact:660px desktop:820px"
-          alt=""
+          alt="Miniatura do vídeo em destaque" title="Miniatura do vídeo em destaque"
           aria-hidden="true"
           class="pointer-events-none absolute top-[-0.435%] left-[-5.13%] block h-[100.87%] w-[108.42%] max-w-none object-cover"
           loading="lazy"

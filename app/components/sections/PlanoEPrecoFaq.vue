@@ -36,10 +36,20 @@ const faqs: FaqItem[] = [
       'Depende dos serviços adicionais utilizados. Recursos de mensageria, como WhatsApp Oficial, integrações com provedores de WhatsApp não oficial e serviços de SMS, podem gerar cobranças realizadas diretamente pela Meta ou pelos respectivos fornecedores. Esses serviços complementares são contratados de terceiros e não fazem parte da mensalidade do SUBSEE.'
   }
 ]
+
+const panelClass = 'px-0 py-0'
+const accordionClass = 'faq-accordion mx-auto mt-10 max-w-[970px] desktop-full:mt-[25px]'
 </script>
 
 <template>
-  <Faq section-id="plano-e-preco-duvidas-frequentes" :faqs="faqs" plus-icon-src="/icons/faq-plus-circle.svg" minus-icon-src="/icons/faq-minus-circle.svg">
+  <Faq
+    section-id="plano-e-preco-duvidas-frequentes"
+    :faqs="faqs"
+    plus-icon-src="/icons/faq-plus-circle.svg"
+    minus-icon-src="/icons/faq-minus-circle.svg"
+    :panel-class="panelClass"
+    :accordion-class="accordionClass"
+  >
     <template #title>Perguntas Frequentes</template>
     <template #description>Encontre respostas sobre os pacotes, valores e funcionalidades do SUBSEE on.</template>
   </Faq>

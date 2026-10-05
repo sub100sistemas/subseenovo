@@ -66,6 +66,7 @@ const features: PortfolioFeature[] = [
         sizes="mobile-lg:100vw tablet-lg:440px desktop:580px desktop-full:664px"
         :img-attrs="{
           alt: 'Telas de imóveis urbanos e busca',
+          title: 'Telas de imóveis urbanos e busca',
           class: 'mx-auto h-auto w-full max-w-[664px]',
           loading: 'lazy'
         }"

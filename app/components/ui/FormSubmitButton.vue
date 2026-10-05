@@ -24,6 +24,6 @@ withDefaults(defineProps<Props>(), {
       <slot v-else />
     </span>
     <IconSpinner v-if="loading" class="size-[18px]" />
-    <img v-else src="/icons/form-arrow-right.svg" alt="" width="18" height="18" class="block shrink-0" />
+    <img v-else src="/icons/form-arrow-right.svg" alt="Seta para a direita" title="Seta para a direita" width="18" height="18" class="block shrink-0" />
   </button>
 </template>

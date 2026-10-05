@@ -13,7 +13,7 @@ withDefaults(defineProps<Props>(), {
 
 <template>
   <p :class="badgeClass">
-    <img src="/icons/form-shield.svg" alt="" width="16" height="16" class="block shrink-0" />
+    <img src="/icons/form-shield.svg" alt="Ícone de proteção de dados" title="Ícone de proteção de dados" width="16" height="16" class="block shrink-0" />
     <span :class="labelClass">{{ label }}</span>
   </p>
 </template>

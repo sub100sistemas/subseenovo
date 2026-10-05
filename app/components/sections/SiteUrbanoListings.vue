@@ -62,7 +62,7 @@ const features: PortfolioFeature[] = [
         :width="1344"
         :height="1455"
         sizes="mobile-lg:100vw tablet-lg:440px desktop:580px desktop-full:664px"
-        alt="Listagem de imóveis no tablet"
+        alt="Listagem de imóveis no tablet" title="Listagem de imóveis no tablet"
         class="mx-auto h-auto w-full max-w-[664px]"
         loading="lazy"
       />

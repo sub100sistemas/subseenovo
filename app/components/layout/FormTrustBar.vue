@@ -33,7 +33,7 @@ withDefaults(defineProps<Props>(), {
       <ul :class="listClass">
         <li v-for="item in items" :key="item.title" :class="itemClass">
           <span :class="circleClass">
-            <img :src="item.icon" alt="" width="30" height="30" class="block shrink-0" />
+            <img :src="item.icon" :alt="imageLabel(item.icon)" :title="imageLabel(item.icon)" width="30" height="30" class="block shrink-0" />
           </span>
           <span :class="textClass">
             <span :class="titleClass">{{ item.title }}</span>

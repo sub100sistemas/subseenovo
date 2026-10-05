@@ -5,13 +5,13 @@
     <div class="container-page relative flex flex-col items-center gap-10 tablet-lg:flex-row tablet-lg:items-center tablet-lg:justify-between tablet-lg:gap-12">
       <img
         src="/icons/eventos-icone-ellipse-1.svg"
-        alt=""
+        alt="Elipse decorativa" title="Elipse decorativa"
         aria-hidden="true"
         class="pointer-events-none absolute top-[12%] left-[-1.5%] hidden size-[66px] desktop-full:block"
       />
       <img
         src="/icons/eventos-icone-ellipse-2.svg"
-        alt=""
+        alt="Elipse decorativa" title="Elipse decorativa"
         aria-hidden="true"
         class="pointer-events-none absolute top-[55%] left-[45.3%] hidden h-[30px] w-[27px] desktop-full:block"
       />
@@ -39,14 +39,14 @@
             :width="637"
             :height="471"
             sizes="mobile-lg:100vw tablet-lg:500px desktop-full:638px"
-            alt="Corretora apresentando resultados à equipe"
+            alt="Corretora apresentando resultados à equipe" title="Corretora apresentando resultados à equipe"
             class="h-full w-full rounded-[20px] object-cover"
             loading="lazy"
           />
           <div class="absolute inset-0 flex items-center justify-center">
             <img
               src="/icons/eventos-icone-overview-play.svg"
-              alt=""
+              alt="Ícone de reproduzir vídeo" title="Ícone de reproduzir vídeo"
               aria-hidden="true"
               class="size-[58px]"
             />

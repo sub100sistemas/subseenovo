@@ -1,11 +1,13 @@
 <script setup lang="ts">
-const title = 'SUBSEE | CRM Imobiliário Urbano para Venda, Locação e Lançamentos'
+const title = 'CRM Imobiliário Urbano para Vendas e Locação | SUBSEE'
 const description =
-  'Organize lançamentos, vendas e locações em um só CRM: distribuição automática de leads, funil de vendas em Kanban, metas em tempo real e publicação integrada nos principais portais imobiliários.'
+  'CRM imobiliário urbano com funil Kanban, distribuição automática de leads, metas em tempo real e publicação nos principais portais imobiliários.'
+const keywords = 'CRM imobiliário urbano, CRM para vendas e locação, funil Kanban imobiliário, distribuição de leads'
 
 useSeoMeta({
   title,
   description,
+  keywords,
   ogTitle: title,
   ogDescription: description
 })

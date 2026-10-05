@@ -78,7 +78,7 @@ withDefaults(
 
           <div :class="flowClass">
             <div class="flex h-20 w-[180px] shrink-0 items-center justify-center rounded-[6px] bg-white">
-              <img :src="subseeLogoSrc" :alt="subseeLogoAlt" class="h-[30px] w-auto" loading="lazy" />
+              <img :src="subseeLogoSrc" :alt="subseeLogoAlt || imageLabel(subseeLogoSrc)" :title="subseeLogoAlt || imageLabel(subseeLogoSrc)" class="h-[30px] w-auto" loading="lazy" />
             </div>
 
             <div class="flex h-9 w-3 shrink-0 items-center justify-center tablet-lg:hidden">
@@ -95,12 +95,12 @@ withDefaults(
             </div>
             <img
               :src="arrowSrc"
-              alt=""
+              :alt="imageLabel(arrowSrc)" :title="imageLabel(arrowSrc)"
               aria-hidden="true"
               class="hidden h-3 w-[52px] shrink-0 tablet-lg:block"
             />
 
-            <img :src="sub100CardSrc" :alt="sub100CardAlt" class="h-20 w-[153px] shrink-0" />
+            <img :src="sub100CardSrc" :alt="sub100CardAlt || imageLabel(sub100CardSrc)" :title="sub100CardAlt || imageLabel(sub100CardSrc)" class="h-20 w-[153px] shrink-0" />
 
             <div class="flex h-9 w-3 shrink-0 items-center justify-center tablet-lg:hidden">
               <svg width="12" height="36" viewBox="0 0 12 36" fill="none" aria-hidden="true">
@@ -116,7 +116,7 @@ withDefaults(
             </div>
             <img
               :src="arrowSrc"
-              alt=""
+              :alt="imageLabel(arrowSrc)" :title="imageLabel(arrowSrc)"
               aria-hidden="true"
               class="hidden h-3 w-[51px] shrink-0 tablet-lg:block"
             />
@@ -124,13 +124,13 @@ withDefaults(
             <div class="flex h-20 w-[153px] shrink-0 items-center justify-center gap-2 rounded-[6px] bg-white">
               <img
                 :src="googleIconSrc"
-                alt=""
+                :alt="imageLabel(googleIconSrc)" :title="imageLabel(googleIconSrc)"
                 aria-hidden="true"
                 class="h-8 w-8 shrink-0"
                 loading="lazy"
               />
               <div class="flex flex-col items-start gap-0.5">
-                <img :src="googleWordmarkSrc" alt="Google" class="h-[15px] w-[47px]" />
+                <img :src="googleWordmarkSrc" alt="Google" title="Google" class="h-[15px] w-[47px]" />
                 <span class="text-[9px] tracking-[0.18px] text-black">{{ googleLabel }}</span>
               </div>
             </div>
@@ -149,13 +149,13 @@ withDefaults(
             </div>
             <img
               :src="arrowSrc"
-              alt=""
+              :alt="imageLabel(arrowSrc)" :title="imageLabel(arrowSrc)"
               aria-hidden="true"
               class="hidden h-3 w-[51px] shrink-0 tablet-lg:block"
             />
 
             <div class="relative h-20 w-20 shrink-0">
-              <img :src="wwwIconSrc" :alt="wwwLabel" class="h-full w-full" />
+              <img :src="wwwIconSrc" :alt="wwwLabel || imageLabel(wwwIconSrc)" :title="wwwLabel || imageLabel(wwwIconSrc)" class="h-full w-full" />
               <span
                 class="absolute left-[15%] top-[38.75%] text-[20px] font-semibold tracking-[1px] text-brand"
               >
@@ -170,7 +170,7 @@ withDefaults(
             class="pointer-events-none absolute -left-[108px] -top-6 z-10 hidden h-[100px] w-[130px] items-center justify-center tablet-lg:flex"
             aria-hidden="true"
           >
-            <img :src="curveArrowSrc" alt="" class="h-[42px] w-[128px] -rotate-[31deg]" />
+            <img :src="curveArrowSrc" :alt="imageLabel(curveArrowSrc)" :title="imageLabel(curveArrowSrc)" class="h-[42px] w-[128px] -rotate-[31deg]" />
           </div>
 
           <div :class="cardClass">
@@ -183,7 +183,7 @@ withDefaults(
               >
                 <div class="flex items-center gap-4">
                   <div class="flex size-[30px] items-center justify-center rounded-[6px] bg-[#ced4da]">
-                    <img :src="lang.icon" alt="" aria-hidden="true" class="size-6 rounded-[4px]" />
+                    <img :src="lang.icon" :alt="imageLabel(lang.icon)" :title="imageLabel(lang.icon)" aria-hidden="true" class="size-6 rounded-[4px]" />
                   </div>
                   <span class="text-[16px] leading-6 text-[#212529]">{{ lang.name }}</span>
                 </div>

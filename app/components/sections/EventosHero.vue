@@ -4,7 +4,7 @@
   <section id="eventos-hero" class="relative overflow-hidden section-py">
     <img
       src="/icons/eventos-icone-divider-horizontal.svg"
-      alt=""
+      alt="Divisor decorativo" title="Divisor decorativo"
       aria-hidden="true"
       class="pointer-events-none absolute top-[17px] left-[calc(50%_-_50vw)] hidden w-screen max-w-none tablet-lg:block"
     />
@@ -21,13 +21,13 @@
       <div class="relative mt-4 flex w-full max-w-[1400px] flex-col items-center gap-10 tablet-lg:flex-row tablet-lg:items-center tablet-lg:gap-[56px]">
         <img
           src="/images/eventos/eventos-hero-shape-1.png"
-          alt=""
+          alt="Forma decorativa" title="Forma decorativa"
           aria-hidden="true"
           class="pointer-events-none absolute left-[-6.4%] top-[1.5%] hidden w-[12.7%] opacity-50 desktop-full:block"
         />
         <img
           src="/images/eventos/eventos-hero-shape-2.png"
-          alt=""
+          alt="Forma decorativa" title="Forma decorativa"
           aria-hidden="true"
           class="pointer-events-none absolute left-[41.1%] top-[77.5%] hidden w-[12.1%] desktop-full:block"
         />
@@ -39,7 +39,7 @@
             :width="1550"
             :height="976"
             sizes="mobile-lg:100vw tablet-lg:600px desktop-full:775px"
-            alt="Versão 1.0.19: evento ao vivo, 29 out às 09h"
+            alt="Versão 1.0.19: evento ao vivo, 29 out às 09h" title="Versão 1.0.19: evento ao vivo, 29 out às 09h"
             class="h-auto w-full rounded-[20px]"
             loading="eager"
             fetchpriority="high"
@@ -57,7 +57,7 @@
             Avaliação, ampliando a gestão comercial e a inteligência do atendimento.
           </p>
           <a
-            href="/inscreva-se/"
+            href="/inscreva-se/" :title="titleForLink('/inscreva-se/')" :aria-label="titleForLink('/inscreva-se/')"
             class="flex h-[52px] w-[193px] items-center justify-center rounded-[5px] border border-brand text-[15px] font-bold text-brand"
           >
             Inscreva-se!!!

@@ -16,7 +16,7 @@ export default defineNuxtPlugin(() => {
     }
 
     if (!pageExists) {
-      return { meta: [{ name: 'robots', content: 'noindex, nofollow' }] }
+      return { meta: [{ name: 'robots', content: 'noindex, follow' }] }
     }
 
     if (!indexable) {

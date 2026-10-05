@@ -11,18 +11,18 @@
               <div class="relative h-28 w-20 overflow-hidden rounded-full tablet:h-[168px] tablet:w-[120px] tablet-lg:h-56 tablet-lg:w-40">
                 <img
                   src="/icons/crm-integrations-bubble-loading.svg"
-                  alt="Ícone de sincronização automática"
+                  alt="Ícone de sincronização automática" title="Ícone de sincronização automática"
                   class="absolute -left-[40%] -top-[12.946%] w-[180%] h-[157.143%] max-w-none"
                 />
               </div>
               <div class="flex h-28 w-20 flex-col items-center justify-center gap-1 rounded-full bg-white shadow-[0px_35px_32px_rgba(0,0,0,0.08)] tablet:h-[168px] tablet:w-[120px] tablet-lg:h-56 tablet-lg:w-40 tablet-lg:gap-2">
-                <img src="/icons/crm-integrations-sub100-mark.svg" alt="" aria-hidden="true" class="h-[23px] w-[34px] tablet:h-[34px] tablet:w-[51px] tablet-lg:h-[45.63px] tablet-lg:w-[68px]" />
+                <img src="/icons/crm-integrations-sub100-mark.svg" alt="Marca SUB100" title="Marca SUB100" aria-hidden="true" class="h-[23px] w-[34px] tablet:h-[34px] tablet:w-[51px] tablet-lg:h-[45.63px] tablet-lg:w-[68px]" />
                 <p class="text-[10px] leading-[1.6] text-brand tablet:text-xs tablet-lg:text-sm">Meu Site</p>
               </div>
               <div class="relative h-28 w-20 overflow-hidden rounded-full tablet:h-[168px] tablet:w-[120px] tablet-lg:h-56 tablet-lg:w-40">
                 <img
                   src="/icons/crm-integrations-bubble-ring.svg"
-                  alt="Ícone do RD Station"
+                  alt="Ícone do RD Station" title="Ícone do RD Station"
                   class="absolute -left-[40%] -top-[12.946%] w-[180%] h-[157.143%] max-w-none"
                 />
               </div>
@@ -31,16 +31,16 @@
               <div class="relative h-28 w-20 overflow-hidden rounded-full tablet:h-[168px] tablet:w-[120px] tablet-lg:h-56 tablet-lg:w-40">
                 <img
                   src="/icons/crm-integrations-bubble-whatsapp.svg"
-                  alt="Ícone do WhatsApp"
+                  alt="Ícone do WhatsApp" title="Ícone do WhatsApp"
                   class="absolute -left-[40%] -top-[12.946%] w-[180%] h-[157.143%] max-w-none"
                 />
               </div>
               <div class="flex h-28 w-20 flex-col items-center justify-center gap-1 rounded-full bg-white shadow-[0px_35px_32px_rgba(0,0,0,0.08)] tablet:h-[168px] tablet:w-[120px] tablet-lg:h-56 tablet-lg:w-40 tablet-lg:gap-2">
-                <img src="/icons/crm-integrations-sub100-mark.svg" alt="" aria-hidden="true" class="h-[23px] w-[34px] tablet:h-[34px] tablet:w-[51px] tablet-lg:h-[45.63px] tablet-lg:w-[68px]" />
+                <img src="/icons/crm-integrations-sub100-mark.svg" alt="Marca SUB100" title="Marca SUB100" aria-hidden="true" class="h-[23px] w-[34px] tablet:h-[34px] tablet:w-[51px] tablet-lg:h-[45.63px] tablet-lg:w-[68px]" />
                 <p class="text-[10px] leading-[1.6] text-brand tablet:text-xs tablet-lg:text-sm">Imóveis</p>
               </div>
               <div class="flex h-28 w-20 items-center justify-center rounded-full bg-white shadow-[0px_35px_32px_rgba(0,0,0,0.08)] tablet:h-[168px] tablet:w-[120px] tablet-lg:h-56 tablet-lg:w-40">
-                <img src="/icons/crm-integrations-meta-icon.svg" alt="Ícone do Meta" class="h-[27px] w-10 tablet:h-10 tablet:w-[60px] tablet-lg:h-[53.14px] tablet-lg:w-20" />
+                <img src="/icons/crm-integrations-meta-icon.svg" alt="Ícone do Meta" title="Ícone do Meta" class="h-[27px] w-10 tablet:h-10 tablet:w-[60px] tablet-lg:h-[53.14px] tablet-lg:w-20" />
               </div>
             </div>
           </div>

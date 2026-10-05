@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const mockupImgAttrs = {
   alt: 'Painel do HUB de integrações',
+  title: 'Painel do HUB de integrações',
   class: 'mx-auto h-auto w-full max-w-[1100px] rounded-[16px] tablet-lg:rounded-[24px]',
   loading: 'lazy'
 }

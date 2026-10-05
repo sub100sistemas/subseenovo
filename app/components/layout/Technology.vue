@@ -68,7 +68,7 @@ withDefaults(defineProps<Props>(), {
         <img
           v-if="curveArrowSrc"
           :src="curveArrowSrc"
-          alt=""
+          :alt="imageLabel(curveArrowSrc)" :title="imageLabel(curveArrowSrc)"
           aria-hidden="true"
           :class="curveArrowClass"
         />
@@ -77,7 +77,7 @@ withDefaults(defineProps<Props>(), {
           <img
             v-if="showStar && starSrc"
             :src="starSrc"
-            alt=""
+            :alt="imageLabel(starSrc)" :title="imageLabel(starSrc)"
             aria-hidden="true"
             :class="starClass"
           />

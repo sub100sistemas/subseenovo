@@ -30,7 +30,7 @@ const moduleIcons: HeroModuleIcon[] = [
           :width="776"
           :height="894"
           sizes="mobile-lg:180px tablet:340px tablet-lg:240px desktop:300px desktop-full:362px"
-          alt="Homem sorridente com laptop"
+          alt="Homem sorridente com laptop" title="Homem sorridente com laptop"
           class="h-full w-full object-cover"
           loading="eager"
         />
@@ -42,7 +42,7 @@ const moduleIcons: HeroModuleIcon[] = [
         :width="1440"
         :height="816"
         sizes="100vw tablet-lg:50vw desktop-full:720px"
-        alt=""
+        alt="Cartões flutuantes do módulo" title="Cartões flutuantes do módulo"
         aria-hidden="true"
         class="pointer-events-none absolute z-[1] left-0 top-0 w-full h-auto"
       />
@@ -52,7 +52,7 @@ const moduleIcons: HeroModuleIcon[] = [
       >
         <img
           src="/icons/crm-temporada-hero-calendar.svg"
-          alt=""
+          alt="Ícone de calendário" title="Ícone de calendário"
           aria-hidden="true"
           class="absolute left-[27%] top-[26%] w-[50%] h-[50%]"
         />
@@ -65,7 +65,7 @@ const moduleIcons: HeroModuleIcon[] = [
           >
             <img
               src="/icons/crm-temporada-hero-icone-imovel.svg"
-              alt=""
+              alt="Ícone de imóvel" title="Ícone de imóvel"
               aria-hidden="true"
               style="width: 17.91px; height: 19px"
             />

@@ -58,7 +58,7 @@ const checklist = [
               :width="464"
               :height="410"
               sizes="mobile-lg:80vw tablet:400px tablet-lg:560px"
-              alt="Mapa de propriedades rurais"
+              alt="Mapa de propriedades rurais" title="Mapa de propriedades rurais"
               class="h-auto w-full self-start rounded-[18px] object-cover tablet:w-[60%]"
               loading="lazy"
             />

@@ -4,7 +4,7 @@
       <slot name="image">
         <img
           src="/images/obrigado.svg"
-          alt=""
+          alt="Astronauta em um foguete" title="Astronauta em um foguete"
           width="352"
           height="363"
           class="block h-auto w-[220px] max-w-full tablet-lg:w-[352px]"

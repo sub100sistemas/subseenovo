@@ -49,7 +49,7 @@ const descriptionClass =
       <div class="absolute inset-0 [container-type:inline-size]">
         <img
           src="/icons/videos-hero-glow.svg"
-          alt=""
+          alt="Brilho decorativo" title="Brilho decorativo"
           aria-hidden="true"
           class="pointer-events-none absolute top-[-36.646cqw] left-[-1.041cqw] block w-[132.01cqw] max-w-none"
         />
@@ -63,7 +63,7 @@ const descriptionClass =
             :width="1536"
             :height="1024"
             sizes="mobile-lg:620px tablet:880px tablet-lg:560px desktop-compact:600px desktop:680px"
-            alt="Profissional de blazer marrom com celular"
+            alt="Profissional de blazer marrom com celular" title="Profissional de blazer marrom com celular"
             class="absolute top-0 left-[-51.38%] block h-full w-[196.66%] max-w-none"
             loading="eager"
           />
@@ -71,13 +71,13 @@ const descriptionClass =
 
         <img
           src="/icons/videos-hero-curve-a.svg"
-          alt=""
+          alt="Curva decorativa" title="Curva decorativa"
           aria-hidden="true"
           class="pointer-events-none absolute top-[48.896cqw] left-[57.919cqw] block max-mobile-lg:hidden h-auto w-[22.349cqw] max-w-none [transform:rotate(150.44deg)]"
         />
         <img
           src="/icons/crm-hero-seta-curva-verde.svg"
-          alt=""
+          alt="Seta curva decorativa" title="Seta curva decorativa"
           aria-hidden="true"
           class="pointer-events-none absolute top-[22.904cqw] left-[12.32cqw] block max-mobile-lg:hidden h-auto w-[25.403cqw] max-w-none [transform:rotate(77.14deg)_scaleX(-1)]"
         />
@@ -88,7 +88,7 @@ const descriptionClass =
           <span
             class="absolute top-[1.522em] left-[1.297em] flex h-[2.502em] w-[2.473em] items-center justify-center rounded-[0.5em] bg-brand"
           >
-            <img src="/icons/videos-hero-globe.svg" alt="" aria-hidden="true" class="block size-[1.493em]" />
+            <img src="/icons/videos-hero-globe.svg" alt="Ícone de globo" title="Ícone de globo" aria-hidden="true" class="block size-[1.493em]" />
           </span>
           <p
             class="absolute top-[0.787em] left-[4.389em] text-[1.125em] leading-[1.8] font-bold tracking-[0.02em] whitespace-nowrap text-ink"
@@ -106,7 +106,7 @@ const descriptionClass =
           <span
             class="absolute top-[1.425em] left-[1.596em] flex size-[2.473em] items-center justify-center rounded-[0.5em] border border-[#eee] bg-brand"
           >
-            <img src="/icons/videos-hero-people.svg" alt="" aria-hidden="true" class="block h-[1.562em] w-[1.688em]" />
+            <img src="/icons/videos-hero-people.svg" alt="Ícone de pessoas" title="Ícone de pessoas" aria-hidden="true" class="block h-[1.562em] w-[1.688em]" />
           </span>
           <p
             class="absolute top-[0.723em] left-[4.444em] text-[1.125em] leading-[1.8] font-bold tracking-[0.02em] whitespace-nowrap text-ink"

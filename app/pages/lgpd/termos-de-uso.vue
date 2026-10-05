@@ -1,11 +1,13 @@
 <script setup lang="ts">
-const title = 'SUBSEE | Termos de Uso — Condições gerais de uso dos sites'
+const title = 'Termos de Uso e Condições Gerais dos Sites | SUBSEE'
 const description =
-  'Conheça as diretrizes de uso dos sites da SUB100 SISTEMAS LTDA: definições, responsabilidades, cadastro, armazenamento e segurança, consentimento e foro.'
+  'Leia os termos de uso dos sites da SUB100 Sistemas: definições, responsabilidades, cadastro, armazenamento, segurança, consentimento e foro.'
+const keywords = 'termos de uso SUBSEE, termos de uso SUB100, condições de uso dos sites'
 
 useSeoMeta({
   title,
   description,
+  keywords,
   ogTitle: title,
   ogDescription: description
 })

@@ -74,7 +74,7 @@ const trackingClasses = computed(() => [
         src="/icons/header-sombra-divisoria.svg"
         width="1717"
         height="34"
-        alt=""
+        alt="Divisor decorativo do cabeçalho" title="Divisor decorativo do cabeçalho"
         class="absolute top-[-15px] left-1/2 h-[34px] w-[1717px] max-w-none -translate-x-1/2"
       />
     </div>

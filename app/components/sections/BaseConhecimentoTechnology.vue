@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const mockupImgAttrs = {
   alt: 'Painel da Base de conhecimento',
+  title: 'Painel da Base de conhecimento',
   class: 'mx-auto h-auto w-full max-w-[1100px] rounded-[16px] tablet-lg:rounded-[24px]',
   loading: 'lazy'
 }

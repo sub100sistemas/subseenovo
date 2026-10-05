@@ -59,7 +59,7 @@ const benefits: FormBenefit[] = [
     <template #card>
       <FormCard>
         <template #icon>
-          <img src="/icons/form-rocket-icon-bg.svg" alt="" width="56" height="56" class="block shrink-0" />
+          <img src="/icons/form-rocket-icon-bg.svg" alt="Ícone de foguete" title="Ícone de foguete" width="56" height="56" class="block shrink-0" />
         </template>
         <template #title>Comece seu teste grátis</template>
         <template #subtitle>Preencha seus dados para ativar seu acesso por 30 dias</template>

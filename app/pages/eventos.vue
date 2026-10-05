@@ -1,11 +1,13 @@
 <script setup lang="ts">
-const title = 'SUBSEE | Eventos Online e Replays do SUBSEE on'
+const title = 'Eventos e Webinars para Imobiliárias | SUBSEE on'
 const description =
-  'Participe de lives, webinars e treinamentos ao vivo sobre o sistema, e acesse os replays a qualquer momento para não perder nenhum conteúdo.'
+  'Participe de lives e eventos online sobre o SUBSEE on, tire dúvidas ao vivo e assista aos replays para tirar mais resultado do seu CRM imobiliário.'
+const keywords = 'eventos online para imobiliárias, webinar imobiliário, replays SUBSEE on, treinamento CRM imobiliário'
 
 useSeoMeta({
   title,
   description,
+  keywords,
   ogTitle: title,
   ogDescription: description
 })

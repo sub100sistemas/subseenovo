@@ -1,11 +1,13 @@
 <script setup lang="ts">
-const title = 'SUBSEE | APIs & HUB Integrador — Conecte seus sistemas por APIs e Hub'
+const title = 'API e Hub de Integração para Imobiliárias | SUBSEE on'
 const description =
-  'Centralize dados de leads, imóveis e atendimentos entre todos os seus sistemas com integrações via API, incluindo portais imobiliários, WhatsApp, redes sociais e Meta Ads.'
+  'Integre o CRM aos portais imobiliários, WhatsApp, redes sociais e Meta Ads por API e Hub, centralizando leads, imóveis e atendimentos.'
+const keywords = 'API imobiliária, integração com portais imobiliários, hub de integração, integração WhatsApp CRM'
 
 useSeoMeta({
   title,
   description,
+  keywords,
   ogTitle: title,
   ogDescription: description
 })

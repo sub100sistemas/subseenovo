@@ -29,7 +29,7 @@ const moduleIcons: HeroModuleIcon[] = [
           :width="346"
           :height="457"
           sizes="mobile-lg:300px tablet:340px tablet-lg:240px desktop:300px desktop-full:346px"
-          alt="Profissional sorridente segurando um tablet"
+          alt="Profissional sorridente segurando um tablet" title="Profissional sorridente segurando um tablet"
           class="h-full w-full object-cover"
           loading="eager"
           fetchpriority="high"
@@ -42,7 +42,7 @@ const moduleIcons: HeroModuleIcon[] = [
         :width="1440"
         :height="816"
         sizes="100vw tablet-lg:50vw desktop-full:720px"
-        alt=""
+        alt="Cartões flutuantes do módulo" title="Cartões flutuantes do módulo"
         aria-hidden="true"
         class="pointer-events-none absolute z-[1] left-0 top-0 h-auto w-full"
       />
@@ -52,7 +52,7 @@ const moduleIcons: HeroModuleIcon[] = [
       >
         <img
           src="/icons/base-conhecimento-icone-badge.svg"
-          alt=""
+          alt="Selo da base de conhecimento" title="Selo da base de conhecimento"
           aria-hidden="true"
           class="absolute left-[24%] top-[30%] w-[58%] h-[46%]"
         />

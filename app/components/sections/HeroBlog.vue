@@ -53,14 +53,14 @@ const posts: Post[] = [
         src="/icons/hero-blog-onda-decorativa-branca.svg"
         width="1920"
         height="173"
-        alt=""
+        alt="Onda decorativa branca" title="Onda decorativa branca"
         class="absolute -left-px top-[11px] w-[1920px] h-[173.455px] rotate-180 -scale-y-100 max-w-none"
       />
       <img loading="lazy" decoding="async"
         src="/icons/hero-website-onda-decorativa-azul.svg"
         width="1920"
         height="191"
-        alt=""
+        alt="Onda decorativa azul" title="Onda decorativa azul"
         class="absolute -left-[0.95px] top-[14.79px] w-[1919.95px] h-[190.853px] rotate-180 -scale-y-100 max-w-none"
       />
     </div>
@@ -85,7 +85,7 @@ const posts: Post[] = [
             :width="post.width"
             :height="post.height"
             sizes="100vw tablet:50vw desktop-compact:33vw"
-            :alt="post.alt"
+            :alt="post.alt || imageLabel(post.image)" :title="post.alt || imageLabel(post.image)"
             class="aspect-[2/1] w-full shrink-0 object-cover"
             loading="lazy"
           />
@@ -97,7 +97,7 @@ const posts: Post[] = [
             <p class="mt-[10px] flex-1 text-base leading-[1.4] text-ink">{{ post.excerpt }}</p>
 
             <div class="mt-4 h-px bg-[#f3f4f6]" />
-            <a :href="post.href" target="_blank" rel="noopener" class="mt-4 flex items-center gap-2 text-teal-link">
+            <a :href="post.href" :title="titleForLink(post.href)" :aria-label="titleForLink(post.href)" target="_blank" rel="noopener" class="mt-4 flex items-center gap-2 text-teal-link">
               <span class="text-base">{{ post.cta }}</span>
               <span class="text-[19px] font-bold" aria-hidden="true">→</span>
             </a>

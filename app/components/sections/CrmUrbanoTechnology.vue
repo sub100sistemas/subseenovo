@@ -12,6 +12,7 @@
     mockup-sizes="mobile-lg:100vw tablet-lg:920px desktop:1100px"
     :mockup-img-attrs="{
       alt: 'Cadastro de imóvel urbano por etapas',
+      title: 'Cadastro de imóvel urbano por etapas',
       class: 'mx-auto h-auto w-full max-w-[1100px]',
       loading: 'lazy'
     }"

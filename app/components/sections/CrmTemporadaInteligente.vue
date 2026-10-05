@@ -48,7 +48,7 @@ const cards: InteligenteCard[] = [
   <section id="crm-temporada-inteligente" class="section-py relative overflow-hidden bg-white">
     <img
       src="/icons/crm-temporada-inteligente-bg-lines.svg"
-      alt=""
+      alt="Linhas decorativas" title="Linhas decorativas"
       aria-hidden="true"
       class="pointer-events-none absolute left-0 right-0 top-0 w-full"
     />
@@ -80,7 +80,7 @@ const cards: InteligenteCard[] = [
 
           <div class="flex items-center gap-5">
             <div class="flex shrink-0 items-center justify-center rounded-full border border-[#ffc7bf] bg-[#fff2f0] p-[11px]">
-              <img :src="card.beforeIcon" alt="" aria-hidden="true" class="size-[26px]" />
+              <img :src="card.beforeIcon" :alt="imageLabel(card.beforeIcon)" :title="imageLabel(card.beforeIcon)" aria-hidden="true" class="size-[26px]" />
             </div>
             <div class="flex flex-col">
               <div class="flex h-[17px] w-[50px] items-center justify-center rounded-[20px] bg-[#fff2f0]">
@@ -94,7 +94,7 @@ const cards: InteligenteCard[] = [
 
           <div class="flex items-center gap-5">
             <div class="flex shrink-0 items-center justify-center rounded-full border border-[#b2d1ff] bg-[#edf7ff] p-[11px]">
-              <img :src="card.afterIcon" alt="" aria-hidden="true" class="size-[26px]" />
+              <img :src="card.afterIcon" :alt="imageLabel(card.afterIcon)" :title="imageLabel(card.afterIcon)" aria-hidden="true" class="size-[26px]" />
             </div>
             <div class="flex flex-col">
               <div class="flex h-[17px] w-[85px] items-center justify-center rounded-[20px] bg-[#edf7ff]">

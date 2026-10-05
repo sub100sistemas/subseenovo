@@ -55,7 +55,7 @@ const checklist = [
     <div class="flex flex-col">
       <img
         src="/images/modulos-crm-rural/assinaturaeletrônica.svg"
-        alt="Assinatura eletrônica"
+        alt="Assinatura eletrônica" title="Assinatura eletrônica"
         class="h-[40px] w-auto mobile-lg:h-[48px] tablet-lg:h-[70px]"
       />
       <div class="mt-1 h-px w-[290px] bg-[#979797]" />
@@ -66,7 +66,7 @@ const checklist = [
         src="/icons/crm-rural-formal-closing-selo-assinado.svg"
         width="90"
         height="90"
-        alt=""
+        alt="Selo de contrato assinado" title="Selo de contrato assinado"
         aria-hidden="true"
         class="size-[72px] mobile-lg:size-[90px] shrink-0"
       />

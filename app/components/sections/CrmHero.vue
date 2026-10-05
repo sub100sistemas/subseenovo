@@ -47,7 +47,7 @@ withDefaults(
       <slot name="visual">
         <img
           src="/icons/crm-hero-ellipse-blur.svg"
-          alt=""
+          alt="Brilho decorativo" title="Brilho decorativo"
           aria-hidden="true"
           class="pointer-events-none absolute left-[31.07%] top-0 w-[51.87%] h-[97.81%] opacity-70"
         />
@@ -59,7 +59,7 @@ withDefaults(
             :width="343"
             :height="456"
             sizes="mobile-lg:300px tablet:340px tablet-lg:240px desktop:300px desktop-full:343px"
-            alt="Mulher sorridente segurando um notebook/tablet"
+            alt="Mulher sorridente segurando um notebook/tablet" title="Mulher sorridente segurando um notebook/tablet"
             class="h-full w-full object-cover"
             loading="eager"
           />
@@ -71,7 +71,7 @@ withDefaults(
           :width="1440"
           :height="816"
           sizes="100vw tablet-lg:50vw desktop-full:720px"
-          alt=""
+          alt="Cartões flutuantes do módulo" title="Cartões flutuantes do módulo"
           aria-hidden="true"
           class="pointer-events-none absolute z-[1] left-0 top-0 w-full h-auto"
         />
@@ -79,7 +79,7 @@ withDefaults(
         <div
           class="absolute z-[2] left-[92.93%] top-0 w-[6.94%] aspect-square rounded-[6px] border border-brand bg-[#e8e8fd]"
         >
-          <img src="/icons/crm-hero-badge-icone.svg" alt="" class="absolute left-[24%] top-[30%] w-[58%] h-[46%]" />
+          <img src="/icons/crm-hero-badge-icone.svg" alt="Ícone do CRM imobiliário" title="Ícone do CRM imobiliário" class="absolute left-[24%] top-[30%] w-[58%] h-[46%]" />
         </div>
       </slot>
     </template>

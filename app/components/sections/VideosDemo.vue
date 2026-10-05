@@ -113,7 +113,7 @@ const openVideo = (video: DemoVideo) => {
               <a
                 v-else
                 :id="`demo-video-${index}-link`"
-                :href="video.href"
+                :href="video.href" :title="titleForLink(video.href)" :aria-label="titleForLink(video.href)"
                 target="_blank"
                 rel="noopener"
                 :aria-labelledby="`demo-video-${index}-link demo-video-${index}-title`"

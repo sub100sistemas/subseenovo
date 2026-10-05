@@ -10,7 +10,7 @@ import { videosAppUrl } from '~/data/videos'
       >
         <img
           src="/icons/videos-cta-ellipse.svg"
-          alt=""
+          alt="Elipse decorativa" title="Elipse decorativa"
           aria-hidden="true"
           width="360"
           height="360"
@@ -25,7 +25,7 @@ import { videosAppUrl } from '~/data/videos'
           </p>
         </div>
         <a
-          :href="videosAppUrl"
+          :href="videosAppUrl" :title="titleForLink(videosAppUrl)" :aria-label="titleForLink(videosAppUrl)"
           target="_blank"
           rel="noopener noreferrer"
           class="relative flex h-[58px] w-full items-center justify-center rounded-[10px] bg-white px-6 text-[15px] leading-normal font-semibold whitespace-nowrap text-brand transition-colors hover:bg-white/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white tablet-lg:absolute tablet-lg:top-[81px] tablet-lg:right-[66px] tablet-lg:w-[300px]"

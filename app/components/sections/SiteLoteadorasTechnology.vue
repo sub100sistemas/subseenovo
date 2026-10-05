@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const mockupImgAttrs = {
   alt: 'Site de loteadora com lançamento',
+  title: 'Site de loteadora com lançamento',
   class: 'mx-auto h-auto w-full max-w-[1100px] rounded-[16px] tablet-lg:rounded-[24px]',
   loading: 'lazy'
 }
@@ -26,6 +27,12 @@ const mockupImgAttrs = {
     <template #description>
       Gerencie lotes e loteamentos com ferramentas de captação, vendas e acompanhamento de
       resultados em um só lugar.
+    </template>
+
+    <template #cta>
+      <CtaButton variant="primary" to="/agendar-demonstracao/" class="whitespace-nowrap">
+        Agendar Demonstração
+      </CtaButton>
     </template>
   </CrmTechnology>
 </template>

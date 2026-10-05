@@ -1,11 +1,15 @@
 <script setup lang="ts">
+const title = 'CRM Imobiliário para Imobiliárias e Corretores | SUBSEE'
+const description =
+  'Gerencie imóveis, leads e negociações em um CRM imobiliário completo, com site, integrações e automações para imobiliárias e corretores.'
+const keywords = 'CRM imobiliário, software imobiliário, sistema para imobiliárias, gestão imobiliária'
+
 useSeoMeta({
-  title: 'SUBSEE | CRM Imobiliário completo para imobiliárias e corretores',
-  description:
-    'CRM SUBSEE: gestão de imóveis urbanos, rurais, temporada e loteamentos, com site, integrações e automações para imobiliárias e corretores.',
-  ogTitle: 'SUBSEE | CRM Imobiliário completo para imobiliárias e corretores',
-  ogDescription:
-    'CRM SUBSEE: gestão de imóveis urbanos, rurais, temporada e loteamentos, com site, integrações e automações para imobiliárias e corretores.'
+  title,
+  description,
+  keywords,
+  ogTitle: title,
+  ogDescription: description
 })
 </script>
 

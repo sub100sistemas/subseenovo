@@ -53,7 +53,7 @@ const benefits: DashboardBenefit[] = [
         <div class="relative w-full tablet-lg:w-[41.64%]">
           <img
             src="/icons/crm-urbano-dashboard-ellipse-blur.svg"
-            alt=""
+            alt="Brilho decorativo" title="Brilho decorativo"
             aria-hidden="true"
             class="pointer-events-none absolute hidden -left-[17.15%] -top-[18%] w-[102.13%] max-w-none tablet-lg:block"
           />
@@ -64,7 +64,7 @@ const benefits: DashboardBenefit[] = [
                 v-if="benefit.icon"
                 class="flex size-11 shrink-0 items-center justify-center"
               >
-                <img :src="benefit.icon" width="44" height="44" alt="" aria-hidden="true" class="size-11" />
+                <img :src="benefit.icon" width="44" height="44" :alt="imageLabel(benefit.icon)" :title="imageLabel(benefit.icon)" aria-hidden="true" class="size-11" />
               </span>
               <span
                 v-else
@@ -97,6 +97,7 @@ const benefits: DashboardBenefit[] = [
             sizes="mobile-lg:100vw tablet-lg:520px desktop:660px desktop-full:808px"
             :img-attrs="{
               alt: 'Dashboard do SUBSEE no notebook',
+              title: 'Dashboard do SUBSEE no notebook',
               class: 'absolute h-auto max-w-none left-[0.49%] top-[13.36%] w-[98.84%]',
               loading: 'lazy'
             }"

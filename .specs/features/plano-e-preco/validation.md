@@ -9,6 +9,9 @@
 
 This report replaces the author's self-written `validation.md`. All evidence below was independently re-derived (own `grep`/`curl`/`git diff`/`pnpm build` runs), not copied from the author's citations. Where the author's claims proved imprecise, it is called out explicitly rather than silently corrected.
 
+
+> **Atualização 2026-10-04:** a implementação visual de `PlanoEPrecoTitle`, `PlanoEPrecoPricing`, `PlanoEPrecoFeatures`, `PlanoEPrecoOpcionais` e `PlanoEPrecoFaq` foi corrigida para ficar fiel ao Figma (arquivo `hMjVAFfVR3dgKDrxmwUhvL`, seção `4:48841`). As citações de arquivo:linha e de classes CSS abaixo descrevem a versão de 2026-09-29 e foram **superadas** pela seção "Revalidação — correção de fidelidade visual (2026-10-04)" no final deste documento. O veredito **PASS** permanece.
+
 ---
 
 ## Pre-flight
@@ -27,7 +30,7 @@ This report replaces the author's self-written `validation.md`. All evidence bel
 | PEP-03 | Pricing: 2 cards, price, 9 features, 2 CTAs | `PlanoEPrecoPricing.vue:32-47` (`planos` array, both entries reference the single `sharedFeatures` array at `:38` and `:45` — no duplicated/diverged content). Own curl: `R$450` appears exactly 2× in rendered HTML. |
 | PEP-04 | Toggle Mensal/Anual + 12% OFF badge, visual only | `PlanoEPrecoPricing.vue:54-56` — two static `<span>`s, no `v-model`/`ref`/`computed` anywhere in the `<script setup>` block (confirmed by full read of lines 1-48 — zero reactive declarations touch price or toggle state). Badge at `:58-64` uses `inset-y-0 ... my-auto` — no `translate-*`. |
 | PEP-05 | Features: 9 categories, all marked included both plans | `PlanoEPrecoFeatures.vue:20-78` — counted the `allIncluded(...)` calls myself: 9 calls, argument-array lengths 3,8,9,6,7,2,2,4,4 → sums to 45, matching manifest's 45-row claim. Own curl: 9 category `<h3>` titles present verbatim (spot-checked "Gestão Imobiliária e Cadastros", "Plugin para WhatsApp", "Treinamentos e Evolução" — the two commonly-confused ones per the manifest's naming-collision note). |
-| PEP-06 | Ocultar/Ver todas toggle is functional | `PlanoEPrecoFeatures.vue:80` (`const tabelaVisivel = ref(true)`), `:111` (`v-show="tabelaVisivel"`), `:153` (`@click="tabelaVisivel = !tabelaVisivel"`), `:155` (`{{ tabelaVisivel ? 'Ocultar as funcionalidades' : 'Ver todas as funcionalidades' }}`). This is a real bound ref driving both the label and the visibility — not a static/decorative button. **Caveat shared with the author**: actually clicking it requires client-side JS execution, which is unavailable in this environment (no Playwright/browser). Verified by code reading only, same limitation as the author's own pass. |
+| PEP-06 | Ocultar/Ver todas toggle is functional | `PlanoEPrecoFeatures.vue:80-83` (`categoriasNoResumo = 2`, `tabelaCompleta = ref(false)`, `categoriasVisiveis` computed that slices `categorias` to the first 2 when collapsed), `:205` (`v-for="categoria in categoriasVisiveis"`), `:257` (`@click="alternarTabela"`, toggles `tabelaCompleta` at `:106-108`), `:259` (`{{ tabelaCompleta ? 'Ocultar as funcionalidades' : 'Ver todas as funcionalidades' }}`). The initial state is collapsed (11 funcionalidades, 2 categorias) and expanding renders all 9 categorias / 45 funcionalidades; the toggle is a real bound ref driving the label, the arrow rotation and the rendered categories — not a static/decorative button and no longer a `v-show`. See the 11/45 verification section further below. |
 | PEP-07 | Opcionais: 3 rows, matching prices both columns | `PlanoEPrecoOpcionais.vue:8-12`. Own curl: "R$ 100,00" ×2, "R$ 1.200,00" ×2, ">Consulte<" ×2 — exact match, both columns identical as manifest requires. |
 | PEP-08 | FAQ: 6 Q&A verbatim | `PlanoEPrecoFaq.vue:7-38` — read the full array; question 1 and question 6 spot-checked character-for-character against `FIGMA_CONTENT_MANIFEST_PLANO_E_PRECO.md` §5, verbatim match including punctuation. All 6 present, no truncation. |
 | PEP-09 | FAQ expanded-state indicator | `PlanoEPrecoFaq.vue:42` delegates to `layout/Faq.vue`'s existing `<details>/<summary>` + CSS (already relied on by `CrmFaq.vue` elsewhere in the codebase) — no new/duplicated logic. |
@@ -124,3 +127,113 @@ None are blocking. In the interest of being adversarial rather than sympathetic:
 4. **Task T11's "done when" claim** ("Todas usam `.section-py`/`.container-page` diretamente, exceto `PlanoEPrecoFaq.vue`") is very slightly overstated: `PlanoEPrecoTitle.vue:2` actually uses `.section-pt.pb-0`, not `.section-py`. Both are legitimate, documented project utility classes (CLAUDE.md explicitly names both `.section-py`/`.section-pt`), and using `section-pt` for a section immediately followed by another section (avoiding doubled vertical padding at the seam) is a reasonable, arguably correct choice — but it is not the literal uniformity the task's checklist claims.
 
 None of the above rise to a FAIL. Content fidelity, the 5 acceptance-criteria-bearing behaviors, the build, and the out-of-scope guarantees all independently check out.
+
+---
+
+## Revalidação — correção de fidelidade visual (2026-10-04)
+
+**Escopo:** correção de fidelidade visual da rota `/planos-e-precos/` contra o Figma `hMjVAFfVR3dgKDrxmwUhvL`, seção `4:48841`. Conteúdo funcional preservado (preços, planos, toggle, 9 categorias, 45 linhas, Ocultar/Ver, Opcionais, FAQ de 6 itens com `<details>`, links e SEO).
+**Branch:** `master` (sem commit). **Método:** Playwright (Chromium) contra o servidor de desenvolvimento (porta 3200, encerrado) e, ao final, contra o build servido com `node .output/server/index.mjs` (porta 3100, encerrado); comparação com capturas e `get_design_context` do Figma.
+**Veredito: PASS com ressalvas** (ressalvas = divergências remanescentes abaixo, nenhuma de conteúdo).
+
+### Alterações verificadas
+
+| Arquivo | Alteração |
+| --- | --- |
+| `app/components/sections/PlanoEPrecoHero.vue` (novo) | Fundo (`legal-page-background.svg`: BG `#F5F5F5` curvo, gradiente e divisor de onda) envolvendo Title e Pricing |
+| `app/components/sections/PlanoEPrecoTitle.vue` | H1 40px ("Planos" bold, "& Preços" medium), descrição 26px, "urbana"/"rural" bold roxo |
+| `app/components/sections/PlanoEPrecoPricing.vue` | Toggle 215×59 e selo 207×133 sempre visível; cards 471px (borda `#686af1`); preço em 3 partes; MEL.IA em 7º; novo check |
+| `app/components/sections/PlanoEPrecoFeatures.vue` | Bloco cinza (raio 50) com painéis brancos, faixas por categoria, bullets e botões com seta; `style=` inline removido |
+| `app/components/sections/PlanoEPrecoOpcionais.vue` | Dois cartões separados com borda roxa sobre faixa tabular |
+| `app/components/sections/PlanoEPrecoFaq.vue` | Painel cinza removido e lista com 970px (via props do `Faq`; layout compartilhado intacto) |
+| `app/pages/planos-e-precos.vue` | `PlanoEPrecoHero` no lugar de `PlanoEPrecoTitle` + `PlanoEPrecoPricing` |
+| `public/icons/plano-e-preco-check-badge.svg` (novo) | Selo de check `#1CD9A4` exportado do Figma (23×23) |
+
+### Comparação desktop (1920px), medida no navegador
+
+| Elemento | Figma | Site |
+| --- | --- | --- |
+| Cards (x, largura) | 475 e 975, 471 | 475 e 975, 471 |
+| Título do card (y) | 491 | 491 |
+| Preço, Urbano (y, altura) | 647, 58 | 647, 58 |
+| CTA, Urbano / Rural (y) | 725 / 715 | 725 / 715 |
+| Início da lista, Urbano (y) | 812 | 812 |
+| Altura dos cards | 908 | 914 (+6px por quebras de linha e fonte 400 no lugar de Light) |
+| Fundo, H1, toggle, selo, Opcionais, FAQ | conferidos visualmente contra as capturas do Figma | equivalentes (ver divergências abaixo) |
+
+### Testes responsivos executados
+
+Nas larguras 320, 375, 768, 992, 1199, 1200, 1440 e 1920px (dev e build): `scrollWidth === clientWidth` (**sem overflow horizontal da página**) e **0 erros de console** em todas. Nas larguras estreitas a tabela de Features e a de Opcionais rolam horizontalmente por dentro (`min-w-[760px]`), sem rolar a página. Capturas conferidas visualmente em 375px (hero e opcionais) e 992px (hero e features); 768 e 1200px foram capturadas e medidas (overflow e console), sem conferência visual detalhada; um desalinhamento dos checks a 992px (colunas `fr` com largura mínima do conteúdo) foi encontrado e corrigido com `minmax(0, …)` antes desta revalidação.
+
+### Testes funcionais executados (1440px, dev e build)
+
+| Verificação | Resultado |
+| --- | --- |
+| `<h1>` | 1 ("Planos & Preços") |
+| Planos | Urbano e Rural, `R$450/mês + opcionais` ×2, 9 itens em cada (18 itens) |
+| Tabela | 9 categorias, 45 linhas, 90 checks na tabela + 18 nos cards = 108 selos |
+| Ocultar/Ver todas | tabela visível → clique oculta e troca o texto para "Ver todas as funcionalidades" → novo clique restaura |
+| FAQ | 6 `<details>`; o primeiro abre ao clicar |
+| "+ Opcionais" | navega para `#opcionais` |
+| CTAs "Testar grátis por 30 dias" | 3, todos para `/testar-gratis/` |
+| "Site & hotsite padrão" | `/modulos/site-para-imobiliarias-urbanas/` e `/modulos/site-para-imobiliarias-rurais/` |
+| Selo 12% OFF | presente (`/images/pricing/plano-e-preco-selo-12-off.svg`, SVG) |
+| Pontos de entrada | `HeaderBar.vue` ("Preços") e `HeroPricing.vue` apontam para `/planos-e-precos/` (arquivos não alterados) |
+
+### Build
+
+`pnpm build` → **exit code 0**; chunks `planos-e-precos-*` gerados; a rota responde 200 no servidor do build. Warnings (nenhum é erro, nenhum envolve estes arquivos): `PLUGIN_TIMINGS` (Vite), dois de `@nuxt/nitro-server` (`cache-driver.mjs` e `H3Error/H3Event`) e `DEP0155` (dependência). `translate-x/y`: nenhum uso nos arquivos alterados.
+
+### Divergências remanescentes
+
+1. **Inter** (Mensal/Anual) e **Poppins Light / Light Italic** (lista dos cards, nota): o site carrega apenas Poppins 400/500/600/700; usado 400/500 e itálico sintético.
+2. Quebras de linha forçadas do Figma na lista dos cards não são reproduzidas (as das Features, sim).
+3. Irregularidades do Figma reproduzidas: gaps 20/26 dos cards (Rural ligeiramente acima) e título "Rural" dos Opcionais ~15px abaixo de "Urbano".
+4. Figma exibe as respostas do FAQ abertas; o site mantém o accordion fechado por padrão (`<details>`).
+5. Não há frames de tablet/mobile no Figma; layout derivado, com rolagem interna das tabelas abaixo de 760px.
+6. Toggle centralizado (o Figma o desloca ~9px).
+7. Altura dos cards 914px contra 908px do Figma.
+
+---
+
+## Revalidação — estado inicial recolhido da tabela de Features (2026-10-04)
+
+**Mudança (decisão do usuário):** a tabela de funcionalidades passa a carregar recolhida. `PlanoEPrecoFeatures.vue` usa `tabelaCompleta = ref(false)` e `categoriasVisiveis` (2 primeiras categorias quando recolhida, as 9 quando expandida); o botão alterna entre "Ver todas as funcionalidades" e "Ocultar as funcionalidades". Preços, cards, categorias, nomes, ordem, checks e `#opcionais` não foram alterados. O `spec.md` (Goals e P2, critérios 1 e 2 e Independent Test) foi atualizado para refletir essa decisão. As linhas "PEP-05"/"PEP-06" da primeira tabela deste documento descrevem o comportamento anterior (tabela visível, botão começando em "Ocultar") e foram **superadas** por esta seção.
+
+**Método:** Playwright (Chromium) contra o servidor de desenvolvimento (porta 3200, encerrado) e contra o build servido com `node .output/server/index.mjs` (porta 3100, encerrado), em 1440px e 375px.
+
+| Verificação | Resultado (dev e build, 1440px e 375px) |
+| --- | --- |
+| Estado inicial | recolhido: **11 funcionalidades** (3 em "Gestão Imobiliária e Cadastros" + 8 em "CRM e Atendimento"), nomes e ordem idênticos à lista aprovada |
+| Botão inicial | "Ver todas as funcionalidades" |
+| Colunas Urbano e Rural | selo de check em 11/11 linhas em cada coluna; `alt` "Incluso no plano Urbano" / "Incluso no plano Rural" |
+| Clique para expandir | **45 funcionalidades**, 9 categorias, check em 45/45 linhas nas duas colunas; nenhuma funcionalidade removida, renomeada ou reordenada |
+| Botão expandido | "Ocultar as funcionalidades" |
+| Novo clique | volta às **11 funcionalidades** e ao texto "Ver todas as funcionalidades" |
+| Overflow horizontal da página | nenhum nos três estados (inicial, expandido, recolhido), em 1440px e 375px |
+| Console | 0 erros |
+| Captura do estado recolhido (1440px) | caixa cinza, painéis Urbano/Rural, nota e botão alinhados ao Figma |
+
+**Build:** `pnpm build` → **exit code 0**. Warnings (nenhum é erro, nenhum envolve estes arquivos): `PLUGIN_TIMINGS` (Vite), dois de `@nuxt/nitro-server` (`cache-driver.mjs` e `H3Error/H3Event`) e `DEP0155` (dependência).
+
+**Divergência em relação ao Figma (por decisão do usuário):** o Figma mostra a tabela com as 9 categorias já expandida e o botão "Ocultar as funcionalidades"; o site começa recolhido.
+
+---
+
+## Revalidação — toggle Mensal/Anual e CTA da seção Opcionais (2026-10-04)
+
+**Mudanças:** (1) o toggle passou a funcionar: Mensal mostra `R$450/mês + opcionais` e Anual mostra `R$396/mês + opcionais` (450 × 0,88, desconto de 12%), nos dois planos, sem recarregar a página (estado `periodo` em `PlanoEPrecoPricing.vue`); (2) o CTA da seção Opcionais passou a "Agendar Demonstração" → `/agendar-demonstracao/`, 297×56, na posição do Figma `3220:6334`. Isso supera as linhas antigas deste documento que descrevem o toggle como apenas visual (PEP-04) e o CTA de Opcionais como "Testar grátis por 30 dias" → `/testar-gratis`.
+
+**Método:** `pnpm build` (exit 0) e Playwright contra o build servido (`node .output/server/index.mjs`, porta 3100, encerrado), com `NUXT_PUBLIC_SITE_URL=https://subsee.com.br`.
+
+| Verificação (build) | Resultado |
+| --- | --- |
+| `pnpm build` | exit code 0; warnings só de Vite, `@nuxt/nitro-server` e `DEP0155` (nenhum envolve estes arquivos) |
+| Toggle, 1440px e 375px | Mensal `R$450/mês + opcionais` ×2 → Anual `R$396/mês + opcionais` ×2 → Mensal `R$450/mês + opcionais` ×2; `aria-pressed` e estilo ativo acompanham; 0 recarregamentos; 0 erros de console |
+| Geometria dos cards | idêntica em Mensal e Anual (1440px: 471×914; 375px: 343px de largura); sem overflow |
+| CTA de Opcionais, 1920px | texto "Agendar Demonstração", `href="/agendar-demonstracao/"`, x=964 / y=313 na seção, 297×56, fonte 18px, fundo `#5d5fef` (iguais ao Figma) |
+| CTA de Opcionais, demais larguras | 1440px x=724 (centro + 4); 992px x=500; 768px x=236, 375px x=39 e 320px x=16 (centralizado e sem quebra de linha); sem overflow; 0 erros de console |
+| CTAs dos cards de preço | continuam "Testar grátis por 30 dias" → `/testar-gratis/` |
+| SEO da página (build, produção) | title, description e keywords de 2026-10-04; `index, follow`; canonical `https://subsee.com.br/planos-e-precos/`; H1 "Planos & Preços" — sem alteração |
+
+**Divergência em relação ao Figma:** no Figma o CTA de Opcionais fica à direita do centro (x=964), não centralizado; foi reproduzido a partir de `tablet-lg` e é centralizado abaixo disso.

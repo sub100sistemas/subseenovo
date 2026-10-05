@@ -74,7 +74,7 @@ const stats: StatCard[] = [
             class="flex size-14 shrink-0 items-center justify-center rounded-[16px]"
             :style="{ backgroundColor: stat.iconBackground }"
           >
-            <img :src="stat.icon" width="36" height="36" alt="" aria-hidden="true" class="size-9" />
+            <img :src="stat.icon" width="36" height="36" :alt="imageLabel(stat.icon)" :title="imageLabel(stat.icon)" aria-hidden="true" class="size-9" />
           </span>
           <p class="mt-5 text-[40px] leading-[1.3] font-bold" :style="{ color: stat.valueColor }">
             {{ stat.value }}

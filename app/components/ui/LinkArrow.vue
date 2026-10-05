@@ -12,6 +12,7 @@ withDefaults(
   <component
     :is="to ? 'NuxtLink' : 'button'"
     :to="to"
+    :title="titleForLink(to)" :aria-label="titleForLink(to)"
     class="inline-flex items-center gap-1.5 text-teal-link font-medium transition-colors hover:opacity-80"
     :class="
       bordered

@@ -50,16 +50,16 @@ const cards = [
       <div
         class="absolute left-[1500px] top-[400px] w-[520px] h-[520px] rounded-full bg-[radial-gradient(circle,rgba(173,240,219,0.45)_0%,rgba(173,240,219,0)_70%)]"
       />
-      <img loading="lazy" decoding="async" src="/icons/hero-crm-decoracao-pontos.svg" width="230" height="150" alt="" class="absolute left-[10px] top-[10px]" />
-      <img loading="lazy" decoding="async" src="/icons/hero-crm-decoracao-pontos-teal.svg" width="230" height="150" alt="" class="absolute left-[1690px] top-[680px]" />
+      <img loading="lazy" decoding="async" src="/icons/hero-crm-decoracao-pontos.svg" width="230" height="150" alt="Pontos decorativos" title="Pontos decorativos" class="absolute left-[10px] top-[10px]" />
+      <img loading="lazy" decoding="async" src="/icons/hero-crm-decoracao-pontos-teal.svg" width="230" height="150" alt="Pontos decorativos verdes" title="Pontos decorativos verdes" class="absolute left-[1690px] top-[680px]" />
       <img loading="lazy" decoding="async"
         src="/icons/hero-website-onda-decorativa-branca.svg"
-        alt=""
+        alt="Onda decorativa branca" title="Onda decorativa branca"
         class="absolute -left-px top-[256px] w-[1920px] h-[173.455px] rotate-180 -scale-y-100 max-w-none"
       />
       <img loading="lazy" decoding="async"
         src="/icons/hero-website-onda-decorativa-azul.svg"
-        alt=""
+        alt="Onda decorativa azul" title="Onda decorativa azul"
         class="absolute -left-[0.95px] top-[252px] w-[1919.95px] h-[190.853px] rotate-180 -scale-y-100 max-w-none"
       />
     </div>
@@ -90,7 +90,7 @@ const cards = [
           class="flex flex-col items-center gap-4 rounded-[14px] border border-[#D9DEE8] bg-white px-6 py-[22px] text-center shadow-[0px_8px_11px_rgba(38,46,71,0.05)] tablet:flex-row tablet:items-center tablet:gap-[22px] tablet:text-left"
         >
           <div class="flex size-[104px] shrink-0 items-center justify-center rounded-2xl bg-[#F7F7FF]">
-            <img loading="lazy" decoding="async" :src="card.icon" width="66" height="66" alt="" aria-hidden="true" />
+            <img loading="lazy" decoding="async" :src="card.icon" width="66" height="66" :alt="imageLabel(card.icon)" :title="imageLabel(card.icon)" aria-hidden="true" />
           </div>
           <div class="min-w-0 flex-1">
             <h3 class="text-[16px] leading-[24px] font-semibold text-ink">{{ card.title }}</h3>

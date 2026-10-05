@@ -1,11 +1,13 @@
 <script setup lang="ts">
-const title = 'SUBSEE | Site para Imobiliárias Urbanas — Apresente imóveis com profissionalismo'
+const title = 'Site para Imobiliárias Urbanas com Portais | SUBSEE'
 const description =
-  'Site moderno para imobiliárias urbanas: publique imóveis residenciais, comerciais, terrenos e lançamentos com fichas completas, tradução automática e integração com portais.'
+  'Site para imobiliárias urbanas com fichas completas de imóveis, tradução automática e integração com o CRM e com os principais portais.'
+const keywords = 'site para imobiliárias, site imobiliário urbano, site integrado a portais, site com CRM'
 
 useSeoMeta({
   title,
   description,
+  keywords,
   ogTitle: title,
   ogDescription: description
 })

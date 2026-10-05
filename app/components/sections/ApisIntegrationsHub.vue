@@ -51,7 +51,7 @@ const hubFeatures: HubFeatureItem[] = [
         :width="1301"
         :height="1257"
         sizes="mobile-lg:100vw tablet-lg:600px desktop:650px"
-        alt="Telas do HUB de integrações"
+        alt="Telas do HUB de integrações" title="Telas do HUB de integrações"
         class="mx-auto h-auto w-full max-w-[650px]"
         loading="lazy"
       />

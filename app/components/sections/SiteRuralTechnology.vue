@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const mockupImgAttrs = {
   alt: 'Site de imobiliária rural',
+  title: 'Site de imobiliária rural',
   class: 'mx-auto h-auto w-full max-w-[1100px] rounded-[16px] tablet-lg:rounded-[24px]',
   loading: 'lazy'
 }
@@ -26,6 +27,12 @@ const mockupImgAttrs = {
     <template #description>
       Reduza o retrabalho no dia a dia da imobiliária, acompanhe o desempenho dos
       corretores e centralize atendimentos, propostas e negociações em um único sistema
+    </template>
+
+    <template #cta>
+      <CtaButton variant="primary" to="/agendar-demonstracao/" class="whitespace-nowrap">
+        Agendar Demonstração
+      </CtaButton>
     </template>
   </CrmTechnology>
 </template>

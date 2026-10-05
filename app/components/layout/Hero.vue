@@ -64,7 +64,7 @@ withDefaults(defineProps<Props>(), {
               >
                 <img
                   :src="badgeSrc"
-                  alt=""
+                  :alt="imageLabel(badgeSrc)" :title="imageLabel(badgeSrc)"
                   aria-hidden="true"
                   :class="badgeIconClass"
                 />
@@ -86,7 +86,7 @@ withDefaults(defineProps<Props>(), {
                   class="flex h-[30px] w-[27.887px] items-center justify-center rounded-[4px] bg-brand"
                   :class="icon.shadowClass ?? 'shadow-[0px_10px_20px_rgba(93,95,239,0.4)]'"
                 >
-                  <img :src="icon.src" alt="" aria-hidden="true" :class="icon.iconClass" />
+                  <img :src="icon.src" :alt="imageLabel(icon.src)" :title="imageLabel(icon.src)" aria-hidden="true" :class="icon.iconClass" />
                 </div>
               </div>
             </div>
@@ -100,7 +100,7 @@ withDefaults(defineProps<Props>(), {
         <img
           v-if="dividerSrc"
           :src="dividerSrc"
-          alt=""
+          :alt="imageLabel(dividerSrc)" :title="imageLabel(dividerSrc)"
           aria-hidden="true"
           :class="dividerClass"
         />
@@ -110,7 +110,7 @@ withDefaults(defineProps<Props>(), {
     <img
       v-if="mobileDividerSrc"
       :src="mobileDividerSrc"
-      alt=""
+      :alt="imageLabel(mobileDividerSrc)" :title="imageLabel(mobileDividerSrc)"
       aria-hidden="true"
       :class="mobileDividerClass"
     />

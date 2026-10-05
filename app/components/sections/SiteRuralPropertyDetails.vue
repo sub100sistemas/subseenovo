@@ -30,7 +30,7 @@ const attributes: Attribute[] = [
             :width="337"
             :height="633"
             sizes="mobile-lg:320px tablet-lg:260px desktop:320px desktop-full:378px"
-            alt="Ficha técnica rural no celular"
+            alt="Ficha técnica rural no celular" title="Ficha técnica rural no celular"
             class="mx-auto h-auto w-full max-w-[378px]"
             loading="lazy"
           />
@@ -63,7 +63,7 @@ const attributes: Attribute[] = [
                 <img
                   v-if="attr.icon"
                   :src="attr.icon"
-                  alt=""
+                  :alt="imageLabel(attr.icon)" :title="imageLabel(attr.icon)"
                   aria-hidden="true"
                   class="size-[25px] shrink-0 object-contain"
                 />

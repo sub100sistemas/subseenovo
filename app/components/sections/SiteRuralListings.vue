@@ -67,7 +67,7 @@ const features: PortfolioFeature[] = [
         :width="1344"
         :height="1415"
         sizes="mobile-lg:100vw tablet-lg:440px desktop:580px desktop-full:664px"
-        alt="Telas de imóveis rurais com mapa"
+        alt="Telas de imóveis rurais com mapa" title="Telas de imóveis rurais com mapa"
         class="mx-auto h-auto w-full max-w-[664px]"
         loading="lazy"
       />

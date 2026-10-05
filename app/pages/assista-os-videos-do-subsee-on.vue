@@ -1,11 +1,13 @@
 <script setup lang="ts">
-const title = 'SUBSEE | Vídeos e Tutoriais do SUBSEE on'
+const title = 'Vídeos do CRM Imobiliário SUBSEE on: Veja na Prática'
 const description =
-  'Assista aos vídeos do SUBSEE on e veja na prática como organizar imóveis, centralizar leads e acompanhar a equipe no CRM imobiliário.'
+  'Assista a vídeos curtos do SUBSEE on e veja na prática como organizar imóveis, centralizar leads e acompanhar a equipe no CRM imobiliário.'
+const keywords = 'vídeos CRM imobiliário, SUBSEE on em vídeo, software imobiliário na prática'
 
 useSeoMeta({
   title,
   description,
+  keywords,
   ogTitle: title,
   ogDescription: description
 })

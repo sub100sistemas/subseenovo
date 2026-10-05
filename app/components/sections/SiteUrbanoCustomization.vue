@@ -68,7 +68,7 @@ const features: PortfolioFeature[] = [
           :width="1471"
           :height="832"
           sizes="mobile-lg:100vw tablet-lg:440px desktop:580px desktop-full:664px"
-          alt="Personalização do site urbano"
+          alt="Personalização do site urbano" title="Personalização do site urbano"
           class="relative z-10 h-auto w-full"
           loading="lazy"
         />

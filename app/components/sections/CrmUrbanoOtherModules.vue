@@ -50,7 +50,7 @@ const modules: OtherModuleCard[] = [
         <NuxtLink
           v-for="mod in modules"
           :key="mod.title"
-          :to="mod.href"
+          :to="mod.href" :title="titleForLink(mod.href)" :aria-label="titleForLink(mod.href)"
           class="flex flex-col items-center gap-4 rounded-[20px] bg-white p-6 text-center shadow-[0px_2px_35px_rgba(31,56,115,0.08)] tablet:flex-row tablet:items-center tablet:gap-6 tablet:text-left"
         >
           <span class="flex h-[74px] w-[78px] shrink-0 items-center justify-center rounded-2xl bg-[#f7f7ff]">
@@ -58,7 +58,7 @@ const modules: OtherModuleCard[] = [
               :src="mod.icon"
               :width="mod.iconWidth"
               :height="mod.iconHeight"
-              alt=""
+              :alt="imageLabel(mod.icon)" :title="imageLabel(mod.icon)"
               aria-hidden="true"
               class="max-h-[44px] w-auto"
             />

@@ -1,11 +1,15 @@
 <script setup lang="ts">
+const title = 'Sistema para Aluguel por Temporada com CRM | SUBSEE on'
+const description =
+  'Sistema para aluguel por temporada com calendário de reservas, repasses automáticos e comunicação com hóspedes. Teste grátis por 30 dias.'
+const keywords = 'sistema para aluguel por temporada, CRM para temporada, gestão de reservas, calendário de reservas, imóveis de temporada'
+
 useSeoMeta({
-  title: 'CRM Imobiliário para Temporada | SUBSEE on',
-  description:
-    'Gerencie imóveis de temporada com agilidade e controle total. Calendário de reservas, repasses automáticos, comunicação com hóspedes e muito mais. Teste grátis por 30 dias.',
-  ogTitle: 'CRM Imobiliário para Temporada | SUBSEE on',
-  ogDescription:
-    'Gerencie imóveis de temporada com agilidade e controle total. Calendário de reservas, repasses automáticos, comunicação com hóspedes e muito mais.'
+  title,
+  description,
+  keywords,
+  ogTitle: title,
+  ogDescription: description
 })
 </script>
 

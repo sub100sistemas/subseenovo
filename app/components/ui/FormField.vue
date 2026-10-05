@@ -99,7 +99,7 @@ const kindClass = computed(() => {
       </select>
       <img
         src="/icons/form-chevron-down.svg"
-        alt=""
+        alt="Seta para baixo" title="Seta para baixo"
         width="16"
         height="16"
         class="pointer-events-none absolute top-1/2 right-[14px] mt-[-8px] block"

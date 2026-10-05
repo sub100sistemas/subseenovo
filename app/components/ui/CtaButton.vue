@@ -40,11 +40,12 @@ const classesByVariant: Record<Variant, string> = {
   <component
     :is="href ? 'a' : to ? NuxtLink : 'button'"
     v-bind="linkAttrs"
+    :title="titleForLink(to ?? href)" :aria-label="titleForLink(to ?? href)"
     class="inline-flex self-center items-center justify-center gap-2 text-center transition-colors tablet-lg:self-auto"
     :class="classesByVariant[variant]"
   >
     <slot />
-    <img v-if="showIcon && variant === 'success'" src="/icons/form-arrow-right.svg" alt="" width="18" height="18" class="block shrink-0" />
+    <img v-if="showIcon && variant === 'success'" src="/icons/form-arrow-right.svg" alt="Seta para a direita" title="Seta para a direita" width="18" height="18" class="block shrink-0" />
     <IconArrowRight v-else-if="showIcon" class="size-5 shrink-0" />
   </component>
 </template>

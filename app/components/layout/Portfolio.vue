@@ -103,7 +103,7 @@ const props = withDefaults(defineProps<PortfolioProps>(), {
                 <span :class="featureIconWrapperClass">
                   <img
                     :src="feature.icon"
-                    alt=""
+                    :alt="imageLabel(feature.icon)" :title="imageLabel(feature.icon)"
                     aria-hidden="true"
                     :class="featureIconClass"
                     :width="featureIconWidth"

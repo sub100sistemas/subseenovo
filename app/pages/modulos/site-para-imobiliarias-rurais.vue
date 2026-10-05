@@ -1,11 +1,13 @@
 <script setup lang="ts">
-const title = 'SUBSEE | Site para Imobiliárias Rurais — Fazendas, sítios e chácaras com anúncio completo'
+const title = 'Site para Imobiliárias Rurais: Fazendas e Sítios | SUBSEE'
 const description =
-  'Site para imobiliárias e corretores rurais: divulgue fazendas, sítios e chácaras com dados georreferenciados, solo, bioma e pluviometria, com tradução automática e alcance na América do Sul.'
+  'Site para imobiliárias rurais para divulgar fazendas, sítios e chácaras com dados georreferenciados, tradução automática e alcance na América do Sul.'
+const keywords = 'site para imobiliária rural, site para vender fazendas, anúncio de imóveis rurais, site imobiliário rural'
 
 useSeoMeta({
   title,
   description,
+  keywords,
   ogTitle: title,
   ogDescription: description
 })

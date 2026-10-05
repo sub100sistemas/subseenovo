@@ -25,7 +25,7 @@ withDefaults(defineProps<Props>(), {
   <section :class="sectionClass">
     <div :class="backgroundWrapperClass" aria-hidden="true">
       <div :class="backgroundClass">
-        <img :src="backgroundSrc" alt="" class="block size-full max-w-none" />
+        <img :src="backgroundSrc" :alt="imageLabel(backgroundSrc)" :title="imageLabel(backgroundSrc)" class="block size-full max-w-none" />
       </div>
     </div>
     <div :class="containerClass">

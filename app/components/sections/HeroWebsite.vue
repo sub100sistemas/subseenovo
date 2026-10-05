@@ -30,14 +30,14 @@ const categories = [
         src="/icons/hero-website-onda-decorativa-branca.svg"
         width="1920"
         height="174"
-        alt=""
+        alt="Onda decorativa branca" title="Onda decorativa branca"
         class="absolute -left-px top-[11px] w-[1920px] h-[173.455px] rotate-180 -scale-y-100 max-w-none"
       />
       <img loading="lazy" decoding="async"
         src="/icons/hero-website-onda-decorativa-azul.svg"
         width="1920"
         height="191"
-        alt=""
+        alt="Onda decorativa azul" title="Onda decorativa azul"
         class="absolute -left-[0.95px] top-[14.79px] w-[1919.95px] h-[190.853px] rotate-180 -scale-y-100 max-w-none"
       />
     </div>
@@ -75,7 +75,7 @@ const categories = [
           >
             <div v-for="cat in categories" :key="cat.alt" class="flex flex-col items-center gap-[10px] text-center">
               <div class="flex size-[64px] shrink-0 items-center justify-center rounded-full border border-[#CCCCCC] bg-white/35 tablet:size-[130px]">
-                <NuxtImg loading="lazy" decoding="async" :src="cat.icon" format="webp" width="82" height="82" :alt="cat.alt" class="size-10 tablet:size-[82px]" />
+                <NuxtImg loading="lazy" decoding="async" :src="cat.icon" format="webp" width="82" height="82" :alt="cat.alt || imageLabel(cat.icon)" :title="cat.alt || imageLabel(cat.icon)" class="size-10 tablet:size-[82px]" />
               </div>
               <p class="text-[12px] leading-[1.15] text-[#4F4F4F] tablet:text-[19px] tablet:leading-[1.2]">
                 <template v-for="(line, i) in cat.label" :key="i">
@@ -103,7 +103,7 @@ const categories = [
         <div class="w-full max-w-[711px] desktop:w-[calc(100%+2rem)] desktop:max-w-none desktop:-mr-8 desktop-lg:w-[calc(100%+1.25rem)] desktop-lg:-mr-5 pt-10">
           <NuxtPicture
             src="/images/hero-website/mockup-telas-do-site.png"
-            :img-attrs="{ class: 'block w-full h-auto' }"
+            :img-attrs="{ class: 'block w-full h-auto', title: 'Site de imobiliária no notebook' }"
             sizes="100vw tablet-lg:400px desktop-compact:460px desktop:711px"
             :width="711"
             :height="439"

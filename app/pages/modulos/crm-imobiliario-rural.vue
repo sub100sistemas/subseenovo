@@ -1,11 +1,15 @@
 <script setup lang="ts">
+const title = 'CRM Imobiliário Rural para Fazendas e Terras | SUBSEE'
+const description =
+  'CRM imobiliário rural para fazendas, sítios e terras: dados técnicos da propriedade, negociações até o contrato e anúncios no Brasil e no exterior.'
+const keywords = 'CRM imobiliário rural, CRM para fazendas, software imobiliário rural, imóveis rurais'
+
 useSeoMeta({
-  title: 'SUBSEE | CRM Imobiliário Rural para Fazendas e Propriedades Rurais',
-  description:
-    'Cadastre propriedades rurais com dados técnicos completos, acompanhe negociações do campo à assinatura do contrato e alcance compradores no Brasil e no exterior.',
-  ogTitle: 'SUBSEE | CRM Imobiliário Rural para Fazendas e Propriedades Rurais',
-  ogDescription:
-    'Cadastre propriedades rurais com dados técnicos completos, acompanhe negociações do campo à assinatura do contrato e alcance compradores no Brasil e no exterior.'
+  title,
+  description,
+  keywords,
+  ogTitle: title,
+  ogDescription: description
 })
 </script>
 

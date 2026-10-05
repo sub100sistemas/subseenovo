@@ -1,10 +1,10 @@
 <script setup lang="ts">
 const avatars = [
-  { n: 5, alt: '', marginLeft: 0 },
-  { n: 4, alt: '', marginLeft: -13.67 },
-  { n: 3, alt: '', marginLeft: -25.06 },
-  { n: 2, alt: '', marginLeft: -21.64 },
-  { n: 1, alt: '', marginLeft: -17.09 }
+  { n: 5, alt: 'Cliente do SUBSEE on', marginLeft: 0 },
+  { n: 4, alt: 'Cliente do SUBSEE on', marginLeft: -13.67 },
+  { n: 3, alt: 'Cliente do SUBSEE on', marginLeft: -25.06 },
+  { n: 2, alt: 'Cliente do SUBSEE on', marginLeft: -21.64 },
+  { n: 1, alt: 'Cliente do SUBSEE on', marginLeft: -17.09 }
 ]
 
 const backgroundStyle = {
@@ -41,7 +41,7 @@ const propertyIcons = [
         :style="{ left: v.left, top: v.top, width: v.w + 'px', height: v.h + 'px' }"
       >
         <div class="shrink-0" :style="{ width: v.iw + 'px', height: v.ih + 'px', transform: 'rotate(144.54deg) skewX(2.17deg)' }">
-          <img :src="v.src" :width="v.iw" :height="v.ih" alt="" class="block size-full max-w-none" />
+          <img :src="v.src" :width="v.iw" :height="v.ih" :alt="imageLabel(v.src)" :title="imageLabel(v.src)" class="block size-full max-w-none" />
         </div>
       </div>
     </div>
@@ -89,13 +89,13 @@ const propertyIcons = [
           </div>
 
           <div class="mt-[41px] flex items-center gap-2">
-            <img src="/icons/icone-selo-seguranca.svg" width="27" height="26" alt="Selo de segurança/confiança" class="shrink-0" />
+            <img src="/icons/icone-selo-seguranca.svg" width="27" height="26" alt="Selo de segurança/confiança" title="Selo de segurança/confiança" class="shrink-0" />
             <p class="font-accent text-[18px] font-light tracking-[0.828px] text-ink-soft leading-[1.49]">
               A confiança de
               <span class="relative inline-block px-3 py-0.5 font-semibold">
                 <img
                   src="/icons/hero-destaque-confianca-contorno.svg"
-                  alt=""
+                  alt="Contorno decorativo do selo de confiança" title="Contorno decorativo do selo de confiança"
                   aria-hidden="true"
                   class="pointer-events-none absolute inset-0 z-0 size-full"
                 />
@@ -113,7 +113,7 @@ const propertyIcons = [
               :width="58"
               :height="56"
               sizes="58px"
-              :alt="a.alt"
+              :alt="a.alt || imageLabel(`/images/hero-main/avatar-cliente-${a.n}.png`)" :title="a.alt || imageLabel(`/images/hero-main/avatar-cliente-${a.n}.png`)"
               class="h-[56px] w-[58px] rounded-full object-cover"
               :style="{ marginLeft: `${a.marginLeft}px` }"
               loading="lazy"
@@ -123,16 +123,16 @@ const propertyIcons = [
           <div class="mt-[41px] flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-ink-soft">
             <span class="inline-flex items-center gap-2">
               <span class="relative inline-block size-[18px] shrink-0">
-                <img src="/icons/icone-mais-vendas-1.svg" alt="" class="absolute left-1/2 top-[8.33%] bottom-[8.33%]" />
-                <img src="/icons/icone-mais-vendas-2.svg" alt="" class="absolute left-1/4 right-1/4 top-[20.83%] bottom-[20.83%]" />
+                <img src="/icons/icone-mais-vendas-1.svg" alt="Ícone de mais vendas" title="Ícone de mais vendas" class="absolute left-1/2 top-[8.33%] bottom-[8.33%]" />
+                <img src="/icons/icone-mais-vendas-2.svg" alt="Ícone de mais vendas" title="Ícone de mais vendas" class="absolute left-1/4 right-1/4 top-[20.83%] bottom-[20.83%]" />
               </span>
               Mais eficiência · Menos custo
             </span>
             <span class="hidden tablet:inline text-[#d1d5db]">|</span>
             <span class="inline-flex items-center gap-2">
               <span class="relative inline-block size-[18px] shrink-0">
-                <img src="/icons/icone-mais-eficiencia-1.svg" alt="" class="absolute left-[8.33%] right-[8.33%] top-[29.17%] bottom-[29.17%]" />
-                <img src="/icons/icone-mais-eficiencia-2.svg" alt="" class="absolute left-[66.67%] right-[8.33%] top-[29.17%] bottom-[45.83%]" />
+                <img src="/icons/icone-mais-eficiencia-1.svg" alt="Ícone de mais eficiência" title="Ícone de mais eficiência" class="absolute left-[8.33%] right-[8.33%] top-[29.17%] bottom-[29.17%]" />
+                <img src="/icons/icone-mais-eficiencia-2.svg" alt="Ícone de mais eficiência" title="Ícone de mais eficiência" class="absolute left-[66.67%] right-[8.33%] top-[29.17%] bottom-[45.83%]" />
               </span>
               Mais vendas · Ciclo mais rápido
             </span>
@@ -142,7 +142,7 @@ const propertyIcons = [
         <div class="relative w-full mt-8 md:mt-8 lg:mt-0">
           <NuxtPicture
             src="/images/hero-main/celulares-subsee-composicao.png"
-            :img-attrs="{ class: 'block w-full h-auto' }"
+            :img-attrs="{ class: 'block w-full h-auto', title: 'Aplicativo SUBSEE on em dois celulares' }"
             sizes="100vw mobile-lg:490px tablet:650px tablet-lg:400px desktop-compact:460px desktop:660px"
             :width="711"
             :height="794"
@@ -157,7 +157,7 @@ const propertyIcons = [
             :style="{ left: ic.left, top: ic.top, filter: ic.shadow }"
           >
             <div class="absolute" :style="{ inset: ic.inset }">
-              <img :src="ic.src" alt="" class="block size-full max-w-none" />
+              <img :src="ic.src" :alt="imageLabel(ic.src)" :title="imageLabel(ic.src)" class="block size-full max-w-none" />
             </div>
           </div>
         </div>
@@ -169,7 +169,7 @@ const propertyIcons = [
       src="/icons/divider-onda-decorativa.svg"
       width="1918"
       height="147"
-      alt=""
+      alt="Onda decorativa" title="Onda decorativa"
       class="absolute inset-0 h-full w-full object-cover"
     />
   </div>

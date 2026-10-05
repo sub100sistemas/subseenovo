@@ -36,11 +36,11 @@ const modules: OtherModuleCard[] = [
         <NuxtLink
           v-for="mod in modules"
           :key="mod.title"
-          :to="mod.href"
+          :to="mod.href" :title="titleForLink(mod.href)" :aria-label="titleForLink(mod.href)"
           class="flex flex-col items-center gap-4 rounded-[20px] bg-white p-6 text-center shadow-[0px_2px_35px_rgba(31,56,115,0.08)] tablet:flex-row tablet:items-center tablet:gap-6 tablet:text-left"
         >
           <span class="flex size-[78px] shrink-0 items-center justify-center rounded-2xl bg-[#F7F7FF]">
-            <img :src="mod.icon" width="46" height="46" alt="" aria-hidden="true" class="size-11" />
+            <img :src="mod.icon" width="46" height="46" :alt="imageLabel(mod.icon)" :title="imageLabel(mod.icon)" aria-hidden="true" class="size-11" />
           </span>
           <div class="min-w-0 flex-1">
             <p class="text-xl font-semibold text-brand">{{ mod.title }}</p>

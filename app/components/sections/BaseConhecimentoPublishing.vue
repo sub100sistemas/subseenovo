@@ -52,7 +52,7 @@ const advantageCards: AdvantageCard[] = [
           <div
             class="z-10 -mb-[43px] flex size-[100px] shrink-0 items-center justify-center rounded-full border border-brand bg-white shadow-[0px_10px_20px_rgba(38,45,118,0.08)]"
           >
-            <img :src="card.icon" :width="card.iconWidth" :height="card.iconHeight" alt="" aria-hidden="true" />
+            <img :src="card.icon" :width="card.iconWidth" :height="card.iconHeight" :alt="imageLabel(card.icon)" :title="imageLabel(card.icon)" aria-hidden="true" />
           </div>
           <div
             class="flex w-full flex-col items-center gap-6 rounded-[20px] tablet-lg:min-h-[432px] tablet-lg:flex-1 border border-brand bg-white px-6 pt-[57px] pb-8 text-center shadow-[0px_10px_20px_rgba(38,45,118,0.08)] tablet-lg:gap-9 tablet-lg:px-[43px] tablet-lg:pt-[77px] tablet-lg:pb-[49px]"
