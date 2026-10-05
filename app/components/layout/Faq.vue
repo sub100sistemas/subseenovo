@@ -46,6 +46,8 @@ const props = withDefaults(defineProps<Props>(), {
   minusIconSrc: undefined,
   faqs: () => []
 })
+
+useSchemaNode((context) => buildFaqPage(context, props.faqs))
 </script>
 
 <template>

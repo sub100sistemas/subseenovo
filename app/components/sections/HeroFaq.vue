@@ -46,6 +46,8 @@ const faqs = [
       'Não. O Plano Urbano é voltado para a gestão e divulgação de imóveis urbanos. Para anunciar imóveis rurais, é necessário contratar o Plano Rural ou um plano que contemple os dois segmentos, garantindo as funcionalidades específicas de cada operação.'
   }
 ]
+
+useSchemaNode((context) => buildFaqPage(context, faqs))
 </script>
 
 <template>

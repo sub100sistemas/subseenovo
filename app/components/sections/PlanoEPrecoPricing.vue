@@ -53,6 +53,17 @@ const planos: PricingPlan[] = [
 ]
 
 const periodo = ref<'mensal' | 'anual'>('mensal')
+
+useSchemaNode((context) =>
+  buildSoftwareApplication(
+    context,
+    planos.map((plano) => ({
+      name: plano.nome,
+      monthly: parseBrlAmount(plano.preco),
+      annual: parseBrlAmount(plano.precoAnual)
+    }))
+  )
+)
 </script>
 
 <template>
