@@ -1,0 +1,66 @@
+# SUBSEE
+
+> SUBSEE é o CRM imobiliário da SUB100 Sistemas para imobiliárias e corretores. Reúne gestão de imóveis, leads, negociações, site imobiliário integrado, integração com portais e automações, com versões para os mercados urbano, rural e de temporada. O site público está em português do Brasil.
+
+## Sobre o SUBSEE
+
+O SUBSEE (escrito "SUBSEE on" em parte do site) é um sistema de CRM imobiliário desenvolvido e mantido pela SUB100 Sistemas, com sede em Maringá (PR). Ele permite cadastrar imóveis uma única vez e publicá-los nos portais integrados, organizar leads e atendimentos em um funil de vendas, acompanhar propostas e negociações, e manter um site imobiliário conectado ao CRM.
+
+Integrações citadas no site: Portal SUB100, OLX, Viva Real e ZAP Imóveis, entre outros portais, além de WhatsApp, redes sociais e Meta Ads (inclusive o Pixel da Meta).
+
+- [Home](https://subseenovo.pages.dev/): visão geral do CRM imobiliário SUBSEE, com perguntas frequentes.
+
+## Produtos e módulos
+
+- [CRM para imobiliárias](https://subseenovo.pages.dev/modulos/crm/): atendimentos, leads, agenda, propostas e negociações em um só CRM.
+- [CRM Imobiliário Urbano](https://subseenovo.pages.dev/modulos/crm-imobiliario-urbano/): funil Kanban, distribuição automática de leads, metas em tempo real e publicação nos principais portais.
+- [CRM Imobiliário Rural](https://subseenovo.pages.dev/modulos/crm-imobiliario-rural/): fazendas, sítios e terras, com dados técnicos da propriedade, negociação até o contrato e anúncios no Brasil e no exterior.
+- [CRM Imobiliário Temporada](https://subseenovo.pages.dev/modulos/crm-imobiliario-temporada/): aluguel por temporada, com calendário de reservas, repasses automáticos e comunicação com hóspedes.
+- [Site para Imobiliárias Urbanas](https://subseenovo.pages.dev/modulos/site-para-imobiliarias-urbanas/): fichas completas de imóveis, tradução automática e integração com o CRM e os portais.
+- [Site para Imobiliárias Rurais](https://subseenovo.pages.dev/modulos/site-para-imobiliarias-rurais/): fazendas, sítios e chácaras com dados georreferenciados, tradução automática e alcance na América do Sul.
+- [Site para Loteadoras](https://subseenovo.pages.dev/modulos/site-para-loteadoras/): lotes e lançamentos, integrado ao CRM SUBSEE e ao Sistema SGL. Indicado como "em breve".
+- [API e Hub de Integração](https://subseenovo.pages.dev/modulos/apis-hub-integrador/): integração com portais imobiliários, WhatsApp, redes sociais e Meta Ads, centralizando leads, imóveis e atendimentos.
+
+## Planos e preços
+
+Fonte: [Planos e Preços](https://subseenovo.pages.dev/planos-e-precos/).
+
+- Plano Urbano: gestão e divulgação de imóveis urbanos. R$ 450 por mês + opcionais; R$ 396 por mês no plano anual (selo de 12% de desconto anual).
+- Plano Rural: gestão de fazendas, sítios e terras. R$ 450 por mês + opcionais; R$ 396 por mês no plano anual.
+- Incluído nos dois planos: até 10 usuários, organização de leads e clientes, funil de vendas com follow-ups, cadastro de imóveis, divulgação no SUB100 e em outros portais, site imobiliário integrado, MEL.IA para apoiar atendimentos, automações, treinamentos e suporte especializado.
+- Opcionais: 5 usuários adicionais por R$ 100,00; Site & Hotsite Padrão por R$ 1.200,00; Site & Hotsite personalizado sob consulta.
+- O Plano Urbano não cobre anúncios de imóveis rurais; para isso é preciso o Plano Rural ou um plano que contemple os dois segmentos.
+- O site divulga teste grátis de 30 dias e demonstração sob agendamento (páginas de formulário, não listadas aqui).
+
+## Conteúdo e recursos
+
+- [Eventos](https://subseenovo.pages.dev/eventos/): lives, webinars e treinamentos online sobre o SUBSEE on, realizados ao vivo pelo Zoom, com replays disponíveis. Gratuitos para clientes SUBSEE.
+- [Vídeos do SUBSEE on](https://subseenovo.pages.dev/assista-os-videos-do-subsee-on/): vídeos curtos que mostram o sistema na prática, organizados por perfil (imobiliárias urbanas, rurais e locação).
+- [Blog da SUB100](https://blog.sub100sistemas.com.br/): artigos da SUB100.
+- [Canal do SUBSEE no YouTube](https://www.youtube.com/@subsee)
+
+## Base de Conhecimento
+
+- [Base de Conhecimento](https://subseenovo.pages.dev/modulos/base-de-conhecimento/): central de ajuda, tutoriais e documentação do SUBSEE on, com vídeos, treinamentos, manuais e materiais de apoio, e acesso aos eventos online. A página também explica como treinar a equipe para usar o sistema.
+
+## Informações institucionais
+
+- Empresa: SUB100 Sistemas (SUB100 Sistemas Ltda.), CNPJ 11.528.518/0001-19.
+- Endereço: Rua Machado de Assis, 621, Zona 06, Maringá - PR, 87015-580.
+- Telefone comercial: +55 44 3032-5200.
+- [Política de Privacidade](https://subseenovo.pages.dev/lgpd/politica-de-privacidade/): coleta, uso e proteção de dados pessoais conforme a LGPD.
+- [Termos de Uso](https://subseenovo.pages.dev/lgpd/termos-de-uso/): termos de uso dos sites da SUB100 Sistemas.
+
+## Idioma do site
+
+Todo o conteúdo do site público é em português do Brasil (pt-BR). Não existe versão em inglês.
+
+Context in English: SUBSEE is a Brazilian real estate CRM (urban, rural and vacation-rental versions) offered by SUB100 Sistemas, headquartered in Maringá, Paraná. Prices are in Brazilian reais (BRL). All pages linked in this file are in Brazilian Portuguese.
+
+## Links oficiais relevantes
+
+- [App SUBSEE](https://app.subsee.com.br): acesso ao sistema.
+- [Portal de imóveis SUB100](https://sub100.com.br/): portal de anúncios onde assinantes do SUBSEE podem anunciar.
+- [Sistema SGL](https://sistemasgl.com.br/): ERP para loteadoras e incorporadas.
+- [SUB100 Sistemas](https://sub100sistemas.com.br/): site institucional da empresa.
+- [Facebook](https://www.facebook.com/sub100brasil) · [Instagram](https://www.instagram.com/sub100brasil/) · [LinkedIn](https://www.linkedin.com/company/sub100/)
