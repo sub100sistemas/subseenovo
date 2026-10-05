@@ -2,6 +2,8 @@
 interface Props {
   modelValue: boolean
   videoId: string
+  provider?: 'youtube' | 'vimeo'
+  videoHash?: string
   title: string
   eyebrow?: string
   closeLabel?: string
@@ -9,6 +11,8 @@ interface Props {
 }
 
 const props = withDefaults(defineProps<Props>(), {
+  provider: 'youtube',
+  videoHash: '',
   eyebrow: '',
   closeLabel: 'Fechar vídeo',
   aspect: '16/9'
@@ -18,8 +22,10 @@ const emit = defineEmits<{ 'update:modelValue': [value: boolean] }>()
 
 const dialogEl = ref<HTMLElement | null>(null)
 const closeButton = ref<HTMLButtonElement | null>(null)
-const embedSrc = computed(
-  () => `https://www.youtube-nocookie.com/embed/${props.videoId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`
+const embedSrc = computed(() =>
+  props.provider === 'vimeo'
+    ? `https://player.vimeo.com/video/${props.videoId}?h=${props.videoHash}&autoplay=1&playsinline=1&dnt=1`
+    : `https://www.youtube-nocookie.com/embed/${props.videoId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`
 )
 const titleId = useId()
 

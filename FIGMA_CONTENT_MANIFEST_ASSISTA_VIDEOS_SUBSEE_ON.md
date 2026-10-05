@@ -53,7 +53,7 @@ Fundo `#f8f9ff` (`3188:3439`, largura total, `py-[40px]`, `gap-[32px]`).
 
 | # | Gradiente da miniatura | Duração | Título | Descrição |
 | --- | --- | --- | --- | --- |
-| 1 (`3188:3445`) | `#5d5fef`→`#8b8dff` | 04:18 | Organize imóveis e publique com agilidade | Cadastre, organize e distribua seus imóveis nos principais canais com mais eficiência. |
+| 1 (`3188:3445`) | `#5d5fef`→`#8b8dff` | 03:11 | Organize imóveis e publique com agilidade | Cadastre, organize e distribua seus imóveis nos principais canais com mais eficiência. |
 | 2 (`3188:3454`) | `#17a6a6`→`#66d4c9` | 05:02 | Centralize leads e atendimento | Reúna contatos, mensagens e histórico para acompanhar cada oportunidade do início ao fim. |
 | 3 (`3188:3464`) | `#7357c7`→`#b491e8` | 03:46 | Acompanhe sua equipe e oportunidades | Visualize tarefas, agenda e evolução comercial para tomar decisões com mais clareza. |
 
@@ -70,9 +70,9 @@ Seção `py-[40px]`, `gap-[76px]`, fundo branco.
 
 | # | Node | Fundo | Cor de destaque | Número | Título | Descrição | Link |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | `3188:3477` | `#eef0ff` | `#5d5fef` | 01 | Imobiliárias urbanas | Gestão de imóveis, integração com portais, leads e atendimento em um só lugar. | Ver vídeos → |
-| 2 | `3188:3484` | `#eaf9f7` | `#159c96` | 02 | Imobiliárias rurais | Cadastros completos, informações técnicas e oportunidades para o mercado rural. | Ver vídeos → |
-| 3 | `3188:3491` | `#f4eefc` | `#7652b5` | 03 | Corretores e equipes | Agenda, distribuição de contatos e acompanhamento para vender com mais organização. | Ver vídeos → |
+| 1 | `3188:3477` | `#eef0ff` | `#5d5fef` | 01 | Imobiliárias urbanas | Gestão de imóveis, integração com portais, releta de leads CRM  e inteligência artificil em um só lugar. | Ver vídeos → |
+| 2 | `3188:3484` | `#eaf9f7` | `#159c96` | 02 | Imobiliárias rurais | Cadastro especializados para cadastrar sua fazenda. CRM que fala a linguagem do agronegócio. | Ver vídeos → |
+| 3 | `3188:3491` | `#f4eefc` | `#7652b5` | 03 | Imobiliárias locação | Não importa qual é a sua locação, residencia, comercial ou de temporada. Importa que a jornada esteja em um só sistema. | Ver vídeos → |
 
 - **CTA - App SUBSEE** (`3188:3501`, 1400×220, `rounded-[28px]`, gradiente horizontal `#5d5fef`→`#2e386b`, `overflow-clip`, elipse decorativa 360×360 em x=1080 y=-180):
   - Título (`3188:3506`, Poppins Bold 30px branco, x=58 y=46): "Continue aprendendo no App SUBSEE"

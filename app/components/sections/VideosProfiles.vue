@@ -9,41 +9,59 @@ interface VideoProfile {
   bgClass: string
   accentClass: string
   circleSrc: string
-  href: string
+  href?: string
+  vimeoId?: string
+  vimeoHash?: string
+  aspect?: string
 }
 
 const profiles: VideoProfile[] = [
   {
     number: '01',
     title: 'Imobiliárias urbanas',
-    description: 'Gestão de imóveis, integração com portais, leads e atendimento em um só lugar.',
+    description: 'Gestão de imóveis, integração com portais, coleta de leads, CRM e inteligência artificial em um só lugar.',
     linkLabel: 'Ver vídeos →',
     bgClass: 'bg-[#eef0ff]',
     accentClass: 'text-[#5d5fef]',
     circleSrc: '/icons/videos-profile-1.svg',
-    href: videosAppUrl
+    vimeoId: '1232991899',
+    vimeoHash: '79104a1a7f',
+    aspect: '9/16'
   },
   {
     number: '02',
     title: 'Imobiliárias rurais',
-    description: 'Cadastros completos, informações técnicas e oportunidades para o mercado rural.',
+    description: 'Cadastro especializados para cadastrar sua fazenda. CRM que fala a linguagem do agronegócio.',
     linkLabel: 'Ver vídeos →',
     bgClass: 'bg-[#eaf9f7]',
     accentClass: 'text-[#159c96]',
     circleSrc: '/icons/videos-profile-2.svg',
-    href: videosAppUrl
+    vimeoId: '1232989227',
+    vimeoHash: '03a0ee7fd5',
+    aspect: '9/16'
   },
   {
     number: '03',
-    title: 'Corretores e equipes',
-    description: 'Agenda, distribuição de contatos e acompanhamento para vender com mais organização.',
+    title: 'Imobiliárias locação',
+    description: 'Não importa qual é a sua locação, residencia, comercial ou de temporada. Importa que a jornada esteja em um só sistema.',
     linkLabel: 'Ver vídeos →',
     bgClass: 'bg-[#f4eefc]',
     accentClass: 'text-[#7652b5]',
     circleSrc: '/icons/videos-profile-3.svg',
-    href: videosAppUrl
+
   }
 ]
+
+const linkClass =
+  "mt-2 h-6 text-[14px] leading-normal font-semibold after:absolute after:inset-0 after:content-[''] focus-visible:after:outline-2 focus-visible:after:-outline-offset-2 focus-visible:after:outline-brand"
+
+const activeProfile = ref<VideoProfile | null>(null)
+const modalOpen = ref(false)
+
+const openVideo = (profile: VideoProfile) => {
+  activeProfile.value = profile
+  modalOpen.value = true
+}
 </script>
 
 <template>
@@ -80,19 +98,41 @@ const profiles: VideoProfile[] = [
             {{ profile.title }}
           </h3>
           <p class="mt-3 text-[15px] leading-[23px] text-[#596273] tablet-lg:min-h-[72px]">{{ profile.description }}</p>
+          <button
+            v-if="profile.vimeoId"
+            :id="`profile-${index}-link`"
+            type="button"
+            aria-haspopup="dialog"
+            :aria-labelledby="`profile-${index}-link profile-${index}-title`"
+            class="flex cursor-pointer items-start text-left"
+            :class="[linkClass, profile.accentClass]"
+            @click="openVideo(profile)"
+          >
+            {{ profile.linkLabel }}
+          </button>
           <a
+            v-else
             :id="`profile-${index}-link`"
             :href="profile.href" :title="titleForLink(profile.href)" :aria-label="titleForLink(profile.href)"
             target="_blank"
             rel="noopener noreferrer"
             :aria-labelledby="`profile-${index}-link profile-${index}-title`"
-            class="mt-2 h-6 text-[14px] leading-normal font-semibold after:absolute after:inset-0 after:content-[''] focus-visible:after:outline-2 focus-visible:after:-outline-offset-2 focus-visible:after:outline-brand"
-            :class="profile.accentClass"
+            :class="[linkClass, profile.accentClass]"
           >
             {{ profile.linkLabel }}
           </a>
         </li>
       </ul>
     </div>
+
+    <VideoModal
+      v-if="activeProfile?.vimeoId"
+      v-model="modalOpen"
+      provider="vimeo"
+      :video-id="activeProfile.vimeoId"
+      :video-hash="activeProfile.vimeoHash"
+      :title="activeProfile.title"
+      :aspect="activeProfile.aspect"
+    />
   </section>
 </template>

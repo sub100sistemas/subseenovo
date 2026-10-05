@@ -2,9 +2,9 @@
 const tags: string[] = ['Gestão integrada', 'Mais produtividade']
 
 const featuredVideo = {
-  youtubeId: 'kmwo-MkJ34M',
-  aspect: '9/16',
-  title: 'Uma visão completa da plataforma'
+  youtubeId: '1TEwQQ2H7jg',
+  aspect: '16/9',
+  title: 'Sub100 Imóveis - Encontre o seu lugar'
 }
 
 const modalOpen = ref(false)
@@ -66,7 +66,7 @@ const modalOpen = ref(false)
         <span
           class="absolute top-4 left-4 rounded-full bg-white/16 px-4 py-[10px] text-[13px] leading-normal font-semibold whitespace-nowrap text-white tablet-lg:top-7 tablet-lg:left-7"
         >
-          SUBSEE ON • 03:24
+          SUBSEE ON • 00:30
         </span>
         <span class="absolute inset-0 flex items-center justify-center pb-8">
           <PlayButton size="lg" />

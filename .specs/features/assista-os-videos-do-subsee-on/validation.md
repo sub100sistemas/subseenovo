@@ -121,7 +121,7 @@ Comparado a 1920px. Header 0 / 85, Hero 0 / 568 (a seção do site mede 483 e te
 **Ressalvas** (nenhuma foi corrigida nesta validação, exceto os dois pontos da seção 2):
 1. Limitação do `Esc` quando o foco está dentro do iframe do YouTube (seção 2.1).
 2. Avisos de WebGPU do iframe, ambientais.
-3. O vídeo do card institucional e o do demo 1 são o mesmo id; as durações do badge e dos cards ("03:24", "04:18" etc.) continuam o texto do Figma, não a duração real.
+3. O vídeo do card institucional e o do demo 1 são o mesmo vídeo (Vimeo `1232991899`); as durações do badge e do demo 1 foram ajustadas para 03:11 (duração real), e as dos demos 2 e 3 continuam o texto do Figma.
 4. `videosFallbackUrl` (`app/data/videos.ts`) ainda é usado pelos demos 2 e 3.
 5. `ui/PlayButton.vue:24-49` embute caminhos `videos-*` (um só chamador hoje).
 6. 34 imagens decorativas sem `width`/`height`.
