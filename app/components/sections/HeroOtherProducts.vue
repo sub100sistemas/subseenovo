@@ -76,7 +76,7 @@ const products: Product[] = [
         <div
           v-for="product in products"
           :key="product.badge"
-          class="flex flex-col items-center gap-8 border border-[#dee2e6] p-9 text-center desktop-full:h-[330px] desktop-full:w-[610px] desktop-full:flex-row desktop-full:items-center desktop-full:p-9 desktop-full:text-left"
+          class="flex flex-col items-center gap-8 border border-[#dee2e6] px-5 py-9 text-center desktop-full:h-[330px] desktop-full:w-[610px] desktop-full:flex-row desktop-full:items-center desktop-full:px-5 desktop-full:py-9 desktop-full:text-left"
         >
           <img loading="lazy" decoding="async"
             :src="product.logo"
@@ -98,7 +98,7 @@ const products: Product[] = [
               :to="product.external ? undefined : product.href"
               :title="titleForLink(product.href)" :aria-label="titleForLink(product.href)"
               v-bind="product.external ? { target: '_blank', rel: 'noopener' } : {}"
-              class="mx-auto mt-6 inline-flex h-14 w-[180px] items-center justify-center gap-1.5 rounded-xl border border-teal-link text-teal-link transition-colors hover:bg-teal-link/5 desktop-full:mx-0"
+              class="mx-auto mt-6 inline-flex h-14 items-center whitespace-nowrap px-5 justify-center gap-1.5 rounded-xl border border-teal-link text-teal-link transition-colors hover:bg-teal-link/5 desktop-full:mx-0"
             >
               <span class="text-base">{{ product.cta }}</span>
               <span class="text-[19px] font-bold" aria-hidden="true">→</span>
