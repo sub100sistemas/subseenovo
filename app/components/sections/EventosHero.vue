@@ -23,13 +23,13 @@
           src="/images/eventos/eventos-hero-shape-1.png"
           alt="Forma decorativa" title="Forma decorativa"
           aria-hidden="true"
-          class="pointer-events-none absolute left-[-6.4%] top-[1.5%] hidden w-[12.7%] opacity-50 desktop-full:block"
+          class="pointer-events-none absolute left-[-6.4%] top-[-3%] -z-[1] hidden w-[12.7%] opacity-50 desktop-full:block"
         />
         <img
           src="/images/eventos/eventos-hero-shape-2.png"
           alt="Forma decorativa" title="Forma decorativa"
           aria-hidden="true"
-          class="pointer-events-none absolute left-[41.1%] top-[77.5%] hidden w-[12.1%] desktop-full:block"
+          class="pointer-events-none absolute left-[44.1%] top-[77.5%] -z-[1] hidden w-[12.1%] desktop-full:block"
         />
 
         <div class="w-full tablet-lg:w-[55.36%]">

@@ -7,13 +7,13 @@
         src="/icons/eventos-icone-ellipse-1.svg"
         alt="Elipse decorativa" title="Elipse decorativa"
         aria-hidden="true"
-        class="pointer-events-none absolute top-[12%] left-[-1.5%] hidden size-[66px] desktop-full:block"
+        class="pointer-events-none absolute top-[12%] left-[-1.5%] -z-[1] hidden size-[66px] desktop-full:block"
       />
       <img
         src="/icons/eventos-icone-ellipse-2.svg"
         alt="Elipse decorativa" title="Elipse decorativa"
         aria-hidden="true"
-        class="pointer-events-none absolute top-[55%] left-[45.3%] hidden h-[30px] w-[27px] desktop-full:block"
+        class="pointer-events-none absolute top-[55%] left-[45.3%] -z-[1] hidden h-[30px] w-[27px] desktop-full:block"
       />
 
       <div class="w-full tablet-lg:w-[42%]">
