@@ -1,40 +1,29 @@
 <script setup lang="ts">
+const SCROLL_THRESHOLD = 560
 const isPastHero = ref(false)
 const isFixedMode = ref(false)
 const isVisible = ref(false)
 const skipTransition = ref(false)
 const headerEl = ref<HTMLElement | null>(null)
-let observer: IntersectionObserver | null = null
+const route = useRoute()
 
-function setupObserver() {
-  observer?.disconnect()
-  const heroEl = document.getElementById('hero-main')
-  if (!heroEl) return
-  const headerHeight = headerEl.value?.offsetHeight ?? 85
-  observer = new IntersectionObserver(
-    ([entry]) => {
-      isPastHero.value = !entry.isIntersecting
-    },
-    { rootMargin: `-${headerHeight}px 0px 0px 0px`, threshold: 0 }
-  )
-  observer.observe(heroEl)
+function updateFromScroll() {
+  isPastHero.value = window.scrollY >= SCROLL_THRESHOLD
 }
 
 onMounted(() => {
-  setupObserver()
+  window.addEventListener('scroll', updateFromScroll, { passive: true })
+  updateFromScroll()
 })
 
 onBeforeUnmount(() => {
-  observer?.disconnect()
+  window.removeEventListener('scroll', updateFromScroll)
 })
 
-const route = useRoute()
 watch(() => route.fullPath, async () => {
-  observer?.disconnect()
-  observer = null
   isPastHero.value = false
   await nextTick()
-  setupObserver()
+  updateFromScroll()
 })
 
 watch(isPastHero, (pastHero) => {
