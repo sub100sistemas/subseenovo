@@ -28,6 +28,7 @@
             :width="1694"
             :height="1088"
             sizes="mobile-lg:100vw tablet-lg:600px desktop:732px"
+            format="avif"
             alt="Painel do CRM conectado a integrações" title="Painel do CRM conectado a integrações"
             class="h-auto w-full max-w-[600px] tablet-lg:max-w-[732px]"
             loading="lazy"
