@@ -95,34 +95,19 @@ A component being reusable is a statement about *structure* (markup shape, prop 
 
 ## Git workflow
 
-Git is a mandatory part of every task, not an afterthought at the end. Before starting *any* task:
-
-1. Check the current branch (`git branch --show-current`).
-2. Check for pending/uncommitted changes (`git status`). If there are any and they aren't yours or aren't understood, stop and ask — never discard or overwrite existing changes without explicit authorization. Prefer a reversible step (leave it, or ask before touching it) over guessing.
-3. Start from an up-to-date `master`.
-4. Create a dedicated branch for the task — never work, and never commit, directly on `master`.
-
-```bash
-git checkout master
-git pull                              # if a remote is configured
-git checkout -b feature/<task-slug>   # new pages/sections
-git checkout -b fix/<task-slug>       # bug fixes
-git checkout -b chore/<task-slug>     # infra / docs / tooling
-git checkout -b refactor/<task-slug>  # shared-component extraction, no behavior change
-```
-
-Real examples from this repo's history: `feature/site-para-loteadoras`, `feature/site-para-imobiliarias-urbanas`. Same pattern for other types: `fix/header-mobile`, `refactor/shared-components`.
-
-While implementing: commit in logical steps as the work progresses (not one giant commit at the end) — e.g. one commit for a shared shell extraction, one for the page that consumes it, one for a targeted fix. Then:
-
-```bash
-pnpm build                            # validation gate — must succeed
-git checkout master
-git merge <branch>
-git branch -d <branch>
-```
-
-`master` always represents the current integrated state of the project — never commit directly to it, and never merge a branch that hasn't passed `pnpm build` plus a manual visual check of the affected page(s).
+- **Branch obrigatória:** trabalhar sempre na `master`.
+- **Não criar branches:** nunca criar ou utilizar branches `feature/*`, `fix/*`, `chore/*` ou `refactor/*` para novas tarefas.
+- Antes de iniciar qualquer tarefa:
+  1. executar `git branch --show-current`;
+  2. executar `git status`;
+  3. confirmar que a branch atual é `master`;
+  4. se não estiver na `master`, parar e pedir autorização antes de trocar de branch.
+- Fazer os commits necessários diretamente na `master`, em commits lógicos.
+- Antes de qualquer publicação:
+  - executar `pnpm build`;
+  - realizar a validação necessária;
+  - não executar `git push` sem autorização explícita do usuário.
+- **Nunca alterar, restaurar, adicionar ou remover manualmente** `.claude/scheduled_tasks.lock`. Se ele aparecer como deletado, manter a exclusão e não incluí-lo em commits.
 
 ## Code comments
 

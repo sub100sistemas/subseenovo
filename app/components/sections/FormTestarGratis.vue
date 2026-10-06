@@ -5,7 +5,7 @@ import type { FormBenefit, FormPageConfig } from '~/types/forms'
 const config: FormPageConfig = {
   tipoMail: 'Solicite um teste grátis por 30 dias',
   formSite: 'SUB100 Imobiliárias',
-  produto: 'SUBSEE – Teste Grátis',
+  produto: 'Quero um CRM Imobiliário',
   ctaLabel: 'Começar teste grátis',
   recaptchaAction: 'subsee_teste',
   thankYouPath: '/testar-gratis/obrigado/'

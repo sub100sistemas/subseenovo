@@ -55,9 +55,9 @@ Valores confirmados, definidos nas `config` de cada componente e enviados em `ti
 
 | Página | `tipo_mail` | `formSite` | `produto` | `recaptchaAction` |
 | --- | --- | --- | --- | --- |
-| Testar grátis | `Solicite um teste grátis por 30 dias` | `SUB100 Imobiliárias` | `SUBSEE – Teste Grátis` | `subsee_teste` |
-| Demonstração | `Solicite uma demonstração` | `SUB100 Imobiliárias` | `SUBSEE – Demonstração` | `subsee_demo` |
-| Eventos | `Eventos` | `SUB100 Imobiliárias` | `SUBSEE – Eventos` | `subsee_eventos` |
+| Testar grátis | `Solicite um teste grátis por 30 dias` | `SUB100 Imobiliárias` | `Quero um CRM Imobiliário` | `subsee_teste` |
+| Demonstração | `Solicite uma demonstração` | `SUB100 Imobiliárias` | `Quero um Site Imobiliário` | `subsee_demo` |
+| Eventos | `Eventos` | `SUB100 Imobiliárias` | `Quero um CRM Imobiliário` | `subsee_eventos` |
 
 - O travessão em `produto` é o **U+2013 (–)**, como informado.
 - `subsee_teste` e `subsee_demo` vêm do legado; `subsee_eventos` é **convenção nova**, sem equivalente no legado.

@@ -5,7 +5,7 @@ import type { FormBenefit, FormPageConfig } from '~/types/forms'
 const config: FormPageConfig = {
   tipoMail: 'Eventos',
   formSite: 'SUB100 Imobiliárias',
-  produto: 'SUBSEE – Eventos',
+  produto: 'Quero um CRM Imobiliário',
   recaptchaAction: 'subsee_eventos',
   thankYouPath: '/inscreva-se/obrigado/',
   ctaLabel: 'Quero me inscrever no evento',

@@ -5,7 +5,7 @@ import type { FormBenefit, FormPageConfig } from '~/types/forms'
 const config: FormPageConfig = {
   tipoMail: 'Solicite uma demonstração',
   formSite: 'SUB100 Imobiliárias',
-  produto: 'SUBSEE – Demonstração',
+  produto: 'Quero um Site Imobiliário',
   recaptchaAction: 'subsee_demo',
   thankYouPath: '/agendar-demonstracao/obrigado/',
   ctaLabel: 'Quero agendar uma demonstração',
