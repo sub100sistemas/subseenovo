@@ -125,9 +125,10 @@ export function useLeadForm(config: FormPageConfig) {
       const token = await recaptcha.getToken(config.recaptchaAction)
       const response = await $fetch(String(runtimeConfig.public.formsEndpoint), {
         method: 'POST',
-        body: buildPayload(token)
+        body: buildPayload(token),
+        responseType: 'text'
       })
-      if (!isSuccessResponse(response)) {
+      if (!isSuccessResponse(parseFormResponse(response))) {
         throw new Error('submit-rejected')
       }
       if (config.thankYouPath) {
