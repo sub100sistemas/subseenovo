@@ -79,7 +79,7 @@ const socialLinks = [
 
           <span
             aria-hidden="true"
-            class="mt-[52px] inline-flex size-6 items-center justify-center"
+            class="hidden! mt-[52px] inline-flex size-6 items-center justify-center"
           >
             <img src="/icons/icone-modo-escuro.svg" width="24" height="24" alt="Ícone de modo escuro" title="Ícone de modo escuro" aria-hidden="true" />
           </span>
