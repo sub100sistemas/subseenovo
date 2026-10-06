@@ -44,10 +44,13 @@ const profiles: VideoProfile[] = [
     number: '03',
     title: 'Imobiliárias locação',
     description: 'Não importa qual é a sua locação, residencia, comercial ou de temporada. Importa que a jornada esteja em um só sistema.',
-    linkLabel: 'Em breve',
+    linkLabel: 'Ver vídeos →',
     bgClass: 'bg-[#f4eefc]',
     accentClass: 'text-[#7652b5]',
-    circleSrc: '/icons/videos-profile-3.svg'
+    circleSrc: '/icons/videos-profile-3.svg',
+    vimeoId: '1233155178',
+    vimeoHash: '157787ee2d',
+    aspect: '9/16'
   }
 ]
 
