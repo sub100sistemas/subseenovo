@@ -25,7 +25,7 @@ Implement these tasks with the `tlc-spec-driven` skill: **activate it by name an
 
 | Aspecto | `/testar-gratis` | `/agendar-demonstracao` (Agendar Demonstração) | `/inscreva-se` |
 | --- | --- | --- | --- |
-| **Compartilhado (1 implementação)** | Todos os componentes `layout/` e `ui/`, `FormLeadFields`, `useLeadForm`, `useRecaptchaV3`, `app/data/forms.ts` (trust bar, badge, chips de contato e de área, UFs, texto do checkbox), campos Empresa*/Nome completo*/Site/Telefone*/E-mail*/Cidade*/Estado*, Preferência de contato* (3 checkboxes, ≥1), Área de atuação*, aceite*, validação, máscara `maska`, `traffic_source`, estados idle/submitting/success/failure | idem | idem |
+| **Compartilhado (1 implementação)** | Todos os componentes `layout/` e `ui/`, `FormLeadFields`, `useLeadForm`, `useRecaptchaV3`, `app/data/forms.ts` (trust bar, badge, chips de contato e de área, UFs, texto do checkbox), campos Empresa*/Nome completo*/Site/Telefone*/E-mail*/Cidade*/Estado*, Suporte e Treinamento* (3 checkboxes, ≥1), Área de atuação*, aceite*, validação, máscara `maska`, `traffic_source`, estados idle/submitting/success/failure | idem | idem |
 | **Específico da página** | H1 "Teste o SUBSEE grátis por 30 dias"; título/lead/3 benefícios (calendar/settings/headphones); card com asset único `rocket-icon-bg`, "Comece seu teste grátis"; badge **dentro** da lista; **sem** "Mensagem"; CTA "Começar teste grátis" (Poppins SemiBold 15px) | H1 "Agende uma demonstração do SUBSEE"; benefícios (monitor/settings/user); ícone message-circle + círculo CSS, "Vamos conversar?"; badge dentro da lista; "Mensagem" (placeholder do melhor dia/horário); CTA "Quero agendar uma demonstração" (Regular 20px) | H1 "Inscreva-se no evento do SUBSEE"; benefícios (monitor/settings/user); message-circle + círculo CSS, "Garanta sua vaga!"; badge **fora** da lista; "Mensagem" **opcional** (D10); CTA "Quero me inscrever no evento" (Regular 20px) |
 | **Depende de confirmação do backend** | `tipo_mail`, `formSite` (Q4/Q5); regra para `message` ausente (Q25); `produto` (Q7); endpoint/CORS (Q6); reCAPTCHA (Q13) | `tipo_mail`, `formSite` (Q4/Q5); "Mensagem" obrigatória? (Q10); `produto` (Q7); endpoint/CORS (Q6); reCAPTCHA (Q13) | `tipo_mail`, `formSite` (Q4/Q5); identificação do Inscreva-se (Q26); evento/Zoom (Q19); `produto` (Q7); endpoint/CORS (Q6); reCAPTCHA (Q13) |
 
@@ -293,7 +293,7 @@ Cada task é um pedido de confirmação ao usuário/time de backend. **Done when
 
 ### T11: Criar `app/data/forms.ts` (dados compartilhados)
 
-**What**: Dados repetidos nas 3 páginas, tipados: trust bar (3 itens), texto do badge, opções de Preferência de contato (3), opções de Área de atuação (3), lista de 27 UFs, texto e links do checkbox (D7).
+**What**: Dados repetidos nas 3 páginas, tipados: trust bar (3 itens), texto do badge, opções de Suporte e Treinamento (3), opções de Área de atuação (3), lista de 27 UFs, texto e links do checkbox (D7).
 **Where**: `app/data/forms.ts`
 **Depends on**: T9, T10
 **Reuses**: `CLAUDE.md` (dados compartilhados entre páginas → `app/data`, importados na camada `sections/`, nunca em `layout/`)
@@ -477,7 +477,7 @@ Cada task é um pedido de confirmação ao usuário/time de backend. **Done when
 **Where**: `app/components/ui/FormChoiceGroup.vue`
 **Depends on**: T19
 **Requirement**: FORM-03 · D8
-**Escopo**: Compartilhado — Preferência de contato = `multiple` (checkboxes independentes reais em `<fieldset>/<legend>`); Área de atuação = `single`
+**Escopo**: Compartilhado — Suporte e Treinamento = `multiple` (checkboxes independentes reais em `<fieldset>/<legend>`); Área de atuação = `single`
 **Backend/Aberto**: Q7 (o componente devolve a opção escolhida; o mapeamento para `produto` não vive aqui); Q14 (estado inicial dos chips — **não** pré-selecionar "Ligação")
 **Tools**: MCP `figma` (chips 40px, gap 12px, selecionado `#eef2ff`/`#5d5fef`)
 
@@ -572,7 +572,7 @@ Cada task é um pedido de confirmação ao usuário/time de backend. **Done when
 
 ### T25: `useLeadForm` — validação de campos
 
-**What**: Validação por campo, separada do estado de envio: Empresa*, Nome*, Telefone*, E-mail*, Cidade*, Estado*, Área de atuação*, Preferência de contato (≥1), aceite; Site e Mensagem conforme config.
+**What**: Validação por campo, separada do estado de envio: Empresa*, Nome*, Telefone*, E-mail*, Cidade*, Estado*, Área de atuação*, Suporte e Treinamento (≥1), aceite; Site e Mensagem conforme config.
 **Where**: `app/composables/useLeadForm.ts`
 **Depends on**: T24
 **Requirement**: FORM-03, FORM-10 · D8, D9

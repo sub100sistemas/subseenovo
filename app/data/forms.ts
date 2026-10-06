@@ -23,9 +23,9 @@ export const formTrustItems: FormTrustItem[] = [
 ]
 
 export const formContactOptions: FormChoiceOption[] = [
+  { value: 'whatsapp', label: 'WhatsApp', icon: '/icons/form-message-circle.svg' },
   { value: 'ligacao', label: 'Ligação', icon: '/icons/form-phone.svg' },
-  { value: 'email', label: 'E-mail', icon: '/icons/form-mail.svg' },
-  { value: 'whatsapp', label: 'WhatsApp', icon: '/icons/form-message-circle.svg' }
+  { value: 'email', label: 'E-mail', icon: '/icons/form-mail.svg' }
 ]
 
 export const formAreaOptions: FormChoiceOption[] = [
@@ -71,7 +71,7 @@ export const formStateOptions: FormStateOption[] = [
 export const formProvisionalMessages = {
   required: 'Campo obrigatório.',
   invalidEmail: 'Informe um e-mail válido.',
-  contactPreference: 'Selecione ao menos uma preferência de contato.',
+  contactPreference: 'Selecione ao menos uma opção de contato.',
   accepted: 'É necessário aceitar os termos para continuar.',
   success: 'Formulário enviado.',
   failure: 'Não foi possível enviar o formulário. Tente novamente.'

@@ -42,7 +42,7 @@ Mensagens e regras estão em `app/data/forms.ts` e em `collectErrors()` de `app/
 | Telefone | Máscara dupla `(##) ####-####` / `(##) #####-####` (`maska`); campo sem dígitos é tratado como vazio | Testado nas 3 páginas na etapa Q12/T18 | Atendido |
 | UF | `select` com 27 siglas; valor enviado = **sigla** (Q11) | Inspeção de `app/data/forms.ts`; `estado` presente no payload interceptado | Atendido |
 | Área de atuação | Seleção única, obrigatória; opções **Urbana** e **Rural** (a opção "Temporada" foi removida) | Inspeção de `formAreaOptions`; seleção "Urbana" usada nos testes de envio | Atendido |
-| Preferência de contato | Múltipla escolha, ao menos 1; nenhum chip pré-selecionado (Q14) | Inspeção de `collectErrors()`; "Ligação" marcada nos testes de envio | Atendido |
+| Suporte e Treinamento | Múltipla escolha, ao menos 1; nenhum chip pré-selecionado (Q14) | Inspeção de `collectErrors()`; "Ligação" marcada nos testes de envio | Atendido |
 | Checkbox de termos | Obrigatório; sem aceite → "É necessário aceitar os termos para continuar." | Mensagem observada com o checkbox desmarcado (ver §6, teste preliminar); links para `/lgpd/termos-de-uso/` e `/lgpd/politica-de-privacidade/` | Atendido |
 | Mensagem opcional | Agendar demonstração (Q10) e Inscreva-se: campo existe e **não** é obrigatório | Inspeção das `config.message` (`required: false` em Inscreva-se; Agendar sem `required`) | Atendido |
 | `message` no Testar grátis | O campo **não existe** (a config não define `message`), conforme Figma/SPEC (D10); o backend trata a ausência | Inspeção de `FormTestarGratis.vue`; POST de `/testar-gratis/` sem `message` aceito pelo PHP (ver §4) | Atendido |
@@ -126,7 +126,7 @@ Testado nas 3 páginas, com backend simulado com atraso de 1,5 s e 3 respostas (
 | Dados | Permanecem preenchidos após erro (`empresa` conferida) |
 | Mensagem de erro | Comportamento anterior mantido |
 
-**Observação:** chips (preferência de contato e área) e o checkbox de termos **não** são desabilitados durante o envio. Isso já era o comportamento anterior (só os `FormField` eram desabilitados) e não foi alterado.
+**Observação:** chips (Suporte e Treinamento e área) e o checkbox de termos **não** são desabilitados durante o envio. Isso já era o comportamento anterior (só os `FormField` eram desabilitados) e não foi alterado.
 
 ---
 

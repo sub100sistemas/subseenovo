@@ -15,7 +15,7 @@ const benefits: FormBenefit[] = [
   {
     icon: '/icons/form-calendar.svg',
     title: 'Acesso completo por 30 dias',
-    description: 'Explore todos os recursos do SUBSEE sem limitações.'
+    description: 'Explore todos os recursos do SUBSEE.'
   },
   {
     icon: '/icons/form-settings.svg',

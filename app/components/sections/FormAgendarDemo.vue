@@ -20,7 +20,7 @@ const benefits: FormBenefit[] = [
     icon: '/icons/form-monitor.svg',
     iconSize: 24,
     title: 'Demonstração direcionada',
-    description: 'Explore todos os recursos do SUBSEE sem limitações.'
+    description: 'Explore todos os recursos do SUBSEE.'
   },
   {
     icon: '/icons/form-settings.svg',

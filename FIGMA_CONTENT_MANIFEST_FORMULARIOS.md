@@ -29,7 +29,7 @@ Estrutura de cada página (idêntica nas três), de cima para baixo:
 - **Título** (`3220:7067`, Poppins Bold 36px, leading 1.1, `#313846`): "Experimente o **SUBSEE** no seu dia a dia" ("SUBSEE" em `#5d5fef`; quebra de linha após "SUBSEE"). **Nota**: a camada não tem nome "Heading" (o nome da camada é o próprio texto), mas renderiza o título da coluna.
 - **Descrição** (`3220:7068`, Poppins Regular 20px, `#666`, leading 1.6): "Preencha o formulário e comece a explorar os recursos que vão tornar sua operação mais organizada, integrada e eficiente"
 - **Lista** (`3220:7069`, 3 itens, gap 40px; cada item = chip 60×60 branco `rounded-[16px]` com sombra `0 8 12 rgba(49,56,70,.12)` + ícone 30px + título Poppins SemiBold 20px `#313846` + descrição Poppins Regular 16px `#666`):
-  1. ícone `calendar` — "Acesso completo por 30 dias" / "Explore todos os recursos do SUBSEE sem limitações."
+  1. ícone `calendar` — "Acesso completo por 30 dias" / "Explore todos os recursos do SUBSEE."
   2. ícone `settings` — "Configuração simples e rápida" / "Comece em poucos minutos e veja resultados."
   3. ícone `headphones` — "Suporte da equipe SUBSEE" / "Conte com especialistas sempre que precisar."
 - **Badge** (`3220:7091`, dentro da lista, depois do item 3): shield 16px + "Seus dados estão seguros" (Poppins Medium 13px `#5d5fef`, fundo `#f4f4fb`, `rounded-[100px]`, `px-[16px] py-[10px]`).
@@ -48,9 +48,9 @@ Estrutura de cada página (idêntica nas três), de cima para baixo:
 | row-4 | Cidade | "Cidade *" | "Maringá" | sim |
 | row-4 | Estado (dropdown) | "Estado *" | "Selecione" (texto `#475569`) + `chevron-down` 16px | sim |
 
-- **Preferência de contato** (`3220:7138`): label "Preferência de contato *"; 3 opções (chips 40px, gap 12px, `rounded-[8px]`): "Ligação" (ícone `phone`), "E-mail" (`mail`), "WhatsApp" (`message-circle`). **Selecionado no design**: "Ligação" (fundo `#eef2ff`, borda e texto `#5d5fef`); as outras: fundo branco, borda `#e2e8f0`, texto `#475569`.
+- **Suporte e Treinamento** (`3220:7138`): label "Suporte e Treinamento *"; 3 opções (chips 40px, gap 12px, `rounded-[8px]`): "Ligação" (ícone `phone`), "E-mail" (`mail`), "WhatsApp" (`message-circle`). **Selecionado no design**: "Ligação" (fundo `#eef2ff`, borda e texto `#5d5fef`); as outras: fundo branco, borda `#e2e8f0`, texto `#475569`.
 - **Área de atuação** (`3220:7153`): label "Área de atuação *"; 3 opções: "Urbana" (`building`), "Rural" (`leaf`), "Temporada" (`sun`). **Selecionado no design**: "Urbana".
-- **Checkbox** (`3220:7168`): caixa 18px (borda `#cbd5e1`, `rounded-[4px]`) + "Li e aceito os <u>Termos de Uso</u> e a <u>Política de Privacidade</u>." (Poppins Regular 13px `#475569`; os dois links em Poppins Medium sublinhados). **Sem URL de destino no Figma; decidido fora do Figma (spec D7): `/lgpd/termos-de-uso/` e `/lgpd/politica-de-privacidade/`.** Contatos: "Preferência de contato" são 3 checkboxes independentes (múltipla escolha, ≥1 obrigatório, spec D8).
+- **Checkbox** (`3220:7168`): caixa 18px (borda `#cbd5e1`, `rounded-[4px]`) + "Li e aceito os <u>Termos de Uso</u> e a <u>Política de Privacidade</u>." (Poppins Regular 13px `#475569`; os dois links em Poppins Medium sublinhados). **Sem URL de destino no Figma; decidido fora do Figma (spec D7): `/lgpd/termos-de-uso/` e `/lgpd/politica-de-privacidade/`.** Contatos: "Suporte e Treinamento" são 3 checkboxes independentes (múltipla escolha, ≥1 obrigatório, spec D8).
 - **CTA** (`3220:7172`): "Começar teste grátis" (Poppins SemiBold 15px, branco) + `arrow-right` 18px; altura 52px, `rounded-[12px]`, gradiente `linear-gradient(106.15deg, #5d5fef 1.6%, #4042cc 110.35%)`, sombra `0 6 10 rgba(93,95,239,.25)`.
 - **Não há campo "Mensagem"** nesta página.
 
@@ -66,7 +66,7 @@ Estrutura de cada página (idêntica nas três), de cima para baixo:
 - **Título** (`3220:8107`, layer "Heading / H2", Poppins Bold 36px): "Uma apresentação pensada para o **seu negócio**" ("seu negócio" em `#5d5fef`).
 - **Descrição** (`3220:8108`, 20px `#666`): "Mostraremos as funcionalidades mais relevantes para o seu negócio e responderemos às suas perguntas."
 - **Lista** (`3220:8109`):
-  1. ícone `presentation` (contém `monitor` 24px) — "Demonstração direcionada" / "Explore todos os recursos do SUBSEE sem limitações." **(descrição idêntica à de "Acesso completo por 30 dias" da página Testar grátis — provável cópia; confirmar com o time de conteúdo)**
+  1. ícone `presentation` (contém `monitor` 24px) — "Demonstração direcionada" / "Explore todos os recursos do SUBSEE." **(descrição idêntica à de "Acesso completo por 30 dias" da página Testar grátis — provável cópia; confirmar com o time de conteúdo)**
   2. ícone `settings` — "Configuração simples e rápida" / "Comece em poucos minutos e veja resultados."
   3. ícone `mentor` (contém `user` 30px, chip interno 40px) — "Orientação com especialistas" / "Conte com especialistas sempre que precisar."
 - **Badge** (`3220:8133`, dentro da lista): "Seus dados estão seguros".
@@ -75,7 +75,7 @@ Estrutura de cada página (idêntica nas três), de cima para baixo:
 - **Header do card** (`3220:8138`): ícone `message-circle` 24.375px sobre círculo `#eef2ff` 56px (**aqui o fundo é uma camada `bg-[#eef2ff] rounded-[800px]` + ícone separado; na página Testar grátis o "rocket-icon-bg" é um único asset SVG** — o nome da camada `rocket-icon-bg` foi reaproveitado apesar do ícone ser outro) + título "Vamos conversar?" (Poppins Bold 22px `#313846`) + subtítulo "Preencha seus dados e indique o melhor dia e horário para receber nosso contato." (14px `#6b7280`, leading 1.2, 2 linhas).
 - **Campos**: idênticos à tabela de Testar grátis (Empresa*, Nome completo*, Site, Telefone*, E-mail*, Cidade*, Estado*), **mais**:
   - **Mensagem** (`3220:8181`): label "Mensagem" (Poppins SemiBold 13px `#313846`, **sem asterisco**) + textarea (borda `#e5e7eb`, `rounded-[10px]`, altura mínima 96px, placeholder Poppins Regular 15px `#757575`): "Informe o melhor dia e horário para entrarmos em contato."
-- **Preferência de contato**, **Área de atuação** e **Checkbox**: idênticos à página Testar grátis (mesmos textos e estados selecionados: Ligação, Urbana).
+- **Suporte e Treinamento**, **Área de atuação** e **Checkbox**: idênticos à página Testar grátis (mesmos textos e estados selecionados: Ligação, Urbana).
 - **CTA** (`3220:8222`): "Quero agendar uma demonstração" (Poppins **Regular 20px**, leading 22px, branco — tipografia diferente do CTA de Testar grátis) + `arrow-right`.
 
 ---
@@ -98,7 +98,7 @@ Estrutura de cada página (idêntica nas três), de cima para baixo:
 ### Hero / Form — card, node `3220:8503`
 - **Header do card** (`3220:8504`): ícone `message-circle` (mesmo tratamento de Agendar) + título "Garanta sua vaga!" + subtítulo "Preencha seus dados e participe do próximo evento SUBSEE ao vivo pelo Zoom." (2 linhas).
 - **Campos**: idênticos a Agendar Demonstração (com "Mensagem"), exceto o placeholder do textarea: "Deixe aqui sua dúvida ou comentário (opcional)." — **único caso em que o Figma sinaliza "(opcional)"; para Agendar Demonstração o label também não tem asterisco, mas o placeholder não diz que é opcional.**
-- **Preferência de contato**, **Área de atuação**, **Checkbox**: idênticos.
+- **Suporte e Treinamento**, **Área de atuação**, **Checkbox**: idênticos.
 - **CTA** (`3220:8588`): "Quero me inscrever no evento" (Poppins Regular 20px, branco) + `arrow-right`.
 - **Nenhum campo referencia qual evento** (data, nome, link Zoom) — o evento não é escolhido nem exibido no formulário.
 

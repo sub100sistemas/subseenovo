@@ -55,7 +55,7 @@ Regra: prefixo `Form*` em **todos** os componentes desta feature ([[AD-004]], [[
 | Componente | Responsabilidade |
 | --- | --- |
 | `FormField` | Label + `input`/`textarea`/`select` + mensagem de erro; `v-model` via `defineModel`; suporta `mask` (função) e `required` |
-| `FormChoiceGroup` | Chips com ícone; modo `single`/`multiple`; `v-model`. **Preferência de contato** = 3 checkboxes independentes (`multiple`, D8) — semanticamente `<input type="checkbox">` em um `<fieldset>`/`<legend>`, estilizados como chips. **Área de atuação** = seleção única no Figma (`single`), mapeamento para o payload em aberto (Q7) |
+| `FormChoiceGroup` | Chips com ícone; modo `single`/`multiple`; `v-model`. **Suporte e Treinamento** = 3 checkboxes independentes (`multiple`, D8) — semanticamente `<input type="checkbox">` em um `<fieldset>`/`<legend>`, estilizados como chips. **Área de atuação** = seleção única no Figma (`single`), mapeamento para o payload em aberto (Q7) |
 | `FormCheckbox` | Checkbox de aceite com slot para o texto (links para `/lgpd/termos-de-uso/` e `/lgpd/politica-de-privacidade/`, D7) |
 | `FormSubmitButton` | CTA de gradiente com seta e estado `loading`; texto por slot (a tipografia diferente entre as páginas — Q22 — entra por prop de classe) |
 
@@ -158,7 +158,7 @@ Mapeamento Figma → payload:
 | Telefone* (`maska`) | `phone` | Fechado; padrão da máscara: Q12 |
 | E-mail* | `email` | Fechado |
 | Cidade* / Estado* | `cidade` / `estado` | Fechado; valor de `estado` (sigla?): Q11 |
-| Preferência de contato* (3 checkboxes, ≥1) | `respostaLigacao` / `respostaEmail` / `respostaWhatsapp` | Fechado (D8) |
+| Suporte e Treinamento* (3 checkboxes, ≥1) | `respostaLigacao` / `respostaEmail` / `respostaWhatsapp` | Fechado (D8) |
 | Área de atuação* (Urbana/Rural/Temporada) | `produto` | **Aberto** — mapeamento e valor esperado: Q7 |
 | Checkbox de aceite* | `aceito` | Fechado |
 | Mensagem | `message` | Testar grátis: ausente (Q25); Inscreva-se: opcional; Agendar: Q10 |

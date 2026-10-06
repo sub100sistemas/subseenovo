@@ -33,7 +33,7 @@ Conteúdo extraído do Figma: `FIGMA_CONTENT_MANIFEST_FORMULARIOS.md`. Arquitetu
 
 | Aspecto | Testar grátis | Agendar Demonstração | Inscreva-se |
 | --- | --- | --- | --- |
-| Compartilhado | Background/divisor, Credibility, badge "Seus dados estão seguros", card 640px, campos Empresa*/Nome completo*/Site/Telefone*/E-mail*/Cidade*/Estado*, chips Preferência de contato*/Área de atuação*, checkbox de termos, CTA gradiente | igual | igual |
+| Compartilhado | Background/divisor, Credibility, badge "Seus dados estão seguros", card 640px, campos Empresa*/Nome completo*/Site/Telefone*/E-mail*/Cidade*/Estado*, chips Suporte e Treinamento*/Área de atuação*, checkbox de termos, CTA gradiente | igual | igual |
 | Só texto | H1, descrição, título/lista da esquerda, título/subtítulo do card, CTA | idem | idem |
 | Por campo | **sem** "Mensagem" | "Mensagem" (placeholder: melhor dia e horário) | "Mensagem" (placeholder: dúvida/comentário, "(opcional)") |
 | Visual | ícone do card: rocket (asset único); lista com calendar/settings/headphones | ícone do card: message-circle + círculo CSS; lista com monitor/settings/user | idem Agendar; badge fora do `List` (gap 10px) |
@@ -76,7 +76,7 @@ O código do legado **não foi anexado**; a análise usa somente a descrição n
 | D5 | Rota Agendar Demonstração | `/agendar-demonstracao` (os CTAs de `SiteUrbanoListings.vue` e `SiteRuralListings.vue` foram atualizados para apontar para ela) |
 | D6 | Rota Inscreva-se | `/inscreva-se` (CTAs `href="#"` de `/eventos` passam a apontar para ela) |
 | D7 | Links legais do checkbox | Termos de Uso → `/lgpd/termos-de-uso/`; Política de Privacidade → `/lgpd/politica-de-privacidade/` |
-| D8 | Preferência de contato | Múltipla escolha; 3 checkboxes independentes (Ligação → `respostaLigacao`, E-mail → `respostaEmail`, WhatsApp → `respostaWhatsapp`); pelo menos 1 obrigatório |
+| D8 | Suporte e Treinamento | Múltipla escolha; 3 checkboxes independentes (Ligação → `respostaLigacao`, E-mail → `respostaEmail`, WhatsApp → `respostaWhatsapp`); pelo menos 1 obrigatório |
 | D9 | Empresa | Obrigatória (`*` do Figma; o legado não validava) |
 | D10 | Mensagem | Testar grátis: campo não existe. Inscreva-se: opcional (Figma diz "(opcional)"). Agendar Demonstração: **não decidido** (Q10) |
 | D11 | Máscara | `maska` (v3.2.2 no registro npm, sem `peerDependencies`; diretiva Vue 3 agnóstica de framework — verificado em 2026-09-29 apenas via `npm view`). Compatibilidade com o SSR do Nuxt 4 é validada na task de instalação. **Não instalar agora** |
@@ -146,7 +146,7 @@ Q1 → D5 · Q2 → D6 · Q3 → D7 · Q8 → D8 · Q9 → D9 · Q10 (parcial: T
 
 1. WHEN o visitante navega para `/testar-gratis` THEN o sistema SHALL responder 200 e exibir Hero/Top (H1 "Teste o SUBSEE grátis por 30 dias"), a coluna de texto com a lista de 3 benefícios, o card do formulário e a barra de credibilidade, com Header/Footer globais.
 2. WHEN a página é renderizada THEN o sistema SHALL exibir exatamente um `<h1>` e **não** exibir o campo "Mensagem".
-3. WHEN o visitante submete com algum campo obrigatório vazio (Empresa, Nome completo, Telefone, E-mail, Cidade, Estado, Área de atuação), sem nenhuma Preferência de contato marcada (múltipla escolha, ≥1) ou sem aceitar os termos THEN o sistema SHALL impedir o envio e indicar o campo inválido.
+3. WHEN o visitante submete com algum campo obrigatório vazio (Empresa, Nome completo, Telefone, E-mail, Cidade, Estado, Área de atuação), sem nenhuma opção de Suporte e Treinamento marcada (múltipla escolha, ≥1) ou sem aceitar os termos THEN o sistema SHALL impedir o envio e indicar o campo inválido.
 4. WHEN o visitante digita o telefone THEN o sistema SHALL aplicar a máscara via `maska` (D11; padrão exato em Q12).
 5. WHEN o formulário é válido e enviado THEN o sistema SHALL desabilitar o botão, exibir o estado de loading, enviar o payload legado adaptado (Q4–Q7, sem valores inventados) e, **somente se o POST retornar sucesso**, exibir o estado de sucesso inline (D13).
 6. IF o POST falhar (rede, CORS, status de erro, timeout) THEN o sistema SHALL manter os dados preenchidos, **não** exibir sucesso e exibir um erro de envio distinto dos erros de validação de campo (D14).

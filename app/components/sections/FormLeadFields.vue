@@ -133,7 +133,7 @@ const fieldDefinitions = computed<FieldDefinition[]>(() => {
 
       <FormChoiceGroup
         v-model="contactPreference"
-        legend="Preferência de contato"
+        legend="Suporte e Treinamento"
         name="contactPreference"
         mode="multiple"
         required
