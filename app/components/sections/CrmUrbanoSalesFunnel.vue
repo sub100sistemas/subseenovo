@@ -91,15 +91,15 @@ const columns: FunnelColumn[] = [
 <template>
   <section id="crm-urbano-funil" class="section-py bg-white">
     <div class="container-page">
-      <div class="mx-auto max-w-[1100px] text-center">
+      <div class="mx-auto max-w-[1200px] text-center">
         <h2 class="leading-[1.4] tracking-[-1px]">
-          Cada atendimento no lugar <span class="text-brand">certo</span>,
+          Cada lead enviado para o lugar <span class="text-brand">certo</span>, e segue para 
           <br class="hidden desktop-compact:block" />
-          do primeiro contato à venda
+          o corretor da fila, conforme o perfil de cada oportunidade
         </h2>
-        <p class="mx-auto mt-8 max-w-[900px] text-[20px] leading-[1.4] text-ink tablet-lg:text-[24px]">
-          Distribua leads automaticamente, acompanhe negociações em um Kanban visual e nunca perca
-          uma oportunidade por falta de retorno.
+        <p class="mx-auto mt-8 text-[20px] leading-[1.4] text-ink tablet-lg:text-[24px]">
+          Distribua leads automaticamente com roletas inteligentes, acompanhe o follow-up das negociações em 
+          um Kanban visual e potencialize o atendimento com playbooks e automações.
         </p>
       </div>
 

@@ -198,8 +198,8 @@ Frame: `x=0 y=2818.78 width=1920 height=701`, `bg white`, `py=40px`.
 
 ### Texto extraído (ordem visual)
 
-- **H2** (Poppins Bold 36px, `line-height 1.4`, `tracking -1px`, centralizado): "Cada atendimento no lugar **certo**, / do primeiro contato à venda" (2 parágrafos; "certo" em `#5d5fef`)
-- **Parágrafo** (Poppins Regular 24px, `line-height 1.4`, centralizado): "Distribua leads automaticamente, acompanhe negociações em um Kanban visual e nunca perca uma oportunidade por falta de retorno."
+- **H2** (Poppins Bold 36px, `line-height 1.4`, `tracking -1px`, centralizado): "Cada lead enviado para o lugar **certo**, e segue para / o corretor da fila, conforme o perfil de cada oportunidade" (2 parágrafos; "certo" em `#5d5fef`)
+- **Parágrafo** (Poppins Regular 24px, `line-height 1.4`, centralizado): "Distribua leads automaticamente com roletas inteligentes, acompanhe o follow-up das negociações em um Kanban visual e potencialize o atendimento com playbooks e automações."
 - **CTA**: "Testar grátis por 30 dias" → `/testar-gratis`
 
 **Estilos das colunas Kanban** (todas: `w=280 h=289`, `rounded-[8px]`, `bg #f4f4f7`, `border #e3e3ea`; header `h=40`, `rounded-t-[8px]`, texto branco 14px; título Poppins SemiBold à esquerda `left=16 top=11`, contagem Poppins Bold `w=30` alinhada à direita em `left=264 top=10`):
