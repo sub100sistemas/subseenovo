@@ -44,16 +44,17 @@ const profiles: VideoProfile[] = [
     number: '03',
     title: 'Imobiliárias locação',
     description: 'Não importa qual é a sua locação, residencia, comercial ou de temporada. Importa que a jornada esteja em um só sistema.',
-    linkLabel: 'Ver vídeos →',
+    linkLabel: 'Em breve',
     bgClass: 'bg-[#f4eefc]',
     accentClass: 'text-[#7652b5]',
-    circleSrc: '/icons/videos-profile-3.svg',
-
+    circleSrc: '/icons/videos-profile-3.svg'
   }
 ]
 
 const linkClass =
   "mt-2 h-6 text-[14px] leading-normal font-semibold after:absolute after:inset-0 after:content-[''] focus-visible:after:outline-2 focus-visible:after:-outline-offset-2 focus-visible:after:outline-brand"
+
+const labelClass = 'mt-2 h-6 text-[14px] leading-normal font-semibold'
 
 const activeProfile = ref<VideoProfile | null>(null)
 const modalOpen = ref(false)
@@ -87,7 +88,7 @@ const openVideo = (profile: VideoProfile) => {
           class="relative flex min-w-0 flex-col overflow-hidden rounded-[22px] px-[28px] pt-[26px] pb-[14px] tablet-lg:min-h-[260px]"
           :class="profile.bgClass"
         >
-          <span class="absolute top-[24px] right-[28px]">
+          <span v-if="profile.vimeoId || profile.href" class="absolute top-[24px] right-[28px]">
             <PlayButton size="sm" :circle-src="profile.circleSrc" />
           </span>
           <p class="h-6 text-[14px] leading-normal font-bold" :class="profile.accentClass">{{ profile.number }}</p>
@@ -111,7 +112,7 @@ const openVideo = (profile: VideoProfile) => {
             {{ profile.linkLabel }}
           </button>
           <a
-            v-else
+            v-else-if="profile.href"
             :id="`profile-${index}-link`"
             :href="profile.href" :title="titleForLink(profile.href)" :aria-label="titleForLink(profile.href)"
             target="_blank"
@@ -121,6 +122,7 @@ const openVideo = (profile: VideoProfile) => {
           >
             {{ profile.linkLabel }}
           </a>
+          <span v-else :class="[labelClass, profile.accentClass]">{{ profile.linkLabel }}</span>
         </li>
       </ul>
     </div>

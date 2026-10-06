@@ -9,20 +9,24 @@ interface DemoVideo {
   linkLabel: string
   thumbClass: string
   href: string
-  youtubeId?: string
+  videoId?: string
+  provider?: 'youtube' | 'vimeo'
+  videoHash?: string
   aspect?: string
 }
 
 const videos: DemoVideo[] = [
   {
-    duration: '04:18',
+    duration: '03:11',
     type: 'DEMONSTRAÇÃO',
     title: 'Organize imóveis e publique com agilidade',
     description: 'Cadastre, organize e distribua seus imóveis nos principais canais com mais eficiência.',
     linkLabel: 'Assistir ao vídeo →',
     thumbClass: 'bg-[linear-gradient(90deg,#5d5fef,#8b8dff)]',
     href: videosFallbackUrl,
-    youtubeId: 'kmwo-MkJ34M',
+    videoId: '1232991899',
+    provider: 'vimeo',
+    videoHash: '79104a1a7f',
     aspect: '9/16'
   },
   {
@@ -32,7 +36,11 @@ const videos: DemoVideo[] = [
     description: 'Reúna contatos, mensagens e histórico para acompanhar cada oportunidade do início ao fim.',
     linkLabel: 'Assistir ao vídeo →',
     thumbClass: 'bg-[linear-gradient(90deg,#17a6a6,#66d4c9)]',
-    href: videosFallbackUrl
+    href: videosFallbackUrl,
+    videoId: '1232991899',
+    provider: 'vimeo',
+    videoHash: '79104a1a7f',
+    aspect: '9/16'
   },
   {
     duration: '03:46',
@@ -41,12 +49,16 @@ const videos: DemoVideo[] = [
     description: 'Visualize tarefas, agenda e evolução comercial para tomar decisões com mais clareza.',
     linkLabel: 'Assistir ao vídeo →',
     thumbClass: 'bg-[linear-gradient(90deg,#7357c7,#b491e8)]',
-    href: videosFallbackUrl
+    href: videosFallbackUrl,
+    videoId: '1232991899',
+    provider: 'vimeo',
+    videoHash: '79104a1a7f',
+    aspect: '9/16'
   }
 ]
 
 const linkClass =
-  "mt-[4px] cursor-pointer text-left text-[14px] leading-6 font-semibold text-brand after:absolute after:inset-0 after:content-[''] focus-visible:after:outline-2 focus-visible:after:-outline-offset-2 focus-visible:after:outline-brand"
+  "mt-[4px] text-left text-[14px] leading-6 font-semibold text-brand after:absolute after:inset-0 after:content-[''] focus-visible:after:outline-2 focus-visible:after:-outline-offset-2 focus-visible:after:outline-brand"
 
 const activeVideo = ref<DemoVideo | null>(null)
 const modalOpen = ref(false)
@@ -100,12 +112,12 @@ const openVideo = (video: DemoVideo) => {
                 {{ video.description }}
               </p>
               <button
-                v-if="video.youtubeId"
+                v-if="video.videoId"
                 :id="`demo-video-${index}-link`"
                 type="button"
                 aria-haspopup="dialog"
                 :aria-labelledby="`demo-video-${index}-link demo-video-${index}-title`"
-                :class="linkClass"
+                :class="[linkClass, 'cursor-pointer']"
                 @click="openVideo(video)"
               >
                 {{ video.linkLabel }}
@@ -128,9 +140,11 @@ const openVideo = (video: DemoVideo) => {
     </div>
 
     <VideoModal
-      v-if="activeVideo?.youtubeId"
+      v-if="activeVideo?.videoId"
       v-model="modalOpen"
-      :video-id="activeVideo.youtubeId"
+      :video-id="activeVideo.videoId"
+      :provider="activeVideo.provider"
+      :video-hash="activeVideo.videoHash"
       :title="activeVideo.title"
       :eyebrow="activeVideo.type"
       :aspect="activeVideo.aspect"
