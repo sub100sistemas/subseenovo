@@ -42,7 +42,7 @@ export function titleForLink(href?: string | null): string | undefined {
   if (!href) {
     return undefined
   }
-  const [path] = href.split('?')
+  const [path] = href.split(/[?#]/)
   const internal = internalTitles[path] ?? internalTitles[path.endsWith('/') ? path : `${path}/`]
   if (internal) {
     return internal
