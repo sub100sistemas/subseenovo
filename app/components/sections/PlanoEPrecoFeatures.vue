@@ -78,7 +78,7 @@ const categorias: FeatureCategory[] = [
 ]
 
 const categoriasNoResumo = 2
-const tabelaCompleta = ref(false)
+const tabelaCompleta = usePlanoTabelaCompleta()
 const categoriasVisiveis = computed(() =>
   tabelaCompleta.value ? categorias : categorias.slice(0, categoriasNoResumo)
 )
@@ -140,7 +140,7 @@ const planosCabecalho: PlanoCabecalho[] = [
 
         <div class="relative flex flex-col items-center gap-[41px]">
           <div class="flex flex-col items-center gap-3 text-center tablet-lg:gap-[41px]">
-            <h2 ref="titulo" class="text-[24px] leading-8 font-bold text-[#0b0d0f] tablet-lg:text-[32px]">
+            <h2 id="funcionalidades-crm" ref="titulo" class="text-[24px] leading-8 font-bold text-[#0b0d0f] tablet-lg:text-[32px]">
               Funcionalidades do <span class="text-brand">CRM Imobiliário</span>
             </h2>
             <p class="max-w-[1027px] text-lg leading-normal text-ink tablet-lg:text-[26px]">

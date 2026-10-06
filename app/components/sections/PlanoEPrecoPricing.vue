@@ -53,6 +53,18 @@ const planos: PricingPlan[] = [
 ]
 
 const periodo = ref<'mensal' | 'anual'>('mensal')
+
+const tabelaCompleta = usePlanoTabelaCompleta()
+const folgaTituloFuncionalidades = 112
+
+async function verTodasFuncionalidades() {
+  tabelaCompleta.value = true
+  await nextTick()
+  const tituloFuncionalidades = document.getElementById('funcionalidades-crm')
+  if (!tituloFuncionalidades) return
+  const destino = tituloFuncionalidades.getBoundingClientRect().top + window.scrollY - folgaTituloFuncionalidades
+  window.scrollTo({ top: destino, behavior: 'smooth' })
+}
 </script>
 
 <template>
@@ -127,6 +139,10 @@ const periodo = ref<'mensal' | 'anual'>('mensal')
               </span>
             </li>
           </ul>
+
+          <CtaButton variant="primary" class="min-h-[67px]! w-full!" @click="verTodasFuncionalidades">
+            Ver todas as funcionalidades
+          </CtaButton>
 
           <CtaButton
             variant="outline"
