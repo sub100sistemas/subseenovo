@@ -35,6 +35,7 @@ export default defineNuxtConfig({
       ],
 
       link: [
+        { rel: 'icon', type: 'image/png', href: '/favicon.png', sizes: '512x512' },
         { rel: 'preload', as: 'font', type: 'font/woff2', href: '/fonts/poppins-400-latin.woff2', crossorigin: 'anonymous' },
         { rel: 'preload', as: 'font', type: 'font/woff2', href: '/fonts/poppins-500-latin.woff2', crossorigin: 'anonymous' },
         { rel: 'preload', as: 'font', type: 'font/woff2', href: '/fonts/poppins-600-latin.woff2', crossorigin: 'anonymous' },

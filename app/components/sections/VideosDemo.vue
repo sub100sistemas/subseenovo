@@ -24,9 +24,9 @@ const videos: DemoVideo[] = [
     linkLabel: 'Assistir ao vídeo →',
     thumbClass: 'bg-[linear-gradient(90deg,#5d5fef,#8b8dff)]',
     href: videosFallbackUrl,
-    videoId: '1232991899',
+    videoId: '1187069961',
     provider: 'vimeo',
-    videoHash: '79104a1a7f',
+    videoHash: '97e15143b8',
     aspect: '9/16'
   },
   {
@@ -37,9 +37,9 @@ const videos: DemoVideo[] = [
     linkLabel: 'Assistir ao vídeo →',
     thumbClass: 'bg-[linear-gradient(90deg,#17a6a6,#66d4c9)]',
     href: videosFallbackUrl,
-    videoId: '1232991899',
+    videoId: '1187069961',
     provider: 'vimeo',
-    videoHash: '79104a1a7f',
+    videoHash: '97e15143b8',
     aspect: '9/16'
   },
   {
@@ -50,9 +50,9 @@ const videos: DemoVideo[] = [
     linkLabel: 'Assistir ao vídeo →',
     thumbClass: 'bg-[linear-gradient(90deg,#7357c7,#b491e8)]',
     href: videosFallbackUrl,
-    videoId: '1232991899',
+    videoId: '1187069961',
     provider: 'vimeo',
-    videoHash: '79104a1a7f',
+    videoHash: '97e15143b8',
     aspect: '9/16'
   }
 ]
