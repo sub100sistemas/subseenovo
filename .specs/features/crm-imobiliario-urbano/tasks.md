@@ -123,7 +123,7 @@ T15 [x] → T16 [x]
 - [x] `FIGMA_CONTENT_MANIFEST_CRM_URBANO.md` exists with 11 numbered sections in Figma top-to-bottom order, same schema as `FIGMA_CONTENT_MANIFEST_CRM.md`
 - [x] Every heading, CTA label, card title/description, stat, Kanban card, FAQ Q&A is transcribed verbatim (no paraphrasing, no invented text) — cross-checked against a fresh `get_design_context`/`get_screenshot` call per node, not only against the table above
 - [x] Every asset row has a real downloaded file at the stated local path (or an explicit note that it reuses an existing `/modulos/crm` asset, with the exact existing filename), with correct W×H and a suggested alt text
-- [x] Explicit note confirming which composition is a static mockup image (Technology, Portfolio, Portal Integrations, Dashboard) vs. real markup (Hero cards, Sales Funnel Kanban, Leads Chart diagram, Reports stat cards), matching the spec's Out of Scope table
+- [x] Explicit note confirming which composition is a static mockup image (Technology, Portfolio, Sales Funnel, Portal Integrations, Dashboard) vs. real markup (Hero cards, Leads Chart diagram, Reports stat cards), matching the spec's Out of Scope table
 - [x] Explicit note on the "Claude, não mexe site e não coloca no site" frame (`3554:3142`) confirming it is skipped (per spec Assumptions)
 
 **Tests**: none
@@ -195,16 +195,16 @@ T15 [x] → T16 [x]
 
 ### T5: Build `CrmUrbanoSalesFunnel.vue`
 
-**What**: Create the Sales Funnel section (3-column Kanban with real lead cards) for node `3089:7064`.
+**What**: Create the Sales Funnel section (H2, description, a single static screen image of the automatic lead distribution settings, CTA) for node `3089:7064`.
 **Where**: `app/components/sections/CrmUrbanoSalesFunnel.vue`
 **Depends on**: T4
-**Reuses**: none directly (no existing Kanban-card component on the site) — follow the project's existing card/shadow/rounded-corner tokens (`rounded-[...]`, `shadow-[...]` values already used elsewhere) rather than inventing new ones
+**Reuses**: `NuxtImg` with the 2x asset `public/images/crm-urbano/crm-urbano-funil-tela.webp` (node `3887:3146`, displayed at 1072×594)
 **Requirement**: URB-06
 
 **Tools**: `mcp__claude_ai_Figma__get_design_context` on node `3089:7064` for exact column header colors (gray/orange/cyan), card spacing and border-radius
 
 **Done when**:
-- [x] H2 "Cada lead enviado para o lugar certo, e segue para o corretor da fila, conforme o perfil de cada oportunidade" + description + 3 Kanban columns with real headers/counts and real lead cards (name, tag, value, time, broker) per T1's manifest + CTA
+- [x] H2 "Cada lead enviado para o lugar certo, e segue para o corretor da fila, conforme o perfil de cada oportunidade" + description + the `Tela` image (`w-full h-auto max-w-[1072px]`, border and corners are part of the image) + CTA
 - [x] No comments in the file
 - [x] `pnpm build` succeeds; manual check at desktop/tablet/mobile — columns stack sensibly on mobile, no horizontal scroll trap unless the Figma itself shows one
 

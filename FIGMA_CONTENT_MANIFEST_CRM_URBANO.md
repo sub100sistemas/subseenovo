@@ -27,7 +27,7 @@ Conforme a tabela Out of Scope do `spec.md`:
 | 2. Technology | Tela "Cadastro de imóvel" do SUB100 | **imagem estática** |
 | 3. Portfolio | Telas de listagem + mapa + app (com badge "Sincronizado com 15 portais" embutido) | **imagem estática** |
 | 3. Portfolio | Parágrafo lateral + 4 itens (ícone + H3 + descrição) + CTA | **markup real** |
-| 4. Sales Funnel | 3 colunas Kanban + 6 cards de lead | **markup real** (nenhum asset) |
+| 4. Sales Funnel | tela de configuração da distribuição automática (`Tela`, `3887:3146`) | **imagem estática** (`crm-urbano-funil-tela.webp`) |
 | 5. Leads Chart | 5 nós de origem, card central, chip de estatística, 3 nós de corretor | **markup real** |
 | 5. Leads Chart | Linhas/pontos conectores e blobs de fundo | SVGs decorativos |
 | 6. Reports | 4 stat cards | **markup real** (só os 4 ícones são assets) |
@@ -193,7 +193,7 @@ Frame: `x=0 y=2818.78 width=1920 height=701`, `bg white`, `py=40px`.
 - `Div` (`3089:7065`) — `w=1400`, flex-col `gap=32px`, centralizado
   - `Heading / H2` (`3089:7066`) — `w=1100 h=110`, `tracking -1px`
   - `Text / Description` (`3089:7067`) — `w=900 h=70`
-  - `List` (`3089:7068`) — 3 colunas de `280 x 289`, `gap=34px` (posições `ml` 0 / 314 / 628)
+  - `Tela` (`3887:3146`) — `w=1072 h=594`, janela de navegador com a tela de configuração da distribuição automática do CRM
   - `Link → Testar grátis por 30 dias` (`3089:7129`) — `w=297 h=56`
 
 ### Texto extraído (ordem visual)
@@ -202,35 +202,13 @@ Frame: `x=0 y=2818.78 width=1920 height=701`, `bg white`, `py=40px`.
 - **Parágrafo** (Poppins Regular 24px, `line-height 1.4`, centralizado): "Distribua leads automaticamente com roletas inteligentes, acompanhe o follow-up das negociações em um Kanban visual e potencialize o atendimento com playbooks e automações."
 - **CTA**: "Testar grátis por 30 dias" → `/testar-gratis`
 
-**Estilos das colunas Kanban** (todas: `w=280 h=289`, `rounded-[8px]`, `bg #f4f4f7`, `border #e3e3ea`; header `h=40`, `rounded-t-[8px]`, texto branco 14px; título Poppins SemiBold à esquerda `left=16 top=11`, contagem Poppins Bold `w=30` alinhada à direita em `left=264 top=10`):
+### Tela (imagem)
 
-| Coluna | Cor do header | Contagem |
-|---|---|---|
-| Sem Contato | `#6c757d` | 20 |
-| Em Atendimento | `#f90` | 12 |
-| Em Negociação | `#0dcaf0` | 8 |
-
-**Estilo dos cards de lead** (`w=252 h=104`, `left=13`, `top=53` e `top=169`, `bg white`, `border #ccc`, `rounded-[6px]`, `shadow-[0px_0px_4px_0px_rgba(0,0,0,0.1)]`):
-nome (Poppins Bold 12–13px, `#6769f0`, `left=11 top=9`) · tag (`h=20`, `rounded-[4px]`, `bg #6769f0`, texto Poppins Regular 9px branco centralizado) · tipo de imóvel (Poppins Regular 11px, `#6c757d`, `top=31`) · valor (Poppins Bold 11px, `#00d39b`, `top=49`) · tempo (Poppins Regular 10px, `#6c757d`, `top=69`) · corretor (Poppins Regular 10px, `#00d39b`, `top=81`).
-
-**Cards reais (verbatim):**
-
-| Coluna | Nome | Tag | Tipo | Valor | Tempo | Corretor |
-|---|---|---|---|---|---|---|
-| Sem Contato | Paulo Henrique Silva | Lançamento (tag `w=76`) | Apartamento Padrão | R$ 485.000,00 | há 2 meses | Walcir Franzoni |
-| Sem Contato | Fernanda Nenes | Venda (tag `w=46`) | Terrenos | R$ 90.000,00 | há 5 meses | Walcir Franzoni |
-| Em Atendimento | Maria Silva de Romão | Venda | Apartamento Padrão | R$ 470.000,00 | há 2 meses | Walcir Franzoni |
-| Em Atendimento | Pedro Souza Bento | Venda | Casa | R$ 500.000,00 | há 6 meses | Marcio Pelegrini |
-| Em Negociação | Mario Carmem Meira | Venda | Apartamento Padrão | R$ 1.500.000,00 | há 5 meses | Walcir Franzoni |
-| Em Negociação | Pedro de Souza | Venda | Casa em Condomínios | R$ 3.000.000,00 | há 6 meses | Marcio Pelegrini |
-
-### Nota (correspondência spec ↔ conteúdo real)
-
-O `tasks.md` (T1, linha 4) descreve o segundo card de "Em Negociação" como "Pedro de Souza/Venda/**R$ 3.000.000,00**" — confirmado. Também lista "Fernanda Nenes/Venda/R$ 90.000,00" — confirmado. As colunas de **tipo de imóvel** ("Apartamento Padrão", "Terrenos", "Casa", "Casa em Condomínios") não constavam da tabela do `tasks.md` e são reportadas aqui pela primeira vez.
+`Tela` (`3887:3146`), `w=1072 h=594`, com borda `#c5ccd3` e cantos `rounded-[13px]` já inclusos na própria imagem. Conteúdo: barra de navegador com 3 bolinhas, cabeçalho do SUB100 Imobiliárias, menu lateral, "Distribuição automática de leads: Sim", agenda semanal (segunda a domingo), "Ação fora do horário padrão" / "Responsável fora do horário" e "Ordem da distribuição" com 4 roletas (Venda de terceiros, Roleta Patrocinada, Locação anual, Agroimóveis). Substitui os 3 Kanbans em markup que existiam antes.
 
 ### Assets
 
-Nenhum. A seção inteira é markup real (nenhuma imagem, nenhum ícone).
+- `public/images/crm-urbano/crm-urbano-funil-tela.webp` — export 2x (2144×1188) do node `3902:3088`; exibida a 1072×594.
 
 ---
 
@@ -609,7 +587,7 @@ Nota: diferente da decisão tomada para `/modulos/crm` (onde o `design.md` mando
 
 1. **Hero/Top** — o node não contém CTA algum; nenhum foi inventado (mesma situação de `/modulos/crm`). O primeiro CTA da página está na seção Technology.
 2. **Technology** — a instância do botão chama-se "Link → Agendar Demonstração" mas renderiza "Testar grátis por 30 dias"; vale o texto real.
-3. **Sales Funnel** — os cards de lead têm um campo de **tipo de imóvel** ("Apartamento Padrão", "Terrenos", "Casa", "Casa em Condomínios") que não constava da tabela do `tasks.md`; implementado.
+3. **Sales Funnel** — o conteúdo visual da seção é a imagem da tela de distribuição automática (`Tela`, `3887:3146`), não mais os 3 Kanbans em markup.
 4. **Portal Integrations** — o Figma tem **7** badges de portal, não 6: existe também um badge **123i**. Resolvido a favor do conteúdo real.
 5. **Portal Integrations** — o parágrafo usa `Inter` no Figma (divergindo do Poppins do resto da página/site); a implementação usa Poppins, seguindo o padrão tipográfico do site.
 6. **Dashboard** — os 2 badges flutuantes são **rotacionados 3°** (`rotate(-3deg)` em CSS), com tamanhos nominais `182 x 100` e `220 x 100`; medida derivada das bounding boxes, não estimada visualmente.
