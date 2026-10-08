@@ -12,7 +12,7 @@ useSeoMeta({
   ogDescription: description
 })
 
-usePageSchema({ title, description, software: true })
+usePageSchema({ title, description, software: true, breadcrumb: ['CRM Imobiliário'] })
 </script>
 
 <template>

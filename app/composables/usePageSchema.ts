@@ -1,5 +1,6 @@
 import { isIndexableSite, isNoindexPath, normalizeSiteUrl, withTrailingSlash } from '~/data/seo'
 import {
+  buildBreadcrumbList,
   buildFaqPage,
   buildOrganization,
   buildSoftwareApplication,
@@ -16,6 +17,7 @@ interface PageSchemaOptions {
   description: string
   faqs?: SchemaFaqEntry[]
   software?: boolean
+  breadcrumb?: string[]
 }
 
 type SchemaGraphHolder = Record<string, SchemaNode[] | undefined>
@@ -31,18 +33,20 @@ function useSchemaContext(): SchemaContext | undefined {
   return enabled ? { siteUrl, path, url: `${siteUrl}${path}` } : undefined
 }
 
-export function usePageSchema({ title, description, faqs = [], software = false }: PageSchemaOptions) {
+export function usePageSchema({ title, description, faqs = [], software = false, breadcrumb = [] }: PageSchemaOptions) {
   const context = useSchemaContext()
   if (!context) {
     return
   }
 
   const faqPage = buildFaqPage(context, faqs)
+  const breadcrumbList = breadcrumb.length ? buildBreadcrumbList(context, breadcrumb) : undefined
   const graph = shallowReactive<SchemaNode[]>([
     buildOrganization(context),
     buildWebSite(context),
     buildWebPage(context, title, description),
     ...(software ? [buildSoftwareApplication(context)] : []),
+    ...(breadcrumbList ? [breadcrumbList] : []),
     ...(faqPage ? [faqPage] : [])
   ])
   ;(useNuxtApp() as unknown as SchemaGraphHolder)[graphKey] = graph

@@ -16,6 +16,7 @@ const organizationAlternateName = 'SUBSEE'
 const siteName = 'SUBSEE'
 const softwareName = 'SUBSEE'
 const softwareAlternateName = 'SUBSEE on'
+const breadcrumbHomeName = 'Página inicial'
 const language = 'pt-BR'
 
 const organizationSameAs = [
@@ -84,6 +85,22 @@ export const buildWebPage = (context: SchemaContext, name: string, description: 
   inLanguage: language,
   isPartOf: { '@id': websiteId(context.siteUrl) }
 })
+
+export const buildBreadcrumbList = ({ siteUrl, url }: SchemaContext, trail: string[]): SchemaNode => {
+  const names = [breadcrumbHomeName, ...trail]
+  const lastIndex = names.length - 1
+
+  return {
+    '@type': 'BreadcrumbList',
+    '@id': `${url}#breadcrumb`,
+    itemListElement: names.map((name, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name,
+      ...(index === 0 ? { item: `${siteUrl}/` } : index === lastIndex ? { item: url } : {})
+    }))
+  }
+}
 
 export const buildFaqPage = (context: SchemaContext, faqs: SchemaFaqEntry[]): SchemaNode | undefined =>
   faqs.length
