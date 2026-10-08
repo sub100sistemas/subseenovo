@@ -89,7 +89,7 @@ const brokers: Broker[] = [
               src="/icons/crm-urbano-leads-pontos-esquerda.svg"
               alt="Pontos decorativos" title="Pontos decorativos"
               aria-hidden="true"
-              class="pointer-events-none absolute hidden max-w-none tablet-lg:block tablet-lg:left-[23.52%] tablet-lg:top-[6.3%] tablet-lg:h-[87.39%] tablet-lg:w-[1.51%]"
+              class="pointer-events-none absolute z-[1] hidden max-w-none tablet-lg:block tablet-lg:left-[23.52%] tablet-lg:top-[6.3%] tablet-lg:h-[87.39%] tablet-lg:w-[1.51%]"
             />
             <img
               src="/icons/crm-urbano-leads-conectores-direita.svg"
@@ -101,19 +101,19 @@ const brokers: Broker[] = [
               src="/icons/crm-urbano-leads-pontos-direita.svg"
               alt="Pontos decorativos" title="Pontos decorativos"
               aria-hidden="true"
-              class="pointer-events-none absolute hidden max-w-none tablet-lg:block tablet-lg:left-[74.98%] tablet-lg:top-[18.26%] tablet-lg:h-[63.48%] tablet-lg:w-[1.51%]"
+              class="pointer-events-none absolute z-[1] hidden max-w-none tablet-lg:block tablet-lg:left-[74.98%] tablet-lg:top-[18.26%] tablet-lg:h-[63.48%] tablet-lg:w-[1.51%]"
             />
             <img
               src="/icons/crm-urbano-leads-ponto-central.svg"
               alt="Ponto decorativo central" title="Ponto decorativo central"
               aria-hidden="true"
-              class="pointer-events-none absolute hidden max-w-none tablet-lg:block tablet-lg:left-[37.16%] tablet-lg:top-[47.83%] tablet-lg:h-[4.35%] tablet-lg:w-[1.67%]"
+              class="pointer-events-none absolute z-[1] hidden max-w-none tablet-lg:block tablet-lg:left-[37.16%] tablet-lg:top-[47.83%] tablet-lg:h-[4.35%] tablet-lg:w-[1.67%]"
             />
             <img
               src="/icons/crm-urbano-leads-ponto-central.svg"
               alt="Ponto decorativo central" title="Ponto decorativo central"
               aria-hidden="true"
-              class="pointer-events-none absolute hidden max-w-none tablet-lg:block tablet-lg:left-[62.43%] tablet-lg:top-[47.83%] tablet-lg:h-[4.35%] tablet-lg:w-[1.67%]"
+              class="pointer-events-none absolute z-[1] hidden max-w-none tablet-lg:block tablet-lg:left-[62.43%] tablet-lg:top-[47.83%] tablet-lg:h-[4.35%] tablet-lg:w-[1.67%]"
             />
 
             <div class="flex flex-col gap-4 tablet-lg:absolute tablet-lg:top-0 tablet-lg:left-0 tablet-lg:block tablet-lg:h-full tablet-lg:w-[24.27%]">
@@ -175,42 +175,12 @@ const brokers: Broker[] = [
               </span>
             </div>
 
-            <div class="flex items-center gap-[11px] rounded-[16px] border border-[#dfe1f4] bg-white/94 px-[11px] py-3 tablet-lg:absolute tablet-lg:top-[80.43%] tablet-lg:left-[41.34%] tablet-lg:w-[18.58%] tablet-lg:gap-[8px] tablet-lg:rounded-[12px] tablet-lg:px-[8px] tablet-lg:py-[9px] desktop:gap-[10px] desktop:rounded-[15px] desktop:px-[10px] desktop:py-[11px] desktop-full:gap-[12px] desktop-full:rounded-[18px] desktop-full:px-[12px] desktop-full:py-[13px]">
-              <span class="flex size-[33px] shrink-0 items-center justify-center rounded-full bg-[#f0f0ff] tablet-lg:size-[23px] desktop-compact:size-6 desktop:size-[29px] desktop-full:size-[34px]">
-                <span class="relative block size-[80%]">
-                  <img
-                    src="/icons/crm-urbano-leads-icone-tempo-1.svg"
-                    alt="Ícone de tempo" title="Ícone de tempo"
-                    aria-hidden="true"
-                    class="absolute left-[8.33%] top-[16.67%] w-[83.33%] h-[38.89%] max-w-none"
-                  />
-                  <img
-                    src="/icons/crm-urbano-leads-icone-tempo-2.svg"
-                    alt="Ícone de tempo" title="Ícone de tempo"
-                    aria-hidden="true"
-                    class="absolute left-[25%] top-[27.78%] w-1/2 h-1/2 max-w-none"
-                  />
-                  <img
-                    src="/icons/crm-urbano-leads-icone-tempo-3.svg"
-                    alt="Ícone de tempo" title="Ícone de tempo"
-                    aria-hidden="true"
-                    class="absolute left-[47.22%] top-[38.89%] w-[19.44%] h-[16.67%] max-w-none"
-                  />
-                </span>
-              </span>
-              <span class="flex flex-col">
-                <span class="text-[11px] leading-[1.2] whitespace-nowrap text-[#747c92] tablet-lg:text-[8px] desktop:text-[10px] desktop-full:text-[11px]">
-                  Tempo médio
-                </span>
-                <span class="flex items-baseline gap-2 tablet-lg:gap-[5px] desktop:gap-[6px] desktop-full:gap-2">
-                  <span class="text-[24px] leading-[1.1] font-bold whitespace-nowrap text-[#5753e8] tablet-lg:text-[17px] desktop:text-[21px] desktop-full:text-[25px]">
-                    8s
-                  </span>
-                  <span class="text-[10px] leading-[1.2] font-bold whitespace-nowrap text-[#0daf7d] tablet-lg:text-[7px] desktop:text-[9px] desktop-full:text-[10px]">
-                    +32% rápido
-                  </span>
-                </span>
-              </span>
+            <div class="flex items-center justify-center rounded-[16px] border border-[#dfe1f4] bg-white/94 px-[11px] py-3 text-center tablet-lg:absolute tablet-lg:top-[80.43%] tablet-lg:left-[41.34%] tablet-lg:w-[18.58%] tablet-lg:rounded-[12px] tablet-lg:px-[8px] tablet-lg:py-[9px] desktop:rounded-[15px] desktop:px-[10px] desktop:py-[11px] desktop-full:rounded-[18px] desktop-full:px-[12px] desktop-full:py-[13px]">
+              <p class="text-[14px] leading-[1.3] whitespace-nowrap text-[#747c92] tablet-lg:text-[9px] desktop:text-[11px] desktop-full:text-[13px]">
+                <strong class="font-bold text-[#5753e8]">Roleta de leads</strong> com
+                <br />
+                automação de processos
+              </p>
             </div>
 
             <div class="flex flex-col gap-4 tablet-lg:absolute tablet-lg:top-0 tablet-lg:left-[75.73%] tablet-lg:block tablet-lg:h-full tablet-lg:w-[24.27%]">
