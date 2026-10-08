@@ -11,12 +11,12 @@ interface StatCard {
 
 const stats: StatCard[] = [
   {
-    icon: '/icons/crm-urbano-reports-icone-conversao.svg',
-    iconBackground: 'rgba(93,95,239,0.1)',
-    value: '68%',
-    valueColor: '#5d5fef',
-    label: 'Taxa de conversão',
-    indicator: '↑ 8pts este mês',
+    icon: '/icons/crm-urbano-reports-icone-leads.svg',
+    iconBackground: 'rgba(245,158,11,0.1)',
+    value: '312',
+    valueColor: '#f59e0b',
+    label: 'Leads este mês',
+    indicator: '↑ 18% vs mês anterior',
     indicatorColor: '#00b894'
   },
   {
@@ -29,12 +29,12 @@ const stats: StatCard[] = [
     indicatorColor: '#00b894'
   },
   {
-    icon: '/icons/crm-urbano-reports-icone-leads.svg',
-    iconBackground: 'rgba(245,158,11,0.1)',
-    value: '312',
-    valueColor: '#f59e0b',
-    label: 'Leads este mês',
-    indicator: '↑ 18% vs mês anterior',
+    icon: '/icons/crm-urbano-reports-icone-conversao.svg',
+    iconBackground: 'rgba(93,95,239,0.1)',
+    value: '68%',
+    valueColor: '#5d5fef',
+    label: 'Taxa de conversão',
+    indicator: '↑ 8pts este mês',
     indicatorColor: '#00b894'
   },
   {
