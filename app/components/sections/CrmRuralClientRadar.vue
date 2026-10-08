@@ -94,7 +94,7 @@ const checklist = [
 
         <div class="flex w-full flex-col items-start gap-5 desktop-full:flex-1">
           <h2>
-            Cada terreno para o <span class="text-brand">investidor certo</span>
+            Cada propriedade para o <span class="text-brand">investidor certo</span>
           </h2>
           <p class="text-base leading-[1.55] text-ink tablet-lg:text-xl">
             Use o Radar Cliente x Imóveis para identificar automaticamente quais leads têm

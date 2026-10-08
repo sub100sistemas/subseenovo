@@ -50,15 +50,15 @@
           <p class="text-[13px] font-medium tracking-[2px] text-[#595959] uppercase">
             Próximo evento
           </p>
-          <p class="text-[20px] leading-[1.4] font-bold text-brand tablet-lg:text-[24px]">
-            A nova versão do CRM SUBSEE fecha um importante ciclo de evolução, com Automações de
+          <p class="text-[20px] leading-[1.4] text-ink tablet-lg:text-[24px] tablet-lg:leading-[36px]">
+            A <strong class="font-bold text-brand">nova versão do</strong> <strong class="font-bold text-brand">CRM SUBSEE</strong> fecha um importante ciclo de evolução, com Automações de
             Marketing, Kanban personalizável para Lançamentos, Venda, Rural e Locação, além de
             novos recursos como Radar de Oportunidades, Comparação de Imóveis e Comitê de
             Avaliação, ampliando a gestão comercial e a inteligência do atendimento.
           </p>
           <a
             href="/inscreva-se/" :title="titleForLink('/inscreva-se/')" :aria-label="titleForLink('/inscreva-se/')"
-            class="flex h-[52px] w-[193px] items-center justify-center rounded-[5px] border border-brand text-[15px] font-bold text-brand"
+            class="flex h-[52px] w-[193px] items-center justify-center rounded-[5px] border border-brand bg-brand text-[15px] font-bold text-white tablet-lg:mt-[19px]"
           >
             Inscreva-se!!!
           </a>

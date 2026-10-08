@@ -44,7 +44,7 @@ const steps: ToolsStep[] = [
 
     <template #description>
       Insira scripts de marketing, análise, segurança e atendimento diretamente pelo painel
-      <strong>SUB100 Meu Site</strong>, com suporte a mais de 30 ferramentas compatíveis.
+      <strong>SUB100 Meu Site</strong>, com suporte a diversas ferramentas de terceiros.
     </template>
   </ToolsIntegration>
 </template>

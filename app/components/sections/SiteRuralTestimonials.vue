@@ -19,7 +19,7 @@ interface TestimonialItem {
   order: number
 }
 
-const testimonialIds = ['crm-urbano-marcio-carmona', 'crm-rural-henrique-benedini']
+const testimonialIds = ['crm-rural-julio-silveira', 'crm-rural-henrique-benedini']
 
 const allTestimonials = testimonialsData.testimonials as TestimonialItem[]
 const testimonialMap = new Map(allTestimonials.map((item) => [item.id, item]))

@@ -49,7 +49,7 @@ const attributes: Attribute[] = [
         <div class="flex w-full flex-col gap-6 tablet-lg:w-[64%]">
           <div>
             <h2 class="leading-[1.2]">
-              A tecnologia que entende o ritmo da cidade.
+              A tecnologia que entende o ritmo da cidade
             </h2>
             <p class="mt-4 text-base leading-[1.4] text-ink tablet-lg:text-[18px] desktop-full:text-[20px]">
               Apresente cada imóvel com fichas completas e padronizadas,

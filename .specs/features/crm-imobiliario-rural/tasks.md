@@ -208,7 +208,7 @@ T17 → T18
 **Tools**: `mcp__claude_ai_Figma__get_design_context` on node `3104:15316` to reconfirm exact colors per mini-step (already sampled this session)
 
 **Done when**:
-- [x] H2 "Cada terreno para o investidor certo" + description + 3-item checklist + CTA
+- [x] H2 "Cada propriedade para o investidor certo" + description + 3-item checklist + CTA
 - [x] Left card renders "COMO FUNCIONA" tag, title "Do imóvel ao cliente certo", subtitle, the 3 numbered mini-cards (01 Imóveis / 02 Cruzamento / 03 Resultado) with their real titles/descriptions, and the result banner "Conexões mais rápidas e qualificadas"
 - [x] No comments in the file
 - [x] `pnpm build` succeeds; manual check at desktop/tablet/mobile — 3 mini-cards reflow sensibly (e.g. stacked) below desktop
