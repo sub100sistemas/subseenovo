@@ -12,7 +12,7 @@ withDefaults(defineProps<Props>(), {
   loadingLabel: 'Enviando...',
   disabled: false,
   buttonClass:
-    'flex h-[52px] w-full items-center justify-center gap-[10px] rounded-xl bg-[linear-gradient(106.15deg,#5d5fef_1.6%,#4042cc_110.35%)] px-4 text-white drop-shadow-[0px_6px_10px_rgba(93,95,239,0.25)] transition-opacity hover:opacity-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand disabled:cursor-not-allowed disabled:opacity-70',
+    'flex h-[52px] w-full cursor-pointer items-center justify-center gap-[10px] rounded-xl bg-[linear-gradient(106.15deg,#5d5fef_1.6%,#4042cc_110.35%)] px-4 text-white drop-shadow-[0px_6px_10px_rgba(93,95,239,0.25)] transition-opacity hover:opacity-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand disabled:cursor-not-allowed disabled:opacity-70',
   labelClass: 'text-[15px] leading-normal font-semibold'
 })
 </script>

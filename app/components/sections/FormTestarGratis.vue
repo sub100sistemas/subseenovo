@@ -54,10 +54,10 @@ const benefits: FormBenefit[] = [
             </FormHeroAccent>
           </template>
           <template #lead>
-            <p>Conheça na prática as funcionalidades do SUBSEE e descubra como simplificar a gestão da sua imobiliária.</p>
+            <p class="mt-4">Conheça na prática as funcionalidades do SUBSEE e descubra como simplificar a gestão da sua imobiliária.</p>
           </template>
         </FormIntroHeading>
-        <h2 class="text-[28px] leading-[1.1] font-bold text-ink tablet-lg:text-[36px]">
+        <h2 class="mt-3 text-[28px] leading-[1.1] font-bold text-ink tablet-lg:text-[36px]">
           Experimente o <span class="text-brand">SUBSEE</span><br />no seu dia a dia
         </h2>
         <p class="text-[16px] leading-[1.6] text-[#666] tablet-lg:text-[20px]">
