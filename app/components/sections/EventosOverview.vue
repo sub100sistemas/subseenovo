@@ -29,7 +29,7 @@
       </div>
 
       <div class="relative w-full tablet-lg:aspect-[674/513] tablet-lg:w-[48%]">
-        <div class="absolute top-[55%] left-[69%] hidden size-[31%] rounded-[20px] bg-[#1cd9a4] desktop-full:block" aria-hidden="true" />
+        <div class="absolute top-[68%] left-[69%] hidden size-[31%] rounded-[20px] bg-[#1cd9a4] desktop-full:block" aria-hidden="true" />
         <div class="absolute top-0 left-0 hidden h-[27%] w-[18.5%] rounded-[20px] bg-brand desktop-full:block" aria-hidden="true" />
 
         <div class="relative aspect-[638/471] overflow-hidden rounded-[20px] tablet-lg:absolute tablet-lg:top-[3.7%] tablet-lg:left-[2.7%] tablet-lg:aspect-auto tablet-lg:h-[91.8%] tablet-lg:w-[94.6%]">
@@ -43,14 +43,6 @@
             class="h-full w-full rounded-[20px] object-cover"
             loading="lazy"
           />
-          <div class="absolute inset-0 flex items-center justify-center">
-            <img
-              src="/icons/eventos-icone-overview-play.svg"
-              alt="Ícone de reproduzir vídeo" title="Ícone de reproduzir vídeo"
-              aria-hidden="true"
-              class="size-[58px]"
-            />
-          </div>
         </div>
       </div>
     </div>
