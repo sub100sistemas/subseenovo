@@ -1,4 +1,13 @@
-import { indexRobotsContent, isIndexableSite, isNoindexPath, normalizeSiteUrl, withTrailingSlash } from '~/data/seo'
+import {
+  indexRobotsContent,
+  isIndexableSite,
+  isNoindexPath,
+  normalizeSiteUrl,
+  routeCanonicalPath,
+  socialImage,
+  socialLocale,
+  socialSiteName
+} from '~/data/seo'
 
 export default defineNuxtPlugin(() => {
   const route = useRoute()
@@ -7,7 +16,7 @@ export default defineNuxtPlugin(() => {
 
   useHead(() => {
     const pageExists = route.matched.length > 0
-    const path = withTrailingSlash(route.path)
+    const path = routeCanonicalPath(route)
     const indexable = pageExists && !isNoindexPath(path)
 
     if (!production) {
@@ -19,8 +28,22 @@ export default defineNuxtPlugin(() => {
       return { meta: [{ name: 'robots', content: 'noindex, follow' }] }
     }
 
+    const imageUrl = `${siteUrl}${socialImage.path}`
+    const socialMeta = [
+      { property: 'og:type', content: 'website' },
+      { property: 'og:site_name', content: socialSiteName },
+      { property: 'og:locale', content: socialLocale },
+      { property: 'og:image', content: imageUrl },
+      { property: 'og:image:width', content: String(socialImage.width) },
+      { property: 'og:image:height', content: String(socialImage.height) },
+      { property: 'og:image:alt', content: socialImage.alt },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:image', content: imageUrl },
+      { name: 'twitter:image:alt', content: socialImage.alt }
+    ]
+
     if (!indexable) {
-      return { meta: [{ name: 'robots', content: 'noindex, follow' }] }
+      return { meta: [{ name: 'robots', content: 'noindex, follow' }, ...socialMeta] }
     }
 
     const url = `${siteUrl}${path}`
@@ -28,7 +51,8 @@ export default defineNuxtPlugin(() => {
       link: [{ rel: 'canonical', href: url }],
       meta: [
         { name: 'robots', content: indexRobotsContent(siteUrl) },
-        { property: 'og:url', content: url }
+        { property: 'og:url', content: url },
+        ...socialMeta
       ]
     }
   })

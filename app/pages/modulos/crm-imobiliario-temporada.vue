@@ -9,7 +9,9 @@ useSeoMeta({
   description,
   keywords,
   ogTitle: title,
-  ogDescription: description
+  ogDescription: description,
+  twitterTitle: title,
+  twitterDescription: description
 })
 
 usePageSchema({ title, description, software: true, breadcrumb: ['CRM Imobiliário Temporada'] })

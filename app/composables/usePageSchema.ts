@@ -1,4 +1,4 @@
-import { isIndexableSite, isNoindexPath, normalizeSiteUrl, withTrailingSlash } from '~/data/seo'
+import { isIndexableSite, isNoindexPath, normalizeSiteUrl, routeCanonicalPath } from '~/data/seo'
 import {
   buildBreadcrumbList,
   buildFaqPage,
@@ -27,7 +27,7 @@ const graphKey = '_jsonLdGraph'
 function useSchemaContext(): SchemaContext | undefined {
   const route = useRoute()
   const siteUrl = normalizeSiteUrl(String(useRuntimeConfig().public.siteUrl))
-  const path = withTrailingSlash(route.path)
+  const path = routeCanonicalPath(route)
   const enabled = route.matched.length > 0 && isIndexableSite(siteUrl) && !isNoindexPath(path)
 
   return enabled ? { siteUrl, path, url: `${siteUrl}${path}` } : undefined

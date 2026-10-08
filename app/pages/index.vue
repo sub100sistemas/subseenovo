@@ -11,7 +11,9 @@ useSeoMeta({
   description,
   keywords,
   ogTitle: title,
-  ogDescription: description
+  ogDescription: description,
+  twitterTitle: title,
+  twitterDescription: description
 })
 
 usePageSchema({ title, description, faqs: homeFaqs, software: true })

@@ -1,5 +1,16 @@
 export const productionSiteUrl = 'https://subsee.com.br'
 
+export const socialSiteName = 'SUBSEE'
+
+export const socialLocale = 'pt_BR'
+
+export const socialImage = {
+  path: '/images/og-subsee.png',
+  width: 1200,
+  height: 630,
+  alt: 'Logotipos da SUB100 Imobiliárias e do SUBSEE on'
+}
+
 export const noindexPaths = [
   '/testar-gratis/',
   '/agendar-demonstracao/',
@@ -24,3 +35,6 @@ export const indexRobotsContent = (url: string) => (isAuditSite(url) ? 'index,fo
 export const withTrailingSlash = (path: string) => (path.endsWith('/') ? path : `${path}/`)
 
 export const isNoindexPath = (path: string) => noindexPaths.includes(withTrailingSlash(path))
+
+export const routeCanonicalPath = (route: { path: string; matched: { path: string }[] }) =>
+  withTrailingSlash(route.matched.at(-1)?.path ?? route.path)
