@@ -15,12 +15,14 @@ const config: FormPageConfig = {
   }
 }
 
+const accentRays = '/icons/form-accent-rays-brand.svg'
+
 const benefits: FormBenefit[] = [
   {
     icon: '/icons/form-monitor.svg',
     iconSize: 24,
     title: 'Demonstração direcionada',
-    description: 'Explore todos os recursos do SUBSEE.'
+    description: 'Explore todos os recursos do SUBSEE sem limitações.'
   },
   {
     icon: '/icons/form-settings.svg',
@@ -37,43 +39,41 @@ const benefits: FormBenefit[] = [
 
 <template>
   <FormPageHero>
-    <template #heading>
-      Agende uma demonstração do <span class="font-bold text-brand">SUBSEE</span>
-    </template>
-    <template #lead>
-      <p>Veja como o SUBSEE organiza o atendimento e</p>
-      <p>as vendas da sua imobiliária, do lead à assinatura</p>
-    </template>
+    <FormSplitSection>
+      <template #intro>
+        <FormIntroHeading>
+          <template #heading>
+            Agende uma demonstração do<br />
+            <FormHeroAccent :rays-src="accentRays">SUBSEE</FormHeroAccent>
+          </template>
+          <template #lead>
+            <p>Veja como o SUBSEE organiza o atendimento e as vendas da sua imobiliária, do lead à assinatura</p>
+          </template>
+        </FormIntroHeading>
+        <h2 class="text-[28px] leading-[1.1] font-bold text-ink tablet-lg:text-[36px]">
+          Uma apresentação pensada para o <span class="text-brand">seu negócio</span>
+        </h2>
+        <p class="text-[16px] leading-[1.6] text-[#666] tablet-lg:text-[20px]">
+          Mostraremos as funcionalidades mais relevantes para o seu negócio e responderemos às suas perguntas.
+        </p>
+        <FormBenefitList :items="benefits" />
+        <FormBadge :label="formBadgeLabel" />
+      </template>
+
+      <template #card>
+        <FormCard title-class="text-[20px] leading-[34px] font-bold text-ink mobile-lg:text-[22px]" subtitle-class="-mt-[5px] text-[14px] leading-[1.2] text-[#6b7280]">
+          <template #icon>
+            <span class="flex size-14 shrink-0 items-center justify-center rounded-full bg-[#eef2ff]">
+              <img src="/icons/form-message-circle-header.svg" alt="Ícone de mensagem" title="Ícone de mensagem" width="24.375" height="24.375" class="block" />
+            </span>
+          </template>
+          <template #title>Vamos conversar?</template>
+          <template #subtitle>Preencha seus dados e indique o melhor dia e horário para receber nosso contato.</template>
+          <FormLeadFields :config="config" />
+        </FormCard>
+      </template>
+    </FormSplitSection>
   </FormPageHero>
-
-  <FormSplitSection intro-class="flex w-full max-w-[530px] min-w-0 flex-col gap-[35px] desktop:flex-1">
-    <template #intro>
-      <h2 class="text-[28px] leading-[1.1] font-bold text-ink tablet-lg:text-[36px]">
-        Uma apresentação pensada para o <span class="text-brand">seu negócio</span>
-      </h2>
-      <p class="text-[16px] leading-[1.6] text-[#666] tablet-lg:text-[20px]">
-        Mostraremos as funcionalidades mais relevantes para o seu negócio e responderemos às suas perguntas.
-      </p>
-      <FormBenefitList :items="benefits">
-        <template #footer>
-          <FormBadge :label="formBadgeLabel" />
-        </template>
-      </FormBenefitList>
-    </template>
-
-    <template #card>
-      <FormCard title-class="text-[20px] leading-[34px] font-bold text-ink mobile-lg:text-[22px]" subtitle-class="-mt-[5px] text-[14px] leading-[1.2] text-[#6b7280]">
-        <template #icon>
-          <span class="flex size-14 shrink-0 items-center justify-center rounded-full bg-[#eef2ff]">
-            <img src="/icons/form-message-circle-header.svg" alt="Ícone de mensagem" title="Ícone de mensagem" width="24.375" height="24.375" class="block" />
-          </span>
-        </template>
-        <template #title>Vamos conversar?</template>
-        <template #subtitle>Preencha seus dados e indique o melhor dia e horário para receber nosso contato.</template>
-        <FormLeadFields :config="config" />
-      </FormCard>
-    </template>
-  </FormSplitSection>
 
   <FormTrustBar :items="formTrustItems" />
 </template>

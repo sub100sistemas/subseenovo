@@ -9,7 +9,7 @@ interface Props {
 withDefaults(defineProps<Props>(), {
   sectionClass: 'relative z-10',
   containerClass:
-    'container-page flex flex-col items-center gap-10 py-10 desktop:flex-row desktop:items-center desktop:justify-between',
+    'container-page flex flex-col items-center gap-10 pt-10 pb-10 tablet-lg:pt-[55px] desktop:flex-row desktop:items-start desktop:justify-center desktop:gap-x-10 desktop:pt-[89px] desktop:pb-[93px] desktop-full:gap-x-[122px]',
   introClass: 'flex w-full max-w-[530px] min-w-0 flex-col gap-5 desktop:flex-1',
   cardWrapperClass: 'w-full max-w-[640px] shrink-0'
 })

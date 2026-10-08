@@ -14,7 +14,7 @@ interface Props {
 
 withDefaults(defineProps<Props>(), {
   items: () => [],
-  wrapperClass: 'flex flex-col gap-10 pt-5',
+  wrapperClass: 'flex flex-col gap-10 pt-5 desktop:pb-[29px]',
   listClass: 'flex flex-col gap-10',
   itemClass: 'flex items-center gap-4',
   chipClass:

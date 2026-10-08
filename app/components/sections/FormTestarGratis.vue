@@ -8,8 +8,14 @@ const config: FormPageConfig = {
   produto: 'Quero um CRM Imobiliário',
   ctaLabel: 'Começar teste grátis',
   recaptchaAction: 'subsee_teste',
-  thankYouPath: '/testar-gratis/obrigado/'
+  thankYouPath: '/testar-gratis/obrigado/',
+  message: {
+    placeholder: 'Informe o melhor dia e horário para entrarmos em contato.'
+  }
 }
+
+const accentUnderline = '/icons/form-accent-underline.svg'
+const accentRaysDays = '/icons/form-accent-rays-days.svg'
 
 const benefits: FormBenefit[] = [
   {
@@ -32,41 +38,48 @@ const benefits: FormBenefit[] = [
 
 <template>
   <FormPageHero>
-    <template #heading>
-      Teste o SUBSEE grátis por <span class="font-bold text-brand">30 dias</span>
-    </template>
-    <template #lead>
-      <p>Conheça na prática as funcionalidades do SUBSEE e descubra como simplificar a gestão da sua imobiliária.</p>
-    </template>
+    <FormSplitSection intro-class="flex w-full max-w-[576px] min-w-0 flex-col gap-5 desktop:flex-1">
+      <template #intro>
+        <FormIntroHeading>
+          <template #heading>
+            Teste o SUBSEE grátis<br />
+            por
+            <FormHeroAccent
+              class="ml-[0.2em]"
+              :underline-src="accentUnderline"
+              :rays-src="accentRaysDays"
+              rays-class="top-[0.1838em] left-[3.61em] h-[0.7941em] w-[0.5em]"
+            >
+              30 dias
+            </FormHeroAccent>
+          </template>
+          <template #lead>
+            <p>Conheça na prática as funcionalidades do SUBSEE e descubra como simplificar a gestão da sua imobiliária.</p>
+          </template>
+        </FormIntroHeading>
+        <h2 class="text-[28px] leading-[1.1] font-bold text-ink tablet-lg:text-[36px]">
+          Experimente o <span class="text-brand">SUBSEE</span><br />no seu dia a dia
+        </h2>
+        <p class="text-[16px] leading-[1.6] text-[#666] tablet-lg:text-[20px]">
+          Preencha o formulário e comece a explorar os recursos que vão tornar sua operação mais organizada, integrada e
+          eficiente
+        </p>
+        <FormBenefitList :items="benefits" />
+        <FormBadge :label="formBadgeLabel" />
+      </template>
+
+      <template #card>
+        <FormCard>
+          <template #icon>
+            <img src="/icons/form-rocket-icon-bg.svg" alt="Ícone de foguete" title="Ícone de foguete" width="56" height="56" class="block shrink-0" />
+          </template>
+          <template #title>Comece seu acesso</template>
+          <template #subtitle>Preencha seus dados para ativar seu acesso por 30 dias</template>
+          <FormLeadFields :config="config" />
+        </FormCard>
+      </template>
+    </FormSplitSection>
   </FormPageHero>
-
-  <FormSplitSection>
-    <template #intro>
-      <h2 class="text-[28px] leading-[1.1] font-bold text-ink tablet-lg:text-[36px]">
-        Experimente o <span class="text-brand">SUBSEE</span><br />no seu dia a dia
-      </h2>
-      <p class="text-[16px] leading-[1.6] text-[#666] tablet-lg:text-[20px]">
-        Preencha o formulário e comece a explorar os recursos que vão tornar sua operação mais organizada, integrada e
-        eficiente
-      </p>
-      <FormBenefitList :items="benefits">
-        <template #footer>
-          <FormBadge :label="formBadgeLabel" />
-        </template>
-      </FormBenefitList>
-    </template>
-
-    <template #card>
-      <FormCard>
-        <template #icon>
-          <img src="/icons/form-rocket-icon-bg.svg" alt="Ícone de foguete" title="Ícone de foguete" width="56" height="56" class="block shrink-0" />
-        </template>
-        <template #title>Comece seu teste grátis</template>
-        <template #subtitle>Preencha seus dados para ativar seu acesso por 30 dias</template>
-        <FormLeadFields :config="config" />
-      </FormCard>
-    </template>
-  </FormSplitSection>
 
   <FormTrustBar :items="formTrustItems" />
 </template>
