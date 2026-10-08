@@ -46,19 +46,21 @@
           />
         </div>
 
-        <div class="flex w-full flex-col items-start gap-4 tablet-lg:w-[40.79%]">
-          <p class="text-[13px] font-medium tracking-[2px] text-[#595959] uppercase">
+        <div class="flex w-full flex-col items-center tablet-lg:w-[40.79%] tablet-lg:self-start">
+          <p class="pt-[10px] text-center text-[15px] leading-[30px] font-medium tracking-[2px] text-[#595959] uppercase">
             Próximo evento
           </p>
-          <p class="text-[20px] leading-[1.4] text-ink tablet-lg:text-[24px] tablet-lg:leading-[36px]">
-            A <strong class="font-bold text-brand">nova versão do</strong> <strong class="font-bold text-brand">CRM SUBSEE</strong> fecha um importante ciclo de evolução, com Automações de
-            Marketing, Kanban personalizável para Lançamentos, Venda, Rural e Locação, além de
-            novos recursos como Radar de Oportunidades, Comparação de Imóveis e Comitê de
-            Avaliação, ampliando a gestão comercial e a inteligência do atendimento.
-          </p>
+          <div class="mt-[22px] w-full rounded-[30px] bg-[#e9edfa]/80 px-[37px] py-[38px]">
+            <p class="text-[20px] leading-[1.8] text-ink">
+              A <strong class="font-bold text-brand">nova versão do CRM SUBSEE</strong> fecha um importante ciclo de
+              evolução, com Automações de Marketing, Kanban personalizável para Lançamentos, Venda, Rural e Locação,
+              além de novos recursos como Radar de Oportunidades, ampliando a gestão comercial e a inteligência do
+              atendimento.
+            </p>
+          </div>
           <a
             href="/inscreva-se/" :title="titleForLink('/inscreva-se/')" :aria-label="titleForLink('/inscreva-se/')"
-            class="flex h-[52px] w-[193px] items-center justify-center rounded-[5px] border border-brand bg-brand text-[15px] font-bold text-white tablet-lg:mt-[19px]"
+            class="mt-[26px] flex h-[52px] w-[193px] items-center justify-center rounded-[5px] border border-brand bg-brand text-[15px] font-bold text-white"
           >
             Inscreva-se!!!
           </a>
