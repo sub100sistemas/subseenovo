@@ -102,16 +102,6 @@ const replayCards: ReplayCard[] = [
             </div>
           </div>
         </div>
-
-        <a
-          href="https://app.subsee.com.br/treinamentos/eventos-online?page=1&order=default" :title="titleForLink('https://app.subsee.com.br/treinamentos/eventos-online?page=1&order=default')" :aria-label="titleForLink('https://app.subsee.com.br/treinamentos/eventos-online?page=1&order=default')"
-          target="_blank"
-          rel="noopener"
-          class="flex h-[56px] w-full max-w-[349px] items-center justify-center gap-2 rounded-[12px] bg-brand text-[18px] text-white"
-        >
-          Ver mais vídeos no App SUBSEE
-          <IconArrowRight class="size-5 shrink-0" />
-        </a>
       </div>
     </div>
   </section>

@@ -4,6 +4,7 @@ import { videosAppUrl } from '~/data/videos'
 interface VideoProfile {
   number: string
   title: string
+  titleClass?: string
   description: string
   linkLabel: string
   bgClass: string
@@ -42,8 +43,9 @@ const profiles: VideoProfile[] = [
   },
   {
     number: '03',
-    title: 'Imobiliárias locação',
-    description: 'Não importa qual é a sua locação, residencia, comercial ou de temporada. Importa que a jornada esteja em um só sistema.',
+    title: 'Imobiliárias locação & temporada',
+    titleClass: 'text-[22px] leading-[22px]',
+    description: 'Não importa qual é a sua locação, residência, comercial ou de temporada. Importa que a jornada esteja em um só sistema.',
     linkLabel: 'Ver vídeos →',
     bgClass: 'bg-[#f4eefc]',
     accentClass: 'text-[#7652b5]',
@@ -69,7 +71,7 @@ const openVideo = (profile: VideoProfile) => {
 </script>
 
 <template>
-  <section id="videos-por-perfil" class="bg-white pt-10">
+  <section id="videos-por-perfil" class="bg-white pt-10 pb-10">
     <div class="mx-auto flex w-full max-w-[1400px] flex-col gap-8 px-4 mobile-lg:px-6 tablet:px-8 tablet-lg:gap-[35px] desktop-full:px-0">
       <SectionHeading
         wrapper-class="gap-0"
@@ -97,11 +99,12 @@ const openVideo = (profile: VideoProfile) => {
           <p class="h-6 text-[14px] leading-normal font-bold" :class="profile.accentClass">{{ profile.number }}</p>
           <h3
             :id="`profile-${index}-title`"
-            class="mt-[44px] text-[20px] leading-[36px] font-semibold text-ink desktop-full:text-[23px]"
+            class="mt-[40px] flex min-h-[44px] items-center font-semibold text-ink"
+            :class="profile.titleClass ?? 'text-[20px] leading-[36px] desktop-full:text-[23px]'"
           >
             {{ profile.title }}
           </h3>
-          <p class="mt-3 text-[15px] leading-[23px] text-[#596273] tablet-lg:min-h-[72px]">{{ profile.description }}</p>
+          <p class="mt-2 text-[15px] leading-[23px] text-[#596273] tablet-lg:min-h-[72px]">{{ profile.description }}</p>
           <button
             v-if="profile.vimeoId"
             :id="`profile-${index}-link`"

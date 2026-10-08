@@ -23,7 +23,6 @@ usePageSchema({ title, description, breadcrumb: ['Vídeos do SUBSEE on'] })
     <VideosFeatured />
     <VideosDemo />
     <VideosProfiles />
-    <VideosAppCta />
     <VideosFaq />
   </main>
 </template>
