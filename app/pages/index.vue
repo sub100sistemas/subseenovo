@@ -14,7 +14,7 @@ useSeoMeta({
   ogDescription: description
 })
 
-usePageSchema({ title, description, faqs: homeFaqs })
+usePageSchema({ title, description, faqs: homeFaqs, software: true })
 </script>
 
 <template>

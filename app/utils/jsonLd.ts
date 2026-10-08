@@ -14,6 +14,8 @@ export interface SchemaFaqEntry {
 const organizationName = 'SUB100 Sistemas'
 const organizationAlternateName = 'SUBSEE'
 const siteName = 'SUBSEE'
+const softwareName = 'SUBSEE'
+const softwareAlternateName = 'SUBSEE on'
 const language = 'pt-BR'
 
 const organizationSameAs = [
@@ -38,6 +40,7 @@ const organizationLogoPath = '/icons/logo-sub100-imobiliarias.svg'
 
 const organizationId = (siteUrl: string) => `${siteUrl}/#organization`
 const websiteId = (siteUrl: string) => `${siteUrl}/#website`
+const softwareId = (siteUrl: string) => `${siteUrl}/#software`
 
 export const buildOrganization = ({ siteUrl }: SchemaContext): SchemaNode => ({
   '@type': 'Organization',
@@ -58,6 +61,18 @@ export const buildWebSite = ({ siteUrl }: SchemaContext): SchemaNode => ({
   name: siteName,
   inLanguage: language,
   publisher: { '@id': organizationId(siteUrl) }
+})
+
+export const buildSoftwareApplication = ({ siteUrl }: SchemaContext): SchemaNode => ({
+  '@type': 'SoftwareApplication',
+  '@id': softwareId(siteUrl),
+  name: softwareName,
+  alternateName: softwareAlternateName,
+  url: `${siteUrl}/`,
+  applicationCategory: 'BusinessApplication',
+  operatingSystem: 'Web',
+  inLanguage: language,
+  provider: { '@id': organizationId(siteUrl) }
 })
 
 export const buildWebPage = (context: SchemaContext, name: string, description: string): SchemaNode => ({

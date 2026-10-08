@@ -2,6 +2,7 @@ import { isIndexableSite, isNoindexPath, normalizeSiteUrl, withTrailingSlash } f
 import {
   buildFaqPage,
   buildOrganization,
+  buildSoftwareApplication,
   buildWebPage,
   buildWebSite,
   serializeJsonLd,
@@ -14,6 +15,7 @@ interface PageSchemaOptions {
   title: string
   description: string
   faqs?: SchemaFaqEntry[]
+  software?: boolean
 }
 
 type SchemaGraphHolder = Record<string, SchemaNode[] | undefined>
@@ -29,7 +31,7 @@ function useSchemaContext(): SchemaContext | undefined {
   return enabled ? { siteUrl, path, url: `${siteUrl}${path}` } : undefined
 }
 
-export function usePageSchema({ title, description, faqs = [] }: PageSchemaOptions) {
+export function usePageSchema({ title, description, faqs = [], software = false }: PageSchemaOptions) {
   const context = useSchemaContext()
   if (!context) {
     return
@@ -40,6 +42,7 @@ export function usePageSchema({ title, description, faqs = [] }: PageSchemaOptio
     buildOrganization(context),
     buildWebSite(context),
     buildWebPage(context, title, description),
+    ...(software ? [buildSoftwareApplication(context)] : []),
     ...(faqPage ? [faqPage] : [])
   ])
   ;(useNuxtApp() as unknown as SchemaGraphHolder)[graphKey] = graph

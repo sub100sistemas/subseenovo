@@ -12,7 +12,7 @@ useSeoMeta({
   ogDescription: description
 })
 
-usePageSchema({ title, description })
+usePageSchema({ title, description, software: true })
 </script>
 
 <template>
