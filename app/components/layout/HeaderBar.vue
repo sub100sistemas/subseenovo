@@ -8,8 +8,17 @@ const navItems = [
   { label: 'Eventos', to: '/eventos/' },
   { label: 'Preços', to: '/planos-e-precos/' },
   { label: 'Portal de Imóveis', href: 'https://sub100.com.br/' },
-  { label: 'Blog', href: 'https://blog.sub100sistemas.com.br/' },
-  { label: 'Sobre a SUB100', href: 'https://sub100sistemas.com.br/' }
+  { label: 'Blog', href: 'https://blog.sub100sistemas.com.br/' }
+]
+
+const sobreNavLabel = 'Sobre a SUB100'
+
+const sobreItems = [
+  { label: 'Sobre nós', href: 'https://sub100sistemas.com.br/sub100-sistemas/' },
+  { label: 'Missão e Valores', href: 'https://sub100sistemas.com.br/sub100-sistemas/#missao-valores' },
+  { label: 'Palavra do Diretor', href: 'https://sub100sistemas.com.br/sub100-sistemas/#palavra-do-diretor' },
+  { label: 'Trabalhe conosco', href: 'https://sub100sistemas.com.br/trabalhe-conosco/' },
+  { label: 'Fale conosco', href: 'https://sub100sistemas.com.br/fale-conosco/' }
 ]
 
 const restNavItems = navItems.filter((item) => item !== modulosNavItem)
@@ -92,6 +101,8 @@ const modulosColumns = [
 const isModulosOpen = ref(false)
 const isMenuOpen = ref(false)
 const isMobileModulosOpen = ref(false)
+const isSobreOpen = ref(false)
+const isMobileSobreOpen = ref(false)
 const mobileNavId = `mobile-nav-${useId()}`
 
 const modulosMobileItems = modulosColumns.flatMap((col) => col.items.map((item) => ({ label: item.label, to: item.to })))
@@ -105,7 +116,10 @@ const socialLinks = [
 
 watch(isMenuOpen, (open) => {
   document.body.style.overflow = open ? 'hidden' : ''
-  if (!open) isMobileModulosOpen.value = false
+  if (!open) {
+    isMobileModulosOpen.value = false
+    isMobileSobreOpen.value = false
+  }
 })
 
 onBeforeUnmount(() => {
@@ -130,11 +144,25 @@ function handleModulosLeave(event: MouseEvent) {
   isModulosOpen.value = false
 }
 
+const sobreEl = ref<HTMLElement | null>(null)
+
+function openSobre() {
+  isSobreOpen.value = true
+  isModulosOpen.value = false
+}
+
+function handleSobreFocusOut(event: FocusEvent) {
+  if (!sobreEl.value?.contains(event.relatedTarget as Node | null)) {
+    isSobreOpen.value = false
+  }
+}
+
 const route = useRoute()
 watch(
   () => route.fullPath,
   () => {
     isModulosOpen.value = false
+    isSobreOpen.value = false
     isMenuOpen.value = false
   }
 )
@@ -143,6 +171,7 @@ watch(
   () => props.isPastHero,
   () => {
     isModulosOpen.value = false
+    isSobreOpen.value = false
   }
 )
 
@@ -196,6 +225,50 @@ function splitDescription(description: string) {
             {{ item.label }}
           </NuxtLink>
         </template>
+
+        <div
+          ref="sobreEl"
+          class="relative flex h-full items-center"
+          @mouseenter="openSobre"
+          @mouseleave="isSobreOpen = false"
+          @focusout="handleSobreFocusOut"
+          @keydown.esc="isSobreOpen = false"
+        >
+          <button
+            type="button"
+            class="cursor-pointer flex h-full items-center border-0 bg-transparent px-4 text-[16px] text-brand transition-colors hover:font-medium hover:text-[#1CD9A4]"
+            :aria-expanded="isSobreOpen"
+            aria-haspopup="true"
+            @click="isSobreOpen = !isSobreOpen"
+          >
+            {{ sobreNavLabel }}
+          </button>
+
+          <Transition
+            enter-active-class="transition duration-150 ease-out"
+            enter-from-class="opacity-0 -translate-y-1"
+            enter-to-class="opacity-100 translate-y-0"
+            leave-active-class="transition duration-100 ease-in"
+            leave-from-class="opacity-100 translate-y-0"
+            leave-to-class="opacity-0 -translate-y-1"
+          >
+            <div
+              v-show="isSobreOpen"
+              class="absolute top-full left-0 w-[260px] rounded-b-[10px] border-b-4 border-teal-link bg-white py-4 shadow-[0px_10px_10px_rgba(0,0,0,0.05),0px_30px_40px_-10px_rgba(0,0,0,0.18)]"
+            >
+              <a
+                v-for="sobreItem in sobreItems"
+                :key="sobreItem.label"
+                :href="sobreItem.href" :title="titleForLink(sobreItem.href)" :aria-label="titleForLink(sobreItem.href)"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block px-6 py-[10px] text-[16px] leading-[18px] text-ink transition-colors hover:bg-[#f5f5fd] hover:text-brand"
+              >
+                {{ sobreItem.label }}
+              </a>
+            </div>
+          </Transition>
+        </div>
       </nav>
 
       <div class="flex items-center gap-4">
@@ -373,6 +446,41 @@ function splitDescription(description: string) {
             {{ item.label }}
           </NuxtLink>
         </template>
+
+        <div class="flex items-center justify-between border-b border-[#EDEDED] px-6 py-4">
+          <button
+            type="button"
+            class="border-0 bg-transparent text-base font-medium text-ink"
+            :aria-expanded="isMobileSobreOpen"
+            aria-controls="mobile-sobre-list"
+            @click="isMobileSobreOpen = !isMobileSobreOpen"
+          >
+            {{ sobreNavLabel }}
+          </button>
+          <button
+            type="button"
+            class="inline-flex size-7 shrink-0 items-center justify-center rounded-md border border-[#D1D5DB] text-base leading-none text-ink"
+            :aria-expanded="isMobileSobreOpen"
+            aria-controls="mobile-sobre-list"
+            :aria-label="isMobileSobreOpen ? 'Recolher Sobre a SUB100' : 'Expandir Sobre a SUB100'"
+            @click="isMobileSobreOpen = !isMobileSobreOpen"
+          >
+            {{ isMobileSobreOpen ? '−' : '+' }}
+          </button>
+        </div>
+
+        <div v-if="isMobileSobreOpen" id="mobile-sobre-list" class="flex flex-col border-b border-[#EDEDED] bg-[#FAFAFA] py-2">
+          <a
+            v-for="sobreItem in sobreItems"
+            :key="sobreItem.label"
+            :href="sobreItem.href" :title="titleForLink(sobreItem.href)" :aria-label="titleForLink(sobreItem.href)"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-10 py-2.5 text-sm text-ink-soft"
+          >
+            {{ sobreItem.label }}
+          </a>
+        </div>
       </div>
 
       <div class="px-6 py-6">
