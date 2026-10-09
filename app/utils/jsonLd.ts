@@ -1,3 +1,5 @@
+import { socialImage } from '~/data/seo'
+
 export type SchemaNode = Record<string, unknown>
 
 export interface SchemaContext {
@@ -47,6 +49,12 @@ export const buildOrganization = ({ siteUrl }: SchemaContext): SchemaNode => ({
   alternateName: organizationAlternateName,
   url: `${siteUrl}/`,
   logo: `${siteUrl}${organizationLogoPath}`,
+  image: {
+    '@type': 'ImageObject',
+    url: `${siteUrl}${socialImage.path}`,
+    width: socialImage.width,
+    height: socialImage.height
+  },
   address: organizationAddress,
   telephone: organizationTelephone,
   sameAs: organizationSameAs

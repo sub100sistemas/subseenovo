@@ -65,3 +65,58 @@ Regra final implementada: **páginas normais → `index, follow`; formulários, 
 3. **Domínio por ambiente:** o preview da Cloudflare Pages (`https://subseenovo.pages.dev`, sem `NUXT_PUBLIC_SITE_URL`) é tratado como indexável (`isAuditSite`) e aponta canonical, `og:url`, `robots.txt` (`Allow: /` + `Sitemap:`) e `sitemap.xml` para o próprio domínio. Com `NUXT_PUBLIC_SITE_URL=https://subsee.com.br` tudo aponta para a produção definitiva. Validado com builds limpos nos dois ambientes e no local (`Disallow: /`, sem sitemap).
 4. **`alt`/`title` e `title`/`aria-label`:** nas 21 rotas, 1.192 imagens com `alt` e `title` preenchidos e 671 links com `title` e `aria-label` preenchidos (HTML bruto e DOM hidratado). `formsEndpoint` permanece `https://forms.sub100.com.br/sub100sistemas/formularios.php`.
 5. Os H1 de CRM urbano, rural e temporada e o H1 de Planos não foram alterados (copy do Figma); a palavra-chave de CRM rural está no Title, na Description e nos H2.
+
+## Auditoria de dados estruturados e redes sociais — 6 páginas (2026-10-09, `https://subseenovo.pages.dev`, pós `b9de8ab`)
+
+Páginas: `/modulos/site-para-loteadoras/`, `/eventos/`, `/planos-e-precos/`, `/assista-os-videos-do-subsee-on/`, `/lgpd/termos-de-uso/`, `/lgpd/politica-de-privacidade/`. Fonte: HTML entregue pelo servidor publicado. O deploy já reflete `b9de8ab` (`SoftwareApplication` ausente no HTML da Home e de módulos que o tinham); o ID do deploy no Cloudflare não foi lido.
+
+| Verificação | Resultado |
+| --- | --- |
+| Twitter Cards (`card` `summary_large_image`, `title`, `description`, `image`, `image:alt`) | OK nas 6 |
+| Open Graph (`title`, `description`, `url` = canonical, `type`, `site_name` SUBSEE, `locale`, `image` 1200×630 + `alt`) | OK nas 6 |
+| JSON-LD: 1 bloco por página, sem erro de parse, sem `@id` duplicado, sem referência quebrada | OK nas 6 |
+| Tipos: `Organization`, `WebSite`, `WebPage`, `BreadcrumbList` (+ `FAQPage` em Loteadoras, Eventos, Planos e Vídeos) | OK; `SoftwareApplication` ausente nas 6 |
+| FAQ: perguntas e respostas do `FAQPage` presentes no HTML visível (6, 6, 6 e 5 itens); Termos e Privacidade sem FAQ e sem `FAQPage` | OK |
+| Schema Markup Validator | Eventos: 0 erros, 0 avisos (`BreadcrumbList` e `FAQPage`). Os tipos das outras 5 foram detectados, mas as contagens de erros/avisos não foram lidas: o validador passou a exigir reCAPTCHA após as consultas automatizadas e o desafio não foi contornado |
+| Google Rich Results Test | Não verificado: exige login |
+
+### Breadcrumb visual
+
+- **Decisão do usuário (2026-10-09):** manter o `BreadcrumbList` somente no JSON-LD; não criar breadcrumb visual.
+- **Figma:** nenhuma das seções das 6 páginas tem breadcrumb (busca por nome de camada e por texto "Início/Home/›/»"; o único achado, "Trilha de Integração", é conteúdo da Base de Conhecimento). Criar um elemento visual desviaria do Figma.
+- **Código:** não existe componente de breadcrumb; o único `nav` é "Menu principal".
+- **Validação:** o `BreadcrumbList` do Eventos passou no Schema Markup Validator com 0 erros e 0 avisos. Os demais resultados externos estão em "Pendências".
+
+### Status por item
+
+| Item | Status |
+| --- | --- |
+| Twitter Cards, Open Graph, JSON-LD (estrutura, `@id`, referências), FAQ visível x `FAQPage`, ausência de `SoftwareApplication` | Validado no HTML publicado (6 páginas) |
+| Schema Markup Validator — Eventos | Validado: 0 erros, 0 avisos |
+| Schema Markup Validator — tipos detectados nas outras 5 páginas | Validado (`BreadcrumbList`/`FAQPage`; `WebPage`/`BreadcrumbList` em Termos e Privacidade) |
+| Schema Markup Validator — contagem de erros e avisos das outras 5 páginas | Não verificado (reCAPTCHA do validador; não contornado) |
+| Google Rich Results Test (6 páginas) | Não verificado (exige login no Google; não executado) |
+| FAQ em Termos de Uso e Política de Privacidade | Não aplicável (sem FAQ visível e sem `FAQPage`) |
+| Verificação em `subsee.com.br` | Pendente (go-live) |
+
+### Pendências
+
+1. Executar manualmente, no navegador, o Schema Markup Validator (contagens das 5 páginas restantes) e o Google Rich Results Test nas 6 URLs.
+2. Go-live: repetir a verificação em `subsee.com.br` com `NUXT_PUBLIC_SITE_URL=https://subsee.com.br`; `https://subsee.com.br/images/og-subsee.png` ainda retorna 404 porque o domínio serve o site antigo.
+3. Nomes do breadcrumb x navegação (observação, não erro): Planos ("Planos e preços" x menu "Preços" x H1 "Planos & Preços") e Vídeos ("Vídeos do SUBSEE on", sem link próprio no menu).
+
+## `Organization.image` (2026-10-09, build local com `NUXT_PUBLIC_SITE_URL=https://subseenovo.pages.dev`)
+
+Alteração: `buildOrganization` passa a emitir `image` (`ImageObject` com `url`, `width`, `height` de `socialImage`). `pnpm build` terminou com exit code 0.
+
+| Verificação | Origem | Resultado |
+| --- | --- | --- |
+| `https://subseenovo.pages.dev/images/og-subsee.png` | Site publicado | HTTP 200, `image/png`, 339.706 bytes, 1200×630 (cabeçalho do PNG) |
+| `Organization.image` presente nas 15 páginas indexáveis, com `url` `https://subseenovo.pages.dev/images/og-subsee.png`, `width` 1200 e `height` 630 | Build local servido | Validado |
+| 6 páginas `noindex` (3 formulários e 3 `/obrigado/`) | Build local servido | Sem JSON-LD, como decidido |
+| `SoftwareApplication` | Build local servido | Ausente nas 21 rotas |
+| JSON-LD: 1 bloco, sem erro de parse, sem `@id` duplicado, sem referência quebrada; `FAQPage` igual ao FAQ visível | Build local servido | Validado nas 15 indexáveis |
+| `og:image` e `twitter:image` = `…/images/og-subsee.png` | Build local servido | Validado nas 21 rotas |
+| Meta SEO (robots, canonical, `og:*`, `twitter:*`, description) e JSON-LD sem a `image` | Build local x site publicado, 18 rotas | Idênticos |
+| Site publicado com `Organization.image` | Site publicado | Pendente: depende de deploy |
+| Rich Results Test / Schema Markup Validator com `Organization.image` | Validadores externos | Não verificado: reexecutar no navegador após o deploy |
