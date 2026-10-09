@@ -38,12 +38,12 @@ const moduleIcons: HeroModuleIcon[] = [
       <NuxtImg
         format="webp"
         src="/images/modulos-apis-hub-integrador/card_arrow.png"
-        :width="1440"
-        :height="816"
+        :width="1442"
+        :height="912"
         sizes="100vw tablet-lg:50vw desktop-full:720px"
         alt="Cartões flutuantes do módulo" title="Cartões flutuantes do módulo"
         aria-hidden="true"
-        class="pointer-events-none absolute z-[1] left-0 top-0 h-auto w-full"
+        class="pointer-events-none absolute z-[1] left-0 top-10 h-auto w-full"
       />
 
       <div
