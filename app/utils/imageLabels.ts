@@ -123,6 +123,7 @@ const labels: Record<string, string> = {
   'crm-hero-divider-onda': 'Onda decorativa',
   'crm-tecnologia-seta-curva': 'Seta curva decorativa',
   'crm-tecnologia-estrela': 'Estrela decorativa',
+  'apis-tecnologia-seta-curva': 'Seta curva decorativa',
   'icone-crm-allinone-funil': 'Ícone de funil de vendas',
   'icone-crm-allinone-kanban': 'Ícone de kanban',
   'icone-crm-allinone-gestao-leads': 'Ícone de gestão de leads',

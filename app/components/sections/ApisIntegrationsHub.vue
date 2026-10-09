@@ -30,14 +30,9 @@ const hubFeatures: HubFeatureItem[] = [
 </script>
 
 <template>
-  <Portfolio
-    section-id="apis-hub-integracoes"
-    :features="hubFeatures"
-    cta-to="/testar-gratis/"
-    cta-text="Testar grátis por 30 dias"
-  >
+  <CrmPortfolio section-id="apis-hub-integracoes" :features="hubFeatures">
     <template #heading>
-      APIs e HUB Integrador: toda a sua operação <span class="text-brand">conectada</span>
+      APIs e HUB Integrador:<br class="hidden tablet-lg:inline" /> toda a sua operação <span class="text-brand">conectada</span>
     </template>
 
     <template #lead>
@@ -61,5 +56,5 @@ const hubFeatures: HubFeatureItem[] = [
       Integre suas ferramentas com agilidade, centralize os dados da operação e elimine tarefas
       manuais repetitivas em poucos cliques.
     </template>
-  </Portfolio>
+  </CrmPortfolio>
 </template>
