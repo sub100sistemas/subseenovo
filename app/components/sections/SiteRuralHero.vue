@@ -26,8 +26,8 @@ const moduleIcons: HeroModuleIcon[] = [
         <NuxtImg
           format="avif"
           src="/images/modulos-site-rural/hero-visual.png"
-          :width="724"
-          :height="912"
+          :width="692"
+          :height="896"
           sizes="mobile-lg:180px tablet:340px tablet-lg:240px desktop:300px desktop-full:362px"
           alt="Corretor de camisa azul" title="Corretor de camisa azul"
           class="h-full w-full object-cover"
@@ -38,8 +38,8 @@ const moduleIcons: HeroModuleIcon[] = [
       <NuxtImg
         format="avif"
         src="/images/modulos-site-rural/card_arrow.png"
-        :width="1440"
-        :height="816"
+        :width="1442"
+        :height="912"
         sizes="100vw tablet-lg:50vw desktop-full:720px"
         alt="Cartões flutuantes do módulo" title="Cartões flutuantes do módulo"
         aria-hidden="true"
