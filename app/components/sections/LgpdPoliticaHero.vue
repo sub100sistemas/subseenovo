@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const containerClass =
-  'container-page relative z-10 flex flex-col items-center pt-10 pb-10 text-center tablet-lg:pt-[71px] tablet-lg:pb-[91px]'
+  'container-page relative z-10 flex flex-col items-center pt-10 pb-10 text-center tablet-lg:pt-[62px] tablet-lg:pb-[91px]'
 const subtitleClass =
   'mt-[10px] w-full text-[20px] leading-[1.4] font-medium text-ink tablet-lg:text-[26px]'
 const descriptionClass =

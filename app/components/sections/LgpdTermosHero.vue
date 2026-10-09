@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const containerClass =
-  'container-page relative z-10 flex flex-col items-center pt-10 pb-10 text-center tablet-lg:pt-[131px] tablet-lg:pb-[62.6px]'
+  'container-page relative z-10 flex flex-col items-center pt-10 pb-10 text-center tablet-lg:pt-[62px] tablet-lg:pb-[62px]'
 </script>
 
 <template>
