@@ -106,15 +106,16 @@ const propertyIcons = [
           </div>
 
           <div class="mt-[17px] flex items-center">
-            <NuxtImg
+            <NuxtPicture
               v-for="a in avatars"
               :key="a.n"
               :src="`/images/hero-main/avatar-cliente-${a.n}.png`"
               :width="58"
               :height="56"
+              format="avif"
               sizes="58px"
-              :alt="a.alt || imageLabel(`/images/hero-main/avatar-cliente-${a.n}.png`)" :title="a.alt || imageLabel(`/images/hero-main/avatar-cliente-${a.n}.png`)"
-              class="h-[56px] w-[58px] rounded-full object-cover"
+              :alt="a.alt || imageLabel(`/images/hero-main/avatar-cliente-${a.n}.png`)"
+              :img-attrs="{ class: 'block h-[56px] w-[58px] rounded-full object-cover', title: a.alt || imageLabel(`/images/hero-main/avatar-cliente-${a.n}.png`) }"
               :style="{ marginLeft: `${a.marginLeft}px` }"
               loading="lazy"
             />
