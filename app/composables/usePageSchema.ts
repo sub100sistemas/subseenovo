@@ -3,7 +3,6 @@ import {
   buildBreadcrumbList,
   buildFaqPage,
   buildOrganization,
-  buildSoftwareApplication,
   buildWebPage,
   buildWebSite,
   serializeJsonLd,
@@ -16,7 +15,6 @@ interface PageSchemaOptions {
   title: string
   description: string
   faqs?: SchemaFaqEntry[]
-  software?: boolean
   breadcrumb?: string[]
 }
 
@@ -33,7 +31,7 @@ function useSchemaContext(): SchemaContext | undefined {
   return enabled ? { siteUrl, path, url: `${siteUrl}${path}` } : undefined
 }
 
-export function usePageSchema({ title, description, faqs = [], software = false, breadcrumb = [] }: PageSchemaOptions) {
+export function usePageSchema({ title, description, faqs = [], breadcrumb = [] }: PageSchemaOptions) {
   const context = useSchemaContext()
   if (!context) {
     return
@@ -45,7 +43,6 @@ export function usePageSchema({ title, description, faqs = [], software = false,
     buildOrganization(context),
     buildWebSite(context),
     buildWebPage(context, title, description),
-    ...(software ? [buildSoftwareApplication(context)] : []),
     ...(breadcrumbList ? [breadcrumbList] : []),
     ...(faqPage ? [faqPage] : [])
   ])

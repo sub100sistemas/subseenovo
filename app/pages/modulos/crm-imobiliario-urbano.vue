@@ -14,7 +14,7 @@ useSeoMeta({
   twitterDescription: description
 })
 
-usePageSchema({ title, description, software: true, breadcrumb: ['CRM Imobiliário Urbano'] })
+usePageSchema({ title, description, breadcrumb: ['CRM Imobiliário Urbano'] })
 </script>
 
 <template>

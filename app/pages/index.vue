@@ -16,7 +16,7 @@ useSeoMeta({
   twitterDescription: description
 })
 
-usePageSchema({ title, description, faqs: homeFaqs, software: true })
+usePageSchema({ title, description, faqs: homeFaqs })
 </script>
 
 <template>
