@@ -120,3 +120,17 @@ Alteração: `buildOrganization` passa a emitir `image` (`ImageObject` com `url`
 | Meta SEO (robots, canonical, `og:*`, `twitter:*`, description) e JSON-LD sem a `image` | Build local x site publicado, 18 rotas | Idênticos |
 | Site publicado com `Organization.image` | Site publicado | Pendente: depende de deploy |
 | Rich Results Test / Schema Markup Validator com `Organization.image` | Validadores externos | Não verificado: reexecutar no navegador após o deploy |
+
+## `lastmod` no sitemap (2026-10-09, build com `NUXT_PUBLIC_SITE_URL=https://subseenovo.pages.dev`)
+
+Implementação: `app/data/sitemapLastmod.json` (vazio), `buildSitemapEntries` em `app/data/seo.ts`, `modules/seo.ts` e `server/routes/sitemap.xml.ts`. Nenhuma data real foi cadastrada; nenhuma data de commit, build ou atual é usada.
+
+| Verificação | Origem | Resultado |
+| --- | --- | --- |
+| `pnpm build` no repositório, com `sitemapLastmod.json` vazio | Build local | Exit code 0 |
+| `.output/public/sitemap.xml`: 15 URLs, mesmas `<loc>` do sitemap publicado, sem nenhum `<lastmod>`; XML idêntico byte a byte ao publicado | Build local x site publicado | Validado |
+| Validação de `buildSitemapEntries` (teste isolado): aceita `{}`, data válida e a data de hoje; rejeita formato (`08/10/2026`, data com hora), data inexistente (`2026-02-30`), data futura, rota fora do sitemap (inclusive `noindex`), rota sem barra final e valor que não é texto | Teste isolado com datas fictícias, sem gravar no repositório | Validado |
+| Emissão de `<lastmod>` e falha de build com rota fora do sitemap | Cópia temporária fora do repositório, com 2 datas fictícias de teste | Validado: `<lastmod>` só nas 2 rotas informadas, `15 URLs no sitemap, 2 com lastmod` no log; build com exit code 1 e a mensagem `rota fora do sitemap` |
+| Datas reais por página | — | Pendente: nenhuma confirmada; todas as 15 URLs seguem sem `lastmod` |
+| Site publicado com `lastmod` | Site publicado | Pendente: depende de datas confirmadas e de deploy |
+| Search Console e validadores de sitemap | Validadores externos | Não verificado |

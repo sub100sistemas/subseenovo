@@ -1,7 +1,7 @@
-import { readdirSync } from 'node:fs'
+import { readdirSync, readFileSync } from 'node:fs'
 import { join, relative, sep } from 'node:path'
 import { defineNuxtModule, useLogger } from 'nuxt/kit'
-import { isIndexableSite, isNoindexPath, normalizeSiteUrl, withTrailingSlash } from '../app/data/seo'
+import { buildSitemapEntries, isIndexableSite, isNoindexPath, normalizeSiteUrl, withTrailingSlash } from '../app/data/seo'
 
 const collectPageFiles = (dir: string): string[] =>
   readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
@@ -29,16 +29,20 @@ export default defineNuxtModule({
       .map(({ route }) => route)
       .sort()
 
+    const lastmods = JSON.parse(readFileSync(join(nuxt.options.srcDir, 'data', 'sitemapLastmod.json'), 'utf8'))
+    const sitemapEntries = buildSitemapEntries(sitemapRoutes, lastmods, new Date().toISOString().slice(0, 10))
+    const datedCount = sitemapEntries.filter((entry) => entry.lastmod).length
+
     logger.info(
       production
-        ? `Produção (${siteUrl}): ${sitemapRoutes.length} URLs no sitemap`
+        ? `Produção (${siteUrl}): ${sitemapEntries.length} URLs no sitemap, ${datedCount} com lastmod`
         : `NÃO produção (siteUrl=${siteUrl}): noindex em todas as páginas e sem sitemap`
     )
 
     nuxt.hook('nitro:config', (nitroConfig) => {
       nitroConfig.virtual = {
         ...nitroConfig.virtual,
-        '#seo-routes': () => `export default ${JSON.stringify(sitemapRoutes)}`
+        '#seo-routes': () => `export default ${JSON.stringify(sitemapEntries)}`
       }
       nitroConfig.prerender = {
         ...nitroConfig.prerender,
