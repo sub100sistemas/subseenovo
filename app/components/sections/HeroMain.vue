@@ -62,7 +62,7 @@ const propertyIcons = [
           <p
             class="mt-4 max-w-xl text-[16px] font-bold leading-[1.4] text-ink tablet-lg:max-w-none tablet-lg:text-[18px] desktop-compact:text-[20px] desktop:text-[21px] desktop-full:text-[24px]"
           >
-            CRM SUBSEE desenvolvido para corretores e imobiliária urbanas e rurais
+            CRM SUBSEE desenvolvido para corretores e imobiliárias urbanas e rurais
           </p>
           <p
             class="mt-3 max-w-xl text-[16px] leading-[1.6] text-ink-soft tablet-lg:max-w-none tablet-lg:text-[18px] desktop-compact:text-[20px] desktop:text-[21px] desktop-full:text-[24px]"
