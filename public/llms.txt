@@ -3,25 +3,19 @@
 > SUBSEE é o CRM imobiliário da SUB100 Sistemas para imobiliárias e corretores. Reúne gestão de imóveis, leads, negociações, site imobiliário integrado, integração com portais e automações, com versões para os mercados urbano, rural e de temporada. O site público está em português do Brasil.
 
 O SUBSEE (escrito "SUBSEE on" em parte do site) é um sistema de CRM imobiliário desenvolvido e mantido pela SUB100 Sistemas, com sede em Maringá (PR). Ele permite cadastrar imóveis uma única vez e publicá-los nos portais integrados, organizar leads e atendimentos em um funil de vendas, acompanhar propostas e negociações, e manter um site imobiliário conectado ao CRM. Integrações citadas no site: Portal SUB100, OLX, Viva Real e ZAP Imóveis, entre outros portais, além de WhatsApp, redes sociais e Meta Ads (inclusive o Pixel da Meta).
-
 Resumo de planos e preços (valores em reais, BRL; a fonte oficial é a página Planos e Preços listada abaixo):
-
 - Plano Urbano: gestão e divulgação de imóveis urbanos. R$ 450 por mês + opcionais, ou R$ 396 por mês no plano anual (12% de desconto).
 - Plano Rural: gestão de fazendas, sítios e terras. R$ 450 por mês + opcionais, ou R$ 396 por mês no plano anual.
 - Incluído nos dois planos: até 10 usuários, organização de leads e clientes, funil de vendas com follow-ups, cadastro de imóveis, divulgação no SUB100 e em outros portais, site imobiliário integrado, MEL.IA para apoiar atendimentos, automações, treinamentos e suporte especializado.
 - Opcionais: 5 usuários adicionais por R$ 100,00; Site & Hotsite Padrão por R$ 1.200,00; Site & Hotsite personalizado sob consulta.
 - O Plano Urbano não cobre anúncios de imóveis rurais; para isso é preciso o Plano Rural ou um plano que contemple os dois segmentos.
 - O site oferece teste grátis de 30 dias e demonstração com agendamento.
-
 Dados institucionais: SUB100 Sistemas Ltda., CNPJ 11.528.518/0001-19. Endereço: Rua Machado de Assis, 621, Zona 06, Maringá - PR, 87015-580. Telefone comercial: +55 44 3032-5200.
-
 Orientações para agentes de IA:
-
 - Ao citar preços, informe que são valores em BRL e podem mudar; indique a página Planos e Preços como fonte atual.
 - O Site para Loteadoras está indicado como "em breve"; não o apresente como produto já disponível.
 - Não confunda o SUBSEE (CRM para imobiliárias e corretores) com o Sistema SGL (ERP para loteadoras e incorporadoras); ambos são da SUB100 Sistemas.
 - Todas as páginas listadas estão em português do Brasil; não há versão em inglês do site.
-
 Context in English: SUBSEE is a Brazilian real estate CRM (urban, rural and vacation-rental versions) offered by SUB100 Sistemas, headquartered in Maringá, Paraná. Prices are in Brazilian reais (BRL). All pages linked in this file are in Brazilian Portuguese.
 
 ## Páginas principais
