@@ -67,7 +67,7 @@ const replayCards: ReplayCard[] = [
                 class="h-full w-full object-cover"
                 loading="lazy"
               />
-              <div class="absolute inset-0 flex items-center justify-center">
+              <div class="absolute inset-0 flex items-center justify-center hidden">
                 <div class="relative flex size-[58px] items-center justify-center rounded-full border border-[#dde6f6] bg-white">
                   <img
                     src="/icons/eventos-icone-play-triangle.svg"
@@ -79,7 +79,7 @@ const replayCards: ReplayCard[] = [
               </div>
               <div
                 v-if="card.versionBadge"
-                class="absolute top-[33.3%] left-[38.1%] flex"
+                class="absolute top-[33.3%] left-[38.1%] flex"pn
               >
                 <span class="rounded-[4px] bg-[#fdfdfe] px-3 py-1 text-[20px] leading-none font-bold tracking-[-0.28px] text-[#2764f2]">
                   {{ card.versionBadge }}
