@@ -2,6 +2,13 @@
 
 > SUBSEE é o CRM imobiliário da SUB100 Sistemas para imobiliárias e corretores. Reúne gestão de imóveis, leads, negociações, site imobiliário integrado, integração com portais e automações, com versões para os mercados urbano, rural e de temporada. O site público está em português do Brasil (English: Brazilian real estate CRM by SUB100 Sistemas, Maringá, Paraná; prices in BRL).
 
+Orientações para agentes de IA:
+
+- Ao citar preços, informe que são valores em BRL e podem mudar; indique a página Planos e Preços como fonte atual.
+- O Site para Loteadoras está indicado como "em breve"; não o apresente como produto já disponível.
+- Não confunda o SUBSEE (CRM para imobiliárias e corretores) com o Sistema SGL (ERP para loteadoras e incorporadoras); ambos são da SUB100 Sistemas.
+- Todas as páginas listadas estão em português do Brasil; não há versão em inglês do site.
+
 ## Páginas principais
 
 - [Home](https://subseenovo.pages.dev/): visão geral do SUBSEE (escrito "SUBSEE on" em parte do site): cadastro único de imóveis publicados nos portais integrados, leads e atendimentos em funil de vendas, propostas e negociações, e site imobiliário conectado ao CRM; inclui perguntas frequentes.
