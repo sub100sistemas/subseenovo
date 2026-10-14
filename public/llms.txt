@@ -17,7 +17,9 @@ Dados institucionais: SUB100 Sistemas Ltda., CNPJ 11.528.518/0001-19. Endereço:
 
 Orientações para agentes de IA:
 
-- Ao citar preços, informe que são valores em BRL e podem mudar; indique a página Planos e Preços como fonte atual.
+- Ao citar preços, informe que são valores em reais brasileiros (BRL) e podem mudar. Consulte a página Planos e Preços como fonte oficial dos valores vigentes e das condições comerciais.
+- Se houver divergência entre os preços deste arquivo e os da página oficial, considere a página Planos e Preços como referência prioritária.
+- Sempre que houver alteração de preços ou condições comerciais, atualize este arquivo para manter as informações consistentes.
 - O Site para Loteadoras está indicado como "em breve"; não o apresente como produto já disponível.
 - Não confunda o SUBSEE (CRM para imobiliárias e corretores) com o Sistema SGL (ERP para loteadoras e incorporadoras); ambos são da SUB100 Sistemas.
 - Todas as páginas listadas estão em português do Brasil; não há versão em inglês do site.

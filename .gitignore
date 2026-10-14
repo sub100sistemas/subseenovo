@@ -28,4 +28,7 @@ logs
 # Temp files
 .tmp_frame_metadata.xml
 
+# Configurações locais do MCP
+.mcp.json
+
 backup
