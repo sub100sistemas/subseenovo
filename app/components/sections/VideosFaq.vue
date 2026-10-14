@@ -7,29 +7,24 @@ interface FaqItem {
 
 const faqs: FaqItem[] = [
   {
-    question: 'Que tipo de vídeos encontro na SUBSEE on?',
-    answer:
-      'Você encontra tutoriais, demonstrações de recursos e conteúdos que ajudam a entender como o sistema pode potencializar as vendas da sua imobiliária.'
+    question: 'Que tipos de vídeos encontro na SUBSEE?',
+    answer: 'Você encontra vídeos sobre novidades e atualizações do sistema, tutoriais de funcionalidades, demonstrações de recursos e gravações de lives. São conteúdos que ajudam sua equipe a aproveitar o CRM SUBSEE e potencializar as vendas da sua imobiliária.'
   },
   {
-    question: 'Os vídeos são organizados por categoria?',
-    answer:
-      'Sim. Os vídeos são organizados por categoria e duração, facilitando encontrar o conteúdo certo para cada dúvida ou funcionalidade do sistema.'
+    question: 'Como os vídeos são organizados?',
+    answer: 'Os vídeos são organizados por categorias e etapas de aprendizado, facilitando a busca pelo conteúdo ideal para cada dúvida ou funcionalidade. Eles também ficam disponíveis nas telas correspondentes do sistema, para que você possa consultar as orientações durante o uso.'
   },
   {
     question: 'Preciso ser cliente para assistir aos vídeos?',
-    answer:
-      'Não. Os vídeos estão disponíveis para qualquer pessoa que queira conhecer o SUBSEE, seja cliente ou esteja avaliando qual sistema contratar.',
-    answerClass: 'desktop-full:-mb-[6px] desktop-full:-ml-[6.53px] desktop-full:max-w-[845.833px]'
+    answer: 'Os vídeos são disponibilizados para clientes e usuários em período de teste gratuito. Se você ainda não utiliza o sistema, pode solicitar à nossa equipe comercial um vídeo de demonstração com as principais funcionalidades do CRM SUBSEE.',
   },
   {
     question: 'Posso assistir aos vídeos quantas vezes quiser?',
-    answer:
-      'Sim, os vídeos ficam disponíveis a qualquer momento, e você pode assistir quantas vezes precisar, no seu próprio ritmo.'
+    answer: 'Sim. Você pode acessar os vídeos a qualquer momento e assistir quantas vezes precisar, no seu próprio ritmo. A SUB100 Sistemas também atualiza a base de conhecimento sempre que novas funcionalidades são lançadas ou quando o sistema recebe melhorias significativas.'
   },
   {
-    question: 'Existem vídeos sobre planos e contratação?',
-    answer: 'Sim, também há vídeos explicando pacotes, valores e como escolher o plano ideal para sua imobiliária.'
+    question: 'Há vídeos sobre serviços e pacotes adicionais?',
+    answer: 'Sim. Há vídeos que explicam os serviços e pacotes adicionais disponíveis para contratação, como anúncios destacados no portal SUB100, créditos para inteligência artificial e outras opções para ampliar os recursos utilizados pela sua imobiliária.'
   }
 ]
 </script>

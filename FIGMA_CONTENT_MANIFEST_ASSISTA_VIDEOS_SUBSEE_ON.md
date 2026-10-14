@@ -89,12 +89,13 @@ Seção `pt-[40px] pb-[80px]`, fundo branco, sem painel cinza. Itens de 970px de
 
 | # | Node | Pergunta | Resposta |
 | --- | --- | --- | --- |
-| 1 | `3188:3550` | Que tipo de vídeos encontro na SUBSEE on? | Você encontra tutoriais, demonstrações de recursos e conteúdos que ajudam a entender como o sistema pode potencializar as vendas da sua imobiliária. |
-| 2 | `3188:3542` | Os vídeos são organizados por categoria? | Sim. Os vídeos são organizados por categoria e duração, facilitando encontrar o conteúdo certo para cada dúvida ou funcionalidade do sistema. |
-| 3 | `3188:3534` | Preciso ser cliente para assistir aos vídeos? | Não. Os vídeos estão disponíveis para qualquer pessoa que queira conhecer o SUBSEE, seja cliente ou esteja avaliando qual sistema contratar. |
-| 4 | `3188:3526` | Posso assistir aos vídeos quantas vezes quiser? | Sim, os vídeos ficam disponíveis a qualquer momento, e você pode assistir quantas vezes precisar, no seu próprio ritmo. |
-| 5 | `3188:3518` | Existem vídeos sobre planos e contratação? | Sim, também há vídeos explicando pacotes, valores e como escolher o plano ideal para sua imobiliária. |
-| 6 | `3188:3512` | Posso sugerir temas para novos vídeos? | **Sem texto de resposta no Figma** (item desenhado fechado, só com a pergunta). Ver Open Question Q4 da spec. |
+| 1 | `4102:3149` | Que tipos de vídeos encontro na SUBSEE? | Você encontra vídeos sobre novidades e atualizações do sistema, tutoriais de funcionalidades, demonstrações de recursos e gravações de lives. São conteúdos que ajudam sua equipe a aproveitar o CRM SUBSEE e potencializar as vendas da sua imobiliária. |
+| 2 | `4102:3141` | Como os vídeos são organizados? | Os vídeos são organizados por categorias e etapas de aprendizado, facilitando a busca pelo conteúdo ideal para cada dúvida ou funcionalidade. Eles também ficam disponíveis nas telas correspondentes do sistema, para que você possa consultar as orientações durante o uso. |
+| 3 | `4102:3133` | Preciso ser cliente para assistir aos vídeos? | Os vídeos são disponibilizados para clientes e usuários em período de teste gratuito. Se você ainda não utiliza o sistema, pode solicitar à nossa equipe comercial um vídeo de demonstração com as principais funcionalidades do CRM SUBSEE. |
+| 4 | `4102:3125` | Posso assistir aos vídeos quantas vezes quiser? | Sim. Você pode acessar os vídeos a qualquer momento e assistir quantas vezes precisar, no seu próprio ritmo. A SUB100 Sistemas também atualiza a base de conhecimento sempre que novas funcionalidades são lançadas ou quando o sistema recebe melhorias significativas. |
+| 5 | `4102:3117` | Há vídeos sobre serviços e pacotes adicionais? | Sim. Há vídeos que explicam os serviços e pacotes adicionais disponíveis para contratação, como anúncios destacados no portal SUB100, créditos para inteligência artificial e outras opções para ampliar os recursos utilizados pela sua imobiliária. |
+
+O FAQ foi revisado no Figma (frame `4102:3108`, dentro de `Section / Hero / FAQ` `3188:3507`): são 5 itens, todos com resposta e ícone "+". O antigo item 6 ("Posso sugerir temas para novos vídeos?") foi removido, o que encerra a Open Question Q4 da spec.
 
 ## Assets (inspecionados na Etapa 2; nada gravado em `public/`)
 
@@ -126,9 +127,8 @@ Os 29 arquivos abaixo foram baixados do MCP para uma pasta temporária, só para
 | Círculo de perfil 01 / 02 / 03 | `3188:3479`, `3188:3486`, `3188:3493` | 3 SVGs | 54×54 | Novos. Cores `#5D5FEF`, `#159C96`, `#7652B5` |
 | Triângulo dos perfis | `3188:3480` | SVG | 19,65×15,04 | Novo. Preenchimento branco |
 | Elipse decorativa do banner | `3188:3502` | SVG | 360×360 | Novo. Círculo branco a 8% de opacidade |
-| Linha divisória do FAQ | `3188:3513` | SVG | 970×1 | Novo (ou borda CSS de 1px, se o resultado for idêntico) |
-| Ícone do FAQ, itens 1 a 5 | `3188:3521` | SVG | 30×30 | **Reusar** `faq-plus-circle.svg` (paths idênticos, comprovado) |
-| Ícone do FAQ, item 6 | `3188:3514` | SVG | 30×30 | Círculo vazado com traço horizontal; equivale visualmente ao `faq-minus-circle.svg` existente (o traço vertical branco desse arquivo some sobre fundo branco). Confirmar com screenshot na Etapa 3 |
+| Linha divisória do FAQ | `4102:3150` | SVG | 970×1 | Novo (ou borda CSS de 1px, se o resultado for idêntico) |
+| Ícone do FAQ, itens 1 a 5 | `4102:3152` | SVG | 30×30 | **Reusar** `faq-plus-circle.svg` (paths idênticos, comprovado) |
 
 Os cards flutuantes do Hero ("Vídeos Práticos", "Time Capacitado") não têm imagem própria no Figma: são retângulos com blur de fundo, texto e ícone. Definir na Etapa 3 se viram HTML/CSS ou uma imagem composta.
 
@@ -137,7 +137,7 @@ Os cards flutuantes do Hero ("Vídeos Práticos", "Time Capacitado") não têm i
 - A foto do Hero e o texto dos dois cards flutuantes **diferem** dos assets de `modulos-base-de-conhecimento/` (`hero-visual.png`, `card_arrow.png`): não reusar.
 - O nome do frame no Figma é "Assista os videos do SUBSEE on" (sem acento); o H1 renderizado é "Assista **aos** vídeos do SUBSEE on". O botão da Home diz "Assista **os** vídeos do SUBSEE on". Divergência textual entre botão e H1 registrada; vale o texto renderizado de cada lugar.
 - Durações e títulos dos 3 vídeos parecem dados de demonstração do design (ver Q1 da spec).
-- O item 6 do FAQ usa o ícone de estado aberto (traço horizontal) mas não tem texto de resposta; os itens 1 a 5 têm resposta visível e ícone de "+". Registrado em Q4.
+- O FAQ tem 5 itens, todos com resposta visível e ícone de "+" (o item 6 foi removido do Figma).
 - O fundo do Hero da página tem gradiente e borda curva próprios; o divisor tem duas linhas. Ambos diferem dos de `layout/Hero.vue` e de `crm-hero-divider-onda.svg`.
 - O item 03 do FAQ tem a resposta 6,5px mais à esquerda que os demais no Figma (imperfeição do design; não replicar).
 - Nenhum frame mobile ou tablet existe no arquivo; o responsivo é derivado do projeto.
