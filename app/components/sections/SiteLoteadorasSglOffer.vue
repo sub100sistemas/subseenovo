@@ -19,7 +19,7 @@
             </h2>
 
             <p class="text-base leading-[1.4] text-ink tablet-lg:text-[18px]">
-              O ERP para <strong>loteadoras</strong> e <strong>incorporadas</strong>, o SGL é um
+              O ERP para <strong>loteadoras</strong> e <strong>incorporadoras</strong>, o SGL é um
               sistema de gestão fácil que se integra aos seus processos
             </p>
 

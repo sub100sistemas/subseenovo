@@ -34,7 +34,7 @@ const products: Product[] = [
     badge: 'SUB100 Loteadoras e Incorporadas',
     title: 'Simulador de vendas, mapa interativo, financeiro completo e portal do cliente',
     description:
-      'O ERP para loteadoras e incorporadas, o SGL é um sistema de gestão fácil que se integra aos seus processos',
+      'O ERP para loteadoras e incorporadoras, o SGL é um sistema de gestão fácil que se integra aos seus processos',
     cta: 'Conhecer o SGL',
     href: 'https://sistemasgl.com.br/',
     external: true

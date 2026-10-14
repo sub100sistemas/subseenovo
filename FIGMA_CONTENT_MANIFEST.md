@@ -580,7 +580,7 @@ Pasta de ícones: `public/icons` (não há fotos/rawImages neste nó — apenas 
 
 **Produto 2 - Nome/Selo:** "SUB100 Loteadoras e Incorporadas"
 **Produto 2 - Título:** "Simulador de vendas, mapa interativo, financeiro completo e portal do cliente"
-**Produto 2 - Descrição:** "O ERP para loteadoras e incorporadas, o SGL é um sistema de gestão fácil que se integra aos seus processos"
+**Produto 2 - Descrição:** "O ERP para loteadoras e incorporadoras, o SGL é um sistema de gestão fácil que se integra aos seus processos"
 **Produto 2 - Botão CTA:** "Saiba mais →"
 
 ### Assets

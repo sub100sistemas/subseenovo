@@ -142,8 +142,8 @@ financeiro completo e portal do cliente
 ```
 
 **Description:**
-O ERP para **loteadoras** e **incorporadas**, o SGL é um sistema de gestão fácil que se integra aos seus processos
-_(negrito em "loteadoras" e "incorporadas")_
+O ERP para **loteadoras** e **incorporadoras**, o SGL é um sistema de gestão fácil que se integra aos seus processos
+_(negrito em "loteadoras" e "incorporadoras")_
 
 **CTA:** Acessar o Sistema SGL →
 
