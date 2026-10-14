@@ -29,7 +29,7 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { property: 'fb:app_id', content: '2744542915835221' },
         //{ name: 'google-site-verification', content: 'slYoIrJvSODBYq-MPopRnn_7HCu0tWY6PZeCR4eAmTs' },
-       // { name: 'msvalidate.01', content: '58E04542907016EDD240F079F71CDAFE' },
+        //{ name: 'msvalidate.01', content: '58E04542907016EDD240F079F71CDAFE' },
         { name: 'author', content: 'SUB100 Sistemas Ltda' },
         { name: 'publisher', content: 'SUB100 Sistemas Ltda' }
       ],
@@ -39,7 +39,8 @@ export default defineNuxtConfig({
         { rel: 'preload', as: 'font', type: 'font/woff2', href: '/fonts/poppins-400-latin.woff2', crossorigin: 'anonymous' },
         { rel: 'preload', as: 'font', type: 'font/woff2', href: '/fonts/poppins-500-latin.woff2', crossorigin: 'anonymous' },
         { rel: 'preload', as: 'font', type: 'font/woff2', href: '/fonts/poppins-600-latin.woff2', crossorigin: 'anonymous' },
-        { rel: 'preload', as: 'font', type: 'font/woff2', href: '/fonts/poppins-700-latin.woff2', crossorigin: 'anonymous' }
+        { rel: 'preload', as: 'font', type: 'font/woff2', href: '/fonts/poppins-700-latin.woff2', crossorigin: 'anonymous' },
+        { rel: 'describedby', href: '/llms.txt' }
       ]
     }
   },
@@ -89,6 +90,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
+      routes: ['/llms.txt'],
       failOnError: false
     }
   },

@@ -1,4 +1,10 @@
-# SUBSEE
+import { normalizeSiteUrl } from '../../app/data/seo'
+
+export default defineEventHandler((event) => {
+  const siteUrl = normalizeSiteUrl(String(useRuntimeConfig(event).public.siteUrl))
+  setHeader(event, 'content-type', 'text/plain; charset=utf-8')
+
+  return `# SUBSEE
 
 > SUBSEE é o CRM imobiliário da SUB100 Sistemas para imobiliárias e corretores. Reúne gestão de imóveis, leads, negociações, site imobiliário integrado, integração com portais e automações, com versões para os mercados urbano, rural e de temporada. O site público está em português do Brasil.
 
@@ -28,28 +34,28 @@ Context in English: SUBSEE is a Brazilian real estate CRM (urban, rural and vaca
 
 ## Páginas principais
 
-- [Home](https://subseenovo.pages.dev/): visão geral do CRM imobiliário SUBSEE, com perguntas frequentes.
-- [Planos e Preços](https://subseenovo.pages.dev/planos-e-precos/): planos Urbano e Rural, itens incluídos, opcionais e valores atualizados.
+- [Home](${siteUrl}/): visão geral do CRM imobiliário SUBSEE, com perguntas frequentes.
+- [Planos e Preços](${siteUrl}/planos-e-precos/): planos Urbano e Rural, itens incluídos, opcionais e valores atualizados.
 
 ## Produtos e módulos
 
-- [CRM para imobiliárias](https://subseenovo.pages.dev/modulos/crm/): atendimentos, leads, agenda, propostas e negociações em um só CRM.
-- [CRM Imobiliário Urbano](https://subseenovo.pages.dev/modulos/crm-imobiliario-urbano/): funil Kanban, distribuição automática de leads, metas em tempo real e publicação nos principais portais.
-- [CRM Imobiliário Rural](https://subseenovo.pages.dev/modulos/crm-imobiliario-rural/): fazendas, sítios e terras, com dados técnicos da propriedade, negociação até o contrato e anúncios no Brasil e no exterior.
-- [CRM Imobiliário Temporada](https://subseenovo.pages.dev/modulos/crm-imobiliario-temporada/): aluguel por temporada, com calendário de reservas, repasses automáticos e comunicação com hóspedes.
-- [Site para Imobiliárias Urbanas](https://subseenovo.pages.dev/modulos/site-para-imobiliarias-urbanas/): fichas completas de imóveis, tradução automática e integração com o CRM e os portais.
-- [Site para Imobiliárias Rurais](https://subseenovo.pages.dev/modulos/site-para-imobiliarias-rurais/): fazendas, sítios e chácaras com dados georreferenciados, tradução automática e alcance na América do Sul.
-- [Site para Loteadoras](https://subseenovo.pages.dev/modulos/site-para-loteadoras/): lotes e lançamentos, integrado ao CRM SUBSEE e ao Sistema SGL. Ainda não disponível ("em breve").
-- [API e Hub de Integração](https://subseenovo.pages.dev/modulos/apis-hub-integrador/): integração com portais imobiliários, WhatsApp, redes sociais e Meta Ads, centralizando leads, imóveis e atendimentos.
+- [CRM para imobiliárias](${siteUrl}/modulos/crm/): atendimentos, leads, agenda, propostas e negociações em um só CRM.
+- [CRM Imobiliário Urbano](${siteUrl}/modulos/crm-imobiliario-urbano/): funil Kanban, distribuição automática de leads, metas em tempo real e publicação nos principais portais.
+- [CRM Imobiliário Rural](${siteUrl}/modulos/crm-imobiliario-rural/): fazendas, sítios e terras, com dados técnicos da propriedade, negociação até o contrato e anúncios no Brasil e no exterior.
+- [CRM Imobiliário Temporada](${siteUrl}/modulos/crm-imobiliario-temporada/): aluguel por temporada, com calendário de reservas, repasses automáticos e comunicação com hóspedes.
+- [Site para Imobiliárias Urbanas](${siteUrl}/modulos/site-para-imobiliarias-urbanas/): fichas completas de imóveis, tradução automática e integração com o CRM e os portais.
+- [Site para Imobiliárias Rurais](${siteUrl}/modulos/site-para-imobiliarias-rurais/): fazendas, sítios e chácaras com dados georreferenciados, tradução automática e alcance na América do Sul.
+- [Site para Loteadoras](${siteUrl}/modulos/site-para-loteadoras/): lotes e lançamentos, integrado ao CRM SUBSEE e ao Sistema SGL. Ainda não disponível ("em breve").
+- [API e Hub de Integração](${siteUrl}/modulos/apis-hub-integrador/): integração com portais imobiliários, WhatsApp, redes sociais e Meta Ads, centralizando leads, imóveis e atendimentos.
 
 ## Base de Conhecimento
 
-- [Base de Conhecimento](https://subseenovo.pages.dev/modulos/base-de-conhecimento/): central de ajuda, tutoriais e documentação do SUBSEE on, com vídeos, treinamentos, manuais e materiais de apoio; explica também como treinar a equipe para usar o sistema.
+- [Base de Conhecimento](${siteUrl}/modulos/base-de-conhecimento/): central de ajuda, tutoriais e documentação do SUBSEE on, com vídeos, treinamentos, manuais e materiais de apoio; explica também como treinar a equipe para usar o sistema.
 
 ## Institucional
 
-- [Política de Privacidade](https://subseenovo.pages.dev/lgpd/politica-de-privacidade/): coleta, uso e proteção de dados pessoais conforme a LGPD.
-- [Termos de Uso](https://subseenovo.pages.dev/lgpd/termos-de-uso/): termos de uso dos sites da SUB100 Sistemas.
+- [Política de Privacidade](${siteUrl}/lgpd/politica-de-privacidade/): coleta, uso e proteção de dados pessoais conforme a LGPD.
+- [Termos de Uso](${siteUrl}/lgpd/termos-de-uso/): termos de uso dos sites da SUB100 Sistemas.
 - [App SUBSEE](https://app.subsee.com.br): acesso ao sistema para clientes (requer login).
 - [SUB100 Sistemas](https://sub100sistemas.com.br/): site institucional da empresa.
 - [Portal de imóveis SUB100](https://sub100.com.br/): portal de anúncios onde assinantes do SUBSEE podem anunciar.
@@ -57,10 +63,12 @@ Context in English: SUBSEE is a Brazilian real estate CRM (urban, rural and vaca
 
 ## Optional
 
-- [Eventos](https://subseenovo.pages.dev/eventos/): lives, webinars e treinamentos online sobre o SUBSEE on, ao vivo pelo Zoom, com replays. Gratuitos para clientes.
-- [Vídeos do SUBSEE on](https://subseenovo.pages.dev/assista-os-videos-do-subsee-on/): vídeos curtos do sistema na prática, organizados por perfil (urbano, rural e locação).
+- [Eventos](${siteUrl}/eventos/): lives, webinars e treinamentos online sobre o SUBSEE on, ao vivo pelo Zoom, com replays. Gratuitos para clientes.
+- [Vídeos do SUBSEE on](${siteUrl}/assista-os-videos-do-subsee-on/): vídeos curtos do sistema na prática, organizados por perfil (urbano, rural e locação).
 - [Blog da SUB100](https://blog.sub100sistemas.com.br/): artigos sobre mercado imobiliário e produtos da SUB100.
 - [Canal do SUBSEE no YouTube](https://www.youtube.com/@subsee): vídeos e tutoriais do SUBSEE.
 - [Facebook](https://www.facebook.com/sub100brasil): página oficial da SUB100.
 - [Instagram](https://www.instagram.com/sub100brasil/): perfil oficial da SUB100.
 - [LinkedIn](https://www.linkedin.com/company/sub100/): página da empresa SUB100.
+`
+})
