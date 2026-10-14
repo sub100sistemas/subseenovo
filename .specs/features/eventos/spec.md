@@ -70,7 +70,7 @@ O nav principal do site (`HeaderBar.vue:8`) já tem o item de topo "Eventos" apo
 
 **Acceptance Criteria**:
 
-1. WHEN a página é renderizada THEN o sistema SHALL exibir a seção Replay (node `3171:41881`) com o H2 "Reveja nossos eventos e novidades", a descrição, exatamente 3 cards (LIVE / VERSÃO ATUAL / NOVOS TREINAMENTOS, com os títulos do manifesto) e o CTA "Ver mais vídeos no App SUBSEE" apontando para `https://app.subsee.com.br/treinamentos/eventos-online?page=1&order=default` em nova aba.
+1. WHEN a página é renderizada THEN o sistema SHALL exibir a seção Replay (node `3171:41881`) com o H2 "Conteúdos do CRM SUBSEE", a descrição, exatamente 3 cards (EVENTOS E REPLAYS / ATUALIZAÇÕES DO SISTEMA / BASE DE CONHECIMENTO, com os títulos do manifesto) e o CTA "Ver mais vídeos no App SUBSEE" apontando para `https://app.subsee.com.br/treinamentos/eventos-online?page=1&order=default` em nova aba.
 2. WHEN a página é renderizada THEN o sistema SHALL exibir a seção Overview (node `3171:41921`) com o H2 "Tudo que sua imobiliária precisa, em um só sistema com o SUBSEE on", a descrição e a composição visual (foto + blocos decorativos + ícone de play decorativo, sem link real).
 
 **Independent Test**: Rolar até essas 2 seções e confirmar que cada uma renderiza seu conteúdo e imagens corretamente, em isolamento visual das demais; confirmar que o CTA de Replay abre a URL externa em nova aba.

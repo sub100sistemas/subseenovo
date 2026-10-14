@@ -29,6 +29,47 @@ const embedSrc = computed(() =>
 )
 const titleId = useId()
 
+const detectedRatio = ref('')
+const ratio = computed(() => detectedRatio.value || props.aspect)
+const ratioCache = new Map<string, string>()
+let ratioRequest: AbortController | null = null
+
+const detectRatio = async () => {
+  ratioRequest?.abort()
+  detectedRatio.value = ''
+  if (props.provider !== 'vimeo') return
+  const key = `${props.videoId}/${props.videoHash}`
+  const cached = ratioCache.get(key)
+  if (cached) {
+    detectedRatio.value = cached
+    return
+  }
+  const request = new AbortController()
+  ratioRequest = request
+  const videoUrl = `https://vimeo.com/${props.videoId}${props.videoHash ? `/${props.videoHash}` : ''}`
+  try {
+    const response = await fetch(
+      `https://vimeo.com/api/oembed.json?url=${encodeURIComponent(videoUrl)}`,
+      { signal: request.signal }
+    )
+    if (!response.ok) return
+    const { width, height } = await response.json()
+    if (request.signal.aborted || !(width > 0 && height > 0)) return
+    ratioCache.set(key, `${width}/${height}`)
+    detectedRatio.value = `${width}/${height}`
+  } catch {
+    return
+  }
+}
+
+watch(
+  [() => props.modelValue, () => props.videoId, () => props.videoHash],
+  ([isOpen]) => {
+    if (import.meta.client && isOpen) detectRatio()
+  },
+  { immediate: true }
+)
+
 let previousFocus: HTMLElement | null = null
 let scrollLocked = false
 
@@ -106,6 +147,7 @@ watch(
 
 onBeforeUnmount(() => {
   if (!import.meta.client) return
+  ratioRequest?.abort()
   document.removeEventListener('keydown', onKeydown)
   document.removeEventListener('focusin', keepFocusInside)
   if (scrollLocked) unlockScroll()
@@ -117,7 +159,7 @@ onBeforeUnmount(() => {
     <Transition name="video-modal">
       <div
         v-if="modelValue"
-        class="fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto bg-[#0b0d1f]/75 backdrop-blur-[6px] tablet-lg:p-8"
+        class="fixed inset-0 z-[100] flex overflow-y-auto bg-[#0b0d1f]/75 backdrop-blur-[6px] tablet-lg:p-8"
         @click.self="close"
       >
         <div
@@ -125,8 +167,8 @@ onBeforeUnmount(() => {
           role="dialog"
           aria-modal="true"
           :aria-labelledby="titleId"
-          :style="{ '--video-ratio': aspect }"
-          class="video-modal-panel relative flex w-full flex-col bg-[linear-gradient(112.44deg,#5d5fef_0%,#2e386b_100%)] px-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] shadow-[0px_32px_80px_rgba(11,13,31,0.55)] max-tablet-lg:h-dvh tablet-lg:block tablet-lg:max-w-[960px] tablet-lg:rounded-[28px] tablet-lg:p-5 tablet-lg:pb-5"
+          :style="{ '--video-ratio': ratio }"
+          class="video-modal-panel relative m-auto flex w-full flex-col bg-[linear-gradient(112.44deg,#5d5fef_0%,#2e386b_100%)] px-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] shadow-[0px_32px_80px_rgba(11,13,31,0.55)] max-tablet-lg:h-dvh tablet-lg:block tablet-lg:rounded-[28px] tablet-lg:p-5 tablet-lg:pb-5"
           @click.self="closeOnEmptyArea"
         >
           <div
@@ -164,7 +206,7 @@ onBeforeUnmount(() => {
             @click.self="closeOnEmptyArea"
           >
             <div
-              class="overflow-hidden bg-black max-tablet-lg:aspect-(--video-ratio) max-tablet-lg:h-[min(100cqh,calc(100cqw/(var(--video-ratio))))] tablet-lg:aspect-video tablet-lg:w-full tablet-lg:rounded-[18px]"
+              class="overflow-hidden bg-black max-tablet-lg:aspect-(--video-ratio) max-tablet-lg:h-[min(100cqh,calc(100cqw/(var(--video-ratio))))] tablet-lg:aspect-(--video-ratio) tablet-lg:w-full tablet-lg:rounded-[18px]"
             >
               <iframe
                 :src="embedSrc"
@@ -203,6 +245,16 @@ onBeforeUnmount(() => {
 .video-modal-leave-to .video-modal-panel {
   opacity: 0;
   transform: translateY(16px) scale(0.96);
+}
+
+@media (min-width: 62rem) {
+  .video-modal-panel {
+    width: max(
+      20rem,
+      min(960px, calc(100vw - 4rem), calc((100dvh - 12.5rem) * (var(--video-ratio)) + 2.5rem))
+    );
+    transition: width 0.2s ease;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

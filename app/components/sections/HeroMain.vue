@@ -99,7 +99,7 @@ const propertyIcons = [
                   aria-hidden="true"
                   class="pointer-events-none absolute inset-0 z-0 size-full"
                 />
-                <span class="relative z-10">mais de 4 mil</span>
+                <span class="relative z-10">mais de 2 mil</span>
               </span>
               corretores e imobiliárias
             </p>

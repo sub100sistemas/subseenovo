@@ -15,6 +15,7 @@ interface DemoVideo {
   aspect?: string
 }
 
+
 const videos: DemoVideo[] = [
   {
     duration: '03:11',
@@ -24,10 +25,9 @@ const videos: DemoVideo[] = [
     linkLabel: 'Assistir ao vídeo →',
     thumbClass: 'bg-[linear-gradient(90deg,#5d5fef,#8b8dff)]',
     href: videosFallbackUrl,
-    videoId: '1187069961',
-    provider: 'vimeo',
-    videoHash: '97e15143b8',
-    aspect: '9/16'
+    videoId: 'tfr_QvprNoE',
+    provider: 'youtube',
+    aspect: '16/9'
   },
   {
     duration: '05:02',

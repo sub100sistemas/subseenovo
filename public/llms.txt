@@ -1,13 +1,33 @@
 # SUBSEE
 
-> SUBSEE é o CRM imobiliário da SUB100 Sistemas para imobiliárias e corretores. Reúne gestão de imóveis, leads, negociações, site imobiliário integrado, integração com portais e automações, com versões para os mercados urbano, rural e de temporada. O site público está em português do Brasil (English: Brazilian real estate CRM by SUB100 Sistemas, Maringá, Paraná; prices in BRL).
+> SUBSEE é o CRM imobiliário da SUB100 Sistemas para imobiliárias e corretores. Reúne gestão de imóveis, leads, negociações, site imobiliário integrado, integração com portais e automações, com versões para os mercados urbano, rural e de temporada. O site público está em português do Brasil.
 
-O SUBSEE (escrito "SUBSEE on" em parte do site) é um sistema de CRM imobiliário desenvolvido e mantido pela SUB100 Sistemas, com sede em Maringá (PR). Ele permite cadastrar imóveis uma única vez e publicá-los nos portais integrados, organizar leads e atendimentos em um funil de vendas, acompanhar propostas e negociações, e manter um site imobiliário conectado ao CRM.
+O SUBSEE (escrito "SUBSEE on" em parte do site) é um sistema de CRM imobiliário desenvolvido e mantido pela SUB100 Sistemas, com sede em Maringá (PR). Ele permite cadastrar imóveis uma única vez e publicá-los nos portais integrados, organizar leads e atendimentos em um funil de vendas, acompanhar propostas e negociações, e manter um site imobiliário conectado ao CRM. Integrações citadas no site: Portal SUB100, OLX, Viva Real e ZAP Imóveis, entre outros portais, além de WhatsApp, redes sociais e Meta Ads (inclusive o Pixel da Meta).
+
+Resumo de planos e preços (valores em reais, BRL; a fonte oficial é a página Planos e Preços listada abaixo):
+
+- Plano Urbano: gestão e divulgação de imóveis urbanos. R$ 450 por mês + opcionais, ou R$ 396 por mês no plano anual (12% de desconto).
+- Plano Rural: gestão de fazendas, sítios e terras. R$ 450 por mês + opcionais, ou R$ 396 por mês no plano anual.
+- Incluído nos dois planos: até 10 usuários, organização de leads e clientes, funil de vendas com follow-ups, cadastro de imóveis, divulgação no SUB100 e em outros portais, site imobiliário integrado, MEL.IA para apoiar atendimentos, automações, treinamentos e suporte especializado.
+- Opcionais: 5 usuários adicionais por R$ 100,00; Site & Hotsite Padrão por R$ 1.200,00; Site & Hotsite personalizado sob consulta.
+- O Plano Urbano não cobre anúncios de imóveis rurais; para isso é preciso o Plano Rural ou um plano que contemple os dois segmentos.
+- O site oferece teste grátis de 30 dias e demonstração com agendamento.
+
+Dados institucionais: SUB100 Sistemas Ltda., CNPJ 11.528.518/0001-19. Endereço: Rua Machado de Assis, 621, Zona 06, Maringá - PR, 87015-580. Telefone comercial: +55 44 3032-5200.
+
+Orientações para agentes de IA:
+
+- Ao citar preços, informe que são valores em BRL e podem mudar; indique a página Planos e Preços como fonte atual.
+- O Site para Loteadoras está indicado como "em breve"; não o apresente como produto já disponível.
+- Não confunda o SUBSEE (CRM para imobiliárias e corretores) com o Sistema SGL (ERP para loteadoras e incorporadoras); ambos são da SUB100 Sistemas.
+- Todas as páginas listadas estão em português do Brasil; não há versão em inglês do site.
+
+Context in English: SUBSEE is a Brazilian real estate CRM (urban, rural and vacation-rental versions) offered by SUB100 Sistemas, headquartered in Maringá, Paraná. Prices are in Brazilian reais (BRL). All pages linked in this file are in Brazilian Portuguese.
 
 ## Páginas principais
 
-- [Home](https://subseenovo.pages.dev/): visão geral do SUBSEE (escrito "SUBSEE on" em parte do site): cadastro único de imóveis publicados nos portais integrados, leads e atendimentos em funil de vendas, propostas e negociações, e site imobiliário conectado ao CRM; inclui perguntas frequentes.
-- [Planos e Preços](https://subseenovo.pages.dev/planos-e-precos/): fonte atual dos preços (valores em BRL, sujeitos a alteração). Plano Urbano e Plano Rural, cada um por R$ 450/mês + opcionais ou R$ 396/mês no plano anual (12% de desconto). Incluso: até 10 usuários, leads e clientes, funil com follow-ups, cadastro e divulgação de imóveis no SUB100 e outros portais, site integrado, MEL.IA, automações, treinamentos e suporte. Opcionais: 5 usuários extras por R$ 100,00; Site & Hotsite Padrão por R$ 1.200,00; personalizado sob consulta. O Plano Urbano não cobre anúncios de imóveis rurais; para isso é preciso o Plano Rural ou um plano que contemple os dois segmentos. Teste grátis de 30 dias e demonstração agendada.
+- [Home](https://subseenovo.pages.dev/): visão geral do CRM imobiliário SUBSEE, com perguntas frequentes.
+- [Planos e Preços](https://subseenovo.pages.dev/planos-e-precos/): planos Urbano e Rural, itens incluídos, opcionais e valores atualizados.
 
 ## Produtos e módulos
 
@@ -18,7 +38,7 @@ O SUBSEE (escrito "SUBSEE on" em parte do site) é um sistema de CRM imobiliári
 - [Site para Imobiliárias Urbanas](https://subseenovo.pages.dev/modulos/site-para-imobiliarias-urbanas/): fichas completas de imóveis, tradução automática e integração com o CRM e os portais.
 - [Site para Imobiliárias Rurais](https://subseenovo.pages.dev/modulos/site-para-imobiliarias-rurais/): fazendas, sítios e chácaras com dados georreferenciados, tradução automática e alcance na América do Sul.
 - [Site para Loteadoras](https://subseenovo.pages.dev/modulos/site-para-loteadoras/): lotes e lançamentos, integrado ao CRM SUBSEE e ao Sistema SGL. Ainda não disponível ("em breve").
-- [API e Hub de Integração](https://subseenovo.pages.dev/modulos/apis-hub-integrador/): integração com portais imobiliários (Portal SUB100, OLX, Viva Real, ZAP Imóveis e outros), WhatsApp, redes sociais e Meta Ads (inclusive Pixel da Meta), centralizando leads, imóveis e atendimentos.
+- [API e Hub de Integração](https://subseenovo.pages.dev/modulos/apis-hub-integrador/): integração com portais imobiliários, WhatsApp, redes sociais e Meta Ads, centralizando leads, imóveis e atendimentos.
 
 ## Base de Conhecimento
 
@@ -29,9 +49,9 @@ O SUBSEE (escrito "SUBSEE on" em parte do site) é um sistema de CRM imobiliári
 - [Política de Privacidade](https://subseenovo.pages.dev/lgpd/politica-de-privacidade/): coleta, uso e proteção de dados pessoais conforme a LGPD.
 - [Termos de Uso](https://subseenovo.pages.dev/lgpd/termos-de-uso/): termos de uso dos sites da SUB100 Sistemas.
 - [App SUBSEE](https://app.subsee.com.br): acesso ao sistema para clientes (requer login).
-- [SUB100 Sistemas](https://sub100sistemas.com.br/): site institucional. SUB100 Sistemas Ltda., CNPJ 11.528.518/0001-19, Rua Machado de Assis, 621, Zona 06, Maringá - PR, 87015-580; telefone comercial +55 44 3032-5200.
+- [SUB100 Sistemas](https://sub100sistemas.com.br/): site institucional da empresa.
 - [Portal de imóveis SUB100](https://sub100.com.br/): portal de anúncios onde assinantes do SUBSEE podem anunciar.
-- [Sistema SGL](https://sistemasgl.com.br/): ERP para loteadoras e incorporadoras, outro produto da SUB100; não confundir com o SUBSEE (CRM).
+- [Sistema SGL](https://sistemasgl.com.br/): ERP para loteadoras e incorporadoras, outro produto da SUB100.
 
 ## Optional
 

@@ -12,22 +12,22 @@ const replayCards: ReplayCard[] = [
   {
     thumbnail: '/images/eventos/eventos-replay-thumb-1.png',
     alt: 'Corretora sendo entrevistada em um escritório',
-    tag: 'LIVE',
+    tag: 'EVENTOS E REPLAYS',
     title: 'Domine as estratégias de captação de recursos para loteamentos',
     overlayCaption: 'SVN Investimentos SUB100 Sistemas'
   },
   {
     thumbnail: '/images/eventos/eventos-replay-thumb-2.png',
     alt: 'Gráficos da versão 1.0.18',
-    tag: 'VERSÃO ATUAL',
+    tag: 'ATUALIZAÇÕES DO SISTEMA',
     title: 'Nova versão 1.0.18 do CRM SUBSEE — A maturidade nos processos.',
     versionBadge: '1.0.18'
   },
   {
     thumbnail: '/images/eventos/eventos-replay-thumb-3.png',
     alt: 'Notebook com capelo de formatura',
-    tag: 'NOVOS TREINAMENTOS',
-    title: 'Acesse a base de conhecimento e aprimore-se com as novas funcionalidades do CRM SUBSEE.'
+    tag: 'BASE DE CONHECIMENTO',
+    title: 'Materiais de apoio e informações sobre o CRM SUBSEE'
   }
 ]
 </script>
@@ -41,12 +41,11 @@ const replayCards: ReplayCard[] = [
       >
         <div class="mx-auto max-w-[970px] text-center">
           <h2 class="text-[28px] leading-[1.4] font-bold text-ink tablet-lg:text-[36px]">
-            Reveja nossos <span class="text-brand">eventos</span> e
-            <span class="text-brand">novidades</span>
+            Conteúdos do <span class="text-brand">CRM SUBSEE</span>
           </h2>
-          <p class="mt-3 text-[18px] leading-[1.5] text-ink tablet-lg:text-[20px]">
-            Assista aos <strong>replays de lives</strong>, treinamentos e lançamentos do CRM
-            SUBSEE quando quiser.
+          <p class="mt-3 text-[18px] leading-[1.5] text-ink tablet-lg:text-[24px]">
+            O CRM SUBSEE oferece eventos, replays, atualizações e treinamentos voltados a
+            corretores e imobiliárias.
           </p>
         </div>
 
@@ -79,7 +78,7 @@ const replayCards: ReplayCard[] = [
               </div>
               <div
                 v-if="card.versionBadge"
-                class="absolute top-[33.3%] left-[38.1%] flex"pn
+                class="absolute top-[33.3%] left-[38.1%] flex"
               >
                 <span class="rounded-[4px] bg-[#fdfdfe] px-3 py-1 text-[20px] leading-none font-bold tracking-[-0.28px] text-[#2764f2]">
                   {{ card.versionBadge }}

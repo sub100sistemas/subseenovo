@@ -29,13 +29,13 @@ Fileira decorativa de 5 fotos reais (retratos de pessoas), sem texto, no topo da
 
 ## 3. Section / Hero / Replay — node `3171:41881`
 
-- **H2**: "Reveja nossos **eventos** e **novidades**" (as duas palavras em `#5d5fef`)
-- **Descrição** (acima do H2, mesmo bloco): "Assista aos **replays de lives**, treinamentos e lançamentos do CRM SUBSEE quando quiser." ("replays de lives" em negrito)
+- **H2** (36px, bold): "Conteúdos do **CRM SUBSEE**" ("CRM SUBSEE" em `#5d5fef`)
+- **Descrição** (abaixo do H2, 24px, largura 869px): "O CRM SUBSEE oferece eventos, replays, atualizações e treinamentos voltados a corretores e imobiliárias."
 - **Painel**: fundo em gradiente `linear-gradient(117.49deg, rgb(235,244,254) 2.78%, rgb(239,240,251) 65.12%, rgba(178,200,241,0.45) 104.45%)`, cantos `rounded-[50px]`.
 - **3 cards de vídeo/replay** (thumbnail + tag colorida + título + ícone de play central; card 1 tem legenda extra sobre a miniatura):
-  1. Tag "LIVE" (cor `#3359d9`) — Título: "Domine as estratégias de captação de recursos para loteamentos" — legenda sobreposta na miniatura: "SVN Investimentos SUB100 Sistemas"
-  2. Tag "VERSÃO ATUAL" (cor `#3359d9`) — Título: "Nova versão 1.0.18 do CRM SUBSEE — A maturidade nos processos." — miniatura tem um selo "1.0.18" sobreposto
-  3. Tag "NOVOS TREINAMENTOS" (cor `#3359d9`) — Título: "Acesse a base de conhecimento e aprimore-se com as novas funcionalidades do CRM SUBSEE." — sem legenda/selo extra
+  1. Tag "EVENTOS E REPLAYS" (cor `#3359d9`) — Título: "Domine as estratégias de captação de recursos para loteamentos" — legenda sobreposta na miniatura: "SVN Investimentos SUB100 Sistemas"
+  2. Tag "ATUALIZAÇÕES DO SISTEMA" (cor `#3359d9`) — Título: "Nova versão 1.0.18 do CRM SUBSEE — A maturidade nos processos." — miniatura tem um selo "1.0.18" sobreposto
+  3. Tag "BASE DE CONHECIMENTO" (cor `#3359d9`) — Título: "Materiais de apoio e informações sobre o CRM SUBSEE" — sem legenda/selo extra
 - **CTA**: "Ver mais vídeos no App SUBSEE →" — **link externo confirmado e real**: `https://app.subsee.com.br/treinamentos/eventos-online?page=1&order=default`, abre em nova aba (`target="_blank"`).
 - **Assets pendentes**: 3 thumbnails (nodes `3171:41890`/`41898`/`41907`), ícone de play (2 variantes: `imgPlay` usado nos cards 1 e 2, `imgPlay1` no card 3) + triângulo separado sobreposto (`imgTriangle`, reutilizado nos 3 cards) — todos precisam ser baixados do Figma.
 

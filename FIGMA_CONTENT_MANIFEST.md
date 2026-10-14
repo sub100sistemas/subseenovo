@@ -42,7 +42,7 @@ Pasta de imagens: `public/images/hero-main`. Pasta de ícones: `public/icons`.
 - Parágrafo (linha em negrito + corpo): "**CRM SUBSEE desenvolvido para corretores e imobiliárias urbanas e rurais**" seguido de "Com **26 anos de experiência** no mercado imobiliário, o SUBSEE combina maturidade, conhecimento e inovação para tornar o atendimento comercial da sua imobiliária mais moderno, integrado e eficiente."
 - Botão CTA 1 (primário): "Testar grátis por 30 dias"
 - Botão CTA 2 (secundário/link): "Assista os vídeos do SUBSEE on" (o texto aparece cortado/truncado no próprio Figma — reproduzido verbatim)
-- Bloco de confiança: "A confiança de **mais de 4 mil** corretores e imobiliárias" (com selo "tdesign:secured" e 5 avatares)
+- Bloco de confiança: "A confiança de **mais de 2 mil** corretores e imobiliárias" (com selo "tdesign:secured" e 5 avatares)
 - Link/Métrica 1: "Mais vendas · Ciclo mais rápido"
 - Link/Métrica 2: "Mais eficiência · Menos custo"
 - Ícones decorativos "Btn → Icones Imóveis" (locação, temporada, rural, venda, lançamentos) — sem texto associado
