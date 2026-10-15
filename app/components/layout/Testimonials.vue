@@ -71,7 +71,7 @@ const props = withDefaults(defineProps<Props>(), {
   brandLogoSrc: '/icons/logo-subsee-on-depoimentos.svg',
   brandLogoWidth: 183.919,
   brandLogoHeight: 45.17,
-  brandLogoAlt: 'Logomarca SUBSEE on',
+  brandLogoAlt: 'Logomarca SUBSEE',
   brandLogoClass: 'h-[45.17px] w-[183.919px]',
   cardsClass: 'relative flex w-full flex-col items-center gap-[30px] overflow-hidden rounded-2xl bg-white p-[30px] shadow-[0px_2px_40px_-6px_rgba(103,105,240,0.1)] tablet-lg:w-[31.53%] tablet-lg:shrink-0',
   cardClass: '',

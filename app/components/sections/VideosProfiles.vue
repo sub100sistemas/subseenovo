@@ -18,7 +18,7 @@ interface VideoProfile {
 
 const profiles: VideoProfile[] = [
   {
-    number: '01',
+    number: '03:10',
     title: 'Imobiliárias urbanas',
     description: 'Gestão de imóveis, integração com portais, coleta de leads, CRM e inteligência artificial em um só lugar.',
     linkLabel: 'Ver vídeos →',
@@ -30,7 +30,7 @@ const profiles: VideoProfile[] = [
     aspect: '9/16'
   },
   {
-    number: '02',
+    number: '01:44',
     title: 'Imobiliárias rurais',
     description: 'Cadastro especializados para cadastrar sua fazenda. CRM que fala a linguagem do agronegócio.',
     linkLabel: 'Ver vídeos →',
@@ -42,7 +42,7 @@ const profiles: VideoProfile[] = [
     aspect: '9/16'
   },
   {
-    number: '03',
+    number: '03:03',
     title: 'Imobiliárias locação & temporada',
     titleClass: 'text-[22px] leading-[22px]',
     description: 'Não importa qual é a sua locação, residência, comercial ou de temporada. Importa que a jornada esteja em um só sistema.',
@@ -82,7 +82,7 @@ const openVideo = (profile: VideoProfile) => {
         <template #eyebrow>Conteúdo para cada perfil</template>
         <template #title>Encontre os vídeos ideais para o seu negócio</template>
         <template #description>
-          Escolha um tema e descubra como o SUBSEE on pode apoiar sua rotina e seus objetivos.
+          Escolha um tema e descubra como o SUBSEE pode apoiar sua rotina e seus objetivos.
         </template>
       </SectionHeading>
 

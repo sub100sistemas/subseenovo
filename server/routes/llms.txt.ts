@@ -8,7 +8,7 @@ export default defineEventHandler((event) => {
 
 > SUBSEE é o CRM imobiliário da SUB100 Sistemas para imobiliárias e corretores. Reúne gestão de imóveis, leads, negociações, site imobiliário integrado, integração com portais e automações, com versões para os mercados urbano, rural e de temporada. O site público está em português do Brasil.
 
-O SUBSEE (escrito "SUBSEE on" em parte do site) é um sistema de CRM imobiliário desenvolvido e mantido pela SUB100 Sistemas, com sede em Maringá (PR). Ele permite cadastrar imóveis uma única vez e publicá-los nos portais integrados, organizar leads e atendimentos em um funil de vendas, acompanhar propostas e negociações, e manter um site imobiliário conectado ao CRM. Integrações citadas no site: Portal SUB100, OLX, Viva Real e ZAP Imóveis, entre outros portais, além de WhatsApp, redes sociais e Meta Ads (inclusive o Pixel da Meta).
+O SUBSEE (escrito "SUBSEE" em parte do site) é um sistema de CRM imobiliário desenvolvido e mantido pela SUB100 Sistemas, com sede em Maringá (PR). Ele permite cadastrar imóveis uma única vez e publicá-los nos portais integrados, organizar leads e atendimentos em um funil de vendas, acompanhar propostas e negociações, e manter um site imobiliário conectado ao CRM. Integrações citadas no site: Portal SUB100, OLX, Viva Real e ZAP Imóveis, entre outros portais, além de WhatsApp, redes sociais e Meta Ads (inclusive o Pixel da Meta).
 
 Resumo de planos e preços (valores em reais, BRL; a fonte oficial é a página Planos e Preços listada abaixo):
 
@@ -50,7 +50,7 @@ Context in English: SUBSEE is a Brazilian real estate CRM (urban, rural and vaca
 
 ## Base de Conhecimento
 
-- [Base de Conhecimento](${siteUrl}/modulos/base-de-conhecimento/): central de ajuda, tutoriais e documentação do SUBSEE on, com vídeos, treinamentos, manuais e materiais de apoio; explica também como treinar a equipe para usar o sistema.
+- [Base de Conhecimento](${siteUrl}/modulos/base-de-conhecimento/): central de ajuda, tutoriais e documentação do SUBSEE, com vídeos, treinamentos, manuais e materiais de apoio; explica também como treinar a equipe para usar o sistema.
 
 ## Institucional
 
@@ -63,8 +63,8 @@ Context in English: SUBSEE is a Brazilian real estate CRM (urban, rural and vaca
 
 ## Optional
 
-- [Eventos](${siteUrl}/eventos/): lives, webinars e treinamentos online sobre o SUBSEE on, ao vivo pelo Zoom, com replays. Gratuitos para clientes.
-- [Vídeos do SUBSEE on](${siteUrl}/assista-os-videos-do-subsee-on/): vídeos curtos do sistema na prática, organizados por perfil (urbano, rural e locação).
+- [Eventos](${siteUrl}/eventos/): lives, webinars e treinamentos online sobre o SUBSEE, ao vivo pelo Zoom, com replays. Gratuitos para clientes.
+- [Vídeos do SUBSEE](${siteUrl}/assista-os-videos-do-subsee-on/): vídeos curtos do sistema na prática, organizados por perfil (urbano, rural e locação).
 - [Blog da SUB100](https://blog.sub100sistemas.com.br/): artigos sobre mercado imobiliário e produtos da SUB100.
 - [Canal do SUBSEE no YouTube](https://www.youtube.com/@subsee): vídeos e tutoriais do SUBSEE.
 - [Facebook](https://www.facebook.com/sub100brasil): página oficial da SUB100.

@@ -36,7 +36,7 @@ const hubFeatures: HubFeatureItem[] = [
     </template>
 
     <template #lead>
-      Conecte o SUBSEE <span class="text-brand">on</span> aos seus sistemas favoritos e mantenha
+      Conecte o SUBSEE aos seus sistemas favoritos e mantenha
       leads, imóveis e atendimentos sempre sincronizados, sem esforço manual.
     </template>
 

@@ -41,7 +41,7 @@ const faqs: FaqItem[] = [
 <template>
   <Faq
     section-id="eventos-duvidas-frequentes"
-    panel-class="rounded-[28px] bg-[#F5F5F5] px-6 py-10 tablet-lg:rounded-[40px] tablet-lg:px-16 tablet-lg:py-16 desktop-full:rounded-[50px] desktop-full:px-[198px] desktop-full:py-[120px]"
+    panel-class="rounded-[28px] bg-[#F5F5F5] px-6 py-10 tablet-lg:rounded-[40px] tablet-lg:px-16 tablet-lg:py-16 desktop-full:rounded-[50px] desktop-full:px-[198px] desktop-full:py-[120px] mb-[50px]"
     header-class="mx-auto max-w-[800px] text-center"
     title-class="font-semibold desktop-full:text-[52px]"
     description-class="mt-4 text-lg text-black tablet-lg:text-[20px] desktop-full:mt-[25px]"
@@ -50,6 +50,6 @@ const faqs: FaqItem[] = [
     :faqs="faqs"
   >
     <template #title>Perguntas Frequentes</template>
-    <template #description>Tire suas dúvidas sobre lives, treinamentos e replays do SUBSEE on.</template>
+    <template #description>Tire suas dúvidas sobre lives, treinamentos e replays do SUBSEE.</template>
   </Faq>
 </template>

@@ -55,7 +55,7 @@ O nav principal do site (`HeaderBar.vue:8`) já tem o item de topo "Eventos" apo
 
 1. WHEN um visitante navega para `/eventos` THEN o sistema SHALL renderizar a página com status HTTP 200.
 2. WHEN a página é renderizada THEN o sistema SHALL exibir, no topo, a fileira decorativa de 5 fotos (node `3171:42079`), antes de qualquer outro conteúdo de `<main>`.
-3. WHEN a página é renderizada THEN o sistema SHALL exibir a seção Hero (node `3171:41850`) com o H1 "Eventos Online e Replays do SUBSEE on" (o "on" em `#e33b48`), a descrição, e o bloco "Próximo evento" (imagem `banner-eventos.png`, kicker "PRÓXIMO EVENTO", parágrafo de destaque, CTA "Inscreva-se!!!").
+3. WHEN a página é renderizada THEN o sistema SHALL exibir a seção Hero (node `3171:41850`) com o H1 "Eventos Online e Replays do SUBSEE" (o "on" em `#e33b48`), a descrição, e o bloco "Próximo evento" (imagem `banner-eventos.png`, kicker "PRÓXIMO EVENTO", parágrafo de destaque, CTA "Inscreva-se!!!").
 4. WHEN um visitante clica no item "Eventos" do nav principal (`HeaderBar.vue`) THEN o sistema SHALL navegar para `/eventos` (já wired hoje — apenas confirmar que continua funcionando).
 
 **Independent Test**: Rodar `pnpm dev`, abrir a Home, clicar em "Eventos" no menu e confirmar que a página carrega com a fileira de fotos e o Hero visíveis e funcionais.
@@ -71,7 +71,7 @@ O nav principal do site (`HeaderBar.vue:8`) já tem o item de topo "Eventos" apo
 **Acceptance Criteria**:
 
 1. WHEN a página é renderizada THEN o sistema SHALL exibir a seção Replay (node `3171:41881`) com o H2 "Conteúdos do CRM SUBSEE", a descrição, exatamente 3 cards (EVENTOS E REPLAYS / ATUALIZAÇÕES DO SISTEMA / BASE DE CONHECIMENTO, com os títulos do manifesto) e o CTA "Ver mais vídeos no App SUBSEE" apontando para `https://app.subsee.com.br/treinamentos/eventos-online?page=1&order=default` em nova aba.
-2. WHEN a página é renderizada THEN o sistema SHALL exibir a seção Overview (node `3171:41921`) com o H2 "Tudo que sua imobiliária precisa, em um só sistema com o SUBSEE on", a descrição e a composição visual (foto + blocos decorativos + ícone de play decorativo, sem link real).
+2. WHEN a página é renderizada THEN o sistema SHALL exibir a seção Overview (node `3171:41921`) com o H2 "Tudo que sua imobiliária precisa, em um só sistema com o SUBSEE", a descrição e a composição visual (foto + blocos decorativos + ícone de play decorativo, sem link real).
 
 **Independent Test**: Rolar até essas 2 seções e confirmar que cada uma renderiza seu conteúdo e imagens corretamente, em isolamento visual das demais; confirmar que o CTA de Replay abre a URL externa em nova aba.
 
@@ -143,11 +143,11 @@ O nav principal do site (`HeaderBar.vue:8`) já tem o item de topo "Eventos" apo
 
 ## SEO & Heading Hierarchy
 
-- **Title**: `SUBSEE | Eventos Online e Replays do SUBSEE on`
+- **Title**: `SUBSEE | Eventos Online e Replays do SUBSEE`
 - **Meta description**: "Participe de lives, webinars e treinamentos ao vivo sobre o sistema, e acesse os replays a qualquer momento para não perder nenhum conteúdo." (mesma frase da descrição do Hero, sem invenção de novo texto)
 - **Canonical**: não aplicável — o site não define `canonical` manualmente em nenhuma outra página `/modulos/*` hoje; seguir o mesmo padrão (sem tag canonical explícita, o Nuxt/host cuida disso).
 - **Hierarquia de headings**:
-  - `<h1>` único: "Eventos Online e Replays do SUBSEE on" (Hero)
+  - `<h1>` único: "Eventos Online e Replays do SUBSEE" (Hero)
   - `<h2>`: um por seção com heading real — Replay, Overview, Signup, FAQ (4 no total)
   - `<h3>`: título de cada um dos 3 cards de Replay (3) + os já existentes no `TheFooter.vue` (3, padrão sitewide) = 6 no total
   - O kicker "PRÓXIMO EVENTO" e o parágrafo de destaque dentro do Hero **não** viram heading (ver Assumptions) — permanecem `<p>`/`<span>`.

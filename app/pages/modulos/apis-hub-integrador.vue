@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const title = 'API e Hub de Integração para Imobiliárias | SUBSEE on'
+const title = 'API e Hub de Integração para Imobiliárias | SUBSEE'
 const description =
   'Integre o CRM aos portais imobiliários, WhatsApp, redes sociais e Meta Ads por API e Hub, centralizando leads, imóveis e atendimentos.'
 const keywords = 'API imobiliária, integração com portais imobiliários, hub de integração, integração WhatsApp CRM'

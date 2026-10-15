@@ -47,7 +47,7 @@ A página está funcional, responsiva em 21 larguras (320 a 1920px), com SEO cor
 | P2 · URB-08 Reports | `CrmUrbanoReports.vue`: H2 e 4 stat cards (68%, 2h, 312, 94%); CTA | Atendido |
 | P2 · URB-09 Portal Integrations | `CrmUrbanoPortalIntegrations.vue`: H2, mockup e 7 badges de portal (a SPEC diz 6; ver divergências); CTA | Atendido |
 | P2 · URB-10 Dashboard | `CrmUrbanoDashboard.vue`: H2, 4 `<h3>` e mockup | Atendido |
-| P3 · URB-11 Testimonials | `CrmUrbanoTestimonials.vue`: H2, logo SUBSEE on e 2 cards (Marcio Carmona/Carmona Imóveis, Edson Naka/Legado Urbano); cards de mesma altura quando lado a lado | Atendido |
+| P3 · URB-11 Testimonials | `CrmUrbanoTestimonials.vue`: H2, logo SUBSEE e 2 cards (Marcio Carmona/Carmona Imóveis, Edson Naka/Legado Urbano); cards de mesma altura quando lado a lado | Atendido |
 | P3 · URB-12 Other Modules | `CrmUrbanoOtherModules.vue`: 3 cards com links reais; os três navegam e abrem com o H1 correto | Atendido |
 | P3 · URB-13 FAQ | `CrmUrbanoFaq.vue`: 6 itens `<details>` com perguntas e respostas | Atendido |
 | P3 · URB-14 estado do FAQ | Item aberto: 91px → 187px, "+" some e "−" aparece; fechar restaura | Atendido |

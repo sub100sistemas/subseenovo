@@ -52,7 +52,7 @@ const features: PortfolioFeature[] = [
   >
     <template #heading>
       O anúncio de imóveis rurais no Brasil subiu<br class="hidden tablet-lg:block" />
-      de patamar com o SUBSEE <span class="text-[#f44336]">on</span>
+      de patamar com o SUBSEE
     </template>
 
     <template #lead>

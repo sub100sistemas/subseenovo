@@ -31,7 +31,7 @@ withDefaults(
   >
     <template #heading>
       <slot name="heading">
-        Assista aos vídeos<br />do SUBSEE <span class="text-[#e72f4d]">on</span>
+        Assista aos vídeos<br />do SUBSEE
       </slot>
     </template>
 

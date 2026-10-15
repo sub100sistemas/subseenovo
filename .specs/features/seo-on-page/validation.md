@@ -103,7 +103,7 @@ Páginas: `/modulos/site-para-loteadoras/`, `/eventos/`, `/planos-e-precos/`, `/
 
 1. Executar manualmente, no navegador, o Schema Markup Validator (contagens das 5 páginas restantes) e o Google Rich Results Test nas 6 URLs.
 2. Go-live: repetir a verificação em `subsee.com.br` com `NUXT_PUBLIC_SITE_URL=https://subsee.com.br`; `https://subsee.com.br/images/og-subsee.png` ainda retorna 404 porque o domínio serve o site antigo.
-3. Nomes do breadcrumb x navegação (observação, não erro): Planos ("Planos e preços" x menu "Preços" x H1 "Planos & Preços") e Vídeos ("Vídeos do SUBSEE on", sem link próprio no menu).
+3. Nomes do breadcrumb x navegação (observação, não erro): Planos ("Planos e preços" x menu "Preços" x H1 "Planos & Preços") e Vídeos ("Vídeos do SUBSEE", sem link próprio no menu).
 
 ## `Organization.image` (2026-10-09, build local com `NUXT_PUBLIC_SITE_URL=https://subseenovo.pages.dev`)
 

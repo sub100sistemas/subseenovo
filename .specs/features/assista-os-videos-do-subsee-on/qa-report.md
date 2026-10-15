@@ -1,4 +1,4 @@
-# Assista os vídeos do SUBSEE on QA Report
+# Assista os vídeos do SUBSEE QA Report
 
 **Spec**: `.specs/features/assista-os-videos-do-subsee-on/spec.md`
 **Rota**: `/assista-os-videos-do-subsee-on`

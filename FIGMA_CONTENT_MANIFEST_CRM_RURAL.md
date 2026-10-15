@@ -284,7 +284,7 @@ Pasta de ícones: `public/icons/`.
 ### Texto extraído (ordem visual)
 
 - H2: "O que **nossos clientes**" / "falam dos nossos " / "produtos e serviços" ("nossos clientes" em roxo)
-- Logomarca "SUBSEE on" à esquerda do bloco.
+- Logomarca "SUBSEE" à esquerda do bloco.
 
 **Depoimento 1:**
 - Avaliação: 5 estrelas
@@ -313,7 +313,7 @@ Cada card de depoimento tem 2 logos empilhados: "Soma Imóveis" (aparentemente u
 | Vettore (logo) | `public/icons/crm-rural-logo-vettore.svg` | 154 x 45 | logo | Logo Vettore Real Estate |
 | estrelas 1 (avaliação) — reaproveitar | `public/icons/icone-estrelas-avaliacao.svg` (já existente, mesma dimensão 161x27) | 161 x 27 | ícone | 5 estrelas de avaliação |
 | Group (aspas decorativas, 2 fragmentos) — reaproveitar se dimensão bater | `public/icons/aspas-abertura.svg`/`aspas-fechamento.svg` (já existentes) | ~91 x 67 | decorativo | decorativo |
-| Logo SUBSEE on (selo do bloco) — reaproveitar | `public/icons/logo-subsee-on.svg` (já existente) | 183.9 x 45.2 | logo | Logo SUBSEE on |
+| Logo SUBSEE (selo do bloco) — reaproveitar | `public/icons/logo-subsee-on.svg` (já existente) | 183.9 x 45.2 | logo | Logo SUBSEE |
 
 ---
 
@@ -355,7 +355,7 @@ Sem imagens novas.
 ### Texto extraído (ordem visual, de cima para baixo)
 
 - H2: "Perguntas Frequentes"
-- Subtítulo: "Tire suas dúvidas sobre o CRM Imobiliário da SUBSEE on."
+- Subtítulo: "Tire suas dúvidas sobre o CRM Imobiliário da SUBSEE."
 
 **Pergunta 1:** "O que é o CRM Imobiliário Rural do SUBSEE?"
 **Resposta 1:** "O CRM Imobiliário Rural do SUBSEE foi desenvolvido para corretores e imobiliárias que trabalham com fazendas, sítios, chácaras e outras propriedades rurais. O sistema permite cadastrar informações específicas desse mercado, como tipo de solo, bioma, áreas produtivas, pluviometria, CAR, arquivos KML e dados georreferenciados, oferecendo uma estrutura de anúncio muito mais completa do que a utilizada em imóveis urbanos."

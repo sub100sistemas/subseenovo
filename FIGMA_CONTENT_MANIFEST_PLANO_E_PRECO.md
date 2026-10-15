@@ -77,7 +77,7 @@ Estrutura idêntica ao card Urbano. Únicas diferenças de conteúdo:
 
 - **H2** (`3220:6097`): "Funcionalidades do **CRM Imobiliário**" (palavra destacada em roxo)
 - **Descrição** (`3220:6098`): "Compare os princípios recursos e escolha a solução ideal para sua operação" — **texto literal do Figma, incluindo o provável erro de digitação "princípios" (aparentando ser "principais")**. Manter verbatim; não corrigir sem confirmação do usuário.
-- **Cabeçalho das colunas**: "Urbano" (`3220:6110`) e "Rural" (`3220:6102`), cada uma com um botão "Site & hotsite padrão" (borda, seta). Logo "SUBSEE on" decorativo (`3220:6116`, asset `_2432243841280`) aparece apenas acima da coluna Urbano.
+- **Cabeçalho das colunas**: "Urbano" (`3220:6110`) e "Rural" (`3220:6102`), cada uma com um botão "Site & hotsite padrão" (borda, seta). Logo "SUBSEE" decorativo (`3220:6116`, asset `_2432243841280`) aparece apenas acima da coluna Urbano.
 
 ### 3.1 As 9 categorias (ordem visual topo → base)
 
@@ -120,7 +120,7 @@ Cada categoria lista N funcionalidades; **em todas as 45 linhas extraídas, tant
 ## 5. Section / Hero / FAQ — node `3220:6358`
 
 - **H2** (`3220:6360`): "Perguntas Frequentes"
-- **Descrição** (`3220:6361`): "Encontre respostas sobre os pacotes, valores e funcionalidades do SUBSEE on."
+- **Descrição** (`3220:6361`): "Encontre respostas sobre os pacotes, valores e funcionalidades do SUBSEE."
 - **6 perguntas/respostas** (numeradas 01–06 no Figma, ordem de exibição = 01 no topo; sem duplicação de conteúdo entre itens, diferente do achado de Eventos):
 
 1. **"O que a assinatura do SUBSEE oferece?"**
@@ -154,7 +154,7 @@ Cada categoria lista N funcionalidades; **em todas as 45 linhas extraídas, tant
 | Selo "12% OFF" (composição de 5 vetores + texto) | `3220:6011`–`6017` | nenhum | **EXPORTAR NOVO** — confirmado por `get_screenshot`: ilustração manuscrita única (seta espiral + traços verdes + texto rotacionado "12% OFF"), sem equivalente no repo. Exportar como uma única imagem achatada (T2). |
 | Checkmark verde (tabela comparativa **e** lista de recursos dos cards de preço) | `4:48875` etc. (`Vector`, 23×23, cards) · `Possui Urbano/Rural` (tabela, 25,84px) | **nenhum** — `icone-check-verde-circulo.svg` NÃO corresponde | **EXPORTAR NOVO** (corrige o veredito de 2026-09-29): o Figma usa um selo recortado (badge com check) `#1CD9A4`, e não o círculo `#00D39B` 16×16. Novo asset único `public/icons/plano-e-preco-check-badge.svg` (23×23), usado a 23px nos cards e 26px na tabela. O `icone-check-verde-circulo.svg` permanece intacto para as outras páginas que o usam. |
 | Seta dos botões CTA | `imgArrowRight`/`1`/`2`, `imgSvg` | `seta-botao-cta.svg` | **REUSAR** — confirmado por `get_screenshot`: seta fina "→" simples, bate com o path de 2 elementos (linha + chevron) do asset existente. `icone-seta-cta.svg`/`seta-botao-branca.svg` são variações de cor do mesmo path — usar a de cor correta por contexto (branca dentro de botão preenchido roxo, escura dentro de botão outline). |
-| Logo "SUBSEE on" no cabeçalho da coluna Urbano (tabela Features) | `3220:6116`/`6117` | `logo-subsee-on.svg` | **REUSAR** — confirmado por `get_screenshot`: wordmark "SUBSEE" (`#313846`) + "on" em vermelho (`#E72F4D`) boxado, idêntico ao asset existente. Nenhum export novo. |
+| Logo "SUBSEE" no cabeçalho da coluna Urbano (tabela Features) | `3220:6116`/`6117` | `logo-subsee-on.svg` | **REUSAR** — confirmado por `get_screenshot`: wordmark "SUBSEE" (`#313846`) + "on" em vermelho (`#E72F4D`) boxado, idêntico ao asset existente. Nenhum export novo. |
 | Ícones plus/minus do FAQ | `imgPlusCircle`, `imgPlusCircle1` | `faq-plus-circle.svg`, `faq-minus-circle.svg` | **REUSAR** — confirmado pela estrutura do SVG existente: `faq-plus-circle.svg` = círculo preenchido preto + cruz branca (estado fechado, itens 01–05); `faq-minus-circle.svg` = círculo apenas com contorno + traço horizontal (estado aberto, item 06) — bate exatamente com o padrão visto no screenshot da seção FAQ. |
 | Linha divisória entre itens de FAQ | `imgLine8` | padrão já usado em `CrmFaq.vue`/`HeroFaq.vue` | **REUSAR** — classe/estilo existente (borda inferior), sem novo asset. |
 
@@ -187,7 +187,7 @@ Fonte: arquivo `hMjVAFfVR3dgKDrxmwUhvL`, seção `4:48841` (`Page` `4:48842`, 19
 | Cards | `4:48867` (Urbano) · `4:48903` (Rural) | 471×908, borda 2px `#686af1`, raio 16, padding 42/24/46/40, gap 20 (Urbano) / 26 (Rural); gap entre cards 29px |
 | Conteúdo dos cards | — | título 36px Bold `#5d5fef`; descrição 20px `#666e8a` `leading 1.4`; preço "R$450" 48px SemiBold `#313846` (tracking −1,44px) + "/" e "mês + opcionais" 22px; CTA 401×67 `#5d5fef` raio 12; lista 16px `#404040` (itens com 23px de check); "+ Opcionais" 401×67 borda 2px `#313846` raio 12, 20px SemiBold |
 | Features (bloco) | `4:48943` | bloco `#f5f5f5`, raio 50, 1360 de largura; H2 32px Bold `#0b0d0f` + "CRM Imobiliário" `#5d5fef`; descrição 26px `#313846` |
-| Features (painéis e faixas) | `4:48947` | área 1099×2584: painéis brancos (opacidade 0,8, raio 16, 370 de largura) em x=319 (Urbano) e x=729 (Rural); título "Urbano"/"Rural" 32px Bold; botão "Site & hotsite padrão" 310×55,46, borda 1px `#313846`, raio 8, 20px Medium; logo SUBSEE on; 9 categorias com título 16px SemiBold `#5d5fef`, faixa `rgba(93,95,239,.08)` com opacidade 0,5, itens 16px Regular `#0b0d0f` com `list-disc` (linha de 28px, gap 10px) |
+| Features (painéis e faixas) | `4:48947` | área 1099×2584: painéis brancos (opacidade 0,8, raio 16, 370 de largura) em x=319 (Urbano) e x=729 (Rural); título "Urbano"/"Rural" 32px Bold; botão "Site & hotsite padrão" 310×55,46, borda 1px `#313846`, raio 8, 20px Medium; logo SUBSEE; 9 categorias com título 16px SemiBold `#5d5fef`, faixa `rgba(93,95,239,.08)` com opacidade 0,5, itens 16px Regular `#0b0d0f` com `list-disc` (linha de 28px, gap 10px) |
 | Nota e botão | `4:49169` | nota 14px Light Italic `#313846`; botão 426×55 `#5d5fef`, raio 8, 20px Medium; gap 219px |
 | Opcionais | `4:49182` | 409 de altura; cartões Urbano (`#5d5fef`) e Rural (`#686af1`) 370×248, borda 2px, raio 16, título 32px Bold; faixa tabular 1085×135 (`rgba(93,95,239,.08)`, opacidade 0,65) com 3 linhas de 45px e divisores `rgba(49,56,70,.12)`; rótulo "Opcionais" 26px SemiBold `#5d5fef`; CTA 297×56 em x=964 / y=313 (no arquivo `hMjV…` o texto é "Testar grátis por 30 dias"; vale "Agendar Demonstração" do arquivo `vX7q`, node `3849:3129`, por decisão do usuário em 2026-10-04) |
 | FAQ | `4:49206` | fundo **branco** (sem painel cinza); H2 52px SemiBold `#313846`; descrição 20px; itens com pergunta 20px SemiBold, resposta 16px/26px, divisor 1px, largura 970px |

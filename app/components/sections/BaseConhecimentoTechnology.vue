@@ -8,13 +8,11 @@ const mockupImgAttrs = {
 </script>
 
 <template>
-  <CrmTechnology
+  <TechnologyBoxed
     section-id="base-conhecimento-tecnologia"
-    title-class="mx-auto leading-[1.4] desktop-full:max-w-[1000px]"
     mockup-src="/images/modulos-base-de-conhecimento/technology-mockup.png"
     :mockup-width="2200"
     :mockup-height="1292"
-    mockup-sizes="mobile-lg:100vw tablet-lg:920px desktop:1100px"
     :mockup-img-attrs="mockupImgAttrs"
   >
     <template #title>
@@ -27,5 +25,11 @@ const mockupImgAttrs = {
       CRM imobiliário e todas as outras funcionalidades do Sistema SUBSEE imobiliário, encontra-se
       dentro da <strong>"Base de conhecimento"</strong>.
     </template>
-  </CrmTechnology>
+
+    <template #cta>
+      <CtaButton variant="primary" to="/testar-gratis/" class="whitespace-nowrap">
+        Testar grátis por 30 dias
+      </CtaButton>
+    </template>
+  </TechnologyBoxed>
 </template>

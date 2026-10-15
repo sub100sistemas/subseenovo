@@ -18,10 +18,10 @@ interface DemoVideo {
 
 const videos: DemoVideo[] = [
   {
-    duration: '03:11',
+    duration: '00:31',
     type: 'DEMONSTRAÇÃO',
-    title: 'Organize imóveis e publique com agilidade',
-    description: 'Cadastre, organize e distribua seus imóveis nos principais canais com mais eficiência.',
+    title: 'CRM completo para corretores e imobiliárias',
+    description: 'Plugin para WhatsApp, funil de vendas, automação de processos e playbook de vendas.',
     linkLabel: 'Assistir ao vídeo →',
     thumbClass: 'bg-[linear-gradient(90deg,#5d5fef,#8b8dff)]',
     href: videosFallbackUrl,
@@ -30,10 +30,10 @@ const videos: DemoVideo[] = [
     aspect: '16/9'
   },
   {
-    duration: '05:02',
+    duration: '00:58',
     type: 'DEMONSTRAÇÃO',
-    title: 'Centralize leads e atendimento',
-    description: 'Reúna contatos, mensagens e histórico para acompanhar cada oportunidade do início ao fim.',
+    title: 'CRM especializado em imobiliárias e corretores rurais',
+    description: 'Cadastro técnico, mapas KMZ com atributos dos imóveis e processos de venda específicos para imóveis rurais.',
     linkLabel: 'Assistir ao vídeo →',
     thumbClass: 'bg-[linear-gradient(90deg,#17a6a6,#66d4c9)]',
     href: videosFallbackUrl,
@@ -43,10 +43,10 @@ const videos: DemoVideo[] = [
     aspect: '9/16'
   },
   {
-    duration: '03:46',
+    duration: '00:58',
     type: 'DEMONSTRAÇÃO',
-    title: 'Acompanhe sua equipe e oportunidades',
-    description: 'Visualize tarefas, agenda e evolução comercial para tomar decisões com mais clareza.',
+    title: 'CRM especializado em locação anual e de temporada',
+    description: 'Esteira digital para locação anual e gestão completa de locações de curta duração ou de temporada.',
     linkLabel: 'Assistir ao vídeo →',
     thumbClass: 'bg-[linear-gradient(90deg,#7357c7,#b491e8)]',
     href: videosFallbackUrl,
@@ -80,7 +80,7 @@ const openVideo = (video: DemoVideo) => {
           description-class="mx-auto mt-[9px] max-w-[1100px] text-[16px] leading-normal text-[#596273] tablet-lg:text-[18px] desktop-full:min-h-[60px]"
         >
           <template #eyebrow>Vídeos demonstrativos</template>
-          <template #title>Veja o SUBSEE on em ação</template>
+          <template #title>Veja o SUBSEE em ação</template>
           <template #description>
             Conteúdos rápidos para conhecer os recursos que fazem diferença na rotina da sua imobiliária.
           </template>

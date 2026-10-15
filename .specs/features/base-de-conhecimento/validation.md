@@ -57,7 +57,7 @@ A **faixa 980–1250px** (980, 1000, 1050, 1100, 1150, 1198, 1199, 1200 e 1250) 
 | BC-ID | Evidência | Situação |
 | --- | --- | --- |
 | BC-01 rota | HTTP 200; 8 seções na ordem do Figma; `app/pages/modulos/base-de-conhecimento.vue` as compõe nessa ordem | Atendido |
-| BC-02 Hero | H1 "Central de Ajuda, Tutoriais e Documentação do SUBSEE on" com "on" em `#e72f4d`, descrição, cards, 5 ícones e selo; sem CTA. A altura de 513px vem do shell compartilhado `layout/Hero.vue` (CRM e APIs medem o mesmo), contra 568px no Figma | Atendido (diferença visual no shell; Hero **não alterado**) |
+| BC-02 Hero | H1 "Central de Ajuda, Tutoriais e Documentação do SUBSEE" com "on" em `#e72f4d`, descrição, cards, 5 ícones e selo; sem CTA. A altura de 513px vem do shell compartilhado `layout/Hero.vue` (CRM e APIs medem o mesmo), contra 568px no Figma | Atendido (diferença visual no shell; Hero **não alterado**) |
 | BC-03 Technology | `BaseConhecimentoTechnology.vue` envolve `CrmTechnology.vue`; mockup 2200×1292 e CTA "Testar grátis por 30 dias" → `/testar-gratis/` (clicado, chega à rota) | Atendido |
 | BC-04 Training | Imagem, descrição e 4 features (`<h3>`); CTA → `/testar-gratis/` (clicado) | Atendido |
 | BC-05 mega-menu | 1440px: hover em "Módulos" e clique levam à rota; 375px: botão "Abrir menu" → "Módulos" → link → rota, e o menu fecha. O footer não tem link para a página, e a Home tem um, só no header | Atendido |

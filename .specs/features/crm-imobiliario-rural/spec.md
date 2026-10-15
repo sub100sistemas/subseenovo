@@ -85,7 +85,7 @@ Toda ambiguidade foi resolvida ou registrada aqui — nada fica silenciosamente 
 
 **Acceptance Criteria**:
 
-1. WHEN a página é renderizada THEN o sistema SHALL exibir a seção Testimonials (node `3127:3200`) com o H2 "O que nossos clientes falam dos nossos produtos e serviços", a logomarca SUBSEE on e 2 cards de depoimento (Henrique Benedini/Benedini Fazendas, Julio Silveira/Vettore Uruguay) com altura igual entre si.
+1. WHEN a página é renderizada THEN o sistema SHALL exibir a seção Testimonials (node `3127:3200`) com o H2 "O que nossos clientes falam dos nossos produtos e serviços", a logomarca SUBSEE e 2 cards de depoimento (Henrique Benedini/Benedini Fazendas, Julio Silveira/Vettore Uruguay) com altura igual entre si.
 2. WHEN a página é renderizada THEN o sistema SHALL exibir a seção Other Modules (node `3089:13356`) com o H2 "Conheça os outros módulos do CRM Imobiliário" e 3 cards linkando para rotas reais: CRM Imobiliário → `/modulos/crm`, CRM Imobiliário Urbano → `/modulos/crm-imobiliario-urbano`, CRM para Temporada → `/modulos/crm-imobiliario-temporada`.
 3. WHEN a página é renderizada THEN o sistema SHALL exibir a seção FAQ (node `3112:16782`) com o H2 "Perguntas Frequentes" como um accordion com as 6 perguntas/respostas reais extraídas do Figma (o que é o CRM Rural, teste antes de contratar, atendimento a urbano/temporada, informações registráveis da propriedade, publicação em portais, acompanhamento de metas).
 4. WHILE um item do accordion de FAQ está aberto THE sistema SHALL indicar visualmente o estado expandido (ícone "−" em vez de "+"), consistente com `CrmFaq.vue` (`AD-008`).

@@ -1,8 +1,8 @@
 <script setup lang="ts">
-const title = 'Vídeos do CRM Imobiliário SUBSEE on: Veja na Prática'
+const title = 'Vídeos do CRM Imobiliário SUBSEE: Veja na Prática'
 const description =
-  'Assista a vídeos curtos do SUBSEE on e veja na prática como organizar imóveis, centralizar leads e acompanhar a equipe no CRM imobiliário.'
-const keywords = 'vídeos CRM imobiliário, SUBSEE on em vídeo, software imobiliário na prática'
+  'Assista a vídeos curtos do SUBSEE e veja na prática como organizar imóveis, centralizar leads e acompanhar a equipe no CRM imobiliário.'
+const keywords = 'vídeos CRM imobiliário, SUBSEE em vídeo, software imobiliário na prática'
 
 useSeoMeta({
   title,
@@ -14,7 +14,7 @@ useSeoMeta({
   twitterDescription: description
 })
 
-usePageSchema({ title, description, breadcrumb: ['Vídeos do SUBSEE on'] })
+usePageSchema({ title, description, breadcrumb: ['Vídeos do SUBSEE'] })
 </script>
 
 <template>
@@ -24,5 +24,6 @@ usePageSchema({ title, description, breadcrumb: ['Vídeos do SUBSEE on'] })
     <VideosDemo />
     <VideosProfiles />
     <VideosFaq />
+    <CrmOtherModulesVideos />
   </main>
 </template>

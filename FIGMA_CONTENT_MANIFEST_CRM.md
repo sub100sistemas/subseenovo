@@ -243,7 +243,7 @@ Ao inspecionar os assets vetoriais extraídos deste node, foram encontrados **do
 | Bellakaza | `public/icons/logo-bellakaza-negocios-imobiliarios.svg` | 126 x 55 (viewBox) | logo | Logo Bellakaza Negócios Imobiliários |
 | ideal 1 | `public/icons/logo-ideal-imoveis.svg` | 164 x 50 (viewBox) | logo | Logo Ideal Imóveis |
 
-Reaproveitados sem novo download (idênticos aos já existentes da Home): estrelas de avaliação → `public/icons/icone-estrelas-avaliacao.svg` (161x27, mesmo tamanho exato do asset encontrado neste node); aspas decorativas → `public/icons/aspas-abertura.svg` e `public/icons/aspas-fechamento.svg` (93.3x69.5, mesmo tamanho exato); logo "SUBSEE on" do selo decorativo no canto do bloco → `public/icons/logo-subsee-on.svg` (dimensão muito próxima: 183.9x45.2 no CRM vs. 183.9x40 já existente — mesma marca, recorte ligeiramente diferente, reaproveitado).
+Reaproveitados sem novo download (idênticos aos já existentes da Home): estrelas de avaliação → `public/icons/icone-estrelas-avaliacao.svg` (161x27, mesmo tamanho exato do asset encontrado neste node); aspas decorativas → `public/icons/aspas-abertura.svg` e `public/icons/aspas-fechamento.svg` (93.3x69.5, mesmo tamanho exato); logo "SUBSEE" do selo decorativo no canto do bloco → `public/icons/logo-subsee-on.svg` (dimensão muito próxima: 183.9x45.2 no CRM vs. 183.9x40 já existente — mesma marca, recorte ligeiramente diferente, reaproveitado).
 
 ---
 
@@ -287,7 +287,7 @@ Sem imagens novas nesta seção.
 ### Texto extraído (ordem visual)
 
 - H2: "Perguntas Frequentes"
-- Subtítulo: "Tire suas dúvidas sobre o CRM Imobiliário da SUBSEE on."
+- Subtítulo: "Tire suas dúvidas sobre o CRM Imobiliário da SUBSEE."
 
 **Pergunta 1:** "Como funciona o CRM Imobiliário SUBSEE?"
 **Resposta 1:** "O CRM Imobiliário SUBSEE centraliza clientes, leads, atendimentos, agendamentos, propostas e negociações em um único sistema. A imobiliária pode acompanhar toda a jornada comercial, desde a entrada do lead e o primeiro atendimento até a negociação e o fechamento do contrato, proporcionando mais organização, controle e produtividade para corretores e gestores."

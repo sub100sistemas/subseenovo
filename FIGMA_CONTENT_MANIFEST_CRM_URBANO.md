@@ -35,7 +35,7 @@ Conforme a tabela Out of Scope do `spec.md`:
 | 7. Portal Integrations | 7 badges flutuantes de portal | **markup real** (círculo em CSS + logo SVG) |
 | 8. Dashboard | Mockup do notebook com o Dashboard SUBSEE | **imagem estática** |
 | 8. Dashboard | 4 itens (ícone + H3 + descrição) + 2 badges flutuantes | **markup real** |
-| 9. Testimonials | Bloco lavanda, onda, logo SUBSEE on, 2 cards | **markup real** |
+| 9. Testimonials | Bloco lavanda, onda, logo SUBSEE, 2 cards | **markup real** |
 | 10. Other Modules | 3 cards de módulo | **markup real** |
 | 11. FAQ | Accordion de 6 itens | **markup real** |
 
@@ -449,7 +449,7 @@ Frame: `x=0 y=6580.78 width=1920 height=770`, `bg white`, `py=40px`.
 - `Bloco` (`3089:7988`) — `x=260 y=40 w=1400 h=690`, `rounded-[50px]`, `bg #ebf4fe`, `overflow-clip`
   - `SVG` (`3089:7989`) — onda decorativa, `x=-260 y=-17 w=1917.9 h=194.64`
   - `Heading / H2` (`3089:8005`) — centro em `(267.5, 264.5)`
-  - `Logomarca` (`3089:7995`) — caixa branca `275.78 x 85.49`, `rounded-[20px]`, em `x=130 y=403`, com o logo "SUBSEE on" `183.92 x 45.17` em `x=176 y=424.64`
+  - `Logomarca` (`3089:7995`) — caixa branca `275.78 x 85.49`, `rounded-[20px]`, em `x=130 y=403`, com o logo "SUBSEE" `183.92 x 45.17` em `x=176 y=424.64`
   - `Cards → Depoimentos` (`3089:7992`) — `x=522 y=66`, flex `gap=50px`, 2 cards de `w=380`
 
 ### Texto extraído (ordem visual)
@@ -483,7 +483,7 @@ Um `get_design_context` no node da seção inteira devolve, para **os dois** car
 | Nome Figma | Caminho local salvo | W x H | Tipo | Alt sugerido |
 |---|---|---|---|---|
 | `Legado` (card `3089:7993`) | `public/icons/crm-urbano-logo-legado-urbano.svg` | 250 x 34.09 | logo | Logo Legado Urbano |
-| `_2432243841280` (`3089:7998`) | `public/icons/crm-urbano-logo-subsee-on.svg` | 183.92 x 45.17 | logo | Logo SUBSEE on |
+| `_2432243841280` (`3089:7998`) | `public/icons/crm-urbano-logo-subsee-on.svg` | 183.92 x 45.17 | logo | Logo SUBSEE |
 
 **Reusos confirmados:**
 
@@ -545,7 +545,7 @@ Frame: `x=0 y=7916.78 width=1920 height=1720`, `pt=40px pb=80px px=260px`.
 ### Texto extraído (ordem visual)
 
 - **H2**: "Perguntas Frequentes"
-- **Subtítulo**: "Tire suas dúvidas sobre o CRM Imobiliário da SUBSEE on."
+- **Subtítulo**: "Tire suas dúvidas sobre o CRM Imobiliário da SUBSEE."
 
 **Pergunta 1** (`3089:8061`): "O que é o CRM Imobiliário Urbano do SUBSEE?"
 **Resposta 1** (`3089:8056`): "O CRM Imobiliário Urbano do SUBSEE foi desenvolvido para organizar a rotina comercial de imobiliárias que trabalham com venda, locação e lançamentos. O sistema centraliza imóveis, clientes, leads, atendimentos, funil de vendas, propostas, negociações e publicação em portais, permitindo acompanhar toda a jornada comercial, do primeiro contato até o fechamento do negócio."

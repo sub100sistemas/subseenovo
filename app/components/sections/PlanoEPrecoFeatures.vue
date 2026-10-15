@@ -156,7 +156,7 @@ const planosCabecalho: PlanoCabecalho[] = [
               </div>
 
               <div class="relative flex flex-col items-center gap-4 pb-6 desktop:hidden">
-                <img src="/icons/logo-subsee-on.svg" alt="SUBSEE on" title="SUBSEE on" width="187" height="40" class="h-auto w-[160px]" />
+                <img src="/icons/logo-subsee-on.svg" alt="SUBSEE" title="SUBSEE" width="187" height="40" class="h-auto w-[160px]" />
                 <div class="grid w-full grid-cols-1 gap-3 mobile-lg:grid-cols-2">
                   <div v-for="plano in planosCabecalho" :key="plano.nome" class="flex flex-col items-center gap-3 rounded-2xl bg-white/80 px-4 py-5">
                     <h3 class="text-[28px] leading-8 font-bold text-brand">{{ plano.nome }}</h3>
@@ -174,7 +174,7 @@ const planosCabecalho: PlanoCabecalho[] = [
 
               <div :class="[columnsClass, 'relative hidden h-[145px] pl-[15px] desktop:grid']">
                 <div class="mt-[52px] ml-3">
-                  <img src="/icons/logo-subsee-on.svg" alt="SUBSEE on" title="SUBSEE on" width="187" height="40" class="h-auto w-[187px]" />
+                  <img src="/icons/logo-subsee-on.svg" alt="SUBSEE" title="SUBSEE" width="187" height="40" class="h-auto w-[187px]" />
                 </div>
                 <div class="flex flex-col items-center gap-[19px] px-[30px] pt-[34px]">
                   <h3 class="text-[32px] leading-8 font-bold text-brand">Urbano</h3>

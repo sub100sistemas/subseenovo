@@ -29,7 +29,7 @@ const mockups: PhoneMockup[] = [
     <div class="container-page">
       <div class="mx-auto max-w-[1001px] text-center">
         <h2>
-          Conheça o módulo CRM do SUBSEE <span class="text-[#e72f4d]">on</span>
+          Conheça o módulo CRM do SUBSEE
         </h2>
         <p class="mx-auto mt-4 text-base leading-[1.4] text-ink-soft tablet-lg:text-xl">
           Do primeiro contato ao fechamento, veja como o CRM organiza leads, atendimentos e

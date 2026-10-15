@@ -129,7 +129,7 @@ T12
 - Skill: NONE
 
 **Done when**:
-- [x] H1 "Central de Ajuda, Tutoriais e Documentação do SUBSEE on" renders with "on" styled in the accent color
+- [x] H1 "Central de Ajuda, Tutoriais e Documentação do SUBSEE" renders with "on" styled in the accent color
 - [x] Description and both floating cards ("Acesso Online", "Equipe treinada") render via `card_arrow.png` (already exported)
 - [x] No CTA rendered (confirmed absent in Figma)
 - [x] Corner badge uses the real exported icon from T2 (`base-conhecimento-icone-badge.svg`), not a placeholder
@@ -175,7 +175,7 @@ T12
 - Skill: NONE
 
 **Done when**:
-- [x] H2 "Como treinar sua equipe para usar o SUBSEE on" + description render verbatim at the panel level
+- [x] H2 "Como treinar sua equipe para usar o SUBSEE" + description render verbatim at the panel level
 - [x] Image column uses `portfolio-telas-base-conhecimento.png` (already exported)
 - [x] Secondary description + 4 feature items (Suporte e implantação humanizada / Treinamentos em vídeo / Manuais e materiais de apoio / Eventos online) render with real icons from T2, title, description
 - [x] CTA "Testar grátis por 30 dias" → `/testar-gratis`

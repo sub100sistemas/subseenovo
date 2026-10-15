@@ -41,6 +41,6 @@ const faqs: FaqItem[] = [
 <template>
   <CrmFaq section-id="site-urbano-faq" :faqs="faqs">
     <template #title>Perguntas Frequentes</template>
-    <template #description>Tire suas dúvidas sobre o Site para Imobiliárias Urbanas da SUBSEE on.</template>
+    <template #description>Tire suas dúvidas sobre o Site para Imobiliárias Urbanas da SUBSEE.</template>
   </CrmFaq>
 </template>

@@ -116,7 +116,7 @@ T11 → T12
 **Tools**: MCP: `figma-dev-mode-mcp-server` (confirm card/badge/module-icon exact glyphs before finalizing, per [[AD-015]]'s lesson that instance names can be stale)
 
 **Done when**:
-- [x] H1 "Conecte o SUBSEE on aos seus sistemas por APIs e Hub" renders with "on" styled in the accent color, matching the Figma treatment
+- [x] H1 "Conecte o SUBSEE aos seus sistemas por APIs e Hub" renders with "on" styled in the accent color, matching the Figma treatment
 - [x] Description and both floating cards ("Troca de Dados", "Conexão via API") render verbatim per the manifest (confirmed baked into `card_arrow.png` by direct visual inspection of the file)
 - [x] No CTA rendered (confirmed absent in Figma)
 - [x] Corner badge + module-icon row use real exported/reused assets, not placeholders (`apis-hero.svg` for the badge, shared `crm-hero-icone-*` glyphs for the 5 module icons)

@@ -36,7 +36,7 @@ const faqs = [
 <template>
   <CrmFaq section-id="crm-temporada-faq" :faqs="faqs">
     <template #description>
-      Tire suas dúvidas sobre o CRM para Temporada da SUBSEE on.
+      Tire suas dúvidas sobre o CRM para Temporada da SUBSEE.
     </template>
   </CrmFaq>
 </template>

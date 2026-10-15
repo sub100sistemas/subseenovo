@@ -2,7 +2,7 @@
 import type { HeroModuleIcon } from '~/components/layout/Hero.vue'
 
 const moduleIcons: HeroModuleIcon[] = [
-  { src: '/icons/crm-temporada-hero-icone-imovel.svg', iconClass: 'w-[17.91px] h-[19px]' },
+  { src: '/icons/crm-hero-icone-temporada-glyph.svg', iconClass: 'w-[16.331px] h-[19px]' },
 ]
 </script>
 
@@ -63,11 +63,11 @@ const moduleIcons: HeroModuleIcon[] = [
           <div
             class="flex h-[30px] w-[27.887px] items-center justify-center rounded-[4px] bg-brand shadow-[0px_10px_20px_rgba(93,95,239,0.4)]"
           >
-            <img
-              src="/icons/crm-temporada-hero-icone-imovel.svg"
-              alt="Ícone de imóvel" title="Ícone de imóvel"
-              aria-hidden="true"
-              style="width: 17.91px; height: 19px"
+            <img 
+              src="/icons/crm-hero-icone-temporada-glyph.svg" 
+              alt="Ícone de temporada" title="Ícone de temporada" 
+              aria-hidden="true" 
+              class="w-[16.331px] h-[19px]"
             />
           </div>
         </div>

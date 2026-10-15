@@ -70,7 +70,7 @@ Tarefas (estado do `tasks.md`): T1 a T15 `[x]`; T16, T17 e T18 `[ ]` (bloqueadas
 | AC | Resultado esperado do SPEC | Evidência atual | Resultado |
 | --- | --- | --- | --- |
 | AVS-01 | Rota 200 com Header e Footer | HTTP 200 nas 12 larguras (e nas 21 da auditoria); `header` e `footer` fora de `<main>` | ✅ |
-| AVS-02 | Hero com H1, descrição, 5 ícones, foto, 2 cards | H1 "Assista aos vídeos do SUBSEE on" medido; 5 ícones de módulo; foto; cards "Vídeos Práticos" e "Time Capacitado" (`VideosHero.vue:39-121`) | ✅ |
+| AVS-02 | Hero com H1, descrição, 5 ícones, foto, 2 cards | H1 "Assista aos vídeos do SUBSEE" medido; 5 ícones de módulo; foto; cards "Vídeos Práticos" e "Time Capacitado" (`VideosHero.vue:39-121`) | ✅ |
 | AVS-03 | Exatamente um `<h1>` | 1 `<h1>` nas 12 larguras | ✅ |
 | AVS-04 | Hero a 1920px | A borda inferior do Hero fica em y=568 (igual ao Figma); a seção mede 483px, porque o Header (85px) não sobrepõe o Hero como no Figma. O texto do AC ("altura total 568px") continua impreciso | ✅ (lacuna de redação do SPEC) |
 | AVS-05 | Vídeo institucional | y=568, h=565 (= Figma); badge, play de 92px e legenda presentes | ✅ |
@@ -81,7 +81,7 @@ Tarefas (estado do `tasks.md`): T1 a T15 `[x]`; T16, T17 e T18 `[ ]` (bloqueadas
 | **AVS-10** | FAQ com 6 perguntas, painel branco, "+"/"−" | 5 perguntas, todas **fechadas ao carregar** (decisão do usuário, difere do Figma); a troca "+"/"−" ocorre por clique e por Enter. FAQ fechado 694px, aberto 982px, contra 1063px no Figma (a diferença é o item 6 mais 83px). **Pergunta 6 ausente** | **Parcial** (pergunta 6 pendente: Q4) |
 | AVS-11 | Sem overflow | `scrollWidth === clientWidth` nas 12 larguras | ✅ |
 | AVS-12 | Abaixo de 992px, coluna única | Institucional, demonstrativos e perfis em coluna única abaixo de 992px; 3 colunas a partir de 992px, e coluna única em 980px | ✅ |
-| **AVS-13** | SEO via `useSeoMeta` com os valores de Q5 | **Mudou.** [assista-os-videos-do-subsee-on.vue](../../../app/pages/assista-os-videos-do-subsee-on.vue) tem `useSeoMeta` (`title` "SUBSEE | Vídeos e Tutoriais do SUBSEE on", `description`, `ogTitle`, `ogDescription`), adicionado em `c8c24ac`. Mas a SPEC ainda o marca como bloqueado (Q5), e não consta aprovação explícita do texto pelo usuário | **Parcial** (implementado no código; texto de Q5 por confirmar) |
+| **AVS-13** | SEO via `useSeoMeta` com os valores de Q5 | **Mudou.** [assista-os-videos-do-subsee-on.vue](../../../app/pages/assista-os-videos-do-subsee-on.vue) tem `useSeoMeta` (`title` "SUBSEE | Vídeos e Tutoriais do SUBSEE", `description`, `ogTitle`, `ogDescription`), adicionado em `c8c24ac`. Mas a SPEC ainda o marca como bloqueado (Q5), e não consta aprovação explícita do texto pelo usuário | **Parcial** (implementado no código; texto de Q5 por confirmar) |
 
 **Resumo:** 10 de 13 ACs atendidos (AVS-01 a AVS-06, AVS-08, AVS-09, AVS-11 e AVS-12); **3 parciais** (AVS-07, AVS-10 e AVS-13), todos por decisão pendente.
 

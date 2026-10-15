@@ -63,7 +63,7 @@ As duas páginas têm a mesma anatomia (hero centrado com fundo cinza curvo, car
 
 1. WHEN o visitante acessa `/lgpd/termos-de-uso/` THEN o sistema SHALL responder 200 e renderizar, entre o Header e o Footer globais, o Hero (node `1182:1656`) e a lista de cartões (node `3220:6556`).
 2. WHEN a página é renderizada THEN o sistema SHALL exibir o Hero com o H1 "Termos de Uso", o subtítulo "Transparência e compromisso com você" e a descrição "Conheça as diretrizes que garantem a **segurança**, a **privacidade** e a **confiança** na utilização dos nossos serviços e plataformas.", com as três palavras em negrito na cor `#5d5fef`.
-3. WHEN a página é renderizada THEN o sistema SHALL exibir, na ordem do Figma, os 9 cartões: BOAS-VINDAS, DEFINIÇÕES (com 7 subcartões: USUÁRIO, ANUNCIANTE, VOCÊ, SUB100 SISTEMAS LTDA, PORTAL DE IMÓVEIS SUB100, SUBSEE ON, SISTEMA SGL), RESPONSABILIDADES, CADASTRO, USO DO SITE, ARMAZENAMENTO E SEGURANÇA, CONSENTIMENTO, CANAL DE DÚVIDAS e FORO.
+3. WHEN a página é renderizada THEN o sistema SHALL exibir, na ordem do Figma, os 9 cartões: BOAS-VINDAS, DEFINIÇÕES (com 7 subcartões: USUÁRIO, ANUNCIANTE, VOCÊ, SUB100 SISTEMAS LTDA, PORTAL DE IMÓVEIS SUB100, SUBSEE, SISTEMA SGL), RESPONSABILIDADES, CADASTRO, USO DO SITE, ARMAZENAMENTO E SEGURANÇA, CONSENTIMENTO, CANAL DE DÚVIDAS e FORO.
 4. WHEN os textos dos cartões são comparados com os nodes do Figma THEN o sistema SHALL apresentar 0 diferenças de texto (mesmas palavras, mesma pontuação, mesmas quebras de parágrafo e as mesmas listas "(I)" a "(VII)").
 5. The sistema SHALL renderizar exatamente um `<h1>` na página.
 

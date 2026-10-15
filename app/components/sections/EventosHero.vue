@@ -11,7 +11,7 @@
 
     <div class="container-page relative flex flex-col items-center gap-[26px]">
       <h1 class="max-w-[738px] text-center text-[28px] leading-[1.2] font-bold text-ink tablet-lg:text-[36px]">
-        Eventos Online e Replays do SUBSEE <span class="text-[#e33b48]">on</span>
+        Eventos Online e Replays do SUBSEE
       </h1>
       <p class="max-w-[1047px] text-center text-[18px] leading-[1.4] text-ink tablet-lg:text-[24px]">
         Participe de lives, webinars e treinamentos ao vivo sobre o sistema, e acesse os replays a

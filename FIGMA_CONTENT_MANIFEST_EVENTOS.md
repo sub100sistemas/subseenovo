@@ -19,7 +19,7 @@ Fileira decorativa de 5 fotos reais (retratos de pessoas), sem texto, no topo da
 - **Descrição** (abaixo do H1): "Participe de lives, webinars e treinamentos ao vivo sobre o sistema, e acesse os replays a qualquer momento para não perder nenhum conteúdo."
 - **Divisor decorativo** ("Divider / Horizontal") + 2 formas decorativas ("icone-shape") atrás da composição — puramente visuais.
 - **Bloco "Próximo evento"** (dentro da mesma seção, lado a lado):
-  - **Coluna 02** (imagem): composição "Imagem → Live Gratuita" (775×487.76) — uma foto de fundo com **7 camadas de texto sobrepostas** (SUBSEE on / "Nova versão 1.0.19 do CRM SUBSEE" / "Convide sua equipe e não fique no passado!" / badge "AO VIVO" / badge "29 OUT 2026 • 09H" / label "1.0.19"). **Confirmado por inspeção visual e por medida de dimensão**: o asset já existente `public/images/eventos/banner-eventos.png` (1550×976 = exatamente 2× de 775×487.76) é a exportação já achatada desta composição inteira — bate literalmente com todo o texto acima, pixel a pixel. Nenhuma reconstrução em HTML é necessária; usar a imagem como está, mesmo padrão de `technology-mockup.png`/`card_arrow.png` (composições complexas exportadas como imagem única).
+  - **Coluna 02** (imagem): composição "Imagem → Live Gratuita" (775×487.76) — uma foto de fundo com **7 camadas de texto sobrepostas** (SUBSEE / "Nova versão 1.0.19 do CRM SUBSEE" / "Convide sua equipe e não fique no passado!" / badge "AO VIVO" / badge "29 OUT 2026 • 09H" / label "1.0.19"). **Confirmado por inspeção visual e por medida de dimensão**: o asset já existente `public/images/eventos/banner-eventos.png` (1550×976 = exatamente 2× de 775×487.76) é a exportação já achatada desta composição inteira — bate literalmente com todo o texto acima, pixel a pixel. Nenhuma reconstrução em HTML é necessária; usar a imagem como está, mesmo padrão de `technology-mockup.png`/`card_arrow.png` (composições complexas exportadas como imagem única).
   - **Coluna 01** (texto, ao lado da imagem):
     - **Divergência de nomenclatura de camada (confirmada, não é bug de extração)**: a camada nomeada "Heading / H2" (node `3171:41857`) na verdade renderiza o texto pequeno em caixa alta "PRÓXIMO EVENTO" (kicker/eyebrow, 15px, `tracking-[2px]`, cor `#595959`) — **não** é um heading de verdade. A camada nomeada "Text / Description" (node `3171:41856`) é quem renderiza o parágrafo grande e em destaque: "A nova versão do CRM SUBSEE fecha um importante ciclo de evolução, com Automações de Marketing, Kanban personalizável para Lançamentos, Venda, Rural e Locação, além de novos recursos como Radar de Oportunidades, Comparação de Imóveis e Comitê de Avaliação, ampliando a gestão comercial e a inteligência do atendimento." (24px, bold, cor `#5d5fef`).
     - **Decisão de hierarquia de heading** (ver `spec.md` § SEO): nenhum dos dois vira um `<h2>` semântico — o "PRÓXIMO EVENTO" é um kicker (`<span>`/`<p>` uppercase) e o parágrafo grande é texto enfatizado (`<p>` bold), não um heading novo, para manter exatamente 1 `<h1>` por página sem introduzir uma hierarquia de heading artificial dentro do próprio Hero.
@@ -43,7 +43,7 @@ Fileira decorativa de 5 fotos reais (retratos de pessoas), sem texto, no topo da
 
 ## 4. Section / Hero / Overview — node `3171:41921`
 
-- **H2**: "Tudo que sua imobiliária precisa, em um só sistema com o **SUBSEE on**" ("SUBSEE on" em negrito)
+- **H2**: "Tudo que sua imobiliária precisa, em um só sistema com o **SUBSEE**" ("SUBSEE" em negrito)
 - **Descrição**: "O CRM SUBSEE centraliza a gestão de imóveis urbanos, rurais e de temporada com ferramentas de captação, vendas, integração com portais e acompanhamento de resultados em tempo real."
 - **Coluna direita**: foto (pessoa apresentando para uma sala com tela de dashboard ao fundo) com cantos arredondados, 2 blocos decorativos sólidos atrás (verde `#1cd9a4` e roxo `#5d5fef`, ambos `rounded-[20px]`) e um ícone de "play" centralizado sobre a foto — **puramente decorativo**: não há link/vídeo real associado a este play button na extração do Figma (nenhum `href`/prototype target capturado). Não inventar um link ou embed de vídeo.
 - **Sem CTA** nesta seção (confirmado — não há botão).
@@ -57,7 +57,7 @@ O bloco inteiro é um único elemento clicável (`<a>`).
 
 - **Badge**: "EVENTO ONLINE" (chip `rgba(140,110,254,0.12)`, texto `#5d5fef` uppercase)
 - **H2**: "Participe dos Nossos Eventos ao Vivo"
-- **Descrição**: "Inscreva-se e acompanhe treinamentos, novidades e lançamentos do SUBSEE on pelo Zoom."
+- **Descrição**: "Inscreva-se e acompanhe treinamentos, novidades e lançamentos do SUBSEE pelo Zoom."
 - **CTA (estilizado como botão outline branco)**: "Inscreva-se!!! →" — **destino não confirmado no Figma** (mesmo caso da seção 2 — o card inteiro é um `<a>`/`<NuxtLink>` mas nenhuma URL real foi capturada na extração).
 - **Nota auxiliar**: "Vagas limitadas por evento"
 - **Imagem** (lado direito, sangrando para fora do card): composição de videochamada (3 pessoas em chamada) com fundo transparente à esquerda. **Confirmado por inspeção visual e medida de dimensão**: `public/images/eventos/eventos_vivo.png` (2056×700 = exatamente 2× de 1028×350) já é este asset exato, com canal alpha real (região esquerda 100% transparente, confirmado pixel a pixel) — usar como está.
@@ -67,7 +67,7 @@ O bloco inteiro é um único elemento clicável (`<a>`).
 ## 6. Section / Hero / FAQ — node `3171:41947` (conteúdo em `3183:3037`)
 
 - **H2**: "Perguntas Frequentes"
-- **Descrição**: "Tire suas dúvidas sobre lives, treinamentos e replays do SUBSEE on."
+- **Descrição**: "Tire suas dúvidas sobre lives, treinamentos e replays do SUBSEE."
 - **6 perguntas/respostas** (accordion, mesmo padrão "+"/"−" já usado em `CrmFaq.vue`/`ApisFaq.vue`/`BaseConhecimentoFaq.vue`):
   1. **"Como participar das lives e eventos online?"** — "Basta se inscrever pelo site ou pelo link divulgado nas redes sociais do SUBSEE. As lives são realizadas ao vivo pelo Zoom e você acompanha tudo diretamente da sua tela."
   2. **"Os eventos ficam gravados para assistir depois?"** — "Sim! Todos os eventos, lives e treinamentos ficam disponíveis como replay na nossa página de conteúdos. Você pode assistir quantas vezes quiser, no horário que preferir."

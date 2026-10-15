@@ -41,6 +41,6 @@ const faqs: FaqItem[] = [
 <template>
   <CrmFaq section-id="site-loteadoras-faq" :faqs="faqs">
     <template #title>Perguntas Frequentes</template>
-    <template #description>Tire suas dúvidas sobre o Site para Loteadoras da SUBSEE on.</template>
+    <template #description>Tire suas dúvidas sobre o Site para Loteadoras da SUBSEE.</template>
   </CrmFaq>
 </template>

@@ -15,7 +15,7 @@
             Participe dos Nossos<br />Eventos ao Vivo
           </h2>
           <p class="max-w-[522px] text-[16px] leading-[1.3] text-ink tablet-lg:text-[20px]">
-            Inscreva-se e acompanhe treinamentos, novidades e lançamentos do SUBSEE on pelo Zoom.
+            Inscreva-se e acompanhe treinamentos, novidades e lançamentos do SUBSEE pelo Zoom.
           </p>
           <div class="mt-2 flex flex-wrap items-center gap-4 tablet-lg:gap-[58px]">
             <span class="flex h-[50px] w-[220px] items-center justify-center rounded-[10px] border border-[#ddd] bg-white text-[16px] font-medium text-ink">

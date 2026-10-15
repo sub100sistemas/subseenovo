@@ -8,7 +8,7 @@ export const socialImage = {
   path: '/images/og-subsee.png',
   width: 1200,
   height: 630,
-  alt: 'Logotipos da SUB100 Imobiliárias e do SUBSEE on'
+  alt: 'Logotipos da SUB100 Imobiliárias e do SUBSEE'
 }
 
 export const noindexPaths = [

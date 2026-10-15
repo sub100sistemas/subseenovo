@@ -19,7 +19,7 @@
       <div class="w-full tablet-lg:w-[42%]">
         <h2 class="text-[28px] leading-[1.6] font-medium text-brand tablet-lg:text-[36px]">
           Tudo que sua imobiliária precisa, em um só sistema com o
-          <strong class="font-bold">SUBSEE on</strong>
+          <strong class="font-bold">SUBSEE</strong>
         </h2>
         <p class="mt-6 text-[18px] leading-[1.8] tracking-[0.48px] text-ink tablet-lg:text-[24px]">
           O CRM SUBSEE centraliza a gestão de imóveis urbanos, rurais e de temporada com

@@ -52,9 +52,9 @@ Reduza o retrabalho no dia a dia da imobiliária, acompanhe o desempenho dos cor
 **H2:** (Bold 36px)
 ```
 O anúncio de imóveis rurais no Brasil subiu
-de patamar com o SUBSEE on
+de patamar com o SUBSEE
 ```
-_("on" em `#f44336` — vermelho da marca SUBSEE on, **não** o roxo `text-brand`)_
+_("on" em `#f44336` — vermelho da marca SUBSEE, **não** o roxo `text-brand`)_
 
 **Lead:**
 O módulo de imóveis rurais permite ao corretor apresentar informações completas, organizadas e padronizadas para potenciais compradores e investidores.
@@ -239,7 +239,7 @@ _("nossos clientes" em `text-brand`)_
 
 **H2:** (SemiBold 52px) Perguntas Frequentes
 
-**Description:** Tire suas dúvidas sobre o Site para Imobiliárias Rurais da SUBSEE on.
+**Description:** Tire suas dúvidas sobre o Site para Imobiliárias Rurais da SUBSEE.
 
 **6 FAQ items:**
 

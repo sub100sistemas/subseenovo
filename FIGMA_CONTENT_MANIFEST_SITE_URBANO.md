@@ -117,7 +117,7 @@ _("internacionais" em `text-brand`)_
 Habilite a tradução automática pelo **painel SUB100 Meu Site** e ofereça uma experiência fluida para compradores e locatários estrangeiros interessados em imóveis residenciais e comerciais.
 
 **Flow diagram (4 etapas):**
-SUBSEE on → SUB100 Meu Site → Google Tradutor → www.
+SUBSEE → SUB100 Meu Site → Google Tradutor → www.
 
 **Language card (título: Navegue em seu idioma):**
 - 🇧🇷 Português PT
@@ -128,7 +128,7 @@ SUBSEE on → SUB100 Meu Site → Google Tradutor → www.
 - 🇨🇳 Chinês ZH
 
 **Assets:**
-- `/icons/logo-subsee-on.svg` — logo SUBSEE on
+- `/icons/logo-subsee-on.svg` — logo SUBSEE
 - `/icons/logo-sub100-imoveis-produto.svg` — logo SUB100 Meu Site
 - Google Translate icon: inline SVG ou emoji
 
@@ -249,7 +249,7 @@ _("nossos clientes" em `text-brand`)_
 
 **Title:** Perguntas Frequentes
 
-**Description:** Tire suas dúvidas sobre o Site para Imobiliárias Urbanas da SUBSEE on.
+**Description:** Tire suas dúvidas sobre o Site para Imobiliárias Urbanas da SUBSEE.
 
 **6 FAQ items:**
 

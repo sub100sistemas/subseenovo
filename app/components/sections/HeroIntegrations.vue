@@ -59,7 +59,7 @@ const badges = [
 
         <div class="relative mx-auto max-w-[700px] text-center tablet-lg:absolute tablet-lg:left-1/2 tablet-lg:top-[13.78%] tablet-lg:w-[68.24%] tablet-lg:max-w-none tablet-lg:-translate-x-1/2">
           <h2>
-            O CRM SUBSEE <span class="text-[#e72f4d]">on</span> integra-se às principais ferramentas e
+            O CRM SUBSEE integra-se às principais ferramentas e
             tecnologias do mercado
           </h2>
 
@@ -74,7 +74,7 @@ const badges = [
         <div
           class="hero-integrations-diagram relative mx-auto mt-10 hidden max-w-[640px] tablet-lg:absolute tablet-lg:left-[15.4%] tablet-lg:top-[41.09%] tablet-lg:mt-0 tablet-lg:block tablet-lg:w-[72.59%] tablet-lg:max-w-none"
           role="img"
-          aria-label="Diagrama mostrando o CRM SUBSEE on conectado a Imobiliárias e Corretores, Agrocorretores, Loteadoras e Incorporadoras, com integrações para dezenas de portais, redes de parcerias e MCP/APIs"
+          aria-label="Diagrama mostrando o CRM SUBSEE conectado a Imobiliárias e Corretores, Agrocorretores, Loteadoras e Incorporadoras, com integrações para dezenas de portais, redes de parcerias e MCP/APIs"
         >
           <div v-html="diagramaIntegracoes" />
           <img
@@ -112,7 +112,7 @@ const badges = [
           </div>
 
           <div class="mx-auto flex w-fit items-center justify-center rounded-2xl border border-[#D9DEE8] bg-white px-8 py-4">
-            <img loading="lazy" decoding="async" src="/icons/logo-subsee-on.svg" width="184" height="40" alt="SUBSEE on" title="SUBSEE on" class="h-8 w-auto" />
+            <img loading="lazy" decoding="async" src="/icons/logo-subsee-on.svg" width="184" height="40" alt="SUBSEE" title="SUBSEE" class="h-8 w-auto" />
           </div>
 
           <div class="relative mx-auto h-6 w-px bg-[#D9DEE8]" aria-hidden="true">

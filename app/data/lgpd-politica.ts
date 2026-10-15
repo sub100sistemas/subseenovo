@@ -12,7 +12,7 @@ export const lgpdPoliticaSections: LegalSection[] = [
       },
       {
         lines: [
-          '(II) A SUB100 SISTEMAS LTDA, "SUB100", é a empresa proprietária e responsável pelos sites: https://www.sub100sistemas.com.br/, https://sub100.com.br/, www.sistemasgl.com.br, https://subsee.com.br/, que se destinam a divulgação de seus produtos para fins de comercialização e/ou aproximação de anunciantes e usuários, para facilitar a busca por imóveis para compra, venda e locação e, pelos produtos: Portal de Imóveis SUB100, SUBSEE on, Sistema SGL, Sites & Hotsites e Inteligência imobiliária;'
+          '(II) A SUB100 SISTEMAS LTDA, "SUB100", é a empresa proprietária e responsável pelos sites: https://www.sub100sistemas.com.br/, https://sub100.com.br/, www.sistemasgl.com.br, https://subsee.com.br/, que se destinam a divulgação de seus produtos para fins de comercialização e/ou aproximação de anunciantes e usuários, para facilitar a busca por imóveis para compra, venda e locação e, pelos produtos: Portal de Imóveis SUB100, SUBSEE, Sistema SGL, Sites & Hotsites e Inteligência imobiliária;'
         ]
       },
       {

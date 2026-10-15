@@ -52,7 +52,7 @@ O mega-menu "Módulos" (`HeaderBar.vue`, coluna "INTEGRAÇÕES E HABILIDADES") j
 **Acceptance Criteria**:
 
 1. WHEN um visitante navega para `/modulos/base-de-conhecimento` THEN o sistema SHALL renderizar a página com status HTTP 200.
-2. WHEN a página é renderizada THEN o sistema SHALL exibir, na ordem do Figma, a seção Hero/Top (node `3164:37762`) com o H1 "Central de Ajuda, Tutoriais e Documentação do SUBSEE on", a descrição, os 2 cards flutuantes ("Acesso Online" e "Equipe treinada") e a fileira de 5 ícones de tipo de imóvel — sem CTA nesta seção (confirmado inexistente no Figma).
+2. WHEN a página é renderizada THEN o sistema SHALL exibir, na ordem do Figma, a seção Hero/Top (node `3164:37762`) com o H1 "Central de Ajuda, Tutoriais e Documentação do SUBSEE", a descrição, os 2 cards flutuantes ("Acesso Online" e "Equipe treinada") e a fileira de 5 ícones de tipo de imóvel — sem CTA nesta seção (confirmado inexistente no Figma).
 3. WHEN a página é renderizada THEN o sistema SHALL exibir a seção Technology (node `3168:40055`) com o mockup estático (`NuxtImg`, `technology-mockup.png`) e o CTA "Testar grátis por 30 dias" com destino `/testar-gratis`.
 4. WHEN a página é renderizada THEN o sistema SHALL exibir a seção Training (node `3168:40734`) com a imagem `portfolio-telas-base-conhecimento.png`, os 4 itens de feature (Suporte e implantação humanizada, Treinamentos em vídeo, Manuais e materiais de apoio, Eventos online) e o CTA "Testar grátis por 30 dias".
 5. WHEN um visitante clica no item "Base de conhecimento" do mega-menu "Módulos" (`HeaderBar.vue`) THEN o sistema SHALL navegar para `/modulos/base-de-conhecimento` (já wired hoje — apenas confirmar que continua funcionando).

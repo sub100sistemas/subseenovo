@@ -51,6 +51,6 @@ const accordionClass = 'faq-accordion mx-auto mt-10 max-w-[970px] desktop-full:m
     :accordion-class="accordionClass"
   >
     <template #title>Perguntas Frequentes</template>
-    <template #description>Encontre respostas sobre os pacotes, valores e funcionalidades do SUBSEE on.</template>
+    <template #description>Encontre respostas sobre os pacotes, valores e funcionalidades do SUBSEE.</template>
   </Faq>
 </template>

@@ -16,7 +16,7 @@ const faqs = homeFaqs
     <div class="container-page relative">
       <div class="mx-auto max-w-[800px] text-center">
         <SectionTag label="Especialidade · Dúvidas Frequentes" />
-        <h2 class="mt-4">Tudo sobre o SUBSEE <span class="text-[#e7304d]">on</span> antes de começar</h2>
+        <h2 class="mt-4">Tudo sobre o SUBSEE antes de começar</h2>
       </div>
 
       <div class="relative mt-10">
@@ -64,7 +64,7 @@ const faqs = homeFaqs
           <div class="relative grid grid-cols-1 gap-10 tablet-lg:grid-cols-[1fr_2fr] tablet-lg:gap-16">
             <div class="flex flex-col items-center text-center">
               <h3 class="max-w-[300px] text-[22px] leading-[1.2] font-medium text-ink tablet-lg:text-[30px]">
-                Tire suas dúvidas sobre o <span class="font-bold">SUBSEE</span> <span class="font-bold text-[#e7304d]">on</span> de forma rápida e simples
+                Tire suas dúvidas sobre o <span class="font-bold">SUBSEE</span> de forma rápida e simples
               </h3>
 
               <NuxtImg decoding="async"

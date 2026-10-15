@@ -1,8 +1,8 @@
-# Assista os vídeos do SUBSEE on (página `/assista-os-videos-do-subsee-on`) Specification
+# Assista os vídeos do SUBSEE (página `/assista-os-videos-do-subsee-on`) Specification
 
 ## Problem Statement
 
-A Home tem o botão "Assista os vídeos do SUBSEE on" (`HeroMain.vue:83-88`) que hoje leva ao canal externo `https://www.youtube.com/@subsee` (`CtaButton` outline, sem ícone). O design de uma página própria para esse conteúdo existe no Figma (arquivo `vX7qKnnXSOW8zv4kAuS2eN`, seção "Assista os videos do SUBSEE on", node `1033:1855`, frame raiz "Page" `3188:3397`, 1920×4334), mas a rota não existe no projeto. Esta feature porta a página 1:1 para Nuxt 4 + Vue 3 + Tailwind v4, seguindo a arquitetura de três camadas do `CLAUDE.md`. Atualizar o botão da Home para a nova rota é uma etapa posterior, fora desta spec.
+A Home tem o botão "Assista os vídeos do SUBSEE" (`HeroMain.vue:83-88`) que hoje leva ao canal externo `https://www.youtube.com/@subsee` (`CtaButton` outline, sem ícone). O design de uma página própria para esse conteúdo existe no Figma (arquivo `vX7qKnnXSOW8zv4kAuS2eN`, seção "Assista os videos do SUBSEE", node `1033:1855`, frame raiz "Page" `3188:3397`, 1920×4334), mas a rota não existe no projeto. Esta feature porta a página 1:1 para Nuxt 4 + Vue 3 + Tailwind v4, seguindo a arquitetura de três camadas do `CLAUDE.md`. Atualizar o botão da Home para a nova rota é uma etapa posterior, fora desta spec.
 
 ## Goals
 
@@ -15,7 +15,7 @@ A Home tem o botão "Assista os vídeos do SUBSEE on" (`HeroMain.vue:83-88`) que
 
 | Feature | Reason |
 | --- | --- |
-| Alterar o botão "Assista os vídeos do SUBSEE on" de `HeroMain.vue` para apontar à nova rota | Pedido explícito: o botão deve apontar para a página "posteriormente". Etapa própria, depois que esta página existir |
+| Alterar o botão "Assista os vídeos do SUBSEE" de `HeroMain.vue` para apontar à nova rota | Pedido explícito: o botão deve apontar para a página "posteriormente". Etapa própria, depois que esta página existir |
 | Player de vídeo real (embed YouTube, modal, lightbox) | O Figma só desenha o card com botão play, sem URL, ID ou comportamento de reprodução. Ver Q1 |
 | Conteúdo dinâmico de vídeos (API do YouTube, CMS, JSON remoto) | Conteúdo é hardcoded nos componentes ([[AD-001]]); os 3 vídeos e 3 perfis do Figma são estáticos |
 | Página ou filtro por perfil (destino real dos links "Ver vídeos →") | O Figma não define destino. Ver Q2 |
@@ -58,14 +58,14 @@ A Home tem o botão "Assista os vídeos do SUBSEE on" (`HeroMain.vue:83-88`) que
 
 ### P1: Visitante acessa a página e vê o Hero ⭐ MVP
 
-**User Story**: Como visitante, quero abrir a página de vídeos do SUBSEE on e entender de imediato do que se trata, para decidir assistir aos vídeos.
+**User Story**: Como visitante, quero abrir a página de vídeos do SUBSEE e entender de imediato do que se trata, para decidir assistir aos vídeos.
 
 **Why P1**: Sem a rota e o Hero não existe página; é o ponto de entrada do futuro botão da Home.
 
 **Acceptance Criteria**:
 
 1. WHEN um visitante navega para `/assista-os-videos-do-subsee-on` THEN o sistema SHALL responder com status HTTP 200 e renderizar Header, o conteúdo da página e Footer globais.
-2. WHEN a página é renderizada THEN o sistema SHALL exibir o Hero (node `3188:3398`) com o H1 "Assista aos vídeos do SUBSEE on" (o "on" em `#e72f4d`), a descrição "Escolher um sistema de gestão para sua imobiliária ou equipe de corretores é uma decisão estratégica, que exige análise, clareza e segurança na escolha da plataforma ideal para potencializar suas vendas.", a fileira de 5 ícones de módulo, a foto e os cards flutuantes "Vídeos Práticos" e "Time Capacitado".
+2. WHEN a página é renderizada THEN o sistema SHALL exibir o Hero (node `3188:3398`) com o H1 "Assista aos vídeos do SUBSEE" (o "on" em `#e72f4d`), a descrição "Escolher um sistema de gestão para sua imobiliária ou equipe de corretores é uma decisão estratégica, que exige análise, clareza e segurança na escolha da plataforma ideal para potencializar suas vendas.", a fileira de 5 ícones de módulo, a foto e os cards flutuantes "Vídeos Práticos" e "Time Capacitado".
 3. The sistema SHALL renderizar exatamente um `<h1>` na página, o do Hero.
 4. WHEN a viewport tem 1920px de largura THEN o sistema SHALL renderizar o Hero com o H1 em Poppins Bold 36px `#313846`, a descrição em Poppins Regular 20px `#313846` e a altura total de 568px (fundo de 548px mais o divisor de onda).
 
@@ -81,8 +81,8 @@ A Home tem o botão "Assista os vídeos do SUBSEE on" (`HeroMain.vue:83-88`) que
 
 **Acceptance Criteria**:
 
-1. WHEN a página é renderizada THEN o sistema SHALL exibir, após o Hero, a seção "Vídeo institucional" (node `3188:3420`) com o eyebrow "VÍDEO INSTITUCIONAL", o H2 "Conheça o SUBSEE on em poucos minutos", a descrição, as tags "Gestão integrada" e "Mais produtividade" e o card de vídeo de 760×460 com badge "SUBSEE ON • 03:24", botão play de 92px e legenda "Uma visão completa da plataforma".
-2. WHEN a página é renderizada THEN o sistema SHALL exibir a seção "Vídeos demonstrativos" (node `3188:3438`) com fundo `#f8f9ff`, eyebrow "VÍDEOS DEMONSTRATIVOS", H2 "Veja o SUBSEE on em ação", a descrição "Conteúdos rápidos para conhecer os recursos que fazem diferença na rotina da sua imobiliária." e 3 cards de 430×520 com miniatura em gradiente, duração, botão play, tipo "DEMONSTRAÇÃO", título, descrição e link "Assistir ao vídeo →".
+1. WHEN a página é renderizada THEN o sistema SHALL exibir, após o Hero, a seção "Vídeo institucional" (node `3188:3420`) com o eyebrow "VÍDEO INSTITUCIONAL", o H2 "Conheça o SUBSEE em poucos minutos", a descrição, as tags "Gestão integrada" e "Mais produtividade" e o card de vídeo de 760×460 com badge "SUBSEE • 03:24", botão play de 92px e legenda "Uma visão completa da plataforma".
+2. WHEN a página é renderizada THEN o sistema SHALL exibir a seção "Vídeos demonstrativos" (node `3188:3438`) com fundo `#f8f9ff`, eyebrow "VÍDEOS DEMONSTRATIVOS", H2 "Veja o SUBSEE em ação", a descrição "Conteúdos rápidos para conhecer os recursos que fazem diferença na rotina da sua imobiliária." e 3 cards de 430×520 com miniatura em gradiente, duração, botão play, tipo "DEMONSTRAÇÃO", título, descrição e link "Assistir ao vídeo →".
 3. The sistema SHALL renderizar os 3 cards demonstrativos a partir de um único array tipado e um único `v-for` sobre um único template de card.
 4. WHEN um visitante clica em um card com play ou no link "Assistir ao vídeo →" THEN o sistema SHALL abrir o destino definido na Q1 (enquanto pendente, fallback provisório: canal do YouTube em nova aba; não é decisão final).
 5. WHEN um visitante ativa por teclado o botão play de um card THEN o sistema SHALL comportar-se como no item 4, com elemento focável e nome acessível contendo o título do vídeo.
@@ -99,7 +99,7 @@ A Home tem o botão "Assista os vídeos do SUBSEE on" (`HeroMain.vue:83-88`) que
 
 **Acceptance Criteria**:
 
-1. WHEN a página é renderizada THEN o sistema SHALL exibir a seção "Conteúdo por perfil" (node `3188:3474`) com eyebrow "CONTEÚDO PARA CADA PERFIL", H2 "Encontre os vídeos ideais para o seu negócio", a descrição "Escolha um tema e descubra como o SUBSEE on pode apoiar sua rotina e seus objetivos." e 3 cards de perfil de 430×260 numerados 01, 02 e 03.
+1. WHEN a página é renderizada THEN o sistema SHALL exibir a seção "Conteúdo por perfil" (node `3188:3474`) com eyebrow "CONTEÚDO PARA CADA PERFIL", H2 "Encontre os vídeos ideais para o seu negócio", a descrição "Escolha um tema e descubra como o SUBSEE pode apoiar sua rotina e seus objetivos." e 3 cards de perfil de 430×260 numerados 01, 02 e 03.
 2. The sistema SHALL renderizar os 3 perfis a partir de um único array tipado com um `v-for`, cada perfil com cores próprias de fundo e destaque (`#eef0ff` com `#5d5fef`, `#eaf9f7` com `#159c96`, `#f4eefc` com `#7652b5`).
 3. WHEN a página é renderizada THEN o sistema SHALL exibir o banner "Continue aprendendo no App SUBSEE" (node `3188:3501`, 1400×220, gradiente `#5d5fef` para `#2e386b`, raio de 28px) com o botão branco "Veja mais no App SUBSEE →".
 4. WHEN um visitante clica em "Ver vídeos →" ou em "Veja mais no App SUBSEE →" THEN o sistema SHALL abrir o destino definido na Q2 ou Q3 (enquanto pendente, fallback provisório: canal do YouTube em nova aba; não é decisão final).
@@ -116,7 +116,7 @@ A Home tem o botão "Assista os vídeos do SUBSEE on" (`HeroMain.vue:83-88`) que
 
 **Acceptance Criteria**:
 
-1. WHEN a página é renderizada THEN o sistema SHALL exibir o FAQ (node `3188:3507`) com o título "Perguntas Frequentes" (Poppins SemiBold 52px), o subtítulo "Encontre respostas sobre os vídeos, tutoriais e conteúdos disponíveis no SUBSEE on." e as 6 perguntas do Figma, sobre fundo branco e sem painel cinza.
+1. WHEN a página é renderizada THEN o sistema SHALL exibir o FAQ (node `3188:3507`) com o título "Perguntas Frequentes" (Poppins SemiBold 52px), o subtítulo "Encontre respostas sobre os vídeos, tutoriais e conteúdos disponíveis no SUBSEE." e as 6 perguntas do Figma, sobre fundo branco e sem painel cinza.
 2. WHEN um visitante ativa uma pergunta THEN o sistema SHALL expandir a resposta e trocar o ícone de "+" para "−".
 3. The sistema SHALL renderizar as perguntas a partir de um único array tipado, reusando `layout/Faq.vue`.
 4. IF a resposta da pergunta 6 não estiver definida (Q4) THEN o sistema SHALL NOT exibir texto de resposta inventado para esse item.

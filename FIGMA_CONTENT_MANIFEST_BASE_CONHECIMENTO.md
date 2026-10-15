@@ -28,7 +28,7 @@ Conteúdo extraído via `get_design_context`/`get_metadata` node a node em 2026-
 - **Descrição**: `O manual através de vídeos com o passo a passo de cadastramentos de novos empreendimentos, gestão de leads, simulador de vendas, publicação de imóveis, acompanhamento de propostas, CRM imobiliário e todas as outras funcionalidades do Sistema SUBSEE imobiliário, encontra-se dentro da "Base de conhecimento".` ("Base de conhecimento" em negrito)
 - **CTA**: "Testar grátis por 30 dias" (instância nomeada "Link → Agendar Demonstração", mas o texto renderizado real é este — mesmo padrão já confirmado em `AD-015`)
 - **Mockup estático**: screenshot do painel "Base de conhecimento" dentro do CRM (sidebar com Bairros/Temporada/.../"Base de conhecimento" destacado + lista de 51 registros/vídeos). Node `3168:40062`/`3168:40552` (`base 1`), 818×3048, altamente decorativo/detalhado — não reconstruível em HTML/CSS de forma viável.
-  - **Asset já existente e confirmado por inspeção visual**: `public/images/modulos-base-de-conhecimento/technology-mockup.png` — bate exatamente com este mockup (menu lateral do CRM com "Base de conhecimento" selecionado, cards "Seja bem-vindo ao Sistema SUBSEE ON", "Cadastro de Pessoas", "Cadastro de Edifícios e Condomínios").
+  - **Asset já existente e confirmado por inspeção visual**: `public/images/modulos-base-de-conhecimento/technology-mockup.png` — bate exatamente com este mockup (menu lateral do CRM com "Base de conhecimento" selecionado, cards "Seja bem-vindo ao Sistema SUBSEE", "Cadastro de Pessoas", "Cadastro de Edifícios e Condomínios").
 
 ---
 
@@ -37,7 +37,7 @@ Conteúdo extraído via `get_design_context`/`get_metadata` node a node em 2026-
 - **H2** (nível "Bloco", `3164:38448`): "Como treinar sua equipe para usar o SUBSEE `on`" ("on" em vermelho)
 - **Descrição** (nível "Bloco", `3164:38447`): "Conheça os pilares da jornada de aprendizado do SUBSEE: um ecossistema completo para capacitar sua equipe do início ao fim."
 - **Imagem** (`3164:38171`, "Tela da Ficha do Imóvel" + celular): composição "ficha de imóvel" + tela de celular com funil/termômetro — mesmo padrão visual do `portfolio-telas-apis-hub.png` de `apis-hub-integrador`.
-  - **Asset já existente e confirmado por inspeção visual**: `public/images/modulos-base-de-conhecimento/portfolio-telas-base-conhecimento.png` — bate exatamente ("Proposta de compra e venda de imóvel" + celular SUBSEE on com Termômetro/Funil).
+  - **Asset já existente e confirmado por inspeção visual**: `public/images/modulos-base-de-conhecimento/portfolio-telas-base-conhecimento.png` — bate exatamente ("Proposta de compra e venda de imóvel" + celular SUBSEE com Termômetro/Funil).
 - **Coluna 02** (`3168:40732`):
   - Descrição secundária: "Da implantação ao suporte contínuo, oferecemos tudo o que sua equipe precisa para dominar o sistema com rapidez e confiança."
   - **4 itens de feature** (ícone + H3 + descrição):
@@ -97,7 +97,7 @@ Conteúdo extraído via `get_design_context`/`get_metadata` node a node em 2026-
 ## 8. Section / Hero / FAQ — node `3168:40951`
 
 - **H2**: "Perguntas Frequentes"
-- **Descrição**: "Tire suas dúvidas sobre a Base de Conhecimento do SUBSEE on."
+- **Descrição**: "Tire suas dúvidas sobre a Base de Conhecimento do SUBSEE."
 - **6 perguntas/respostas** (accordion, ícones "+"/"−" já existentes — `AD-008`):
   1. **"O que é a Base de Conhecimento do SUBSEE?"** — "É a central de ajuda do SUBSEE, onde o usuário encontra vídeos, tutoriais e documentações organizados por tema. Além disso, cada tela do sistema possui um ícone de play com treinamentos relacionados àquela funcionalidade, facilitando o aprendizado quando o recurso está sendo utilizado."
   2. **"A Base de Conhecimento cobre todos os módulos do sistema?"** — "Sim. A Base de Conhecimento reúne conteúdos relacionados aos principais módulos e segmentos do SUBSEE, como CRM, Lançamentos, Venda, Locação, Rural e Temporada, além de outros recursos disponíveis no sistema."

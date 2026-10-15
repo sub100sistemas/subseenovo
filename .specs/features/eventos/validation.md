@@ -54,7 +54,7 @@ A **faixa 980–1250px** (980, 1000, 1050, 1100, 1150, 1198, 1199, 1200 e 1250) 
 | --- | --- | --- |
 | EV-01 rota | HTTP 200 nas 12 larguras (e nas 21 da auditoria) | Atendido |
 | EV-02 galeria | `EventosGallery` é o primeiro filho de `main`, com 5 fotos com `alt` descritivo | Atendido |
-| EV-03 Hero | H1 "Eventos Online e Replays do SUBSEE on", "on" em `#e33b48`, descrição, banner (775px a 1920px, igual ao Figma), kicker e parágrafo. O CTA "Inscreva-se!!!" agora aponta para `/inscreva-se/` (não mais `#`) | Atendido |
+| EV-03 Hero | H1 "Eventos Online e Replays do SUBSEE", "on" em `#e33b48`, descrição, banner (775px a 1920px, igual ao Figma), kicker e parágrafo. O CTA "Inscreva-se!!!" agora aponta para `/inscreva-se/` (não mais `#`) | Atendido |
 | EV-04 nav | Mega-menu/header a 1440px leva a `/eventos/` (`aria-current` correto); menu mobile a 375px leva a `/eventos/` e fecha | Atendido |
 | EV-05 Replay | H2, descrição, 3 cards via `v-for`, CTA para `https://app.subsee.com.br/treinamentos/eventos-online?page=1&order=default` com `target="_blank"` e `rel="noopener"`; o selo "1.0.18" agora cobre o "1.0.15" da imagem | Atendido |
 | EV-06 Overview | H2, descrição, foto e blocos decorativos; o ícone de play é decorativo (`<img aria-hidden>`, sem `<a>`) | Atendido |
@@ -96,7 +96,7 @@ Comparado a 1920px (node `3171:41842`). Alturas (site / Figma): Gallery 400 / 50
 
 ## SEO e acessibilidade
 
-- `title` "SUBSEE | Eventos Online e Replays do SUBSEE on", `description` conforme a SPEC, `og:title` e `og:description`. `canonical` e `robots` são adicionados pelo plugin global de SEO; localmente saem como `localhost:3000` e `noindex, nofollow`, o esperado fora de produção.
+- `title` "SUBSEE | Eventos Online e Replays do SUBSEE", `description` conforme a SPEC, `og:title` e `og:description`. `canonical` e `robots` são adicionados pelo plugin global de SEO; localmente saem como `localhost:3000` e `noindex, nofollow`, o esperado fora de produção.
 - Não há `og:image`, `og:url`, `og:type`, `twitter:*` nem JSON-LD (lacuna do site todo; a SPEC não os exige). `lang` é `pt-BR`.
 - Imagens: nenhuma sem `alt`; as decorativas têm `alt=""` e `aria-hidden`. 14 imagens decorativas ficam sem `width`/`height`.
 - O card do Signup é um `<a>` que envolve `<h2>` e parágrafo; o nome acessível é longo, mas aceitável.

@@ -41,7 +41,7 @@ Pasta de imagens: `public/images/hero-main`. Pasta de ícones: `public/icons`.
 - H1: "O **CRM Imobiliário** Completo para **Imobiliárias** e **Corretores**" (trechos em roxo conforme marcado no Figma)
 - Parágrafo (linha em negrito + corpo): "**CRM SUBSEE desenvolvido para corretores e imobiliárias urbanas e rurais**" seguido de "Com **26 anos de experiência** no mercado imobiliário, o SUBSEE combina maturidade, conhecimento e inovação para tornar o atendimento comercial da sua imobiliária mais moderno, integrado e eficiente."
 - Botão CTA 1 (primário): "Testar grátis por 30 dias"
-- Botão CTA 2 (secundário/link): "Assista os vídeos do SUBSEE on" (o texto aparece cortado/truncado no próprio Figma — reproduzido verbatim)
+- Botão CTA 2 (secundário/link): "Assista os vídeos do SUBSEE" (o texto aparece cortado/truncado no próprio Figma — reproduzido verbatim)
 - Bloco de confiança: "A confiança de **mais de 2 mil** corretores e imobiliárias" (com selo "tdesign:secured" e 5 avatares)
 - Link/Métrica 1: "Mais vendas · Ciclo mais rápido"
 - Link/Métrica 2: "Mais eficiência · Menos custo"
@@ -326,13 +326,13 @@ Pasta de imagens: `public/images/hero-integrations`. Pasta de ícones: `public/i
 ### Texto extraído (ordem visual)
 
 - Tag: nenhum texto de eyebrow (apenas ponto decorativo)
-- H2: "O CRM SUBSEE on integra-se às principais ferramentas e tecnologias do mercado" ("on" em destaque vermelho)
+- H2: "O CRM SUBSEE integra-se às principais ferramentas e tecnologias do mercado" ("on" em destaque vermelho)
 - Parágrafo: "Integre o CRM aos principais sistemas, plataformas e soluções de inteligência artificial que sua empresa já utiliza. Centralize informações, automatize processos e aumente a produtividade da sua operação." ("CRM", "sua empresa" e "sua operação" em negrito)
 - Badge segmento 1: "Imobiliárias e Corretores"
 - Badge segmento 2: "Agrocorretores"
 - Badge segmento 3: "Loteadoras"
 - Badge segmento 4: "Incorporadoras"
-- Label central (logo do diagrama): "SUBSEE on"
+- Label central (logo do diagrama): "SUBSEE"
 - Conector direito 1: "Integrações com dezenas de Portais"
 - Conector direito 2: "Integrações com Redes de Parcerias"
 - Conector direito 3: "Integrações MCP e APIs"
@@ -349,7 +349,7 @@ Pasta de imagens: `public/images/hero-integrations`. Pasta de ícones: `public/i
 | siteHome_verde 1 (Loteadoras) | `public/images/hero-integrations/icone-loteadoras.png` | 82 x 82 | ícone (**veio como PNG, não SVG**) | Ícone de loteadoras |
 | siteHome_verde 1 (Incorporadoras) | `public/images/hero-integrations/icone-incorporadoras.png` | 82 x 82 | ícone (**veio como PNG, não SVG**) | Ícone de incorporadoras |
 | SVG (seta do botão CTA) | `public/icons/seta-botao-cta.svg` | 20 x 20 | ícone | Seta do botão "Testar grátis por 30 dias" |
-| _2432243841280 (logo central) | `public/icons/logo-subsee-on.svg` | 183.9 x 40 | logo | Logo SUBSEE on |
+| _2432243841280 (logo central) | `public/icons/logo-subsee-on.svg` | 183.9 x 40 | logo | Logo SUBSEE |
 | Zap | `public/icons/logo-zap.png` | 98 x 98 | logo (**veio como PNG**, export achatado do badge) | Logo Zap Imóveis |
 | Meta | `public/icons/logo-meta.png` | 98 x 98 | logo (**veio como PNG**) | Logo Meta |
 | WhatsApp | `public/icons/logo-whatsapp.png` | 98 x 98 | logo (**veio como PNG**) | Logo WhatsApp |
@@ -421,8 +421,8 @@ Pasta de imagens: `public/images/hero-faq`. Pasta de ícones: `public/icons`.
 ### Texto extraído (ordem visual)
 
 - Tag: "Especialidade · Dúvidas Frequentes"
-- H2: "Tudo sobre o SUBSEE on antes de começar"
-- H3 (coluna lateral): "Tire suas dúvidas sobre o SUBSEE on de forma rápida e simples"
+- H2: "Tudo sobre o SUBSEE antes de começar"
+- H3 (coluna lateral): "Tire suas dúvidas sobre o SUBSEE de forma rápida e simples"
 - (Imagem de pessoa ao lado do H3, sem texto associado)
 
 **Pergunta 1:** "Por que você deve experimentar o CRM Imobiliário SUBSEE gratuitamente?"
@@ -578,7 +578,7 @@ Pasta de ícones: `public/icons` (não há fotos/rawImages neste nó — apenas 
 **Produto 1 - Descrição:** "Anuncie seus Lançamentos, Imóveis de Venda, Locação, Imóveis Rurais e Temporada em um portal com mais de 26 anos de experiência"
 **Produto 1 - Botão CTA:** "Saiba mais →"
 
-**Produto 2 - Nome/Selo:** "SUB100 Loteadoras e Incorporadas"
+**Produto 2 - Nome/Selo:** "SUSUB100 Loteadoras e incorporadoras"
 **Produto 2 - Título:** "Simulador de vendas, mapa interativo, financeiro completo e portal do cliente"
 **Produto 2 - Descrição:** "O ERP para loteadoras e incorporadoras, o SGL é um sistema de gestão fácil que se integra aos seus processos"
 **Produto 2 - Botão CTA:** "Saiba mais →"
@@ -659,7 +659,7 @@ Nota: existe também `public/icons/icone-usuario-entrar.svg` da seção Header �
 ## Itens que precisam de decisão/atenção manual
 
 1. **Header** — texto do menu "Eventos" diverge do nome da camada Figma ("Soluções"); confirmar com o time se o rótulo correto é "Eventos" ou se há erro de atualização no arquivo de design.
-2. **Hero / Main** — botão "Assista os vídeos do SUBSEE on" aparenta estar truncado no próprio Figma; confirmar o texto completo antes de implementar.
+2. **Hero / Main** — botão "Assista os vídeos do SUBSEE" aparenta estar truncado no próprio Figma; confirmar o texto completo antes de implementar.
 3. **Hero / Rural** — existe um card oculto ("LEADS ESTA SEMANA" / "8.254" / "+11,2% leads") com `hidden=true` no Figma — não deve ser implementado, mantido aqui apenas para registro.
 4. **Hero / CRM** — item de lista "Muitiplas integrações com inteligência artificial" contém erro de digitação ("Muitiplas") reproduzido verbatim do Figma; validar se deve ser corrigido para "Múltiplas" na implementação final.
 5. **Hero / FAQ** — Resposta 8 não possui ponto final no Figma original; validar se deve ser adicionado na implementação.

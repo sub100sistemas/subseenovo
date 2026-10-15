@@ -45,7 +45,7 @@
 | FAQ plus | `/icons/faq-plus-circle.svg` | CrmTemporadaFaq accordion |
 | FAQ minus | `/icons/faq-minus-circle.svg` | CrmTemporadaFaq accordion |
 | Estrelas avaliação | `/icons/icone-estrelas-avaliacao.svg` | CrmTemporadaTestimonials |
-| Logo SUBSEE on (depoimentos) | `/icons/logo-subsee-on-depoimentos.svg` | CrmTemporadaTestimonials |
+| Logo SUBSEE (depoimentos) | `/icons/logo-subsee-on-depoimentos.svg` | CrmTemporadaTestimonials |
 | Aspas abertura | `/icons/aspas-abertura.svg` | CrmTemporadaTestimonials |
 | Aspas fechamento | `/icons/aspas-fechamento.svg` | CrmTemporadaTestimonials |
 | Check verde círculo | `/icons/icone-check-verde-circulo.svg` | Checkmarks em múltiplas seções |
@@ -315,7 +315,7 @@
 **H2:** "O que nossos clientes falam dos nossos produtos e serviços"
 - "nossos clientes" → cor brand `#5d5fef`
 
-**Logo SUBSEE on:** `/icons/logo-subsee-on-depoimentos.svg` em card branco arredondado
+**Logo SUBSEE:** `/icons/logo-subsee-on-depoimentos.svg` em card branco arredondado
 
 **Testimonial 1:**
 - Estrelas: 5 (ícone `/icons/icone-estrelas-avaliacao.svg`)
@@ -354,7 +354,7 @@
 **Background:** `#F5F5F5` rounded container
 
 **H2:** "Perguntas Frequentes"
-**Tagline:** "Tire suas dúvidas sobre o CRM para Temporada da SUBSEE on."
+**Tagline:** "Tire suas dúvidas sobre o CRM para Temporada da SUBSEE."
 
 **FAQs (6):**
 

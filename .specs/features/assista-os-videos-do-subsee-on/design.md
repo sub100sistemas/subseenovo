@@ -1,4 +1,4 @@
-# Assista os vídeos do SUBSEE on Design
+# Assista os vídeos do SUBSEE Design
 
 **Spec**: `.specs/features/assista-os-videos-do-subsee-on/spec.md`
 **Status**: Draft (revisado na Etapa 2)

@@ -1,4 +1,4 @@
-# Assista os vídeos do SUBSEE on Tasks
+# Assista os vídeos do SUBSEE Tasks
 
 ## Execution Protocol (MANDATORY — do not skip)
 
@@ -305,7 +305,7 @@ T11 → T18
 
 **Done when**:
 
-- [x] Heading "Assista aos vídeos do SUBSEE on" with "on" in `#e72f4d`; description exactly as in the manifest; only one `<h1>` in the component
+- [x] Heading "Assista aos vídeos do SUBSEE" with "on" in `#e72f4d`; description exactly as in the manifest; only one `<h1>` in the component
 - [x] Heading 36px Bold and description 20px (630px wide) through the new props; page-specific gradient background and wave divider from T2, not the `Hero.vue` defaults
 - [x] The 5 module icons reuse the existing `crm-hero-icone-*.svg` files
 - [x] Photo framed as in Figma (window 344×451, width 196.66%, offset −51.38%) with the blurred glow behind and the bottom clipped by the hero curve; floating cards "Vídeos Práticos" and "Time Capacitado" with the manifest text, HTML/CSS or a composed image (decide by screenshot comparison and record the choice in `design.md`)
@@ -335,7 +335,7 @@ T11 → T18
 
 **Done when**:
 
-- [x] Eyebrow, H2, description, tags "Gestão integrada" and "Mais produtividade" (one typed array, one `v-for`), badge "SUBSEE ON • 03:24" and caption exactly as in the manifest
+- [x] Eyebrow, H2, description, tags "Gestão integrada" and "Mais produtividade" (one typed array, one `v-for`), badge "SUBSEE • 03:24" and caption exactly as in the manifest
 - [x] Card 760×460, `rounded-[28px]`, gradient 112.44° `#5d5fef`→`#2e386b`, shadow `0 24px 50px rgba(46,56,107,0.18)`; two columns 520px + 760px with a 96px gap from `tablet-lg` up, one column below
 - [x] The card is one focusable link with an accessible name; its `href` is `videosFallbackUrl`, opens in a new tab with `rel="noopener"`; it is marked as provisional in the manifest until Q1 is answered
 - [x] No video title, duration or destination beyond the Figma text and the fallback is added
@@ -646,7 +646,7 @@ T11 → T18
 | Q3 | Destination of "Veja mais no App SUBSEE →" | T18 | Provisional fallback |
 | Q4 | Answer text of FAQ question 6 | T17 | Item not rendered |
 | Q5 | SEO title and description | T16 | Decided in the SEO/content step; page has no `useSeoMeta` values until then |
-| Q6 | Behavior of the Home "Assista os vídeos do SUBSEE on" button once it points to the new route (same tab or new tab) | Updating `HeroMain.vue:83-88`, which is **outside this feature** | Button untouched |
+| Q6 | Behavior of the Home "Assista os vídeos do SUBSEE" button once it points to the new route (same tab or new tab) | Updating `HeroMain.vue:83-88`, which is **outside this feature** | Button untouched |
 
 ---
 

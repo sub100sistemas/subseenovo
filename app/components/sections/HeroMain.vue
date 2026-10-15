@@ -1,10 +1,10 @@
 <script setup lang="ts">
 const avatars = [
-  { n: 5, alt: 'Cliente do SUBSEE on', marginLeft: 0 },
-  { n: 4, alt: 'Cliente do SUBSEE on', marginLeft: -13.67 },
-  { n: 3, alt: 'Cliente do SUBSEE on', marginLeft: -25.06 },
-  { n: 2, alt: 'Cliente do SUBSEE on', marginLeft: -21.64 },
-  { n: 1, alt: 'Cliente do SUBSEE on', marginLeft: -17.09 }
+  { n: 5, alt: 'Cliente do SUBSEE', marginLeft: 0 },
+  { n: 4, alt: 'Cliente do SUBSEE', marginLeft: -13.67 },
+  { n: 3, alt: 'Cliente do SUBSEE', marginLeft: -25.06 },
+  { n: 2, alt: 'Cliente do SUBSEE', marginLeft: -21.64 },
+  { n: 1, alt: 'Cliente do SUBSEE', marginLeft: -17.09 }
 ]
 
 const backgroundStyle = {
@@ -84,7 +84,7 @@ const propertyIcons = [
               to="/assista-os-videos-do-subsee-on/"
               class="whitespace-nowrap"
             >
-              Assista os vídeos do SUBSEE on
+              Assista os vídeos do SUBSEE
             </CtaButton>
           </div>
 
@@ -143,11 +143,11 @@ const propertyIcons = [
         <div class="relative w-full mt-8 md:mt-8 lg:mt-0">
           <NuxtPicture
             src="/images/hero-main/celulares-subsee-composicao.png"
-            :img-attrs="{ class: 'block w-full h-auto', title: 'Aplicativo SUBSEE on em dois celulares' }"
+            :img-attrs="{ class: 'block w-full h-auto', title: 'Aplicativo SUBSEE em dois celulares' }"
             sizes="100vw mobile-lg:490px tablet:650px tablet-lg:400px desktop-compact:460px desktop:660px"
             :width="711"
             :height="794"
-            alt="Aplicativo SUBSEE on em dois celulares"
+            alt="Aplicativo SUBSEE em dois celulares"
             loading="eager"
           />
 

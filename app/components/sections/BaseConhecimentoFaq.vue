@@ -41,6 +41,6 @@ const faqs: FaqItem[] = [
 <template>
   <CrmFaq section-id="base-conhecimento-duvidas-frequentes" :faqs="faqs">
     <template #title>Perguntas Frequentes</template>
-    <template #description>Tire suas dúvidas sobre a Base de Conhecimento do SUBSEE on.</template>
+    <template #description>Tire suas dúvidas sobre a Base de Conhecimento do SUBSEE.</template>
   </CrmFaq>
 </template>

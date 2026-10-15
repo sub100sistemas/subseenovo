@@ -55,7 +55,7 @@ export const lgpdTermosSections: LegalSection[] = [
         paragraphs: [
           {
             lines: [
-              '“SUB100”, empresa proprietária e responsável pelos sites: https://www.sub100sistemas.com.br/, https://sub100.com.br/, www.sistemasgl.com.br, https://subsee.com.br/, que se destinam a divulgação de seus produtos para fins de comercialização e/ou aproximação de anunciantes e usuários, visando facilitar a busca por imóveis para compra, venda e locação e, pelos produtos: Portal de Imóveis SUB100, SUBSEE on, Sistema SGL, Sites & Hotsites e Inteligência imobiliária.'
+              '“SUB100”, empresa proprietária e responsável pelos sites: https://www.sub100sistemas.com.br/, https://sub100.com.br/, www.sistemasgl.com.br, https://subsee.com.br/, que se destinam a divulgação de seus produtos para fins de comercialização e/ou aproximação de anunciantes e usuários, visando facilitar a busca por imóveis para compra, venda e locação e, pelos produtos: Portal de Imóveis SUB100, SUBSEE, Sistema SGL, Sites & Hotsites e Inteligência imobiliária.'
             ]
           }
         ]
@@ -71,7 +71,7 @@ export const lgpdTermosSections: LegalSection[] = [
         ]
       },
       {
-        label: 'SUBSEE ON',
+        label: 'SUBSEE',
         paragraphs: [
           {
             lines: [

@@ -52,7 +52,7 @@ O mega-menu "Módulos" (`HeaderBar.vue`, coluna "INTEGRAÇÕES E HABILIDADES") j
 **Acceptance Criteria**:
 
 1. WHEN um visitante navega para `/modulos/apis-hub-integrador` THEN o sistema SHALL renderizar a página com status HTTP 200.
-2. WHEN a página é renderizada THEN o sistema SHALL exibir, na ordem do Figma, a seção Hero/Top (node `3164:35380`) com o H1 "Conecte o SUBSEE on aos seus sistemas por APIs e Hub", a descrição, os 2 cards flutuantes ("Troca de Dados" e "Conexão via API") e a fileira de 5 ícones de tipo de imóvel — sem CTA nesta seção (confirmado inexistente no Figma).
+2. WHEN a página é renderizada THEN o sistema SHALL exibir, na ordem do Figma, a seção Hero/Top (node `3164:35380`) com o H1 "Conecte o SUBSEE aos seus sistemas por APIs e Hub", a descrição, os 2 cards flutuantes ("Troca de Dados" e "Conexão via API") e a fileira de 5 ícones de tipo de imóvel — sem CTA nesta seção (confirmado inexistente no Figma).
 3. WHEN a página é renderizada THEN o sistema SHALL exibir a seção Technology (node `3164:38941`) com o mockup estático (`NuxtImg`, `technology-mockup-telas.png`) e o CTA "Testar grátis por 30 dias" com destino definido.
 4. WHEN a página é renderizada THEN o sistema SHALL exibir a seção API Hub Bloco (node `3165:39276`) com a imagem `portfolio-telas-apis-hub.png`, os 4 itens de feature (Integração com APIs, Sincronização automática, Dados centralizados, Mais eficiência operacional) e o CTA "Testar grátis por 30 dias".
 5. WHEN um visitante clica no CTA "Conheça APIs & HUB Integrador" em `HeroIntegrations.vue` (Home) THEN o sistema SHALL navegar para `/modulos/apis-hub-integrador` e exibir a página completa.

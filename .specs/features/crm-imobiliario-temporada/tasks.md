@@ -251,7 +251,7 @@ T15 → T16
 **Done when**:
 - [ ] Arquivo existe
 - [ ] H2 "O que nossos clientes falam dos nossos produtos e serviços" — "nossos clientes" em brand
-- [ ] Logo SUBSEE on presente em card branco
+- [ ] Logo SUBSEE presente em card branco
 - [ ] Testimonial 1: João Calçada / Gerente de Locação / Imobiliária Soma — texto e logo fiéis
 - [ ] Testimonial 2: Marcio Carmona / Diretor / Carmona Imóveis — texto e logo fiéis
 - [ ] Ícone de 5 estrelas em cada card
@@ -283,7 +283,7 @@ T15 → T16
 **Done when**:
 - [ ] Arquivo existe
 - [ ] H2 "Perguntas Frequentes"
-- [ ] Tagline "Tire suas dúvidas sobre o CRM para Temporada da SUBSEE on."
+- [ ] Tagline "Tire suas dúvidas sobre o CRM para Temporada da SUBSEE."
 - [ ] 6 FAQs com perguntas e respostas fiéis ao manifest
 - [ ] Accordion com ícones +/− reais (`/icons/faq-plus-circle.svg`, `/icons/faq-minus-circle.svg`) — padrão `AD-008`
 - [ ] Background `#F5F5F5` com border-radius conforme `CrmFaq.vue`

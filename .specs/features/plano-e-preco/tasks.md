@@ -77,7 +77,7 @@ T13 → T14
 **Tools**: Skill: `figma:figma-design-to-code`; MCP: Figma (`get_design_context`, `get_screenshot`)
 
 **Done when**:
-- [x] Todos os 8 itens da tabela (divisor de onda, forma decorativa `imgShape`, selo "12% OFF", checkmark da tabela comparativa, ícone de bullet da lista de preços, seta dos CTAs, logo "SUBSEE on", ícones plus/minus do FAQ) têm veredito registrado
+- [x] Todos os 8 itens da tabela (divisor de onda, forma decorativa `imgShape`, selo "12% OFF", checkmark da tabela comparativa, ícone de bullet da lista de preços, seta dos CTAs, logo "SUBSEE", ícones plus/minus do FAQ) têm veredito registrado
 - [x] Cada veredito de reuso cita o arquivo exato de `public/icons/` a ser usado
 - [x] Cada veredito de rejeição lista o motivo (diferença de cor/forma/proporção) e o node do Figma a exportar na T2 — **resultado real**: apenas 1 item (selo "12% OFF") precisou de export novo; a forma decorativa de fundo virou CSS puro (gradiente), não um asset
 
@@ -228,7 +228,7 @@ T13 → T14
 **Done when**:
 - [x] As 9 categorias renderizam com seus títulos e todas as features, cada uma com checkmark visível em ambas as colunas
 - [x] Cabeçalhos "Urbano" e "Rural" renderizam com o CTA "Site & hotsite padrão" (usa `to="#"` via `CtaButton`, nenhum destino real existe — mesma convenção)
-- [x] Logo "SUBSEE on" decorativo renderiza acima da coluna Urbano (asset `logo-subsee-on.svg`, reuso confirmado na T1)
+- [x] Logo "SUBSEE" decorativo renderiza acima da coluna Urbano (asset `logo-subsee-on.svg`, reuso confirmado na T1)
 - [x] Nota de rodapé "* No período gratuito de 30 dias as integrações não estão liberadas." renderiza próxima ao botão de ocultar/exibir
 - [x] Responsivo: a tabela usa `overflow-x-auto` num container dedicado (`min-w-[720px]` interno) para rolar horizontalmente sem nunca vazar para o body da página, abaixo de `tablet-lg`
 - [x] `pnpm build` passa

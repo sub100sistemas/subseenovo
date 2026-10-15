@@ -310,13 +310,13 @@ T17 → T18
 **What**: Clone `CrmTestimonials.vue`'s structure with this page's real content (node `3127:3200`), including the 2-logo-per-card layout.
 **Where**: `app/components/sections/CrmRuralTestimonials.vue`
 **Depends on**: T10
-**Reuses**: `CrmTestimonials.vue` verbatim structure (lavender rounded block, SUBSEE on logo box, 2 equal-height cards) — only the `testimonials` data array and logo asset paths change; each card here renders 2 stacked logos (Soma Imóveis + client logo), not 1
+**Reuses**: `CrmTestimonials.vue` verbatim structure (lavender rounded block, SUBSEE logo box, 2 equal-height cards) — only the `testimonials` data array and logo asset paths change; each card here renders 2 stacked logos (Soma Imóveis + client logo), not 1
 **Requirement**: RUR-12
 
 **Tools**: none (content already in the T1 manifest; logo assets downloaded in T1)
 
 **Done when**:
-- [x] H2 "O que nossos clientes falam dos nossos produtos e serviços" + SUBSEE on logo + 2 cards (Henrique Benedini/Benedini Fazendas, Julio Silveira/Vettore Uruguay), each with both logos (Soma Imóveis + client logo) stacked, with equal card height
+- [x] H2 "O que nossos clientes falam dos nossos produtos e serviços" + SUBSEE logo + 2 cards (Henrique Benedini/Benedini Fazendas, Julio Silveira/Vettore Uruguay), each with both logos (Soma Imóveis + client logo) stacked, with equal card height
 - [x] No comments in the file
 - [x] `pnpm build` succeeds; manual check at desktop/tablet/mobile — both cards render the same height regardless of quote length
 
@@ -356,7 +356,7 @@ T17 → T18
 **Tools**: none (verbatim answer text from T1's manifest)
 
 **Done when**:
-- [x] H2 "Perguntas Frequentes" + subtitle "Tire suas dúvidas sobre o CRM Imobiliário da SUBSEE on." + 6 accordion items with the real Q&A from the manifest, in the correct visual order (O que é / Posso testar / atende urbano-temporada / informações registráveis / publicar em portais / metas e desempenho)
+- [x] H2 "Perguntas Frequentes" + subtitle "Tire suas dúvidas sobre o CRM Imobiliário da SUBSEE." + 6 accordion items with the real Q&A from the manifest, in the correct visual order (O que é / Posso testar / atende urbano-temporada / informações registráveis / publicar em portais / metas e desempenho)
 - [x] Opening an item shows the "−" icon in place of "+" (state indicated visually)
 - [x] No comments in the file
 - [x] `pnpm build` succeeds; manual check — every item opens/closes independently

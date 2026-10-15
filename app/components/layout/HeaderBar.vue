@@ -167,6 +167,13 @@ watch(
   }
 )
 
+const sameRouteClicks = useState('same-route-link-clicks', () => 0)
+watch(sameRouteClicks, () => {
+  isModulosOpen.value = false
+  isSobreOpen.value = false
+  isMenuOpen.value = false
+})
+
 watch(
   () => props.isPastHero,
   () => {
@@ -358,7 +365,7 @@ function splitDescription(description: string) {
               <p class="text-[20px] leading-[1.1] font-light">
                 <strong class="font-bold">Teste</strong> na<br />
                 <strong class="font-bold">prática</strong> todas as funcionalidades do
-                <strong class="font-bold">SUBSEE on</strong>
+                <strong class="font-bold">SUBSEE</strong>
               </p>
               <span class="mt-4 rounded-[10px] border-2 border-white/50 px-6 py-2 text-[16px]">Testar grátis</span>
             </NuxtLink>

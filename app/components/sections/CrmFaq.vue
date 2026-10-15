@@ -105,7 +105,7 @@ const props = withDefaults(defineProps<Props>(), {
     </template>
 
     <template #description>
-      <slot name="description">Tire suas dúvidas sobre o CRM Imobiliário da SUBSEE on.</slot>
+      <slot name="description">Tire suas dúvidas sobre o CRM Imobiliário da SUBSEE.</slot>
     </template>
   </Faq>
 </template>

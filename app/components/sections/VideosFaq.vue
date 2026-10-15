@@ -47,7 +47,7 @@ const faqs: FaqItem[] = [
   >
     <template #title>Perguntas Frequentes</template>
     <template #description>
-      Encontre respostas sobre os vídeos, tutoriais e conteúdos disponíveis no SUBSEE on.
+      Encontre respostas sobre os vídeos, tutoriais e conteúdos disponíveis no SUBSEE.
     </template>
   </Faq>
 </template>

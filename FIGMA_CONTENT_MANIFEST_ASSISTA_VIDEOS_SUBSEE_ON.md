@@ -1,6 +1,6 @@
 # FIGMA_CONTENT_MANIFEST_ASSISTA_VIDEOS_SUBSEE_ON
 
-Fonte: Figma `vX7qKnnXSOW8zv4kAuS2eN`, seção "Assista os videos do SUBSEE on" (`1033:1855`), frame raiz "Page" `3188:3397` (1920×4359). Conteúdo extraído em 2026-09-29 com `get_metadata` (estrutura) e `get_design_context` (texto, cores, medidas) em cada seção. Todo texto abaixo é transcrição literal do Figma; nada foi inventado. Os assets **não foram baixados** nesta etapa (Etapa 1 é só planejamento).
+Fonte: Figma `vX7qKnnXSOW8zv4kAuS2eN`, seção "Assista os videos do SUBSEE" (`1033:1855`), frame raiz "Page" `3188:3397` (1920×4359). Conteúdo extraído em 2026-09-29 com `get_metadata` (estrutura) e `get_design_context` (texto, cores, medidas) em cada seção. Todo texto abaixo é transcrição literal do Figma; nada foi inventado. Os assets **não foram baixados** nesta etapa (Etapa 1 é só planejamento).
 
 Regra herdada de [[AD-015]]: nomes de camada não são conteúdo. O texto renderizado prevalece.
 
@@ -34,11 +34,11 @@ Container 1400×460, `gap-[96px]`, seção com `py-[40px]`, fundo branco.
 
 - **Coluna 1** (`3188:3422`, 520×420, `gap-[18px]`):
   - Eyebrow (`3188:3423`, Poppins SemiBold 14px, tracking 0,84px, `#5d5fef`): "VÍDEO INSTITUCIONAL"
-  - H2 (`3188:3424`, Poppins Bold 38px, leading 46px, `#313846`): "Conheça o SUBSEE on em poucos minutos"
-  - Descrição (`3188:3425`, Poppins Regular 20px, leading 30px, `#596273`, largura 510): "Veja como a plataforma conecta imóveis, leads, equipe e atendimento em uma experiência mais simples para sua imobiliária."
+  - H2 (`3188:3424`, Poppins Bold 38px, leading 46px, `#313846`): "Conheça o SUBSEE em poucos minutos"
+  - Descrição (`3188:3425`, Poppins Regular 20px, leading 30px, `#596273`, largura 510): "Veja como a plataforma conecta imóveis, leads, equipe e atendimento em uma experiência transformadora para sua imobiliária."
   - Tags (`3188:3426`, `gap-[10px]`; cada uma `rounded-[999px]`, fundo `#eef0ff`, `px-[16px] py-[10px]`, Poppins Medium 14px `#5d5fef`): "Gestão integrada", "Mais produtividade"
 - **Card de vídeo** (`3188:3431`, 760×460, `rounded-[28px]`, `overflow-clip`, sombra `drop-shadow(0 10px 7.5px rgba(46,56,107,.30))`; container `3188:3421` com 485px de altura para a sombra aparecer). Fundo: thumbnail `3831:3865` (PNG 1672×941, `object-cover`, caixa 824×464 em x=-39 y=-2) e overlay `3831:3867` (800×272 em x=-16 y=206, degradê vertical transparente 15,9% → `rgba(128,128,128,.58)` 49,3% → `rgba(0,0,0,.68)` 82,7%). O degradê azul anterior foi removido. Arquivo: `public/images/assista-videos/featured-thumb.png`.
-  - Badge (`3188:3432`, fundo branco 16%, `rounded-[999px]`, `px-[16px] py-[10px]`, Poppins SemiBold 13px branco, x=28 y=28): "SUBSEE ON • 03:24"
+  - Badge (`3188:3432`, fundo branco 16%, `rounded-[999px]`, `px-[16px] py-[10px]`, Poppins SemiBold 13px branco, x=28 y=28): "SUBSEE • 03:24"
   - Botão play (`3188:3434`, `3188:3435`, `3188:3436`): círculo branco de 92px, triângulo azul, x=334 y=168
   - Legenda (`3188:3437`, Poppins SemiBold 18px branco, x=36 y=390): "Uma visão completa da plataforma"
 
@@ -47,15 +47,15 @@ Container 1400×460, `gap-[96px]`, seção com `py-[40px]`, fundo branco.
 Fundo `#f8f9ff` (`3188:3439`, largura total, `py-[40px]`, `gap-[32px]`).
 
 - Eyebrow (`3188:3443`, centralizado, mesma tipografia do item 2): "VÍDEOS DEMONSTRATIVOS"
-- H2 (`3188:3442`, Poppins Bold 38px `#313846`, centralizado): "Veja o SUBSEE on em ação"
+- H2 (`3188:3442`, Poppins Bold 38px `#313846`, centralizado): "Veja o SUBSEE em ação"
 - Descrição (`3188:3441`, Poppins Regular 18px `#596273`, centralizado, largura 1100): "Conteúdos rápidos para conhecer os recursos que fazem diferença na rotina da sua imobiliária."
 - **Galeria** (`3188:3444`, 1400×520, `gap-[55px]`), 3 cards de 430×520 (`rounded-[22px]`, fundo branco, borda `#e6e8f2`, sombra `0 14 32 rgba(48,56,77,.08)`). Miniatura 430×240 em gradiente horizontal; duração em Poppins SemiBold 13px branco (x=28 y=24); play branco de 64px centralizado (y=88); eyebrow "DEMONSTRAÇÃO" (Poppins SemiBold 12px, tracking 0,6px, `#5d5fef`, y=274); título (Poppins SemiBold 22px, leading 30px, `#313846`, y=307); descrição (Poppins Regular 15px, leading 23px, `#657083`, y=396); link (Poppins SemiBold 14px `#5d5fef`, y=480).
 
 | # | Gradiente da miniatura | Duração | Título | Descrição |
 | --- | --- | --- | --- | --- |
-| 1 (`3188:3445`) | `#5d5fef`→`#8b8dff` | 03:11 | Organize imóveis e publique com agilidade | Cadastre, organize e distribua seus imóveis nos principais canais com mais eficiência. |
-| 2 (`3188:3454`) | `#17a6a6`→`#66d4c9` | 05:02 | Centralize leads e atendimento | Reúna contatos, mensagens e histórico para acompanhar cada oportunidade do início ao fim. |
-| 3 (`3188:3464`) | `#7357c7`→`#b491e8` | 03:46 | Acompanhe sua equipe e oportunidades | Visualize tarefas, agenda e evolução comercial para tomar decisões com mais clareza. |
+| 1 (`3188:3445`) | `#5d5fef`→`#8b8dff` | 00:31 | CRM completo para corretores e imobiliárias | Plugin para WhatsApp, funil de vendas, automação de processos e playbook de vendas. |
+| 2 (`3188:3454`) | `#17a6a6`→`#66d4c9` | 05:58 | CRM especializado em imobiliárias e corretores rurais | Cadastro técnico para seus anúncios, mapas KMZ com atributos do imóvel e processos de venda específicos para imóveis rurais. |
+| 3 (`3188:3464`) | `#7357c7`→`#b491e8` | 00:58 | CRM especializado em locação anual e de temporada | Esteira digital para locação anual e gestão completa de locações de curta duração ou de temporada. |
 
 Tipo (todos): "DEMONSTRAÇÃO". Link (todos): "Assistir ao vídeo →".
 
@@ -65,14 +65,14 @@ Seção `py-[40px]`, `gap-[76px]`, fundo branco.
 
 - Eyebrow (`3188:3500`): "CONTEÚDO PARA CADA PERFIL"
 - H2 (`3188:3499`, Poppins Bold 36px `#313846`): "Encontre os vídeos ideais para o seu negócio"
-- Descrição (`3188:3498`, Poppins Regular 18px `#596273`): "Escolha um tema e descubra como o SUBSEE on pode apoiar sua rotina e seus objetivos."
+- Descrição (`3188:3498`, Poppins Regular 18px `#596273`): "Escolha um tema e descubra como o SUBSEE pode apoiar sua rotina e seus objetivos."
 - **Lista** (`3188:3476`, `gap-[55px]`), 3 cards de 430×260, `rounded-[22px]`. Número (Poppins Bold 14px, x=28 y=26); ícone circular de 54px com triângulo de play (x=348 y=24); título (Poppins SemiBold 23px `#313846`, y=94); descrição (Poppins Regular 15px, leading 23px, `#596273`, y=142); link (Poppins SemiBold 14px, y=222).
 
 | # | Node | Fundo | Cor de destaque | Número | Título | Descrição | Link |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | `3188:3477` | `#eef0ff` | `#5d5fef` | 01 | Imobiliárias urbanas | Gestão de imóveis, integração com portais, releta de leads CRM  e inteligência artificil em um só lugar. | Ver vídeos → |
-| 2 | `3188:3484` | `#eaf9f7` | `#159c96` | 02 | Imobiliárias rurais | Cadastro especializados para cadastrar sua fazenda. CRM que fala a linguagem do agronegócio. | Ver vídeos → |
-| 3 | `3188:3491` | `#f4eefc` | `#7652b5` | 03 | Imobiliárias locação | Não importa qual é a sua locação, residencia, comercial ou de temporada. Importa que a jornada esteja em um só sistema. | Ver vídeos → |
+| 1 | `3188:3477` | `#eef0ff` | `#5d5fef` | 03:10 | Imobiliárias urbanas | Gestão de imóveis, integração com portais, releta de leads CRM  e inteligência artificil em um só lugar. | Ver vídeos → |
+| 2 | `3188:3484` | `#eaf9f7` | `#159c96` | 01:40 | Imobiliárias rurais | Cadastro especializados para cadastrar sua fazenda. CRM que fala a linguagem do agronegócio. | Ver vídeos → |
+| 3 | `3188:3491` | `#f4eefc` | `#7652b5` | 03:03 | Imobiliárias locação | Não importa qual é a sua locação, residencia, comercial ou de temporada. Importa que a jornada esteja em um só sistema. | Ver vídeos → |
 
 - **CTA - App SUBSEE** (`3188:3501`, 1400×220, `rounded-[28px]`, gradiente horizontal `#5d5fef`→`#2e386b`, `overflow-clip`, elipse decorativa 360×360 em x=1080 y=-180):
   - Título (`3188:3506`, Poppins Bold 30px branco, x=58 y=46): "Continue aprendendo no App SUBSEE"
@@ -84,7 +84,7 @@ Seção `py-[40px]`, `gap-[76px]`, fundo branco.
 Seção `pt-[40px] pb-[80px]`, fundo branco, sem painel cinza. Itens de 970px de largura, centralizados; separador de 1px entre itens; ícone de 30px à direita.
 
 - Título (`3188:3509`, Poppins SemiBold 52px `#313846`, centralizado): "Perguntas Frequentes"
-- Subtítulo (`3188:3510`, Poppins Regular 20px, preto, centralizado): "Encontre respostas sobre os vídeos, tutoriais e conteúdos disponíveis no SUBSEE on."
+- Subtítulo (`3188:3510`, Poppins Regular 20px, preto, centralizado): "Encontre respostas sobre os vídeos, tutoriais e conteúdos disponíveis no SUBSEE."
 - Pergunta: Poppins SemiBold 20px, leading 20px, `#313846`. Resposta: Poppins Regular 16px, leading 26px, `#313846`, largura 870.
 
 | # | Node | Pergunta | Resposta |
@@ -135,7 +135,7 @@ Os cards flutuantes do Hero ("Vídeos Práticos", "Time Capacitado") não têm i
 ## Observações de fidelidade
 
 - A foto do Hero e o texto dos dois cards flutuantes **diferem** dos assets de `modulos-base-de-conhecimento/` (`hero-visual.png`, `card_arrow.png`): não reusar.
-- O nome do frame no Figma é "Assista os videos do SUBSEE on" (sem acento); o H1 renderizado é "Assista **aos** vídeos do SUBSEE on". O botão da Home diz "Assista **os** vídeos do SUBSEE on". Divergência textual entre botão e H1 registrada; vale o texto renderizado de cada lugar.
+- O nome do frame no Figma é "Assista os videos do SUBSEE" (sem acento); o H1 renderizado é "Assista **aos** vídeos do SUBSEE". O botão da Home diz "Assista **os** vídeos do SUBSEE". Divergência textual entre botão e H1 registrada; vale o texto renderizado de cada lugar.
 - Durações e títulos dos 3 vídeos parecem dados de demonstração do design (ver Q1 da spec).
 - O FAQ tem 5 itens, todos com resposta visível e ícone de "+" (o item 6 foi removido do Figma).
 - O fundo do Hero da página tem gradiente e borda curva próprios; o divisor tem duas linhas. Ambos diferem dos de `layout/Hero.vue` e de `crm-hero-divider-onda.svg`.

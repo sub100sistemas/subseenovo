@@ -158,7 +158,7 @@ T10
 - Skill: NONE
 
 **Done when**:
-- [x] H1 "Eventos Online e Replays do SUBSEE on" renders with "on" in `#e33b48` (**locked-in decision honored — `text-[#e33b48]`, not `#e72f4d`/`text-brand`**)
+- [x] H1 "Eventos Online e Replays do SUBSEE" renders with "on" in `#e33b48` (**locked-in decision honored — `text-[#e33b48]`, not `#e72f4d`/`text-brand`**)
 - [x] Description renders verbatim below the H1
 - [x] "Próximo evento" row renders `banner-eventos.png` as a single flattened image (no HTML text reconstruction over it), plus the live kicker "PRÓXIMO EVENTO" and the highlighted paragraph as real text (not baked into an image)
 - [x] Neither the kicker nor the highlighted paragraph is marked up as an `<h2>` (locked-in heading-hierarchy decision from spec.md — both are `<p>`)
@@ -205,7 +205,7 @@ T10
 **Tools**: NONE (content already in the manifest)
 
 **Done when**:
-- [x] H2 "Tudo que sua imobiliária precisa, em um só sistema com o **SUBSEE on**" (bold on "SUBSEE on") + description render verbatim
+- [x] H2 "Tudo que sua imobiliária precisa, em um só sistema com o **SUBSEE**" (bold on "SUBSEE") + description render verbatim
 - [x] Photo renders with the 2 solid decorative blocks (`#1cd9a4` and `#5d5fef`, both `rounded-[20px]`) positioned behind it, matching the Figma layering
 - [x] Play-button icon renders as purely decorative — no `<a>`, no video embed, no invented link (confirmed absent in Figma)
 - [x] No CTA present (confirmed absent in Figma)

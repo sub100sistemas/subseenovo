@@ -13,7 +13,7 @@ const moduleIcons: HeroModuleIcon[] = [
 <template>
   <Hero section-id="apis-hero" divider-src="/icons/crm-hero-divider-onda.svg" :module-icons="moduleIcons">
     <template #heading>
-      Conecte o SUBSEE <span class="text-brand">on</span> aos seus sistemas por APIs e Hub
+      Conecte o SUBSEE aos seus sistemas por APIs e Hub
     </template>
 
     <template #description>

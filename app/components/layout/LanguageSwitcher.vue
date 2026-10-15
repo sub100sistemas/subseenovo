@@ -44,7 +44,7 @@ withDefaults(
     flowClass:
       'flex flex-col items-center gap-4 tablet-lg:flex-row tablet-lg:flex-wrap tablet-lg:gap-0',
     subseeLogoSrc: '/icons/logo-subsee-on.svg',
-    subseeLogoAlt: 'SUBSEE on',
+    subseeLogoAlt: 'SUBSEE',
     sub100CardSrc: '/icons/site-urbano-internacional-sub100-card.svg',
     sub100CardAlt: 'SUB100 Meu Site',
     googleIconSrc: '/images/modulos-site-urbano/internacional-google-icone.png',

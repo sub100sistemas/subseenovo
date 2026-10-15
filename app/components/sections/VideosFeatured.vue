@@ -24,10 +24,9 @@ const modalOpen = ref(false)
           description-class="text-[16px] leading-[1.5] text-[#596273] tablet-lg:h-[104px] tablet-lg:text-[18px] tablet-lg:leading-[1.5] desktop-full:text-[20px] desktop-full:leading-[30px]"
         >
           <template #eyebrow>Vídeo institucional</template>
-          <template #title>Conheça o SUBSEE on em poucos minutos</template>
+          <template #title>Conheça o SUBSEE em poucos minutos</template>
           <template #description>
-            Veja como a plataforma conecta imóveis, leads, equipe e atendimento em uma experiência mais simples para
-            sua imobiliária.
+            Veja como a plataforma conecta imóveis, leads, equipe e atendimento em uma experiência transformadora para sua imobiliária.
           </template>
         </SectionHeading>
 
@@ -66,7 +65,7 @@ const modalOpen = ref(false)
         <span
           class="absolute top-4 left-4 rounded-full bg-white/16 px-4 py-[10px] text-[13px] leading-normal font-semibold whitespace-nowrap text-white tablet-lg:top-7 tablet-lg:left-7"
         >
-          SUBSEE ON • 00:30
+          SUBSEE • 00:31
         </span>
         <span class="absolute inset-0 flex items-center justify-center pb-8">
           <PlayButton size="lg" />

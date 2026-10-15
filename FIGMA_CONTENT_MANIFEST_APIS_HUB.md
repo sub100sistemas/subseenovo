@@ -6,7 +6,7 @@ Figma: arquivo `vX7qKnnXSOW8zv4kAuS2eN`, node raiz `3164:35379` (1920px, 8 seç�
 
 ## 1. Section / Hero / Top — node `3164:35380`
 
-- **H1** (`3164:35434`): "Conecte o SUBSEE **on** aos seus sistemas por APIs e Hub" — a palavra "on" vem estilizada em vermelho (`#e72f4d`) no Figma. **Tratamento intencional confirmado**: o mesmo padrão de destaque em vermelho de uma palavra aparece de novo na descrição da seção 3 ("Conecte o SUBSEE **on** aos seus sistemas favoritos...") — não é erro de digitação isolado, é uma marca/termo estilizado ("SUBSEE On") repetido nas duas seções. Manter literal.
+- **H1** (`3164:35434`): "Conecte o SUBSEE **on** aos seus sistemas por APIs e Hub" — a palavra "on" vem estilizada em vermelho (`#e72f4d`) no Figma. **Tratamento intencional confirmado**: o mesmo padrão de destaque em vermelho de uma palavra aparece de novo na descrição da seção 3 ("Conecte o SUBSEE **on** aos seus sistemas favoritos...") — não é erro de digitação isolado, é uma marca/termo estilizado ("SUBSEE") repetido nas duas seções. Manter literal.
 - **Descrição** (`3164:35433`): "Centralize dados de leads, imóveis e atendimentos entre todos os seus sistemas com integrações via API, incluindo portais imobiliários, WhatsApp, redes sociais e Meta Ads."
 - **Card flutuante 1** ("Troca de Dados", `3164:35400`): título "Troca de Dados", descrição "Envie leads e imóveis entre sistemas integrados.", ícone `arrow-left-right` (data-exchange).
 - **Card flutuante 2** ("Conexão via API", `3164:35393`): título "Conexão via API", descrição "Integre sistemas de qualquer lugar pela web.", ícone `</>`.
@@ -29,7 +29,7 @@ Figma: arquivo `vX7qKnnXSOW8zv4kAuS2eN`, node raiz `3164:35379` (1920px, 8 seç�
 ## 3. Section / Hero / API Hub "Bloco" — node `3165:39276`
 
 - **H2** (`3164:35916`): "APIs e HUB Integrador: toda a sua operação **conectada**"
-- **Descrição** (`3164:35915`): "Conecte o SUBSEE on aos seus sistemas favoritos e mantenha leads, imóveis e atendimentos sempre sincronizados, sem esforço manual." (mesmo termo estilizado "on", ver nota da seção 1)
+- **Descrição** (`3164:35915`): "Conecte o SUBSEE aos seus sistemas favoritos e mantenha leads, imóveis e atendimentos sempre sincronizados, sem esforço manual." (mesmo termo estilizado "on", ver nota da seção 1)
 - Sem SectionTag/eyebrow nesta seção (confirmado — diferente da seção 5, que tem "INTEGRAÇÕES").
 - **Coluna 02** — intro (`3164:35914`): "Integre suas ferramentas com agilidade, centralize os dados da operação e elimine tarefas manuais repetitivas em poucos cliques."
 - **4 itens de feature**:

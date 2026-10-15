@@ -103,7 +103,7 @@ Estamos construindo uma plataforma inteligente com tecnologia de ponta para revo
 
 **H2:** (SemiBold 52px) Perguntas Frequentes
 
-**Description:** Tire suas dúvidas sobre o Site para Loteadoras da SUBSEE on.
+**Description:** Tire suas dúvidas sobre o Site para Loteadoras da SUBSEE.
 
 **6 FAQ items:**
 
