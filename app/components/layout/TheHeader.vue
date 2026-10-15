@@ -54,7 +54,7 @@ const trackingClasses = computed(() => [
 
 <template>
   <div
-    class="pointer-events-none z-[60] ease-out"
+    class="pointer-events-none z-[60] ease-out will-change-[transform,opacity]"
     :class="trackingClasses"
     aria-hidden="true"
   >
